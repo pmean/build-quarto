@@ -1,0 +1,127 @@
+---
+title: "Stash md files"
+author: "Steve Simon"
+date: "Created 2024-06-29"
+execute:
+  echo: false
+format:
+  html:
+    embed-resources: true
+editor: source
+---
+
+Note to myself. Use the file.info function to move only recently changed files.
+
+## Get files
+
+```{r prelims}
+backup_flag <- TRUE
+library(dplyr)
+library(glue)
+library(knitr)
+library(magrittr)
+library(stringr)
+yrs <- c(99, paste0("0", 0:9), 10:24)
+all_files <- NULL
+for (y in rev(yrs)) {
+  f0 <- "../text"
+  fn <- list.files(glue("{f0}/{y}"))
+  if (length(fn)==0) next
+  data.frame(y, fn) %>%
+    bind_rows(all_files) -> all_files
+}
+count(all_files, y)
+```
+
+
+## Split files by extension
+
+```{r split}
+all_files %>%
+  mutate(ext=str_remove(fn, ".*\\.")) %>%
+  mutate(fn=str_remove(fn, "\\..*")) -> all_files
+count(all_files, ext)
+```
+
+## Find files without md, Rmd extensions
+
+```{r find}
+all_files %>%
+  filter(ext != "md") %>%
+  filter(ext != "Rmd")
+```
+
+## Remove html files
+
+```{r remove}
+all_files %>%
+  filter(ext == "html") %>%
+  mutate(f=glue("{f0}/{y}/{fn}.{ext}")) %>%
+  pull(f) -> g
+g
+if (length(g) > 0) {
+  file.remove(g)
+  cat("Removing", length(g), "files:", paste0(g, collapse=", "))
+}
+```
+
+## Define directories for copying
+
+```{r set-dir}
+b0 <- "c:/Users"
+b1 <- str_subset(list.files(b0), "steve|simons")
+b2 <- "Dropbox/professional"
+b3 <- "fun stuff/update-website/md"
+b4 <- glue("{b0}/{b1}/{b2}/{b3}")
+b5 <- glue("{b4}/{Sys.Date()}")
+```
+
+## Backup old files
+
+```{r backup, eval=backup_flag}
+run_backup <- 
+  !file.exists(b5)
+if (run_backup) {
+  dir.create(b1)
+  f <- list.files(b4, pattern="md")
+  cat("Backing up", length(f), "files")
+  file.copy(
+    from=glue("{b4}/{f}"),
+    to=glue("{b5}/{f}"),
+    overwrite=TRUE)
+}
+```
+
+## Copy md files
+
+```{r md}
+all_files %>%
+  filter(ext == "md") %>%
+  mutate(a=glue("{f0}/{y}/{fn}.{ext}")) %>%
+  mutate(b=glue("{b4}/{fn}.{ext}")) %>%
+  select(a, b, fn) -> md
+head(md)
+success <- file.copy(from=md$a, to=md$b, overwrite=TRUE)
+if (all(success)) cat("\nAll files copied without error")
+if (!all(success)) {
+  cat("\nError in file copy: ")
+  cat(paste0(md$fn[!success], collapse=", "))
+}
+```
+
+## Knit and copy Rmd files
+
+```{r rmd, eval=FALSE}
+all_files %>%
+  filter(ext == "Rmd") %>%
+  mutate(a=glue("{f0}/{y}/{fn}.Rmd")) %>%
+  mutate(b=glue("{b0}/{fn}.md")) %>%
+  select(a, b) -> Rmd
+head(Rmd)
+n <- nrow(Rmd)
+n <- 3
+for (i in 1:nrow(Rmd)) {
+  knit(input=Rmd$a[i], output=Rmd$b[i])
+}
+length(list.files(b0))
+```

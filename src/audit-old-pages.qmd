@@ -1,0 +1,192 @@
+---
+title: "Check links on old pages"
+author: "Steve Simon"
+date: "Created 2024-06-25"
+execute:
+  echo: false
+format:
+  html:
+    embed-resources: true
+---
+  
+This program looks for key links in the old webpages
+
+```{r setup}
+suppressMessages(suppressWarnings(library(glue)))
+suppressMessages(suppressWarnings(library(magrittr)))
+suppressMessages(suppressWarnings(library(readr)))
+suppressMessages(suppressWarnings(library(stringr)))
+suppressMessages(suppressWarnings(library(tidyverse)))
+
+path1 <- "c:/Users"
+path2 <- str_subset(list.files(path1), "steve|simons")
+path3 <- "Dropbox/professional/fun stuff/update-website"
+
+"c:/Users/steve/Dropbox/professional/fun stuff/update-website"
+"c:/Users/simons/Dropbox/professional/fun stuff/update-website"
+
+old_path <- paste(path1, path2, path3, sep="/")
+old_list=c(
+  "00",
+  "00files",
+  "01",
+  "02",
+  "03",
+  "04",
+  "05",
+  "06",
+  "07",
+  "08",
+  "08a",
+  "09",
+  "10",
+  "11",
+  "12",
+  "12a",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "99",
+  "archive",
+  "category",
+  "definitions",
+  "weblog",
+  "08/accrual",
+  "08/definitions",
+  "08/diagnostic",
+  "08/faq",
+  "08/images",
+  "08/journal",
+  "08/koans",
+  "08/software",
+  "08/training",
+  "08/training/abstracts",
+  "08/training/datasets",
+  "08/training/exercises",
+  "08/training/extras",
+  "08/training/images",
+  "08/website")
+save_file <- "../data/check_old.RData"
+```
+
+## Create old
+
+```{r create}
+old <- NULL
+for (dir in rev(old_list)) {
+  file_path <- paste(old_path, dir, sep="/")
+  file_path %>%
+    list.files(pattern="asp$|htm$|html$") -> piper
+  if (length(piper) == 0) next
+  piper %>%
+    str_remove("\\..*") -> page
+  piper %>%
+    str_remove(".*\\.") -> ext
+  data.frame(dir=dir, page=page, ext=ext) %>%
+    bind_rows(old) -> old
+}
+rows <- nrow(old)
+```
+
+
+## Search for links to old files
+
+```{r links}
+search_link <- function(tx) {
+  prefix1 <- '<p>This page is moving to a <a href="'
+  prefix2 <- '<p>This page has moved to a <a href="'
+  postfix <- '">new website</a>.</p>'
+  prepost <- paste(prefix1, prefix2, postfix, sep="|")
+  website <- "http://new.pmean.com/"
+  slash   <- "/"
+  tx %>%
+    str_subset(postfix) %>%
+    str_replace(prefix1, "") %>%
+    str_replace(prefix2, "") %>%
+    str_replace(postfix, "") %>%
+    str_replace(website, "") %>%
+    str_replace(slash,   "") %>%
+    str_remove_all("\\s") %>%
+    str_trim %>%
+    paste0("") -> piper
+  piper %>%
+    paste0(collapse=", ")
+}
+```
+
+## Search for size
+
+```{r size}
+# The str_trim function is not working. There
+#  may be an encoding problem. See
+#   "about_encoding" in the stringi package
+#   https://search.r-project.org/CRAN/refmans/
+#     stringi/html/about_encoding.html
+#
+# Help may come from the "stri_enc_toutf8" function 
+#   https://search.r-project.org/CRAN/refmans/
+#     stringi/html/stri_enc_toutf8.html
+# A simpler solution may be
+#   str_remove_all("\\s")
+
+search_size <- function(tx) {
+  ty <- str_remove_all(tx, "\\s")
+  length(tx)-sum(ty == "")
+}
+```
+
+## Read file text
+
+```{r read}
+full_name <-
+  paste0(
+  old_path, "/",
+  old$dir, "/",
+  old$page, ".",
+  old$ext)
+
+old$size <- -1
+old$link_page <- "999"
+
+for (i in 1:rows) {
+  tx <- read_lines(full_name[i])
+  old$size[i] <- search_size(tx)
+  old$link_page[i] <- search_link(tx)
+}
+```
+
+## Modify variables
+
+```{r modify-variables}
+old$stub <- as.numeric(old$size <= 10)
+old$link_miss <- as.numeric(nchar(old$link_page) == 0)
+```
+
+## Save results
+
+```{r save}
+old %>%
+  select(
+    dir, 
+    page, 
+    ext, 
+    size,
+    stub,
+    link_miss,
+    link_page) %>%
+  arrange(dir, page) -> old
+    
+save(old, file=save_file)
+```
+
+## Simple statistics
+
+```{r simple}
+summary(old$size)
+count(old, ext)
+count(old, link_miss)
+count(old, stub)
+```
