@@ -1,0 +1,281 @@
+---
+title: "Smart quotes, em dashes, and en dashes"
+author: "Steve Simon"
+source: new
+date: "2020-03-02"
+categories:
+- Blog post
+tags:
+- Data management
+- Rmarkdown code
+output: html_document
+page_update: complete
+---
+
+If you work with text data a lot, you will encounter some characters that are sort of close to what you need, but sort of not. These include the smart quotes, em dashes, and en dashes.
+
+<!---More--->
+
+### Smart quotes
+
+Programmers use a set of standard quotation marks in their work. These are called straight quotes by some and dumb quotes by others.
+
+The straight double quote (") is one of the standard codes that works pretty much the same on any computer system.
+
+```{r smart-quotes-01, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.width=4.5, fig.height=0.5)
+suppressMessages(suppressWarnings(library(stringr)))
+cplot <- function(x) {
+  par(mar=rep(0,4))
+  plot(-1:1, -1:1, type="n", axes=FALSE)
+  text(-1, 0, x, cex=2, adj=0)
+}
+```
+
+
+```{r smart-quotes-02}
+cplot('"')
+```
+
+The straight single quote (') is another standard code,
+
+```{r smart-quotes-03}
+cplot("'")
+```
+
+On early computer systems, this was all you had. You might have a backwards slanting single quote (`), often called a backtick.
+
+```{r smart-quotes-04}
+cplot("`")
+```
+
+This was a step backwards from Guttenberg's printing press. Actually, the regression occurred when the typewriter was invented. The limited number of keys that you could fit into a typewriter
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Underwoodfive.jpg/440px-Underwoodfive.jpg)
+
+ prevented the use of a greater variety of quote marks.
+ 
+ Now you probably already know this but if you want to assign a double quote to a variable, you surround it with single quotes,
+ 
+```{r smart-quotes-05}
+cplot("x  < -  ' \" '")
+```
+
+or precede the double quotes with a backslash
+
+```{r smart-quotes-06}
+cplot('x  < -  \" \\ "\ "')
+```
+
+Use the charToRaw function to see the underlying code for the double quote mark
+
+```{r smart-quotes-07}
+cplot("charToRaw(' \" ')")
+```
+
+```{r smart-quotes-08}
+cplot(charToRaw('"'))
+```
+
+and for the single quote mark
+
+```{r smart-quotes-09}
+cplot("charToRaw(\" ' \")")
+```
+
+```{r smart-quotes-10}
+cplot(charToRaw("'"))
+```
+
+and for the backtick
+
+```{r smart-quotes-11}
+cplot("charToRaw(\" ` \")")
+```
+
+```{r smart-quotes-12}
+cplot(charToRaw("`"))
+```
+
+These values are hexadecimal, so 27 in hexadecimal is 2*16+7=39 in decimal.
+
+If you know the hexadecimal code, you can convert it to the character equivalent using the \x prefix.
+
+```{r smart-quotes-13}
+cplot('"\\x22"')
+```
+
+```{r smart-quotes-14}
+cplot("\x22")
+```
+
+When personal computers started to expand beyond the limited character set, that allowed you to use the left double quote,
+
+```{r smart-quotes-15}
+cplot("\U201C")
+```
+
+the right double quote,
+
+```{r smart-quotes-16}
+cplot("\U201D")
+```
+
+the left single quote,
+
+```{r smart-quotes-17}
+cplot("\U2018")
+```
+
+and the right single quote
+
+```{r smart-quotes-18}
+cplot("\U2019")
+```
+
+These quote marks are part of a larger character set known as Unicode. The rawToChar function provides a surprising result
+
+```{r smart-quotes-19}
+cplot('charToRaw( \" \U201C \" )')
+```
+
+```{r smart-quotes-20}
+x <- str_c(as.character(charToRaw("\U201C")), collapse=" ")
+cplot(x)
+```
+
+Surprise! When you open the world up to different typographic characters, you have to include characters with accents,
+
+```{r smart-quotes-21}
+cplot("\U00E9")
+```
+
+cedillas,
+
+```{r smart-quotes-22}
+cplot("\U00C7")
+```
+
+and tildes.
+
+```{r smart-quotes-23}
+cplot("\U00F1")
+```
+
+You have to have room for the sharp S in German,
+
+```{r smart-quotes-24}
+cplot("\U00DF")
+```
+
+the thorn in Icelandic,
+
+```{r smart-quotes-25}
+cplot("\U00FE")
+```
+
+and a whole host of new characters in Greek,
+
+```{r smart-quotes-26}
+cplot("\U03B1 \U03B2 \U03B3")
+```
+
+Arabic,
+
+```{r smart-quotes-27}
+cplot("\U062A\U0633\U062C\U0651\U0644")
+```
+
+and Chinese.
+
+```{r smart-quotes-28}
+cplot("\U4E2D\U6587")
+```
+
+When you add various emojis
+
+```{r smart-quotes-29}
+cplot("\U1F642\U1F622")
+```
+
+the list becomes quite long. The system that encodes all of these values is Unicode.
+
+You specify Unicode values with a \U.
+
+```{r smart-quotes-30}
+cplot("\"\\U201C\"")
+```
+
+```{r smart-quotes-31}
+cplot("\U201C")
+```
+
+Now you might wonder why the internal code for the left double quote (`r x`) does not match the 201C shown above. It turns out that the internal storage of Unicode uses a system called UTF-8. UTF-8 maintains storage efficiency and backwards compatibility with earlier coding systems.
+
+The other smart quote marks are the right double quote,
+
+```{r smart-quotes-32}
+cplot("\"\\U201D\"")
+```
+
+```{r smart-quotes-33}
+cplot("\U201D")
+```
+
+the left single quote,
+
+```{r smart-quotes-34}
+cplot("\"\\U2018\"")
+```
+
+```{r smart-quotes-35}
+cplot("\U2018")
+```
+
+and the right single quote,
+
+```{r smart-quotes-36}
+cplot("\"\\U2019\"")
+```
+
+```{r smart-quotes-37}
+cplot("\U2019")
+```
+
+There are a couple of additional codes that I should mention. Most programmers use the minus sign in their coding
+
+```{r smart-quotes-38}
+cplot("-")
+```
+
+but there are two similar characters that you might see. The em dash,
+
+```{r smart-quotes-39}
+cplot("\"\\U2014\"")
+```
+
+```{r smart-quotes-40}
+cplot("\U2014")
+```
+
+is a longer dash. It has a width equal to the letter "m" in most proportional width fonts. There is another dash, the en dash
+
+```{r smart-quotes-41}
+cplot("\"\\U2013\"")
+```
+
+```{r smart-quotes-42}
+cplot("\U2013")
+```
+
+that is also longer than a minus sign, but about half the length of the em dash. It has a width that is equal to the letter "n" in most proportional width fonts.
+
+The em dash and en dash will often cause confusion because they look so much like the minus sign, but they will cause problems often in R code.
+
+There's a [nice web page][kuh1] about the historical developments of computer codes for quote marks and dashes and [another page][utf8] that talks about computer codes in general from the perspective of an R programmer.
+
+There are some other variants, such as the prime symbols, described in [this Wikipedia page][wik1].
+
+[kuh1]: https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
+[utf8]: https://cran.r-project.org/web/packages/utf8/vignettes/utf8.html
+[wik1]: https://en.wikipedia.org/wiki/Prime_(symbol)
