@@ -3,8 +3,9 @@ title: "MIMIC-III Clinical Database Demo"
 source: "New"
 author: Steve Simon
 date: "2025-07-11"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2025
 - datasets
 - SQL
 output: html_document

@@ -3,8 +3,9 @@ title: "Image of messy filing system"
 source: "New"
 author: Steve Simon
 date: "2025-01-29"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2025
 - Software engineering
 output: html_document
 page_update: no

@@ -3,8 +3,9 @@ title: "Cleaning height and weight measurements"
 source: "New"
 author: Steve Simon
 date: "2025-03-22"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2025
 - R programming
 output: html_document
 page_update: no

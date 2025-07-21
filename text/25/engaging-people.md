@@ -3,8 +3,9 @@ title: "New web recommendation"
 source: "Engaging People Most Affected by the Problem"
 author: Steve Simon
 date: "2025-01-14"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2025
 - Human side of statistics
 output: html_document
 page_update: no

@@ -4,9 +4,10 @@ author: "Steve Simon"
 source: new
 date: "2025-02-09"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2025
 - R programming
+- uses R code
 output: html_document
 page_update: complete
 ---
