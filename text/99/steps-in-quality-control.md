@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/quality.html
 author: Steve Simon
 date: 2004-03-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Quality control
 output: html_document

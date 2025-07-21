@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/circular.html
 author: Steve Simon
 date: 1999-12-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Circular data
 output: html_document

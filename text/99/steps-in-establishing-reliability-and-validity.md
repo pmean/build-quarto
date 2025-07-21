@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/reliability.html
 author: Steve Simon
 date: 2004-01-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Measuring agreement
 output: html_document

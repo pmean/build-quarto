@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/diag.html
 author: Steve Simon
 date: 1999-09-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Confidence intervals
 - Diagnostic testing

@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/merging.html
 author: Steve Simon
 date: 1999-01-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Data management
 - Dear Professor Mean

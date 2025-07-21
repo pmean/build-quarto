@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/all.html
 author: Steve Simon
 date: 1999-08-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Small sample size issues
 output: html_document

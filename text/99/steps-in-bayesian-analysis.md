@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/bayesian.html
 author: Steve Simon
 date: 2005-01-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Bayesian statistics
 output: html_document

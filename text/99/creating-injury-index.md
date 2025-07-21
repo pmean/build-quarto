@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/injury.html
 author: Steve Simon
 date: 1999-09-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Unusual data
 output: html_document
 page_update: partial

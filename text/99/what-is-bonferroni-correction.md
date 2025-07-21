@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/bonferroni.html
 author: Steve Simon
 date: 1999-09-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Multiple comparisons
 output: html_document

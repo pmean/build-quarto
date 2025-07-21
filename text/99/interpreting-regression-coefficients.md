@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/lin_coef.html
 author: Steve Simon
 date: 2002-06-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 output: html_document
 page_update: no

@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/longitudinal.html
 author: Steve Simon
 date: 1999-10-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Multilevel models
 output: html_document

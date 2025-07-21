@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/poisson.html
 author: Steve Simon
 date: 1999-09-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Poisson regression
 output: html_document

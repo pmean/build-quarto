@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/rsquared.html
 author: Steve Simon
 date: 1999-08-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Linear regression
 output: html_document

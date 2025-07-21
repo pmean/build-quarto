@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/logistic.html
 author: Steve Simon
 date: 1999-09-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Logistic regression
 output: html_document

@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/metaanalysis.html
 author: Steve Simon
 date: 1999-11-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Diagnostic testing
 output: html_document

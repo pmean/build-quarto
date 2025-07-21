@@ -1,12 +1,12 @@
 ---
-title: "Copy files from build-website to qblog"
+title: "Copy files from build-website to qblog3"
 author: "Steve Simon"
 format:
   html:
     embed-resources: true
 ---
 
-This program was written by Steve Simon on 2024-11-09 and is placed in the public domain.
+This program was written by Steve Simon on 2024-11-09 with a major modification on 2025-07-21 and is placed in the public domain.
 
 ## Preliminaries
 
@@ -25,7 +25,7 @@ library(tidyverse)
 #| label: locations
 old_path <- "../text"
 old_directories <- c("99", paste0("0", (0:9)), 10:25)
-new_path <- "../../qblog/posts"
+new_path <- "../../qblog3/posts"
 file_pattern <- "md$"
 ```
 

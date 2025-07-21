@@ -4,8 +4,8 @@ source: http://www.pmean.com/99/excel.html
 author: Steve Simon
 date: 1999-09-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 1999
 - Being updated
 - Data management
 - SPSS software
