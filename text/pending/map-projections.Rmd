@@ -1,0 +1,184 @@
+---
+title: "Different map projections"
+author: "Steve Simon"
+source: new
+date: "2020-03-15"
+categories:
+- Blog post
+tags:
+- Graphical display
+output: html_document
+page_update: complete
+---
+install.packages("rnaturalearthhires", repos="http://packages.ropensci.org", type="source")
+
+I have been drawing some maps in R and was struggling to figure out how to display things with the appropriate map projections. Here is some code where I experimented with a variety of approaches.
+
+<!---More--->
+
+The earth is a three dimensional object and there is no way to display it on a two dimensional computer screen without some distortion. Your goal is to minimize that distortion.
+
+First things first. There are a variety of map options, and they have a variety of storage methods.
+
+One of the [tutorials](https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html) I viewed had mentioned [Natural Earth](http://www.naturalearthdata.com/), an open source repository. You can get easy access to this information with two R packages: [rnaturalearth](https://cran.r-project.org/package=rnaturalearth) and [rnaturalearthdata](https://cran.r-project.org/package=rnaturalearthdata).
+
+What these give you is the ability to draw outlines of any and every country. You also get the outlines of states/provinces/districts in many countries. There's a lot more, but I want to just show something simple now to get you started.
+
+The traditional format for storing map information is shapefiles. The shapefile format was defined the 1990s and is a rather intimidating collection of multiple files. You can find a nice summary on the [Wikipedia page on shapefiles](https://en.wikipedia.org/wiki/Shapefile) or at a Library of Congress's [page on archival formats](https://www.loc.gov/preservation/digital/formats/fdd/fdd000280.shtml).
+
+A newer format, simple features, has greater flexibility and a simpler structure. It's still not simple, and I have been able to delve into the inner workings to get important details extracted.
+
+There is a package in R, [sf](https://cran.r-project.org/package=sf), that allows you to easily manipulate geographic data stored in a simple features format. This package has a nice series of vignettes, starting [here](https://r-spatial.github.io/sf/articles/sf1.html).
+
+Please note that the rnaturalearthhires package is needed below, but it cannot be downloaded directly (at least on my system). Instead you have to type in the command
+
+```{}
+install.packages("rnaturalearthhires", repos="http://packages.ropensci.org", type="source")
+```
+
+So to get everthing to work, even for a simple example, you need a whole bunch of packages. Here are the ones I use in this example.
+
+```{r setup}
+suppressMessages(suppressWarnings(library(lubridate)))
+suppressMessages(suppressWarnings(library(mapproj)))
+suppressMessages(suppressWarnings(library(rgeos)))
+suppressMessages(suppressWarnings(library(rjson)))
+suppressMessages(suppressWarnings(library(rnaturalearth)))
+suppressMessages(suppressWarnings(library(rnaturalearthdata)))
+suppressMessages(suppressWarnings(library(sf)))
+suppressMessages(suppressWarnings(library(stringr)))
+suppressMessages(suppressWarnings(library(tidyverse)))
+```
+
+I'm going to read in the United States file using the ne_states function. The country="United States of America" parameter excludes other countries that have states, provinces, or districts. I further want to remove Alaska and Hawaii from the file. So sorry to our 49th and 50th states, but the graphs are much more manageable for these examples when I focus just on the 48 states. The str function tells you a bit of information about how the data is organized within the states data frame.
+
+```{r us-states}
+ne_states(country="United States of America", returnclass = "sf") %>%
+  filter(postal == "CO") -> co
+str(co)
+names(co)
+```
+
+There is a lot of information in the list above and more than half of it is just giving different names to each state. The last column in this data frame is geometry and this is going to be the last column of any data stored in the simple features format. It ends up being a very long string with latitude and longitude coordinates for one or more polygons. You need multiple polygons for a disconnected state like Michigan, or a state with a lot of islands, like Florida.
+
+Similarly, the ne_countries function gets information about the boundaries of every country in the world.
+
+```{r world-countries}
+countries <- ne_countries(scale = "medium", returnclass = "sf")
+str(countries)
+```
+
+Notice that this data frame has a lot of statistical information (population, area, etc.) for each country. You don't need that information for the examples shown here, but it is nice to have.
+
+Here is a picture of the earth as it might look like if viewed from the sun. The north pole is showing because it is summertime in the northern hemisphere. All the countries that are easily visible in this perspective are outlined in black and the state of Colorado in the United States is outlined in red.
+
+```{r, echo=FALSE}
+projection_string <- "+proj=ortho +lon_0=-80 +lat_0=23.5 +ellps=WGS84 +no_defs"
+countries %>%
+  ggplot() + 
+  geom_sf(fill="white") + 
+  geom_sf(data=co, color="red", fill="white") +
+  coord_sf(crs=projection_string)
+```
+
+Colorado is a very interesting state with a simple boundary. The sourthern edge is 37 degrees latitude. The northern edge is 41 degrees north latitude. The eastern edge is 102 degrees, 02 minutes, 48 seconds west longitude. The western edge is 109 degrees, 02 minutes, 48 seconds west longitude.
+
+You can calculate the length of each of these boundaries with a bit of simple math. The radius of the earth is 6,378 kilometers. So the circumference is
+
+```{r}
+r <- 6378
+2*pi*r
+```
+
+Each degree of latitude is
+
+```{r}
+2*pi*r/360
+```
+
+So the four degrees that you would have to travel to get from the southern border (37 degrees) to the northern border (41 degrees) is 
+
+```{r}
+2*pi*r*4/360
+```
+
+The distance from the east to the west border is tricky. At the equator a degree of distance is 111.3 meters, but as you move away from the equator, the lines of latitude converge so a degree of longitude shrinks. A simple bit of geometry can show you that a single degree of longitude at 37 degrees is
+
+```{r}
+2*pi*r*cos(37*pi/180)/360
+```
+
+but at 41 degrees, it is
+
+```{r}
+2*pi*r*cos(41*pi/180)/360
+```
+
+That means that the 9 degrees that you travel from the eastern border to the western border is
+
+```{r}
+2*pi*r*cos(37*pi/180)*9/360
+```
+
+at 37 degrees, but only
+
+```{r}
+2*pi*r*cos(41*pi/180)*9/360
+```
+
+So the northern border of Colorado is shorter than the southern border.
+
+And all this time you thought Colorado was a rectangle! It's not. It is not a trapezoid either. It exists on a three dimensional globe and is more complex than any two dimensional geometric object can represent.
+
+You need to make a projection any time you try to represent a three dimensional object like the state of Colorado on a two dimensional medium like a computer screen or a sheet of paper. Here is the Lambert projection. 
+
+```{r laea-co}
+projection_string <- "+proj=laea +lon_0=-105.5 +lat_0=39 +datum=WGS84 +no_defs"
+co %>%
+  ggplot() + 
+  geom_sf(color="red", fill="white") +
+  coord_sf(crs=projection_string)
+```
+
+Notice that it has to warp some of the straight edge boundaries in order to keep the distances correct at the northern and southern borders.
+
+Plotting the entire continent of North America shows even more warping. Notice how the state of Alaska has been twisted almost 45 degrees to accomodate. The island of Greenland is also twisted but in the opposite direction.
+
+The distortions of the Lambert projection are more extreme when you are trying to fit large distances into a single map. The distortions become most noticeable at the edges. There is almost no distortion near the center.
+
+```{r laea-na}
+projection_string <- "+proj=laea +lon_0=-105.5 +lat_0=39 +datum=WGS84 +no_defs"
+countries %>%
+  filter(continent=="North America") %>%
+  ggplot() + 
+  geom_sf(color="red", fill="white") +
+  coord_sf(crs=projection_string)
+```
+
+The most common projection is the Mercator projection. Here is the Mercator projection for the state of Colorado.
+
+```{r mercator-co}
+projection_string <- "+proj=merc +lon_0=0 +datum=WGS84 +no_defs"
+co %>%
+  ggplot() + 
+  geom_sf(color="red", fill="white") +
+  coord_sf(crs=projection_string)
+```
+
+No warping of the boundaries but the lengths of the northern and southern borders are displayed incorrectly as having the same length. Not only are distances distorted, but areas as well. That becomes more obvious when you look at the entire continent.
+
+```{r mercator-na}
+projection_string <- "+proj=merc +lon_0=-105.5 +datum=WGS84 +no_defs"
+countries %>%
+  filter(continent=="North America") %>%
+  ggplot() + 
+  geom_sf(color="red", fill="white") +
+  coord_sf(crs=projection_string)
+```
+
+Notice how Alaska has grown to more than half the size of the rest of the United States. Alaska is big, but not that big! Also Greenland has expaned to mostrous proportions. The Mercator projection is simple, but it has a lot of distortions at the higher latitudes.
+
+But notice how the eastern border of the state of Alaska is perfectly vertical, representing a true north/south orientation.
+
+No projection system is perfect, and you should try different approaches to see what works best for your situation.
+

@@ -1,0 +1,24 @@
+---
+title: "New RMarkdown program"
+author: "Steve Simon"
+source: new
+date: "20xx-xx-xx"
+categories:
+- Blog post
+tags:
+- Incomplete
+output: html_document
+page_update: complete
+---
+
+Here is a brief abstract.
+
+<!---more--->
+
+Here are more details.
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE)
+Sys.Date()
+```
+
