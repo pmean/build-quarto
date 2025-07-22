@@ -3,8 +3,8 @@ title: New in SPSS version 13.0
 author: Steve Simon
 date: 2004-12-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - SPSS software
 output: html_document
 page_update: partial

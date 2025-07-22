@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/skew.html
 author: Steve Simon
 date: 2003-06-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Descriptive statistics
 output: html_document
 page_update: complete

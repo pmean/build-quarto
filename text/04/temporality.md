@@ -3,8 +3,8 @@ title: Temporality of Causes
 author: Steve Simon
 date: 2004-04-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Corroborating evidence
 output: html_document
 page_update: partial

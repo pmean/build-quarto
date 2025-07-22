@@ -3,8 +3,8 @@ title: Statistical consulting
 author: Steve Simon
 date: 2004-06-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Teaching resources
 output: html_document
 page_update: partial

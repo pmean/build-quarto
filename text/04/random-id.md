@@ -3,8 +3,8 @@ title: Random identification numbers
 author: Steve Simon
 date: 2004-07-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Randomization
 output: html_document
 page_update: partial

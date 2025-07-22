@@ -3,8 +3,8 @@ title: So you want to volunteer for a research study?
 author: Steve Simon
 date: 2004-08-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Exclusions in research
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Data Mining with Clementine
 author: Steve Simon
 date: 2004-06-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Data mining
 - Statistical computing
 output: html_document

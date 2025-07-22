@@ -4,8 +4,8 @@ source: http://www.pmean.com/05/RaceEthnicity.html
 author: Steve Simon
 date: 2003-02-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Broken link
 - Data management
 output: html_document

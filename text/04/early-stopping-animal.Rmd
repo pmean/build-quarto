@@ -3,8 +3,8 @@ title: Early stopping in an animal study
 author: Steve Simon
 date: 2004-07-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Early stopping
 - Rmarkdown code
 output: html_document

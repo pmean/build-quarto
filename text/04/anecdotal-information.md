@@ -3,8 +3,8 @@ title: Anecdotal information
 author: Steve Simon
 date: 2004-11-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Critical appraisal
 output: html_document
 page_update: complete

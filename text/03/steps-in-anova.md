@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/03/anova.html
 date: 2003-06-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Analysis of variance 
 output: html_document
 page_update: complete

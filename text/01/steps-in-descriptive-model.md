@@ -3,8 +3,8 @@ title: Steps in a descriptive model
 author: Steve Simon
 date: 2001-10-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Descriptive statistics
 output: html_document

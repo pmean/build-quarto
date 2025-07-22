@@ -3,8 +3,8 @@ title: Unnecessary diagnostic tests
 author: Steve Simon
 date: 2004-10-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Diagnostic testing
 output: html_document
 page_update: partial

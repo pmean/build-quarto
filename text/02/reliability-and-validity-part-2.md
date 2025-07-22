@@ -3,8 +3,8 @@ title: Establishing validity and reliability
 author: Steve Simon
 date: 2002-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Ask Professor Mean
 - Incomplete page
 - Measuring agreement

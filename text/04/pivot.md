@@ -3,8 +3,8 @@ title: Microsoft Excel Pivot Tables
 author: Steve Simon
 date: 2004-08-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Statistical computing
 output: html_document
 page_update: partial

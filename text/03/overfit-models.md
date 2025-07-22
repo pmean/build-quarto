@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/03/overfit.html
 date: 2003-07-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Modeling issues
 output: html_document
 page_update: complete

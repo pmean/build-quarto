@@ -3,8 +3,8 @@ title: Testing for side effects
 author: Steve Simon
 date: 2004-07-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Being updated
 output: html_document
 page_update: no

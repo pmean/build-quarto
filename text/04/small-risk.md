@@ -3,8 +3,8 @@ title: Small relative risk
 author: Steve Simon
 date: 2004-06-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Corroborating evidence
 output: html_document
 page_update: partial

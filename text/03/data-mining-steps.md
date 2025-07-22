@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/datamining.html
 author: Steve Simon
 date: 2003-09-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Broken link
 - Data mining
 - Incomplete page

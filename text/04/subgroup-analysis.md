@@ -3,8 +3,8 @@ title: Subgroup analysis
 author: Steve Simon
 date: 2004-12-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Being updated
 output: html_document
 page_update: no

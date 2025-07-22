@@ -3,8 +3,8 @@ title: Post hoc power
 author: Steve Simon
 date: 2002-11-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Post hoc power
 output: html_document
 page_update: partial

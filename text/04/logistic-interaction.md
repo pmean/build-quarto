@@ -3,8 +3,8 @@ title: Interactions in logistic regression
 author: Steve Simon
 date: 2004-04-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Logistic regression
 output: html_document
 page_update: partial

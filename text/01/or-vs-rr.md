@@ -3,8 +3,8 @@ title: Odds ratio versus relative risk
 author: Steve Simon
 date: 2001-01-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Measuring benefit and risk
 output: html_document

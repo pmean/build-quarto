@@ -3,8 +3,8 @@ title: Checking the assumption of normality
 author: Steve Simon
 date: 2002-09-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Ask Professor Mean
 - Modeling issues
 output: html_document

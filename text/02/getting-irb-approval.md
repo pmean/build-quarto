@@ -3,8 +3,8 @@ title: Getting IRB approval for your research
 author: Steve Simon
 date: 2002-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Incomplete pages
 - Website details
 output: html_document

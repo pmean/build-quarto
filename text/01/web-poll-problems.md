@@ -3,8 +3,8 @@ title: Web polls
 author: Steve Simon
 date: 2001-07-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Research design
 output: html_document

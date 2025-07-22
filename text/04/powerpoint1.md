@@ -3,8 +3,8 @@ title: Bluejacket Toastmasters speech
 author: Steve Simon
 date: 2004-07-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Presenting research
 output: html_document
 page_update: partial

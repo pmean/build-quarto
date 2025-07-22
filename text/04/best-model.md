@@ -3,8 +3,8 @@ title: What's the best statistical model?
 author: Steve Simon
 date: 2004-09-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Modeling issues
 output: html_document
 page_update: partial

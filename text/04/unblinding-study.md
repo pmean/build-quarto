@@ -3,8 +3,8 @@ title: Unblinding at the end of a study
 author: Steve Simon
 date: 2004-11-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Blinding in research
 output: html_document
 page_update: partial

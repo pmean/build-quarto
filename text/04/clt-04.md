@@ -3,8 +3,8 @@ title: Central Limit Theorem
 author: Steve Simon
 date: 2004-03-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Modeling issues
 output: html_document
 page_update: partial

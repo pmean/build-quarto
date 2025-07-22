@@ -3,8 +3,8 @@ title: Enumerative and Analytic Studies
 author: Steve Simon
 date: 2004-02-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Descriptive statistics
 - Research design
 output: html_document

@@ -3,8 +3,8 @@ title: McNemar's Test
 author: Steve Simon
 date: 2004-06-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Unusual data
 output: html_document
 page_update: partial

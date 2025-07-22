@@ -3,8 +3,8 @@ title: Nonlinear Least Squares in S-plus and R
 author: Steve Simon
 date: 2004-06-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Nonlinear regression
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Testing multinomial proportions
 author: Steve Simon
 date: 2004-11-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Probability concepts
 output: html_document
 page_update: partial

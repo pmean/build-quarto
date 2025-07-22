@@ -3,8 +3,8 @@ title: Weblog entries from the 2004 JSM
 author: Steve Simon
 date: 2004-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Being updated
 output: html_document
 page_update: no

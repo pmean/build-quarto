@@ -3,8 +3,8 @@ title: Problems with a very small sample
 author: Steve Simon
 date: 2001-10-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Small sample size issues
 output: html_document

@@ -3,8 +3,8 @@ title: S-shaped curves
 author: Steve Simon
 date: 2004-02-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Nonlinear regression
 output: html_document
 page_update: partial

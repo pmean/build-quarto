@@ -3,8 +3,8 @@ title: Data management for survival data
 author: Steve Simon
 date: 2002-08-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Being updated
 - Survival analysis
 output: html_document

@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/diagnostic.html
 author: Steve Simon
 date: 2003-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Website details
 output: html_document
 page_update: complete

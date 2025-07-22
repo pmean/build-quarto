@@ -3,8 +3,8 @@ title: Exploring interactions in a linear regression model
 author: Steve Simon
 date: 2002-08-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Ask Professor Mean
 - Linear regression
 output: html_document

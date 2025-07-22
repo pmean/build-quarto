@@ -3,8 +3,8 @@ title: Privacy concerns in research
 author: Steve Simon
 date: 2002-07-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Ask Professor Mean
 - Privacy in research
 output: html_document

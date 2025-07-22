@@ -3,8 +3,8 @@ title: SPSS citation
 author: Steve Simon
 date: 2002-03-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Ask Professor Mean
 - SPSS software
 output: html_document

@@ -3,8 +3,8 @@ title: One tailed p-values
 author: Steve Simon
 date: 2004-04-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Pvalues
 output: html_document
 page_update: partial

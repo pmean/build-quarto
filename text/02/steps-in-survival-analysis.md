@@ -3,8 +3,8 @@ title: Steps in a typical survival data analysis
 author: Steve Simon
 date: 2002-10-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Survival analysis
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: "Publication Bias references"
 author: Steve Simon
 date: 2007-06-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Being updated
 output: html_document
 page_update: partial

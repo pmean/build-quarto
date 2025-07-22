@@ -3,8 +3,8 @@ title: The concepts behind the logistic regression model
 author: Steve Simon
 date: 2002-07-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Incomplete pages
 - Logistic regression
 output: html_document

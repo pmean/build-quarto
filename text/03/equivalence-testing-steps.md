@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/equivalence.html
 author: Steve Simon
 date: 2003-11-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Hypothesis testing 
 - Incomplete page
 output: html_document

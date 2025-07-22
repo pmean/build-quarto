@@ -3,8 +3,8 @@ title: A simple microarray experiment
 author: Steve Simon
 date: 2004-09-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Data mining
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/nonlinear_growth.html
 author: Steve Simon
 date: 2003-10-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Nonlinear regression
 output: html_document
 page_update: complete

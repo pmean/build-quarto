@@ -4,8 +4,9 @@ author: Steve Simon
 source: http://www.pmean.com/03/consulting.html
 date: 2003-04-30
 categories:
+- "*Blog post*
 - Obsolete page
-tags:
+- 2003
 - Professional details
 output: html_document
 page_update: complete

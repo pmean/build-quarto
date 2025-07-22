@@ -3,8 +3,8 @@ title: Breaking the blind
 author: Steve Simon
 date: 2004-07-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Blinding in research
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Weblinks for December 2004
 author: Steve Simon
 date: 2004-12-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Being updated
 output: html_document
 page_update: no

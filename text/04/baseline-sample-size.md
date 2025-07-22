@@ -3,8 +3,8 @@ title: Sample size calculations in studies with a baseline
 author: Steve Simon
 date: 2004-07-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Sample size justification
 output: html_document
 page_update: partial

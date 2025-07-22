@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/04/OrdinalLogistic.html
 date: 2004-09-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Sample size justification
 output: html_document
 page_update: partial

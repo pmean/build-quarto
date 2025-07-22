@@ -3,8 +3,8 @@ title: Mean or median?
 author: Steve Simon
 date: 2003-07-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Descriptive statistics
 output: html_document
 page_update: complete

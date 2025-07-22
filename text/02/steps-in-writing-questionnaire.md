@@ -3,8 +3,8 @@ title: So you want to write a questionnaire
 author: Steve Simon
 date: 2002-07-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Survey design
 output: html_document
 page_update: partial

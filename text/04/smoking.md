@@ -3,8 +3,8 @@ title: Health effects of smoking
 author: Steve Simon
 date: 2004-05-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Corroborating evidence
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/04/randomization.html
 date: 2004-07-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Unusual data
 output: html_document
 page_update: partial

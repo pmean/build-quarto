@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/mle.html
 author: Steve Simon
 date: 2003-05-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Statistical theory
 output: html_document
 page_update: complete

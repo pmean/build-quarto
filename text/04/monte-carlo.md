@@ -3,8 +3,8 @@ title: Monte Carlo methods
 author: Steve Simon
 date: 2004-05-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Statistical computing
 output: html_document
 page_update: partial

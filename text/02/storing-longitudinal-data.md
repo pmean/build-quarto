@@ -3,8 +3,8 @@ title: Longitudinal data
 author: Steve Simon
 date: 2002-07-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - SPSS software
 output: html_document
 page_update: partial

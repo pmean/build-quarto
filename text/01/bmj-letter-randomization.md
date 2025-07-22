@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/01/random42.html
 date: 2001-10-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Randomization in research
 output: html_document

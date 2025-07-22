@@ -3,8 +3,8 @@ title: Ethics of a placebo group
 author: Steve Simon
 date: 2001-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Website details
 output: html_document

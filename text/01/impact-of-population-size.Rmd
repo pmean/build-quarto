@@ -3,8 +3,8 @@ title: The minimal impact of population size on power and precision
 author: Steve Simon
 date: 2001-01-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Confidence intervals
 - Rmarkdown code
 - Sample size justification

@@ -3,8 +3,8 @@ title: Excluding placebo responders
 author: Steve Simon
 date: 2004-06-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Exclusions in research
 - Placebos in research
 output: html_document

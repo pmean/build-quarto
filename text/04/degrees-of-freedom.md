@@ -3,8 +3,8 @@ title: Degrees of freedom, Part 2
 author: Steve Simon
 date: 2004-04-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Statistical theory
 output: html_document
 page_update: partial

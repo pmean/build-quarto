@@ -3,8 +3,8 @@ title: Correlations with categorical variables
 author: Steve Simon
 date: 2004-05-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Descriptive statistics
 output: html_document
 page_update: partial

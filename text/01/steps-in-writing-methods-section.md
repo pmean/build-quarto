@@ -3,8 +3,8 @@ title: Writing the methods section of your grant
 author: Steve Simon
 date: 2001-01-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Incomplete page
 - Writing research grants

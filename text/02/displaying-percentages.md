@@ -3,8 +3,8 @@ title: Displaying tables of percentages
 author: Steve Simon
 date: 2002-11-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Ask Professor Mean
 - Descriptive statistics
 - Writing research papers

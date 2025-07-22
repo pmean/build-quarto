@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/03/cluster.html
 date: 2003-05-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Sample size justification
 output: html_document
 page_update: complete

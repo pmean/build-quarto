@@ -3,8 +3,8 @@ title: SPSS dialog boxes for logistic regression
 author: Steve Simon
 date: 2002-07-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Logistic regression
 output: html_document
 page_update: partial

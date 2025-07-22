@@ -3,8 +3,8 @@ title: Measuring heterogeneity in meta-analysis
 author: Steve Simon
 date: 2004-11-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Systematic overviews
 output: html_document
 page_update: partial

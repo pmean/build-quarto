@@ -3,8 +3,8 @@ title: Can you recommend a good book?
 author: Steve Simon
 date: 2004-12-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Teaching resources
 - Being updated
 output: html_document

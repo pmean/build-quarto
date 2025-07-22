@@ -3,8 +3,8 @@ title: Multiple degree of freedom tests
 author: Steve Simon
 date: 2004-09-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Analysis of variance
 output: html_document
 page_update: partial

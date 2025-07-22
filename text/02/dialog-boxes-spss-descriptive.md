@@ -3,8 +3,8 @@ title: SPSS dialog boxes for a descriptive analysis
 author: Steve Simon
 date: 2002-06-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Descriptive Statistics
 output: html_document
 page_update: partial

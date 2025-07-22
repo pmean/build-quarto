@@ -3,8 +3,8 @@ title: Controversy over stopping a study early
 author: Steve Simon
 date: 2004-11-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Early stopping
 output: html_document
 page_update: no

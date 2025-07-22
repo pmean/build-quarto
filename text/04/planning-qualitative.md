@@ -3,8 +3,8 @@ title: Planning a qualitative research study
 author: Steve Simon
 date: 2004-07-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Qualitative research
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Hiring a statistician after the data has been collected
 author: Steve Simon
 date: 2004-12-20
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2004
 - Human side of Statistics
 output: html_document
 page_update: partial

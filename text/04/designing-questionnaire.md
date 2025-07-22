@@ -3,8 +3,8 @@ title: Designing a questionnaire
 author: Steve Simon
 date: 2004-12-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Survey design
 output: html_document
 page_update: partial

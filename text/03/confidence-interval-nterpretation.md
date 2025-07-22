@@ -4,8 +4,8 @@ source: http://www.pmean.com/04/confidence.html
 author: Steve Simon
 date: 2004-11-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Being updated
 output: html_document
 page_update: complete

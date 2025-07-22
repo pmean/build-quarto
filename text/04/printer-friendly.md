@@ -3,8 +3,8 @@ title: Printer friendly versions of web pages
 author: Steve Simon
 date: 2004-09-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Website details
 output: html_document
 page_update: partial

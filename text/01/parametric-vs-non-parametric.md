@@ -3,8 +3,8 @@ title: Parametric versus nonparametric tests
 author: Steve Simon
 date: 2001-07-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Unusual data
 output: html_document

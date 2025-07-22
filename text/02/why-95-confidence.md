@@ -3,8 +3,8 @@ title: Why 95% confidence limits?
 author: Steve Simon
 date: 2002-05-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Ask Professor Mean
 - Confidence intervals
 output: html_document

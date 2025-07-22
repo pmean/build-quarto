@@ -3,8 +3,8 @@ title: Number needed to harm examples
 author: Steve Simon
 date: 2004-02-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Measuring benefit and risk
 output: html_document
 page_update: partial

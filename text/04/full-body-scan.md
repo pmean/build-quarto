@@ -3,8 +3,8 @@ title: Full-Body Computed Tomography Screening
 author: Steve Simon
 date: 2004-09-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Diagnostic testing
 output: html_document
 page_update: partial

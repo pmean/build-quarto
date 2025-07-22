@@ -3,8 +3,8 @@ title: Overlooking one's own flaws
 author: Steve Simon
 date: 2004-05-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Critical appraisal
 output: html_document
 page_update: partial

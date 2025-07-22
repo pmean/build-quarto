@@ -3,8 +3,8 @@ title: Alternatives to equipoise
 author: Steve Simon
 date: 2004-11-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Equipoise in research
 output: html_document
 page_update: partial

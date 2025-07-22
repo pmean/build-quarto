@@ -3,8 +3,8 @@ title: Steps for establishing a quality control program
 author: Steve Simon
 date: 2004-03-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Quality control
 output: html_document
 page_update: partial

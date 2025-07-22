@@ -3,8 +3,8 @@ title: Quality control in the laboratory
 author: Steve Simon
 date: 2004-03-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Quality control
 output: html_document
 page_update: partial

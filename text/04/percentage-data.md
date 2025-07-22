@@ -3,8 +3,8 @@ title: Analyzing percentage data
 author: Steve Simon
 date: 2004-05-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Unusual data
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Rates versus proportions
 author: Steve Simon
 date: 2004-09-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Confidence intervals
 output: html_document
 page_update: partial

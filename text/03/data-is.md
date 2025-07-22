@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/data_is.html
 author: Steve Simon
 date: 2003-11-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Broken link
 - Writing research papers
 output: html_document

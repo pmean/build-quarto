@@ -3,8 +3,8 @@ title: Unequal group sizes
 author: Steve Simon
 date: 2001-11-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Analysis of variance
 output: html_document

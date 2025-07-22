@@ -3,8 +3,8 @@ title: Biography
 author: Steve Simon
 date: 2002-01-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2002
 - Professional details
 output: html_document
 page_update: partial

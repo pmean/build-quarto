@@ -3,8 +3,8 @@ title: Publication bias
 author: Steve Simon
 date: 2004-06-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Publication bias
 output: html_document
 page_update: partial

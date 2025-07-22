@@ -3,8 +3,8 @@ title: Sample size for a survival data model
 author: Steve Simon
 date: 2004-05-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Sample size justification
 output: html_document
 page_update: partial

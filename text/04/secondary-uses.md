@@ -3,8 +3,8 @@ title: Secondary Uses of Data
 author: Steve Simon
 date: 2004-08-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Privacy in research
 output: html_document
 page_update: partial

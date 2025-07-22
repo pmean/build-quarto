@@ -4,8 +4,8 @@ source: http://www.pmean.com/03/poiss_syntax.html
 author: Steve Simon
 date: 2003-07-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2003
 - Poisson regression 
 - Obsolete page
 output: html_document

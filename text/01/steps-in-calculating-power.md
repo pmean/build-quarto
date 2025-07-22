@@ -3,8 +3,8 @@ title: Three things you need for a power calculation
 author: Steve Simon
 date: 2001-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2001
 - Being updated
 - Website details
 output: html_document

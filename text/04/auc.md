@@ -3,8 +3,8 @@ title: Evaluating the AUC for an ROC curve
 author: Steve Simon
 date: 2004-07-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2004
 - Diagnostic testing
 output: html_document
 page_update: partial
