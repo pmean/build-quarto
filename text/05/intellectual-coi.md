@@ -3,8 +3,8 @@ title: Taking charges of conflicting interest too far
 author: Steve Simon
 date: 2005-06-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Broken link
 - Conflict of interest
 output: html_document

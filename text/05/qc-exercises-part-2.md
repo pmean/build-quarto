@@ -3,8 +3,8 @@ title: Quality control exercises, Part 2
 author: Steve Simon
 date: 2005-10-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Quality control
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Another top ten study in EBM (February 14, 2005)
 author: Steve Simon
 date: 2005-06-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: no

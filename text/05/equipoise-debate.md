@@ -3,8 +3,8 @@ title: Two articles debating equipoise
 author: Steve Simon
 date: 2005-09-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Equipoise in research
 output: html_document

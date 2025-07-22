@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/ContinuousVariables.html
 date: 2005-02-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Logistic regression
 output: html_document

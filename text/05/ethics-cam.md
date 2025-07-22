@@ -3,8 +3,8 @@ title:  Ethical principles for Complementary and Alternative Medicine
 author: Steve Simon
 date: 2005-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: no

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SurrogateOutcomes.html
 date: 2005-03-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: partial

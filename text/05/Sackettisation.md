@@ -3,8 +3,8 @@ title: Sackettisation, the artificial linkage
 author: Steve Simon
 date: 2005-02-21
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2005
 - Evidence Based Medicine
 output: html_document
 page_update: partial

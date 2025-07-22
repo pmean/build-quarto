@@ -3,8 +3,8 @@ title: Cumulative meta-analysis
 author: Steve Simon
 date: 2005-03-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Systematic overviews
 output: html_document

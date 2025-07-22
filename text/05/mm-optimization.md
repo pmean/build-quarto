@@ -3,8 +3,8 @@ title: Optimization using the MM algorithm
 author: Steve Simon
 date: 2005-02-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Statistical computing
 output: html_document

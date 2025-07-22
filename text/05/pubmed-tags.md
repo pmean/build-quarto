@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/PubMedTags.html
 date: 2005-04-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Information searching
 output: html_document

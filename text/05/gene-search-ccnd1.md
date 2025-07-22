@@ -3,8 +3,8 @@ title: Lost page
 author: Steve Simon
 date: 2005-10-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: no

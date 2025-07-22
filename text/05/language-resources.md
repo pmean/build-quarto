@@ -3,8 +3,8 @@ title: Language resources
 author: Steve Simon
 date: 2005-03-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Information searching
 output: html_document

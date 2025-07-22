@@ -3,8 +3,8 @@ title: Adjusting for covariate imbalance
 author: Steve Simon
 date: 2005-05-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Covariate adjustment
 output: html_document

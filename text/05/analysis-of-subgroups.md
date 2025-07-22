@@ -3,8 +3,8 @@ title: Analysis of subgroup results
 author: Steve Simon
 date: 2005-03-10
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2005
 - Multiple comparisons
 output: html_document
 page_update: partial

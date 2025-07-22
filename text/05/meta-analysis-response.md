@@ -3,8 +3,8 @@ title: Responding to a critique of meta-analysis
 author: Steve Simon
 date: 2005-10-10
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Systematic overviews
 output: html_document

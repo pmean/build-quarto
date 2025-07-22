@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SlowProgress.html
 date: 2005-11-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Website details
 output: html_document

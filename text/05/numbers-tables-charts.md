@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/NumbersTablesCharts.html
 date: 2005-04-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Descriptive statistics
 output: html_document

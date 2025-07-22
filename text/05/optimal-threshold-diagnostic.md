@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/OptimalThreshold.html
 date: 2005-04-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Diagnostic tests
 output: html_document

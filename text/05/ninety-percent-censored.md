@@ -3,8 +3,8 @@ title: More than 90% censored values
 author: Steve Simon
 date: 2005-04-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Survival analysis
 output: html_document
 page_update: partial

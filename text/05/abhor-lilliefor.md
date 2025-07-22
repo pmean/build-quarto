@@ -3,8 +3,8 @@ title: I abhor Lilliefor and other tests of normality
 author: Steve Simon
 date: 2005-06-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Statistical assumptions
 output: html_document
 page_update: partial

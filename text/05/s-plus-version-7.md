@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SplusVersion7.html
 date: 2005-04-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Statistical computing
 output: html_document

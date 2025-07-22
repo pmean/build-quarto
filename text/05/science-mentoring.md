@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/ScienceMentoring.html
 date: 2005-09-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Teaching resources
 output: html_document

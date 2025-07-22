@@ -3,8 +3,8 @@ title: Object oriented features of R
 author: Steve Simon
 date: 2005-12-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - R software
 output: html_document

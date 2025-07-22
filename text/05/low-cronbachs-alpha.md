@@ -3,8 +3,8 @@ title: Very low values from Cronbach's Alpha
 author: Steve Simon
 date: 2005-07-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Measuring agreement
 output: html_document
 page_update: partial

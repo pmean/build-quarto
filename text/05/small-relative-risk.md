@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SmallRelativeRisk.html
 date: 2005-01-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Measuring benefit and risk
 output: html_document

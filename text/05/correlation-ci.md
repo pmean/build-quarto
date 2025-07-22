@@ -3,8 +3,8 @@ title: Confidence interval for a correlation coefficient
 author: Steve Simon
 date: 2005-07-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Confidence intervals
 - Sample size justification
 output: html_document

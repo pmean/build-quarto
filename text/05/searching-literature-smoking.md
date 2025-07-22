@@ -3,8 +3,8 @@ title: More on searching the literature
 author: Steve Simon
 date: 2005-05-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: no

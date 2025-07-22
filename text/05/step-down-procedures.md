@@ -3,8 +3,8 @@ title: Step-down procedures for multiple comparisons
 author: Steve Simon
 date: 2005-06-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Hypothesis testing
 output: html_document

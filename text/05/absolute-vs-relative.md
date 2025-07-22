@@ -3,8 +3,8 @@ title: The difference between absolute risks and relative risks
 author: Steve Simon
 date: 2005-07-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Measuring benefit and risk
 output: html_document
 page_update: partial

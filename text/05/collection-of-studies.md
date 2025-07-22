@@ -3,8 +3,8 @@ title: A collection of randomized and non-randomized studies
 author: Steve Simon
 date: 2005-03-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Observational studies
 - Randomization

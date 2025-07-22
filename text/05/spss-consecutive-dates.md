@@ -3,8 +3,8 @@ title: Placing consecutive dates in a column of an SPSS file
 author: Steve Simon
 date: 2005-01-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - SPSS software
 output: html_document
 page_update: partial

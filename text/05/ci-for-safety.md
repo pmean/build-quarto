@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/ConfidenceIntervalA.html
 date: 2005-05-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Confidence intervals
 output: html_document

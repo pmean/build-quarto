@@ -3,8 +3,8 @@ title: Growth curves
 author: Steve Simon
 date: 2005-03-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Nonlinear regression
 output: html_document

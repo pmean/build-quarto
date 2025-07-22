@@ -3,8 +3,8 @@ title: Preserving spacing in html code
 author: Steve Simon
 date: 2005-05-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Website details
 output: html_document

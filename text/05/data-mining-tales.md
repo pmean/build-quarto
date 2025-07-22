@@ -3,8 +3,8 @@ title: Two cautionary tales about data mining
 author: Steve Simon
 date: 2005-01-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Data mining
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/PowerPointA.html
 date: 2005-03-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Presenting research
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SeventeenYears.html
 date: 2005-11-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Teaching Resources
 output: html_document

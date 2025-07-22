@@ -3,8 +3,8 @@ title: More on information theory models
 author: Steve Simon
 date: 2005-03-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Information theory
 output: html_document

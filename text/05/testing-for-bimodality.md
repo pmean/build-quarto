@@ -3,8 +3,8 @@ title: Testing for bimodality
 author: Steve Simon
 date: 2005-09-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - R software
 - Stata software
 output: html_document

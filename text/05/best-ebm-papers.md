@@ -3,8 +3,8 @@ title: Best EBM methods or teaching papers in 2004
 author: Steve Simon
 date: 2005-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Evidence Based Medicine
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/ScientificValidity.html
 date: 2005-08-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Ethics in research
 output: html_document

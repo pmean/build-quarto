@@ -3,8 +3,8 @@ title: Converting an odds ratio to a relative risk
 author: Steve Simon
 date: 2005-08-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Measuring benefit and risk
 output: html_document

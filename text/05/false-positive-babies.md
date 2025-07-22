@@ -3,8 +3,8 @@ title: The costs of a false positive test
 author: Steve Simon
 date: 2005-03-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Diagnostic testing
 output: html_document

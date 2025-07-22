@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SelectiveReporting.html
 date: 2005-03-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Publication bias
 output: html_document

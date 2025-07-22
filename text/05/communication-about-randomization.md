@@ -3,8 +3,8 @@ title: Effective communication about randomized clinical trials (created 2005-02
 author: Steve Simon
 date: 2005-08-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: no

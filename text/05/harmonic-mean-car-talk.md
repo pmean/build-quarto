@@ -3,8 +3,8 @@ title: A surprising application of the harmonic mean
 author: Steve Simon
 date: 2005-02-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Statistical theory
 output: html_document

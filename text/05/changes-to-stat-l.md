@@ -3,8 +3,8 @@ title: Changes to STAT-L/sci.stat.consult
 author: Steve Simon
 date: 2005-05-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Broken link
 - Obsolete page
 - Teaching resources

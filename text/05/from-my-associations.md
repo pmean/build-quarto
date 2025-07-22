@@ -3,8 +3,8 @@ title: From my associations with doctors in controlled trials
 author: Steve Simon
 date: 2005-09-09
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2005
 - Research ethics
 output: html_document
 page_update: partial

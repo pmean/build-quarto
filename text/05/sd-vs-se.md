@@ -3,8 +3,8 @@ title: Standard deviation versus standard error (May 16, 2005)
 author: Steve Simon
 date: 2005-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: no

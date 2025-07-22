@@ -3,8 +3,8 @@ title: Inferential and descriptive statistics
 author: Steve Simon
 date: 2005-03-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Descriptive statistics
 output: html_document

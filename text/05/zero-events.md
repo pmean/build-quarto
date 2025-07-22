@@ -3,8 +3,8 @@ title:  Confidence interval with zero events
 author: Steve Simon
 date: 2001-01-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Confidence intervals
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Control charts for monitoring mortality rates
 author: Steve Simon
 date: 2005-02-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Adverse events
 output: html_document

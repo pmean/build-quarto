@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/OddsRatios.html
 date: 2005-01-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Measuring benefit and risk
 output: html_document

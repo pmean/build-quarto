@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/TrickR.html
 date: 2005-10-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - R software
 output: html_document

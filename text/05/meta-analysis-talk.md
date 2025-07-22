@@ -3,8 +3,8 @@ title: Meta-analysis talk
 author: Steve Simon
 date: 2005-05-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Systematic overviews
 output: html_document

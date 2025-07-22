@@ -3,8 +3,8 @@ title: Steps in a typical Bayesian model
 author: Steve Simon
 date: 2005-01-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Bayesian statistics
 output: html_document
 page_update: partial

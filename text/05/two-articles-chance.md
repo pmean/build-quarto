@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/ChanceWiki.html
 date: 2005-08-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Wiki pages
 output: html_document
 page_update: partial

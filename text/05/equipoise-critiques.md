@@ -3,8 +3,8 @@ title: More thoughts on equipoise
 author: Steve Simon
 date: 2005-01-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Equipoise in research
 output: html_document

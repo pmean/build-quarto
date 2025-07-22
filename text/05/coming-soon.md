@@ -3,8 +3,8 @@ title: Coming soon!
 author: Steve Simon
 date: 2005-03-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Website details
 output: html_document

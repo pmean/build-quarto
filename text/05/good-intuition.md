@@ -3,8 +3,8 @@ title: How good is your intuition?
 author: Steve Simon
 date: 2005-01-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Critical appraisal
 output: html_document

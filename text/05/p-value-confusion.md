@@ -3,8 +3,8 @@ title: Confusion about p-values
 author: Steve Simon
 date: 2005-01-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Hypothesis testing
 output: html_document
 page_update: partial

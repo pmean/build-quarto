@@ -3,8 +3,8 @@ title: Do I have enough data after 24 months of time?
 author: Steve Simon
 date: 2005-04-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Clinical importance
 - Early stopping

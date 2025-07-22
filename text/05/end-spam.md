@@ -3,8 +3,8 @@ title: Technology to end spam
 author: Steve Simon
 date: 2005-03-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Bayesian statistics
 output: html_document

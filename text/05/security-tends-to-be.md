@@ -3,8 +3,8 @@ title: Security tends to be
 author: Steve Simon
 date: 2005-02-21
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2005
 - Being updated
 - Incomplete page
 - Privacy in research

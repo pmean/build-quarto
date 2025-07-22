@@ -3,8 +3,8 @@ title: Searching for information about the molasses with milk enema
 author: Steve Simon
 date: 2005-10-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Information searching
 output: html_document

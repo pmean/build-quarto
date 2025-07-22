@@ -3,8 +3,8 @@ title: Measuring agreement
 author: Steve Simon
 date: 2005-04-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Measuring agreement
 output: html_document

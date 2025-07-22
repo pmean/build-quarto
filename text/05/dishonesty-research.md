@@ -3,8 +3,8 @@ title: Dishonesty in medical research
 author: Steve Simon
 date: 2005-09-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Ethics in research
 output: html_document

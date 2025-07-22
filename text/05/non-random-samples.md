@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/NonrandomSamples.html
 date: 2005-03-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Observational studies
 output: html_document

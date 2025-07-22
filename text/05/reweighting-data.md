@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/ReweightingData.html
 date: 2005-01-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Covariate adjustment
 output: html_document

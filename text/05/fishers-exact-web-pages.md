@@ -3,8 +3,8 @@ title: Web page for Fisher's Exact test
 author: Steve Simon
 date: 2005-11-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Statistical computing
 output: html_document

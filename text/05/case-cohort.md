@@ -3,8 +3,8 @@ title: Case cohort design
 author: Steve Simon
 date: 2005-08-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Observational studies
 output: html_document
 page_update: partial

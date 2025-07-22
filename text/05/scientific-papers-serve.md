@@ -3,8 +3,8 @@ title: Scientific papers serve the needs of their authors
 author: Steve Simon
 date: 2005-02-21
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2005
 - Writing research papers
 output: html_document
 page_update: partial

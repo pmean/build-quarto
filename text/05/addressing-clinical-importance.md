@@ -3,8 +3,8 @@ title: Clinical importance
 author: Steve Simon
 date: 2005-03-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Clinical importance
 output: html_document

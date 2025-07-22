@@ -3,8 +3,8 @@ title: Expected value and moments
 author: Steve Simon
 date: 2005-07-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Probability concepts
 output: html_document

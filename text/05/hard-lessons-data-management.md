@@ -3,8 +3,8 @@ title: Hard learned lessons
 author: Steve Simon
 date: 2005-11-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Data management
 output: html_document

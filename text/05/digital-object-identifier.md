@@ -3,8 +3,8 @@ title: The Digital Object Identifier
 author: Steve Simon
 date: 2005-01-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Information searching
 output: html_document

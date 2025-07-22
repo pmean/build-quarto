@@ -3,8 +3,8 @@ title: Overview of evidence-based-medicine
 author: Steve Simon
 date: 2005-07-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Teaching resources
 output: html_document

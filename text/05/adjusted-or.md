@@ -3,8 +3,8 @@ title: Adjusted odds ratios
 author: Steve Simon
 date: 2005-01-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Covariate adjustment
 output: html_document
 page_update: partial

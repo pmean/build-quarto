@@ -3,8 +3,8 @@ title: More on conflicts of interest
 author: Steve Simon
 date: 2005-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 output: html_document
 page_update: partial

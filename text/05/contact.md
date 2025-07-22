@@ -3,8 +3,8 @@ title: Contacting and working with me
 author: Steve Simon
 date: 2005-08-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Professional details
 output: html_document

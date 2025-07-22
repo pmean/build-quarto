@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/WithholdingInformation.html
 date: 2005-11-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Blinding in research
 output: html_document

@@ -3,8 +3,8 @@ title: Incidence density ratio
 author: Steve Simon
 date: 2005-04-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Measuring benefit and risk
 output: html_document

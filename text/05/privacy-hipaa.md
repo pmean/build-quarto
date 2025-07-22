@@ -3,8 +3,8 @@ title: HIPAA and research
 author: Steve Simon
 date: 2005-09-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Privacy in research
 output: html_document

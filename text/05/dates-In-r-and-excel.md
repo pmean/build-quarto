@@ -3,8 +3,8 @@ title: Dates in Excel and R
 author: Steve Simon
 date: 2005-08-10
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - R software
 output: html_document

@@ -3,8 +3,8 @@ title: Testing baseline imbalance in a randomized study
 author: Steve Simon
 date: 2005-01-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Covariate adjustment
 output: html_document
 page_update: partial

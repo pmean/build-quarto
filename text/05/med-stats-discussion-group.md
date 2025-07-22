@@ -3,8 +3,8 @@ title: MedStats discussion group
 author: Steve Simon
 date: 2005-04-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Teaching resources
 output: html_document

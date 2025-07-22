@@ -3,8 +3,8 @@ title: Geometric distribution
 author: Steve Simon
 date: 2005-05-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Probability concepts
 output: html_document

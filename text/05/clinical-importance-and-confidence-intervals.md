@@ -3,8 +3,8 @@ title: Confidence intervals are needed to evaluate clinical importance
 author: Steve Simon
 date: 2005-12-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Clinical importance
 output: html_document
 page_update: partial

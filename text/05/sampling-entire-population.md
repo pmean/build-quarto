@@ -3,8 +3,8 @@ title: Sampling the entire population
 author: Steve Simon
 date: 2005-02-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Descriptive statistics
 output: html_document

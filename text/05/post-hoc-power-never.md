@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/PostHocPower-05.html
 date: 2005-05-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Post hoc power
 output: html_document

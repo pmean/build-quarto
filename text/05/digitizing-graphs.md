@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/DigitizingGraph.html
 date: 2005-03-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Data management
 output: html_document

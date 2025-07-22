@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SPSSversion14.html
 date: 2005-08-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - SPSS software
 output: html_document

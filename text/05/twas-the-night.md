@@ -3,8 +3,8 @@ title: Twas the night before surgery
 author: Steve Simon
 date: 2005-01-24
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2005
 - Ethics in research
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: What is critical thinking?
 author: Steve Simon
 date: 2005-05-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Critical appraisal
 output: html_document

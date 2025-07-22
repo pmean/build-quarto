@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SmallPvalue.html
 date: 2005-02-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Pvalues
 output: html_document

@@ -3,8 +3,8 @@ title: Where is the confidence interval?
 author: Steve Simon
 date: 2005-03-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Clinical importance
 - Confidence intervals

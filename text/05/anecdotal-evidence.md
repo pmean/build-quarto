@@ -3,8 +3,8 @@ title: A nice definition of anecdotal evidence
 author: Steve Simon
 date: 2005-10-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Critical appraisal
 output: html_document
 page_update: partial

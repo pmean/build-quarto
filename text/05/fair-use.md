@@ -3,8 +3,8 @@ title: Fair Use of copyrighted material
 author: Steve Simon
 date: 2005-04-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Website details
 output: html_document

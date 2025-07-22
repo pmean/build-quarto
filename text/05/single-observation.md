@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/SingleObservation.html
 date: 2005-05-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Small sample size issues
 output: html_document

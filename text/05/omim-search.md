@@ -3,8 +3,8 @@ title: Discovering gene information using OMIM
 author: Steve Simon
 date: 2005-10-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Genomics analysis
 - Being updated
 output: html_document

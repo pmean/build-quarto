@@ -3,8 +3,8 @@ title: Reporting of adverse events
 author: Steve Simon
 date: 2005-08-05
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2005
 - Critical appraisal
 - To be updated
 output: html_document

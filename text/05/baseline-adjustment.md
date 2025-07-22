@@ -3,8 +3,8 @@ title: Adjusting for a baseline measurement
 author: Steve Simon
 date: 2005-02-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Broken link
 - Covariate adjustment
 output: html_document

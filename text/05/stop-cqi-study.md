@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/05/StopStudy.html
 date: 2005-06-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2005
 - Being updated
 - Early stopping
 output: html_document
