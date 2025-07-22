@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: 2024-03-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2024
 - Personal details
 output: html_document
 page_update: complete

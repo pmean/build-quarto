@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2024-01-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2024
 - Linear regression
 output: html_document
 page_update: complete

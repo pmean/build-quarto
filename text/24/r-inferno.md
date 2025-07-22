@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2024-03-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2024
 - R programming
 output: html_document
 page_update: complete

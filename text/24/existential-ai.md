@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2024-07-03"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2024
 - Artificial intelligence
 output: html_document
 page_update: complete

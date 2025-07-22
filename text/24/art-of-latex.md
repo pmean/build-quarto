@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2024-01-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2024
 - Writing research papers
 output: html_document
 page_update: complete

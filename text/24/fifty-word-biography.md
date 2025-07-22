@@ -3,8 +3,9 @@ title: A 50 word biography
 source: "New"
 author: Steve Simon
 date: 2024-09-04
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2024
 - Porfessional details
 output: html_document
 page_update: no

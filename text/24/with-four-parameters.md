@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: 2024-01-03
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2024
 - Being updated
 output: html_document
 page_update: complete

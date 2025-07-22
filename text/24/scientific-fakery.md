@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2024-06-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2024
 - Fraud in research
 output: html_document
 page_update: complete

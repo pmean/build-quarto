@@ -3,8 +3,9 @@ title: Resources for presenting research
 source: "New"
 author: Steve Simon
 date: 2024-11-01
-categories: Recommendations
-tags:
+categories: 
+- "*Recommendations"
+- 2024
 - Presenting research
 output: html_document
 page_update: no

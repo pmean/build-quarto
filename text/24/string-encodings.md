@@ -3,8 +3,9 @@ title: "String Encoding and R"
 source: "New"
 author: Steve Simon
 date: "2024-09-08"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2024
 - R programming
 output: html_document
 page_update: no

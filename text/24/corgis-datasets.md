@@ -3,8 +3,9 @@ title: "CORGIS: The Collection of Really Great, Interesting, Situated Datasets"
 source: "New"
 author: Steve Simon
 date: "2024-12-13"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2024
 - Datasets
 output: html_document
 page_update: no

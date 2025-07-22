@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2024-02-02"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2024
 - Software engineering
 output: html_document
 page_update: complete

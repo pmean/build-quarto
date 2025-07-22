@@ -3,8 +3,9 @@ title: "Enthusiasm at the start..."
 author: "Steve Simon"
 source: new
 date: 2024-11-02
-categories: Quotation
-tags:
+categories: 
+- "*Quotation"
+- 2024
 - Human side of statistics
 output: html_document
 page_update: no

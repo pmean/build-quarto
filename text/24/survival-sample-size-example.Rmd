@@ -4,7 +4,7 @@ source: "New"
 author: Steve Simon
 date: 2024-11-26
 categories: Blog post
-tags:
+- 2024
 - Sample size justification
 - Survival analysis
 output: html_document

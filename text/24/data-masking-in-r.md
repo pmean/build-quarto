@@ -3,8 +3,9 @@ title: "Data masking in R"
 source: "New"
 author: Steve Simon
 date: "2024-10-05"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2024
 - R programming
 output: html_document
 page_update: no

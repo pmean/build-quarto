@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: 2024-06-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2024
 - Incomplete pages
 - R programming
 - Rmarkdown code

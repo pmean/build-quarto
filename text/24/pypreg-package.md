@@ -3,8 +3,9 @@ title: "A collection of Python tools to help with pregnancy research"
 source: "New"
 author: Steve Simon
 date: "2024-11-07"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2024
 - Python programming
 output: html_document
 page_update: no

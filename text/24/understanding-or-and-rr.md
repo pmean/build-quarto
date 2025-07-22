@@ -3,8 +3,9 @@ title: "Understanding the Odds Ratio and the Relative Risk"
 source: "New"
 author: Steve Simon
 date: "2024-10-05"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation
+- 2024
 - Measures of risk
 output: html_document
 page_update: no

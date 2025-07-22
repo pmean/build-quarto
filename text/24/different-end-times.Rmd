@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: 2024-05-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2024
 - Rmarkdown code
 - Survival analysis
 output: html_document

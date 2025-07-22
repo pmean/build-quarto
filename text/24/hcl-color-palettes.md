@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "20xx-xx-xx"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2024
 - Being updated
 output: html_document
 page_update: complete

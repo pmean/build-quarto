@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: 2024-06-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2024
 - Writing research papers
 output: html_document
 page_update: complete

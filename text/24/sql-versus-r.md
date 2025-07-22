@@ -3,8 +3,9 @@ title: Using SQL instead of R
 source: "New"
 author: Steve Simon
 date: 2024-12-12
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2024
 - SQL
 - R sotware
 output: html_document

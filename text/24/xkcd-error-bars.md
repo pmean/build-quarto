@@ -3,8 +3,9 @@ title: "Comic take on error bars"
 source: "New"
 author: Steve Simon
 date: "2024-11-07"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
+- 2024
 - Graphical display
 output: html_document
 page_update: no
