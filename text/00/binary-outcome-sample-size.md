@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/binary.html
 author: Steve Simon
 date: 2000-08-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Being updated
 - Sample size justification
 output: html_document

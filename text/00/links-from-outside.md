@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/links.html
 author: Steve Simon
 date: 2000-02-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Website details
 - Website details
 output: html_document

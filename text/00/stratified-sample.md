@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/strata.html
 author: Steve Simon
 date: 2000-08-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Ask Professor Mean
 - Research design
 output: html_document

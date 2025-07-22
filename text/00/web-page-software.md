@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/software.html
 author: Steve Simon
 date: 2000-08-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Obsolete page
 - Website details
 output: html_document

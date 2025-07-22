@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/stein.html
 author: Steve Simon
 date: 2000-01-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Being updated
 - Statistical theory
 output: html_document

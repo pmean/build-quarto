@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/intention.html
 author: Steve Simon
 date: 2000-01-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Ask Professor Mean
 - Measuring benefit and risk
 output: html_document

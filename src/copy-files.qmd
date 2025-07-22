@@ -26,7 +26,7 @@ library(tidyverse)
 
 old_path <- "../text"
 old_directories <- c("99", paste0("0", (0:9)), 10:25)
-old_directories <- c("99", "13", "25")
+old_directories <- c("99", "06", "13", "19", "25")
 new_path <- "../../qblog3/posts"
 file_pattern <- "md$"
 ```
@@ -75,6 +75,7 @@ n_files <- length(files)
 for (i in 1:n_files) {
   if (!dir.exists(new_paths[i])) {dir.create(new_paths[i])}
   test1 <- file.copy(from=old_files[i], to=new_files[i], overwrite=TRUE)
+  next
   cat(glue("{test1}: {old_files[i]} copied to {new_files[i]}"))
   cat("\n")
   cat(list.files(new_paths[i]))

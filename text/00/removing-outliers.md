@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/outliers.html
 author: Steve Simon
 date: 2000-01-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Ask Professor Mean
 - Unusual data
 output: html_document

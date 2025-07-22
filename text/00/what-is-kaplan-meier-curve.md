@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/kaplan.html
 author: Steve Simon
 date: 2000-06-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Ask Professor Mean
 - Survival analysis
 output: html_document

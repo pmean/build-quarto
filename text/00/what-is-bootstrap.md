@@ -4,9 +4,9 @@ source: http://www.pmean.com/00/bootstrap.html
 =author: Steve Simon
 date: 2000-01-27
 categories:
+- "*Blog post"
 - Ask Professor Mean
-- Blog post
-tags:
+- 2000
 - Unusual data
 output: html_document
 page_update: partial

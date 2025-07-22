@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/alternate.html
 author: Steve Simon
 date: 2000-08-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Ask Professor Mean
 - Randomization
 output: html_document

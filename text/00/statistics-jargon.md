@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/jargon.html
 author: Steve Simon
 date: 2000-01-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Ask Professor Mean
 - Critical appraisal
 output: html_document

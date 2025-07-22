@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/resume.html
 author: Steve Simon
 date: 2000-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Professional details
 output: html_document
 page_update: partial

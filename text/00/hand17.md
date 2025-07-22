@@ -4,8 +4,8 @@ source: http://www.pmean.com/07/hand17.htm
 author: Steve Simon
 date: 2000-12-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Quality improvement
 output: html_document
 page_update: no

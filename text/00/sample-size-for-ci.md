@@ -4,8 +4,8 @@ source: http://www.pmean.com/00/confid.html
 author: Steve Simon
 date: 2000-01-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2000
 - Ask Professor Mean
 - Confidence intervals
 - Sample size justification
