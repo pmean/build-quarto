@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/two-questions/"
 date: "2013-11-29"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Human side of statistics
 output: html_document
 page_update: complete

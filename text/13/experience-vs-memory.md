@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/experience-vs-memory/"
 date: "2013-12-02"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2013
 - Human side of statistics
 output: html_document
 page_update: partial

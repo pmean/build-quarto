@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/comparing-diagnostic-tests/"
 date: "2013-12-18"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Sample size justification
 output: html_document
 page_update: partial

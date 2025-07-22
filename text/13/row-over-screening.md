@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/row-over-screening/"
 date: "2013-11-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2013
 - Systematic overviews
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ source: http://www.pmean.com/13/descriptive.html
 author: Steve Simon
 date: 2013-08-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Being updated
 output: html_document
 page_update: no

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/propensity-monte-carlo/"
 date: "2013-12-20"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2013
 - Risk adjustment
 output: html_document
 page_update: complete

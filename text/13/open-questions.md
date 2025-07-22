@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/open-questions/"
 date: "2013-12-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2013
 - Survey design
 output: html_document
 page_update: partial

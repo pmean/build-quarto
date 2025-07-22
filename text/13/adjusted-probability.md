@@ -4,8 +4,8 @@ source: http://www.pmean.com/13/adjusted.html
 author: Steve Simon
 date: 2013-04-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Being updated
 output: html_document
 page_update: partial

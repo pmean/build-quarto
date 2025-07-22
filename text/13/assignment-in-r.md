@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/assignment-in-r/"
 date: "2013-12-09"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2013
 - R software
 output: html_document
 page_update: complete

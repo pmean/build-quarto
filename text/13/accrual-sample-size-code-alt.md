@@ -4,8 +4,8 @@ source: http://www.pmean.com/13/secondary.html
 author: Steve Simon
 date: 2013-07-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Accrual problems
 - Bayesian statistics
 output: html_document

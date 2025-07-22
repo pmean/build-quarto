@@ -4,8 +4,8 @@ source: http://www.pmean.com/13/mind.html
 author: Steve Simon
 date: 2013-02-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Being updated
 output: html_document
 page_update: no

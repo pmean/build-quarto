@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/you-can-now-register/"
 date: "2013-11-30"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Obsolete post
 output: html_document
 page_update: complete

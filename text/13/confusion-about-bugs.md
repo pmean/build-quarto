@@ -4,8 +4,8 @@ source: http://www.pmean.com/13/confusion.html
 author: Steve Simon
 date: 2013-09-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Broken link
 - Bayesian statistics
 - R software

@@ -4,8 +4,8 @@ source: http://www.pmean.com/13/secondary.html
 author: Steve Simon
 date: 2013-08-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Teaching resources
 output: html_document
 page_update: complete

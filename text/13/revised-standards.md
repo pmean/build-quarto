@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/revised-standards/"
 date: "2013-11-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2013
 - Bayesian statistics
 output: html_document
 page_update: complete

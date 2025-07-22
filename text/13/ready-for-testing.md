@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/ready-for-testing/"
 date: "2013-11-27"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Obsolete pages
 output: html_document
 page_update: complete

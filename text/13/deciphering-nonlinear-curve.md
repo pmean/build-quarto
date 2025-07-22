@@ -3,8 +3,8 @@ title: "Deciphering a non-linear curve "
 author: Steve Simon
 date: 2013-04-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2013
 - Being updated
 output: html_document
 page_update: no
