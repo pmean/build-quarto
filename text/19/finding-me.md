@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/finding-me/"
 date: "2019-05-15"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2019
 - Professional details
 output: html_document
 page_update: complete

@@ -4,9 +4,9 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/negative-numers/"
 date: "2019-03-08"
 categories:
-- Quotation
-tags:
-- 
+- "*Quotation"
+- 2019
+- Numbers
 output: html_document
 page_update: complete
 ---

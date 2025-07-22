@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/loud-mistake/"
 date: "2019-02-15"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2019
 - Grant writing
 - Research design
 - Writing research papers

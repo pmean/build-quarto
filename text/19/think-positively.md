@@ -5,8 +5,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/think-positively/"
 date: "2019-01-23"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2019
 - Research design
 - Teaching resources
 output: html_document

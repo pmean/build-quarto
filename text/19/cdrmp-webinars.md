@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/cdrmp-webinars/"
 date: "2019-03-14"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Grant writing
 output: html_document
 page_update: complete

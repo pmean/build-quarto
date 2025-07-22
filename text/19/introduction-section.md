@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/introduction-section/"
 date: "2019-03-29"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2019
 - Writing research papers
 output: html_document
 page_update: complete

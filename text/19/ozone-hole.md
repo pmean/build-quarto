@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/ozone-hole/"
 date: "2019-02-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Outliers
 output: html_document
 page_update: complete

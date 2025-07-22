@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/nightingale-big-data/"
 date: "2019-04-17"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Data science
 output: html_document
 page_update: complete

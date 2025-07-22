@@ -4,9 +4,9 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/ethical-data-mining/"
 date: "2019-04-01"
 categories:
-- Blog post
-tags:
-- 
+- "*Blog post"
+- 2019
+- Data science
 output: html_document
 page_update: complete
 ---

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/russell-waitman/"
 date: "2019-02-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Professional details
 output: html_document
 page_update: complete

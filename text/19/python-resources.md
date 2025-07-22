@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/python-resources/"
 date: "2019-05-02"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2019
 - Python
 output: html_document
 page_update: complete

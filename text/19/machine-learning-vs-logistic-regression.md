@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/machine-learning-vs-logistic-regression/"
 date: "2019-03-15"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Data science
 - Logistic regression
 - Systematic overviews

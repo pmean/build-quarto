@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/ai-story/"
 date: "2019-01-09"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Data science
 - Ethics in research
 - Human side of statistics

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/leading-questions/"
 date: "2019-01-14"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Survey design
 output: html_document
 page_update: complete

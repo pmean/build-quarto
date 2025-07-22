@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/randomization-techniques/"
 date: "2019-02-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Randomization
 output: html_document
 page_update: complete

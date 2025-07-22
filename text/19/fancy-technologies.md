@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/fancy-technologies/"
 date: "2019-02-01"
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2019
 - Human side of statistics
 output: html_document
 page_update: complete

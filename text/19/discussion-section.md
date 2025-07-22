@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/discussion-section/"
 date: "2019-04-16"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Writing research papers
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/bibliographies-in-r-markdown/"
 date: "2019-04-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Presenting research
 - R software
 - Writing research papers

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/copyright-data/"
 date: "2019-04-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Data sharing
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/exploratory-data-analysis/"
 date: "2019-01-20"
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2019
 - Human side of statistics
 output: html_document
 page_update: complete

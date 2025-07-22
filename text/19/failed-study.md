@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/failed-study/"
 date: "2019-03-03"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2019
 - Early stopping
 - Pilot studies
 output: html_document

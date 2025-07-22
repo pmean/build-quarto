@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/effective-questionnaires/"
 date: "2019-01-14"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2019
 - Survey design
 output: html_document
 page_update: complete

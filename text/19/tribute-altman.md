@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/tribute-altman/"
 date: "2019-04-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Important statisticians
 output: html_document
 page_update: complete

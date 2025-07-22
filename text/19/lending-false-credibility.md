@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/lending-false-credibility/"
 date: "2019-03-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Data science
 output: html_document
 page_update: complete

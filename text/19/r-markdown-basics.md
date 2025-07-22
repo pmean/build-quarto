@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/r-markdown-basics/"
 date: "2019-03-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - R software
 - Writing research papers
 output: html_document

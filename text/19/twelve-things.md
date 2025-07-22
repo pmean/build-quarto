@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/twelve-things/"
 date: "2019-03-06"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Human side of statistics
 output: html_document
 page_update: complete

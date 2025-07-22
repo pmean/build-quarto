@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/data-science-curriculum/"
 date: "2019-04-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Data science
 - Teaching resources
 output: html_document

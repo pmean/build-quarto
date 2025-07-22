@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/bending-the-rules/"
 date: "2019-01-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Ethics in research
 output: html_document
 page_update: complete

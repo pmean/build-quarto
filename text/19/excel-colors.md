@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/excel-colors/"
 date: "2019-04-03"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2019
 - Data management
 output: html_document
 page_update: complete
