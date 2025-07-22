@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/GivingCredit.html
 date: 2006-04-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Website details
 output: html_document
 page_update: partial

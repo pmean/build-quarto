@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/ClopperPearson.html
 date: 2006-08-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Confidence intervals
 output: html_document
 page_update: partial

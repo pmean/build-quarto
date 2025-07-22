@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/AmusingCorrelation.html
 date: 2006-06-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Linear regression
 output: html_document
 page_update: partial

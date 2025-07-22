@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/12a/koans/OnlyTruePath.asp
 date: 2006-04-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Randomization in research
 - Statistical koans
 output: html_document

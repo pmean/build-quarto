@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/BookSpss.html
 date: 2006-03-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Interesting books
 - SPSS software
 output: html_document

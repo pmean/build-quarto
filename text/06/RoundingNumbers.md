@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/RoundingNumbers.html
 date: 2006-09-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Descriptive statistics
 output: html_document
 page_update: partial

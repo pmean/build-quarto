@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/PerfectionNotEnough.html
 date: 2006-12-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Small sample size issues
 output: html_document
 page_update: partial

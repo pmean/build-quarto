@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/GeneralizingResearch.html
 date: 2006-02-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Extrapolations in research
 output: html_document
 page_update: partial

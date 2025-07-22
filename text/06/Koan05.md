@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/Koan05.html
 date: 2006-04-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Teaching resources
 output: html_document
 page_update: partial

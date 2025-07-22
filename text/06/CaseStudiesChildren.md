@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/CaseStudiesChildren.html
 date: 2006-10-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Children in research
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/ItemResponseTheory.html
 date: 2006-06-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Statistical computing
 output: html_document
 page_update: partial

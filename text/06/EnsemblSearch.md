@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/EnsemblSearch.html
 date: 2006-02-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Microarray analysis
 output: html_document
 page_update: partial

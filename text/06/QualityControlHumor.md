@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/QualityControlHumor.html
 date: 2006-08-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Quality control
 output: html_document
 page_update: partial

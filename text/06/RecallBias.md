@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/RecallBias.html
 date: 2006-08-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Observational data
 output: html_document
 page_update: partial

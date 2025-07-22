@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/BlockRandomization.html
 date: 2006-06-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Definitions
 - Randomization
 output: html_document

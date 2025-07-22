@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/ChanceNews.html
 date: 2006-01-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Wiki pages
 output: html_document
 page_update: partial

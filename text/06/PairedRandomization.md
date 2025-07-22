@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/PairedRandomization.html
 date: 2006-01-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Unusual data
 output: html_document
 page_update: partial

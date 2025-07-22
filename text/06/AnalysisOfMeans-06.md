@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/AnalysisOfMeans-06.html
 date: 2006-06-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Analysis of means
 output: html_document
 page_update: partial

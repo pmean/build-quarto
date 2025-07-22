@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/BalestracciSeminar.html
 date: 2006-01-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Quality control
 output: html_document
 page_update: partial

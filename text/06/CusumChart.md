@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/CusumChart.html
 date: 2006-06-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Accrual problems
 - Control charts
 output: html_document

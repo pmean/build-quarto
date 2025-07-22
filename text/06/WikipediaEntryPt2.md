@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/WikipediaEntryPt2.html
 date: 2006-08-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Wiki pages
 output: html_document
 page_update: partial

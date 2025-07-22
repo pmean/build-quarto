@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/FishboneDiagram-06.html
 date: 2006-03-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Quality improvement
 output: html_document
 page_update: no

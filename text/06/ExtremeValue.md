@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/ExtremeValue.html
 date: 2006-01-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Probability concepts
 output: html_document
 page_update: partial

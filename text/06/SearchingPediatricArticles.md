@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/SearchingPediatricArticles.html
 date: 2006-10-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Children in research
 - Information searching
 output: html_document

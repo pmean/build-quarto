@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/StatisticalKoan1.html
 date: 2006-02-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Teaching resources
 output: html_document
 page_update: partial

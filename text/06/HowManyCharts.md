@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/HowManyCharts.html
 date: 2006-03-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Sample size justification
 output: html_document
 page_update: partial

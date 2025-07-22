@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/ColloquialTone.html
 date: 2006-07-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Grant writing
 output: html_document
 page_update: partial

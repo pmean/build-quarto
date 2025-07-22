@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/WhereToGo.html
 date: 2006-01-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Professional details
 output: html_document
 page_update: partial

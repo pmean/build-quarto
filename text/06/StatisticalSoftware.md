@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/StatisticalSoftware.html
 date: 2006-01-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Statistical computing
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/InterpretCorrelation.html
 date: 2006-04-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Linear regression
 output: html_document
 page_update: partial

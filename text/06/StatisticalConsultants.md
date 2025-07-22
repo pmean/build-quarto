@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/StatisticalConsultants.html
 date: 2006-12-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Human side of statistics
 output: html_document
 page_update: partial

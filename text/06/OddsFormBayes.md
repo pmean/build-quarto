@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/OddsFormBayes.html
 date: 2006-10-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Diagnostic testing
 output: html_document
 page_update: partial

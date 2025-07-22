@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/KoanPage.html
 date: 2006-03-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Website details
 output: html_document
 page_update: partial

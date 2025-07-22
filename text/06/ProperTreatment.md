@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2006-03-29
 categories:
 - Quotation
-tags:
+- 2006
 - Evidence Based Medicine
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/HcupSeminar.html
 date: 2006-04-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Secondary data analysis
 output: html_document
 page_update: partial

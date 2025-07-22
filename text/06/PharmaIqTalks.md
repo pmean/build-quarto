@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/PharmaIqTalks.html
 date: 2006-09-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Children in research
 output: html_document
 page_update: partial

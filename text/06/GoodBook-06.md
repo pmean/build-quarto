@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/GoodBook-06.html
 date: 2006-02-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Good books
 output: html_document
 page_update: partial

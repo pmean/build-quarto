@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/APRDRGs.html
 date: 2006-05-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Covariate adjustment
 output: html_document
 page_update: partial

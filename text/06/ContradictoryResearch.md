@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/06/ContradictoryResearch.html
 date: 2006-03-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2006
 - Critical appraisal
 output: html_document
 page_update: partial
