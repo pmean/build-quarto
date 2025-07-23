@@ -3,8 +3,8 @@ title: "How to run SAS inside an RMarkdown file"
 source: new
 date: "2021-01-23"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - R software
 output: html_document
 page_update: complete

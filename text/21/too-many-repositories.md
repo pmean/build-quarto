@@ -3,8 +3,8 @@ title: "I have too many github repositories"
 source: new
 date: "2021-01-06"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Statistical computing
 output: html_document
 page_update: complete

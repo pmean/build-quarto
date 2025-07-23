@@ -3,8 +3,8 @@ title: "The documentation system"
 source: new
 date: "2021-01-26"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Software engineering
 output: html_document
 page_update: complete

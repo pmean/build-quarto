@@ -3,8 +3,8 @@ title: "Uncovering Truths With Missing Data"
 source: new
 date: "2021-12-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Data quality
 output: html_document
 page_update: complete

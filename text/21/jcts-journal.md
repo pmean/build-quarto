@@ -3,8 +3,8 @@ title: "Journal of Clinical and Translational Science"
 source: new
 date: "2021-03-04"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Writing research papers
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "Child documents. Input child document into the main document"
 source: new
 date: "2021-01-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 output: html_document
 page_update: complete

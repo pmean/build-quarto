@@ -3,8 +3,8 @@ title: "Survival of the best fit"
 source: new
 date: "2021-10-22"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Data science
 output: html_document
 page_update: complete

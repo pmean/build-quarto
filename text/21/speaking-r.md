@@ -3,8 +3,8 @@ title: "Speaking R"
 source: new
 date: "2021-08-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 - Teaching resources
 output: html_document

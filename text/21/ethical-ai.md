@@ -3,8 +3,8 @@ title: "Ethical AI:  A Framework for Justice"
 source: new
 date: "2021-04-16"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Data science
 output: html_document
 page_update: complete

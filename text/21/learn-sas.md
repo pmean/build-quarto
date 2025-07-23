@@ -3,8 +3,8 @@ title: "Learning more about SAS"
 source: new
 date: "2021-08-01"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - SAS software
 output: html_document
 page_update: complete

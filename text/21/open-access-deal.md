@@ -3,8 +3,8 @@ title: "Big Deal for Open Access"
 source: new
 date: "2021-11-27"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Writing research papers
 output: html_document
 page_update: complete

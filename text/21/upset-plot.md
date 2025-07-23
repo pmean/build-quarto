@@ -3,8 +3,8 @@ title: "Upset plot, the R Graph Gallery"
 source: new
 date: "2021-04-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Graphical display
 output: html_document
 page_update: complete

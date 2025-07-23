@@ -3,8 +3,8 @@ title: "Federated Learning and Privacy"
 source: new
 date: "2021-12-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Data science
 output: html_document
 page_update: complete

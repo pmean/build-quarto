@@ -3,8 +3,8 @@ title: "VALUE Rubrics"
 source: new
 date: "2021-10-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Teaching resources
 output: html_document
 page_update: complete

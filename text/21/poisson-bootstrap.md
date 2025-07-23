@@ -3,8 +3,8 @@ title: "An introduction to the Poisson bootstrap"
 source: new
 date: "2021-05-10"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Bootstrap
 output: html_document
 page_update: complete

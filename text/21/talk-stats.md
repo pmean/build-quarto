@@ -3,14 +3,14 @@ title: "Talk Stats"
 source: new
 date: "2021-11-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Teaching resources
 output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/21/talk-stats-01.png)
+# ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/21/talk-stats-01.png)
 
 <div class="notes">
 

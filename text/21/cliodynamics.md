@@ -3,8 +3,8 @@ title: "Today's False Prophets"
 source: new
 date: "2021-01-04"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Human side of statistics
 output: html_document
 page_update: complete

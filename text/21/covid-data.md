@@ -3,8 +3,8 @@ title: "Show me the data"
 source: new
 date: "2021-08-27"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Critical appraisal
 output: html_document
 page_update: complete

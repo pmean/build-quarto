@@ -3,8 +3,8 @@ title: "Basic Python Resources"
 source: new
 date: "2021-06-12"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Python
 output: html_document
 page_update: complete

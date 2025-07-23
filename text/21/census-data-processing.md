@@ -3,8 +3,8 @@ title: "Census Data Processing 101"
 source: new
 date: "2021-02-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Bureau of the Census
 output: html_document
 page_update: complete

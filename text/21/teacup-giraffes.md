@@ -3,8 +3,8 @@ title: "History of Teacup Giraffes"
 source: new
 date: "2021-11-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 - Teaching resources
 output: html_document

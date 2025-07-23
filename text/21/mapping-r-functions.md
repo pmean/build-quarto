@@ -3,8 +3,8 @@ title: "Mapping R functions"
 source: new
 date: "2021-07-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 output: html_document
 page_update: complete

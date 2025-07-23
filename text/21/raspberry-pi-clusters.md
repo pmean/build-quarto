@@ -3,8 +3,8 @@ title: "Five years of Raspberry Pi clusters"
 source: new
 date: "2021-01-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Cluster computing
 output: html_document
 page_update: complete

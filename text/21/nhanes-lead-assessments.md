@@ -3,8 +3,8 @@ title: "Lead assessments in the NHANES survey"
 source: new
 date: "2021-10-19"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Secondary data analysis
 output: html_document
 page_update: complete

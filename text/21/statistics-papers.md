@@ -3,8 +3,8 @@ title: "Types of STatistics Papers"
 source: new
 date: "2021-07-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Writing research papers
 output: html_document
 page_update: complete

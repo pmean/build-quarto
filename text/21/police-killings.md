@@ -3,8 +3,8 @@ title: "Police Killings dataset"
 source: new
 date: "2021-04-23"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Datasets
 output: html_document
 page_update: complete

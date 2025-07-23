@@ -3,8 +3,8 @@ title: "Cel-Sci CEO tries to spin cancer trial failure into a win"
 source: new
 date: "2021-07-19"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Human side of Statistics
 output: html_document
 page_update: complete

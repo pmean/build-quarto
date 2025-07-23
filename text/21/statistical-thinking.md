@@ -3,8 +3,8 @@ title: "Statistical Thinking"
 source: new
 date: "2021-06-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Teaching resources
 output: html_document
 page_update: complete

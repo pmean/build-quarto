@@ -3,8 +3,8 @@ title: "Why p-values are not measures of evidence"
 source: new
 date: "2021-12-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Hypothesis testing
 output: html_document
 page_update: complete

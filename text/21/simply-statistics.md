@@ -3,8 +3,8 @@ title: "Simply Statistics blog"
 source: new
 date: "2021-11-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Graphical display
 output: html_document
 page_update: complete

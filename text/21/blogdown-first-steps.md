@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2021-10-09"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Website details
 - Rmarkdown code
 output: html_document

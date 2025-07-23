@@ -3,8 +3,8 @@ title: "S, R, and data science"
 source: new
 date: "2021-06-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 output: html_document
 page_update: complete

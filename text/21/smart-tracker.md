@@ -3,8 +3,8 @@ title: "Smart Tracker"
 source: new
 date: "2021-01-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - SQL
 output: html_document
 page_update: complete

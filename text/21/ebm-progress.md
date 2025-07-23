@@ -3,8 +3,8 @@ title: "Progress in evidence-based medicine"
 source: new
 date: "2021-10-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Health disparities
 output: html_document
 page_update: complete

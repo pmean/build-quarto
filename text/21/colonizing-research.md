@@ -3,8 +3,8 @@ title: "Health equity tourists: How white scholars are colonizing research on he
 source: new
 date: "2021-09-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Health disparities
 output: html_document
 page_update: complete

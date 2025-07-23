@@ -3,8 +3,8 @@ title: "Replication Crisis"
 source: new
 date: "2021-04-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Critical appraisal
 output: html_document
 page_update: complete

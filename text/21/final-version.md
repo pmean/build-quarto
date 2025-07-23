@@ -3,8 +3,8 @@ title: "Final.doc"
 source: new
 date: "2021-02-04"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Writing research papers
 output: html_document
 page_update: complete

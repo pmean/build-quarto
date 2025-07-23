@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2021-09-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 - Software engineering
 output: html_document

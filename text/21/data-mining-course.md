@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2021-09-22"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Data mining
 output: html_document
 page_update: complete

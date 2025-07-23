@@ -2,8 +2,6 @@
 title: "Blogdown equations"
 author: "Steve Simon"
 date: "2022-11-03"
-output:
-  html_document: default
 categories: 
 - "*Blog post"
 - 2022
@@ -23,6 +21,8 @@ There is [some commentary][xie1] about this in [Creating Webisites with R Markdo
 
 [xie1]: https://bookdown.org/yihui/blogdown/output-format.html
 [xie2]: https://bookdown.org/yihui/blogdown/
+
+
 
 If you are given data that includes dates, expect confusion. Dates can be represented in many different ways.
 

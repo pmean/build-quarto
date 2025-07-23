@@ -3,8 +3,8 @@ title: "How many pages do I have in my website?"
 source: new
 date: "2021-11-16"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Website details
 
 output: html_document

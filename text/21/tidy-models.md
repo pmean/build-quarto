@@ -3,8 +3,8 @@ title: "Tidy Modeling with R"
 source: new
 date: "2021-01-09"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Statistical models
 output: html_document
 page_update: complete

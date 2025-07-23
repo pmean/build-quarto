@@ -3,8 +3,8 @@ title: "Shape-Restricted Regression Splines with R Package splines2"
 source: new
 date: "2021-08-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Linear regression
 output: html_document
 page_update: complete

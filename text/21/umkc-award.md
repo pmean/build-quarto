@@ -3,10 +3,10 @@ title: "UMKC Faculty Researcher Award"
 source: new
 date: '2021-09-28'
 output: html_document
-tags:
-- Professional details
 categories:
-- Blog post
+- "*Blog post"
+- 2021
+- Professional details
 page_update: complete
 ---
 

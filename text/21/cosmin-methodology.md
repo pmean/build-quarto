@@ -3,8 +3,8 @@ title: "COSMIN methodology for evaluating the content validity of patient-report
 source: new
 date: "2021-12-14"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Measuring agreement
 output: html_document
 page_update: complete

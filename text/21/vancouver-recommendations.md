@@ -3,8 +3,8 @@ title: "The Vancouver Recommendations"
 source: new
 date: "2021-08-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Writing research papers
 output: html_document
 page_update: complete

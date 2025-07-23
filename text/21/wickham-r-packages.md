@@ -3,9 +3,9 @@ title: "R Packages"
 source: new
 date: "2021-07-08"
 categories:
-- Recommendation
-tags:
-- 
+- "*Recommendation"
+- 2021
+- R programming
 output: html_document
 page_update: complete
 ---

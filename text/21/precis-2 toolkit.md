@@ -3,8 +3,8 @@ title: "The Precis-2 toolkit"
 source: new
 date: "2021-08-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Research design
 output: html_document
 page_update: complete

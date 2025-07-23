@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2021-06-10"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Privacy in research
 - Rmarkdown code
 output: html_document

@@ -3,8 +3,8 @@ title: "The Integration of the Humanities and Arts with Sciences, Engineering, a
 source: new
 date: "2021-10-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Teaching resources
 output: html_document
 page_update: complete

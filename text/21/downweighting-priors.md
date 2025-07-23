@@ -3,8 +3,8 @@ title: "Downweighting informative prior distributions"
 source: new
 date: "2021-05-07"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Bayesian statistics
 output: html_document
 page_update: complete

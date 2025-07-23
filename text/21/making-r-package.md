@@ -3,8 +3,8 @@ title: "Making the CECPfuns package: my own usable package"
 source: new
 date: "2021-02-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 output: html_document
 page_update: complete

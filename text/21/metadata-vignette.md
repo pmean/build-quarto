@@ -3,8 +3,8 @@ title: "Metadata vignette"
 source: new
 date: "2021-07-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - R software
 - Reproducible research
 output: html_document

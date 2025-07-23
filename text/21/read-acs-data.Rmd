@@ -3,8 +3,8 @@ title: "Reading information from the American Community Survey into R"
 source: new
 date: "2021-09-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Incomplete page
 - Rmarkdown graphs
 - Secondary data

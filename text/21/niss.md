@@ -3,8 +3,8 @@ title: "National Institute of Statistical Sciences"
 source: new
 date: "2021-01-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Teaching resources
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ source: new
 author: "Steve Simon"
 date: "2021-11-01"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Linear regression
 - Rmarkdown graphs
 output: html_document

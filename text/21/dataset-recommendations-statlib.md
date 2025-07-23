@@ -3,8 +3,8 @@ title: "Dataset recommendations from statlib"
 source: new
 date: "2021-12-01"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Datasets
 - Teaching resources
 output: html_document

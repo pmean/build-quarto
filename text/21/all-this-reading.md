@@ -3,8 +3,8 @@ title: "What’s all this reading about then"
 source: new
 date: "2021-10-26"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Writing research papers
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "Ethical data science"
 source: new
 date: "2021-10-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Ethics in research
 - Data science
 output: html_document

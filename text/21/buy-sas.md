@@ -3,8 +3,8 @@ title: "Broadcom in talks to buy SAS for as much as $20B"
 source: new
 date: "2021-07-19"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - SAS software
 output: html_document
 page_update: complete

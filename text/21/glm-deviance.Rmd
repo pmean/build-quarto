@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2021-09-20"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Generalized linear model
 - Rmarkdown graphs
 output: html_document

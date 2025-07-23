@@ -3,8 +3,8 @@ title: "Resources for AI Fairness"
 source: new
 date: "2021-09-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Website details
 output: html_document
 page_update: complete

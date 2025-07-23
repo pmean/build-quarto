@@ -3,8 +3,8 @@ title: "Julia for Statistics and Data Science"
 source: new
 date: "2021-08-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Julia programming
 output: html_document
 page_update: complete

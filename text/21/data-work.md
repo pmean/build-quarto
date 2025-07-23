@@ -3,8 +3,8 @@ title: "Data Work. A Jargon-Free Guide to Managing Teams"
 source: new
 date: "2021-11-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Human side of statistics
 output: html_document
 page_update: complete

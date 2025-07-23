@@ -3,8 +3,8 @@ title: "Choosing a good chart"
 source: new
 date: "2021-05-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Graphical display
 output: html_document
 page_update: complete

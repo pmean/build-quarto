@@ -3,8 +3,8 @@ title: "Developing and Maintaining Open Source Resources for Statistics and Data
 source: new
 date: "2021-08-09"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Teaching resources
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "R Package for Adaptive Clinical Trials"
 source: new
 date: "2021-07-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Bayesian statistics
 - R software
 output: html_document

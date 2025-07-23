@@ -3,8 +3,8 @@ title: "Reference Collection to push back against Common Statistical Myths"
 source: new
 date: "2021-05-16"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Teaching resources
 output: html_document
 page_update: complete

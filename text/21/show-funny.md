@@ -3,8 +3,8 @@ title: "Finally, a proven method to show just how funny I am"
 source: new
 date: "2021-05-31"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2021
 - Data science
 output: html_document
 page_update: complete

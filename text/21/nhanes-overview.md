@@ -3,8 +3,8 @@ title: "An overview of the National Health and Nutrition Examination Survey"
 source: new
 date: "2021-11-19"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2021
 - Secondary data analysis
 output: html_document
 page_update: complete

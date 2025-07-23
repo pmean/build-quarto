@@ -3,9 +3,9 @@ title: "10 ingredients for a successful supervisor/PhD student relationship"
 source: new
 date: "2021-10-23"
 categories:
-- Recommendation
-tags:
-- 
+- "*Recommendation"
+- 2021
+- Human side of statistics
 output: html_document
 page_update: complete
 ---
