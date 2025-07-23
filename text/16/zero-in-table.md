@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/zero-in-table/"
 date: "2016-01-19"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Ask Professor Mean
 - Measuring benefit and risk
 output: html_document

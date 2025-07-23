@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/dates-in-r/"
 date: "2016-06-15"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Data management
 - R software
 output: html_document

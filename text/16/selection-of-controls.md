@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/selection-of-controls/"
 date: "2016-02-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Observational studies
 output: html_document
 page_update: complete

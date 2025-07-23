@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/evidence-of-bias/"
 date: "2016-01-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Critical appraisal
 - Randomization
 output: html_document

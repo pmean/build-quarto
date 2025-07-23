@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/enrichment-designs/"
 date: "2016-08-03"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Research design
 output: html_document
 page_update: complete

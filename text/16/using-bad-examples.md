@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/using-bad-examples/"
 date: "2016-08-07"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Critical appraisal
 - Teaching resources
 output: html_document

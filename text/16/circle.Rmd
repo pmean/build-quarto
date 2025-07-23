@@ -3,8 +3,9 @@ title: "Drawing the perfect circle"
 author: "Steve Simon"
 source: "http://blog.pmean.com/circle/"
 date: "2016-10-31"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Cheat sheet
 - R software
 output: html_document

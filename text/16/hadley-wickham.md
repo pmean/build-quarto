@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/hadley-wickham/"
 date: "2016-08-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Important statisticians
 - R software
 output: html_document

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/simulating-power/"
 date: "2016-02-05"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Incomplete page
 - Sample size justification
 output: html_document

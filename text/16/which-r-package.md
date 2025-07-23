@@ -3,8 +3,9 @@ title: "Which R package should I use?"
 author: "Steve Simon"
 source: "http://blog.pmean.com/which-r-package/"
 date: "2016-05-10"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2016
 - R software
 output: html_document
 page_update: complete

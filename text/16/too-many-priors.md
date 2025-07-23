@@ -3,8 +3,9 @@ title: "Too many different prior choices for the hierarchical beta binomial mode
 author: "Steve Simon"
 source: "http://blog.pmean.com/too-many-priors/"
 date: "2016-05-31"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Bayesian statistics
 output: html_document
 page_update: complete

@@ -3,8 +3,9 @@ title: "So you're thinking about a systematic overview"
 author: "Steve Simon"
 source: "http://blog.pmean.com/systematic-overview/"
 date: "2016-06-17"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Research design
 - Systematic overviews
 output: html_document

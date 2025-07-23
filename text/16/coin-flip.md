@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/coin-flip/"
 date: "2016-01-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Randomization
 output: html_document
 page_update: complete

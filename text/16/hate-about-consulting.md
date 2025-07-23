@@ -3,8 +3,9 @@ title: "What do you hate most about independent consulting"
 author: "Steve Simon"
 source: "http://blog.pmean.com/hate-about-consulting/"
 date: "2016-10-25"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Human side of statistics
 output: html_document
 page_update: complete

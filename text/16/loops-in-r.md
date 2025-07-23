@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/loops-in-r/"
 date: "2016-10-20"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - R software
 - Teaching resources
 output: html_document

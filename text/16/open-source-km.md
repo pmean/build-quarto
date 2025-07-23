@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/open-source-km/"
 date: "2016-04-10"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Incomplete page
 - Survival analysis
 output: html_document

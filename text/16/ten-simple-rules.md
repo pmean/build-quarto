@@ -4,9 +4,9 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/ten-simple-rules/"
 date: "2016-06-10"
 categories: 
-- Recommendation
+- "*Recommendation"
 - Incomplete page
-tags:
+- 2016
 - Human side of statistics
 output: html_document
 page_update: complete

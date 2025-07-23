@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/tibbles/"
 date: "2016-08-15"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - R software
 output: html_document
 page_update: complete

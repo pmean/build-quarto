@@ -4,9 +4,9 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/sparse-matrices/"
 date: "2016-05-16"
 categories:
-- Blog post
+- "*Blog post"
 - Incomplete page
-tags:
+- 2016
 - Data science
 - R software
 output: html_document

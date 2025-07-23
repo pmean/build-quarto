@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/power-for-two-by-two-table/"
 date: "2016-02-05"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Sample size justification
 output: html_document
 page_update: complete

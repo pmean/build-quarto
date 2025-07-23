@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/plos-one-2015/"
 date: "2016-03-08"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Professional details
 - Writing research papers
 output: html_document

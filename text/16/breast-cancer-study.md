@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/breast-cancer-study/"
 date: "2016-01-28"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Professional details
 output: html_document
 page_update: complete

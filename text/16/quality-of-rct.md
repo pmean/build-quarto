@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/quality-of-rct/"
 date: "2016-09-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Systematic overviews
 output: html_document
 page_update: complete

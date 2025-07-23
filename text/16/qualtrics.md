@@ -3,8 +3,9 @@ title: "UMKC is now offering Qualtrics software to researchers"
 author: "Steve Simon"
 source: "http://blog.pmean.com/qualtrics/"
 date: "2016-01-19"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Survey design
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/a-lot-longer/"
 date: "2016-12-17"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Human side of statistics
 - Observational studies
 output: html_document

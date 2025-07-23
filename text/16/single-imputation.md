@@ -3,8 +3,9 @@ title: "Some simple examples of single imputation"
 author: "Steve Simon"
 source: "http://blog.pmean.com/single-imputation/"
 date: "2016-04-17"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Missing data
 output: html_document
 page_update: complete

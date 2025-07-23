@@ -3,8 +3,9 @@ title: "Rotating text in an R graph"
 author: "Steve Simon"
 source: "http://blog.pmean.com/rotating-text/"
 date: "2016-10-31"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Cheat sheet
 - R software
 output: html_document

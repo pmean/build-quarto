@@ -3,8 +3,9 @@ title: "Business essentials that you need to know before starting your career as
 author: "Steve Simon"
 source: "http://blog.pmean.com/business-essentials/"
 date: "2016-02-14"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Human side of statistics
 output: html_document
 page_update: complete

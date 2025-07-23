@@ -3,8 +3,9 @@ title: "A simple example of pipes in R"
 author: "Steve Simon"
 source: "http://blog.pmean.com/pipes-in-r/"
 date: "2016-11-08"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - R software
 output: html_document
 page_update: complete

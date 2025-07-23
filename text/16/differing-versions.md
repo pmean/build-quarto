@@ -3,8 +3,9 @@ title: "When differing versions of R packages matter"
 author: "Steve Simon"
 source: "http://blog.pmean.com/differing-versions/"
 date: "2016-12-19"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - R software
 output: html_document
 page_update: complete

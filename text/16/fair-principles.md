@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/fair-principles/"
 date: "2016-08-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Data sharing
 output: html_document
 page_update: complete

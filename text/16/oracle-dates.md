@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/oracle-dates/"
 date: "2016-10-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Dates
 - SQL
 output: html_document

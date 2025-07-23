@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/space-center/"
 date: "2016-01-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Human side of statistics
 output: html_document
 page_update: complete

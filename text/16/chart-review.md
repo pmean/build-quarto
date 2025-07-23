@@ -3,8 +3,9 @@ title: "So you're thinking about a retrospective chart review"
 author: "Steve Simon"
 source: "http://blog.pmean.com/chart-review/"
 date: "2016-05-02"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2016
 - Research design
 output: html_document
 page_update: complete

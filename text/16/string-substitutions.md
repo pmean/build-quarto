@@ -4,9 +4,9 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/string-substitutions/"
 date: "2016-07-15"
 categories:
-- Blog post
+- "*Blog post"
 - Incomplete page
-tags:
+- 2016
 - R software
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/hundred-data-sets/"
 date: "2016-06-26"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Datasets
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/effect-size/"
 date: "2016-04-18"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2016
 - Clinical importance
 output: html_document
 page_update: complete

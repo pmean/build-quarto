@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/inla/"
 date: "2016-04-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2016
 - Bayesian statistics
 - Longitudinal data
 - Multilevel models
