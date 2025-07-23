@@ -3,8 +3,8 @@ title: "Creative Commons"
 source: new
 date: "2022-05-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Open source
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "A mixture of normal distributions"
 source: "New"
 date: "2023-03-24"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Statistical theory
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "Preparing raw clinical data for publication"
 source: new
 date: "2022-05-15"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Data sharing
 output: html_document
 page_update: complete

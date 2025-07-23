@@ -3,8 +3,8 @@ title: "Recommendations for qualitative research in five categories"
 source: new
 date: "2022-08-23"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - SAS software
 - Software engineering
 output: html_document

@@ -2,10 +2,9 @@
 title: "My boxplot shows a box but no whiskers"
 author: "Steve Simon"
 date: '2022-12-15'
-output:
-  html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Graphical display
 source: new
 page_update: complete

@@ -3,8 +3,8 @@ title: "My writing goals for Summer 2022"
 source: new
 date: "2022-05-24"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2022
 - Website details
 output: html_document
 page_update: complete

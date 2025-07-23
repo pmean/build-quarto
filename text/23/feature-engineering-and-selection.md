@@ -3,8 +3,8 @@ title: "Feature Engineering and Selection: A Practical Approach for Predictive M
 source: "New"
 date: "2023-07-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Data mining
 output: html_document
 page_update: complete

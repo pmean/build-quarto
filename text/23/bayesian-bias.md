@@ -3,8 +3,8 @@ title: "Confirmation bias as a misfire of normal Bayesian reasoning"
 source: "New"
 date: "2023-02-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Bayesian statistics
 - Critical appraisal
 output: html_document

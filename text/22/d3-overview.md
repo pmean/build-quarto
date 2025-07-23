@@ -3,8 +3,8 @@ title: "D3, Data-Driven Documents"
 source: new
 date: "2022-11-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Graphical display
 output: html_document
 page_update: complete

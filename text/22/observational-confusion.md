@@ -3,8 +3,8 @@ title: "Confusion about observational designs"
 source: new
 date: "2022-02-26"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2022
 - Observational studies
 output: html_document
 page_update: complete

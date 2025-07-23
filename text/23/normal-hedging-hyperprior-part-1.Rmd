@@ -3,8 +3,8 @@ title: "The hedging hyperprior for the normal distribution: unknown mean, known 
 source: "New"
 date: "2023-02-28"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Bayesian statistics
 - Rmarkdown graphs
 output: html_document

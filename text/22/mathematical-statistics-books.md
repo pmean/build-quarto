@@ -2,12 +2,12 @@
 title: "Modern books on mathematical statistics"
 author: "Steve Simon"
 date: "2022-12-10"
-output:
-  html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Teaching resources
 source: new
+output: html_document
 page_update: complete
 ---
 

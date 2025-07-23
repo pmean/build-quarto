@@ -4,7 +4,7 @@ source: "New"
 author: Steve Simon
 date: "2024-10-05"
 categories: 
-- "*Recommendation
+- "*Recommendation"
 - 2024
 - Measures of risk
 output: html_document

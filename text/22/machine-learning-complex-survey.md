@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2022-05-16"
 categories: 
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Data science
 - Complex surveys
 output: html_document

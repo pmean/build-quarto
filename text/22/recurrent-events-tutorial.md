@@ -3,8 +3,8 @@ title: "Scientific American article on the bootstrap"
 source: new
 date: "2022-06-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Survival analysis
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2022-03-26"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2022
 - Software engineering
 output: html_document
 page_update: complete

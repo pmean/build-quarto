@@ -2,10 +2,9 @@
 title: "Confusion caused by multiple date formats"
 author: "Steve Simon"
 date: "2022-10-30"
-output:
-  html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Data management
 source: new
 page_update: complete

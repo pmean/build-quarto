@@ -2,12 +2,12 @@
 title: "Internal storage format for dates"
 author: "Steve Simon"
 date: "2022-10-30"
-output:
-  html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Data management
 source: new
+output: html_document
 page_update: complete
 ---
 

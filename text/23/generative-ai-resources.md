@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: 2023-09-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Artificial intelligence
 output: html_document
 page_update: complete

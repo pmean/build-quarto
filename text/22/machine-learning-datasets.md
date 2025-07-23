@@ -3,8 +3,8 @@ title: "List of datasets for machine-learning research"
 source: new
 date: "2022-07-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Datasets
 output: html_document
 page_update: complete

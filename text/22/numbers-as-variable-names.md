@@ -2,12 +2,12 @@
 title: "What it means when your variable names are numbers"
 author: "Steve Simon"
 date: "2022-12-12"
-output:
-  html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - SAS software
 source: new
+output: html_document
 page_update: complete
 ---
 

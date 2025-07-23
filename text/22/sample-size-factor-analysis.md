@@ -3,8 +3,8 @@ title: "How Big of a Sample Size do you need for Factor Analysis"
 source: new
 date: "2022-01-17"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Sample size justification
 output: html_document
 page_update: complete

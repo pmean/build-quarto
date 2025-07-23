@@ -3,8 +3,8 @@ title: "The Use and Interpretation of Competing Risks Regression Models"
 source: new
 date: "2022-04-22"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Data science
 output: html_document
 page_update: complete

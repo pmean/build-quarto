@@ -3,8 +3,8 @@ title: "SAS Tutorial | How to use Git with SAS"
 source: new
 date: "2022-06-10"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - SAS software
 - Software engineering
 output: html_document

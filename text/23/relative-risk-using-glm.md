@@ -3,8 +3,8 @@ title: "How can I estimate relative risk using GLM for common outcomes in cohort
 source: "New"
 date: "2023-05-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Measuring benefit and risk
 output: html_document
 page_update: complete

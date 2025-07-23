@@ -3,8 +3,8 @@ title: "The Imminent Danger of A.I. Is One We’re Not Talking About"
 source: "New"
 date: "2023-02-27"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Data science
 output: html_document
 page_update: complete

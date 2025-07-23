@@ -3,8 +3,8 @@ title: "Essential Statistics with R and Python"
 source: "New"
 date: "2023-01-09"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Teaching resources
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "Overview of Randomization Tests"
 source: "New"
 date: "2023-05-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Statistical computing
 output: html_document
 page_update: complete

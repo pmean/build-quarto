@@ -3,8 +3,8 @@ title: "SAS Webinars"
 source: "New"
 date: "2023-07-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - SAS software
 output: html_document
 page_update: complete

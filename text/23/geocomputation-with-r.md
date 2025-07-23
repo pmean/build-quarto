@@ -3,8 +3,8 @@ title: "Geocomputation with R"
 source: "New"
 date: "2023-07-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Geographic Information Systems
 output: html_document
 page_update: complete

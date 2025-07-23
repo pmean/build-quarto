@@ -3,8 +3,8 @@ title: "Progress on my website through the end of 2021"
 source: new
 date: "2022-01-02"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2022
 - Website details
 output: html_document
 page_update: complete

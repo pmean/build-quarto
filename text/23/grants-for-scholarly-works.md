@@ -3,8 +3,8 @@ title: "NLM Grants for Scholarly Works in Biomedicine and Health"
 source: "New"
 date: "2023-05-19"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Writing research grants
 output: html_document
 page_update: complete

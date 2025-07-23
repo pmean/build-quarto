@@ -2,13 +2,12 @@
 title: "Machine learning resources from a seminar by Shuhao Cao"
 author: "Steve Simon"
 date: "2022-11-12"
-output:
-  word_document: default
-  html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Data science
 source: new
+output: html_document
 page_update: complete
 ---
 

@@ -3,8 +3,8 @@ title: "Re-Reading Deming’s 14 Points in the Era of Data Science"
 source: "New"
 date: "2023-05-01"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Data science
 - Quality improvement
 output: html_document

@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: 2023-10-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Measuring benefit and risk
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "A critique of data sharing practices"
 source: "New"
 date: "2023-02-17"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Teaching resources
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "An international multi-centre cohort study of weight loss in overweight 
 source: new
 date: "2022-05-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Teaching resources
 output: html_document
 page_update: complete

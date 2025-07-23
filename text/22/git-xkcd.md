@@ -3,8 +3,8 @@ title: "Git cartoon from xkcd"
 source: new
 date: "2022-06-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Statistical computing
 output: html_document
 page_update: complete

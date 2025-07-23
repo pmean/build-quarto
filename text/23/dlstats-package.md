@@ -3,8 +3,8 @@ title: "Download statistics of R packages"
 source: "New"
 date: "2023-01-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - R software
 output: html_document
 page_update: complete

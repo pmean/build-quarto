@@ -1,14 +1,13 @@
 ---
 title: "The best reasons to run a pilot study"
 author: "Steve Simon"
-date: '2023-12-06'
-output:
-  word_document: default
-  html_document: default
-categories: Blog post
-tags: 
+date: 2023-12-06
+categories: 
+- "*Blog post"
+- 2023 
 - Pilot studies
 source: New
+output: html_document
 page_update: complete
 ---
 

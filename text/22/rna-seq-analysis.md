@@ -3,8 +3,8 @@ title: "RNA-Seq Analysis. Methods, Applications and Challenges"
 source: new
 date: "2022-01-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Genomics analysis
 output: html_document
 page_update: complete

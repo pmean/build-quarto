@@ -4,8 +4,8 @@ author: "Steve Simon"
 date: "2022-06-01"
 source: new
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2022
 - Graphical display
 - Rmarkdown graphs
 output: html_document

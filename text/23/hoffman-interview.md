@@ -3,8 +3,8 @@ title: "Transforming healthcare research with technology's latest capabilities"
 source: "New"
 date: "2023-07-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Improtant statisticians
 output: html_document
 page_update: complete

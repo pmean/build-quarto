@@ -3,8 +3,8 @@ title: "Non-standard evaluation inside functions and loops"
 source: "New"
 date: "2023-04-04"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - R software
 - Rmarkdown code
 output: html_document

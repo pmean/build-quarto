@@ -4,8 +4,8 @@ source: http://www.pmean.com/definitions/ordinal.htm
 author: Steve Simon
 date: 2022-05-28
 categories:
-- Definitions
-tags:
+- "*Definitions"
+- 2022
 - Measurement scales
 output: html_document
 page_update: no

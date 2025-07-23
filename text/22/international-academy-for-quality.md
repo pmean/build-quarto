@@ -3,8 +3,8 @@ title: "International Academy for Quality"
 source: new
 date: "2022-01-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Quality improvement
 output: html_document
 page_update: complete

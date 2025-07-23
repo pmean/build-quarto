@@ -3,7 +3,8 @@ title: Survival analysis sample size calculation
 source: "New"
 author: Steve Simon
 date: 2024-11-26
-categories: Blog post
+categories: 
+- "*Blog post"
 - 2024
 - Sample size justification
 - Survival analysis

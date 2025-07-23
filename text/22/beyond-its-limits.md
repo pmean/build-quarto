@@ -3,8 +3,8 @@ title: "Behind GitHub’s new authentication token formats"
 source: new
 date: "2022-06-10"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Epidemiology
 output: html_document
 page_update: complete

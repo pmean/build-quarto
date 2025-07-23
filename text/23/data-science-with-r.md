@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2023-07-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Teaching resources
 output: html_document
 page_update: complete

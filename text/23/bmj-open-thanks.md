@@ -3,8 +3,8 @@ title: "A thank you from BMJ Open"
 source: "New"
 date: "2023-02-28"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Professional details
 output: html_document
 page_update: complete

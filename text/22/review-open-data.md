@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2022-02-05"
 categories: 
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Open data
 output: html_document
 page_update: complete

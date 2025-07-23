@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2022-05-21"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2022
 - SAS software
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2022-02-01"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2022
 - Risk adjustment
 - Incomplete page
 output: html_document

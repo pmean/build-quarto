@@ -3,8 +3,8 @@ title: "Special issue on teaching reproducibility"
 source: "New"
 date: "2023-01-19"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Teaching resources
 output: html_document
 page_update: complete

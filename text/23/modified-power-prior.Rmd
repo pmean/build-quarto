@@ -3,8 +3,8 @@ title: "The modified power prior"
 source: "New"
 date: "2023-03-04"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Bayesian statistics
 - Incomplete pages
 output: html_document

@@ -3,8 +3,8 @@ title: "Selecting a Data Repository"
 source: new
 date: "2022-06-20"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Data sharing
 output: html_document
 page_update: complete

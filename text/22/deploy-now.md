@@ -3,8 +3,8 @@ title: "Deploy Now"
 source: new
 date: "2022-06-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Website details
 output: html_document
 page_update: complete

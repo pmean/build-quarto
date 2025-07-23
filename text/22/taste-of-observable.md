@@ -3,8 +3,8 @@ title: "A Taste of Observable"
 source: new
 date: "2022-06-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Graphical display
 output: html_document
 page_update: complete

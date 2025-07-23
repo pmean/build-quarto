@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2023-11-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Python programming
 output: html_document
 page_update: complete

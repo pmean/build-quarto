@@ -3,8 +3,8 @@ title: "Starting to think about AI Fairness"
 source: "New"
 date: "2023-04-20"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Data science
 output: html_document
 page_update: complete

@@ -4,8 +4,9 @@ author: "Steve Simon"
 date: "2022-12-12"
 output:
   html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Human side of statistics
 source: new
 page_update: complete

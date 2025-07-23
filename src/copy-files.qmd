@@ -1,6 +1,7 @@
 ---
 title: "Copy files from build-website to qblog3"
 author: "Steve Simon"
+date: 2024-11-09
 format:
   html:
     embed-resources: true
@@ -26,7 +27,7 @@ library(tidyverse)
 
 old_path <- "../text"
 old_directories <- c("99", paste0("0", (0:9)), 10:25)
-old_directories <- c("99", paste0("0", (0:6)), "13", "19", "25")
+old_directories <- c("99", paste0("0", (0:6)), as.character(c(13, 19, 24:25)))
 new_path <- "../../qblog3/posts"
 file_pattern <- "md$"
 ```

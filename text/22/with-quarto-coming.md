@@ -3,8 +3,8 @@ title: "With Quarto Coming, is R Markdown Going Away? No."
 source: new
 date: "2022-06-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - R software
 output: html_document
 page_update: complete

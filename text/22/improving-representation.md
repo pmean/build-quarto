@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2022-05-23"
 categories: 
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Health disparities
 output: html_document
 page_update: complete

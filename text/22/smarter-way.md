@@ -3,8 +3,8 @@ title: "There’s a Smarter Way to Think About the Under-5 Vaccine."
 source: new
 date: "2022-03-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Bayesian statistics
 output: html_document
 page_update: complete

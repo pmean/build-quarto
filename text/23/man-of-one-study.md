@@ -3,8 +3,8 @@ title: "Beware the man of one study"
 source: "New"
 date: "2023-02-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Systematic overviews
 output: html_document
 page_update: complete

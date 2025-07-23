@@ -1,4 +1,1 @@
-project:
-  type: default
-  output-dir: results
-
+format: html

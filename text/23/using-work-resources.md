@@ -3,8 +3,8 @@ title: "Using work resources on outside consulting"
 source: "New"
 date: "2023-02-27"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2023
 - Human side of statistics
 output: html_document
 page_update: complete

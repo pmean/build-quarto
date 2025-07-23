@@ -3,8 +3,8 @@ title: "Florence Nightingale's legacy lives on"
 source: "New"
 date: "2023-06-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Important statisticians
 output: html_document
 page_update: complete

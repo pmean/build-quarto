@@ -3,8 +3,8 @@ title: "Library Research Tutorials"
 source: new
 date: "2022-06-01"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2022
 - Writing research papers
 output: html_document
 page_update: complete

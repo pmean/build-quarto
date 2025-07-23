@@ -2,13 +2,12 @@
 title: "Missing value hell"
 author: "Steve Simon"
 date: "2022-10-23"
-output:
-  word_document: default
-  html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Data management
 source: new
+output: html_document
 page_update: complete
 ---
 

@@ -4,10 +4,12 @@ author: "Steve Simon"
 date: "2022-11-03"
 output:
   html_document: default
-categories: Blog post
-tags:
+categories: 
+- "*Blog post"
+- 2022
 - Data management
 source: new
+output: html_document
 page_update: complete
 ---
 

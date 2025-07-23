@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: "2023-08-31"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2023
 - Data management
 - R software
 - SQL software
