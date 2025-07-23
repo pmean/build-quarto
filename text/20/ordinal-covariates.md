@@ -3,8 +3,8 @@ title: "Tests of trend between disease outcomes and ordinal covariates discretiz
 source: new
 date: "2020-06-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Ordinal data
 output: html_document
 page_update: complete

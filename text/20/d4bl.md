@@ -3,8 +3,8 @@ title: "Data for Black Lives"
 source: new
 date: "2020-07-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Data science
 output: html_document
 page_update: complete

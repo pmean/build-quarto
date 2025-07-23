@@ -3,8 +3,8 @@ title: "COVID-19 open source data sets"
 source: new
 date: "2020-12-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Datasets
 - Teaching resources
 output: html_document

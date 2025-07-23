@@ -3,8 +3,8 @@ title: "The Scientist's Guide to Poster Design"
 source: new
 date: "2020-07-31"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Presenting research
 output: html_document
 page_update: complete

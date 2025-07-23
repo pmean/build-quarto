@@ -3,8 +3,8 @@ title: "A New Standard For Publishing On Racial Health Inequities"
 source: new
 date: "2020-09-26"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Evidence-Based Medicine
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: 2020-08-11
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2020
 - Data science
 output: html_document
 page_update: complete

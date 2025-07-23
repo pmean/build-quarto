@@ -3,8 +3,8 @@ title: "The Evolution of Data Science ... As I Remember It"
 source: new
 date: "2020-10-22"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Data science
 output: html_document
 page_update: complete

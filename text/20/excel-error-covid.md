@@ -3,8 +3,8 @@ title: "Excel: Why using Microsoft's tool caused Covid-19 results to be lost"
 source: new
 date: "2020-10-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Data management
 output: html_document
 page_update: complete

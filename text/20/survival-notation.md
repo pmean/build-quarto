@@ -3,8 +3,8 @@ title: "Basic notation for survival or time-to-event analyses"
 source: new
 date: "2020-10-12"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Survival analysis
 output: html_document
 page_update: complete

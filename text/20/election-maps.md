@@ -3,8 +3,8 @@ title: "Election Maps Are Everywhere. Don't Let Them Fool You."
 source: new
 date: "2020-10-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Graphical display
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "RCT-DUPLICATE"
 source: new
 date: "2020-12-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Observational studies
 - Reproducible research
 output: html_document

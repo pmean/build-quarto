@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2020-04-27"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Teaching resources
 output: html_document
 page_update: complete

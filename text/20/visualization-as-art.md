@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2020-02-04"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Graphical display
 output: html_document
 page_update: complete

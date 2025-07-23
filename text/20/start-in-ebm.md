@@ -3,8 +3,8 @@ title: "How I got started in Evidence-Based Medicine"
 source: new
 date: "2020-10-01"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Evidence-Based Medicine
 output: html_document
 page_update: complete

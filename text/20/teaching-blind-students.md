@@ -3,8 +3,8 @@ title: "Advice From Blind Teachers on How to Teach Statistics to Blind Students"
 source: new
 date: "2020-12-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Teaching resources
 output: html_document
 page_update: complete

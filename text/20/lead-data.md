@@ -3,8 +3,8 @@ title: "Relationship Between Total and Bioaccessible Lead on Children's Blood Le
 source: new
 date: "2020-08-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Teaching resources
 output: html_document
 page_update: complete

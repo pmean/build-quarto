@@ -3,8 +3,8 @@ title: "Analyzing ordinal data with metric models: What could possibly go wrong?
 source: new
 date: "2020-04-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Likert scales
 output: html_document
 page_update: complete

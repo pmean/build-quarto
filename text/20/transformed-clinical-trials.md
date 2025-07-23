@@ -3,8 +3,8 @@ title: "Envisioning a Transformed Clinical Trials Enterprise in the United State
 source: new
 date: "2020-08-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Clinical trials
 output: html_document
 page_update: complete

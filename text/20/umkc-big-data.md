@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2020-03-10"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Data science
 output: html_document
 page_update: complete

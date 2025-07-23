@@ -3,8 +3,8 @@ title: "The tidy tools manifesto"
 source: new
 date: "2020-11-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - R software
 output: html_document
 page_update: complete

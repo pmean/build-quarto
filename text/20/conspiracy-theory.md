@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: 2020-08-14
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Human side of statistics
 output: html_document
 page_update: complete

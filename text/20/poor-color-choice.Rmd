@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2020-03-11"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Graphical display
 - Rmarkdown graphs
 output: html_document

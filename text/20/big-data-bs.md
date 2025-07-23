@@ -3,8 +3,8 @@ title: "How to Call B.S. on Big Data."
 source: new
 date: "2020-06-11"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Data science
 output: html_document
 page_update: complete

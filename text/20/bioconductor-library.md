@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2020-05-12"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - R software
 output: html_document
 page_update: complete

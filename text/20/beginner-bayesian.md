@@ -3,8 +3,8 @@ title: "Advice for a beginner Bayesian"
 source: new
 date: "2020-11-20"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Bayesian statistics
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "A New Standard For Publishing On Racial Health Inequities"
 source: new
 date: "2020-08-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Racial disparities
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "Disappearing Data"
 source: new
 date: "2020-10-29"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Government statistics
 output: html_document
 page_update: complete

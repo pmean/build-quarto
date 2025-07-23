@@ -3,8 +3,8 @@ title: "Getting science published"
 source: new
 date: "2020-07-31"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Writing research papers
 output: html_document
 page_update: complete

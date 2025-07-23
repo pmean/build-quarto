@@ -3,8 +3,8 @@ title: "How to be more effective in your professional life"
 source: new
 date: "2020-08-06"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Human side of statistics
 output: html_document
 page_update: complete

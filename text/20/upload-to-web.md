@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: 2020-08-16
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - R software
 output: html_document
 page_update: complete

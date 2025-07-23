@@ -3,8 +3,8 @@ title: "Food inspections"
 source: new
 date: "2020-03-04"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Datasets
 output: html_document
 page_update: complete

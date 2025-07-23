@@ -3,8 +3,8 @@ title: "Reproducibility and Replicability in Science"
 source: new
 date: "2020-12-15"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2020
 - Reproducible research
 output: html_document
 page_update: complete

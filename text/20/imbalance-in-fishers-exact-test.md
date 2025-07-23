@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: new
 date: "2020-01-17"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2020
 - Measuring benefit and risk
 output: html_document
 page_update: complete
