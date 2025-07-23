@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/sql-for-data-science/"
 date: "2017-11-15"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - SQL
 - Teaching resources
 output: html_document

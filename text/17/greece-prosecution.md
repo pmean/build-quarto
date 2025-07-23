@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/greece-prosecution/"
 date: "2017-07-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Human side of statistics
 output: html_document
 page_update: complete

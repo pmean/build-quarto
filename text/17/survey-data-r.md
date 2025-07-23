@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/survey-data-r/"
 date: "2017-07-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Complex surveys
 - R software
 output: html_document

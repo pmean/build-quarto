@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/tshs-resource-portal/"
 date: "2017-01-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Datasets
 - Teaching resources
 output: html_document

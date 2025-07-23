@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/data-notes/"
 date: "2017-10-17"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Datasets
 - Writing research papers
 output: html_document

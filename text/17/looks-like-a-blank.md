@@ -3,8 +3,9 @@ title: "It only looks like a blank"
 author: "Steve Simon"
 source: "http://blog.pmean.com/looks-like-a-blank/"
 date: "2017-05-24"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2017
 - R software
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/binary-imbalanced-learning/"
 date: "2017-05-02"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Data science
 - Logistic regression
 output: html_document

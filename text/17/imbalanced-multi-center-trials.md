@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/imbalanced-multi-center-trials/"
 date: "2017-05-05"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2017
 - Accrual problems
 - Bayesian statistics
 output: html_document

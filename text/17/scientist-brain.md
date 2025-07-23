@@ -3,8 +3,9 @@ title: "Looking inside the brains of scientists"
 author: "Steve Simon"
 source: "http://blog.pmean.com/scientist-brain/"
 date: "2017-01-28"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2017
 - Hypothesis testing
 output: html_document
 page_update: complete

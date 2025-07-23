@@ -1,5 +1,5 @@
 ---
-title: Reporting of adverse events
+title: "All scientific work..."
 author: Steve Simon
 date: 2005-08-05
 categories:

@@ -3,8 +3,9 @@ title: "My grade point averages"
 author: "Steve Simon"
 source: "http://blog.pmean.com/grade-point-averages/"
 date: "2017-12-28"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2017
 - Professional details
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/probonto/"
 date: "2017-06-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Probability concepts
 output: html_document
 page_update: complete

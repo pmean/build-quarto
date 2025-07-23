@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/science-march/"
 date: "2017-05-04"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Humor
 - Placebos in research
 output: html_document

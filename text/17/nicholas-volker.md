@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/nicholas-volker/"
 date: "2017-04-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Data science
 output: html_document
 page_update: complete

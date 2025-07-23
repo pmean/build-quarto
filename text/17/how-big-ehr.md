@@ -3,8 +3,9 @@ title: "How big is the stuff I'm working on"
 author: "Steve Simon"
 source: "http://blog.pmean.com/how-big-ehr/"
 date: "2017-05-02"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2017
 - Professional details
 output: html_document
 page_update: complete

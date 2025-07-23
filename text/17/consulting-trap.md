@@ -3,8 +3,9 @@ title: "Getting out of the free consulting trap"
 author: "Steve Simon"
 source: "http://blog.pmean.com/consulting-trap/"
 date: "2017-05-04"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2017
 - Human side of statistics
 output: html_document
 page_update: complete

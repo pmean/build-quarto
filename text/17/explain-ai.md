@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/explain-ai/"
 date: "2017-11-27"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Data science
 output: html_document
 page_update: complete

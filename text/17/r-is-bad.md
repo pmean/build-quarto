@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/r-is-bad/"
 date: "2017-05-18"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - R software
 output: html_document
 page_update: partial

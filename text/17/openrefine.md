@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/openrefine/"
 date: "2017-09-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Data management
 output: html_document
 page_update: complete

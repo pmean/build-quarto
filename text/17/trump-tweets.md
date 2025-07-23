@@ -5,8 +5,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/trump-tweets/"
 date: "2017-09-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - R software
 - Text mining
 output: html_document

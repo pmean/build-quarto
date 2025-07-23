@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/phekb/"
 date: "2017-03-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Informatics
 output: html_document
 page_update: complete

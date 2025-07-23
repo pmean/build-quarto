@@ -3,8 +3,9 @@ title: "Losing track of your transformed variables in R"
 author: "Steve Simon"
 source: "http://blog.pmean.com/losing-track/"
 date: "2017-11-22"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2017
 - R software
 output: html_document
 page_update: complete

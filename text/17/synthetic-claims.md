@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/synthetic-claims/"
 date: "2017-03-23"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2017
 - Datasets
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/enigma-public/"
 date: "2017-06-26"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Datasets
 output: html_document
 page_update: complete

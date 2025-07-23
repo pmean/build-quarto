@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/unthinking-approach/"
 date: "2017-10-19"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2017
 - Hypothesis testing
 - Writing research papers
 output: html_document

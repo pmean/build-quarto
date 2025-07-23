@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/grant-proposals/"
 date: "2017-01-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Grant writing
 output: html_document
 page_update: complete

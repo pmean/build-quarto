@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/good-enough/"
 date: "2017-09-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Data management
 - Writing research papers
 output: html_document

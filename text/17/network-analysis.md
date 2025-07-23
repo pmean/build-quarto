@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/network-analysis/"
 date: "2017-12-12"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Network analysis
 output: html_document
 page_update: complete

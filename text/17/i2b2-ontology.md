@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/i2b2-ontology/"
 date: "2017-01-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - i2b2
 output: html_document
 page_update: partial

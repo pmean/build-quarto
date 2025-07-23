@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/proving-null/"
 date: "2017-04-27"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Hypothesis testing
 output: html_document
 page_update: complete

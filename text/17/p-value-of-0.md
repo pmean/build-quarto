@@ -3,8 +3,9 @@ title: "A p-value of .000"
 author: "Steve Simon"
 source: "http://blog.pmean.com/p-value-of-0/"
 date: "2017-05-08"
-categories: Blog post
-tags:
+categories:
+- "* Blog post"
+- 2017
 - Ask Professor Mean
 - Hypothesis testing
 output: html_document

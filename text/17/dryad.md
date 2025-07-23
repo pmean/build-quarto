@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/dryad/"
 date: "2017-08-16"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Data sharing
 - Datasets
 output: html_document

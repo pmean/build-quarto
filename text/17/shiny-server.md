@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/shiny-server/"
 date: "2017-04-10"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - R software
 output: html_document
 page_update: partial

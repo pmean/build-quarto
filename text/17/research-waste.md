@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/research-waste/"
 date: "2017-09-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2017
 - Research design
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/budgetary-measure/"
 date: "2017-08-30"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2017
 - R software
 - Writing research papers
 output: html_document
