@@ -3,8 +3,9 @@ title: "Sentiment analysis of A Christmas Carol"
 author: "Steve Simon"
 source: "http://blog.pmean.com/christmas-carol/"
 date: "2018-02-13"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2018
 - Text mining
 output: html_document
 page_update: partial

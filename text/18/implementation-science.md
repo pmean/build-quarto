@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/implementation-science/"
 date: "2018-02-06"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Critical appraisal
 output: html_document
 page_update: partial

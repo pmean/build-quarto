@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/support-for-research/"
 date: "2018-05-10"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Grant writing
 output: html_document
 page_update: partial

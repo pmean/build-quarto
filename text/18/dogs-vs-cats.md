@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/dogs-vs-cats/"
 date: "2018-04-19"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Datasets
 output: html_document
 page_update: partial

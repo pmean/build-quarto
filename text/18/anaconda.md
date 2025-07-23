@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/anaconda/"
 date: "2018-11-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - R software
 output: html_document
 page_update: complete

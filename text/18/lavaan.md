@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/lavaan/"
 date: "2018-09-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Structural Equation Modeling
 output: html_document
 page_update: complete

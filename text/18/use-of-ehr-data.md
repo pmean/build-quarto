@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/use-of-ehr-data/"
 date: "2018-07-23"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Data management
 output: html_document
 page_update: complete

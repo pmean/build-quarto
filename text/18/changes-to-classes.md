@@ -1,13 +1,11 @@
 ---
-title: "Changes to the Introduction to R
-- SAS
-- and SPSS classes"
+title: "Changes to the Introduction to R, SAS, and SPSS classes"
 author: "Steve Simon"
 source: "http://blog.pmean.com/changes-to-classes/"
 date: "2018-03-21"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - R software
 - SAS software
 - SPSS software

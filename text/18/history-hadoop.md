@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/history-hadoop/"
 date: "2018-02-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Statistical computing
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/ucla-software/"
 date: "2018-03-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - R software
 - SAS software
 - SPSS software

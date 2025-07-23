@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/spreasheet-horror/"
 date: "2018-04-03"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Data management
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/mining-ehr/"
 date: "2018-03-22"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Informatics
 output: html_document
 page_update: partial

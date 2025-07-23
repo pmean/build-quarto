@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/big-data-missouri/"
 date: "2018-06-09"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Data science
 output: html_document
 page_update: partial

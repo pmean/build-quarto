@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/proc-transpose/"
 date: "2018-03-28"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - SAS software
 output: html_document
 page_update: partial

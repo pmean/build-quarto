@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/super-pi/"
 date: "2018-09-10"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Cluster computing
 output: html_document
 page_update: complete

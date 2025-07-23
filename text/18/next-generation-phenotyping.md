@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/next-generation-phenotyping/"
 date: "2018-09-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Electronic health records
 output: html_document
 page_update: complete

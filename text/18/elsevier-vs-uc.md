@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/elsevier-vs-uc/"
 date: "2018-12-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Writing research papers
 output: html_document
 page_update: complete

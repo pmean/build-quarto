@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/what-day-is-it/"
 date: "2018-08-27"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - R software
 output: html_document
 page_update: complete

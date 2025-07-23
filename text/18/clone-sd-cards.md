@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/clone-sd-cards/"
 date: "2018-08-15"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Raspberry Pi
 output: html_document
 page_update: complete

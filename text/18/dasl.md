@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/dasl/"
 date: "2018-11-27"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Datasets
 output: html_document
 page_update: complete

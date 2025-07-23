@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/borderline-significance/"
 date: "2018-09-21"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Hypothesis testing
 output: html_document
 page_update: complete

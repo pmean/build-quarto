@@ -3,8 +3,9 @@ title: "Charging by the hour versus charging by the project"
 author: "Steve Simon"
 source: "http://blog.pmean.com/charging-models/"
 date: "2018-01-17"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2018
 - Human side of statistics
 output: html_document
 page_update: partial

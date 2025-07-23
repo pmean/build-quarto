@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/developer-works/"
 date: "2018-03-23"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Data science
 - Teaching resources
 output: html_document

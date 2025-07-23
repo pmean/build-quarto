@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/mpi-tutorial/"
 date: "2018-08-31"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Cluster computing
 output: html_document
 page_update: complete

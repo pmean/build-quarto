@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/biased-algorithms/"
 date: "2018-06-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Data science
 output: html_document
 page_update: complete

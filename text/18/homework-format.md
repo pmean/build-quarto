@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/homework-format/"
 date: "2018-03-28"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - R software
 - SAS software
 - SPSS software

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/shut-the-heck-up/"
 date: "2018-11-11"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - R software
 output: html_document
 page_update: complete

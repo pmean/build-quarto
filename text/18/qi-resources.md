@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/qi-resources/"
 date: "2018-05-13"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Quality improvement
 output: html_document
 page_update: partial

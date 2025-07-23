@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/business-essentials-2/"
 date: "2018-08-17"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Human side of statistics
 - Professional details
 output: html_document

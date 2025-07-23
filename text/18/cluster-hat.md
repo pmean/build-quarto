@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/cluster-hat/"
 date: "2018-09-01"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Cluster computing
 output: html_document
 page_update: complete

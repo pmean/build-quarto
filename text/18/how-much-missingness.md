@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/how-much-missingness/"
 date: "2018-07-07"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Missing data
 output: html_document
 page_update: complete

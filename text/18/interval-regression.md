@@ -5,8 +5,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/interval-regression/"
 date: "2018-05-21"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - R software
 - Survival analysis
 output: html_document

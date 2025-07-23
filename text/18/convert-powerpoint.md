@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/convert-powerpoint/"
 date: "2018-12-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Presenting research
 - R software
 output: html_document

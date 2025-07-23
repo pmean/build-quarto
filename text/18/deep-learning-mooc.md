@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/deep-learning-mooc/"
 date: "2018-08-01"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Data science
 output: html_document
 page_update: complete

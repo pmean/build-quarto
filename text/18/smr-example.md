@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/smr-example/"
 date: "2018-12-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Epidemiology
 output: html_document
 page_update: complete

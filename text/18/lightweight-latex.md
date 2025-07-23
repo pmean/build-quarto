@@ -1,14 +1,11 @@
 ---
-title: "TinyTeX: A lightweight
-- cross-platform
-- portable
-- and easy-to-maintain LaTeX distribution based on TeX Live"
+title: "TinyTeX: A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live"
 author: "Steve Simon"
 source: "http://blog.pmean.com/lightweight-latex/"
 date: "2018-04-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - R software
 - Reproducible research
 - Writing research papers

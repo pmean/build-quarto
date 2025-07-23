@@ -4,8 +4,8 @@ source: "http://blog.pmean.com/stemming/"
 author: Steve Simon
 date: "2018-02-20"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - R software
 - Text mining
 output: html_document

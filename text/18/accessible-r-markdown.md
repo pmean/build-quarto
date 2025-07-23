@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/accessible-r-markdown/"
 date: "2018-10-23"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - R software
 - Teaching resources
 output: html_document

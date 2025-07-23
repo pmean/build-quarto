@@ -5,8 +5,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/leaflet/"
 date: "2018-09-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Geocoding
 - Graphical display
 output: html_document

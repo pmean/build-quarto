@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/structure-for-documentation/"
 date: "2018-07-24"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Statistical computing
 - Teaching resources
 output: html_document

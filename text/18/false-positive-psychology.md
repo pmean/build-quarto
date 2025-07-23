@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/false-positive-psychology/"
 date: "2018-09-14"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Hypothesis testing
 output: html_document
 page_update: complete

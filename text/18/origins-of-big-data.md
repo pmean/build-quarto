@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/origins-of-big-data/"
 date: "2018-01-02"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Data science
 output: html_document
 page_update: partial

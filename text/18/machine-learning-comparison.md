@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/machine-learning-comparison/"
 date: "2018-04-03"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Data science
 output: html_document
 page_update: partial

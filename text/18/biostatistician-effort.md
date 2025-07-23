@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/biostatistician-effort/"
 date: "2018-04-03"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2018
 - Grant writing
 output: html_document
 page_update: partial

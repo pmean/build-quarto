@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/reproducible-stata/"
 date: "2018-05-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2018
 - Reproducible research
 - Stata software
 output: html_document
