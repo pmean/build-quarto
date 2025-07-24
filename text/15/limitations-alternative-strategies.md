@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/limitations-alternative-strategies/"
 date: "2015-05-06"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Grant writing
 output: html_document
 page_update: complete

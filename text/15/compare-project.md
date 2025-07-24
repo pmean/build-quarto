@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/compare-project/"
 date: "2015-12-07"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Critical appraisal
 - Publication bias
 output: html_document

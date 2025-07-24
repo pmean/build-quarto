@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/finding-interesting-articles/"
 date: "2015-09-16"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Teaching resources
 output: html_document
 page_update: complete

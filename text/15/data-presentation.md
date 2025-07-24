@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/data-presentation/"
 date: "2015-04-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Graphical display
 output: html_document
 page_update: complete

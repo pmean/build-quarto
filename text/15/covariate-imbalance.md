@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/covariate-imbalance/"
 date: "2015-03-04"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Risk adjustment
 output: html_document
 page_update: complete

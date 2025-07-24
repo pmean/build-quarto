@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/anecdotal-quote/"
 date: "2015-10-29"
 categories:
-- Quote
-tags:
+- "*Quote"
+- 2015
 - Critical appraisal
 output: html_document
 page_update: complete

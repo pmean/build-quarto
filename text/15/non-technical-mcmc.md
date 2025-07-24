@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/non-technical-mcmc/"
 date: "2015-09-21"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Accrual problems
 - Bayesian statistics
 output: html_document

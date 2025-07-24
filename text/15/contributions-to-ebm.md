@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/contributions-to-ebm/"
 date: "2015-06-03"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Professional details
 output: html_document
 page_update: complete

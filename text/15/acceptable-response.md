@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/acceptable-response/"
 date: "2015-03-30"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Observational studies
 - Survey design
 output: html_document

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/analyzing-ordinal/"
 date: "2015-01-08"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Logistic regression
 - Ordinal data
 output: html_document

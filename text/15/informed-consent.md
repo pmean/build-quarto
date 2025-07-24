@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/informed-consent/"
 date: "2015-06-01"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Ethics in research
 output: html_document
 page_update: complete

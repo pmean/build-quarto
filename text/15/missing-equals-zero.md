@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/missing-equals-zero/"
 date: "2015-05-18"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Missing data
 output: html_document
 page_update: complete

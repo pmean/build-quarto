@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/learn-about-r/"
 date: "2015-08-07"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - R software
 - Teaching resources
 output: html_document

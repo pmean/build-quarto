@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/how-big/"
 date: "2015-10-05"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Incomplete page
 - R software
 output: html_document

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/book-review/"
 date: "2015-12-02"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Critical appraisal
 - Professional details
 output: html_document

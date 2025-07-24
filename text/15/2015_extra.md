@@ -3,8 +3,8 @@ title: "Pages written in 2015"
 source: new
 date: 2015-12-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Website details
 output: html_document
 page_update: complete

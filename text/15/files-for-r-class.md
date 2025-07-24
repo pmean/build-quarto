@@ -4,8 +4,8 @@ source: "New"
 author: Steve Simon
 date: 2015-07-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Being updated
 output: html_document
 page_update: no

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/arrive-guidelines/"
 date: "2015-04-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Critical appraisal
 output: html_document
 page_update: complete

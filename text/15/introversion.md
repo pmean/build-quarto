@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/introversion/"
 date: "2015-09-08"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Human side of statistics
 output: html_document
 page_update: complete
