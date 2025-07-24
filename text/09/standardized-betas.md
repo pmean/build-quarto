@@ -3,8 +3,8 @@ title: The controversy over standardized beta coefficients
 author: Steve Simon
 date: 2009-09-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Linear regression
 output: html_document

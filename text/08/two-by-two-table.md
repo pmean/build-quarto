@@ -3,8 +3,8 @@ title: Interpretations for a two by two table
 author: Steve Simon
 date: 2008-10-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Probability concepts
 output: html_document

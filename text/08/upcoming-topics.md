@@ -3,8 +3,8 @@ title: Upcoming topics in Poisson regression
 author: Steve Simon
 date: 2008-04-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Obsolete page
 output: html_document
 page_update: no

@@ -3,8 +3,8 @@ title: Facebook account
 author: Steve Simon
 date: 2010-01-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

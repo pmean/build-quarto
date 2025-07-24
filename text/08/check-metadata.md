@@ -3,8 +3,8 @@ title: Checks for data quality using metadata
 author: Steve Simon
 date: 2008-08-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Data management
 - Being updated
 output: html_document

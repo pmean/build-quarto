@@ -3,8 +3,8 @@ title: Tentative training schedule
 author: Steve Simon
 date: 2009-09-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Professional details
 output: html_document

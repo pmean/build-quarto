@@ -3,8 +3,8 @@ title: New Bioinformatics degree
 author: Steve Simon
 date: 2009-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 output: html_document
 page_update: no

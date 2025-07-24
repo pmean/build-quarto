@@ -3,8 +3,8 @@ title: Short biography
 author: Steve Simon
 date: 2009-03-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Professional details
 output: html_document

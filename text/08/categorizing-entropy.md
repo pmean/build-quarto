@@ -3,8 +3,8 @@ title: Categorizing entropy values
 author: Steve Simon
 date: 2008-09-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Information theory
 - Being updated

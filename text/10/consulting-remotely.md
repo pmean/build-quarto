@@ -3,8 +3,8 @@ title: Consulting remotely versus consulting in person
 author: Steve Simon
 date: 2010-02-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

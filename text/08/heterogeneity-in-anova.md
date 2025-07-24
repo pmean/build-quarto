@@ -3,8 +3,8 @@ title: When does heterogeneity become a concern?
 author: Steve Simon
 date: 2008-06-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Analysis of variance
 output: html_document

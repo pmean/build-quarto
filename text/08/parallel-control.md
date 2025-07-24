@@ -3,8 +3,8 @@ title: Comparing pre and post data with a parallel control group
 author: Steve Simon
 date: 2008-09-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Mixed models
 output: html_document

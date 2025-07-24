@@ -3,8 +3,8 @@ title: Stats #18 practice exercises
 author: Steve Simon
 date: 2007-02-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Website details
 - Being updated
 output: html_document

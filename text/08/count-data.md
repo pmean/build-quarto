@@ -3,8 +3,8 @@ title: Interval scale for count data
 author: Steve Simon
 date: 2008-08-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Descriptive statistics
 output: html_document

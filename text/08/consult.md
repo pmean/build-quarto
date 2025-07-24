@@ -3,8 +3,8 @@ title: Hire me as a consultant
 author: Steve Simon
 date: 2008-07-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Professional details
 output: html_document

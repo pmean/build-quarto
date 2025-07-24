@@ -3,8 +3,8 @@ title: Eliciting a prior distribution for rejection/refusal rates
 author: Steve Simon
 date: 2008-06-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Accrual problems
 - Being updated
 output: html_document

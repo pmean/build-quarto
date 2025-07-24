@@ -3,8 +3,8 @@ title: Assessing the assumption of an exponential distribution
 author: Steve Simon
 date: 2008-02-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Modeling issues
 output: html_document

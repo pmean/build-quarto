@@ -3,8 +3,8 @@ title: Exponential interpolation
 author: Steve Simon
 date: 2010-02-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Modeling issues
 output: html_document

@@ -3,8 +3,8 @@ title: Is there a scientific basis for EBM?
 author: Steve Simon
 date: 2008-08-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Evidence based medicine
 output: html_document

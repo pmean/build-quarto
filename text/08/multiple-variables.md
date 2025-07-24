@@ -3,8 +3,8 @@ title: Entropy as a measure of data quality across multiple variables
 author: Steve Simon
 date: 2008-08-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Information theory
 output: html_document

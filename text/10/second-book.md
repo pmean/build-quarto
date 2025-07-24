@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/SecondBook.html
 date: 2010-07-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/MissouriTechnology.html
 date: 2010-10-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Accrual problems
 - Being updated
 - Professional details

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/PoissonPower.html
 date: 2010-01-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Poisson regression
 - Sample size justification

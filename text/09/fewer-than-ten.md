@@ -3,8 +3,8 @@ title: Fewer than 10 events per variable
 author: Steve Simon
 date: 2009-02-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Small sample size issues
 output: html_document

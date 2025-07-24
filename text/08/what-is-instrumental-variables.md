@@ -3,8 +3,8 @@ title: A brief overview of instrumental variables
 author: Steve Simon
 date: 2008-04-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Unusual data
 output: html_document

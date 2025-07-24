@@ -3,8 +3,8 @@ title: What statistic should I use when?
 author: Steve Simon
 date: 2008-01-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Analysis of variance
 - Linear regression

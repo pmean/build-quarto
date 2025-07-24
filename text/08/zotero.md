@@ -3,8 +3,8 @@ title: "Zotero, The Next Generation Research Tool"
 author: Steve Simon
 date: 2008-12-01
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2008
 - Being updated
 - Writing research papers
 output: html_document

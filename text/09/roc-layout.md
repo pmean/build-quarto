@@ -3,8 +3,8 @@ title: Data layout for an ROC curve
 author: Steve Simon
 date: 2009-10-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Diagnostic testing
 output: html_document

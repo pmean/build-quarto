@@ -3,8 +3,8 @@ title: Why it's impossible to keep a resume current
 author: Steve Simon
 date: 2008-06-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Professional details
 output: html_document

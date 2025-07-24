@@ -3,8 +3,8 @@ title: Is this a case-control design?
 author: Steve Simon
 date: 2009-04-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Epidemiology
 output: html_document

@@ -3,8 +3,8 @@ title: I love to write
 author: Steve Simon
 date: 2009-03-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Professional details
 output: html_document

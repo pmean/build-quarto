@@ -3,8 +3,8 @@ title: Getting on and off various email lists
 author: Steve Simon
 date: 2008-07-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Teaching resources
 output: html_document

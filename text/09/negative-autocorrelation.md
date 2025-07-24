@@ -3,8 +3,8 @@ title: Interpreting a negative autocorrelation
 author: Steve Simon
 date: 2009-02-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Time series
 output: html_document

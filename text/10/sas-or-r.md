@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/SasOrR.html
 date: 2010-04-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - R software
 - SAS software

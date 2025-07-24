@@ -3,8 +3,8 @@ title: BUGS is more than just one program
 author: Steve Simon
 date: 2010-11-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Bayesian statistics
 - Being updated
 output: html_document

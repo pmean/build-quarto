@@ -3,8 +3,8 @@ title: Can an outcome with three levels be used in logistic regression
 author: Steve Simon
 date: 2008-09-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Logistic regression
 output: html_document

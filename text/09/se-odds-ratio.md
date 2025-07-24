@@ -3,8 +3,8 @@ title: Standard error for an odds ratio
 author: Steve Simon
 date: 2009-08-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Measuring benefit and risk
 output: html_document

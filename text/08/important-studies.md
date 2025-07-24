@@ -3,8 +3,8 @@ title: Finding only the important studies
 author: Steve Simon
 date: 2008-01-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Systematic overviews
 output: html_document

@@ -3,8 +3,8 @@ title:  Anti-intellectualism
 author: Steve Simon
 date: 2008-08-08
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2008
 - Being updated
 - Critical appraisal
 output: html_document

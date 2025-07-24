@@ -3,8 +3,8 @@ title: Survey results from nine out of thirty six
 author: Steve Simon
 date: 2008-07-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Small sample size issues
 output: html_document

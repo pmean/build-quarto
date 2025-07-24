@@ -3,8 +3,8 @@ title: To be updated
 author: Steve Simon
 date: 2006-02-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Statistical evidence book
 output: html_document

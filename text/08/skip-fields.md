@@ -3,8 +3,8 @@ title: Processing skip fields in SPSS
 author: Steve Simon
 date: 2008-09-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - SPSS software
 output: html_document

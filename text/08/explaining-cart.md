@@ -3,8 +3,8 @@ title: Explaining CART models in simple terms
 author: Steve Simon
 date: 2008-11-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Data mining
 output: html_document

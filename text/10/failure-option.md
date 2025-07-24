@@ -3,8 +3,8 @@ title: If you knew that failure was not an option what would you do
 author: Steve Simon
 date: 2010-10-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

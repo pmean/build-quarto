@@ -3,8 +3,8 @@ title: Can political questions be resolved by science
 author: Steve Simon
 date: 2010-07-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

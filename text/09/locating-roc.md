@@ -3,8 +3,8 @@ title: Locating individual points on an ROC curve
 author: Steve Simon
 date: 2009-03-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Diagnostic testing
 output: html_document

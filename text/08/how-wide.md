@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/08/HowWide-08.html
 date: 2008-05-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Website details
 output: html_document

@@ -3,8 +3,8 @@ title: Ambiguity in the definition of the exponential distribution
 author: Steve Simon
 date: 2010-11-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Probability distributions
 output: html_document

@@ -3,8 +3,8 @@ title: The case of Ranjit Kumar Chandra
 author: Steve Simon
 date: 2008-09-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Ethics in research
 - Being updated
 output: html_document

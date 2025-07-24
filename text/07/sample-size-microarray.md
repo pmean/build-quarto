@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/SampleSizeMicroarray.html
 date: 2007-08-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Data mining
 - Sample size justification
 output: html_document

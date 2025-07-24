@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/SampleSize.html
 date: 2010-07-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Sample size justification
 output: html_document

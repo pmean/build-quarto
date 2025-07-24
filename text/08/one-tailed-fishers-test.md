@@ -3,8 +3,8 @@ title: How to report a one-tailed Fisher's Exact Test
 author: Steve Simon
 date: 2008-07-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Hypothesis testing
 output: html_document

@@ -3,8 +3,8 @@ title: "Helping Doctors and Patients Make Sense of Health Statistics"
 author: Steve Simon
 date: 2008-11-01
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2008
 - Being updated
 - Teaching resources
 output: html_document

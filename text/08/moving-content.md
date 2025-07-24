@@ -3,8 +3,8 @@ title: Moving content to a private site
 author: Steve Simon
 date: 2008-03-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Website details
 output: html_document

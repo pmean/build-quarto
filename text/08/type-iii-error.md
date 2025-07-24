@@ -3,8 +3,8 @@ title: Type III error
 author: Steve Simon
 date: 2008-01-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Hypothesis testing
 output: html_document

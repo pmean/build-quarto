@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/SingleMean.html
 date: 2010-02-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Systematic overview
 output: html_document
 page_update: partial

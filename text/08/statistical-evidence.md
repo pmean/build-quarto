@@ -3,8 +3,8 @@ title: Statistical Evidence in Medical Trials
 author: Steve Simon
 date: 2005-01-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Statistical evidence book
 output: html_document

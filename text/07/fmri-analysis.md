@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/FmriAnalysis.html
 date: 2007-02-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Imaging 
 output: html_document
 page_update: complete

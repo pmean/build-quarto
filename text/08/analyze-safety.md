@@ -3,8 +3,8 @@ title: How do you analyze safety data
 author: Steve Simon
 date: 2008-01-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Adverse events
 - Being updated
 output: html_document

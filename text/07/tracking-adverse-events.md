@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/TrackingAdverseEvents.html
 date: 2007-03-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Adverse events
 output: html_document
 page_update: complete

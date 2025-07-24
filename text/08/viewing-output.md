@@ -3,8 +3,8 @@ title: Viewing SPSS and SAS output without buying SPSS and SAS
 author: Steve Simon
 date: 2008-12-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - SAS software
 - SPSS software

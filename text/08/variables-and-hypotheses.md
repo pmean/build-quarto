@@ -3,8 +3,8 @@ title: "Variables and hypotheses"
 author: Steve Simon
 date: 2008-10-20
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2008
 - Being updated
 - Hypothesis testing
 output: html_document

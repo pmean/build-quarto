@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/08/CaseStudies.html
 date: 2008-04-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Ethics in research
 output: html_document
 page_update: partial

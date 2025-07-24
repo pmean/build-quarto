@@ -3,8 +3,8 @@ title: "Four assumptions of multiple regression that researchers should always t
 author: Steve Simon
 date: 2008-11-05
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2008
 - Being updated
 - Linear regression
 output: html_document

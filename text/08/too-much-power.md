@@ -3,8 +3,8 @@ title: Too much power and precision?
 author: Steve Simon
 date: 2008-01-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Sample size justification
 output: html_document
 page_update: partial

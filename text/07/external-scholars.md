@@ -3,8 +3,8 @@ title: External scholars needed to review my promotion materials
 author: Steve Simon
 date: 2007-08-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Professional details
 output: html_document
 page_update: complete

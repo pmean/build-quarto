@@ -3,8 +3,8 @@ title: What does one-third of the way through a study mean?
 author: Steve Simon
 date: 2008-04-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Early stopping
 output: html_document

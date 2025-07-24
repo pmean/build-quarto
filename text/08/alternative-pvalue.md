@@ -3,8 +3,8 @@ title: An alternative to the p-value
 author: Steve Simon
 date: 2008-04-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Hypothesis testing
 output: html_document

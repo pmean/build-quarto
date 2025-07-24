@@ -3,8 +3,8 @@ title: Are we statisticians gods?
 author: Steve Simon
 date: 2009-10-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Human side of statistics
 output: html_document

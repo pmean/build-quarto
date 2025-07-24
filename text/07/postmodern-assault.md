@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/PostmodernAssault.html
 date: 2007-12-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Critical appraisal
 output: html_document
 page_update: complete

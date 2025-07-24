@@ -3,8 +3,8 @@ title: Bootstrap estimates of the standard error
 author: Steve Simon
 date: 2008-06-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Unusual data
 output: html_document
 page_update: complete

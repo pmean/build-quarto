@@ -3,8 +3,8 @@ title: An example of a bad survey
 author: Steve Simon
 date: 2010-06-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Survey design
 output: html_document

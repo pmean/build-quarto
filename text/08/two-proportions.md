@@ -3,8 +3,8 @@ title: Comparing two proportions out of the same multinomial population
 author: Steve Simon
 date: 2008-08-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Multinomial probabilities
 output: html_document

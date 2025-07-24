@@ -3,8 +3,8 @@ title: The problem with being too sensitive
 author: Steve Simon
 date: 2009-09-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Diagnostic testing
 output: html_document

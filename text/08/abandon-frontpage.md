@@ -3,8 +3,8 @@ title: Should I abandon FrontPage?
 author: Steve Simon
 date: 2008-07-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Obsolete pages
 - Website details
 output: html_document

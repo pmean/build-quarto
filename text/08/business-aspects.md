@@ -3,8 +3,8 @@ title: Business aspects of an independent statistical consultant
 author: Steve Simon
 date: 2008-07-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Human side of statistics
 output: html_document

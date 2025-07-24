@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/ResidualConfounding.html
 date: 2010-01-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Linear regression
 output: html_document

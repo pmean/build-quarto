@@ -3,8 +3,8 @@ title: Five points or seven points on a survey scale
 author: Steve Simon
 date: 2009-03-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Survey design
 output: html_document

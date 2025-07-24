@@ -3,8 +3,8 @@ title: Randomly generating simple math problems using R
 author: Steve Simon
 date: 2009-11-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - R software
 output: html_document

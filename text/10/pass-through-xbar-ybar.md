@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/LeastSquares.html
 date: 2010-10-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Linear regression
 output: html_document

@@ -3,8 +3,8 @@ title: Can I stop this study?
 author: Steve Simon
 date: 2009-09-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Early stopping
 output: html_document

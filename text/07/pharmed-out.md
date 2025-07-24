@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/PediatricResearch.html
 date: 2007-03-02
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2007
 - Conflict of interest
 output: html_document
 page_update: partial

@@ -3,8 +3,8 @@ title: Cytel software has developed a Poisson
 author: Steve Simon
 date: 2008-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Accrual problems
 output: html_document

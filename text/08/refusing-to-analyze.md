@@ -3,8 +3,8 @@ title: Refusing to analyze a data set
 author: Steve Simon
 date: 2008-10-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 output: html_document
 page_update: no

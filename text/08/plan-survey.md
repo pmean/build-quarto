@@ -3,8 +3,8 @@ title: To be updated
 author: Steve Simon
 date: 2008-10-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Survey design
 output: html_document

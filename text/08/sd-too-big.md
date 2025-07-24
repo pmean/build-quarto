@@ -3,8 +3,8 @@ title: A standard deviation that is too big for its own britches
 author: Steve Simon
 date: 2008-10-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Descriptive statistics
 output: html_document

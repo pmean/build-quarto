@@ -3,8 +3,8 @@ title: Accounting for clusters in an individually randomized clinical trial
 author: Steve Simon
 date: 2009-10-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Randomization in research
 output: html_document
 page_update: no

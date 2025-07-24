@@ -3,8 +3,8 @@ title: Distrust of a Bayesian
 author: Steve Simon
 date: 2008-07-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Bayesian statistics
 - Being updated
 output: html_document

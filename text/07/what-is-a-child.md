@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/WhatIsAChild.html
 date: 2007-11-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Children in research
 output: html_document
 page_update: complete

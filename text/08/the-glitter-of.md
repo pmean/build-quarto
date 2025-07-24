@@ -3,8 +3,8 @@ title: "The glitter of... "
 author: Steve Simon
 date: 2008-01-01
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2008
 - Critical appraisal
 - Being updated
 output: html_document

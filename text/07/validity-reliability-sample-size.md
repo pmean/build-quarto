@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ValidityReliabilitySampleSize.html
 date: 2007-04-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Measuring agreement
 - Sample size justification
 output: html_document

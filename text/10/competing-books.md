@@ -3,8 +3,8 @@ title: Competing books to the book I am planning to write
 author: Steve Simon
 date: 2010-08-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

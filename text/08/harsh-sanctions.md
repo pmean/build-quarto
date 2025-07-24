@@ -3,8 +3,8 @@ title: "Harsh sanctions are only part of the solution"
 author: Steve Simon
 date: 2008-08-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 output: html_document
 page_update: no

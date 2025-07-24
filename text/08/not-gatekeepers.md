@@ -3,8 +3,8 @@ title: Statisticians are not gatekeepers
 author: Steve Simon
 date: 2008-11-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Human side of statistics
 output: html_document

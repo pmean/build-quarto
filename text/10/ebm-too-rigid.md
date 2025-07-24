@@ -3,8 +3,8 @@ title: Is Evidence-Based Medicine too rigid
 author: Steve Simon
 date: 2010-08-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Evidence based medicine
 output: html_document

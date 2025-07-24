@@ -3,8 +3,8 @@ title: How do you compute a continuity correction for a confidence interval
 author: Steve Simon
 date: 2008-09-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Confidence intervals
 - Being updated
 output: html_document

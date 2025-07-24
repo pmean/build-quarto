@@ -3,8 +3,8 @@ title: Fighting the claim that any size difference is clinically important
 author: Steve Simon
 date: 2010-08-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Sample size justification
 output: html_document

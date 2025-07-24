@@ -3,8 +3,8 @@ title: What makes a good website?
 author: Steve Simon
 date: 2010-04-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Website details
 output: html_document

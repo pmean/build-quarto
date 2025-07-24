@@ -3,8 +3,8 @@ title: Calculating NNT for
 author: Steve Simon
 date: 2009-04-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Measuring benefit and risk
 output: html_document

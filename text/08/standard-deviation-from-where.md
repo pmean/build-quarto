@@ -3,8 +3,8 @@ title: Where did that standard deviation come from
 author: Steve Simon
 date: 2008-07-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Sample size justification
 output: html_document

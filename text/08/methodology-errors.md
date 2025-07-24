@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/08/MethodologyErrors.html 
 date: 2008-10-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Critical appraisal
 output: html_document

@@ -3,8 +3,8 @@ title: Tentative table of contents for my second book
 author: Steve Simon
 date: 2010-07-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

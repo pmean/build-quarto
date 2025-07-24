@@ -3,8 +3,8 @@ title: Can I run a quantitative analysis on this data?
 author: Steve Simon
 date: 2008-06-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Small sample size issues
 output: html_document

@@ -3,8 +3,8 @@ title: Jump start statistics for beginning researchers
 author: Steve Simon
 date: 2009-11-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Teaching resources
 output: html_document

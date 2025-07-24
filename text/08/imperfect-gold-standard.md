@@ -3,8 +3,8 @@ title: ROC curve for an imperfect gold standard
 author: Steve Simon
 date: 2008-03-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Diagnostic testing
 output: html_document

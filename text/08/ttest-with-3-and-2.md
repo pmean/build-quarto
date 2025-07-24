@@ -3,8 +3,8 @@ title: T-test with 3 treatment values and 2 controls
 author: Steve Simon
 date: 2008-10-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Small sample size issues
 output: html_document

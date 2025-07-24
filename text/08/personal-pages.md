@@ -3,8 +3,8 @@ title: New personal pages
 author: Steve Simon
 date: 2008-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Personal details
 output: html_document

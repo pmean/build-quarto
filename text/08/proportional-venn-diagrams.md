@@ -3,8 +3,8 @@ title: Venn diagrams with proportional areas
 author: Steve Simon
 date: 2008-09-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Graphical display
 output: html_document

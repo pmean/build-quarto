@@ -3,8 +3,8 @@ title: Using entropy and the surprisal value to measure the degree of agreement 
 author: Steve Simon
 date: 2010-04-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Information theory
 output: html_document
 page_update: complete

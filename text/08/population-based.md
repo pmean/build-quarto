@@ -3,8 +3,8 @@ title: 'What does "population-based" mean?'
 author: Steve Simon
 date: 2008-09-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Writing research papers
 output: html_document

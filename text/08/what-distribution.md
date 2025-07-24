@@ -3,8 +3,8 @@ title: What distribution does this data come from
 author: Steve Simon
 date: 2008-07-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Modeling issues
 output: html_document

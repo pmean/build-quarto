@@ -3,8 +3,8 @@ title: Another counter-intuitive probability problem
 author: Steve Simon
 date: 2010-07-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Probability
 output: html_document

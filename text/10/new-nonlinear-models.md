@@ -3,8 +3,8 @@ title: Fitting a new class of nonlinear regression models
 author: Steve Simon
 date: 2010-06-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Nonlinear regression
 output: html_document

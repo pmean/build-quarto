@@ -3,8 +3,8 @@ title: Statistical Literacy for Medical Librarians
 author: Steve Simon
 date: 2010-02-10
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

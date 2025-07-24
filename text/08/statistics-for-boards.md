@@ -3,8 +3,8 @@ title: Statistics for Boards
 author: Steve Simon
 date: 2008-03-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Teaching resources
 output: html_document

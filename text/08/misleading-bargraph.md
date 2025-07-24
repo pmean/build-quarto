@@ -3,8 +3,8 @@ title: A misleading bar graph
 author: Steve Simon
 date: 2008-07-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Graphical display
 output: html_document

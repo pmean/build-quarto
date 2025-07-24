@@ -3,8 +3,8 @@ title: "High altitude effects on athletic performance"
 author: Steve Simon
 date: 2008-01-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Poisson regression
 - Teaching resources

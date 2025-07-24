@@ -3,8 +3,8 @@ title: A simple example of joint and conditional entropy
 author: Steve Simon
 date: 2009-01-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Information theory
 output: html_document

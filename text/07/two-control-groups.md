@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/TwoControlGroups.html
 date: 2007-06-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Observational studies
 output: html_document
 page_update: complete

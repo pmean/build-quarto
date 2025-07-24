@@ -3,8 +3,8 @@ title: What resources are available for fellows
 author: Steve Simon
 date: 2008-08-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 output: html_document
 page_update: no

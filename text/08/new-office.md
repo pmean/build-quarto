@@ -3,8 +3,8 @@ title: Directions to my new office
 author: Steve Simon
 date: 2008-04-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Obsolete page
 output: html_document
 page_update: partial

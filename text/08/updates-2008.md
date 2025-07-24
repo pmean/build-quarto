@@ -3,8 +3,8 @@ title: Updates for 2008
 author: Steve Simon
 date: 2008-11-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Obsolete page
 - Professional details

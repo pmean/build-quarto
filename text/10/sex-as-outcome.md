@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/SexAsOutcome.html
 date: 2010-03-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Modeling issues
 output: html_document

@@ -3,8 +3,8 @@ title: Example of power calculation for a repeated measures design
 author: Steve Simon
 date: 2008-10-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Sample size justification
 output: html_document

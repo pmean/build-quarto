@@ -3,8 +3,8 @@ title: Modeling a declining count variable
 author: Steve Simon
 date: 2008-06-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Poisson regression
 - Rmarkdown code
 output: html_document

@@ -3,8 +3,8 @@ title: Learning how to fit latent growth curve in Amos
 author: Steve Simon
 date: 2010-08-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Structural equations modeling
 output: html_document

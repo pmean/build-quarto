@@ -3,8 +3,8 @@ title: Getting a good cut-off
 author: Steve Simon
 date: 2009-09-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Diagnostic testing
 output: html_document

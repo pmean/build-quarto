@@ -4,8 +4,8 @@ source: http://www.pmean.com/10/Updates2010.html
 author: Steve Simon
 date: 2010-08-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Obsolete pages
 output: html_document
 page_update: no

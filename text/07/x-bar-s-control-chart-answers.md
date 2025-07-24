@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/XbarSControlChartAnswers.html
 date: 2007-03-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Control charts
 output: html_document
 page_update: complete

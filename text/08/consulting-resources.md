@@ -3,8 +3,8 @@ title: Resources from the Statistical Consulting Section of the American Statist
 author: Steve Simon
 date: 2008-08-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Human side of statistics
 - Being updated
 output: html_document

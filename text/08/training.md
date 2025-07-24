@@ -3,8 +3,8 @@ title: Statistical Training Opportunities At Children's Mercy Hospital
 author: Steve Simon
 date: 2001-11-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Obsolete page
 output: html_document
 page_update: partial

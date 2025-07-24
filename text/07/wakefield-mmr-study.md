@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/UsingRealExamples.html
 date: 2007-07-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Children in research
 - Conflict of interest
 - Ethics in research

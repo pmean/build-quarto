@@ -3,8 +3,8 @@ title: Links and references that I need to add
 author: Steve Simon
 date: 2008-09-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Website details
 output: html_document

@@ -3,8 +3,8 @@ title: What is a normal probability plot?
 author: Steve Simon
 date: 2009-10-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Probability distributions
 output: html_document

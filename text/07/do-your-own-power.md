@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/DoYourOwnPower.html
 date: 2007-01-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Sample size justification
 output: html_document
 page_update: complete

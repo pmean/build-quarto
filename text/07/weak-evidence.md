@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/WeakEvidence.html
 date: 2007-03-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Critical appraisal
 output: html_document
 page_update: partial

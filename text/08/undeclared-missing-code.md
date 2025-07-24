@@ -3,8 +3,8 @@ title: Undeclared missing code leads
 author: Steve Simon
 date: 2008-07-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Missing data
 output: html_document

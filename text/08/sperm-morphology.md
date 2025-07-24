@@ -3,8 +3,8 @@ title: Use of entropy measures for sperm morphology classification
 author: Steve Simon
 date: 2008-09-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Information theory
 output: html_document

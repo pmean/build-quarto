@@ -3,8 +3,8 @@ title: Can Google replace your doctor?
 author: Steve Simon
 date: 2007-01-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Diagnostic testing
 output: html_document
 page_update: complete

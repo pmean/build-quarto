@@ -3,8 +3,8 @@ title: Fan page for The Monthly Mean
 author: Steve Simon
 date: 2010-02-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

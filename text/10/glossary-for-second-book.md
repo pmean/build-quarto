@@ -3,8 +3,8 @@ title: Glossary for my second book
 author: Steve Simon
 date: 2010-08-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

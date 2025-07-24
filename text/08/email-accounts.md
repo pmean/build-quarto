@@ -3,8 +3,8 @@ title: Multiple email accounts
 author: Steve Simon
 date: 2008-09-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Professional details
 output: html_document

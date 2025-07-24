@@ -3,8 +3,8 @@ title: Normality assumptions for the paired t-test
 author: Steve Simon
 date: 2008-10-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Hypothesis testing
 output: html_document

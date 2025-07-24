@@ -3,8 +3,8 @@ title: Calculating NNT for observational studies
 author: Steve Simon
 date: 2008-03-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Measuring benefit and risk
 output: html_document

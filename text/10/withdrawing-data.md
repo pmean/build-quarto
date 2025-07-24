@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/Withdawing.html
 date: 2010-05-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Ethics in research
 output: html_document

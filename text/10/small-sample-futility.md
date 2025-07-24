@@ -3,8 +3,8 @@ title: The futility of small sample sizes for evaluating a binary outcome
 author: Steve Simon
 date: 2010-06-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Small sample size issues
 output: html_document

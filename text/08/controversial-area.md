@@ -3,8 +3,8 @@ title: Where to look for information in a controversial area
 author: Steve Simon
 date: 2008-08-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Critical appraisal
 - Being updated
 output: html_document

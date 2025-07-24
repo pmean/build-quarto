@@ -3,8 +3,8 @@ title: "Godwin's Law"
 author: Steve Simon
 date: 2008-07-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Accrual problems
 - Being updated
 output: html_document

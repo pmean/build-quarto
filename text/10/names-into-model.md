@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/NamesIntoModel.html
 date: 2010-09-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - R software
 output: html_document

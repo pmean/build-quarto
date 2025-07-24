@@ -3,8 +3,8 @@ title: When should research in a given area end?
 author: Steve Simon
 date: 2010-07-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Systematic overviews
 output: html_document
 page_update: partial

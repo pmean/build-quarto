@@ -3,8 +3,8 @@ title: Acknowledging the
 author: Steve Simon
 date: 2009-02-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Writing research papers
 output: html_document
 page_update: no

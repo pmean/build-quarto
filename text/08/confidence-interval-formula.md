@@ -3,8 +3,8 @@ title: Where did you get that formula for the confidence interval
 author: Steve Simon
 date: 2008-09-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Confidence intervals
 - Being updated
 output: html_document

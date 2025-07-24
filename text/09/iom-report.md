@@ -3,8 +3,8 @@ title: Institute of Medicine report on conflict of interest
 author: Steve Simon
 date: 2009-05-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Conflict of interest
 output: html_document

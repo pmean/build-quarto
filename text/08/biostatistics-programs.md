@@ -3,8 +3,8 @@ title: Biostatistics or Health Informatics programs in or near Kansas City
 author: Steve Simon
 date: 2008-10-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Teaching resources
 output: html_document

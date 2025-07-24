@@ -3,8 +3,8 @@ title: When a client asks for a bad analysis
 author: Steve Simon
 date: 2008-03-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Human side of statistics
 - Multiple comparisons

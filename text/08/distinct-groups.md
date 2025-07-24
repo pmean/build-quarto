@@ -3,8 +3,8 @@ title: Comparisons involving distinct groups collected at different times and wi
 author: Steve Simon
 date: 2008-09-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Observational studies
 output: html_document

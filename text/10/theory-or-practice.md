@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/TheoryOrPractice.html
 date: 2010-11-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

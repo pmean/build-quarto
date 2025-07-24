@@ -3,8 +3,8 @@ title: Controversies with a test for ovarian cancer
 author: Steve Simon
 date: 2008-08-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Ethics in research
 output: html_document

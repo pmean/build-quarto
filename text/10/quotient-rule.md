@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/QuotientRule.html
 date: 2010-11-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Mathematics
 output: html_document

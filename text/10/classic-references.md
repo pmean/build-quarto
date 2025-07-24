@@ -3,8 +3,8 @@ title: Classic references in Statistics
 author: Steve Simon
 date: 2010-06-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Teaching resources
 output: html_document

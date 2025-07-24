@@ -3,8 +3,8 @@ title: A sportswriter tackles the Monty Hall problem
 author: Steve Simon
 date: 2009-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Probability
 output: html_document

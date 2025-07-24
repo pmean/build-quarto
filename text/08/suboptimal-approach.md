@@ -3,8 +3,8 @@ title: Using a sub-optimal approach in meta-analysis
 author: Steve Simon
 date: 2008-12-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Systematic overviews
 output: html_document

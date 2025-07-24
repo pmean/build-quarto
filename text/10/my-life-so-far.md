@@ -3,8 +3,8 @@ title: My life so far, fails to meet expectations
 author: Steve Simon
 date: 2010-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

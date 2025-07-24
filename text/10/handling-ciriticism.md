@@ -3,8 +3,8 @@ title: How do I handle criticism
 author: Steve Simon
 date: 2010-05-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

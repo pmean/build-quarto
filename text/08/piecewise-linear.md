@@ -3,8 +3,8 @@ title: How do I fit a piecewise linear regression
 author: Steve Simon
 date: 2008-10-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Linear regression
 output: html_document

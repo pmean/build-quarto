@@ -3,8 +3,8 @@ title: NYTimes advice on increasing website traffic
 author: Steve Simon
 date: 2009-05-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Website details
 output: html_document

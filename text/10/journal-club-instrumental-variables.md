@@ -3,8 +3,8 @@ title: More discussion on instrumental variables
 author: Steve Simon
 date: 2010-05-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Instrumental variables
 output: html_document

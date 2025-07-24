@@ -3,8 +3,8 @@ title: Reporting of adverse events
 author: Steve Simon
 date: 2008-08-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Adverse events
 - Being updated
 output: html_document

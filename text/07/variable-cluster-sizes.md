@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ClusterSize.html
 date: 2007-01-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Sample size justification
 output: html_document
 page_update: partial

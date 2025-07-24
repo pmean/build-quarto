@@ -3,8 +3,8 @@ title: Pearson correlation and ordinal data
 author: Steve Simon
 date: 2008-07-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Linear regression
 output: html_document

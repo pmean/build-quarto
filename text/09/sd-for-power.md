@@ -3,8 +3,8 @@ title: "Finding the standard deviation for a power calculation"
 author: Steve Simon
 date: 2010-01-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Sample size justification
 output: html_document

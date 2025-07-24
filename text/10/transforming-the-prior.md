@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/TransformingThePrior.html
 date: 2010-11-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Bayesian statistics
 - Being updated
 output: html_document

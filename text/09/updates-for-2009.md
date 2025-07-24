@@ -3,8 +3,8 @@ title: "Updates for 2009"
 author: Steve Simon
 date: 2009-01-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 output: html_document
 page_update: no

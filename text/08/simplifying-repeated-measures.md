@@ -3,8 +3,8 @@ title: Simplifying repeated measurements
 author: Steve Simon
 date: 2008-03-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Multilevel models
 output: html_document

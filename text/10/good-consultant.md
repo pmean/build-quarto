@@ -3,8 +3,8 @@ title: What are the characteristics of a good consultant
 author: Steve Simon
 date: 2010-02-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

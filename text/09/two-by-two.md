@@ -3,8 +3,8 @@ title: Entering and analyzing data from a two by two table
 author: Steve Simon
 date: 2009-12-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - SPSS software
 output: html_document

@@ -3,8 +3,8 @@ title: Likelihood ratio slide rule
 author: Steve Simon
 date: 2002-10-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Likelihood ratio slide rule
 output: html_document

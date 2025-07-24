@@ -3,8 +3,8 @@ title: An interesting alternative to power calculattions
 author: Steve Simon
 date: 2010-06-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Sample size justification
 output: html_document

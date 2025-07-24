@@ -3,8 +3,8 @@ title: Why does a Bayesian approach make sense for monitoring accrual?
 author: Steve Simon
 date: 2008-05-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Bayesian statistics
 output: html_document

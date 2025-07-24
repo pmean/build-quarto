@@ -3,8 +3,8 @@ title: Where can I learn more about Statistics?
 author: Steve Simon
 date: 2008-07-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Teaching resources
 output: html_document

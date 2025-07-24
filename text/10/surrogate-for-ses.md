@@ -3,8 +3,8 @@ title: What is a good surrogate measure for socioeconomic status
 author: Steve Simon
 date: 2010-05-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Evidence Based Medicine
 output: html_document

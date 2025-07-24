@@ -3,8 +3,8 @@ title: Good papers for a journal club
 author: Steve Simon
 date: 2009-03-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Teaching resources
 output: html_document

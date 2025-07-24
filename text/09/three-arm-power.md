@@ -3,8 +3,8 @@ title: Power for a three arm experiment
 author: Steve Simon
 date: 2009-09-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Sample size justification
 output: html_document

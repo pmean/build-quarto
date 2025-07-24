@@ -3,8 +3,8 @@ title: Lessons learned the hard way. Don't presume to know how your software han
 author: Steve Simon
 date: 2010-05-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Missing data
 output: html_document

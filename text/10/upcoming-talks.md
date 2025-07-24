@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/UpcomingTalks.html
 date: 2010-01-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Professional details
 output: html_document
 page_update: partial

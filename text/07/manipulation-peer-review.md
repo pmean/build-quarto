@@ -3,8 +3,8 @@ title: Manipulation of peer-review publications by pharmaceutical companies
 author: Steve Simon
 date: 2007-03-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Conflict of interest
 output: html_document
 page_update: complete

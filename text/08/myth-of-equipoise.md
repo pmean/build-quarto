@@ -3,8 +3,8 @@ title: "The Myth of Equipoise in Phase 1 Clinical Trials"
 author: Steve Simon
 date: 2008-11-05
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2008
 - Being updated
 - Ethics in research
 output: html_document

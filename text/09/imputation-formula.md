@@ -3,8 +3,8 @@ title: Formula for multiple imputation
 author: Steve Simon
 date: 2009-07-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Missing data
 output: html_document

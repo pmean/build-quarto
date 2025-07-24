@@ -3,8 +3,8 @@ title: "Data that IRBs should collect about themselves"
 author: Steve Simon
 date: 2009-05-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Ethics in research
 output: html_document

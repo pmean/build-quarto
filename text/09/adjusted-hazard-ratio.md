@@ -3,8 +3,8 @@ title: Changes in the adjusted hazard
 author: Steve Simon
 date: 2009-01-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Survival analysis
 output: html_document

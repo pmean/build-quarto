@@ -3,8 +3,8 @@ title: Humility is a good thing for researchers to have
 author: Steve Simon
 date: 2010-02-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

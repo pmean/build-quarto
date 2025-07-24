@@ -3,8 +3,8 @@ title: What is the premier conference for statistical consulting
 author: Steve Simon
 date: 2010-05-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Teaching resources
 output: html_document

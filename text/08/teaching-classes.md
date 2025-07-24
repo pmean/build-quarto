@@ -3,8 +3,8 @@ title: Teaching classes for a fee
 author: Steve Simon
 date: 2011-07-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Teaching resources
 output: html_document

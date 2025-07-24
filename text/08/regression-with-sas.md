@@ -3,8 +3,8 @@ title: "Regression with SAS. Additional coding systems for categorical variables
 author: Steve Simon
 date: 2008-11-01
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2008
 - Being updated
 - Analysis of variance
 - SAS software

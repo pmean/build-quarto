@@ -3,8 +3,8 @@ title: Standard operating procedures for a statistical consulting center
 author: Steve Simon
 date: 2010-07-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

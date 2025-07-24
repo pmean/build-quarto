@@ -3,8 +3,8 @@ title: Finding duplicate records in a 19 million record database
 author: Steve Simon
 date: 2010-03-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Data science
 output: html_document

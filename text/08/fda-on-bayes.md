@@ -3,8 +3,8 @@ title: What does the FDA think about Bayesian statistics
 author: Steve Simon
 date: 2008-07-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Bayesian statistics
 output: html_document

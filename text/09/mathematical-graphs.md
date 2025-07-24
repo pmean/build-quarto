@@ -3,8 +3,8 @@ title: Drawing simple mathematical graphs
 author: Steve Simon
 date: 2009-01-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Graphical display
 output: html_document

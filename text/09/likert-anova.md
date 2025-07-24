@@ -3,8 +3,8 @@ title: Use of Likert data with ANOVA
 author: Steve Simon
 date: 2009-10-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Analysis of variance
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/UnixHumor.html
 date: 2007-03-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Statistical computing
 output: html_document
 page_update: partial

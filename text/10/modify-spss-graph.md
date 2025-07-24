@@ -3,8 +3,8 @@ title: Making simple modifications to a graph in SPSS
 author: Steve Simon
 date: 2010-05-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Graphical display
 - SPSS software

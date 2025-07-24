@@ -3,8 +3,8 @@ title: New format for articles, books, and websites
 author: Steve Simon
 date: 2008-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Website details
 output: html_document

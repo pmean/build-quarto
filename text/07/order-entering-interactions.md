@@ -3,8 +3,8 @@ title: The order of entering interactions into a model
 author: Steve Simon
 date: 2007-09-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Logistic regression
 output: html_document
 page_update: complete

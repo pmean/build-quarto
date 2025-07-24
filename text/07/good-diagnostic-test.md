@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/GoodDiagnosticTest.html
 date: 2007-04-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Diagnostic testing
 output: html_document
 page_update: complete

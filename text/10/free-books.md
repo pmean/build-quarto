@@ -3,8 +3,8 @@ title: Where can I find free online textbooks
 author: Steve Simon
 date: 2010-01-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Teaching resources
 output: html_document

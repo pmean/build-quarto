@@ -3,8 +3,8 @@ title: Difficulties in generalizing
 author: Steve Simon
 date: 2006-02-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Extrapolations in research
 output: html_document

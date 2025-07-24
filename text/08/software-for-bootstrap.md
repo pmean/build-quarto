@@ -3,8 +3,8 @@ title: Software for bootstrap and resampling
 author: Steve Simon
 date: 2008-07-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Resampling methods
 output: html_document

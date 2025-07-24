@@ -3,8 +3,8 @@ title: A simple example of overfitting
 author: Steve Simon
 date: 2008-10-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Modeling issues
 output: html_document

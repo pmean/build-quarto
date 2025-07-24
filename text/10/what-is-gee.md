@@ -3,8 +3,8 @@ title: What is a Generalized Estimating Equations Model
 author: Steve Simon
 date: 2010-08-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Mixed models
 output: html_document

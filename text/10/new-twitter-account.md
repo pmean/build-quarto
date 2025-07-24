@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/Twitter.html
 date: 2010-09-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Professional details
 output: html_document

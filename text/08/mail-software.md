@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/08/MailSoftware.html
 date: 2008-07-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Professional details
 output: html_document

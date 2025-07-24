@@ -3,8 +3,8 @@ title: Calculating weights to correct for over and under sampling
 author: Steve Simon
 date: 2010-03-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Sampling
 output: html_document
 page_update: partial

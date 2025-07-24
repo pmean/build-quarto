@@ -3,8 +3,8 @@ title: Sneaking ineligible patients into a clinical trial
 author: Steve Simon
 date: 2009-10-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Fraud in research
 output: html_document

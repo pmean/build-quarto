@@ -3,8 +3,8 @@ title: What I use for talks instead of Powerpoint
 author: Steve Simon
 date: 2010-06-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Presenting research
 output: html_document

@@ -3,8 +3,8 @@ title: Using the Poisson distribution for modeling accrual
 author: Steve Simon
 date: 2010-12-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Accrual problems
 - Being updated
 output: html_document

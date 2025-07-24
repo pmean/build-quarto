@@ -3,8 +3,8 @@ title: Does prevalence affect sensitivity
 author: Steve Simon
 date: 2008-01-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Diagnostic testing
 output: html_document

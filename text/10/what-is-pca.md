@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/pca.html
 date: 2010-08-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Data science
 output: html_document

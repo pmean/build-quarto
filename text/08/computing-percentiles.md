@@ -3,8 +3,8 @@ title: Multiple methods for computing percentiles
 author: Steve Simon
 date: 2008-02-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Descriptive statistics
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/GrowUp.html
 date: 2007-11-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Human side of statistics
 output: html_document
 page_update: complete

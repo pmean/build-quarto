@@ -3,8 +3,8 @@ title: Evidence Based Medicine for patients
 author: Steve Simon
 date: 2008-04-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Information searching
 output: html_document

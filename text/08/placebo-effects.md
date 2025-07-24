@@ -3,8 +3,8 @@ title: "Components of placebo effect, Randomised controlled trial in patients wi
 author: Steve Simon
 date: 2008-11-01
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2008
 - Being updated
 - Placebos in research
 output: html_document

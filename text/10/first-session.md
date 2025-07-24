@@ -3,8 +3,8 @@ title: What should clients get from you at the end of your first consulting sess
 author: Steve Simon
 date: 2010-08-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Human side of statistics
 output: html_document

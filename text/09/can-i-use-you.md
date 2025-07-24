@@ -3,8 +3,8 @@ title: Can I use you as a teaching example?
 author: Steve Simon
 date: 2009-04-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Teaching resources
 - Website details

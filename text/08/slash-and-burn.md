@@ -3,8 +3,8 @@ title: Another inquiry about slash and burn models
 author: Steve Simon
 date: 2008-08-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Logistic regression
 output: html_document

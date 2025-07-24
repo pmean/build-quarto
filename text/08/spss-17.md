@@ -3,8 +3,8 @@ title: "What's new in SPSS 17"
 author: Steve Simon
 date: 2008-10-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - SPSS software
 output: html_document

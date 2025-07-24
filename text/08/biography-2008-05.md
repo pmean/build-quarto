@@ -3,8 +3,8 @@ title: A short biography that can be used as an introduction
 author: Steve Simon
 date: 2008-05-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Professional details
 output: html_document

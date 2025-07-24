@@ -3,8 +3,8 @@ title: The perils of self-evaluation
 author: Steve Simon
 date: 2009-06-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Critical appraisal
 output: html_document

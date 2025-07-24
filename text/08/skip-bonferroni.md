@@ -3,8 +3,8 @@ title: To be updated
 author: Steve Simon
 date: 2008-08-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Multiple comparisons
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/10/Panhandler.html
 date: 2010-09-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Ethics in research
 output: html_document
 page_update: partial

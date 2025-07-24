@@ -3,8 +3,8 @@ title: Cumulative entropy as a measure of data quality
 author: Steve Simon
 date: 2008-08-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Information theory
 output: html_document

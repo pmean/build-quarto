@@ -3,8 +3,8 @@ title: Computing a difference between first and last variables
 author: Steve Simon
 date: 2008-10-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Data management
 - SPSS software
 - Being updated

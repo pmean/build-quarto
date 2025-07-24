@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/using-bugs/"
 date: "2014-05-03"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Bayesian statistics
 - R software
 output: html_document

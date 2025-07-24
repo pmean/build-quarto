@@ -3,8 +3,8 @@ title: Jackknife applied to entropy calculations
 author: Steve Simon
 date: 2008-09-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Information theory
 output: html_document

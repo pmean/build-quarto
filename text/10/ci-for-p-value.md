@@ -3,8 +3,8 @@ title: Can you compute a confidence interval for your p-value
 author: Steve Simon
 date: 2010-09-10
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Hypothesis testing
 output: html_document

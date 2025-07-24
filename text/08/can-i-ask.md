@@ -3,8 +3,8 @@ title: Can I ask you a question
 author: Steve Simon
 date: 2008-09-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Website details
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/WhenITalk.html
 date: 2007-04-11
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2007
 - Critical appraisal
 output: html_document
 page_update: complete

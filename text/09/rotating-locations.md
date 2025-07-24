@@ -3,8 +3,8 @@ title: Rotating locations
 author: Steve Simon
 date: 2009-11-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Research design
 output: html_document

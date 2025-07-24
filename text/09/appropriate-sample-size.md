@@ -3,8 +3,8 @@ title: The first three steps in selecting an appropriate sample size
 author: Steve Simon
 date: 2010-01-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Sample size justification
 output: html_document

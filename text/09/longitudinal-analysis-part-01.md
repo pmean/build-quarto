@@ -3,8 +3,8 @@ title: "Simple longitudinal data analyses, part 1"
 author: Steve Simon
 date: 2009-09-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2009
 - Being updated
 - Longitudinal data
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/08/RepeatedMeasuresPart2.html
 date: 2008-10-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Sample size justification
 output: html_document

@@ -3,8 +3,8 @@ title: The post-modern assault on evidence-based medicine, part 3
 author: Steve Simon
 date: 2008-01-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Being updated
 - Critical appraisal
 output: html_document

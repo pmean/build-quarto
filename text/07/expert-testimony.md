@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ExpertTestimony.html
 date: 2007-01-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Human side of statistics
 output: html_document
 page_update: complete

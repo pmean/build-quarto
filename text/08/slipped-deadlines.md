@@ -3,8 +3,8 @@ title: Slipped deadlines and sample size shortfalls in a random sample of resear
 author: Steve Simon
 date: 2008-05-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2008
 - Accrual problems
 - Being updated
 output: html_document

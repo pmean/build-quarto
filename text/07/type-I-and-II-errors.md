@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/TypeIandIIErrors.html
 date: 2007-04-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Hypothesis testing
 output: html_document
 page_update: partial

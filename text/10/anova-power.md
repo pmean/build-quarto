@@ -3,8 +3,8 @@ title: Lost page
 author: Steve Simon
 date: 2010-10-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2010
 - Being updated
 - Sample size justification
 output: html_document
