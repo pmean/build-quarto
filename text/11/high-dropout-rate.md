@@ -3,8 +3,8 @@ title: Why is a 20% dropout rate bad?
 author: Steve Simon
 date: 2011-11-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

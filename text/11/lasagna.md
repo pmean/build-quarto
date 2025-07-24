@@ -3,8 +3,8 @@ title: Lasagna's Law on patient recruitment
 author: Steve Simon
 date: 2011-10-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Accrual problems
 output: html_document
 page_update: complete

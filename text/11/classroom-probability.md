@@ -3,8 +3,8 @@ title: Sharing the same classroom for five consecutive years
 author: Steve Simon
 date: 2011-09-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

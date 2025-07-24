@@ -3,8 +3,8 @@ title: I won't serve on my IRB, but there is a way I can still help.
 author: Steve Simon
 date: 2011-02-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Ethics in research
 output: html_document
 page_update: complete

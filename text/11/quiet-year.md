@@ -3,8 +3,8 @@ title: It's been a quiet year
 author: Steve Simon
 date: 2011-06-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Professional details
 output: html_document
 page_update: complete

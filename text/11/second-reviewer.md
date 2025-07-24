@@ -3,8 +3,8 @@ title: How much work does that second reviewer have to do in a meta-analysis
 author: Steve Simon
 date: 2011-06-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Systematic overviews
 output: html_document
 page_update: complete

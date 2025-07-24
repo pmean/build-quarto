@@ -3,8 +3,8 @@ title: Validation of OpenEpi software
 author: Steve Simon
 date: 2011-07-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Statistical computing
 output: html_document
 page_update: complete

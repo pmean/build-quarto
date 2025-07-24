@@ -3,8 +3,8 @@ title: Meta-analysis with non-comparable procedures
 author: Steve Simon
 date: 2011-10-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

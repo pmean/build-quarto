@@ -3,8 +3,8 @@ title: "Bayesian inference on the geometric distribution"
 author: Steve Simon
 date: 2011-05-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

@@ -3,8 +3,8 @@ title: The nature of advice on email discussion lists
 author: Steve Simon
 date: 2011-03-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Teaching resources
 output: html_document
 page_update: complete

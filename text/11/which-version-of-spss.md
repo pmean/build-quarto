@@ -3,8 +3,8 @@ title: Which version of SPSS should you get
 author: Steve Simon
 date: 2011-06-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - SPSS software
 output: html_document
 page_update: complete

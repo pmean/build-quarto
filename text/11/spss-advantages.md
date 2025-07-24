@@ -3,8 +3,8 @@ title: The advantages of IBM SPSS software
 author: Steve Simon
 date: 2011-08-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - SPSS software
 output: html_document
 page_update: complete

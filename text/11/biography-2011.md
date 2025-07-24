@@ -3,8 +3,8 @@ title: Yet another biography
 author: Steve Simon
 date: 2011-05-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Professional details
 output: html_document
 page_update: complete

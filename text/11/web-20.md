@@ -3,8 +3,8 @@ title: Promoting your consulting career in the era of Web 2.0
 author: Steve Simon
 date: 2011-05-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Independent consulting
 output: html_document
 page_update: complete

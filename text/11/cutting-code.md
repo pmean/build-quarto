@@ -3,8 +3,8 @@ title: Statistics is more than just cutting computer code
 author: Steve Simon
 date: 2011-09-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Human side of statistics
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "Statistical calculators on the web"
 author: Steve Simon
 date: 2011-06-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

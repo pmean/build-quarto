@@ -3,8 +3,8 @@ title: Possible webcast topics for a new client
 author: Steve Simon
 date: 2011-11-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Teaching resources
 output: html_document
 page_update: partial

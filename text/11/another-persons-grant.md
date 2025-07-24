@@ -3,8 +3,8 @@ title: When you're stuck writing major sections of another person's grant
 author: Steve Simon
 date: 2011-06-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

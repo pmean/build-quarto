@@ -3,8 +3,8 @@ title: "Can Bayesian methods help with small sample sizes?"
 author: Steve Simon
 date: 2011-04-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

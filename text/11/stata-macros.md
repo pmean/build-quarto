@@ -3,8 +3,8 @@ title: Macros in Stata
 author: Steve Simon
 date: 2011-03-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Stata software
 output: html_document
 page_update: partial

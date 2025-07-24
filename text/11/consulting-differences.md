@@ -3,8 +3,8 @@ title: How independent consulting is different
 author: Steve Simon
 date: 2011-05-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

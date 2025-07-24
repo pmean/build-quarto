@@ -3,8 +3,8 @@ title: What are the assumptions of logistic regression
 author: Steve Simon
 date: 2011-09-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Logistic regression
 output: html_document
 page_update: complete

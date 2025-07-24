@@ -3,8 +3,8 @@ title: Small business grant? Maybe not (created 2011-06-16).
 author: Steve Simon
 date: 2011-06-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Accrual problems
 output: html_document
 page_update: complete

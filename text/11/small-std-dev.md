@@ -3,8 +3,8 @@ title: Why is my standard deviation so small
 author: Steve Simon
 date: 2011-05-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Descriptive statistics
 output: html_document
 page_update: complete

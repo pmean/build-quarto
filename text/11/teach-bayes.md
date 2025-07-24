@@ -3,8 +3,8 @@ title: How you can teach Bayesian methods in an introductory Statistics class an
 author: Steve Simon
 date: 2011-10-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Bayesian statistics
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "SPSS won't compute my odds ratio!"
 author: Steve Simon
 date: 2011-11-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

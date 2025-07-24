@@ -3,8 +3,8 @@ title: There's more than one way to calculate a Fisher's exact p-value
 author: Steve Simon
 date: 2011-07-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Measuring benefit and risk
 output: html_document
 page_update: partial

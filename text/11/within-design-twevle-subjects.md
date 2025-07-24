@@ -3,8 +3,8 @@ title: Twelve subjects in a within subject design
 author: Steve Simon
 date: 2011-07-30
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

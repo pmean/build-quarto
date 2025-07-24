@@ -3,8 +3,8 @@ title: How I became a skeptic
 author: Steve Simon
 date: 2011-06-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Critical appraisal
 output: html_document
 page_update: complete

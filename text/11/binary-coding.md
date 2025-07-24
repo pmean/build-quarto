@@ -3,8 +3,8 @@ title: Using a binary coding trick illustrated by a Car Talk puzzler
 author: Steve Simon
 date: 2011-05-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Data management
 output: html_document
 page_update: complete

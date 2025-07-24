@@ -3,8 +3,8 @@ title: Can I salvage my negative confidence interval
 author: Steve Simon
 date: 2011-09-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Confidence intervals
 output: html_document
 page_update: complete

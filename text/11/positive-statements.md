@@ -3,8 +3,8 @@ title: Positive statements about no conflicts of interest
 author: Steve Simon
 date: 2011-08-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Conflict of interest
 output: html_document
 page_update: complete

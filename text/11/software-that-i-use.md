@@ -3,8 +3,8 @@ title: Software that I use on my computers
 author: Steve Simon
 date: 2011-06-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Statistical computing
 output: html_document
 page_update: complete

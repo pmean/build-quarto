@@ -3,8 +3,8 @@ title: "What single idea will make the biggest impact on healthcare today"
 author: Steve Simon
 date: 2011-09-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

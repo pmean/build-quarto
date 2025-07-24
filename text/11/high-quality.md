@@ -3,8 +3,8 @@ title: "Examples of the difference made by high quality research"
 author: Steve Simon
 date: 2011-04-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

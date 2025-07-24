@@ -3,8 +3,8 @@ title: "Proposal for session on grant writing"
 author: Steve Simon
 date: 2011-10-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

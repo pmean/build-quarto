@@ -3,8 +3,8 @@ title: Is it ethical to provide statistical consulting on a disseration to a Ph.
 author: Steve Simon
 date: 2011-05-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

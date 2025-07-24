@@ -3,8 +3,8 @@ title: Unrealistic scenarios for sample size calculations
 author: Steve Simon
 date: 2011-12-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Sample size justification
 output: html_document
 page_update: complete

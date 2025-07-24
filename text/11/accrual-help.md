@@ -3,8 +3,8 @@ title: Looking for help to test software for monitoring accrual in a clinical tr
 author: Steve Simon
 date: 2011-06-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Accrual problems
 output: html_document
 page_update: complete

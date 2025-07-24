@@ -3,8 +3,8 @@ title: Example abstracts for a training class
 author: Steve Simon
 date: 2011-12-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Critical appraisal
 - Teaching resources
 output: html_document

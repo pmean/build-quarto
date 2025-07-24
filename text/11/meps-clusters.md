@@ -3,8 +3,8 @@ title: I can't get SAS to model the cluster effects in the MEPS data set
 author: Steve Simon
 date: 2011-09-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Complex surveys
 output: html_document
 page_update: complete

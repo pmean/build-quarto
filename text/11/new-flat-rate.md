@@ -3,8 +3,8 @@ title: "New flat rate for consulting"
 author: Steve Simon
 date: 2011-08-17
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Professional details
 output: html_document
 page_update: complete

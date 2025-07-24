@@ -3,8 +3,8 @@ title: Justifying the sample size in a qualitative research study
 author: Steve Simon
 date: 2011-11-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Qualitative research
 - Sample size justification
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/11/contest.html
 date: 2011-10-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

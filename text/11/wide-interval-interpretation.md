@@ -3,8 +3,8 @@ title: Does a wide confidence interval mean that my conclusions are all wrong?
 author: Steve Simon
 date: 2011-03-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Confidence intervals
 output: html_document
 page_update: complete

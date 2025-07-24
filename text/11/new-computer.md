@@ -3,8 +3,8 @@ title: What I'd look for in a new computer
 author: Steve Simon
 date: 2011-05-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Statistical computing
 output: html_document
 page_update: complete

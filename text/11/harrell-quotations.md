@@ -3,8 +3,8 @@ title: "Quotes and references from Dr. Harrell"
 author: Steve Simon
 date: 2011-04-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

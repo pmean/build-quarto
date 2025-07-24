@@ -3,8 +3,8 @@ title: Good news about my second book proposal
 author: Steve Simon
 date: 2011-01-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

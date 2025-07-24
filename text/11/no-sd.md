@@ -3,8 +3,8 @@ title: "I can't find a standard deviation for my power calculations"
 author: Steve Simon
 date: 2011-04-26
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: no

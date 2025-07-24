@@ -3,8 +3,8 @@ title: A simple hierarchical model for the Poisson distribution, borrowed from t
 author: Steve Simon
 date: 2011-05-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Bayesian statistics
 output: html_document
 page_update: complete

@@ -3,8 +3,8 @@ title: "Publicity for your consulting career"
 author: Steve Simon
 date: 2011-08-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 - Human side of statistics
 output: html_document

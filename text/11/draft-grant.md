@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/11/DraftGrant.html
 date: 2011-09-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Accrual problems
 output: html_document
 page_update: complete

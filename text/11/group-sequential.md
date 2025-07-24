@@ -3,8 +3,8 @@ title: Net-accessible resources for group sequential designs
 author: Steve Simon
 date: 2011-10-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Early stopping
 output: html_document
 page_update: complete

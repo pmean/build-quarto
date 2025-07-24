@@ -3,8 +3,8 @@ title: Second invitation to talk about how independent consulting is different
 author: Steve Simon
 date: 2011-07-24
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Independent consulting
 output: html_document
 page_update: complete

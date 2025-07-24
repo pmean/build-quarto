@@ -3,8 +3,8 @@ title: New shortened structure for NIH grants
 author: Steve Simon
 date: 2011-06-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Writing research grants
 output: html_document
 page_update: complete

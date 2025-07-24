@@ -3,8 +3,8 @@ title: Cartoon about placebos
 author: Steve Simon
 date: 2011-06-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Being updated
 output: html_document
 page_update: complete

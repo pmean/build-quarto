@@ -3,8 +3,8 @@ title: Resources for Comparative Effectiveness Research
 author: Steve Simon
 date: 2011-04-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Teaching resources
 output: html_document
 page_update: complete

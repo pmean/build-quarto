@@ -3,8 +3,8 @@ title: Using Social Media to promote your consulting career
 author: Steve Simon
 date: 2011-08-01
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Independent consulting
 output: html_document
 page_update: complete

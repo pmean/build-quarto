@@ -3,8 +3,8 @@ title: My special Zotero style
 author: Steve Simon
 date: 2011-02-22
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Website details
 output: html_document
 page_update: complete

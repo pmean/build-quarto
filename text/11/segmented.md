@@ -3,8 +3,8 @@ title: A simple segmented linear regression model, borrowed from the BUGS manual
 author: Steve Simon
 date: 2011-05-25
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Bayesian statistics
 output: html_document
 page_update: complete

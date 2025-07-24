@@ -3,8 +3,8 @@ title: Establishing accuracy for a statistical program (created 2011-07-14).
 author: Steve Simon
 date: 2011-07-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Statistical computing
 output: html_document
 page_update: complete

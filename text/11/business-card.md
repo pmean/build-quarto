@@ -3,8 +3,8 @@ title: What goes on your business card
 author: Steve Simon
 date: 2011-08-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Independent consulting
 output: html_document
 page_update: complete

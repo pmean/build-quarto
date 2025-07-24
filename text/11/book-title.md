@@ -3,8 +3,8 @@ title: Thinking about the title for my second book
 author: Steve Simon
 date: 2011-04-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2011
 - Professional details
 output: html_document
 page_update: complete
