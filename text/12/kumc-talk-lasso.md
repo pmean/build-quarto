@@ -4,8 +4,8 @@ author: Steve Simon
 date: 2012-11-05
 source: http://www.pmean.com/12/lasso.html
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

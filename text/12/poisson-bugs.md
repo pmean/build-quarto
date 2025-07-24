@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/12/PoissonBugs.html
 date: 2012-04-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

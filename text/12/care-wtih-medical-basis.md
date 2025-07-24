@@ -3,8 +3,8 @@ title: Percentage of care that does not have a medical basis
 author: Steve Simon
 date: 2012-02-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

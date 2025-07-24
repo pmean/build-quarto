@@ -3,8 +3,8 @@ title: "Are you qualified to make that comment?"
 author: Steve Simon
 date: 2012-10-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

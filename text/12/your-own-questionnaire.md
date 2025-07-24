@@ -3,8 +3,8 @@ title: "Don't write your own questionnaire"
 author: Steve Simon
 date: 2012-10-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

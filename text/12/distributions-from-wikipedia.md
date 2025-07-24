@@ -3,8 +3,8 @@ title: Statistical distributions borrowed from Wikipedia
 author: Steve Simon
 date: 2012-05-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

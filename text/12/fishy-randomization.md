@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/12/fishy.html
 date: 2012-05-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

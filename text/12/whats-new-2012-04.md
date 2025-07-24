@@ -4,8 +4,8 @@ source: http://www.pmean.com/12/new04.html
 author: Steve Simon
 date: 2012-04-09
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

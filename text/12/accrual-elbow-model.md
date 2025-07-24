@@ -3,8 +3,8 @@ title: Elbow model for accrual
 author: Steve Simon
 date: 2012-12-31
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

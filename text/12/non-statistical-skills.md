@@ -3,8 +3,8 @@ title: "What non-statistical skills do consultants need?"
 author: Steve Simon
 date: 2012-02-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Being updated
 output: html_document
 page_update: no

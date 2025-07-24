@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/12/pesky.html
 date: 2012-03-21
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Data management
 - SPSS software
 output: html_document

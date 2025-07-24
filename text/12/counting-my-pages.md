@@ -3,8 +3,8 @@ title: Counting pages at my old and new websites
 author: Steve Simon
 date: 2012-07-03
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2012
 - Obsolete pages
 output: html_document
 page_update: complete
