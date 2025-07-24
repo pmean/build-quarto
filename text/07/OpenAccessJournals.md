@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/OpenAccessJournals.html
 date: 2007-10-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Writing research papers
 output: html_document
 page_update: complete

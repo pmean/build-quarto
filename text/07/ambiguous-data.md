@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/AmbiguousData.html
 date: 2007-02-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Data management
 output: html_document
 page_update: complete

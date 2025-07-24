@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ReviewStatisticalMethods.html
 date: 2007-03-05
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Human side of Statistics 
 output: html_document
 page_update: complete

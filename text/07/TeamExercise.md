@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/TeamExercise.html
 date: 2007-02-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Broken link
 - Analysis of means
 output: html_document

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/AnomExample.html
 date: 2007-02-06
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Analysis of means
 - Control charts
 - Incomplete page

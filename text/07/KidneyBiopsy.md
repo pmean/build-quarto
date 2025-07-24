@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/KidneyBiopsy.html
 date: 2007-11-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Adverse events
 output: html_document
 page_update: complete

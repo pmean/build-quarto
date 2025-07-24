@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/PoissonInteractions.html
 date: 2007-12-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Poisson regression 
 output: html_document
 page_update: complete

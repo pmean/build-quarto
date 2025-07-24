@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/HowGood.html
 date: 2007-08-13
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Modeling issues
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/AlphabeticalBookmarkList.html
 date: 2007-09-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Obsolete page
 - Website details
 output: html_document

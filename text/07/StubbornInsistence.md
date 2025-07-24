@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/StubbornInsistence.html
 date: 2007-06-29
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Placebos in research
 output: html_document
 page_update: complete

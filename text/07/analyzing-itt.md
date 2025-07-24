@@ -3,8 +3,8 @@ title: Analyzing data under an Intention to Treat model
 author: Steve Simon
 date: 2007-12-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Randomization in research
 output: html_document
 page_update: complete

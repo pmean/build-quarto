@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/MethodologicalFlaws.html
 date: 2007-04-10
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Ethics in research
 output: html_document
 page_update: complete

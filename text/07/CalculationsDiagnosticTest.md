@@ -4,8 +4,8 @@ author: Steve Simon
 source: unknown
 date: 2007-07-20
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Diagnostic testing
 output: html_document
 page_update: complete

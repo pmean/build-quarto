@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/BadControlGroups.html
 date: 2007-06-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Observational studies
 - Placebos in research
 output: html_document

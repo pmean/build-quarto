@@ -3,8 +3,8 @@ title: Not everything that can be counted
 author: Steve Simon
 date: 2007-01-31
 categories:
-- Quotation
-tags:
+- "*Quotation"
+- 2007
 - Qualitative research
 output: html_document
 page_update: partial

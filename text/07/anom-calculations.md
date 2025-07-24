@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/AnomCalculations.html
 date: 2007-03-02
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Analysis of means
 - Incomplete page
 output: html_document

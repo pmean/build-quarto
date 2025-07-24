@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/TouchscreenInterface.html
 date: 2007-01-23
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Statistical computing
 output: html_document
 page_update: complete

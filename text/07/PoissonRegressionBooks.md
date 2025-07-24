@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/PoissonRegressionBooks.html
 date: 2007-01-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Poisson regression
 output: html_document
 

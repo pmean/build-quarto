@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ResourcesForGrantWriters.html
 date: 2007-09-04
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Broken link
 - Grant writing
 output: html_document

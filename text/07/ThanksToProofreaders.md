@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ThanksToProofreaders.html
 date: 2007-03-14
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Website details
 output: html_document
 page_update: complete

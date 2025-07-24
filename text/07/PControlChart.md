@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/PControlChart.html
 date: 2007-03-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Broken link
 - Control charts
 output: html_document

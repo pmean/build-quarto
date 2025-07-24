@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/RWiki.html
 date: 2007-03-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - R software
 output: html_document
 page_update: partial

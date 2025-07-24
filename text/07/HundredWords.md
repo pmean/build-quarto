@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/HundredWords.html
 date: 2007-01-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Wiki pages
 output: html_document
 page_update: complete

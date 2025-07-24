@@ -4,11 +4,11 @@ author: Steve Simon
 source: http://www.pmean.com/07/SpecialSectionForQuotations.html
 date: 2007-04-11
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Obsolete page
 - Website details
-- Quotation
+- "*Quotation"
 output: html_document
 page_update: complete
 ---

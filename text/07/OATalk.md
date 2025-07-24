@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/OATalk.html
 date: 2007-10-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Broken link
 - Writing research papers
 output: html_document

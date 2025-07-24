@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/NewCategories.html
 date: 2007-10-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Broken link
 - Website details
 output: html_document

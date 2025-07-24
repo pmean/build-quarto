@@ -3,8 +3,8 @@ title: Bibliography of papers relating to predicting accrual in clinical trials
 author: Steve Simon
 date: 2007-07-28
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Accrual problems
 - Being updated
 output: html_document

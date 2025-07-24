@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/Promotion.html
 date: 2007-09-27
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Professional details
 output: html_document
 page_update: complete

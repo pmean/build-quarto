@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/NotBlackAndWhilte.html
 date: 2007-07-07
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Critical appraisal
 output: html_document
 page_update: complete
