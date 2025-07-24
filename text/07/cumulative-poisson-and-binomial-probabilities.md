@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/CumulativeProbabilities.html
 date: 2007-02-19
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Poisson regression
 - Probability concepts
 output: html_document

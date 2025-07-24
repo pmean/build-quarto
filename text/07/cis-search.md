@@ -3,8 +3,8 @@ title: Searching through the Current Index to Statistics
 author: Steve Simon
 date: 2007-02-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Information searching
 output: html_document
 page_update: complete

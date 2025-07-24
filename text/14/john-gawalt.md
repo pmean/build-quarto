@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/john-gawalt/"
 date: "2014-05-05"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Important statisticians
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ConflictOfInterestList.html
 date: 2007-07-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Conflict of interest
 - Professional details
 output: html_document

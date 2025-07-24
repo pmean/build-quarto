@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/git/"
 date: "2014-01-13"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Statistical computing
 output: html_document
 page_update: complete

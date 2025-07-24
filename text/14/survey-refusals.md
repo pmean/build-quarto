@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/survey-refusals/"
 date: "2014-12-23"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Exclusions in research
 output: html_document
 page_update: complete

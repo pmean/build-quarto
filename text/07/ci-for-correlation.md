@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/CorrelationCoefficient.html
 date: 2007-01-18
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Linear regression
 output: html_document
 page_update: complete

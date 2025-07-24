@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/design-monte-carlo-2/"
 date: "2014-04-14"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Statistical computing
 output: html_document
 page_update: complete

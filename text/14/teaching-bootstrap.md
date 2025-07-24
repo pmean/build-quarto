@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/teaching-bootstrap/"
 date: "2014-11-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Bootstrap
 output: html_document
 page_update: complete

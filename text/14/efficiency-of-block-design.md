@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/efficiency-of-block-design/"
 date: "2014-03-12"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Analysis of variance
 output: html_document
 page_update: complete

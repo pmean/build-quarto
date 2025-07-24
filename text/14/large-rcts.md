@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/large-rcts/"
 date: "2014-01-17"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Randomization
 output: html_document
 page_update: complete

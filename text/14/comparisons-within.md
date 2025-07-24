@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/comparisons-within/"
 date: "2014-06-10"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Longitudinal data
 output: html_document
 page_update: complete

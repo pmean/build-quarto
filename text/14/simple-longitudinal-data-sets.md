@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/simple-longitudinal-data-sets/"
 date: "2014-07-07"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Datasets
 - Longitudinal data
 - Missing data

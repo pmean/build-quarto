@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/plotrix/"
 date: "2014-02-26"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Graphical display
 - R software
 output: html_document

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/risks-of-randomised-trials/"
 date: "2014-04-28"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Randomization
 output: html_document
 page_update: partial

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/big-data-training/"
 date: "2014-04-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Data science
 output: html_document
 page_update: complete

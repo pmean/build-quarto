@@ -3,8 +3,9 @@ title: "Meta-analysis of ordinal data"
 author: "Steve Simon"
 source: "http://blog.pmean.com/meta-analysis-of-ordinal-data/"
 date: "2014-12-15"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2014
 - Systematic overviews
 output: html_document
 page_update: partial

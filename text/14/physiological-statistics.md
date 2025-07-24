@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/physiological-statistics/"
 date: "2014-02-10"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Sample size justification
 output: html_document
 page_update: partial

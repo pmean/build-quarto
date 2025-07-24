@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/unpredictability-paradox/"
 date: "2014-12-11"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Critical appraisal
 - Randomization
 - Systematic overviews

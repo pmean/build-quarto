@@ -3,8 +3,8 @@ title: Code for drawing new likelihood ratio slide rule
 author: Steve Simon
 date: 2007-07-12
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Diagnostic testing
 output: html_document
 page_update: complete

@@ -3,8 +3,9 @@ title: "Some simple examples of manipulating the axes in a graph"
 author: "Steve Simon"
 source: "http://www.pmean.com/axis.html"
 date: "2014-01-01"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2014
 - Data visualization
 - Rmarkdown graphs
 output: html_document

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/sample-size-reproducibility/"
 date: "2014-06-16"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Measuring agreement
 - Sample size justification
 output: html_document

@@ -3,8 +3,9 @@ title: "The dget function in R is very slow"
 author: "Steve Simon"
 source: "http://blog.pmean.com/slow-dget/"
 date: "2014-01-22"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2014
 - R software
 output: html_document
 page_update: complete

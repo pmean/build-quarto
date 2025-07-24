@@ -3,8 +3,9 @@ title: "Quote: Excel's graphics can be great. The problem occurs"
 author: "Steve Simon"
 source: "http://blog.pmean.com/quote-excel/"
 date: "2014-04-03"
-categories: Quote
-tags:
+categories:
+- "*Quote"
+- 2014
 - Graphical display
 output: html_document
 page_update: partial

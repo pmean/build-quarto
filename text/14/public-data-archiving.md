@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/archiving/"
 date: "2014-02-03"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Ethics in research
 output: html_document
 page_update: complete

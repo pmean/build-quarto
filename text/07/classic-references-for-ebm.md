@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ClassicReferencesForEbm.html
 date: 2007-05-16
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Teaching resources
 output: html_document
 page_update: complete

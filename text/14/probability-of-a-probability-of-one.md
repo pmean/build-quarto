@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/probability-of-a-probability-of-one/"
 date: "2014-07-24"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Bayesian statistics
 output: html_document
 page_update: partial

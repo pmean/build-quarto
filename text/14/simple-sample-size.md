@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/simple-sample-size/"
 date: "2014-07-22"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Sample size justification
 output: html_document
 page_update: partial

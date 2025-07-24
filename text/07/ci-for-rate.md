@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/ConfidenceIntervalForRate.html
 date: 2007-10-10
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Confidence intervals
 - Poisson regression
 output: html_document

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/pilot-study-sample-size/"
 date: "2014-08-13"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Pilot studies
 - Sample size justification
 output: html_document

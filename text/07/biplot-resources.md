@@ -4,8 +4,8 @@ author: Steve Simon
 source: http://www.pmean.com/07/BiplotResources.html
 date: 2007-01-15
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2007
 - Categorical data 
 output: html_document
 page_update: complete

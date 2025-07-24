@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/line-style-r/"
 date: "2014-02-25"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Graphical display
 - R software
 output: html_document

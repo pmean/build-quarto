@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://www.pmean.com/qqplot.html"
 date: "2014-01-01"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2014
 - Checking assumptions  
 - Linear regression
 - R software

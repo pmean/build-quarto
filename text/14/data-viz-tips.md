@@ -3,8 +3,9 @@ title: "8 tips for doing data visualization right."
 author: "Steve Simon"
 source: "http://blog.pmean.com/8-tips/"
 date: "2014-05-03"
-categories: Recommendation
-tags:
+categories:
+- "*Recommendation"
+- 2014
 - Graphical display
 output: html_document
 page_update: complete

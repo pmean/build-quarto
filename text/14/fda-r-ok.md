@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/fda-r-ok/"
 date: "2014-05-30"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - R software
 output: html_document
 page_update: complete

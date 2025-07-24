@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/mlpowsim/"
 date: "2014-06-16"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Longitudinal data
 - Sample size justification
 output: html_document

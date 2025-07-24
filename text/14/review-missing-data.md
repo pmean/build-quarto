@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/review-missing-data/"
 date: "2014-05-06"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Missing data
 output: html_document
 page_update: partial

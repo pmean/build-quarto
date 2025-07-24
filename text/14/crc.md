@@ -3,8 +3,9 @@ title: "I need a clinical research coordinator"
 author: "Steve Simon"
 source: "http://blog.pmean.com/crc/"
 date: "2014-11-18"
-categories: Blog post
-tags: 
+categories:
+- "*Blog post"
+- 2014 
 - Human side of statistics
 output: html_document
 page_update: complete

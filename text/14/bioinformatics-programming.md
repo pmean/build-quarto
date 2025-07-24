@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/bioinformatics-programming/"
 date: "2014-01-07"
 categories: 
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Informatics
 - R software
 output: html_document

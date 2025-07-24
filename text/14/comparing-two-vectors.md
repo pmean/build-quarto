@@ -3,8 +3,9 @@ title: "Comparing two vectors with possible missing values"
 author: "Steve Simon"
 source: "http://blog.pmean.com/comparing-two-vectors/"
 date: "2014-03-06"
-categories: Blog post
-tags:
+categories:
+- "*Blog post"
+- 2014
 - R software
 output: html_document
 page_update: complete

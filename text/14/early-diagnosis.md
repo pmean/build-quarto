@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/early/"
 date: "2014-01-09"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2014
 - Diagnostic testing
 output: html_document
 page_update: complete
