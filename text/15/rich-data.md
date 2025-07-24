@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/rich-data/"
 date: "2015-02-24"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Statistical models
 output: html_document
 page_update: complete

@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/xkcd-p-values/"
 date: "2015-02-03"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Hypothesis testing
 output: html_document
 page_update: complete

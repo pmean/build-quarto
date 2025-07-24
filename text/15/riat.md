@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/riat/"
 date: "2015-04-16"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Publication bias
 output: html_document
 page_update: complete

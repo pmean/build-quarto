@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/relationships-in-r/"
 date: "2015-04-03"
 categories:
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - R software
 - Rmarkdown graphs
 output: html_document

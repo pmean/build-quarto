@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/tripod-statement/"
 date: "2015-01-08"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Writing research papers
 output: html_document
 page_update: complete

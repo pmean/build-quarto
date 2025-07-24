@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/validating-diabetes/"
 date: "2015-05-11"
 categories: 
-- Blog post
-tags:
+- "*Blog post"
+- 2015
 - Diagnostic testing
 - Sample size justification
 output: html_document

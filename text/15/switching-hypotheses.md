@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/switching-hypotheses/"
 date: "2015-12-20"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Hypothesis testing
 output: html_document
 page_update: complete

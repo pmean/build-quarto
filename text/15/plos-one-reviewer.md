@@ -4,8 +4,8 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/plos-one-reviewer/"
 date: "2015-05-20"
 categories:
-- Recommendation
-tags:
+- "*Recommendation"
+- 2015
 - Writing research papers
 output: html_document
 page_update: complete
