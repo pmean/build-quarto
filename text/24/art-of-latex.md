@@ -21,4 +21,9 @@ I use LaTeX to create mathematical formulas and it does a great job at it. There
 
 [gai1]: https://static.latexstudio.net/wp-content/uploads/2014/09/The+art+of+latex.pdf
 
+An [earlier version][sim1] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/art-of-latex/
+
 </div>
