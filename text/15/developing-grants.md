@@ -26,6 +26,6 @@ You can find an [earlier version][sim1] of this page on my [blog][sim2].
 
 [nic1]: https://s3.amazonaws.com/OBrienRG.biblio/Nick10Developing+Grant+Proposals+Guidelines+for+Statisticians.pdf
 
-
+</div>
 
 

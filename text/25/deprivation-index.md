@@ -15,6 +15,8 @@ page_update: no
 
 ::: notes
 
+<hr>
+
 The Census Bureau has an "unofficial" product called the Multidimensional Deprivation Index (MDI), which is described in numerous working papers. This measure is only available for an entire county, but you can get [similar measures][ref-census-2020] for census tracts and block groups. This has been [adapted by CDC][ref-cdc-2024] into a measure known as the Social Vulnerability Index.
 
 United States Census Bureau. Multidimensional Deprivation Index. Last updated 2024-12-05. Available in [html format][ref-census-2024].

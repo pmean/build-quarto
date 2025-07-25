@@ -15,6 +15,8 @@ page_update: no
 
 ::: notes
 
+<hr>
+
 The R package growthcleanr will review longitudinal data (including data unevenly spaced over time) on heights and weights for children to find individual observations that do not fit reasonable patterns of growth relative to the other longitudinal measurements. You can also use this package with adult data (up to 65 years of age). This is especially useful for electronic health record data, which can often have stray bad values.
 
 Carrie Daymont, Robert Grundmeier, Jeffrey Miller, Diego Campos. grwothcleanr. Available as a [github repository][ref-daymont-nodate].

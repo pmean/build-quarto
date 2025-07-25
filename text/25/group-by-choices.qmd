@@ -10,14 +10,20 @@ categories:
 - uses R code
 output: html_document
 page_update: complete
+execute:
+  echo: true
 ---
 
 You have an interesting choice in an R program When you use the group_by function with two or more arguments and follow that with the summarize function. Here is a practical illustration of how your choices can make a difference.
 
 <!---more--->
 
-```{r setup, message=FALSE, warning=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+#| echo: false
+
 library(palmerpenguins)
 library(tidyverse)
 ```
@@ -27,6 +33,8 @@ The palmer penguins library provides an interesting dataset on body measurements
 ## Illustration of group_by with two arguments followed by summarize
 
 ```{r}
+#| label: group-by
+
 penguins |>
   filter(!is.na(sex)) |>
   group_by(species, sex) |>
@@ -42,6 +50,8 @@ Two of the .groups options are "drop_last" and "drop". The options don't matter 
 ## Calculating percentages using .groups="drop"
 
 ```{r}
+#| label: drop
+
 penguins |>
   filter(!is.na(sex)) |>
   group_by(species, sex) |>
@@ -55,6 +65,8 @@ With the .groups="drop" option, all grouping is removed after the summarize func
 ## Calculating percentages using .groups="drop_last"
 
 ```{r}
+#| label: drop-last-1
+
 penguins |>
   filter(!is.na(sex)) |>
   group_by(species, sex) |>
@@ -70,6 +82,8 @@ With the .groups="drop_last" option, grouping is removed for sex, the last argum
 ## Calculating a third set of percentages
 
 ```{r}
+#| label: drop-last-2
+
 penguins |>
   filter(!is.na(sex)) |>
   group_by(sex, species) |>
@@ -89,6 +103,8 @@ The count function Notice that while the documentation on count says that
 it is not exactly equivalent. It becomes obvious first when you see that replacing group_by and summarize with count does not produce a warning message.
 
 ```{r}
+#| label: count-1
+
 penguins |>
   filter(!is.na(sex)) |>
   count(species, sex)
@@ -97,6 +113,8 @@ penguins |>
 When you follow up with summarize functions to compute total and pct, you get the following.
 
 ```{r}
+#| label: count-2
+
 penguins |>
   filter(!is.na(sex)) |>
   count(species, sex) |>
@@ -109,6 +127,8 @@ So count implicitly uses the .groups="drop" argument, which is not the default w
 The count function does not have a .groups argument. If you wanted to do something effectively the same as .groups="drop_last" you just need to insert group_by statement after count.
 
 ```{r}
+#| label" count-3
+
 penguins |>
   filter(!is.na(sex)) |>
   count(species, sex) |>
