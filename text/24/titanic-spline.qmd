@@ -168,3 +168,9 @@ ggplot(data=ti1, aes(age, survived)) +
 ```
 
 It looks like "women and children" first might actually be "women, children, and old people first".
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/titanic-spline/
+

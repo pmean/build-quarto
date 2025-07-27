@@ -24,3 +24,9 @@ I am bringing together resources for various chapters in my book proposal. One o
 [sim5]: http://new.pmean.com/one-of-the-naturalists/
 [sim6]: http://www.pmean.com/news/201207.html#1
 [sim7]: http://new.pmean.com/discussion-section/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/discussion-section-resources/
+

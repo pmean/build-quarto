@@ -115,15 +115,14 @@ ods word close;
 
 If you want to explore further, check out these resources.
 
-Sanjay Matange. Getting Started with SGPLOT - Part 5 - Histograms. SAS blog, 2017-04-30. Available in [html format][sas1].
-
-SAS Institute. SGPLOT Procedure. Histogram Statement. Available in [html format][sas1].
-
-SAS Institute. Color-Naming Schemes. Available in [html format][sas2].
+-   Sanjay Matange. Getting Started with SGPLOT - Part 5 - Histograms. SAS blog, 2017-04-30. Available in [html format][sas1].
+-   SAS Institute. SGPLOT Procedure. Histogram Statement. Available in [html format][sas2].
+-   SAS Institute. Color-Naming Schemes. Available in [html format][sas3].
 
 
-[sas1]: https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/grstatproc/n17xrpcduau1f8n1c1nhe477pv18.htm
-[sas2]: https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/grstatproc/p0edl20cvxxmm9n1i9ht3n21eict.htm
+[sas1]: https://blogs.sas.com/content/graphicallyspeaking/2017/04/30/getting-started-with-sgplot-histograms/
+[sas2]: https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/grstatproc/n17xrpcduau1f8n1c1nhe477pv18.htm
+[sas3]: https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/grstatproc/p0edl20cvxxmm9n1i9ht3n21eict.htm
 
 [sim5]: http://new.pmean.com/sas-scatterplot-options/
 [sim6]: http://new.pmean.com/sas-linegraph-options/

@@ -11,14 +11,19 @@ output: html_document
 page_update: no
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/24/andrew-bray-quarto-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/24/andrew-bray-quarto-01.png){width=80%}
 
 ::: notes
 
 I attended a short course, From R Markdown to Quarto, which provided a nice introduction to Quarto, a system for producing documents in a wide range of formats that integrate programming code (R, Python, and others) with output and documentation. It is a successor to RMarkdown. This web page has the slides from the talk along with supporting files and links to many resources.
 
-[Andrew Bray][bra1]. From R Markdown to Quarto.
+-   Andrew Bray. From R Markdown to Quarto. Available in [html format][ref-bray-nodate]
 
-[bra1]: https://andrew.quarto.pub/kc-asa/
+[ref-bray-nodate]: https://andrew.quarto.pub/kc-asa/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/andrew-bray-quarto/
 
 :::

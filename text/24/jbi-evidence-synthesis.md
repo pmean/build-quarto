@@ -11,16 +11,19 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/24/jbi-evidence-synthesis-01.png)
+![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/24/jbi-evidence-synthesis-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 A nice overview of a broad range of systematic overviews for qualitative evidence, evidence of effectiveness, textual evidence, economic evidence, and scoping reviews.
 
-[Aromataris E, Munn Z (Editors)][aro1]. JBI Manual for Evidence Synthesis. JBI, 2020. Available from https://doi.org/10.46658/JBIMES-20-01
+Aromataris E, Lockwood C, Porritt K, Pilla B, Jordan Z, editors. JBI Manual for Evidence Synthesis. JBI; 2024. Available in [html format][ref-aromataris-2024].
 
-[aro1]: https://doi.org/10.46658/JBIMES-20-01
+[ref-aromataris-2024]: https://synthesismanual.jbi.global.
 
-[xxx1]: 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 
-</div>
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/jbi-evidence-synthesis/
+
+:::

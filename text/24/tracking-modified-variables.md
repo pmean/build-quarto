@@ -16,8 +16,6 @@ A student in my Introduction to SAS class posed an interesting question: after y
 
 <!---more--->
 
-
-
 ## New names
 
 Use a new name, one that is descriptive. You might be tempted to do something like "height=height*2.54" to convert from inches to centimeters. It is better to use a fresh name, but not a generic one like "height1". A better choice would be "height_cm".

@@ -1,5 +1,5 @@
 ---
-title: "Qualitative Research. The “What,” “Why,” “Who,” and “How”!"
+title: 'Qualitative Research. The “What,” “Why,” “Who,” and “How”!'
 source: "New"
 author: Steve Simon
 date: "2025-03-19"
@@ -11,11 +11,9 @@ output: html_document
 page_update: no
 ---
 
-![](http://www.pmean.com/new-images/25/qualitative-how-to-01.png "Excerpt from recommended article")
+![](http://www.pmean.com/new-images/25/qualitative-how-to-01.png "Excerpt from recommended article"){width=80%}
 
 ::: notes
-
-<hr>
 
 This is a very nice "how to" description of qualitative research.
 

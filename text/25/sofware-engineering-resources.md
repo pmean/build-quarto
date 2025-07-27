@@ -15,7 +15,7 @@ I attended a great webinar by Alex Reinhart, From Code to Products - Software En
 
 <!---more--->
 
-Resources
+## Resources
 
 -   Catherine Nelson (2024). Software Engineering for Data Scientists. O'Reilly. [Publisher's webpage][ref-nelson-2024]
 -   Alex Reinhart and Christopher R. Genovese (2021). "Expanding the scope of statistical computing: Training statisticians to be software engineers." Journal of Statistics and Data Science Education 29 (S1), S7-S15. doi:[10.1080/10691898.2020.1845109][ref-reinhart-2021]

@@ -6,6 +6,7 @@ date: 2024-05-28
 categories:
 - "*Blog post"
 - 2024
+- Ask Professor Mean
 - Survival analysis
 - Uses R code
 output: html_document
@@ -37,6 +38,7 @@ library(tidyverse)
 
 ```{r}
 #| label: simulate
+
 set.seed(190225)
 raw_time1 <- rexp(100, rate=0.004)
 raw_time2 <- rexp(100, rate=0.008)

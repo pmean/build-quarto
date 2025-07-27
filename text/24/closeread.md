@@ -11,14 +11,19 @@ output: html_document
 page_update: no
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/24/closeread-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/24/closeread-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 You can create an interactive document that changes as you scroll through it, highlighting certain features in text of images using the closeread app, an extension for Quarto.
 
-[Andrew Bray][bra1]. closeread.
+-   Andrew Bray. closeread. Available in [html format][ref-bray-nodate]
 
-[bra1]: https://closeread.netlify.app/
+[ref-bray-nodate]: https://closeread.netlify.app/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/closeread/
+
+:::

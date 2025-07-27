@@ -225,7 +225,7 @@ persp(
   zlim=c(0, 1.1*z_max),
   xlab="mu",
   ylab="lambda",
-  mu = 135, 
+  theta = 135, 
   phi = 30, 
   expand=0.5,
   ticktype="detailed")
@@ -249,7 +249,7 @@ persp(
   zlim=c(0, 1.1*z_max),
   xlab="mu",
   ylab="lambda",
-  mu = 135, 
+  theta = 135, 
   phi = 30, 
   expand=0.5,
   ticktype="detailed")
@@ -274,7 +274,7 @@ persp(
   zlim=c(0, 1.1*z_max),
   xlab="mu",
   ylab="lambda",
-  mu = 135, 
+  theta = 135, 
   phi = 30, 
   expand=0.5,
   ticktype="detailed")
@@ -299,7 +299,7 @@ persp(
   zlim=c(0, 1.1*z_max),
   xlab="mu",
   ylab="lambda",
-  mu = 135, 
+  theta = 135, 
   phi = 30, 
   expand=0.5,
   ticktype="detailed")

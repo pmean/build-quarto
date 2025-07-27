@@ -12,14 +12,19 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from github site](http://www.pmean.com/new-images/24/r-datasets-01.png)
+![Figure 1. Excerpt from github site](http://www.pmean.com/new-images/24/r-datasets-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 Both base R and many of the R packages have datasets included which help illustrate the use of various features in R. This site consolidates all of those datasets in a single repository with good documentation.
 
-[Vincent Arel-Bundock][are1] (2024). Rdatasets: A collection of datasets originally distributed in various R packages. R package version 1.0.0.
+-   Vincent Arel-Bundock (2024). Rdatasets: A collection of datasets originally distributed in various R packages. R package version 1.0.0. Available in [html format][ref-arel-2024]
 
-[are1]: https://vincentarelbundock.github.io/Rdatasets/
+[ref-arel-2024]: https://vincentarelbundock.github.io/Rdatasets/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/r-datasets/
+
+:::
