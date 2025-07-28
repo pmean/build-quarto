@@ -90,8 +90,7 @@ Create multiply imputed values for age. The default is to use every variable in 
 
 ti1 <- ti0
 ti1$i_female <- as.numeric(ti1$Sex=="female")
-ti1 <- t
-#| label: i1[ , c("PClass", "Age", "Survived", "i_female")]
+ti1 <- ti1[ , c("PClass", "Age", "Survived", "i_female")]
 ti_mice <- mice(ti1)
 ```
 

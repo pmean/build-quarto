@@ -98,6 +98,8 @@ Here is an overall survival curve.
 plot(Surv(wa$lenfol, wa$fstat))
 ```
 
+The linear fit shows a hazard ratio larger than 1. The risk of death increases with age.
+
 ```{r}
 #| label: cox
 
@@ -107,14 +109,18 @@ linear_fit <- coxph(
 linear_fit
 ```
 
+The coefficients of the spline fit are impossible to interpret. It is better to view the spline fit graphically.
+
 ```{r}
-label: spline-1
+#| label: spline-1
 
 spline_fit <- coxph(
   Surv(wa$lenfol, wa$fstat)~rcs(age),
   data=wa)
 spline_fit
 ```
+
+The risk of death increases linearly with age up to about 80 years and then take a sharp curve upward. This shows that each additional year of age beyond 80 has a large impact on survival, much larger than additional years of age earlier in life.
 
 ```{r}
 #| label: spline-2
