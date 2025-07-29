@@ -126,3 +126,9 @@ If you want to explore further, check out these resources.
 
 [sim5]: http://new.pmean.com/sas-scatterplot-options/
 [sim6]: http://new.pmean.com/sas-linegraph-options/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sas-histogram-options/
+

@@ -114,3 +114,8 @@ SAS Institute. Color-Naming Schemes. Available in [html format][sas2].
 
 [sim4]: http://new.pmean.com/sas-histogram-options/
 [sim6]: http://new.pmean.com/sas-linegraph-options/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sas-scatterplot-options/

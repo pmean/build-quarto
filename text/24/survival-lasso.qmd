@@ -248,3 +248,8 @@ text(log(cv_fit$lambda.1se), fit_1se, unlist(dimnames(fit_1se)[1]))
 ```
 
 Using this criteria, there are only two variables which help in predicting risk of death, and one of them is very weak because its coefficient is very close to zero.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/survival-lasso/

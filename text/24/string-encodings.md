@@ -24,4 +24,9 @@ Another historical overview of encoding is on [YouTube][ref-beattie-2023].
 [ref-beattie-2023]: https://www.youtube.com/watch?v=4mRxIgu9R70
 [ref-ushey-2018]: https://kevinushey.github.io/blog/2018/02/21/string-encoding-and-r/
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/string-encodings/
+
 :::

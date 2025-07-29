@@ -13,7 +13,7 @@ page_update: no
 
 Several of my students wanted information on how to modify graphs in SAS. I'm glad they asked, because the worst thing you can do with any software is to take the graph that appears based on the default options. The default options in SAS are actually pretty good, but you still need to revise your graphs so you can paint a fair picture of what is going on with your data. Revise your graphs about as often as you rewrite your text.
 
-I wrote a program to show a few of the more important options that you have for revising linegraphs in SAS.  I have separate pages that show  [how to revise histograms in SAS][sim4] and [how to revise scatterplots in SAS][sim5].
+I wrote a program to show a few of the more important options that you have for revising linegraphs in SAS.  I have separate pages that show [how to revise histograms in SAS][sim4] and [how to revise scatterplots in SAS][sim5].
 
 <!---more--->
 
@@ -115,3 +115,8 @@ SAS Institute. Color-Naming Schemes. Available in [html format][sas2].
 
 [sim4]: http://new.pmean.com/sas-histogram-options/
 [sim5]: http://new.pmean.com/sas-scatterplot-options/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sas-linegraph-options/

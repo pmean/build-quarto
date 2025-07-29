@@ -124,3 +124,8 @@ Tomas Kalibera. UTF-8 Support on Windows. R developers blog, 2020-05-02. Availab
 [kal1]: https://blog.r-project.org/2020/05/02/utf-8-support-on-windows
 [lat1]: https://en.wikipedia.org/wiki/ISO/IEC_8859-1
 [moj1]: https://en.wikipedia.org/wiki/Mojibake
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/encoding-example/

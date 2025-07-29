@@ -214,3 +214,7 @@ ti0 %>%
   pack_rows("Sex", 1, 2)
 ```
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/nice-layout/

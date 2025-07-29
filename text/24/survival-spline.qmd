@@ -132,3 +132,8 @@ age_sequence$prediction <-
 ggplot(data=age_sequence, aes(age, prediction)) +
   geom_line()
 ```
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/survival-spline/

@@ -169,3 +169,8 @@ anova(linear_fit, linear_plus_spline_fit)
 ```
 
 The p-value is small, indicating that adding a spline to a linear fit significantly improves the prediction model.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/diamond-spline/

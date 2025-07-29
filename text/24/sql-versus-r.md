@@ -31,3 +31,8 @@ A last advantage of SQL is that this code can be used to access data in some of 
 You can frame this question in a larger context: why do we need so many different programming languages? There are some cynical comments about this. There's a claim that everytime computer scientists encounter a new problem, they invent a new programming language. Or another cynical perspective is that they write a computer language first and then look for problems that it can solve.
 
 The non-cynical answer is that maybe we have too many programming languages, but once a particular programming language takes hold in a group of programmers, it takes too much time and energy to switch to a different and better programming language. Also, programming languages are developed to meet differing needs. It might be speed, portability, resistance to bugs, or security to name a few. It is good to have choices that can address the particular needs that you prioritize. 
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sql-versus-r/

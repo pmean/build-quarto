@@ -123,3 +123,9 @@ your final line closing the pdf file would be gobbled up and tacked up at the en
 Worse still, the `ods pdf close` statement gets lost, so you lose your pdf file as well.
 
 As a general rule if you get a weird error message that seems to make no sense, look to see if that line or the line above is missing a semicolon.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/missing-semicolon/
+

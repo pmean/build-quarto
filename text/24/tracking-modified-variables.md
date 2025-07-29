@@ -69,3 +69,9 @@ The resulting output will serve as a quality check as well as a reminder of what
 ## Vigilance
 
 Be constantly vigilant. A good data analyst is detail oriented and always checks that the results make sense. If you compute an average height in centimeters in adults and it is only 66.3, you probably were using the untransformed values, measured in inches.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/tracking-modified-variables/
+

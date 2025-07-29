@@ -36,3 +36,8 @@ Here are a few articles that I am recommending during my talk on research presen
 [lan1]: https://doi.org/10.1187/cbe.04-06-0047
 [mcd1]: https://doi.org/10.1187/cbe.04-06-0048
 [nor1]: https://norvig.com/Gettysburg/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/resources-presenting-research/

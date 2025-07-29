@@ -139,3 +139,8 @@ where the product is evaluated only at event times (not censored times). The sum
 So the estimate you get by maximizing the partial likelihood over all events is the same as the estimate you get by maximizing the partial likelihood ignoring the events in group B that occur after the maximum event time in group A.
 
 You can make a similar argument about the log rank test. This test can be recast as a function of observed deaths in a group minus the expected deaths in that group. After the last event in group A, the observed deaths in group B have to equal the expected deaths. So those Twilight Zone events in group B contribute exactly zero to the observed minus expected calculations.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/different-end-times/
