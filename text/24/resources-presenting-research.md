@@ -4,7 +4,7 @@ source: "New"
 author: Steve Simon
 date: 2024-11-01
 categories: 
-- "*Recommendations"
+- "*Recommendation"
 - 2024
 - Presenting research
 output: html_document

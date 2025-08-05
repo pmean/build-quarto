@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/teaching-reproducibility-01.png)
 
-<div class="notes">
+::: notes
 
 The Journal of Statistics and Data Science Education has a special issue on teaching reproducibility. I haven't read the whole issue, but the articles I have read are excellent. The whole issue looks great.
 
@@ -20,4 +20,9 @@ Journal of Statistics and Data Science Education. Teaching Reproducibility speci
 
 [jsd1]: https://www.tandfonline.com/toc/ujse21/30/3
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/teaching-reproducibility/
+
+:::

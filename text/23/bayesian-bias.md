@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/bayesian-bias-01.png)
 
-<div class="notes">
+::: notes
 
 A brief, but interesting argument that confirmation bias is just an example of applying an informative prior. This is an argument that has been made before and one that I have been thinking about a lot. There's a lot more that could be said about this.
 
@@ -25,4 +25,9 @@ Scott Alexander. Confirmation bias as a misfire of normal Bayesian reasoning. Sl
 
 [ale2]: https://astralcodexten.substack.com/p/trapped-priors-as-a-basic-problem
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/bayesian-bias/
+
+:::

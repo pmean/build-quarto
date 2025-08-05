@@ -14,6 +14,7 @@ page_update: complete
 I attended a webinar sponsored by Missouri Online on the use of generative AI in education. The author referred to two resources that they provide.
 
 <!---more--->
+
 -   [Resources for types and uses of generative AI][mis1].
     -   A nice list of internal and external resources in how generative AI can be used (or abused) in a classroom setting.
 -   [Viewing generative AI session recordings][mis2].
@@ -21,3 +22,8 @@ I attended a webinar sponsored by Missouri Online on the use of generative AI in
 
 [mis1]: https://teachingtools.umsystem.edu/support/solutions/articles/11000122904-resources-for-types-uses-of-generative-ai
 [mis2]: https://teachingtools.umsystem.edu/support/solutions/articles/11000122945-viewing-generative-ai-session-recordings
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/gnerative-ai-resources/

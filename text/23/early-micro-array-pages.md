@@ -88,3 +88,8 @@ Pages that I am still looking for
 [gen28]: http://www.pmean.com/04/SurromedDecisionSite.html
 [gen29]: http://www.pmean.com/04/ArrayAnalyzer.html
 [gen30]: http://www.pmean.com/04/microarray.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/early-micro-array-pages/

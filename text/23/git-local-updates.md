@@ -240,6 +240,11 @@ or
 ```
 git diff develop master
 
-### 
+Another page, that talks about instatllation is available at [git-local-installation][sim3].
 
+[sim3]: http://pmean.com/posts/git-local-installation/
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/git-local-updates/

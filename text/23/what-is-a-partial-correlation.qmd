@@ -182,3 +182,8 @@ The formal calculation of the partial correlation is shown here.
 -   $\frac{`r rxy`-`r rxz` \times `r ryz`}{\sqrt{1-`r rxz`^2}\sqrt{1-`r ryz`^2}} = `r round((rxy-rxz*ryz)/(sqrt(1-rxz^2)*sqrt(1-ryz^2)), 2)`$
 
 The correlation between age and FEV is very weak when you adjust for the child's height.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/what-is-a-partial-correlation/

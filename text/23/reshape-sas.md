@@ -71,3 +71,8 @@ The UCLA site also shows some more complex applications of proc transpose on
 
 [ucl1]: https://stats.oarc.ucla.edu/sas/modules/how-to-reshape-data-long-to-wide-using-proc-transpose/
 [ucl2]: https://stats.oarc.ucla.edu/sas/modules/how-to-reshape-data-wide-to-long-using-proc-transpose/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/reshape-sas/

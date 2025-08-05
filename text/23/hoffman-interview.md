@@ -10,9 +10,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/23/hoffman-interview-01.png)
+![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/23/hoffman-interview-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 Well, I filed this under the tage "Important statisticians" but this interview for the Oracle Research in Action podcast with Mark Hoffman is stretching that tag a bit. Mark is a colleague of mine, but much higher up organizationally and with a background much broader than just Statistics. This interview provides a summary of Mark's career path and a description of some of his current work as Chief Research Information Officer at Children's Mercy.
 
@@ -20,4 +20,9 @@ Well, I filed this under the tage "Important statisticians" but this interview f
 
 [hof1]: https://open.spotify.com/episode/0avS65Zz7hcAwA3Nur5Aeu
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/hoffman-interview/
+
+:::

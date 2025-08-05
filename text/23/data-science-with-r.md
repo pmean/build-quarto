@@ -11,9 +11,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/data-science-with-r-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/data-science-with-r-01.png){wdith=80%}
 
-<div class="notes">
+::: notes
 
 A very complete book available for free online.
 
@@ -21,4 +21,9 @@ A very complete book available for free online.
 
 [bau1]: https://mdsr-book.github.io/mdsr3e/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/data-science-with-r/
+
+:::

@@ -27,3 +27,8 @@ I'd like to expand this small pilot to a larger sample and expand the informatio
 The grant mechanism is a G13 grant, which is limited to two years, and $70,000 per year. More details about this grant opportunity is available in [html format][nih1].
 
 [nih1]: https://grants.nih.gov/grants/guide/pa-files/PAR-23-183.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/grants-for-scholarly-works/

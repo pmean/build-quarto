@@ -37,3 +37,8 @@ The key thing in any setting, of course, is appearances. Take great pains to avo
 In addition to what your employer might think, you have to decide for yourself what you are comfortable with. Our University is affiliated with several hospitals. I do not charge for consulting for anyone at those hospitals if they have a joint appointment at UMKC. It doesn't matter if the hospital is paying 100% of their salary. I tell anyone in those positions that I give them my advice for free, but that if they weren't affiliated with UMKC, I'd have to charge them $180 per hour.
 
 [umk1]: https://www.umsystem.edu/ums/rules/collected_rules/personnel/ch330/330.015_policy_on_conflict_of_interest
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/using-work-resources/

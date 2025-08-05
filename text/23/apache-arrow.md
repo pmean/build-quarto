@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/23/apache-arrow-01.png)
 
-<div class="notes">
+::: notes
 
 Apache Arrow is a system for storing columnar data that is fast and can handle very large files. I have not had a chance to work with this format, but it looks very interesting.
 
@@ -21,4 +21,9 @@ Apache Arrow is a system for storing columnar data that is fast and can handle v
 
 [apa1]: https://arrow.apache.org/docs/r/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/apache-arrow/
+
+:::

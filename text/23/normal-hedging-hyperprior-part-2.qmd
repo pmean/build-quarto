@@ -331,3 +331,7 @@ You can see that the hedging hyperprior did its job. The most probable values of
 [mur1]: https://www.cs.ubc.ca/~murphyk/Papers/bayesGauss.pdf
 [wik1]: https://en.wikipedia.org/wiki/Completing_the_square
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/normal-hedging-hyperprior-part-2/

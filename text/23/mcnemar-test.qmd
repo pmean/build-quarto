@@ -145,3 +145,7 @@ Thanks are due to Wikipedia for helping me identify the statistician behind the 
 
 [sim4]: http://www.pmean.com/news/Archive.html
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/mcnemar-test-01/

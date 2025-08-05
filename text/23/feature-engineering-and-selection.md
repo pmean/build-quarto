@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/23/feature-engineering-and-selection-01.png)
 
-<div class="notes">
+::: notes
 
 This book can be bought, but is also available for free in html format. Here is a brief description taken from the Amazon page for this book. "The process of developing predictive models includes many stages. Most resources focus on the modeling algorithms but neglect other critical aspects of the modeling process. This book describes techniques for finding the best representations of predictors for modeling and for nding the best subset of predictors for improving model performance. A variety of example data sets are used to illustrate the techniques along with R programs for reproducing the results."
 
@@ -20,4 +20,9 @@ This book can be bought, but is also available for free in html format. Here is 
 
 [kuh1]: https://bookdown.org/max/FES/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/feature-engineering-and-selection/
+
+:::

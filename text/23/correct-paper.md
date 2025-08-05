@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from xxx](http://www.pmean.com/new-images/23/correct-paper-01.png)
 
-<div class="notes">
+::: notes
 
 A recent scandal involving the former president of Stanford, Marc Tessier-Lavigne, offers an opportunity to see how the research enterprise works to correct errors. To be honest, it does work, but often not nearly as effectively as it should.
 
@@ -21,4 +21,9 @@ A recent scandal involving the former president of Stanford, Marc Tessier-Lavign
 
 [svr1]: https://www.washingtonpost.com/education/2023/07/31/stanford-president-science-journal-retractions/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/correct-paper/
+
+:::

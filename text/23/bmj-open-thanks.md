@@ -34,3 +34,8 @@ P.S. If you'd like to sign up for the journal’s content alerts, you can do so 
 
 [bmj1]: https://bmjopen.bmj.com/pages/thank-you-to-our-reviewers
 [bmj2]: https://authors.bmj.com/for-reviewers/reviewer-recognition
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/bmj-open-thanks/

@@ -26,3 +26,8 @@ It looks like the [ftpUpload function][ftp1] is what I want, but I probably have
 [ome0]: https://www.omegahat.net/
 [ome1]: https://www.omegahat.net/RCurl/
 [rcu1]: https://cran.r-project.org/web/packages/RCurl/index.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/file-uploads/

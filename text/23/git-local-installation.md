@@ -17,6 +17,10 @@ This article explains how to download git and set up a local project. It is loos
 
 [git1]: https://git-scm.com/video/get-going
 
+You might also want to review [this guide][ref-git-nodate].
+
+[ref-git-nodate]: https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control
+
 <!---more--->
 
 ### Is git already on your computer?
@@ -161,4 +165,9 @@ git commit -m "Initial commit"
 
 If you want to continue, take a look at [git-local-updates][sim3].
 
-[sim3]: ../git-local-updates 
+[sim3]: http://pmean.com/posts/git-local-updates/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/git-local-installation/

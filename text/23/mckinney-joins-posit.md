@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from blog post](http://www.pmean.com/new-images/xx/xx-01.png)
 
-<div class="notes">
+::: notes
 
 Wes McKinney describes much of his early work with open source software and his recent decision to join Posit.
 
@@ -21,4 +21,9 @@ Wes McKinney describes much of his early work with open source software and his 
 
 [mck1]: https://wesmckinney.com/blog/joining-posit/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/mckinney-joins-posit/
+
+:::

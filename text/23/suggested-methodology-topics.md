@@ -38,3 +38,8 @@ I dislike the term "quasi" because it implies a level of inferiority. You adopt 
 ## Community-based participatory research (CBPR)
 
 There's a cynical saying out there about us. It goes something like "Researchers are like mosquitoes; they take your blood and then leave." Many of the problems with research (such as sample size shortfalls and slow patient accrual mentioned above) stem directly from our failure to engage with the communities that we use for research subjects. Using CBPR is very discomforting. It requires you to give up a lot of control, it requires developing listening skills, and it takes a lot of time and energy. But failure to apply CBPR to avoid this discomfort comes at the expense of the quality of your study. One of the most important principles of CBPR is that the community owns the data. I'd like to provide a bit of historical background. Research during the AIDS epidemic was often very confrontational. Advocacy groups made life unpleasant for the research community, but ended up getting many important changes in how we conduct trials today.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/suggested-methodology-topics/

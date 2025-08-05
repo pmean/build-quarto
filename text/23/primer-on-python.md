@@ -10,9 +10,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/23/primer-on-python-01.png)
+![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/23/primer-on-python-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 Some of the topics are a bit abstract, but in general, a quite nice description of how Python differs from R.
 
@@ -20,4 +20,9 @@ Some of the topics are a bit abstract, but in general, a quite nice description 
 
 [kal1]: https://rstudio.github.io/reticulate/articles/python_primer.html
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/primer-on-python/
+
+:::

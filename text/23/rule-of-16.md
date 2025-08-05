@@ -91,3 +91,8 @@ Victoria Zaborova, Oxana Zolnikova, Natiya Dzhakhaya, Svetlana Prokhorova, Alexa
 [zab1]: https://doi.org/10.3390/healthcare11192651
 [zab2]: https://pubmed.ncbi.nlm.nih.gov/37830688/
 [zab3]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10572639/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/rule-of-16/

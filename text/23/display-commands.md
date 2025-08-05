@@ -48,3 +48,8 @@ You can also learn syntax by clicking on the ```Paste``` button that appears at 
 ![Figure 4. Screenshot from the SPSS descriptives dialog box](http://www.pmean.com/new-images/23/display-commands-04.png)
 
 SPSS syntax is not something I recommend for beginners, but if you become reasonably experienced with this program, you should spend some time to learn it.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/display-commands/

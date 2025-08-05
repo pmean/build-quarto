@@ -10,9 +10,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/man-of-one-study-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/man-of-one-study-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 This blog post starts with a quote from Thomas Aquinas, "Beware the man of one book" and updates it to arguments relying on peer-reviewed studies. He spends a fair amount of time on the studies that prove/disprove the economic argument that a rise in the minimum wage leads to a rise in unemployment. There are plenty of individual studies that are contradictory on this question. There are even conflicting systematic overviews.
 
@@ -23,4 +23,9 @@ Scott Alexander. Beware the man of one study. Slate Star Codex blog, 2014-12-12.
 [ale1]: https://slatestarcodex.com/2014/12/12/beware-the-man-of-one-study/
 [ale2]: https://slatestarcodex.com/2014/04/28/the-control-group-is-out-of-control/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/man-of-one-study/
+
+:::

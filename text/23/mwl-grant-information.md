@@ -40,3 +40,8 @@ Dr. Simon has given numerous lectures on data visualization, covering the proper
 [mwl1]: https://www.mwlight.com/
 [sim3]: http://www.pmean.com/posts/grant-biography/
 [sim4]: https://github.com/pmean/resume/blob/master/README.md
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/mwl-grant-information/

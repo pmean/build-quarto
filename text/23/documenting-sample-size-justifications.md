@@ -56,3 +56,8 @@ The calculations for the first two scenarios used calculators from the free onli
 ![](http://www.pmean.com/new-images/23/documenting-sample-size-justifications-03.png)
 
 [gre1]: https://stats.libretexts.org/Learning_Objects/02%3A_Interactive_Statistics
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/documenting-sample-size-justifications/

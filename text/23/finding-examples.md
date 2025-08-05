@@ -92,3 +92,9 @@ All the above is well and good, but the one thing I wish for is better sharing o
 There are issues, especially privacy concerns, that need to be addressed before sharing your research data. These can be managed in most settings, but often researchers do not even try. When they do share their data, it is often provided only at an aggregated or summary level. What does get shared is usually poorly documented. 
 
 In spite of this, journal articles are a good resource if you want to see how others approach new and innovative statistical methods. Finding the right examples is not always easy, but the reward is worth it.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/finding-examples/
+

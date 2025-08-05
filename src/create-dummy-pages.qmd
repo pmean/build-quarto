@@ -1,0 +1,61 @@
+---
+title: "Create dummy files for new.pmean.com"
+format:
+  html:
+    embed-resources: true
+---
+
+This program was written by Steve Simon on 2025-07-30 and is placed in the public domain.
+
+## Preliminaries
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+```
+
+## Get names
+
+```{r}
+#| label: names
+
+yr <- 24
+
+md_files <- list.files(glue("../text/{yr}"))
+md_files |>
+  str_remove("\\.qmd$") |>
+  str_remove("\\.md$") -> root_names
+root_names
+```
+
+## Read bare_page
+
+```{r}
+#| label: read
+
+bare_page <- read_lines("../results/bare_page.html")
+bare_page
+```
+
+## Loop
+
+This code is loosely adapted from [a stack overflow query][ref-stack-nodate]
+
+[ref-stack-nodate]: https://stackoverflow.com/questions/4216753/folder-management-with-r-check-existence-of-directory-and-create-it-if-it-does
+
+```{r}
+#| label: loop
+
+for (root in root_names) {
+  blog_dir <- glue("../{yr}/{root}")
+  if (!file.exists(blog_dir)) {
+    dir.create(blog_dir)}
+  bare_page |>
+    str_replace("ROOT", root) |>
+    write_lines(file=glue("{blog_dir}/index.html"))
+}
+```

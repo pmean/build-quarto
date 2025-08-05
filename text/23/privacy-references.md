@@ -32,3 +32,8 @@ Privacy Working Paper 3. Pittsburgh 2000.
 [nar1]: https://arxiv.org/abs/cs/0610105
 [swe1]: https://dataprivacylab.org/projects/identifiability/paper1.pdf
 [yve1]: https://www.nature.com/articles/srep01376
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/privacy-references/

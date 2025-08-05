@@ -45,6 +45,7 @@ There was also a concern raised about using github as the repository. The only r
 
 PM ID: 35654271 DOI: 10.1016/j.jclinepi.2022.05.019
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 
-
-
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/data-sharing-critique/

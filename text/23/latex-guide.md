@@ -11,9 +11,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/latex-guide-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/23/latex-guide-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 LaTex provides a great environment for publishing mathematical documents. Chapter 3 of this guide, which shows how to write publication ready mathematical formulas, is especially valuable. 
 
@@ -22,4 +22,9 @@ LaTex provides a great environment for publishing mathematical documents. Chapte
 [oet1]: https://texdoc.org/serve/lshort/0
 [oet2]: https://github.com/oetiker/lshort
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/latex-guide/
+
+:::

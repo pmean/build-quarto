@@ -10,9 +10,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from article](http://www.pmean.com/new-images/23/scope-of-work-01.png)
+![Figure 1. Excerpt from article](http://www.pmean.com/new-images/23/scope-of-work-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 I attended a great panel discussion at the Conference on Statistical Practice on how to write a scope of work. Most of the panelists cited Peterson et al 2022 in their remarks. A second article on how to write a statistical analysis plan, Cressman and Sharp 2022, was also prominently mentioned. An earlier blog post, which I am combining here, cited Bridges 2020.
 
@@ -27,4 +27,9 @@ Kimberly A. Cressman, Julia L. Sharp. Crafting statistical analysis plans: A cro
 [pet1]: https://onlinelibrary.wiley.com/doi/full/10.1002/sta4.496
 [pet2]: https://onlinelibrary.wiley.com/doi/epdf/10.1002/sta4.496
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/scope-of-work/
+
+:::

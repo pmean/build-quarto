@@ -6,20 +6,18 @@ date: 2023-05-28
 categories:
 - "*Blog post"
 - 2023
+- Incomplete pages
 - Software engineering
 output: html_document
 page_update: complete
 ---
 
-This is part of series of articles on how to set up and use version control on your computer. There are many systems for version control. In these articles, you will use a program, git, and a repository, github.
+This page has been replaced with two other pages, [git-local-installation][sim3] and [git-local-updates][sim4]. I also hope to add a few more pages about ths in the future.
 
-This article explains how to work with a shared repository. 
+[sim3]: http://new.pmean.com/git-local-installation/
+[sim4]: http://new.pmean.com/git-local-updates/
 
-<!---more--->
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 
-Here's another take on git from Scott Munro.
-
-![Figure x. Cartoon about fixing git errors](https://imgs.xkcd.com/comics/git.png)
-
-Your first message can be something simple like "Initial commit" or "Starting new project". How you define later commit messages will depend on what practices the others on your research team want. If you are working alone, think about using messages to help build a changelog file.
-
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/git-shared-repository/

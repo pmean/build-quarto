@@ -55,3 +55,7 @@ Consider dispensing with the control group if you already have a lot of experien
 
 A pilot study is not a label you slap on when you know the sample size is too small. You run a pilot study to get data you need to justify the sample size in a future large-scale study. Or maybe you run a pilot study to test the logistics of that future large-scale study. Or maybe you run a pilot to identify unexpected problems before you invest money in that future large-scale study. In any case, a pilot study exists not for itself but only to serve the needs of a future research study.  
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/reasons-to-run-a-pilot/

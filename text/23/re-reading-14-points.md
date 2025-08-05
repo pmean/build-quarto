@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from article](http://www.pmean.com/new-images/23/re-reading-14-points-01.png)
 
-<div class="notes">
+::: notes
 
 An interesting attempt to adapt Deming's Fourteen Points, written over 40 years ago, to modern data science.
 
@@ -21,4 +21,9 @@ John L. Eltige. Re-Reading Deming’s 14 Points in the Era of Data Science: 14 Q
 
 [elt1]: https://chance.amstat.org/2023/04/demings-14-points/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/re-reading-14-points/
+
+:::

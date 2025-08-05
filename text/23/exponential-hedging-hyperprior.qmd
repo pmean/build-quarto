@@ -312,3 +312,8 @@ contour(
 ```
 
 You can see that the hedging hyperprior did its job. The most probable values of $\lambda$ are small and the prior mean (`r b0/(a0-1)`) is largely ignored in favor of the mean of the data (`r xbar`).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/exponential-hedging-hyperprior/

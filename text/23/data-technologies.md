@@ -15,7 +15,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from webpage](http://www.pmean.com/new-images/23/data-technologies-01.png)
 
-<div class="notes">
+::: notes
 
 An interesting book, published under an open source license and available in html or pdf versions. It is a rather eclectic mix of html, css, SQL, and R. The guiding theme is the storage, presentation, and manipulation of data, with general lessons about programming interspersed throughout.
 
@@ -23,4 +23,9 @@ An interesting book, published under an open source license and available in htm
 
 [mur1]: https://www.stat.auckland.ac.nz/~paul/ItDT/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/data-technologies/
+
+:::

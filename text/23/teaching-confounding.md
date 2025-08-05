@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from article](http://www.pmean.com/new-images/23/teaching-confounding-01.png)
 
-<div class="notes">
+::: notes
 
 THe author reviews many articles on statistical literacy and notes some interesting trends in how frequently the term "confounding" appears in those articles. He then offers an explanation for the times when confounding was downplayed or ignored.
 
@@ -20,4 +20,9 @@ Milo Schield. Statistical Literacy: A Study of Confounding. Joint Statistical Me
 
 [sch1]: http://www.statlit.org/pdf/2019-Schield-ASA.pdf
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/teaching-confounding/
+
+:::

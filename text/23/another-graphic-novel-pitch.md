@@ -45,4 +45,7 @@ I think there are a lot of case studies that would work well in a graphic novel 
 
 A project like this may or may not appeal to you. If you have some interest and want to find out more about what I have in mind, I’d be glad to set up a phone call or Zoom session.
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/another-graphic-novel-pitch/
