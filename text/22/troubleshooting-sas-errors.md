@@ -25,3 +25,8 @@ If you run a complicated proc with lots of options and it isn't working, try run
 Many error messages are difficult to decipher. Cut-and-paste the exact text of your message into an Internet search engine. The wording of error messages in SAS (and many other programs) is so different than how most of us talk and write that it usually will help you find the right solution on the Internet.
 
 If the statistical results in a SAS table seem wrong to you, then definitely investigate. Half the time, it seems to me, the "wrong" results are actually real and represent a surprise finding lurking in your data. But half the time, bad code might be to blame. Insert extra SAS procedures in the middle of your code to see if there is a problem. A listing through proc print of the first few data values might help. Also try using the min and max options in proc means to see if a typo causes an extreme value that skews your data in the wrong direction.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/troubleshooting-sas-errors/

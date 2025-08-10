@@ -112,4 +112,9 @@ So how can the stroke group be both a cohort group and a case group? It's all in
 
 The point of this example is that classifying a study into one of the four categories (cohort, cross-sectional, case-control, or historical control) is a tricky process. The experts who publish these papers often get these terms wrong themselves, so don't worry too much if you can't figure things out.
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/observational-confusion/
+
 :::

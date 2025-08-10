@@ -18,6 +18,10 @@ I attended a talk where the presenter used quarto rather than RMarkdown to creat
 
 Yihui Xie. With Quarto Coming, is R Markdown Going Away? No. Yihui's Blog, 2022-04-29. Available in [html format][xie1].
 
-[xie1]: https://yihui.org/en/2022/04/quarto-r-markdown/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/with-quarto-coming/
 
 :::

@@ -10,7 +10,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from article](http://www.pmean.com/new-images/22/sas-regular-expressions-01.png)
+![Figure 1. Excerpt from article](http://www.pmean.com/new-images/22/sas-regular-expressions-01.png){width=80%}
 
 ::: notes
 
@@ -19,5 +19,10 @@ Regular expressions are a powerful way to identify and manipulate string data. S
 Ron Cody. An Introduction to Perl Regular Expressions in SAS 9. SUGI 29 Proceedings, 2004-05-09. Available in [pdf format][cod1]
 
 [cod1]: https://support.sas.com/resources/papers/proceedings/proceedings/sugi29/265-29.pdf
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sas-regular-expressions/
 
 :::

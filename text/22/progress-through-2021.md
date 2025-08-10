@@ -28,3 +28,8 @@ At the same time, I have been added 117 new webpages during [2021][si21].
 [sipo]: http://new.pmean.com/postmodern-assault/
 [sipr]: http://new.pmean.com/Promotion/
 [sich]: http://new.pmean.com/PediatricResearch/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/progress-through-2021/

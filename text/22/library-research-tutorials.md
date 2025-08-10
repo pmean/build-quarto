@@ -21,4 +21,9 @@ UMKC University Libraries. Library Research Tutorials. Available in [html format
 [umkc1]: https://libguides.library.umkc.edu/tutorials
 [hen2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6635912/pdf/nihms-1031312.pdf
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/library-research-tutorials/
+
 :::

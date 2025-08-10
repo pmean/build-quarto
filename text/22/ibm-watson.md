@@ -10,7 +10,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/ism-watson-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/ibm-watson-01.png){width=80%}
 
 ::: notes
 
@@ -19,5 +19,10 @@ IBM Watson is a supercomputer that has handled some difficult problems that are 
 Tom Taulli. IBM Watson: Why Is Healthcare AI So Tough? Forbes, 2021-02-27. Available in [html format][cla1]
 
 [tau1]: https://www.forbes.com/sites/tomtaulli/2021/02/27/ibm-watson-why-is-healthcare-ai-so-tough/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/ibm-watson/
 
 :::

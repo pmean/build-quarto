@@ -11,7 +11,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Exceprt from research article](http://www.pmean.com/new-images/22/scientific-writing-strategies.png)
+![Figure 1. Exceprt from research article](http://www.pmean.com/new-images/22/scientific-writing-strategies-01.png){width=80%}
 
 ::: notes
 
@@ -21,5 +21,10 @@ Vikash Singh, Philipp Mayer. Scientific writing: Strategies and tools for studen
 
 [sin1]: https://iubmb.onlinelibrary.wiley.com/doi/full/10.1002/bmb.20815
 [sin2]: https://iubmb.onlinelibrary.wiley.com/doi/epdf/10.1002/bmb.20815
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/scientific-writing-strategies/
 
 :::

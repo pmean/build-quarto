@@ -67,3 +67,7 @@ It is easy to [upload data for your own individual use][sas03]. If you are an in
 [t01]: http://utstat.utoronto.ca/~brunner/help/SAS_OnDemand.html
 [w01]: https://td.wku.edu/TDClient/34/Portal/KB/ArticleDet?ID=3812
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/getting-started-sas/

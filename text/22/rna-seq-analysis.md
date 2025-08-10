@@ -10,7 +10,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from research paper](http://www.pmean.com/new-images/22/rna-seq-analysis-01.png)
+![Figure 1. Excerpt from research paper](http://www.pmean.com/new-images/22/rna-seq-analysis-01.png){width=80%}
 
 ::: notes
 
@@ -20,5 +20,10 @@ Geraci Filippo, Saha Indrajit, Bianchini Monica. Editorial: RNA-Seq Analysis: Me
 
 [fil1]: https://www.frontiersin.org/articles/10.3389/fgene.2020.00220/full
 [fil2]: https://www.frontiersin.org/articles/10.3389/fgene.2020.00220/pdf
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/rna-seq-analysis/
 	  
 :::

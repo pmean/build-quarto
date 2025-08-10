@@ -28,3 +28,8 @@ General rules about presentations (e.g., don't read your slides word for word) a
 Beyond that, my only recommendation would be to try to anticipate questions that you might get, especially about alternative approaches that you may have considered and rejected. Be prepared to say (if appropriate)  "I did not do that, but that's an excellent suggestion for future work." And be deferential to the committee. Accept pretty much any recommendation they make unless it is terribly bad. And find a way to avoid using the words "terribly bad" in your response to their terribly bad suggestions. Often the committee chair will rescue you if another member suggests something that is terribly bad, and he/she is allowed to use harsher language than you can.
 
 Good luck! I'm sure you'll do well.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/thesis-defense/

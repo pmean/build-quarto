@@ -71,3 +71,7 @@ Designating a co-host might make sense in a couple of situations. First, you mig
 
 If you are the host of a meeting and have to leave early, use this option to put someone else at the helm. It's the same menu, and you select `Make Host` before you skedaddle. You also need to do this because if the host closes a meeting, it closes for everybody else at the same time.
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/zoom-security/

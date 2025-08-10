@@ -128,3 +128,7 @@ UMKC makes a strong commitment to its faculty and provides lots of resources to 
 [si19]: http://new.pmean.com/2019/
 [si21]: http://new.pmean.com/2021/
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/writing-goals-may-2022/

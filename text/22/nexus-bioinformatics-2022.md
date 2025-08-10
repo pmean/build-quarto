@@ -65,4 +65,7 @@ Jason Brownlee. Recursive Feature Elimination (RFE) for Feature Selection in Pyt
 [thai1]: https://www.analyticsvidhya.com/blog/2021/05/an-introduction-to-few-shot-learning/
 [wik1]: https://en.wikipedia.org/wiki/BERT_(language_model)
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/nexus-bioinformatics-2022/

@@ -10,7 +10,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/taste-of-observable-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/taste-of-observable-01.png){width=80%}
 
 ::: notes
 
@@ -20,5 +20,10 @@ A Taste of Observable. 2020-03-02. Available in [html format][obs1].
 
 [obs1]: https://observablehq.com/@observablehq/a-taste-of-observable
 [obs2]: https://observablehq.com/@asg017/introducing-dataflow
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/taste-of-observable/
 
 :::

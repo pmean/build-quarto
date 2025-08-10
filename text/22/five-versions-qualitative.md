@@ -11,7 +11,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from tweet](http://www.pmean.com/new-images/22/five-versions-qualitative-01.png)
+![Figure 1. Excerpt from tweet](http://www.pmean.com/new-images/22/five-versions-qualitative-01.png){width=80%}
 
 ::: notes
 
@@ -21,5 +21,9 @@ John Gallagher (Twitter account: MereSophistry). Tweet, 2022-08-22. Available in
 
 [gall1]: https://twitter.com/MereSophistry/status/1561738679353331713
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/five-versions-qualitative/
 
 :::

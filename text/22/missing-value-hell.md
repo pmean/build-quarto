@@ -55,3 +55,8 @@ The syntax changes slightly with other statistical packages, but the general con
 ### Conclusions
 
 Missing values are one of the most troublesome aspects of data management. Every statistical package stores missing values differently, so be sure to use the function that they provide for detecting missingness. Account for missing values at the start and at the end of any recodes.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/missing-value-hell/

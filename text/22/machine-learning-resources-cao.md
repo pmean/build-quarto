@@ -44,3 +44,8 @@ Dr. Cao also mentioned a [blog by Jonty Sinai][sin1]. Jonty Sinai is currently a
 [sin1]: https://jontysinai.github.io/
 
 While I understand very little about the resources listed here, they do look like something worth studying, when I have time.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/machine-learning-resources-cao/

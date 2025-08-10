@@ -17,3 +17,8 @@ Last Friday’s footnote about unusual dissertation acknowledgments prompted som
 Marcela Rodrigues-Sherley. Daily Briefing Newsletter, Chronicle of Higher Education, 2022-11-18. This article is [behind a paywall][chr1].
 
 [chr1]: https://www.chronicle.com/newsletter/daily-briefing/2022-11-18
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/pet-acknowledgments/

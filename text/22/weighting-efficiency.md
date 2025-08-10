@@ -70,3 +70,8 @@ where K is chosen so that the weights add up to 1. This shows a rather intuitive
 If the variances are all equal, then the optimal weights must all be equal. And they also have to add up to 1. So the obvious solution when the variances are equal is to use weights 1/n.
 
 Now my math is a bit rusty, so check my formulas carefully.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/weighting-efficiency/

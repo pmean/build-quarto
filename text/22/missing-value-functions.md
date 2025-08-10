@@ -57,3 +57,8 @@ The solution in all of these cases is to hunt for the missing values explicitly.
 ### Conclusions
 
 Missing values are one of the most troublesome aspects of data management. Every statistical package stores missing values differently. Be aware of how your package treats missing values and use the function that they provide for detecting missing value codes.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/missing-value-functions/

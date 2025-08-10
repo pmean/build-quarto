@@ -10,7 +10,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/smarter-way-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/smarter-way-01.png){width=80%}
 
 ::: notes
 
@@ -19,5 +19,10 @@ A statistician and parent of three young children laments a recent delay in appr
 Aubrey Clayon. I’m a Parent and a Statistician. There’s a Smarter Way to Think About the Under-5 Vaccine. The New York Times, 2022-03-01. Available in [html format][cla1]
 
 [cla1]: https://www.nytimes.com/2022/03/01/opinion/under-5-vaccine.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/smarter-way/
 
 :::

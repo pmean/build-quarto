@@ -23,3 +23,8 @@ It's been resolved, and Apple Records and Apple Computers are now best buds. Unf
 Companies will often use deliberate misspellings to make sure that they are not emulated. Another strategy is to include your initials in your company name. So I could call myself sds-consulting, for example. A full name (steve-simon-consulting) is even better. Combining two or three very different words can also help. One company name that works well for this is "Mountain Whisper Light". Another one, though "The Analysis Factor" has to compete with all the sites talking about factor analysis. My company, P.Mean Consulting, also does poorly because a Google search yields inquiries about what the letter "P" stands for.
 
 It might not hurt to do a Google search on a variety of proposed names and see if something comes up that could compete for attention with your name or which could cause confusion. Also look at whether the url that is closest to your business name or the handle you might use on Twitter has already been taken by someone else. I am fine with pmean for my website, but sadly someone else already has @pmean on Twitter. So there I have to use @profmean.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/naming-your-consulting-company/

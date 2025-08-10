@@ -11,7 +11,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Exceprt from research publication](http://www.pmean.com/new-images/22/improving-representation-01.png)
+![Figure 1. Excerpt from research publication](http://www.pmean.com/new-images/22/improving-representation-01.png){width=80%}
 
 ::: notes
 
@@ -22,5 +22,10 @@ National Academies of Sciences, Engineering, and Medicine. 2022. Improving Repre
 [fda1]: https://www.fda.gov/consumers/minority-health-and-health-equity/clinical-trial-diversity
 
 [nas1]: https://nap.nationalacademies.org/catalog/26479/improving-representation-in-clinical-trials-and-research-building-research-equity
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/improving-representation/
 
 :::

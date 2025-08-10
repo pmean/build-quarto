@@ -30,4 +30,9 @@ Ionos. Deploy Now. Available in [html format][ion1].
 [sim5]: http://www.pmean.com/original_site.html
 [sim6]: http://blog.pmean.com/
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/deploy-now/
+
 :::

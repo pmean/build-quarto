@@ -38,3 +38,8 @@ Mathematical Statistics and Data Analysis (Rice). Available at [Amazon][ric1].
 [pru1]: https://www.ams.org/publications/authors/books/postpub/amstext-13
 
 [ric1]: https://www.amazon.com/Mathematical-Statistics-Analysis-Available-Enhanced/dp/0534399428
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/mathematical-statistics-books/

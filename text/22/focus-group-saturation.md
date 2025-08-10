@@ -11,7 +11,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/focus-group-saturation-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/focus-group-saturation-01.png){width=80%}
 
 ::: notes
 
@@ -21,5 +21,10 @@ Hennink MM, Kaiser BN, Weber MB. What Influences Saturation? Estimating Sample S
 
 [hen1]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6635912/
 [hen2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6635912/pdf/nihms-1031312.pdf
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/focus-group-saturation/
 
 :::

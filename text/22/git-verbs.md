@@ -158,3 +158,7 @@ Sagar Khillar. Difference Between Commit and Push. Difference Between blog, 2020
 [rst01]: https://www.rstudio.com/products/rstudio/download/
 [rst02]: https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/git-verbs/

@@ -301,3 +301,8 @@ The [scoringRules package][scor1].
 An overview of [knitr engines][cder1]
 
 [cder1]: https://github.com/cderv/user2022-knitr-engines
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/interesting-links-userr-2022/

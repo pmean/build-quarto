@@ -98,3 +98,8 @@ run;
 would produce an error.
 
 Since the order of statements has some flexibility, you should develop a system that works for you and follow it consistently. Or if you work for a large organization, see if your organization has a set of coding practices. Or you can adopt the coding practices of someone more experienced. I'd be flattered if you wrote your code the way I do, but it might be smarter to code like your boss does.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sas-statement-order/

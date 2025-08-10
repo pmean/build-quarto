@@ -11,7 +11,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from video](http://www.pmean.com/new-images/22/git-with-sas-01.png)
+![Figure 1. Excerpt from video](http://www.pmean.com/new-images/22/git-with-sas-01.png){width=80%}
 
 ::: notes
 
@@ -27,5 +27,10 @@ Chris Hemedinger. SAS Tutorial | How to use Git with SAS. YouTube. Available in 
 [sas2]: https://github.com/sassoftware
 [vsc1]: https://code.visualstudio.com/
 [sas3]: https://developer.sas.com/home.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/git-with-sas/
 
 :::

@@ -44,3 +44,8 @@ You can instead add the option
 ```
 
 to your infile statement to skip names in the first row of your data file.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/numbers-as-variable-names/

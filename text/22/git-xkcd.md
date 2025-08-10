@@ -10,7 +10,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. xkcd cartoon](https://imgs.xkcd.com/comics/git.png)
+![Figure 1. xkcd cartoon](https://imgs.xkcd.com/comics/git.png){width=80%}
 
 ::: notes
 
@@ -19,5 +19,10 @@ I use git for version control, but I have to admit that I don't understand most 
 Scott Munro. git.  Available in [html format][mun1].
 
 [mun1]: https://xkcd.com/1597/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/git-xkcd/
 
 :::

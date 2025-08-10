@@ -10,7 +10,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/nih-data-sharing-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/nih-data-sharing-01.png){width=80%}
 
 ::: notes
 
@@ -19,5 +19,10 @@ The National Institutes of Health encourages researchers that it funds to share 
 National Institutes of Health. Selecting a Data Repository. Available in [html format][nih1].
 
 [nih1]: https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/nih-data-sharing/
 
 :::

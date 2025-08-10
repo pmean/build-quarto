@@ -286,7 +286,7 @@ persp(
   ticktype="detailed")
 ```
 
-A contour plot shows where the probability is concentrated. The labels on the contour lines represent how much probabilty is found inside the contour line.
+A contour plot shows where the probability is concentrated. The labels on the contour lines represent how much probability is found inside the contour line.
 
 ```{r}
 #| label: contour

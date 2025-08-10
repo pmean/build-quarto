@@ -11,7 +11,7 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Exceprt from research publication](http://www.pmean.com/new-images/22/ipums-health-surveys-01.png)
+![Figure 1. Excerpt from research publication](http://www.pmean.com/new-images/22/ipums-health-surveys-01.png){width=80%}
 
 ::: notes
 
@@ -20,5 +20,10 @@ IPUMS is a project that stores and harmonizes data from various public sources. 
 Steven Ruggles. IPUMS Health Surveys, available in [html format][rug1].
 
 [rug1]: https://healthsurveys.ipums.org/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/ipums-health-surveys/
 
 :::
