@@ -10,9 +10,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/d3-overview-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/d3-overview-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 D3 is a powerful system for visualization with a small footprint. This page gives an overview of D3 and some very basic tutorials.
 
@@ -20,4 +20,9 @@ Mike Bostock. D3, Data-Driven Documents. Available in [html format][bos1].
 
 [bos1]: https://d3js.org/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/d3-overview/
+
+:::

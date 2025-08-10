@@ -10,9 +10,9 @@ output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/authentication-tokens-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/authentication-tokens-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 I only have a vague idea what an authentication token is, but I should probably learn more. I got a notice from GitHub that I was using an old authentication token and should updated to the newer tokens. The following blog entry explains the difference between the old and new tokens and why it is important to switch.
 
@@ -20,4 +20,9 @@ Heather Harvey. Behind GitHub’s new authentication token formats. GitHub blog,
 
 [git1]: https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/authentication-tokens/
+
+:::

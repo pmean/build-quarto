@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Exceprt from webpage](http://www.pmean.com/new-images/22/review-open-data-01.png)
 
-<div class="notes">
+::: notes
 
 A brief guide for peer reviewers who have to look at the datasets being shared as part of a proposed publication.
 
@@ -21,4 +21,4 @@ A Reviewer’s Quick Guide to Assessing Open Datasets, available in [html format
 
 [plo1]: https://plos.org/resource/peer-reviewing-data/
 
-</div>
+:::

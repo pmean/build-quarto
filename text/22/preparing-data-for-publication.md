@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/preparing-data-for-publication-01.png)
 
-<div class="notes">
+::: notes
 
 Here are some practical suggestions on how to prepare the raw data for inclusion in a peer-reviewed article. The emphasis is on protecting patient confidentiality.
 
@@ -20,4 +20,4 @@ Hrynaszkiewicz I, Norton M L, Vickers A J, Altman D G. Preparing raw clinical da
 
 [hry1]: https://www.bmj.com/content/340/bmj.c181
 
-</div>
+:::

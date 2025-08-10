@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from article](http://www.pmean.com/new-images/22/competing-risks-01.png)
 
-<div class="notes">
+::: notes
 
 This is a nice overview of competing risks that draws important distinctions from the Cox proportional hazards model.
 
@@ -21,4 +21,9 @@ James J. Dignam, Qiang Zhang, and Maria N. Kocherginsky. The Use and Interpretat
 [dig1]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3328633/
 [dig2]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3328633/pdf/nihms352464.pdf
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/competing-risks/
+
+:::

@@ -20,7 +20,7 @@ Anyway, that portion of my lecture probably hurt more than it helped. Identifyin
 * Prospectitve cohort vs cross-sectional design
 * Historical control and the quasi-experimental design
 
-<div class="notes">
+::: notes
 
 #### Speaker notes
 
@@ -34,13 +34,13 @@ The historical control design is similar to some of the quasi-experimental desig
 
 These are all subtle distinctions, and the people who publish in the medical journals often get things confused themselves. So don't worry too much about this now. The distinctions are important, from the perspective of the hierarchy of evidence. They are also imporant, at times, because certain research designs (most notably the case-control design) limit some of the statistical summaries that you can use.
 
-</div>
+:::
 
 ### Confusion between designs (2 of 6)
 
 ![Abstract of research paper](http://www.pmean.com/new-images/22/raffa01.png)
 
-<div class="notes">
+::: notes
 
 #### Speaker notes
 
@@ -48,13 +48,13 @@ I don't want to confuse or intimidate you, but let's look at an example of an ob
 
 So you select patients with and without complications and see what happened during the surgery and beforehand that might be a risk factor for complications.
 
-</div>
+:::
 
 ### Confusion between designs (3 of 6)
 
 ![Abstract of research paper](http://www.pmean.com/new-images/22/raffa02.png)
 
-<div class="notes">
+::: notes
 
 #### Speaker notes
 
@@ -66,13 +66,13 @@ That implies a cross-sectional study. You get a big group of patients (2121 surg
 
 The point is that this looks like a single sample with measurements associated with various risk factors and various outcomes asssessed simultaneously.
 
-</div>
+:::
 
 ### Confusion between designs (4 of 6)
 
 ![Abstract of research paper](http://www.pmean.com/new-images/22/raffa03.png)
 
-<div class="notes">
+::: notes
 
 #### Speaker notes
 
@@ -82,25 +82,25 @@ For now, I'll lump transient neurological episodes in with the more serious outc
 
 So that seems to imply that cases and controls were selected from the cross-sectional study.
 
-</div>
+:::
 
 ### Confusion between designs (5 of 6)
 
 ![Abstract of research paper](http://www.pmean.com/new-images/22/raffa04.png)
 
-<div class="notes">
+::: notes
 
 #### Speaker notes
 
 Now look here. The phrase "patients with and without imaging" sure sounds like our "cases" with major strokes and transient neurological episodes. But we are comparing these to the controls not on risk factors that occured before the strokes and neurological episodes, but on outcomes like length of stay or mortality. So maybe the major strokes and transient neurological episodes represent a cohort and you want to see whether exposure to strokes influences certain outcome measures that are taken after the stroke. Death certainly occurs after the stroke and not before. So death is the outcome and stroke is the exposure.
 
-</div>
+:::
 
 ### Confusion between designs (6 of 6)
 
 ![Abstract of research paper](http://www.pmean.com/new-images/22/raffa05.png)
 
-<div class="notes">
+::: notes
 
 #### Speaker notes
 
@@ -112,4 +112,4 @@ So how can the stroke group be both a cohort group and a case group? It's all in
 
 The point of this example is that classifying a study into one of the four categories (cohort, cross-sectional, case-control, or historical control) is a tricky process. The experts who publish these papers often get these terms wrong themselves, so don't worry too much if you can't figure things out.
 
-</div>
+:::

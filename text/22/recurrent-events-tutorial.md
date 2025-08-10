@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from article](http://www.pmean.com/new-images/22/recurrent-events-tutorial-01.png)
 
-<div class="notes">
+::: notes
 
 This is a fairly comprehensive review of the variety of approaches you can use to model recurrent events in a time-to-event model. The authors share some code as well. You might need to review some of the references to get a more complete picture of some of these approaches.
 
@@ -20,4 +20,4 @@ Leila DAF Amorim, Jianwen Cai. Modelling recurrent events: a tutorial for analys
 
 [amor1]: https://doi.org/10.1093/ije/dyu222
 
-</div>
+:::

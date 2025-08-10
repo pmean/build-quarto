@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/open-intro-datasets-01.png)
 
-<div class="notes">
+::: notes
 
 OpenIntro is a site that publishes several open source textbooks. This page on their site provides a compilation of datasets from a variety of sources that can be used with these textbooks. This includes datasets that would have otherwise disappeared from the Internet.
 
@@ -20,4 +20,4 @@ OPenIntro. Data Sets: Textbook data sets plus more. Available in [html format][o
 
 [open1]: https://www.openintro.org/data/
 
-</div>
+:::

@@ -15,7 +15,7 @@ execute:
   fig.height: 8 in
 ---
 
-```{r setup}
+```{r}
 #| label: setup
 #| echo: false
 #| message: false

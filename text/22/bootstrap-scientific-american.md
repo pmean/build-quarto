@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from article](http://www.pmean.com/new-images/22/bootstrap-scientific-american-01.png)
 
-<div class="notes">
+::: notes
 
 The bootstrap is a computational approach that allows you to create confidence intervals and hypothesis tests in a wide range of setting where normality or asymptotic normality cannot be easily established. It was developed by Bradley Efron in 1979 and proved so successful that he and Persi Diaconis provided a non-technical introduction to this approach in Scientific American in 1983. This article emphasizes how the bootstrap can provide reasonable answers for a broad range of problems.
 
@@ -27,4 +27,9 @@ Denise LaFontaine. The History of Bootstrapping: Tracing the Development of Resa
 
 [laf1]: https://scholarworks.umt.edu/cgi/viewcontent.cgi?article=1515&context=tme
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/bootstrap-scientific-american/
+
+:::

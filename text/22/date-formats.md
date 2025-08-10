@@ -48,3 +48,7 @@ If you have control over how dates are entered, insist on the ISO 8601 standard.
 
 Dates come in all different shapes and sizes. This can lead to much confusion. Two digit years might be placed in the wrong century. Sometimes the months are listed before the days, sometimes afterwards. You have to do a lot of quality checks when you are using dates that someone else entered. If you are entering dates yourself, use the ISO 8601 standard.
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/date-formats/

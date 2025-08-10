@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Exceprt from research article](http://www.pmean.com/new-images/22/scientific-writing-strategies.png)
 
-<div class="notes">
+::: notes
 
 A guide from the beginning to the end of writing a scientific paper.
 
@@ -22,4 +22,4 @@ Vikash Singh, Philipp Mayer. Scientific writing: Strategies and tools for studen
 [sin1]: https://iubmb.onlinelibrary.wiley.com/doi/full/10.1002/bmb.20815
 [sin2]: https://iubmb.onlinelibrary.wiley.com/doi/epdf/10.1002/bmb.20815
 
-</div>
+:::

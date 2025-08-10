@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/smarter-way-01.png)
 
-<div class="notes">
+::: notes
 
 A statistician and parent of three young children laments a recent delay in approval of a COVID vaccine for children under the age of 5. He argues that the FDA emphasis on p-values is partially to blame and advocates the use of Bayesian methods instead.
 
@@ -20,4 +20,4 @@ Aubrey Clayon. I’m a Parent and a Statistician. There’s a Smarter Way to Thi
 
 [cla1]: https://www.nytimes.com/2022/03/01/opinion/under-5-vaccine.html
 
-</div>
+:::

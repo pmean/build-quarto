@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/open-source-initiative-01.png)
 
-<div class="notes">
+::: notes
 
 There are a variety of open source licenses that are used for software. This site lists some of the most popular licenses and answers some common questions.
 
@@ -21,4 +21,4 @@ Stefano Maffulli, Phyllis Dobbs, Jessica Iavarone, Simon Phipps, Betsy Waliszews
 
 [maf1]: https://opensource.org/licenses
 
-</div>
+:::

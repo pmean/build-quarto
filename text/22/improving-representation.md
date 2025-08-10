@@ -13,7 +13,7 @@ page_update: complete
 
 ![Figure 1. Exceprt from research publication](http://www.pmean.com/new-images/22/improving-representation-01.png)
 
-<div class="notes">
+::: notes
 
 This report summarizes the work of a task on diverse representation in clinical research. It summarizes the problems with under-representation of minorities in clinical research and offers suggestions for how to get more diverse participation. Also note the [FDA website on clinical trial diversity][fda1].
 
@@ -23,4 +23,4 @@ National Academies of Sciences, Engineering, and Medicine. 2022. Improving Repre
 
 [nas1]: https://nap.nationalacademies.org/catalog/26479/improving-representation-in-clinical-trials-and-research-building-research-equity
 
-</div>
+:::

@@ -2,7 +2,7 @@
 title: Definition, Adverse event
 source: http://www.pmean.com/definitions/AdverseEvent.htm
 author: Steve Simon
-date: 2022-05-28
+date: 2025-08-10
 categories:
 - "*Definitions"
 - 2022
@@ -16,7 +16,7 @@ This page is currently being updated from the earlier version of my website. Sor
 <!---More--->
 
 
-You can find an [earlier version][sim3] of this page on my [original website][sim2].
+You can find an earlier version[here][sim1] and [here][sim2].
 
-[sim3]: http://www.pmean.com/definitions/AdverseEvent.htm
-[sim2]: http://www.pmean.com/original_site.html
+[sim1]: http://www.pmean.com/definitions/AdverseEvent.htm
+[sim2]: http://new.pmean.com/definition-adverse-event/

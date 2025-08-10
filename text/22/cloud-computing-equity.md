@@ -19,7 +19,6 @@ The speaker shared the slides on a [Google Docs drive][solt1]. He also provided 
 
 Perhaps of greatest interest to me is the [Google BigQuery site][bigq1], which allows you to store large databases in the cloud that can be queried by SQL. You can run Python in the cloud using a Jupyter notebook interface with [Colaboratory][cola1]. If you have a series of Jupyter notebooks, you can share them on the cloud using [Binder][bind1].If you prefer the RStudio interface, you can go to [RStudio Cloud][rstu1]. You can prepare visualizations of data using [Google Data Studio][goog1]. Finally, Google has a [site listing the cloud resources][goog2] that they are making available to teachers.
 
-
 [bigq1]: https://cloud.google.com/bigquery
 [bind1]: https://mybinder.org/
 [cola1]: https://colab.research.google.com/
@@ -28,7 +27,6 @@ Perhaps of greatest interest to me is the [Google BigQuery site][bigq1], which a
 [rstu1]: https://rstudio.cloud/
 [solt1]: https://bit.ly/Dartmouth-AI-2022
 [solt2]: https://github.com/soltaniehha
-
 
 I am a beginner in using version control, even though I have relied on it for several years now. I'm beginning to encourage others to use version control with joint projects and I realized that I need to explain various concepts in version control to them.
 
@@ -177,3 +175,7 @@ Sagar Khillar. Difference Between Commit and Push. Difference Between blog, 2020
 [rst01]: https://www.rstudio.com/products/rstudio/download/
 [rst02]: https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/cloud-computing-equity/

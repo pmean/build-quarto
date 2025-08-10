@@ -14,7 +14,7 @@ page_update: complete
 
 ![Figure 1. Exceprt from research publication](http://www.pmean.com/new-images/22/machine-learning-complex-survey-01.png)
 
-<div class="notes">
+::: notes
 
 An open research question is how to adapt machine learning approaches to complex surveys. This query on StackExchange has some interesting links posted both by the person asking the question and the person responding.
 
@@ -22,4 +22,4 @@ GeoMatt22. Two worlds collide: Using ML for complex survey data, Cross-validated
 
 [geo1]: https://stats.stackexchange.com/questions/238141/two-worlds-collide-using-ml-for-complex-survey-data
 
-</div>
+:::

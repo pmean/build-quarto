@@ -39,3 +39,8 @@ svg.selectAll('rect')
 
 [xie1]: https://bookdown.org/yihui/rmarkdown-cookbook/d3.html
 [xie2]: https://bookdown.org/yihui/rmarkdown-cookbook/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/testing-d3/

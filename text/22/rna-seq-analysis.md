@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from research paper](http://www.pmean.com/new-images/22/rna-seq-analysis-01.png)
 
-<div class="notes">
+::: notes
 
 This editorial provides a broad overview of a special issue on RNA-Seq analysis, a new approach for quantifying gene expression levels.
 
@@ -21,4 +21,4 @@ Geraci Filippo, Saha Indrajit, Bianchini Monica. Editorial: RNA-Seq Analysis: Me
 [fil1]: https://www.frontiersin.org/articles/10.3389/fgene.2020.00220/full
 [fil2]: https://www.frontiersin.org/articles/10.3389/fgene.2020.00220/pdf
 	  
-</div>
+:::

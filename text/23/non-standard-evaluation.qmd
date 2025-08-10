@@ -119,7 +119,7 @@ for (v in c("w", "x")) {
 
 But this does not work for `count`, the dplyr equivalent to table
 
-```{r non-standard-evaluation-06, error=TRUE}
+```{r}
 #| label: for-loop-2
 #| error: true
 

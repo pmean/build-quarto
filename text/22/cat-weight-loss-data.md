@@ -4,15 +4,16 @@ source: new
 date: "2022-05-08"
 categories:
 - "*Recommendation"
+- Broken-image-link
 - 2022
 - Teaching resources
 output: html_document
 page_update: complete
 ---
 
-![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/cat-weight-loss-data-01.png)
+![Figure 1. Excerpt from website](http://www.pmean.com/new-images/22/cat-weight-loss-data-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 One of my students used an interesting dataset for their final project. It is freely available on the web and might be one I would use in future classes.
 
@@ -20,4 +21,9 @@ Flanagan J, Bissot T, Hours M-A, Moreno B, German AJ (2018) An international mul
 
 [fla1]: https://figshare.com/articles/dataset/An_international_multi-centre_cohort_study_of_weight_loss_in_overweight_cats_Differences_in_outcome_in_different_geographical_locations/6862337
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/cat-weight-loss-data-01/
+
+:::

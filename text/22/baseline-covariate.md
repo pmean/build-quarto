@@ -19,3 +19,8 @@ Just to clarify here, a change score is commonly used when you are comparing an 
 For example, you have a new diet and exercise program designed to help people lose weight. You weigh a sample of 10 people and then randomly assign five to your new program and five to a standard diet and weight program. You wait six months and then weigh everyone again. The change score is the difference between the weight at baseline and the weight at six months. In simpler terms, the change score in this setting is the amount of weight lost.
 
 The use of change scores is controversial for a variety of reasons. The preferred approach of many statisticians is to use the 
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/baseline-covariate/
