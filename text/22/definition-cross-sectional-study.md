@@ -17,8 +17,7 @@ Both "cross-sectional" and "cross sectional" are acceptable.
 
 <!---More--->
 
+You can find earlier versions [here][sim1] and [here][sim2].
 
-You can find an [earlier version][sim3] of this page on my [original website][sim2].
-
-[sim3]: http://www.pmean.com/definitions/cross_sectional.htm
-[sim2]: http://www.pmean.com/original_site.html
+[sim1]: http://www.pmean.com/definitions/cross_sectional.htm
+[sim2]: http://new.pmean.com/definition-cross-sectional-study/

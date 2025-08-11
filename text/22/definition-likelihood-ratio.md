@@ -15,9 +15,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
+You can find earlier versions [here][sim1] and [here][sim2].
 
-You can find an [earlier version][sim3] of this page on my [original website][sim2]. Also see some [extra information][sim3a].
-
-[sim3]: http://www.pmean.com/definitions/likelihood.htm
-[sim2]: http://www.pmean.com/original_site.html
-[sim3a]: http://www.pmean.com/definitions/likelihood_extra.htm
+[sim1]: http://www.pmean.com/definitions/likelihood.htm
+[sim2]: http://new.pmean.com/definition-likelihood-ratio/

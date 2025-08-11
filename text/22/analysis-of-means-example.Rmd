@@ -91,7 +91,7 @@ hi <- ybarbar+h*sqrt((t-1)*mse/N)
 lo <- ybarbar-h*sqrt((t-1)*mse/N)
 ```  
 
-![](http://www.pmean.com/new-images/22/analysis-of-means-01.png)  
+![](http://www.pmean.com/new-images/22/analysis-of-means-01.png){width=80%}  
 
 The raw data was not available, but you can calculate the analysis of means limits using the group means and standard deviations. You can plot the individual means versus the limits provided by analysis of means calculations.
 

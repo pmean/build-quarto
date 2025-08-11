@@ -2,15 +2,16 @@
 title: "New web recommendation"
 source: "New"
 author: Steve Simon
-date: "20xx-xx-xx"
-categories: Recommendation
-tags:
+date: "2025-xx-xx"
+categories:
+- "*Recommendation"
+- 2025
 - Being updated
-output: html_document
 page_update: no
+output: html_document
 ---
 
-![](http://www.pmean.com/new-images/xx/xx-01.png "Excerpt from recommended website")
+![](http://www.pmean.com/new-images/xx/xx-01.png "Excerpt from recommended website"){width=80%}
 
 ::: notes
 Brief description.

@@ -1,6 +1,6 @@
 ---
 title: Definition, Interquartile range
-source: http://www.pmean.com/definitions/interval.htm
+source: http://www.pmean.com/definitions/iqr.htm
 author: Steve Simon
 date: 2022-05-28
 categories:
@@ -15,8 +15,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
+You can find earlier versions [here][sim1] and [here][sim2].
 
-You can find an [earlier version][sim3] of this page on my [original website][sim2].
-
-[sim3]: http://www.pmean.com/definitions/interval.htm
-[sim2]: http://www.pmean.com/original_site.html
+[sim1]: http://www.pmean.com/definitions/iqr.htm
+[sim2]: http://new.pmean.com/definition-interquartile-range/

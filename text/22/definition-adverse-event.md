@@ -16,7 +16,7 @@ This page is currently being updated from the earlier version of my website. Sor
 <!---More--->
 
 
-You can find an earlier version[here][sim1] and [here][sim2].
+You can find earlier versions [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/definitions/AdverseEvent.htm
 [sim2]: http://new.pmean.com/definition-adverse-event/
