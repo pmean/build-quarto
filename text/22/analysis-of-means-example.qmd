@@ -18,7 +18,12 @@ The classic follow-up to a significant F test in analysis of variance is examini
 
 You've seen this hypothesis for the standard ANOVA setting in your introductory Statistics class
 
-```{r analysis-of-means-01, fig.width=5, fig.height=0.33, echo=FALSE}
+```{r}
+#| label: analysis-of-means-01
+#| fig.width: 5in
+#| fig.height: 0.33in
+#| echo: false
+
 h0 <- bquote(H[0] ~ ": " ~ mu[i] == mu[j] ~ " for all i,j")
 par(mar=rep(0.1, 4))
 plot(0:1, 0:1, axes=FALSE, type="n")
@@ -31,7 +36,12 @@ This is a very common approach in a comparison of k independent groups. Test for
 
 Suppose you are in a setting like the one described above, where there is an expectation of similarity between each group mean and the overall mean. Then you would write your hypothesis as 
 
-```{r analysis-of-means-02, fig.width=5, fig.height=0.33, echo=FALSE}
+```{r}
+#| label: analysis-of-means-02
+#| fig.width: 5in
+#| fig.height: 0.33in
+#| echo: false
+
 h0 <- bquote(H[0] ~ ": " ~ mu[i] == mu ~ " for all i=1,...,k")
 par(mar=rep(0.1, 4))
 plot(0:1, 0:1, axes=FALSE, type="n")
@@ -67,7 +77,10 @@ and my description of the testing scenario is a bit simpler than the analysis do
 
 Here are the summary statistics.
 
-```{r analysis-of-means-03, echo=FALSE}
+```{r}
+#| label: analysis-of-means-03
+#| echo: false
+
 mn <- c(
   21.83,
   20.40,
@@ -121,7 +134,10 @@ where $\bar Y_{..}$ is the overall mean and $h(\alpha, t, N)$ comes from a table
 
 In our example alpha=0.05, t=5, and N=20. The original article does not provide MSE, but you can calculate it as the pooled variance using the descriptive statistics shown above. The limits are
 
-```{r analysis-of-means-04, echo=FALSE}
+```{r}
+#| label: analysis-of-means-04
+#| echo: false
+
 # Make the numbers look nice
 ybarbar <- round(ybarbar, 2)
 mse <- round(mse, 2)
@@ -140,3 +156,8 @@ $\ $ $`r lo`$ and $`r hi`$
 [lev1]: https://wps.prenhall.com/wps/media/objects/9431/9657451/Ch_11/levine-smume6_topic_ANOM.pdf
 
 [sim3a]: http://www.pmean.com/07/AnomTable05Part1.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/analysis-of-means/

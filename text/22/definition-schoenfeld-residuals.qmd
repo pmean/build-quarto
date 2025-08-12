@@ -52,12 +52,17 @@ $l(\lambda, Y, X) = 2 log\lambda_0 - 9 \lambda_0 + log(\lambda_0+\lambda_1) -\la
 
 Let's graph this function.
 
-```{r definition-schoenfeld-residuals-01, echo=FALSE}
+```{r}
+#| label: definition-schoenfeld-residuals-01
+#| echo: false
+
 knitr::opts_chunk$set(echo=FALSE)
 suppressMessages(suppressWarnings(library(plot3D)))
 ```
 
-```{r definition-schoenfeld-residuals-02}
+```{r}
+#| label: definition-schoenfeld-residuals-02
+
 library(plot3D)
 
 l <- function(lambda0, lambda1) {
@@ -166,3 +171,7 @@ where
 
 $\theta_j = exp(X_j \beta)$
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/schoenfeld-residuals/
