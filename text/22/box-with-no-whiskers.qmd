@@ -8,45 +8,89 @@ categories:
 - Graphical display
 source: new
 page_update: complete
+execute: 
+  fig-height: 1.5
+  echo: false
 ---
 
-One of my favorite graphs is the box plot. It is a visualization of a five number summary. Those five numbers are minimum, 25th percentile, median (aka the 50th percentile), 75th percentile, and maximum. The box in a box plot extends from the 25th to the 75th percentile and a line inside the box represents the median.
-
-It's great for comparing two groups. Here's a boxplot showing two groups. Notice that the first group tends to have larger values. 
-
 ```{r}
-#| label: box-with-no-whiskers-01
-#| fig.height: 1.5in
-#| echo: false
+#| label: setup
 #| message: false
 #| warning: false
 
 library(tidyverse)
-n1 <- 10
-n2 <- 10
-pseudo_boxplot <- function(n1, n2, a1, b1, a2, b2) {
-  x1 <- qbeta((1:n1)/(n1+1), 6, 2)
-  x2 <- qbeta((1:n2)/(n2+1), 5, 3)
-  data.frame(x=c(x1, x2), g=paste0("g", rep(1:2, c(n1, n2)))) -> df
-  print(df)
-  df %>%
-    ggplot(aes(g, x)) +
-      geom_boxplot() +
-      coord_flip()
-}
-
-pseudo_boxplot(10, 10, 6, 2, 5, 3)
 ```
 
-What happens if you try to compute the five number summary with a dataset that only has only two values?
+One of my favorite graphs is the box plot. It is a visualization of a five number summary. Those five numbers are minimum, 25th percentile, median (aka the 50th percentile), 75th percentile, and maximum. The box in a box plot extends from the 25th to the 75th percentile and a line inside the box represents the median. Then you draw a whisker from the 25th percentile down to the minimum value and another whisker from the 75th percentile up to the maximum value. If there are extreme outliers, those points are highlighted individually.
+
+Here's a boxplot showing some artificial data.
+
+```{r}
+#| label: box-with-no-whiskers-01
+
+gen_x <- function(n, a, b, trunc) {
+  x <- c(rep(0,trunc), qbeta((1:n)/(n+1), a, b))
+  x <- (x-min(x))/(max(x)-min(x))
+  # x[1:(n*trunc)] <- 0
+  
+  x <- round(6*x, 1)
+}
+
+pseudo_boxplot <- function(x) {
+  data.frame(x, g=" ") |>
+    ggplot() +
+    aes(g, x) +
+    geom_boxplot() +
+    xlab(" ") +
+    coord_flip() 
+}
+
+a <- 1
+b <- 5
+
+x1 <- gen_x(n=9, a=a, b=b, trunc=1)
+sort(x1)
+```
+
+Here is the boxplot.
+
+```{r}
+pseudo_boxplot(x1)
+```
+
+What happens if there are a lot more values at the minimum?
 
 ```{r}
 #| label: box-with-no-whiskers-02
-#| fig.height: 1.5
-#| echo: false
 
-pseudo_boxplot(10, 2, 6, 2, 5, 3)
+x2 <- gen_x(n=6, a=a, b=b, trunc=4)
+sort(x2)
 ```
+
+Here is what the boxplot looks like.
+
+```{r}
+
+pseudo_boxplot(x2)
+```
+
+What's going on here? There is a small difference between the minimum value and the 25th percentile in the first dataset.
+
+```{r}
+quantile(x1)
+```
+
+For the second data set, a large proportion of values are piled up at zero.
+
+```{r}
+quantile(x2)
+```
+
+This means that there is no difference between the minimum value and the 25th percentile. They are both zero. So drawing a whisker from the 25th percentile down to the minimum value means drawing no whisker at all.
+
+In general, a box with no whisker means that at least a quarter of the data is piled up at one extreme.
+
+You can also get a boxplot with no whiskers on either end if the sample size is small (less than five). It may or may not happen depending on how your computer computes percentiles. There are at least a half dozen different ways to compute percentiles. The formulas don't differ much except for small sample sizes.
 
 An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 

@@ -101,7 +101,7 @@ The paper does not include the raw data, but you can still calculate all the key
 
 ```{r}
 #| label: dunnetts-test-05
-#| echo=FALSE
+#| echo: false
 #| comment: ""
 
 data.frame(g=2:6, mn=mn1[-1]) %>%

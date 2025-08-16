@@ -18,17 +18,7 @@ The classic follow-up to a significant F test in analysis of variance is examini
 
 You've seen this hypothesis for the standard ANOVA setting in your introductory Statistics class
 
-```{r}
-#| label: analysis-of-means-01
-#| fig.width: 5in
-#| fig.height: 0.33in
-#| echo: false
-
-h0 <- bquote(H[0] ~ ": " ~ mu[i] == mu[j] ~ " for all i,j")
-par(mar=rep(0.1, 4))
-plot(0:1, 0:1, axes=FALSE, type="n")
-text(0.1, 0.5, h0, adj=0)
-```
+$H_0:\ \mu_i = \mu_j$ for all i, j.
 
 This is a very common approach in a comparison of k independent groups. Test for any deviation from the null hypothesis using an F test. If this is statistically significant, then use a Tukey follow-up test to see which pairs of means differ from one another.
 
@@ -36,17 +26,7 @@ This is a very common approach in a comparison of k independent groups. Test for
 
 Suppose you are in a setting like the one described above, where there is an expectation of similarity between each group mean and the overall mean. Then you would write your hypothesis as 
 
-```{r}
-#| label: analysis-of-means-02
-#| fig.width: 5in
-#| fig.height: 0.33in
-#| echo: false
-
-h0 <- bquote(H[0] ~ ": " ~ mu[i] == mu ~ " for all i=1,...,k")
-par(mar=rep(0.1, 4))
-plot(0:1, 0:1, axes=FALSE, type="n")
-text(0.1, 0.5, h0, adj=0)
-```
+$H_0:\ \mu_i = \mu$ for all i.
 
 This approach is not that common, but you can find it in most statistical software programs under the name "Analysis of Means" or its acronym, ANOM. It fits in well with a setting where you hope that all the groups produce consistent results. If any do not, then you want to identify the group or groups that deviate from the norm and study factors that may account for the deviation.
 

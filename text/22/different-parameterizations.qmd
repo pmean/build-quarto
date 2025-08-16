@@ -257,7 +257,7 @@ you would multiply by this V
 
 ```{r}
 #| label: different-parameterizations-19
-#| label: false
+#| echo: false
 
 V <- matrix(c(
   1,  0,  0,  0,
@@ -454,7 +454,7 @@ to the new parameterization is
 
 ```{r}
 #| label: different-parameterizations-37
-#| label: false
+#| echo: false
 
 U <- matrix(c(
   1,  0,  0,  0,
