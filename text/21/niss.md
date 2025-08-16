@@ -15,3 +15,8 @@ The National Institute of Statistical Sciences (NISS) is a consortium of high le
 <!--more-->
 
 NISS. National Institute of Statistical Services.  Available in [html format](https://www.niss.org/).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/niss/

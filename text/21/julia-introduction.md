@@ -14,6 +14,11 @@ Doug Bates gave an excellent talk at the 2021 Joint Statistics Meetings about Ju
 
 <!--more-->
 
-C�cile An�, Claudia Solis-Lemus, and Douglas Bates, Introductory Overview Lecture: Julia for Statistics and Data Science, Joint Statistics Meetings, 2021-08-08. Available in a [github repository][bat1].
+Cécile Ané, Claudia Solis-Lemus, and Douglas Bates, Introductory Overview Lecture: Julia for Statistics and Data Science, Joint Statistics Meetings, 2021-08-08. Available in a [github repository][bat1].
 
 [bat1]: https://github.com/dmbates/JSM2021
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/julia-introduction/

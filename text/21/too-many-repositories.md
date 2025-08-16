@@ -88,3 +88,8 @@ After many presentations at the Kansas City R Users Group, I decided a couple of
 + [webinar-presentation](https://github.com/pmean/webinar-presentation): Slidify presentation on the hazard function
 + [write-data-analysis-plan](https://github.com/pmean/write-data-analysis-plan): Presentaiton slides for "How to write a data analysis plan."
 + [zipcode-example](https://github.com/pmean/zipcode-example): Am example of plotting a zipcode shapefile
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/too-many-repositories/

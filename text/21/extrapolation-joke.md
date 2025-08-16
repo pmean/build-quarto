@@ -42,3 +42,8 @@ At this point, one statistician turns to the other and says, "Boy, I hope that l
 [jok1]: https://statpages.info/jokes.html
 [jok2]: https://www.onlinemathlearning.com/math-jokes-statistics.html
 [jok3]: https://stats.stackexchange.com/questions/1337/statistics-jokes
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/extrapolation-joke/

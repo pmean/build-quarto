@@ -21,3 +21,8 @@ Melissa Kovacs. Statistical Consulting Clients: How to Get Them and How to Keep 
 [dem1]: https://www.thejuliagroup.com/blog/since-you-asked-me-four-tips-on-getting-started-in-the-statistical-consulting-business/
 
 [kov1]: https://magazine.amstat.org/blog/2019/09/01/statistical-consulting-clients-how-to-get-them-and-how-to-keep-them/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/getting-started-in-consulting/

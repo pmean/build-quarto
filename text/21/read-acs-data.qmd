@@ -21,10 +21,12 @@ The Bureau of the Census allows computerized systems to access their data. This 
 You can embed this key so that it can be re-used at will. Use the census_api_key function in the tidycensus package.
 
 
-```{r read-acs-data-01}
+```{r}
+#| label: read-acs-data-01
 library(tidycensus)
 library(tidyverse)
 library(viridis)
+
 key <- Sys.getenv("CENSUS_API_KEY")
 census_api_key(key)
 tarr <- get_acs(geography = "tract", variables = "B19013_001",
@@ -56,3 +58,8 @@ U.S. Census Bureau, Geography and the American Community Survey: What Data Users
 #### Request an API key
 
 ![](reading-acs-data-01.png)
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/read-acs-data/

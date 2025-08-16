@@ -42,3 +42,7 @@ Finally, my obigation to you does not end when this class ends. If you are ever 
 
 [str1]: https://www.sas.com/store/books/categories/usage-and-reference/sas-for-mixed-models-introduction-and-basic-applications/prodBK_68787_en.html
 [str2]: https://support.sas.com/content/dam/SAS/support/en/books/sas-for-mixed-models-an-introduction/68787_excerpt.pdf
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/learn-sas/

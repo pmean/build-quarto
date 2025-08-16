@@ -15,3 +15,8 @@ The data is from 2015, which makes it a bit dated, but this is an interesting da
 <!--more-->
 
 FiveThirtyEight. Police Killings. Available as a [text file](https://github.com/fivethirtyeight/data/tree/master/police-killings).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/police-killings/

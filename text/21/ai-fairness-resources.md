@@ -48,3 +48,8 @@ There are various pre-prints and peer-reviewed publications that offer technical
 [vya1]: https://www.nejm.org/doi/full/10.1056/NEJMms2004740
 [wan1]: https://arxiv.org/abs/2005.04176
 [zin1]: https://arxiv.org/abs/1901.10566
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/ai-fairness-resources/

@@ -19,3 +19,8 @@ I have found that version control using git to be an integral part of my workflo
 Jenny Bryant, the STAT 545 TAs, Jim Hester. Happy Git and GitHub for the useR. Available in [html format][bry1]
 
 [bry1]: https://happygitwithr.com/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/happy-git/

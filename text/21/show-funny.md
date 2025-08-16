@@ -17,3 +17,8 @@ A satirical look at sentiment analysis--in particular, the use of sentiment anal
 Gene Weingarten. Finally, a proven method to show just how funny I am. The Washington Post, 2021-05-27. Available in [html format][wei1]
 
 [wei1]: (https://www.washingtonpost.com/lifestyle/magazine/gene-weingarten-finally-a-proven-method-to-show-just-how-funny-i-am/2021/05/20/ee2def38-ae8e-11eb-b476-c3b287e52a01_story.html).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/show-funny/

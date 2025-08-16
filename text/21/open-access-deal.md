@@ -17,3 +17,8 @@ There is a lot of controversy about open access publishing and the University of
 Lindsay McKenzie. Big Deal for Open Access. Inside Higher Ed, 2021-03-17. Available in [html format][mck1].
 
 [mck1]: https://www.insidehighered.com/news/2021/03/17/university-california-reaches-new-open-access-agreement-elsevier
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/open-access-deal/

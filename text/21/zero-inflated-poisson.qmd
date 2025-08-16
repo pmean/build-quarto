@@ -15,13 +15,17 @@ page_update: complete
 
 In models of counts, zeros represent a special case. Often there is more than one reason why you might observe a zero count, and you might want to model this probability separately. One approach is known as a zero inflated Poisson model.
 
-```{r zero-inflated-poisson-01}
-suppressMessages(suppressWarnings(library(broom)))
-suppressMessages(suppressWarnings(library(dplyr)))
-suppressMessages(suppressWarnings(library(ggplot2)))
-suppressMessages(suppressWarnings(library(foreign)))
-suppressMessages(suppressWarnings(library(magrittr)))
-suppressMessages(suppressWarnings(library(pscl)))
+```{r}
+#| label: zero-inflated-poisson-01
+#| message: false
+#| warning: false
+
+library(broom)
+library(dplyr)
+library(ggplot2)
+library(foreign)
+library(magrittr)
+library(pscl)
 ```
 
 ### The zero inflated Poisson distribution
@@ -52,7 +56,10 @@ It is easiest to understand the quasiPoisson model by comparing it to the Poisso
 
 Francis Huang has a [nice web page][hua1] showing two datasets and how to analyze them using the Poisson regression model as well as several more sophisticated models. The first data set is available for anyone to download. The link I originally used no longer works.
 
-```{r zero-inflated-poisson-02, eval=FALSE}
+```{r}
+#| label: zero-inflated-poisson-02
+#| eval: false
+
 fn <- "http://faculty.missouri.edu/huangf/data/poisson/articles.csv"
 articles <- read.csv(fn)
 head(articles)
@@ -60,7 +67,8 @@ head(articles)
 
 Here is a [different link][rod3] for the same file, used at [German Rodriguez's website][rod2]. I've placed a [copy][sim3] on my website in case this link breaks. Also, this dataset is available with the [pscl library][zei1] of R under the name, bioChemists.
 
-```{r zero-inflated-poisson-03}
+```{r}
+#| label: zero-inflated-poisson-03}
 fn <- "http://www.pmean.com/00files/couart2.dta"
 articles <- read.dta(fn)
 head(articles)
@@ -89,7 +97,9 @@ summary(pois1)
 
 The interpretation of the coefficients should be done after exponentiating their values.
 
-```{r zero-inflated-poisson-04}
+```{r}
+#| label: zero-inflated-poisson-04
+
 pois1 %>%
   tidy %>%
   mutate(lower_limit=estimate-1.96*std.error) %>%
@@ -103,7 +113,9 @@ pois1_coefficients
 
 ### Fitting a zero-inflated-Poisson model
 
-```{r zero-inflated-poisson-05}
+```{r}
+#| label: zero-inflated-poisson-05
+
 zip1 <- zeroinfl(art ~ fem + ment + phd + mar + kid5 | 1, family=poisson, data = articles)
 summary(zip1)
 ```
@@ -113,3 +125,8 @@ We cannot use the broom package to extract coefficients.
 
 
 ### References
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/zero-inflated-poisson/

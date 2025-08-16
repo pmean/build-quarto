@@ -54,3 +54,8 @@ A study of a test treatment for lung cancer with information about the severity 
 [sta8]: http://lib.stat.cmu.edu/datasets/veteran
 
 [wik1]: https://en.wikipedia.org/wiki/Leaving_Certificate_(Ireland)
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/dataset-recommendations-statlib/

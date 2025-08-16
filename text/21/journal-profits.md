@@ -10,9 +10,9 @@ output: html_document
 page_update: complete
 ---
 
-![](http://www.pmean.com/new-images/21/journal-profits-01.png){width=25%}
+![](http://www.pmean.com/new-images/21/journal-profits-01.png){width=80%}
 
-<div class="notes">
+::: notes
 
 A harshly critical opinion piece about journals that expect free work from writers, editors, and reviewers, but then charges readers for access.
 
@@ -20,5 +20,10 @@ Raja Singh. Sci-Hub: Journals Must Stop Exploiting Research for Profits. Science
 
 [sin1]: https://science.thewire.in/the-sciences/sci-hub-journals-must-stop-exploiting-research-for-profits
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/journal-profits/
+
+:::
 

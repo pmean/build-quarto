@@ -15,3 +15,8 @@ This comic shows the peril of using the word "final" in the name of a file. You 
 <!--more-->
 
 Jorge Cham. "FINAL".doc. Piled High and Deeper commics 2012-10-12. Available in [html format](http://phdcomics.com/comics/archive.php?comicid=1531).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/final-version/

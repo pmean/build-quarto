@@ -15,3 +15,8 @@ This site was recommended at a webinar I attended on teaching computing skills i
 <!--more-->
 
 Daniele Procida. The documentation system. Available in [html format](https://documentation.divio.com/).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/documentation-system/

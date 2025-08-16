@@ -64,3 +64,8 @@ Does the lifespan of a male fruitfly depend on his sexual activity?
 [jse15]: http://jse.amstat.org/datasets/fruitfly.txt
 [jse16]: http://jse.amstat.org/datasets/kuiper.xls
 [jse17]: http://jse.amstat.org/datasets/kuiper%20data%20set%20desc.txt
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/dataset-recommendations-jse/

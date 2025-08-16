@@ -34,3 +34,8 @@ I'm trying to learn Python, and a recent short course (Data Scientist's Workflow
 [sea1]: https://seaborn.pydata.org/
 [ssc1]: https://github.com/ssc-datascience/pythonjupyter_wshop2021
 [sta1]: https://www.statsmodels.org/stable/index.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/basic-python-resources/

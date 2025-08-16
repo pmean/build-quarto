@@ -18,3 +18,8 @@ Earl F. Glynn, Mark A. Hoffman. Heterogeneity introduced by EHR system implement
 
 [gly01]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6993994/
 [gly02]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6993994/pdf/ooz035.pdf
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/ehr-heterogeneity/

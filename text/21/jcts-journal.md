@@ -15,3 +15,8 @@ At a Zoom meeting today, someone mentioned an interesting journal that appears t
 <!--more-->
 
 Cambridge University Press. Journal of Clinical and Translational Science. Available in [html format](https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/jcts-journal/

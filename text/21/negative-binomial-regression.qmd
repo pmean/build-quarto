@@ -15,12 +15,14 @@ page_update: complete
 
 The negative binomial distribution is similar to the Poisson distribution, but it offers a bit more flexibility. This page will review some basic properties of the negative binomial distribution and show how it can be incorporated into the framework of the generalized linear model.
 
-```{r negative-binomial-regression-01}
-suppressMessages(suppressWarnings(library(broom)))
-suppressMessages(suppressWarnings(library(dplyr)))
-suppressMessages(suppressWarnings(library(ggplot2)))
-suppressMessages(suppressWarnings(library(foreign)))
-suppressMessages(suppressWarnings(library(magrittr)))
+```{r}
+#| label: negative-binomial-regression-01
+
+library(broom)
+library(dplyr)
+library(ggplot2)
+library(foreign)
+library(magrittr)
 ```
 
 <!---More--->
@@ -75,7 +77,9 @@ $X_1+X_2 \sim NB(n_1+n_2, p)$
 
 Here are the probabilities for various negative binomial cases where n changes, and p is held constant at 0.8.
 
-```{r negative-binomial-regression-02}
+```{r}
+#| label: negative-binomial-regression-02
+
 data.frame(x=0:25) %>%
   mutate(p=dnbinom(x,  2, 0.8)) %>%
   ggplot(aes(x,p)) +
@@ -98,7 +102,9 @@ data.frame(x=0:25) %>%
 
 Here are the probabilities for various negative binomial cases where n changes, and p is held constant at 0.8.
 
-```{r negative-binomial-regression-03}
+```{r}
+#| label: negative-binomial-regression-03
+
 data.frame(x=0:25) %>%
   mutate(p=dnbinom(x,  2, 0.8)) %>%
   ggplot(aes(x,p)) +
@@ -137,7 +143,10 @@ This means that you can't use the glm function in R to fit a negative binomial r
 
 Francis Huang has a [nice web page][hua1] showing two datasets and how to analyze them using the Poisson regression model as well as several more sophisticated models. The first data set is available for anyone to download. The link I originally used no longer works.
 
-```{r negative-binomial-04, eval=FALSE}
+```{r}
+#| label: negative-binomial-04
+#| eval: false
+
 fn <- "http://faculty.missouri.edu/huangf/data/poisson/articles.csv"
 articles <- read.csv(fn)
 head(articles)
@@ -145,7 +154,9 @@ head(articles)
 
 Here is a [different link][rod3] for the same file, used at [German Rodriguez's website][rod2]. I've placed a [copy][sim3] on my website in case this link breaks. Also, this dataset is available with the [pscl library][zei1] of R under the name, bioChemists.
 
-```{r negative-binomial-05}
+```{r}
+#| label: negative-binomial-05
+
 fn <- "http://www.pmean.com/00files/couart2.dta"
 articles <- read.dta(fn)
 head(articles)
@@ -167,13 +178,17 @@ The variables are
 
 To fit a Poisson regression model in R, use the glm function with the argument, family="poisson".
 
-```{r negative-binomial-06}
+```{r}
+#| label: negative-binomial-06
+
 pois1 <- glm(art ~ fem + ment + phd + mar + kid5, family=poisson, data = articles)
 summary(pois1)
 ```
 
 
-```{r negative-binomial-regression-07}
+```{r}
+#| label: negative-binomial-regression-07
+
 library(MASS)
 nb1 <- glm.nb(art ~ fem + ment + phd + mar + kid5, data = articles)
 summary(nb1)
@@ -191,6 +206,9 @@ https://www.jstor.org/stable/2289071
 https://towardsdatascience.com/diagnose-the-generalized-linear-models-66ad01128261
 https://cran.r-project.org/web/packages/bbmle/vignettes/quasi.pdf
 
-
 [hua1]: https://francish.netlify.app/post/poisson-and-negative-binomial-regression-using-r/
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/negative-binomial-regression/

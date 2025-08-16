@@ -17,3 +17,8 @@ While Venn diagrams can illustrate how much overlap there is among two or three 
 Yan Holz. Upset plot, The R Graph Gallery, 2018. Available in [html format][hol01].
 
 [hol01]: https://www.r-graph-gallery.com/upset-plot.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/upset-plot/

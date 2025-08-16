@@ -17,3 +17,8 @@ A cute song by famous satirist, Tom Lehrer, on the secret of success in research
 Tom Lehrer. Songs by Tom Lehrer (1953), Lobachevsky. Available in [video format][leh01].
 
 [leh01]: https://www.youtube.com/watch?v=gXlfXirQF3A
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/lehrer-plagiarism/

@@ -17,3 +17,8 @@ The authors argue that regression models fail to capture important levels of unc
 Emre Soyer, Robin H. Sogarth. The illusion of predictability: How regression statistics mislead experts. International Journal of Forecasting, 2021, 28(3), 695-711. Available in [html format][emr1].
 
 [emr1]: https://www.sciencedirect.com/science/article/pii/S0169207012000258
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/regression-misleads/

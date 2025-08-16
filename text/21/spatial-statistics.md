@@ -20,7 +20,7 @@ The two books mentioned were
 
 + Noel Cressie, Christopher K. Wikle. Statistics for Spatio-Temporal Data, Wiley. Again, there is a nice description on the [publisher's website][cre1].
 
-Edzer Pebesma, Marius Appel, and Daniel N�st have a nice [blog][peb1], r-spatial, for those interested in learning how to do spatial analysis using R.
+Edzer Pebesma, Marius Appel, and Daniel Nüst have a nice [blog][peb1], r-spatial, for those interested in learning how to do spatial analysis using R.
 
 Lu Zhang. Nearest Neighbor Gaussian Processes (NNGP) based models in Stan (2018, Jan), is a nicely worked out [example of spatial analysis][zha1] using the Bayesian package, Stan.
 
@@ -35,3 +35,8 @@ Lu Zhang. Nearest Neighbor Gaussian Processes (NNGP) based models in Stan (2018,
 https://www.amstat.org/asa/files/pdfs/POL-Statistics-as-a-Scientific-Discipline.pdf
 https://med.virginia.edu/phs/wp-content/uploads/sites/188/2021/05/TRAppS-Biostat-effort-benchmarks-Apr2021.pdf
 https://health.ucdavis.edu/ctsc/area/biostatistics/Documents/UCD_Biostat_Effort_Guidelines.pdf
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/spatial-statistics/

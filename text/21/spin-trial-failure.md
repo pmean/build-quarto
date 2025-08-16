@@ -17,3 +17,8 @@ It is unusual for issues like p-value hacking to make it into our court system. 
 Annalee Armstrong 'Data mining' and 'p-value hacking': Cel-Sci CEO tries to spin cancer trial failure into a win. Fierce Biotech, 2021-07-07. Available in [html format][arm1]
 
 [arm1]: https://www.fiercebiotech.com/biotech/data-mining-and-p-value-hacking-cel-sci-ceo-tries-to-spin-cancer-trial-failure-into-a-win
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/spin-trial-failure/

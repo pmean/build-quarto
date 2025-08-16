@@ -12,7 +12,7 @@ page_update: complete
 
 ![](http://www.pmean.com/new-images/21/roadmap-historical-controls-01.png)
 
-<div class="notes">
+::: notes
 
 More and more new drug applications are relying on historical controls, but this must be done carefully. This paper outlines the reasons why you might want to use historical controls versus concurrent controls, alternative analysis methods, and how to minimize the biases associated with historical controls.. 
 
@@ -21,4 +21,9 @@ Mercedeh Ghadessi, Rui Tang, Joey Zhou, Rong Liu, Chenkun Wang, Kiichiro Toyoizu
 [gha1]: https://doi.org/10.1186/s13023-020-1332-x
 [gha2]: https://ojrd.biomedcentral.com/track/pdf/10.1186/s13023-020-1332-x.pdf
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/roadmap-historical-controls/
+
+:::

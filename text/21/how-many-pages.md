@@ -68,3 +68,8 @@ Years that have not yet been updated or only partially updated (1,529 files)
 + 2021 (107 files)
 
 Approximate total across all years: 1,736 files
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/how-many-pages/

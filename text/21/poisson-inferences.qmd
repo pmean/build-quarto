@@ -15,11 +15,13 @@ page_update: complete
 
 Many statistics, such as mortality statistics, are based on fundamental counting processes. If you want to understand these processes, you should start by trying to understand the Poisson distribution. Here's a brief introduction.
 
-```{r poisson-inferences-01}
-suppressMessages(suppressWarnings(library(broom)))
-suppressMessages(suppressWarnings(library(dplyr)))
-suppressMessages(suppressWarnings(library(ggplot2)))
-suppressMessages(suppressWarnings(library(magrittr)))
+```{r}
+#| label: poisson-inferences-01
+
+library(broom)
+library(dplyr)
+library(ggplot2)
+library(magrittr)
 ```
 
 <!---More--->
@@ -60,7 +62,9 @@ These properties and more are described on the [Wikipedia page on the Poisson di
 
 ### Visualization of Poisson probabilities
 
-```{r  poisson-inferences-02}
+```{r}
+#| label:  poisson-inferences-02
+
 data.frame(x=0:25) %>%
   mutate(p=dpois(x, 0.5)) %>%
   ggplot(aes(x,p)) +
@@ -174,34 +178,44 @@ rate
 
 This rate is difficult to read because all of the leading zeros. So it is common practice to quote it not as a rate per live births, but a rate per 1,000 live births.
 
-```{r poisson-inferences-03}
+```{r}
+#| label: poisson-inferences-03
+
 rate_per_thousand <- rate*1000
 rate_per_thousand
 ```
 
 To construct a confidence interval for the rate, first start with a confidence interval using the log rate.
 
-```{r poisson-inferences-04}
+```{r}
+#| label: poisson-inferences-04
+
 count_ci <- c(x-1.96*sqrt(x), x+1.96*sqrt(x))
 count_ci
 ```
 
 Then convert from a count to a rate.
 
-```{r poisson-inferences-05}
+```{r}
+#| label: poisson-inferences-05
+
 rate_ci <- count_ci * 1000 / n
 rate_ci
 ```
 
 It's always a good idea to round your results.
 
-```{r poisson-inferences-06}
+```{r}
+#| label: poisson-inferences-06
+
 round(rate_ci, 1)
 ```
 
 Now let's try it using the improved formula. First build a confidence interval for the log count.
 
-```{r poisson-inferences-07}
+```{r}
+#| label: poisson-inferences-07
+
 log_count <- log(x)
 log_ci <- c(log_count-1.96*sqrt(1/x), log_count+1.96*sqrt(1/x))
 log_ci
@@ -209,21 +223,27 @@ log_ci
 
 Back transform to the original scale.
 
-```{r poisson-inferences-08}
+```{r}
+#| label: poisson-inferences-08
+
 back_transformed_ci <- exp(log_ci)
 back_transformed_ci
 ```
 
 Convert from a count to a rate
 
-```{r poisson-inferences-09}
+```{r}
+#| label: poisson-inferences-09
+
 rate_ci <- back_transformed_ci * 1000 / n
 rate_ci
 ```
 
 And again remember to round your final result.
 
-```{r poisson-inferences-10}
+```{r}
+#| label: poisson-inferences-10
+
 round(rate_ci, 1)
 ```
 
@@ -292,7 +312,9 @@ r1/r2
 
 Calculate the interval on the log scale.
 
-```{r poisson-inferences-11}
+```{r}
+#| label: poisson-inferences-11
+
 ln_ratio <- log(r1/r2)
 se_ratio <- sqrt(1/x1+1/x2)
 se_ratio
@@ -302,7 +324,9 @@ ci1
 
 Exponentiate both limits.
 
-```{r poisson-inferences-12}
+```{r}
+#| label: poisson-inferences-12
+
 ci2 <- exp(ci1)
 ci2
 ```
@@ -316,7 +340,9 @@ round(ci2, 2)
 This interval does not match the one published in the paper because the researchers adjusted for factors like field type.
 
 
-```{r poisson-inferences-13}
+```{r}
+#| label: poisson-inferences-13
+
 injuries <- data.frame(x=c(x1, x2), T=c(T1, T2), g=1:0)
 glm(x~g, family=poisson, offset=log(T), data=injuries) %>%
   tidy -> c
@@ -360,3 +386,8 @@ https://www.jabfm.org/content/33/4/549.long
 [pois2]: https://en.wikipedia.org/wiki/Binomial_distribution#Poisson_approximation
 
 [kuma1]: https://ijdvl.com/incidence-of-leprosy-in-firozabad-district-uttar-pradesh/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/poisson-inferences/

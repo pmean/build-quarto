@@ -17,3 +17,8 @@ There are some commonly used statistical methods (e.g., post hoc power, stepwise
 Andrew Althouse. Reference Collection to push back against �Common Statistical Myths.�, Datmethods wiki. Available in [html format][alt1].
 
 [alt1]: https://discourse.datamethods.org/t/reference-collection-to-push-back-against-common-statistical-myths/1787
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/statistical-myths/

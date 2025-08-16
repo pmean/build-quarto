@@ -381,3 +381,8 @@ Johnson, C.L., Dohrmann, S.M., Burt, V.L., Mohadjer, L.K. (2014). National Healt
 [ques]: https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Questionnaire&CycleBeginYear=2015
 [ddem]: https://wwwn.cdc.gov/Nchs/Nhanes/2015-2016/DEMO_I.XPT
 [dpbc]: https://wwwn.cdc.gov/Nchs/Nhanes/2015-2016/PBCD_I.XPT
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/nhanes-overview/

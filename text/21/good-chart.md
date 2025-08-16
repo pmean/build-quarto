@@ -17,3 +17,8 @@ A simple guide for choosing among a variety of different visualization methods. 
 Andrew Abela. Choosing a good chart. The Extreme Presentation Method blog, 2006-09-06. Available in [html format][abe1].
 
 [abe1]: https://extremepresentation.typepad.com/blog/2006/09/choosing_a_good.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/good-chart/

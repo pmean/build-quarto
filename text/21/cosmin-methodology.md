@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from article](http://www.pmean.com/new-images/21/cosmin-methodology-01.png)
 
-<div class="notes">
+::: notes
 
 This paper provides a nice checklist of itmes you should look for in a study establishing content validity ofr a patient-reported outcome measure.
 
@@ -21,4 +21,9 @@ C.B. Terwee, C.A.C. Prinsen, A. Chiarotto, M.J. Westerman, D.L. Patrick, J. Alon
 [ter1]: https://link.springer.com/article/10.1007%2Fs11136-018-1829-0
 [ter2]: https://link.springer.com/content/pdf/10.1007/s11136-018-1829-0.pdf
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/cosmin-methodology/
+
+:::

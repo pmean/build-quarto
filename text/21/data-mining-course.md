@@ -18,3 +18,8 @@ This girhub repository has all the PowerPoint slides, handouts, and Python noteb
 Stephen Elston. CSCI E-96, Data Mining, Discovery and Exploration. Available in a [github repository][els1]
 
 [els1]: https://github.com/StephenElston/CSCI-E-96
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/data-mining-course/

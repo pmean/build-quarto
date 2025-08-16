@@ -17,3 +17,8 @@ An interesting approach to the Bootstrap that can handle big data in a single pa
 Amir Najmi. An introduction to the Poisson bootstrap. The Unofficial Google Data Science Blog, 2015-08-26. Available in [html format][naj1].
 
 [naj1]: https://www.unofficialgoogledatascience.com/2015/08/an-introduction-to-poisson-bootstrap26.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/poisson-bootstrap/

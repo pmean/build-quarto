@@ -19,3 +19,8 @@ Craig S. Mullins. We Are in Need of Data Ethics Now. Database trends and applica
 [bar1]: https://www.nytimes.com/2006/08/09/technology/09aol.html
 [lan1]: https://magazine.amstat.org/blog/2013/12/01/bigdatastatresearch/
 [bar2]: https://www.wired.com/story/null-license-plate-landed-one-hacker-ticket-hell/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/data-ethics/

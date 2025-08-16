@@ -17,3 +17,8 @@ This website provides the slides and other resources associated with a session a
 Tiffany Anne Timbers, Allison Horst, Mine Cetinkaya-Rundel, Stephanie Hicks. Developing and Maintaining Open Source Resources for Statistics and Data Science Education. Available in [html format][jsm1].
 
 [jsm1}: http://bit.ly/jsm2021-open-ed
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/open-source-tools/

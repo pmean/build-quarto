@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from newspaper article](http://www.pmean.com/new-images/21/rating-nursing-homes-01.png)
 
-<div class="notes">
+::: notes
 
 The U.S. provides a rating system for nursing homes, but there are serious flaws in how this data is collected. In particular, many problems uncovered during government inspections of nursing homes are not reported while the findings are being appealed or even afterwards.
 
@@ -20,4 +20,9 @@ Robert Gebeloff. Uncovering Truths With Missing Data, The New York Times, 2021-1
 
 [geb1]: https://www.nytimes.com/2021/12/23/insider/uncovering-truths-with-missing-data.html
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/rating-nursing-homes/
+
+:::

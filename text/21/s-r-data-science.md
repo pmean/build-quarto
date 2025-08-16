@@ -14,6 +14,11 @@ John Chambers is one of the creators of the S programming language,a pre-cursor 
 
 <!--more-->
 
-John Chambers. S, R, and data science. Proceedings of the ACM on Programming Languages, 2020-06-01. 4(HOPL), 1�17. DOI: 10.1145/3386334 Available in [pdf format][cha1].
+John Chambers. S, R, and data science. Proceedings of the ACM on Programming Languages, 2020-06-01. 4(HOPL), 1-17. DOI: 10.1145/3386334 Available in [pdf format][cha1].
 
 [cha1]: https://dl.acm.org/doi/pdf/10.1145/3386334
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/s-r-data-science/

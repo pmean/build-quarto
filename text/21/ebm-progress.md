@@ -12,7 +12,7 @@ page_update: complete
 
 ![](http://www.pmean.com/new-images/21/ebm-progress-01.png)
 
-<div class="notes">
+::: notes
 
 A nice summary of the changes (mostly improvements) in Evidence Based Medicine (EBM) over the past 25 years. It was written by two of the pioneers in EBM.
 
@@ -21,5 +21,10 @@ Benjamin Djulbegovic, Gordon H Guyatt. Progress in evidence-based medicine: a qu
 [dju1]: https://www.sciencedirect.com/science/article/pii/S0140673616315926
 [dju2]: https://www.sciencedirect.com/science/article/pii/S0140673616315926/pdfft
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/ebm-progress/
+
+:::
 

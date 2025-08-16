@@ -50,3 +50,8 @@ Program to Generate Means in SAS Survey Procedures. Available in [text format][c
 [cdcsas]: https://wwwn.cdc.gov/nchs/nhanes/tutorials/samplecode.aspx
 [cdcsas1]: https://wwwn.cdc.gov/nchs/data/tutorials/file_download_import_SAS.sas
 [cdcsas2]: https://wwwn.cdc.gov/nchs/data/tutorials/descriptive_means_sas.sas
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/nhanes-lead-assessments/

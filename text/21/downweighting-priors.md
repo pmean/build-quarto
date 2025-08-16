@@ -19,4 +19,7 @@ Kozubowski TJ, Alhamzawi R, Yu K. Power Prior Elicitation in Bayesian Quantile R
 [koz1]: https://www.hindawi.com/journals/jps/2011/874907/
 [koz2]: https://downloads.hindawi.com/journals/jps/2011/874907.pdf
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/downweighting-priors/

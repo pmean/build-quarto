@@ -183,3 +183,8 @@ Note: I have not included the total grant awards for any of these grants, which 
 7. Greater Plains Collaborative (PCORI HSRP20162063, Principal Investigator: Lemuel Waitman). The Greater Plains Collaborative (GPC) is a new network of 10 leading medical centers in 7 states committed to a shared vision of improving healthcare delivery through ongoing learning, adoption of evidence-based practices, and active research dissemination. 
 
 [fac1]: https://med.umkc.edu/professional_development/faculty-awards/faculty-researcher-award/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/umkc-award/

@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from article](http://www.pmean.com/new-images/21/federated-learning-01.png)
 
-<div class="notes">
+::: notes
 
 This article lays out the general principles of federated learning, a decentralized and privacy protecting approach to statistical modeling. 
 
@@ -21,4 +21,9 @@ Kallista Bonawitz, Peter Kairouz, Brendan McMahan, and Daniel Ramage. Federated 
 [bon1]: https://queue.acm.org/detail.cfm?id=3501293
 [bon2]: https://dl.acm.org/ft_gateway.cfm?id=3501293&ftid=2195530&dwn=1
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/federated-learning/
+
+:::

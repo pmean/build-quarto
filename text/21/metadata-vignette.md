@@ -18,3 +18,8 @@ This package has a collection of functions that lets you create information abou
 Dania M. Rodriguez. dataMeta: Making and appending a data dictionary to an R dataset, 2017-08-11. Available in [html format][rod1].
 
 [rod1]: https://cran.r-project.org/web/packages/dataMeta/vignettes/dataMeta_Vignette.html
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/metadata-vignette/

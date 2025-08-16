@@ -17,3 +17,8 @@ SAS Institute is a privately held company and the two owners are both getting ol
 Rick Smith. Broadcom in talks to buy SAS for as much as $20B, WRAL TechWire, 2021-07-12. Available in [html format][smi1]
 
 [smi1]: https://www.wraltechwire.com/2021/07/12/report-broadcom-in-talks-to-buy-sas-for-as-much-as-20b/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/buy-sas/

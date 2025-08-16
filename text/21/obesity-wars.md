@@ -18,3 +18,8 @@ Katherine M. Flegal. The obesity wars and the education of a researcher: A perso
 
 [fle1]: https://www.sciencedirect.com/science/article/pii/S0033062021000670
 [fle2]: https://www.sciencedirect.com/science/article/pii/S0033062021000670/pdfft
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/obesity-wars/

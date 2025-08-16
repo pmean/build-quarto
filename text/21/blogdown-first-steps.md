@@ -111,3 +111,8 @@ blogdown::serve_site()
 [xie2]: https://bookdown.org/yihui/blogdown/
 [xie3]: https://www.routledge.com/blogdown-Creating-Websites-with-R-Markdown/Xie-Hill-Thomas/p/book/9780815363729
 [xie4]: https://cran.r-project.org/package=bookdown
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/blogdown-first-steps/

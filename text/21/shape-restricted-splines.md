@@ -16,5 +16,9 @@ Splines allow you to fit an almost infinitely flexible number of nonlinear curve
 
 Wenjie Wang, Jun Yan. Shape-Restricted Regression Splines with R Package splines2. Journal of Data Science 2021-08-12, 19(3), 498-517. DOI: 10.6339/21-JDS1020. Available in [pdf format][wan1].
 
-
 [wan1]: https://jds-online.org/journal/JDS/article/1243/info
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/shape-restricted-splines/

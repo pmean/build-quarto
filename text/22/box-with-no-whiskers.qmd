@@ -23,7 +23,9 @@ library(tidyverse)
 
 One of my favorite graphs is the box plot. It is a visualization of a five number summary. Those five numbers are minimum, 25th percentile, median (aka the 50th percentile), 75th percentile, and maximum. The box in a box plot extends from the 25th to the 75th percentile and a line inside the box represents the median. Then you draw a whisker from the 25th percentile down to the minimum value and another whisker from the 75th percentile up to the maximum value. If there are extreme outliers, those points are highlighted individually.
 
-Here's a boxplot showing some artificial data.
+Sometimes a boxplot might be missing one or both whiskers. Here's how that can happen.
+
+Start with some artificial data.
 
 ```{r}
 #| label: box-with-no-whiskers-01
@@ -80,13 +82,13 @@ What's going on here? There is a small difference between the minimum value and 
 quantile(x1)
 ```
 
-For the second data set, a large proportion of values are piled up at zero.
+For the second data set, a large proportion of values are piled up at zero. This means that there is no difference between the minimum value and the 25th percentile. 
 
 ```{r}
 quantile(x2)
 ```
 
-This means that there is no difference between the minimum value and the 25th percentile. They are both zero. So drawing a whisker from the 25th percentile down to the minimum value means drawing no whisker at all.
+The minimum and the 25th percentile are both zero in this dataset. So drawing a whisker from the 25th percentile down to the minimum value means drawing no whisker at all.
 
 In general, a box with no whisker means that at least a quarter of the data is piled up at one extreme.
 

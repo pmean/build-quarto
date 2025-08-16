@@ -15,3 +15,8 @@ Russ Lenth has developed a nice system that integrates SAS code and SAS output w
 <!--more-->
 
 Russell V. Lenth, Søren Højsgaard. SASWeave: Literate Programming Using SAS. Journal of Statistical Software 2007-05-27, 19(8). DOI: 10.18637/jss.v019.i08. Available in [pdf format](https://www.jstatsoft.org/index.php/jss/article/downloadSuppFile/v019i08/SASweave.zip).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sasweave/

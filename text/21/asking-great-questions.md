@@ -28,3 +28,8 @@ Eric Vance. Asking Great Questions. YouTube, 2021-08-11. Available as a [video][
 [van3]: https://www.tandfonline.com/doi/pdf/10.1080/10691898.2019.1687370
 [van4]: https://par.nsf.gov/servlets/purl/10227760
 [van5]: https://osf.io/xmtce/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/asking-great-questions/

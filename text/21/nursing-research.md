@@ -18,3 +18,8 @@ This is a collection of articles (currently only five, but I suspect more will b
 American Journal of Nursing. Nursing Research, Step by Step. Available in [html format][ajn1]
 
 [ajn1]: https://journals.lww.com/ajnonline/pages/collectiondetails.aspx?TopicalCollectionId=51
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/nursing-research/

@@ -23,3 +23,8 @@ I attended a talk on the special issues facing biostatisticians in academic posi
 [asa1]: https://www.amstat.org/asa/files/pdfs/POL-Statistics-as-a-Scientific-Discipline.pdf
 [ben1]: https://med.virginia.edu/phs/wp-content/uploads/sites/188/2021/05/TRAppS-Biostat-effort-benchmarks-Apr2021.pdf
 [ucd1]: https://health.ucdavis.edu/ctsc/area/biostatistics/Documents/UCD_Biostat_Effort_Guidelines.pdf
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/statistical-efforts/

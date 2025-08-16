@@ -43,6 +43,11 @@ I won't include the full bibliographic details of the individual pages, but here
 
 In addition to the articles in the special issue, the main article cited some from earlier issues or different journals.
 
-+ Cobb, G. (2015), �Mere renovation is too little too late: We need to rethink our undergraduate curriculum from the ground up', The American Statistician 69(4), 266�282. Available in [html format](https://www.tandfonline.com/doi/full/10.1080/00031305.2015.1093029). You can also find links to a pre-print plus links to the various comments and the rejoinder [here](https://nhorton.people.amherst.edu/mererenovation/).
++ Cobb, G. (2015), Mere renovation is too little too late: We need to rethink our undergraduate curriculum from the ground up', The American Statistician 69(4), 266-282. Available in [html format](https://www.tandfonline.com/doi/full/10.1080/00031305.2015.1093029). You can also find links to a pre-print plus links to the various comments and the rejoinder [here](https://nhorton.people.amherst.edu/mererenovation/).
 National Academies of Science, Engineering, and Medicine (2018), Data Science for Undergraduates: Opportunities and Options. Available in [pdf format](https://nas.edu/envisioningds).
-Wing, J. M. (2006), �Computational thinking', Communications of the ACM 49(3). Available in [html format](https://dl.acm.org/doi/fullHtml/10.1145/1118178.1118215).
+Wing, J. M. (2006), Computational thinking, Communications of the ACM 49(3). Available in [html format](https://dl.acm.org/doi/fullHtml/10.1145/1118178.1118215).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/teaching-statistical-computing/

@@ -14,4 +14,9 @@ I have been interested for quite a while in running a cluster computer using Rap
 
 <!--more-->
 
-Ashley Whittaker. Five years of Raspberry Pi clusters. Raspberry Pi Blog 2020-04-07. Available in [html format](https://www.raspberrypi.org/blog/five-years-of-raspberry-pi-clusters/).
+Ashley Whittaker. Five years of Raspberry Pi clusters. Raspberry Pi Blog 2020-04-07. Available in [html format](https://www.raspberrypi.org/blog/five-years-of-raspberry-pi-clusters/)raspberry-pi-clusters.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/raspberry-pi-clusters/

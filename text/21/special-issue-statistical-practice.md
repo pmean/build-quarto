@@ -14,3 +14,8 @@ The [journal STAT][sta1] (not the medical term for immediately, but rather an ab
 
 [goo1]: https://forms.gle/29A9c8fUbxAr7Nwf7
 [sta1]: https://onlinelibrary.wiley.com/journal/20491573
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/special-issue-statistical-practice/

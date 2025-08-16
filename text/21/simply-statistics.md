@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Exceprt from main page](http://www.pmean.com/new-images/21/simply-statistics-01.png)
 
-<div class="notes">
+::: notes
 
 This is a nice professionally designed blog with no advertisements. The posts are fairly basic and accessible.
 
@@ -20,4 +20,9 @@ Jeff Leek, Roger Peng, Rafa Irizarry. Simply Statistics blog. Available in [html
 
 [lee1]: https://simplystatistics.org/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com//simply-statistics
+
+:::

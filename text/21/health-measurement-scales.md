@@ -12,10 +12,15 @@ page_update: complete
 
 ![Figure 1. Cover of book](http://www.pmean.com/new-images/21/health-measurement-scales-01.png)
 
-<div class="notes">
+::: notes
 
 A nice comprehensive guide to the development of reliable and valid measurement scales in health care research. It is in its fifth edition; the version in my library is the second edition. I'm sure the newerr version is even better.
 
 David L. Streiner, Geoffrey R. Norman, John Cairney. Jason Cory Brunson. Health Measurement Scales: A Practical Guide to Their Development and Use. Fifth Edition, Oxford University Press, 2014.
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/health-measurement-scales/
+
+:::

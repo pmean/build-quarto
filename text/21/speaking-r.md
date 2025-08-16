@@ -18,3 +18,8 @@ An hour long video, but worth watching for anyone who teaches programming, but e
 Amelia McNamara. Speaking R. useR! 2020 keynote. Available as a [video][mcn1]
 
 [mcn1]: https://www.youtube.com/watch?v=ckW9sSdIVAc&t=676s
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/speaking-r/

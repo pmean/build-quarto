@@ -17,3 +17,8 @@ Frank Harrell is a very opinionated statisticians, and his opinions are almost a
 Frank Harrell. Statistical Thinking. Available in [html format][har1].
 
 [har1]: https://www.fharrell.com/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/statistical-thinking/

@@ -15,3 +15,8 @@ This site promotes the sharing of code and data with research publications and o
 <!--more-->
 
 Robert Stojnic, Ross Taylor, Marcin Kardas, Viktor Kerkez, Ludovic Viaud. Papers With Code. Available in [html format](https://www.paperswithcode.com/).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/papers-with-code/

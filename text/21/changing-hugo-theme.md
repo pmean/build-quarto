@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Excerpt from blog post](http://www.pmean.com/new-images/21/changing-hugo-theme-01.png)
 
-<div class="notes">
+::: notes
 
 A nice very detailed blog post about how to change to a different Hugo theme within blogdown and how to adapt that theme to your special requirements.
 
@@ -20,4 +20,9 @@ Matt Johnson. Changing and modifying a Hugo theme on your R Blogdown site, Restl
 
 [joh1]: https://restlessdata.com.au/p/updating-a-blog-theme/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/changing-hugo-theme/
+
+:::

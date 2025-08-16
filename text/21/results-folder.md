@@ -28,3 +28,8 @@ I forgot where I first saw this, and Google is not helping, but for the record, 
 One example is the R package, [ezknitr](https://cran.r-project.org/web/packages/ezknitr/README.html), which uses a wrapper function around the knit function in knitr. I have not tried this package yet, but it looks interesting.
 
 There is some [additional commentary about this](https://github.com/rstudio/rmarkdown/issues/587) on the RStudio github site and [here](https://community.rstudio.com/t/is-it-possible-to-save-the-html-output-in-a-directory-which-is-not-the-one-where-the-rmd-file-resides/3588) on the RStudio community webpage.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/results-folder/

@@ -14,4 +14,9 @@ Max Kuhn and Julia Slige present a detailed tutorial on some recent advances in 
 
 <!--more-->
 
-Max Kuhn, Julai Slige. Tidy Modeling with R. 2021-01-06. Available in [html format](https://www.tmwr.org/).
+Max Kuhn, Julia Slige. Tidy Modeling with R. 2021-01-06. Available in [html format](https://www.tmwr.org/).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/tidy-models/

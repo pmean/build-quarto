@@ -23,3 +23,8 @@ Another thing I like about Stan is how it forces you to define which data and wh
 It seems like jags (and a similar program, BUGS) lets you place statements in a more or less haphazard order, which always made me uncomfortable. There is a [nice blog post about how to get started with Stan](https://www.r-bloggers.com/2019/01/an-introduction-to-stan-with-r/) that I referred to in explaining what I liked about Stan. 
 
 One of the speakers also mentioned how nice the [rstanarm package](https://cran.r-project.org/web/packages/rstanarm/vignettes/rstanarm.html) is for its simple interface. I have not used rstanarm yet, but it looks very nice.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/undergraduate-bayesian/

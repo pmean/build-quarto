@@ -14,13 +14,14 @@ page_update: complete
 
 With the generalized linear model, you have the option of choosing a model that works well with a variety of different distributions (normal, Poisson, Gamma, etc.). But you also have the option of working outside of these distributions. You can fit models that do not specify the distribution, but which fit a particular transformation of the linear effect and particular mean-variance relationship.
 
+```{r}
+#| label: quasi-likelihood-01
 
-```{r quasi-likelihood-01}
-suppressMessages(suppressWarnings(library(broom)))
-suppressMessages(suppressWarnings(library(dplyr)))
-suppressMessages(suppressWarnings(library(ggplot2)))
-suppressMessages(suppressWarnings(library(foreign)))
-suppressMessages(suppressWarnings(library(magrittr)))
+library(broom)
+library(dplyr)
+library(ggplot2)
+library(foreign)
+library(magrittr)
 ```
 
 ### Link and variance functions
@@ -102,7 +103,10 @@ It is easiest to understand the quasiPoisson model by comparing it to the Poisso
 
 Francis Huang has a [nice web page][hua1] showing two datasets and how to analyze them using the Poisson regression model as well as several more sophisticated models. The first data set is available for anyone to download. The link I originally used no longer works.
 
-```{r quasi-likelihood-02, eval=FALSE}
+```{r}
+#| label: quasi-likelihood-02
+#| eval: false
+
 fn <- "http://faculty.missouri.edu/huangf/data/poisson/articles.csv"
 articles <- read.csv(fn)
 head(articles)
@@ -110,7 +114,9 @@ head(articles)
 
 Here is a [different link][rod3] for the same file, used at [German Rodriguez's website][rod2]. I've placed a [copy][sim3] on my website in case this link breaks. Also, this dataset is available with the [pscl library][zei1] of R under the name, bioChemists.
 
-```{r quasi-likelihood-03}
+```{r}
+#| label: quasi-likelihood-03
+
 fn <- "http://www.pmean.com/00files/couart2.dta"
 articles <- read.dta(fn)
 head(articles)
@@ -132,14 +138,18 @@ The variables are
 
 To fit a Poisson regression model in R, use the glm function with the argument, family="poisson".
 
-```{r quasi-likelihood-04}
+```{r}
+#| label: quasi-likelihood-04
+
 pois1 <- glm(art ~ fem + ment + phd + mar + kid5, family=poisson, data = articles)
 summary(pois1)
 ```
 
 The interpretation of the coefficients should be done after exponentiating their values.
 
-```{r quasi-likelihood-05}
+```{r}
+#| label: quasi-likelihood-05
+
 pois1 %>%
   tidy %>%
   mutate(lower_limit=estimate-1.96*std.error) %>%
@@ -153,14 +163,18 @@ pois1_coefficients
 
 ### Fitting a quasi-Poisson model
 
-```{r quasi-likelihood-06}
+```{r}
+#| label: quasi-likelihood-06
+
 quasi1 <- glm(art ~ fem + ment + phd + mar + kid5, family=quasipoisson, data = articles)
 summary(quasi1)
 ```
 
 Notice that there is no value listed for AIC.
 
-```{r quasi-likelihood-07}
+```{r}
+#| label: quasi-likelihood-07
+
 quasi1 %>%
   tidy %>%
   mutate(lower_limit=estimate-1.96*std.error) %>%
@@ -179,3 +193,8 @@ If you compare these confidence intervals to the earlier ones, they are wider. T
 David Lillis. Generalized Linear Models in R, Part 7: Checking for Overdispersion in Count Regression. The Analysis Factor blog. Available in [html format][taf1]
 
 [taf1]: https://www.theanalysisfactor.com/glm-r-overdispersion-count-regression/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/quasi-likelihood/

@@ -12,7 +12,7 @@ page_update: complete
 
 ![Figure 1. Screenshot from this website](http://www.pmean.com/new-images/21/integrating-humanities-01.png)
 
-<div class="notes">
+::: notes
 
 This report was recommended at a webinar I attended. I have not read the report yet, but the webinar mentioned several interesting and surprising ways that hihger education has integrated humanities into science and engineering classes.
 
@@ -20,4 +20,9 @@ National Academy of Sciences. The Integration of the Humanities and Arts with Sc
 
 [nas1]: https://www.nap.edu/catalog/24988/the-integration-of-the-humanities-and-arts-with-sciences-engineering-and-medicine-in-higher-education
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/integrating-humanities/
+
+:::

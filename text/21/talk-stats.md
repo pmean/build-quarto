@@ -12,7 +12,7 @@ page_update: complete
 
 # ![Figure 1. Excerpt from website](http://www.pmean.com/new-images/21/talk-stats-01.png)
 
-<div class="notes">
+::: notes
 
 A wide range of questions from basic to advanced about Statistics, Probability, and Statistical Software.
 
@@ -20,4 +20,9 @@ Talk Stats. Available in [html format][tal1]
 
 [tal1]: http://www.talkstats.com/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/talk-stats/
+
+:::

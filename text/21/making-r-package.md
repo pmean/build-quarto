@@ -15,3 +15,8 @@ There is a specific structure that you must follow if you want to develop a pack
 <!--more-->
 
 Chris Evans. Making the CECPfuns package: my own usable package. R SAFAQ blog 2021-02-09. Available in [html format](https://www.psyctc.org/Rblog/posts/2021-02-10-making-my-first-usable-package/).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/making-r-package/

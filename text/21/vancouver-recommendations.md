@@ -16,6 +16,10 @@ This is a consensus document created by a group of journal editors who met in Va
 
 Ingrid Synnove Torp. The Vancouver Recommendations. Published 2020-08-10. Available in [pdf format][tor1]
 
-
 [nyl1]: https://www.forskningsetikk.no/en/resources/the-research-ethics-library/authorship-and-co-authorship/authorship-and-co-authorship-in-medical-and-health-research/
 [tor1]: https://www.forskningsetikk.no/en/resources/the-research-ethics-library/legal-statutes-and-guidelines/the-vancouver-recommendations/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/vancouver-recommendations/

@@ -15,3 +15,8 @@ I am working with a reasearch team that needs to track a variety of public healt
 <!--more-->
 
 SmartTracker. Contact andSymptom Tracking Software. Available in [html format](http://www.smarttracker.health/).
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/smart-tracker/

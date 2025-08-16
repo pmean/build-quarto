@@ -12,7 +12,7 @@ page_update: complete
 
 ![](http://www.pmean.com/new-images/21/share-your-research-01.png)
 
-<div class="notes">
+::: notes
 
 THis article covers new changes in the publication process, including pre-prints and trial registration. 
 
@@ -20,4 +20,9 @@ How to Share Your Research. Available in [html format][plo1]
 
 [plo1]: https://plos.org/resource/how-to-share-your-research/
 
-</div>
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/share-your-research/
+
+:::
