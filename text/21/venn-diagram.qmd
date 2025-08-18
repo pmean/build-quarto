@@ -15,11 +15,11 @@ page_update: complete
 
 ```{r}
 #| label: venn-diagrams-01
-#} echo: false
+#| echo: false
 
-library(dplyr)))
-library(ggplot2)))
-library(magrittr)))
+library(dplyr)
+library(ggplot2)
+library(magrittr)
 ```
 
 ```{r}
@@ -67,7 +67,7 @@ draw_circles()
 ```{r}
 #| label: venn-diagrams-03
 #| fig.width: 5
-#| fig.height=5
+#| fig.height: 5
 #| echo: false
 
 o <- 0.88

@@ -10,6 +10,8 @@ categories:
 source: new
 output: html_document
 page_update: complete
+execute: 
+  echo: false
 ---
 
 There are several different types of residuals in a Cox proportional hazards model. One of them is the Schoenfeld residuals. They are used to test the proportional hazards assumption.
@@ -56,8 +58,8 @@ Let's graph this function.
 #| label: definition-schoenfeld-residuals-01
 #| echo: false
 
-knitr::opts_chunk$set(echo=FALSE)
-suppressMessages(suppressWarnings(library(plot3D)))
+
+library(plot3D)
 ```
 
 ```{r}
@@ -174,4 +176,4 @@ $\theta_j = exp(X_j \beta)$
 An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
 
 [sim1]: http://new.pmean.com
-[sim2]: http://new.pmean.com/schoenfeld-residuals/
+[sim2]: http://new.pmean.com/definition-schoenfeld-residuals/

@@ -10,17 +10,20 @@ categories:
 - Rmarkdown code
 output: html_document
 page_update: complete
+execute: 
+  echo: false
 ---
 
 I'm trying to understand some of the basics of contrasts in analysis of variance. In particular, I want to figure out some alternative parameterizations of the coefficients that are estimated as part of the ANOVA model.
 
 ```{r}
 #| label: different-parameterizations-01
+#| message: false
+#| warning: false
 
 library(MASS)
 library(matlib)
 library(tidyverse)
-knitr::opts_chunk$set(echo = TRUE)
 ```
 
 First, let's set up an artificial dataset that is nice and easy to work with.
