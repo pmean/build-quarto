@@ -25,3 +25,8 @@ Dialogue from Sleeper, 1973 film by Woody Allen set 200 years in the future.
 <!--more-->
 
 I remember this from the original film, but came across it again recently in a book that I just downloaded: [Reproducibility and Replicability in Science](https://doi.org/10.17226/25303), published by the National Academy of Sciences.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/sleeper-quote/

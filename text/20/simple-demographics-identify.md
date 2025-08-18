@@ -16,3 +16,8 @@ Latanya Sweeney. Simple Demographics Often Identify People Uniquely. Carnegie Me
 <!---More--->
 
 + If you know some combination of simple demographic features, each one individually may not identify you, but the combination could. Here's some hard data on how this might happen, with an example combining zip code, birthday, and gender.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/simple-demographics-identify/

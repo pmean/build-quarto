@@ -279,3 +279,8 @@ There are some other variants, such as the prime symbols, described in [this Wik
 [kuh1]: https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
 [utf8]: https://cran.r-project.org/web/packages/utf8/vignettes/utf8.html
 [wik1]: https://en.wikipedia.org/wiki/Prime_(symbol)
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/smart-quotes/
