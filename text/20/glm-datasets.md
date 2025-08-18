@@ -15,3 +15,8 @@ German Rodriguez. Generalized Linear Models. Datasets. Available in [html format
 <!---More--->
 
 + This page provides about a dozen interesting datasets that Dr. Rodriguez uses in his Generalized Linear Models class. These are clearly described and consistently coded and could be used in a variety of settings, including some that are simpler than Generalized Linear Models.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/glm-datasets/

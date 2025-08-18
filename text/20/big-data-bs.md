@@ -18,3 +18,7 @@ Michelle Nijhuis. How to Call B.S. on Big Data. A Practical Guide. The New Yorke
 
 + A simple non-technical guide that emphasizes the need for worry when something looks too good.
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/big-data-bs/

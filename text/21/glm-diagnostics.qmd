@@ -17,6 +17,8 @@ There are a broad range of diagnostic methods (mostly graphical) that can help y
 
 ```{r}
 #| label: glm-diagnostics-01
+#| message: false
+#| warning: false
 
 library(broom)
 library(dplyr)
@@ -415,6 +417,7 @@ The AIC statistic is useful for comparing models, but it is not produced automat
 
 ```{r}
 #| label: glm-diagnostics-99
+#| eval: false
 
 save.image(file="glm_diagnostics.RData")
 ```

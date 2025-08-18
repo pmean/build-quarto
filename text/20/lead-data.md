@@ -5,6 +5,7 @@ date: "2020-08-21"
 categories:
 - "*Recommendation"
 - 2020
+- Datasets
 - Teaching resources
 output: html_document
 page_update: complete
@@ -15,3 +16,8 @@ Bradham KD, Nelson CM, Kelly J, et al. Relationship Between Total and Bioaccessi
 <!---More--->
 
 + This paper has a small but complete dataset embedded in Table 1. It looks at the relationship between lead in the soil around a house and lead in the blood of children living in the house. There is a small amount of clustering when a house has more than one child.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/lead-data/

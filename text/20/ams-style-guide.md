@@ -15,3 +15,8 @@ Mary Letourneau, Jennifer Wright Sharp. AMS Style Guide. Journals. American Math
 <!---More--->
 
 + At 178 pages, this is too much to digest at any one sitting. But many of the sections on how to properly write and display mathematical equations are very helpful. There are also useful tables such as mathematical symbols that are frequently confused.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/ams-style-guide/

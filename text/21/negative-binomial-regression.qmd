@@ -17,6 +17,8 @@ The negative binomial distribution is similar to the Poisson distribution, but i
 
 ```{r}
 #| label: negative-binomial-regression-01
+#| message: false
+#| warning: false
 
 library(broom)
 library(dplyr)

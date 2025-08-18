@@ -11,7 +11,7 @@ categories:
 output: html_document
 page_update: complete
 execute:
-- echo: false
+  echo: false
 ---
 
 ```{r}

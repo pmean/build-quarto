@@ -26,3 +26,8 @@ But here's how you could help. If you know a good artist who might be interested
 ### Important notice, January 23, 2020.
 
 I am in the process of updating my website and blog and am adopting a simpler approach that will ease the maintenance of these web pages. I have about 2,000 pages and they are in a wide range of styles and formats. I will be using markdown code to create fairly minimimally formatted html pages. The process is tricky, and I expect to see a lot of misformatted pages and broken links during this transition. Please be patient.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/celebrating-failures/

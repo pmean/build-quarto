@@ -451,7 +451,7 @@ fast_food_summary <- summary(fast_food_regression)
 names(fast_food_summary)
 ```
 
-The third item in this list is coefficients, and it is different from the coeeficients item in the previous list.
+The third item in this list is coefficients, and it is different from the coefficients item in the previous list.
 
 ```{r}
 #| label: r-creatures-39
@@ -459,7 +459,7 @@ The third item in this list is coefficients, and it is different from the coeefi
 fast_food_summary$coefficients
 ```
 
-This is a matrix with names for each row and for each column. If you wanted to produce a nice table summarizing the results of the regresion model, customized to your specifications, here is where you would start.
+This is a matrix with names for each row and for each column. If you wanted to produce a nice table summarizing the results of the regression model, customized to your specifications, here is where you would start.
 
 You might also be interested in some post-processing of the regression results. You can, for example, extract the p-values for the two slopes.
 

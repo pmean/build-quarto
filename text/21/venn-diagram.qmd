@@ -16,6 +16,8 @@ page_update: complete
 ```{r}
 #| label: venn-diagrams-01
 #| echo: false
+#| message: false
+#| warning: false
 
 library(dplyr)
 library(ggplot2)

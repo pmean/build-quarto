@@ -34,3 +34,7 @@ I get this question a lot: How do I learn how to use R? I usually mumble somethi
 
 I'm going to ask about this at today's meeting of the Kansas City R Users Group and see what others suggest. I rely a lot on #3 (conferences), #6 (books) and #9 (documentation), but I'm not a beginner. I was a beginner back in 1994, but I can scarcely remember what things were like one score and six years ago. 
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/learn-r/

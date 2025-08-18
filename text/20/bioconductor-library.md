@@ -22,3 +22,8 @@ The Bioconductor packages should work on any computer system able to run R. Ther
 You download the Bioconductor packages through a special interface, [BiocManager](https://cran.r-project.org/web/packages/BiocManager/vignettes/BiocManager.html). You download BiocManager just like any other R package, but then this interface controls the access to all other Bioconductor packages.
 
 Bioconductor maintains a helpful and detailed [website](https://www.bioconductor.org/) with installation instructions, a variety of teaching resources, and information for developers who want to join the effort to improve Bioconductor.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/bioconductor-library/

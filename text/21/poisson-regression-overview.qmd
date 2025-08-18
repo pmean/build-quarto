@@ -16,6 +16,8 @@ Poisson regression is a statistical model under the large umbrella of generalize
 
 ```{r}
 #| label: poisson-regression-01
+#| message: false
+#| warning: false
 
 library(broom)
 library(dplyr)

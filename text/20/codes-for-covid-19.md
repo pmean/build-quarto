@@ -127,3 +127,8 @@ Euorpean Center for Disease Prevention and Control. Case definition and European
 
 LOINC. SARS Coronavirus 2. Available in [html format](https://loinc.org/sars-coronavirus-2/).
 
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/codes-for-covid-19/

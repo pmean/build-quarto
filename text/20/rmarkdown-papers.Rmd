@@ -117,3 +117,8 @@ The bibliography always appears at the end of the document. I'm not showing a bi
 **Final comments**
 
 Most of the people that I collaborate with do not use R Markdown, so I typically will start a draft in R Markdown, but when it gets to the point where I can share it with my collaborators, I send the document in Word format and we make any further changes there. If I am the sole author, then I can keep the file in R Markdown.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/rmarkdown-papers/

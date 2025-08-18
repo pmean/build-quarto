@@ -19,3 +19,7 @@ Marisa Iati. Florida fired its coronavirus data scientist. Now she's publishing 
 
 [iat1]: https://www.washingtonpost.com/nation/2020/06/12/rebekah-jones-florida-coronavirus/
 
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/florida-data-scientist/

@@ -18,17 +18,7 @@ I'm a big fan of Analysis of Variance (ANOVA). I use it all the time. I learn a 
 
 Recall the hypothesis test for analysis of variance.
 
-```{r}
-#| label: dunnetts-test-01
-#| fig.width: 5in
-#| fig.height: 0.33
-#| echo: false
-
-h0 <- bquote(H[0] ~ ": " ~ mu[i] == mu[j] ~ " for all i,j")
-par(mar=rep(0.1, 4))
-plot(0:1, 0:1, axes=FALSE, type="n")
-text(0.1, 0.5, h0, adj=0)
-```
+$H_0:\ \mu_i=\mu_j$, for all i, j.
 
 The null hypothesis specifies that every pair of means is equal. For four groups, this implies six equalities: 1=2, 1=3, 1=4, 2=3, 2=4, and 3=4. For six groups, you would have fifteen equalities; for ten you'd have forty five.
 
@@ -38,17 +28,7 @@ It gets messy very fast. That's okay. If you have a lot of groups that you are c
 
 If one of your groups is a control or placebo, AND you want only to compare each treatment to the control, this is  what the hypothesis looks like, assuming that the control is group #1.
 
-```{r}
-#| label: dunnetts-test-02
-#| fig.width: 5in
-#| fig.height: 0.33in
-#| echo: false
-
-h0 <- bquote(H[0] ~ ": " ~ mu[i] == mu[1] ~ " for all i=2,...,k")
-par(mar=rep(0.1, 4))
-plot(0:1, 0:1, axes=FALSE, type="n")
-text(0.1, 0.5, h0, adj=0)
-```
+$H_0:\ \mu_i=\mu_1$, for all i.
 
 There's a procedure for this, Dunnett's test. It involves only three comparisons if you have four groups total, and only nine comparisons if you have ten groups total. You can quickly identify which treatment or treatments is different than the control. This also gives you simplicity and a bit of extra power and precision.
 

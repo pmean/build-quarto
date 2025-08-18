@@ -15,3 +15,8 @@ Ong EK, Glantz SA. Constructing "sound science" and "good epidemiology": tobacco
 <!---More--->
 
 + A review of the use of the term "junk science" to try to discredit research about the hazards of second-hand tobacco smoke.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/junk-science/

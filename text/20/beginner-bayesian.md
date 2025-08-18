@@ -25,3 +25,8 @@ Stan can run from either Python or R, and either choice works well. Choose whate
 I have not had a chance to try this, but there is another closely related package, rstanarm. This package automates many common Bayesian regression models. I suspect that you will love rstanarm.
 
 If I had to identify two areas where Bayesian analysis shines, it would be in hierarchical models and imputation of missing values. You should focus your efforts on these areas once you master the simpler models.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/beginner-bayesian/

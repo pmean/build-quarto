@@ -15,3 +15,8 @@ Betsy Mason. Election Maps Are Everywhere. Don't Let Them Fool You. The New York
 <!---more--->
 
 This is a nice interactive page that shows how colors can influence your perception about a map based graphics.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/election-maps/

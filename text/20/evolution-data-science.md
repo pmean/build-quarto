@@ -17,3 +17,8 @@ $\frac{dI}{dt} = \beta S I - \gamma I$
 <!---more--->
 
 A historical overview of the development of Applied Statistics and how it morphed into Data Science. It starts with the IBM mainframe computers of the 1960s and quotes from prominent statisticians throughout.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/evolution-data-science/

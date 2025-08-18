@@ -17,3 +17,8 @@ An account of recent events to stop the collection of data that the current admi
 Kirsten Berg, Jonathan Cohn, Delphine D'Amora, Chris D'Angelo, Michael Hobbes, Alex Kaufman, Emily Peck, Kate Sheppard, Samanth Subramanian. Disappearing Data. HuffPost. Available in [html format][ber1].
 
 [ber1]: https://highline.huffingtonpost.com/article/disappearing-data/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/disappearing-data/

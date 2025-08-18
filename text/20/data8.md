@@ -16,3 +16,8 @@ University of California/Berkeley. Data 8: The Foundations of Data Science. Avai
 <!---More--->
 
 + This course covers Data Science at a foundational level and is required of all undergraduate students at Berkeley.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/data8/

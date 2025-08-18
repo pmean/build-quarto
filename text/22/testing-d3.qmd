@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - 2022
 - Graphical display
-- Rmarkdown graphs
+- Incomplete page
 output: html_document
 page_update: complete
 ---

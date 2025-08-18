@@ -290,3 +290,8 @@ Thanks to Chris Barker and Ruth Etzioni for helpful suggestions.
 [wan1]: https://arxiv.org/pdf/2004.14103.pdf
 [xub1]: https://www.nature.com/articles/s41597-020-0448-0
 [xub2]: https://www.nature.com/articles/s41597-020-0448-0.pdf
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/ihme-model/

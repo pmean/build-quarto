@@ -23,3 +23,8 @@ special atention to Table 1 where he outlines the five steps you should
 always follow in any consulting interaction. Dr. Zahn also shares a story of when he didn't listen to his nine year old son, and draws an analogy to his (and our) interactions with other researchers.
 
 Note: combined with an similar post written on 2018-01-22.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/be-more-effective/

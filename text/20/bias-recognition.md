@@ -15,3 +15,8 @@ Qi Wang, Hee J. Jeon. "Bias in Bias Recognition: People View Others but Not Them
 <!---more--->
 
 This is a nice supplement to the concept of confirmation bias, the tendency to highlight facts that support your current belief and to disregard facts that contradict your current belief. This study shows a similar tendency, the tendency to view others are more prone to biased thinking and yourself as less prone to biased thinking.
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/bias-recognition/

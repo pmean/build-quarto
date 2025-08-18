@@ -16,3 +16,8 @@ Lo AW, Mueller MT. Warning: Physics Envy May be Hazardous to Your Wealth! SSRN 2
 <!---More--->
 
 + The term "Physics envy" is the tendency for other scientific areas (especially the social sciences) to improperly adopt the mathematical rigor associated with most mathematical models in Physics. This article describes a framework of uncertainty that sidesteps this tendency and avoids the trap of assuming a greater level of precision than is warranted. 
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/physics-envy/
