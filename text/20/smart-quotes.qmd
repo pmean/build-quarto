@@ -8,7 +8,9 @@ categories:
 - 2020
 - Data management
 - Rmarkdown code
-output: html_document
+format:
+  html:
+    embed-resources: true
 page_update: complete
 execute:
   echo: false
@@ -150,9 +152,7 @@ cplot("\U00C7")
 
 and tildes.
 
-```{}
-"\U00F1"
-```
+`"\U00F1"`
 
 ```{r}
 #| label: tildes
@@ -162,9 +162,7 @@ cplot("\U00F1")
 
 You have to have room for the sharp S in German,
 
-```{}
-"\U00DF"
-```
+`"\U00DF"`
 
 ```{r smart-quotes-24}
 cplot("\U00DF")
@@ -172,9 +170,7 @@ cplot("\U00DF")
 
 the thorn in Icelandic,
 
-```{}
-"\U00FE"
-```
+`"\U00FE"`
 
 ```{r}
 #| label: icelandic
@@ -184,24 +180,32 @@ cplot("\U00FE")
 
 and a whole host of new characters in Greek,
 
+`"\U03B1\U03B2\U03B3"`
+
 ```{r}
 #| label: greek
-#| fig.width: 4.5
+#| fig.width: 3
 
-cplot("\U03B1 \U03B2 \U03B3")
+cplot("\U03B1\U03B2\U03B3")
 ```
 
 Arabic,
 
-```{r smart-quotes-27}
-#| fig.width: 7.5
+`"\U062A\U0633\U062C\U0651\U0644"`
+
+```{r}
+#| label: arabic
+#| fig.width: 4.5
 
 cplot("\U062A\U0633\U062C\U0651\U0644")
 ```
 
 and Chinese.
 
-```{r smart-quotes-28}
+`"\U4E2D\U6587"`
+
+```{r}
+#| label: chinese-1
 #| fig.width: 3
 
 cplot("\U4E2D\U6587")
@@ -209,7 +213,10 @@ cplot("\U4E2D\U6587")
 
 When you add various emojis
 
-```{r smart-quotes-29}
+`"\U1F642\U1F622"`
+
+```{r}
+#| label: emojis
 #| fig.width: 3
 
 cplot("\U1F642\U1F622")
@@ -221,43 +228,41 @@ the list becomes quite long.
 
 Unicode also expanded punctuation. You can You can create the left double quote,
 
-```{}
-"\U201C"
-```
+`"\U201C"`
 
 ```{r}
-#| label: smart-quotes-15
+#| label: left-double-quote
 
 cplot("\U201C")
 ```
 
 the right double quote,
 
-```{}
-"\U201D"
-```
+`"\U201D"`
 
-```{r smart-quotes-16}
+```{r}
+#| label: right-double-quote
+
 cplot("\U201D")
 ```
 
 the left single quote,
 
-```{}
-"\U2018"
-```
+`"\U2018"`
 
-```{r smart-quotes-17}
+```{r}
+#| label: left-single-quote
+
 cplot("\U2018")
 ```
 
 and the right single quote
 
-```{}
-"\U2019"
-```
+`"\U2019"`
 
-```{r smart-quotes-18}
+```{r}
+#| label: right-single-quote
+
 cplot("\U2019")
 ```
 
@@ -265,70 +270,78 @@ cplot("\U2019")
 
 The rawToChar function provides a surprising result with many Unicode characters.
 
-```{}
-charToRaw("\U201C")
-```
+`charToRaw("\U201C")`
 
-```{r smart-quotes-19}
+```{r}
+#| label: utf-8
 #| fig.width: 4.5
 
-cplot(charToRaw("\U201C" ))
+cplot(charToRaw("\U201C"))
 ```
-
 
 Surprise! 
 
 Now you might wonder why the raw code for the left double quote does not match the 201C shown above. It turns out that the internal storage of Unicode uses a system called UTF-8. UTF-8 maintains storage efficiency and backwards compatibility with earlier coding systems.
 
+This can cause a few snags. The string
+
+```{r}
+#| label: chinese-2
+#| fig.width: 3
+
+cplot("\U4E2D\U6587")
+```
+
+is only two characters, but the UTF-8 format stores it as 
+
+```{r}
+#| label: chinese-3
+#| fig.width: 7.5
+
+cplot(charToRaw("\U4E2D\U6587"))
+```
+
+which is eight bytes long. So be careful to know what you are asking for when you want the length of a string in Unicode.
+
+Don't let me scare you. The UTF-8 format is a good thing because it handles the basic English alphabet, the numbers, and most common symbols without a hitch. The UTF-8 format can easily handle older files, even those created 60 years ago. It's when you need Greek letters, unusual symbols, emojis, etc. that things get a bit tricky.
+
 ## The em dash and en dash
 
 There are a couple of additional codes that I should mention. Most programmers use the minus sign in their coding
 
-```{r smart-quotes-38}
+```{r}
+#| label: dash
+
 cplot("-")
 ```
 
-but there are two similar characters that you might see. First, the em dash.
+but there are two similar characters that you might see. Herer, first, is the em dash.
 
 `"\U2014"`
 
-```{r smart-quotes-39}
+```{r}
 #| label: em-dash
 
 cplot("\U2014")
 ```
 
-It is called the em dash because it is about as wide as the letter "m" in a variable width font.
-
-```{r smart-quotes-40}
-cplot("M")
-```
+It is called the em dash because it is about as wide as the letter "M" in a proportional width font.
 
 The second variant is the en dash.
 
 `"\U2013"`
 
-```{r smart-quotes-42}
-cplot("\U2013")
-```
-
-that is also longer than a minus sign, but about half the length of the em dash. It has a width that is equal to the letter "n" in most proportional width fonts.
-
-The em dash and en dash will often cause confusion because they look so much like the minus sign, but they will cause problems often in R code.
-
 ```{r}
-#| label: endash
+#| label: en-dash
 
 cplot("\U2013")
 ```
 
-```{r}
-#| label: letter-n
+that is also longer than a minus sign, but about half the length of the em dash. It has a width that is equal to the letter "N" in most proportional width fonts.
 
-cplot("n")
-```
+The em dash and en dash will often cause confusion because they look so much like the minus sign. Watch for them because they can sometimes cause problems in R code.
 
-
+## If you want to learn more
 
 There's a [nice web page][kuh1] about the historical developments of computer codes for quote marks and dashes and [another page][utf8] that talks about computer codes in general from the perspective of an R programmer.
 

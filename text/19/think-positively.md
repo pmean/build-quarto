@@ -1,6 +1,5 @@
 ---
-title: "Think positively
-- what has research done for us"
+title: "Think positively - what has research done for us"
 author: "Steve Simon"
 source: "http://blog.pmean.com/think-positively/"
 date: "2019-01-23"

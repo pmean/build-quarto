@@ -1,0 +1,55 @@
+---
+title: "Add old links to the bottom of files"
+format:
+  html:
+    embed-resources: true
+---
+
+This program was written by Steve Simon on 2025-08-19 and is placed in the public domain.
+
+## Preliminaries
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+```
+
+
+## Loop
+
+```{r}
+#| label: loop
+
+add_extra <- function(file_name) {
+	file_name |>
+    str_remove("\\.qmd$") |>
+    str_remove("\\.Rmd$") |>
+    str_remove("\\.md$") -> root_name
+	read_lines(glue("{file_path}/{file_name}")) |>
+		str_subset("source: ") |>
+		str_remove_all(fixed('\"')) |>
+		str_remove("source: ") -> src
+	print(src)
+	if (length(src) != 1) return()
+	extra_lines <- c(
+		" ",
+		"Earlier versions are [here][sim1] and [here][sim2].",
+		" ",
+	  glue("[sim1]: {src}"),
+		glue("[sim2]: http://new.pmean.com/{root_name}/"),
+		" ")
+	return(extra_lines)
+}
+
+file_path <- "../text/18"
+x <- add_extra("what-i-did.md") 
+cat(x, sep="\n")
+
+file_path <- "../text/06"
+x <- add_extra("wax-fruit.md") 
+cat(x, sep="\n")
+```
