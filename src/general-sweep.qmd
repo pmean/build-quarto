@@ -20,7 +20,7 @@ This program moves html files from various folders into a general results folder
 library(glue)
 library(tidyverse)
 
-movable_extensions <- c("docx", "html", "pdf", "pptx")
+movable_extensions <- c("docx$", "html$", "pdf$", "pptx$")
 z100 <- c(glue("0{1:9}"), as.character(10:99), "00")
 ```
 
@@ -30,9 +30,8 @@ z100 <- c(glue("0{1:9}"), as.character(10:99), "00")
 #| label: identify
 
 identify_files <- function(subdir, ext) {
-  list.files(
-    path=subdir,
-    pattern=ext)
+  list.files(path=subdir) |>
+    str_subset(ext)
 }
 ```
 
@@ -60,8 +59,8 @@ loop_folders <- function(folder_name) {
     file_list <- c(file_list, identify_files(folder_name, ext))
   }
   if (length(file_list) == 0) return("---{folder_name} No files found")
-  for (f in file_list) {
-    # sweep_files(s, f)
+  for (file_name in file_list) {
+    sweep_files(folder_name, file_name)
   }
   return(glue("---{folder_name} {file_list}"))
 }
@@ -75,7 +74,7 @@ loop_folders <- function(folder_name) {
 folder_list <- paste0("../text/", z100[c(99, 100, 1:25)])
 for (folder_name in folder_list) {
   loop_results <- loop_folders(folder_name)
-  print(loop_results)
+  cat(loop_results, sep="\n")
 }
 
 ```
