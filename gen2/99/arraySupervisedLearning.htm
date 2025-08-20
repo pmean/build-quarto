@@ -1,0 +1,82 @@
+<html>
+
+<head>
+
+<title>Stats: Supervised learning for microarray data (no date)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Supervised learning (no date)</strong> [incomplete]</p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/micro-array-supervised-learning/">new website</a>.</p>
+
+<blockquote>
+<p>Here are some documented examples of how to use supervised learning methods 
+of the analysis of microarray data.</p>
+</blockquote>
+<p><b>Supervised learning</b></p>
+<blockquote>
+  <p>The Bioconductor package has a sample data set, golubEsets, that is 
+   available on the web at</p>
+  <p><a href="http://www-genome.wi.mit.edu/mpr/data_set_ALL_AML.html">
+   http://www-genome.wi.mit.edu/mpr/data_set_ALL_AML.html</a></p>
+  <p>and is based on the publication</p>
+  <p><b>Molecular Classification of Cancer: Class Discovery and Class Prediction 
+   by Gene Expression.</b> Golub TR, Slonim DK, Tamayo P, Huard C, Gaasenbeek M, 
+   Mesirov JP, Coller H, Loh M, Downing JR, Caligiuri MA, Bloomfield CD, Lander 
+   ES. Science 1999: 286; 531-537.
+   <a href="http://www.broad.mit.edu/mpr/publications/projects/Leukemia/Golub_et_al_1999.pdf">
+   [PDF]</a></p>
+  <p>To get this data, use the following commands:</p>
+  <p><font color="#FF0000"><code>library(&quot;marray&quot;)<br>
+   library(&quot;golubEsets&quot;)<br>
+   data(golubTrain)<br>
+   data(golubTest)<br>
+   data(golubMerge)</code></font></p>
+  <p>The phenotypic data for the training data set looks like</p>
+  <p><code><font color="#FF0000">&gt; pData(golubTrain)<br>
+   <br>
+&nbsp;&nbsp; </font>Samples ALL.AML BM.PB T.B.cell ... Source<br>
+   1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; ALL&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp; B-cell ...&nbsp;&nbsp; DFCI<br>
+   2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; ALL&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp; T-cell ...&nbsp;&nbsp; DFCI<br>
+   3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; ALL&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp; T-cell ...&nbsp;&nbsp; DFCI<br>
+   .<br>
+   .<br>
+   .<br>
+   32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp;&nbsp; AML&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp;&nbsp;&nbsp; &lt;NA&gt; ...&nbsp; CALGB<br>
+   33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 33&nbsp;&nbsp;&nbsp;&nbsp; AML&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp;&nbsp;&nbsp; &lt;NA&gt; ...&nbsp; CALGB<br>
+   <br>
+   <font color="#FF0000">table(pData(golubTrain)$ALL.AML)</font><br>
+   <br>
+   ALL AML <br>
+   27 11<br>
+   <br>
+   <font color="#FF0000">table(pData(golubTest)$ALL.AML)</font><br>
+   <br>
+   ALL AML <br>
+   20 14 <br>
+   <br>
+   <font color="#FF0000">table(pData(golubMerge)$ALL.AML)</font><br>
+   <br>
+   ALL AML <br>
+   47 25 </code></p>
+  <p><code><font color="#FF0000">x &lt;- exprs(GolubTrain)</font></code></p>
+</blockquote>
+<p><b>Supervised learning (class prediction)</b></p>
+<blockquote>
+  <p>Regression analysis, discriminant analysis, cart, neural net</p>
+  <p>support vector machines:
+   <a href="http://www.acm.org/sigs/sigkdd/explorations/issue2-2/bennett.pdf">
+   http://www.acm.org/sigs/sigkdd/explorations/issue2-2/bennett.pdf</a></p>
+</blockquote>
+
+</body>
+
+</html>

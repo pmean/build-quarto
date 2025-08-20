@@ -1,0 +1,805 @@
+<html>
+
+<head>
+
+<title>Stats: Information theory models (May 26, 2004)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Information Theory (created 2004-05-26)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/what-is-information-theory/">new website</a>.</p>
+
+<blockquote>
+  <p>This page provides some simple applications where information theory 
+   provides a useful analysis.</p>
+  <p>The formula for uncertainty (sometimes referred to as entropy) is</p>
+  <p><img border="0" src="../definitions/images/entropy01.gif" width="210" height="63"></p>
+  <p>By convention, if any probability is zero, we set the product term to zero 
+   as well. Those of you who are familiar with calculus could use limits to 
+   establish that zero is a reasonable value for this product.</p>
+</blockquote>
+<p><b>Data compression</b></p>
+<blockquote>
+  <p>Consider this distribution of ratings:</p>
+  <p><img border="0" src="../01/images/entropy09.gif" width="391" height="56"></p>
+  <p>The uncertainty calculation would be</p>
+  <p><img border="0" src="../01/images/entropy10.gif" width="411" height="90"></p>
+  <p>Suppose we wanted to send a coded binary message that would indicate what 
+   category the rater chose. A simple approach would use three binary digits</p>
+  <ul>
+    <li>A=000,</li>
+    <li>B=001,</li>
+    <li>C=010,</li>
+    <li>D=011,</li>
+    <li>E=100.</li>
+  </ul>
+  <p>&nbsp;to send the message. But you could use the probabilities involved to save 
+   a bit of time. Set the most common category to a shorter binary string, and 
+   longer strings to the less common categories</p>
+  <ul>
+    <li>A=1,</li>
+    <li>B=000,</li>
+    <li>C=001,</li>
+    <li>D=010,</li>
+    <li>E=011.</li>
+  </ul>
+  <p>Then half of the time we would only use one bit to send the message, the 
+   other half of the time, we'd need three bits. On average, you would use two 
+   bits, which is exactly the number produced by our uncertainty calculation.</p>
+  <p>This example is a bit tricky because you might ask, why couldn't I use two 
+   bits for B, C, D, and E. This would lead to a coding of</p>
+  <ul>
+    <li>A=1,</li>
+    <li>B=00,</li>
+    <li>C=01,</li>
+    <li>D=10,</li>
+    <li>E=11.</li>
+  </ul>
+  <p>The problem with this is that unless you could separate the bits, then you 
+   couldn't distinguish between AA (11) and E (11). You'd need a stop bit or 
+   some other type of separator, which would add to the average length of a 
+   message.</p>
+  <p>Morse code also takes advantage of probabilities, with common letters being 
+   shorter combinations of dots and dashes. The <b><font color="#00FF00">single 
+   dot and single dash are E and T</font></b>, while the <b>
+   <font color="#00FFFF">dot-dot, dot-dash, dash-dot, and dash-dash are I, A, N, 
+   and M</font></b>, respectively. The letters that require <b>
+   <font color="#FF0000">four dots/dashes are B, C, F, H, J, L, P, Q, V, X, Y, 
+   and Z</font></b>. Morse code, of course, was developed long before we 
+   understood concepts like information theory, so it is not an optimal coding. 
+   Still it represents an interesting example.</p>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="520">
+    <tr>
+      <td width="40" align="center"><font color="#00FFFF"><b>A</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>B</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>C</b></font></td>
+      <td width="40" align="center"><b>D</b></td>
+      <td width="40" align="center"><font color="#00FF00"><b>E</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>F</b></font></td>
+      <td width="40" align="center"><b>G</b></td>
+      <td width="40" align="center"><font color="#FF0000"><b>H</b></font></td>
+      <td width="40" align="center"><font color="#00FFFF"><b>I</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>J</b></font></td>
+      <td width="40" align="center"><b>K</b></td>
+      <td width="40" align="center"><font color="#FF0000"><b>L</b></font></td>
+      <td width="40" align="center"><font color="#00FFFF"><b>M</b></font></td>
+    </tr>
+    <tr>
+      <td width="40" align="center"><font color="#00FFFF"><b>.-</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>-...</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>-.-.</b></font></td>
+      <td width="40" align="center"><b>-..</b></td>
+      <td width="40" align="center"><font color="#00FF00"><b>.</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>..-.</b></font></td>
+      <td width="40" align="center"><b>--.</b></td>
+      <td width="40" align="center"><font color="#FF0000"><b>....</b></font></td>
+      <td width="40" align="center"><font color="#00FFFF"><b>..</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>.---</b></font></td>
+      <td width="40" align="center"><b>-.-</b></td>
+      <td width="40" align="center"><font color="#FF0000"><b>.-..</b></font></td>
+      <td width="40" align="center"><font color="#00FFFF"><b>--</b></font></td>
+    </tr>
+    <tr>
+      <td width="40" align="center"><font color="#00FFFF"><b>N</b></font></td>
+      <td width="40" align="center"><b>O</b></td>
+      <td width="40" align="center"><font color="#FF0000"><b>P</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>Q</b></font></td>
+      <td width="40" align="center"><b>R</b></td>
+      <td width="40" align="center"><b>S</b></td>
+      <td width="40" align="center"><font color="#00FF00"><b>T</b></font></td>
+      <td width="40" align="center"><b>U</b></td>
+      <td width="40" align="center"><font color="#FF0000"><b>V</b></font></td>
+      <td width="40" align="center"><b>W</b></td>
+      <td width="40" align="center"><font color="#FF0000"><b>X</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>Y</b></font></td>
+      <td width="40" align="center"><font color="#FF0000"><b>Z</b></font></td>
+    </tr>
+    <tr>
+      <td width="40" align="center"><font color="#00FFFF">-.</font></td>
+      <td width="40" align="center">---</td>
+      <td width="40" align="center"><font color="#FF0000">.--.</font></td>
+      <td width="40" align="center"><font color="#FF0000">--.-</font></td>
+      <td width="40" align="center">.-.</td>
+      <td width="40" align="center">...</td>
+      <td width="40" align="center"><font color="#00FF00">-</font></td>
+      <td width="40" align="center">..-</td>
+      <td width="40" align="center"><font color="#FF0000">...-</font></td>
+      <td width="40" align="center">.--</td>
+      <td width="40" align="center"><font color="#FF0000">-..-</font></td>
+      <td width="40" align="center"><font color="#FF0000">-.--</font></td>
+      <td width="40" align="center"><font color="#FF0000">--..</font></td>
+    </tr>
+  </table>
+  <p>In general, there is not always a coding that gives the optimal number of 
+   bits on average. The uncertainty represents the lower bound on average 
+   compression rate.</p>
+</blockquote>
+<p><b>Huffman encoding</b></p>
+<blockquote>
+  <p>One of the compression methods used by various Zip programs,
+   <a href="http://www.nist.gov/dads/HTML/huffmanEncoding.html">Huffman encoding</a>, 
+   takes advantage of this feature. Instead of allocating 7/8 bits to each 
+   character, it will remap the characters with the most frequently occurring 
+   characters having short bit lengths and the least frequently occurring 
+   characters having long bit lengths.</p>
+  <p>The following example appears on a rather amazing
+   <a href="http://ciips.ee.uwa.edu.au/~morris/Year2/PLDS210/huffman.html">page 
+   that animates the Huffman encoding algorithm</a>. If you were to use a simple 
+   binary coding, it would require 5 bits for each character of the alphabet 
+   A-Z. But Huffman Encoding uses a variable number of bits to represent each 
+   letter. Notice that </p>
+  <ul>
+    <li><b><font color="#00FF00">E and T use 3 bits,</font></b></li>
+    <li><b><font color="#00FFFF">A, I, L, N, O, R, and S use 4 bits, </font></b>
+    </li>
+    <li><b>B, C, D, F, G, H, M, P, U, W, and Y use 5-6 bits, and </b></li>
+    <li><b><font color="#FF0000">J, K, Q, V, X and Z use 7-12 bits.</font></b></li>
+  </ul>
+</blockquote>
+<p><img border="0" src="../01/images/inform9.gif" width="603" height="195"><br>
+ <img border="0" src="../01/images/inform10.gif" width="603" height="193"><br>
+ <img border="0" src="../01/images/inform11.gif" width="603" height="176"></p>
+<blockquote>
+  <p>The table shows that the surprisal values are close to the number of digits 
+   used in Huffman encoding. The weighted average surprisal is 4.167, which 
+   tells us that it takes slightly more than 4 bits of information to code this 
+   data. This is confirmed by the weighted average number of bits, 4.196, which 
+   is just a tiny bit higher than the uncertainty. </p>
+</blockquote>
+<p><b>Application to genetics</b></p>
+<blockquote>
+  <p>This is a group of DNA segments representing Lambda cI and cro binding 
+   sites.</p>
+</blockquote>
+<p><img border="0" src="../01/images/inform1.gif" width="609" height="251"></p>
+<blockquote>
+  <p>Notice that there are some common patterns to these DNA segments but also 
+   some uncertainty, especially at location zero. Information theory helps 
+   define the degree to which these DNA segments have common features.</p>
+  <p>First we need to compute the surprisal values.</p>
+</blockquote>
+<p><img border="0" src="../01/images/inform2.gif" width="609" height="97"></p>
+<blockquote>
+  <p>If a letter has probability zero, that equals an infinite surprisal value 
+   and is dentoed by Inf in the table. Notice that letters A and G have high 
+   surprisal values in the -9 position because they only appear rarely.</p>
+  <p>The weighted surprisals appear below.</p>
+</blockquote>
+<p><img border="0" src="../01/images/inform3.gif" width="609" height="137"></p>
+<blockquote>
+  <p>The uncertainty for this group of DNA segments is 17.5. The maximum 
+   possible uncertainty is 38 (2 bits times 19 base pairs). The information is 
+   10.5 which represents the maximum possible uncertainty minus the uncertainty 
+   observed in this group.</p>
+  <p>One way of thinking of this is that if you knew nothing about the 19 base 
+   pair DNA segment, you would have a large amount of uncertainty (38 bits). If 
+   instead you restricted the DNA segments to the 12 listed above, you would 
+   have a lot less uncertainty. The information contained in these DNA segments 
+   represents the decrease in uncertainty.</p>
+  <p>You can also compute the information at any given base pair. The 
+   information is highest at -7, -5, and +5, because these are the base pairs 
+   where there is no variation. Information is also high at -3, +3, because the 
+   probabilities of C and G respectively are almost 100%.</p>
+  <p>The following graph illustrates the information at each base pair with the 
+   heights of each letter indicating how much that particular letter contributes 
+   to the information.</p>
+</blockquote>
+<p>&nbsp;</p>
+<p><img border="0" src="../01/images/entropy22.gif" width="620" height="312"></p>
+<p><b>Evaluating new DNA segments</b></p>
+<blockquote>
+  <p>There's another way to calculate uncertainty for these DNA segments, and 
+   although it is a bit more work, it provides a clue for how to evaluate new 
+   DNA segments. Notice that for each base pair location, we have surprisal 
+   values for A, C, G, and T. We can evaluate those surprisal values for each 
+   DNA segment.</p>
+</blockquote>
+<p><img border="0" src="../01/images/inform4.gif" width="609" height="212"></p>
+<p><img border="0" src="../01/images/inform5.gif" width="609" height="212"></p>
+<p><img border="0" src="../01/images/inform6.gif" width="609" height="212"></p>
+<p><img border="0" src="../01/images/inform7.gif" width="609" height="212"></p>
+<blockquote>
+  <p>Now we can average these values across all 12 DNA segments. This gives us 
+   the same weighted surprisals and the same uncertainty as before.</p>
+</blockquote>
+<p><img border="0" src="../01/images/inform8.gif" width="609" height="40"></p>
+<blockquote>
+  <p>This could help us understand whether one or more of the DNA segments does 
+   not fit in with the others, but more importantly, it can help us identify new 
+   DNA segments that might fit into the same class of binding sites. If a DNA 
+   segment has a reasonably low total surprisal, then that indicates that this 
+   DNA segment might fit in, but if the surprisal is too high, then this DNA 
+   segment is too different to be in this class of binding sites.</p>
+</blockquote>
+<p><b>Information theory applied to sperm morphology classifications</b></p>
+<blockquote>
+  <p>One of the more fascinating applications of information theory is in the 
+   study of sperm morphology, the classification of sperm cells into various 
+   size and shape categories.</p>
+  <p>Human sperm exist in many different shapes and sizes. There are many 
+   irregular and abnormal forms. Forms display continuous variation and there 
+   are lots of gradual transitions from one form to another. As a result, sperm 
+   morphology has greater inter- and intra-laboratory variation than many other 
+   tests.</p>
+  <p>Although sperm morphology is a tool used in fertility assessment, fertility 
+   is a complex process that involves multiple organs of both the male and the 
+   female. Given this complexity, it would be a mistake to think that a sperm 
+   analysis is going to be a valid maker of fertility. Instead, semen analysis 
+   is a &quot;gateway&quot; test for fertility. It determines the path of further testing 
+   and which partner should receive greater scrutiny.</p>
+  <p>There are many sperm morphology classification schemes, and much 
+   controversy over what to use.</p>
+  <p>A good friend of mine, Susan Rothmann has an NIH grant to review morphology 
+   classification as it is currently practiced. The long term goal of the grant 
+   is to get greater consistency within and between laboratories. The 
+   preliminary data from this grant involved the classification of 160 sperm 
+   images by 99 trained raters.</p>
+  <p>Raters were asked to evaluate</p>
+  <ul>
+    <li>&nbsp;the sperm head,</li>
+    <li>the acrosome region of the head, </li>
+    <li>the postacrosomal regions of the head,</li>
+    <li>the sperm midpiece, and</li>
+    <li>the sperm tail.</li>
+  </ul>
+  <p>The following picture describes the various parts of the sperm cell:</p>
+  <p><img border="0" src="../01/images/entropy23.gif" width="393" height="463"></p>
+  <p>In addition, the raters were asked to classify non-sperm cells such as 
+   monocytes and macrophages that appeared in the sample. Here is a list of the 
+   classifications available in the Rothmann study:</p>
+  <ul>
+    <li>Head not oval (HdNOv)</li>
+    <li>Head round (HdRnd)</li>
+    <li>Head tapering (HdTap)</li>
+    <li>Head pyriform (HdPyr)</li>
+    <li>Multiple heads (HdMul)</li>
+    <li>Amorphous head (HdAmr)</li>
+    <li>Small head (HdSml)</li>
+    <li>Large head (HdLrg)</li>
+    <li>Abnormal Head Ratio (HdRat)</li>
+    <li>Acrosome large (AcLrg)</li>
+    <li>Acrosome small (AcSml)</li>
+    <li>Acrosome deformed (AcDef)</li>
+    <li>Acrosome missing (AcMis)</li>
+    <li>Postacrosomal abnormal size (PoSiz)</li>
+    <li>Postacrosomal abnormal shape (PoShp)</li>
+    <li>Vacuoles (Vacuo)</li>
+    <li>Midpiece thick (MdThk)</li>
+    <li>Midpiece very thick (MdVTh)</li>
+    <li>Midpiece irregular (MdIrr)</li>
+    <li>Midpiece length (MdLen)</li>
+    <li>Midpiece bent (MdBnt)</li>
+    <li>Midpiece missing (MdMis)</li>
+    <li>Midpiece droplet (MdCyt)</li>
+    <li>&nbsp;Midpiece incorrect insertion(MdIns)</li>
+    <li>Tail coiled (TCoil)</li>
+    <li>Tail short (TShrt)</li>
+    <li>Tail broken (TBrok)</li>
+    <li>Multiple tails (TMult)</li>
+    <li>Hairpin tail (THpin)</li>
+    <li>Tail width (TWdth)</li>
+    <li>Tail droplet (TDrop)</li>
+    <li>Tail bent (TBent)</li>
+    <li>Leukocyte (Leuko)</li>
+    <li>Polymononuclear leukocyte (P.M.N)</li>
+    <li>Monocyte (Moncy)</li>
+    <li>Macrophage (Mcrph)</li>
+    <li>Immature sperm cell (Immat)</li>
+    <li>Spermatid (Sptid)</li>
+    <li>Spermatocyte (Spcyt)</li>
+  </ul>
+  <p>Not every person will use every one of these abnormal categories. The list 
+   was intended to be the collection of classifications across all systems. In 
+   addition to the specific rating categories shown above, each rater was asked 
+   to provide an overall classification:</p>
+  <ul>
+    <li>&nbsp;Definitely normal,</li>
+    <li>Possibly abnormal,</li>
+    <li>Definitely abnormal, and </li>
+    <li>Non-sperm cell.</li>
+  </ul>
+  <p>Here are two examples of the micrographs of sperm cells that the raters 
+   were asked to evaluate.</p>
+</blockquote>
+<p><img border="0" src="../01/images/entropy29.gif" width="581" height="441"></p>
+<blockquote>
+  <p>This picture and the one below it are not as good quality as the ones that 
+   the raters used, but I just wanted you to see the general type of images they 
+   were asked to rate.</p>
+</blockquote>
+<p><img border="0" src="../definitions/images/b150gs.gif" width="585" height="440"></p>
+<p><b>What information theory can tell us about sperm classification</b></p>
+<blockquote>
+  <p>Certain sperm images are easier to classify and others are more difficult 
+   to classify. The former represent exemplars that can be displayed as model 
+   images of a particular classification. The latter represent areas of 
+   controversy and disagreement that need to be examined, perhaps by a consensus 
+   group, to resolve the ambiguity. Identifying the easy and difficult images is 
+   difficult by visual inspection, because of the large number of images and the 
+   variety of classifications available. We plan to use uncertainty to sift 
+   through those images and rapidly identify images both easy and difficult for 
+   further study.</p>
+</blockquote>
+<p><b>Uncertainty for overall classification</b></p>
+<blockquote>
+  <p>The table below shows the overall classification and the uncertainty 
+   calculated on that classification.</p>
+</blockquote>
+<table FRAME="VOID" CELLSPACING="0" COLS="7" RULES="GROUPS" BORDER="1" style="font-family: Albany; font-size: x-small">
+  <colgroup>
+    <col WIDTH="58"><col WIDTH="58"><col WIDTH="58"><col WIDTH="58">
+    <col WIDTH="58"><col WIDTH="58"><col WIDTH="58">
+  </colgroup>
+  <tbody style="font-family: Albany; font-size: x-small">
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" style="font-family: Albany; font-size: x-small">
+      Cell</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" style="font-family: Albany; font-size: x-small">
+      Norm</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" style="font-family: Albany; font-size: x-small">
+      Bord</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" style="font-family: Albany; font-size: x-small">
+      Abno</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" style="font-family: Albany; font-size: x-small">
+      NonS</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" style="font-family: Albany; font-size: x-small">
+      NotC</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" style="font-family: Albany; font-size: x-small">
+      Unce</td>
+    </tr>
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="1" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      1</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="24" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      24</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="34" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      34</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="41" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      41</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="1.6" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      1.6</td>
+    </tr>
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="7" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      7</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="62" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      62</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="18" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      18</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="19" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      19</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="1.3" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      1.3</td>
+    </tr>
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="2" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      2</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="79" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      79</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="12" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      12</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="7" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      7</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="1" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      1</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="1" SDNUM="1033;0;0.0" style="font-family: Albany; font-size: x-small">
+      1.0</td>
+    </tr>
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="5" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      5</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="13" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      13</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="8" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      8</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="78" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      78</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0.9" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0.9</td>
+    </tr>
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="3" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      3</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="4" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      4</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="10" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      10</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="85" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      85</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0.7" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0.7</td>
+    </tr>
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="4" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      4</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="5" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      5</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="94" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      94</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0.3" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0.3</td>
+    </tr>
+    <tr style="font-family: Albany; font-size: x-small">
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="6" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      6</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="1" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      1</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="2" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      2</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="96" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      96</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0</td>
+      <td WIDTH="58" HEIGHT="16" ALIGN="RIGHT" SDVAL="0.2" SDNUM="1033;" style="font-family: Albany; font-size: x-small">
+      0.2</td>
+    </tr>
+</table>
+<blockquote>
+  <p>The first column identifies the particular cell, and the possible 
+   classifications are abbreviated as</p>
+  <ul>
+    <li>Norm (Definitely normal)</li>
+    <li>Bord (Borderline abnormal)</li>
+    <li>Abno (Definitely abnormal)</li>
+    <li>NonS (Non-Sperm Cell)</li>
+    <li>NotC (Not Classified)</li>
+  </ul>
+  <p>and &quot;Entr&quot; represents the calculated uncertainty. The cell with the 
+   greatest uncertainty (among the first seven cells) is cell #1. You can see by 
+   the rater counts that there was very little agreement about the overall 
+   classification of this cell.</p>
+  <p>The two cells with the least uncertainty are cells 4 and 6, and these are 
+   cells that pretty much everyone agrees are abnormal.</p>
+</blockquote>
+<p><b>Information theory for individual classification</b></p>
+<blockquote>
+  <p>It is also possible to calculate uncertainty for each individual 
+   classification and then add these uncertainty values together. Cells with 
+   high total uncertainty represent cells with uncertainty across several 
+   classification categories. Here are the results for the first seven sperm 
+   cells with the percentages shown for any category selected by 5% or more of 
+   the raters:</p>
+  <p>Sperm #6. Uncertainty = 8.1</p>
+  <ul>
+    <li>TCoil: 53%</li>
+    <li>TShrt: 44%</li>
+    <li>MdThk: 31%</li>
+    <li>MdVTh: 23%</li>
+    <li>THpin: 17%</li>
+    <li>MdLen: 13%</li>
+    <li>MdIrr: 11%</li>
+    <li>TWdth: 10%</li>
+    <li>HdNOv: 8%</li>
+    <li>HdPyr: 6%</li>
+  </ul>
+  <p>Sperm #5. Uncertainty = 7.6</p>
+  <ul>
+    <li>Vacuo: 57%</li>
+    <li>HdNOv: 32%</li>
+    <li>HdRnd: 25%</li>
+    <li>THpin: 20%</li>
+    <li>AcSml: 12%</li>
+    <li>HdSml: 11%</li>
+    <li>HdRat: 10%</li>
+    <li>TCoil: 9%</li>
+  </ul>
+  <p>Sperm #3. Uncertainty = 6.4</p>
+  <ul>
+    <li>MdCyt: 64%</li>
+    <li>HdNOv: 17%</li>
+    <li>MdIrr: 16%</li>
+    <li>HdTap: 14%</li>
+    <li>MdVTh: 10%</li>
+    <li>AcSml: 10%</li>
+    <li>HdRat: 9%</li>
+    <li>HdSml: 9%</li>
+    <li>MdThk: 7%</li>
+    <li>HdPyr: 5%</li>
+  </ul>
+  <p>Sperm #1. Uncertainty = 5.8</p>
+  <ul>
+    <li>HdNOv: 33%</li>
+    <li>HdPyr: 29%</li>
+    <li>PoShp: 14%</li>
+    <li>MdIns: 9%</li>
+    <li>MdThk: 9%</li>
+    <li>HdLrg: 9%</li>
+    <li>HdRat: 8%</li>
+    <li>HdRnd: 7%</li>
+    <li>HdTap: 6%</li>
+  </ul>
+  <p>Sperm #4. Uncertainty = 5.2</p>
+  <ul>
+    <li>&nbsp;MdVTh: 58%</li>
+    <li>&nbsp;MdCyt: 52%</li>
+    <li>&nbsp;HdNOv: 12%</li>
+    <li>&nbsp;MdIrr: 9%</li>
+    <li>&nbsp;HdLrg: 7%</li>
+    <li>&nbsp;HdRat: 6%</li>
+  </ul>
+  <p>Sperm #7. Uncertainty = 2.4</p>
+  <ul>
+    <li>&nbsp;TBrok: 10%</li>
+    <li>&nbsp;TShrt: 9%</li>
+    <li>&nbsp;HdNOv: 7%</li>
+  </ul>
+  <p>Sperm #2. Uncertainty = 1.7</p>
+  <ul>
+    <li>HdNOv: 8%</li>
+  </ul>
+  <p>Notice that cell #6, the cell with the lowest uncertainty on the overall 
+   classification, has the highest uncertainty among the seven cells when 
+   looking at the individual classification levels. This reflects the fact that 
+   raters agree that the cell is abnormal, but they can't agree on the type of 
+   abnormality.</p>
+</blockquote>
+<p><b>Future work--joint and conditional uncertainty</b></p>
+<blockquote>
+  <p>To calculate the total uncertainty in the sperm classification system 
+   above, I oversimplified a bit by adding the individual entropies for each 
+   individual classification system. This ignores some possibly important 
+   information. Let's suppose that we have a two classifications: Small head (HdSml) 
+   and Missing Acrosome (AcMis). Let's suppose there is a high amount of 
+   uncertainty in both categories:</p>
+  <table FRAME="VOID" CELLSPACING="0" COLS="3" RULES="GROUPS" BORDER="1" style="font-family: Albany; font-size: x-small">
+    <colgroup>
+      <col WIDTH="57"><col WIDTH="57"><col WIDTH="57">
+    </colgroup>
+    <tbody style="font-family: Albany; font-size: x-small">
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="LEFT" style="font-family: Albany; font-size: x-small">
+        <br>
+&nbsp;</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        Yes</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        No</td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        HdSml</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+      </tr>
+  </table>
+  <p>and</p>
+  <table FRAME="VOID" CELLSPACING="0" COLS="3" RULES="GROUPS" BORDER="1" style="font-family: Albany; font-size: x-small">
+    <colgroup>
+      <col WIDTH="57"><col WIDTH="57"><col WIDTH="57">
+    </colgroup>
+    <tbody style="font-family: Albany; font-size: x-small">
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="LEFT" style="font-family: Albany; font-size: x-small">
+        <br>
+&nbsp;</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        Yes</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        No</td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        AcMis</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+      </tr>
+  </table>
+  <p>There would be one full bit of uncertainty with each classification. But 
+   how do these classifications behave jointly? Here are two possibilities:</p>
+  <table FRAME="VOID" CELLSPACING="0" COLS="3" RULES="GROUPS" BORDER="1" style="font-family: Albany; font-size: x-small">
+    <colgroup>
+      <col WIDTH="57"><col WIDTH="57"><col WIDTH="57">
+    </colgroup>
+    <tbody style="font-family: Albany; font-size: x-small">
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="LEFT" style="font-family: Albany; font-size: x-small">
+        <br>
+&nbsp;</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        Yes</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        No</td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        Yes</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        0%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        No</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        0%</td>
+      </tr>
+  </table>
+  <p>and</p>
+  <table FRAME="VOID" CELLSPACING="0" COLS="3" RULES="GROUPS" BORDER="1" style="font-family: Albany; font-size: x-small">
+    <colgroup>
+      <col WIDTH="57"><col WIDTH="57"><col WIDTH="57">
+    </colgroup>
+    <tbody style="font-family: Albany; font-size: x-small">
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="LEFT" style="font-family: Albany; font-size: x-small">
+        <br>
+&nbsp;</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        Yes</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        No</td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        Yes</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        No</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+      </tr>
+  </table>
+  <p>The first situation reflects a case where everyone agrees the cell is 
+   abnormal but half of the raters call it a small head and half of the raters 
+   call it a missing acrosome. The only uncertainty is in the use of labels.</p>
+  <p>The second situation is much more uncertain. A quarter of the raters say 
+   the cell has no defects, a quarter say is has two defects, and the remaining 
+   raters are split between calling the cell a small head only or a missing 
+   acrosome only.</p>
+  <p>You could calculate joint uncertainty by just treating the 2 by 2 table as 
+   a 4 by1 set of probabilities:</p>
+  <table FRAME="VOID" CELLSPACING="0" COLS="4" RULES="GROUPS" BORDER="1" style="font-family: Albany; font-size: x-small">
+    <colgroup>
+      <col WIDTH="57"><col WIDTH="57"><col WIDTH="57"><col WIDTH="57">
+    </colgroup>
+    <tbody style="font-family: Albany; font-size: x-small">
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">Yes/Yes</font></td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">Yes/No</font></td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">No/Yes</font></td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">No/No</font></td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        0%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.5" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        50%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        0%</td>
+      </tr>
+  </table>
+  <p>and</p>
+  <table FRAME="VOID" CELLSPACING="0" COLS="4" RULES="GROUPS" BORDER="1" style="font-family: Albany; font-size: x-small">
+    <colgroup>
+      <col WIDTH="57"><col WIDTH="57"><col WIDTH="57"><col WIDTH="57">
+    </colgroup>
+    <tbody style="font-family: Albany; font-size: x-small">
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">Yes/Yes</font></td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">Yes/No</font></td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">No/Yes</font></td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" style="font-family: Albany; font-size: x-small">
+        <font FACE="Arial">No/No</font></td>
+      </tr>
+      <tr style="font-family: Albany; font-size: x-small">
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+        <td WIDTH="57" HEIGHT="17" ALIGN="RIGHT" VALIGN="BOTTOM" SDVAL="0.25" SDNUM="1033;0;0%" style="font-family: Albany; font-size: x-small">
+        25%</td>
+      </tr>
+  </table>
+  <p>This would then allow you to calculate the joint uncertainty, and it would 
+   be 1 bit and 2 bits, respectively. The second situation, has much greater 
+   uncertainty, even though the marginal probabilities are identical to the 
+   first situation.</p>
+  <p>You can also define uncertainty using conditional probabilities, and the 
+   quantity produced, conditional uncertainty, represents how much the 
+   uncertainty in one variable is reduced when another variable is known.</p>
+  <p><img border="0" src="../01/images/entropy30.gif" width="525" height="73"></p>
+  <p><img border="0" src="../01/images/entropy31.gif" width="340" height="40"></p>
+  <p>There are several sperm morphology classification systems in use. Two 
+   commonly used systems are WHO-3 classification and strict classification. 
+   Strict classification works like it sounds, with borderline defects being 
+   classified as abnormal. In contrast, WHO-3 tends to classify borderline 
+   defects as normal.</p>
+  <p>Each of the 160 raters identified the system that they use. One area I want 
+   to look at is how the uncertainty decreases when you condition on rating 
+   system.</p>
+</blockquote>
+<p><b>Acknowledgements</b></p>
+<blockquote>
+  <p>The Huffman coding example comes from John Morris's web pages, in 
+   particular,
+   <a href="http://ciips.ee.uwa.edu.au/~morris/Year2/PLDS210/huffman.html">
+   http://ciips.ee.uwa.edu.au/~morris/Year2/PLDS210/huffman.html</a> </p>
+  <p>The genetics example comes from
+   <a href="http://www.lecb.ncifcrf.gov/~toms/">Tom Schneider's web site</a> and 
+   the sequence logo graph appears on the page
+   <a href="http://www.lecb.ncifcrf.gov/~toms/paper/trieste1996/latex/node1.html">
+   http://www.lecb.ncifcrf.gov/~toms/paper/trieste1996/latex/node1.html</a> </p>
+  <p>The diagram showing the regions of the sperm cell is reproduced with 
+   permission from The Andrology Trainer, Second Edition, Donna Kinzer and Susan 
+   Rothmann. 1998. Fertility Solutions, Inc. Cleveland, OH. Page 1-8. The two 
+   micrographs of sperm cells are also reproduced with permission from Fertility 
+   Solutions, Inc.</p>
+</blockquote>
+
+</body>
+
+</html>

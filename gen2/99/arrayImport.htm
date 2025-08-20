@@ -1,0 +1,452 @@
+<html>
+
+<head>
+
+<title>Stats: Importing data from a microarray experiment (no date)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Importing data from microarray studies (no date)</strong> [incomplete]</p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/micro-array-import/">new website</a>.</p>
+
+<p>There are so many different ways that data can come to you in a microarray 
+ experiment that it is hard to document how to import the data. Here are a few 
+ examples, plus some random notes and thoughts.</p>
+<p><b>The data structure for Affymetrix chips</b></p>
+<blockquote>
+  <p>Affymetrix has several formats, DAT (image), CEL (probe), and CHP. [Explain 
+   what these formats are]</p>
+</blockquote>
+<p><b>The data structure for cDNA arrays</b></p>
+<blockquote>
+  <p>A cDNA array (spotted array) is interesting from a statistical perspective 
+   because there is a pairing that adds precision but which also adds a layer of 
+   complexity.</p>
+  <p STYLE="page-break-after: avoid; margin-bottom: 0cm">Red signal is also 
+   called the Cy5 signal. The green signal is also called the Cy3 signal.</p>
+  <p>Typically, data from these arrays appears in large text files with tab or 
+   comma delimiters. There are several header lines at the top of the file 
+   before you see data on individual spots. Because these formats are text 
+   files, you can manipulate them easily. But there is only limited 
+   standardization of these files at this stage. A nice summary of the 
+   conflicting data formats appears at<a href="http://www.scmbb.ulb.ac.be/~jvanheld/web_course_microarrays/practicals/data_formats.html"> 
+  www.scmbb.ulb.ac.be/~jvanheld/web_course_microarrays/practicals/data_formats.html</a>.</p>
+  <p>There is usually one file per slide with a header of several lines. Here's 
+   an example of the header file for
+   <a href="http://llmpp.nih.gov/lymphoma/data/rawdata/lc4b007rex2.DAT">array 
+   lc4b007</a> from the <a href="http://llmpp.nih.gov/lymphoma/">website 
+   providing supplemental data</a> for the
+   <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=10676951&dopt=Abstract">
+   Alizadeh 2000 Nature Study</a>. This file was produced by the
+   <a href="http://rana.lbl.gov/manuals/ScanAlyzeDoc.pdf">ScanAlyze software 
+   system</a> which is available for free for academic and non-profit 
+   researchers from <a href="http://rana.lbl.gov/index.htm">Eisen Lab</a> at 
+   Lawrence Berkeley National Lab..</p>
+  <ul>
+    <li>HEADER SPOT GRID TOP LEFT BOT RIGHT ROW COL CH1I CH1B CH1AB CH2I CH2B 
+    CH2AB SPIX BGPIX EDGE RAT2 MRAT REGR CORR LFRAT CH1GTB1 CH2GTB1 CH1GTB2 
+    CH2GTB2 CH1EDGEA CH2EDGEA FLAG CH1KSD CH1KSP CH2KSD CH2KSP</li>
+    <li>REMARK SOFTWARE ScanAlyze</li>
+    <li>REMARK SOFTVERS 2.30</li>
+    <li>REMARK CH1 IMAGE lc4b007g1</li>
+    <li>REMARK CH2 IMAGE lc4b007r1</li>
+    <li>REMARK GRID FILE ..\..\AshGrids\lc4b007.SAG</li>
+    <li>REMARK DATE 8/28/99</li>
+    <li>REMARK TIME 10:59:34 AM</li>
+  </ul>
+  <p>The first line provides names for each of the columns to follow. The SPOT, 
+   GRID, TOP, LEFT, BOT, RIGHT ROW, and COL give information about the physical 
+   location of the spot. The values for CH*I (* equals 1 for channel 1 and 2 for 
+   channel 2) are the green and red intensities for an individual spot on the 
+   array. The values for CH*B are median background intensities and CH*BA are 
+   mean background intensities. SPIX and BGPIX are the number of pixels used for 
+   the spot and the background, respectively. The quantities MRAT, REGR, CORR, 
+   and LFRAT represent quality checks on the spot image. In a large production 
+   environment, these values might be useful in a quality control chart. 
+   Additional parameters for assessing the quality of a spot are CH*GTB1 which 
+   represent how many pixels in the spot exceed background. For a weak spot, 
+   these values will be close to 0.5. Alternate measures CH*GTB2, CH*KSD, and 
+   CH*KSP represent other criteria for identifying weak spots. FLAG is a user 
+   defined variable to identify spots that the user has special information on.</p>
+  <p>Here's what the header looks like for another file, produced locally with 
+   Affymetrix Jaguar Image Analysis software:</p>
+  <ul>
+    <li>Row Col SpotQuality Girl647 ALEXA647SD ALEXA647Pixels ALEXA647BG 
+    ALEXA647BGSD Normal555 ALEXA555SD ALEXA555Pixels ALEXA555BG ALEXA555BGSD 
+    `647/555 Name Name Name Name</li>
+  </ul>
+  <p>The spot intensities are stored under &quot;Girl 647&quot; and &quot;Normal 555.&quot; The 
+   standard deviation of the spot intensity is labelled SD, Pixels is the number 
+   of pixels in the spot, BG is the intensity of the background, and BGSD is the 
+   standard deviation of the background. The 647/555 column represents the ratio 
+   of spot intensities (unadjusted for background levels).</p>
+  <p>Genepix uses a format (GPR) that has similar information about the signal 
+   and background, with some quality checks along the lines of those produced by 
+   SnanAlyze software. The specification for the GPR format is on the web at<a href="http://www.axon.com/gn_GenePix_File_Formats.html#gpr"> 
+  www.axon.com/gn_GenePix_File_Formats.html#gpr</a>.</p>
+  <p>The GPR format is also a text file. It has several header lines that give 
+   information about the particular experiment. After the header lines comes 
+   data about particular spots:</p>
+  <ul>
+    <li>Block Column Row Name ID X Y Dia. F635Median F635Mean F635SD B635Median 
+    B635Mean B635SD %&gt;B635+1SD %&gt;B635+2SD F635%Sat. F532Median F532Mean F532SD 
+    B532Median B532Mean B532SD %&gt;B532+1SD %&gt;B532+2SD F532%Sat. RatioOfMedians 
+    RatioOfMeans MedianOfRatios MeanOfRatios RatioSD RgnRatio RgnR2 FPixels 
+    BPixels SumOfMedians SumOfMeans LogRatio Flags Normalize F1Median-B1 
+    F2Median-B2 F1Mean-B1 F2Mean-B2 SNR1 F1TotalIntensity Index UserDefined</li>
+  </ul>
+  <p>The first seven columns of data give the location and information about 
+   individual spots. The green signal information is labeled as 635 and the red 
+   signal information is labeled as 532, though later in the file the signals 
+   are 1 and 2, respectively. The letter F refers to the Foreground and B refers 
+   to the background.</p>
+  <p>Spot is an open source software program for image analysis of microarrays 
+   that also uses the R programming language. The files produced by Spot has a 
+   single header line</p>
+  <ul>
+    <li>indexs grid.r grid.c spot.r spot.c area Gmean Gmedian GIQR Rmean Rmedian 
+    RIQR bgGmean bgGmed bgGSD bgRmean bgRmed bgRSD valleyG valleyR morphG 
+    morphG.erode morphG.close.open morphR morphR.erode morphR.close.open 
+    logratio perimeter circularity badspot </li>
+  </ul>
+  <p>The letter G represents the green signal, R represents red. and bg 
+   represents background information.</p>
+  <p><b>Layout files</b></p>
+  <p>A second file will provide information linking particular spots for an 
+   array to gene names. For the Alizadeh study, this appears as two separate 
+   text files. The
+   <a href="http://llmpp.nih.gov/lymphoma/data/rawdata/chip_spot_well.tab.txt">
+   first text file</a> links spots on a particular slide to an inhouse DNA ID 
+   number. The
+   <a href="http://llmpp.nih.gov/lymphoma/data/rawdata/well_cloneid_name.tab.txt">
+   second text file</a> links the inhouse DNA ID number to CLONEID and curated 
+   names. This is a bit messy because several different batches of chips were 
+   used and the gene locations moved around from one batch to another.</p>
+  <p>Genepix software has a format for a layout file (GAL format) that appears 
+   to be widely used. The specification for the GAL format is on the web at<a href="http://www.axon.com/gn_GenePix_File_Formats.html#gal"> 
+  www.axon.com/gn_GenePix_File_Formats.html#gal</a>.</p>
+  <p>Here the header lines for a GAL file that comes with Bioconductor.</p>
+  <ul>
+    <li>ATF 1.0</li>
+    <li>19 5</li>
+    <li>&quot;Type=GenePix ArrayList V1.0&quot;</li>
+    <li>&quot;BlockCount=16&quot;</li>
+    <li>&quot;BlockType=0&quot;</li>
+    <li>&quot;Block1= 500, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block2= 4996, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block3= 9492, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block4= 13988, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block5= 500, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block6= 4996, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block7= 9492, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block8= 13988, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block9= 500, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block10= 4996, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block11= 9492, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block12= 13988, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block13= 500, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block14= 4996, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block15= 9492, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block16= 13988, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block&quot; &quot;Row&quot; &quot;Column&quot; &quot;ID&quot; &quot;Name&quot;</li>
+  </ul>
+  <p>The &quot;19 5&quot; in the second line tells you that there are 19 header lines and 
+   that the information about individual spots comes in 5 columns. This 
+   particular array has a four by four grid of printing tips and the Block 
+   information gives details about where these tips produced spots on the 
+   microarray. On this microarray, each spot is uniquely identified by the 
+   printing tip (block), row and column. Id is an internal code name and Name is 
+   the actual name of the gene.&nbsp; </p>
+  <p>If your layout information does not come in a GAL file, it is not too 
+   difficult to convert it to this format. You can skip all of the block 
+   information, if you like. It helps some software link particular data values 
+   to locations on the image file, but that is completely optional. A minimal 
+   GAL file would have the following header:</p>
+  <ul>
+    <li>ATF 1.0</li>
+    <li>1 4</li>
+    <li>&quot;Type=GenePix ArrayList V1.0&quot;</li>
+    <li>&quot;Block&quot; &quot;Column&quot; &quot;Row&quot; &quot;ID&quot;</li>
+  </ul>
+  <p>If your data has only one block then number that block &quot;1&quot; for all of the 
+   spots on your array.</p>
+  <p>Here's some R code that reads in the two layout files for the Alizadeh 
+   study, selects the rows corresponding to the </p>
+  <ul>
+    <li>#</li>
+    <li># f0 gives the path, f1 and f2 the file names</li>
+    <li>#</li>
+    <li>f0 &lt;- &quot;d:/Data/work040524/Bioconductor/&quot;</li>
+    <li>f1 &lt;- &quot;chip_spot_well_tab.txt&quot;</li>
+    <li>f2 &lt;- &quot;well_cloneid_name_tab.txt&quot;</li>
+    <li>#</li>
+    <li># the read.table function gets data from a text file.</li>
+    <li># sep=&quot;\t&quot; for tab delimited file</li>
+    <li># fill=T</li>
+    <li>#</li>
+    <li>chip.spot &lt;- read.table(paste(f0,f1,sep=&quot;&quot;),header=FALSE,sep=&quot;\t&quot;,fill=T)</li>
+    <li>well.clone &lt;- read.table(paste(f0,f2,sep=&quot;&quot;),header=FALSE,sep=&quot;\t&quot;,fill=T)</li>
+    <li>#</li>
+    <li># Since there is no header, we provide variable names below</li>
+    <li>#</li>
+    <li>names(chip.spot) &lt;- c(&quot;ChipBatch&quot;,&quot;SpotNum&quot;,&quot;InhouseID&quot;)</li>
+    <li>names(well.clone) &lt;- c(&quot;InhouseID&quot;,&quot;CloneID&quot;,&quot;CuratedName&quot;)</li>
+    <li>#</li>
+    <li># select the rows of chip.spot corresponding to lc4b</li>
+    <li>#</li>
+    <li>ch0 &lt;- chip.spot[chip.spot$ChipBatch==&quot;lc4b&quot;,]</li>
+    <li>#</li>
+    <li># combine these rows with well.clone</li>
+    <li># all.x=T preserves any unmatched rows</li>
+    <li>#</li>
+    <li>ch1 &lt;- merge(ch0,well.clone,all.x=T)</li>
+    <li>#</li>
+    <li># This layout file does not include rows and columns</li>
+    <li># so we compute them ourselves</li>
+    <li>#</li>
+    <li>row &lt;- ceiling(ch1$SpotNum/24)</li>
+    <li>col &lt;- ch1$SpotNum-24*(row-1)</li>
+    <li>#</li>
+    <li># We need four lines at the beginning of the file</li>
+    <li># Since the GAL format uses double quotes,</li>
+    <li># you should surround these strings with single quotes</li>
+    <li>#</li>
+    <li>h1 &lt;- 'ATF 1.0'</li>
+    <li>h2 &lt;- '1 4'</li>
+    <li>h3 &lt;- '&quot;Type=GenePix ArrayList V1.0&quot;</li>
+    <li>h4 &lt;- '&quot;Block&quot; &quot;Column&quot; &quot;Row&quot; &quot;ID&quot;'</li>
+    <li>#</li>
+    <li># Combine the block (always=1), row, col, and CloneID</li>
+    <li># sep=&quot;\t&quot; places tabs between each value</li>
+    <li>#</li>
+    <li>tail &lt;- paste(rep(1,9216),row,col,ch1$CloneID,sep=&quot;\t&quot;)</li>
+    <li>#</li>
+    <li># f3 is the name of the new file</li>
+    <li>#</li>
+    <li>f3 &lt;- paste(&quot;lc4b&quot;,&quot;.gal&quot;,sep=&quot;&quot;)</li>
+    <li>write(c(h1,h2,h3,h4,tail),file=paste(f0,f3))</li>
+  </ul>
+</blockquote>
+<p><b>Image files</b></p>
+<blockquote>
+  <p>In addition to these text files, microarray data sets will often include an 
+   image of the array in TIFF format.</p>
+</blockquote>
+<p STYLE="page-break-after: avoid; margin-bottom: 0cm"><b>Reading information 
+ into Bioconductor</b></p>
+<p STYLE="page-break-after: avoid; margin-bottom: 0cm">In all of these files, 
+ the four key pieces of information you definitely need are the green signal, 
+ the green background, the red signal, and the red background.</p>
+<p>The marrayInput library of Bioconductor has </p>
+<blockquote>
+  <ul>
+    <li>read.Genepix()</li>
+    <li>read.SMD()</li>
+    <li>read.Spot()</li>
+    <li>read.marrayRaw()</li>
+  </ul>
+</blockquote>
+<p>for reading various microarray formats. While you are reading in the data, 
+ you can also specify layout values, probe sequence information, and/or target 
+ sample information.</p>
+<p><b>MAGE-ML or Microarray Gene Expression Markup Language</b></p>
+<blockquote>
+  <p>[Explain]</p>
+</blockquote>
+<p><b>Importing data from the prenatal liver study</b></p>
+<blockquote>
+  <p>I received 22 Excel files for this project.</p>
+  <ul>
+    <li><code>6286_UM1589Ki_133_FAA.txt</code></li>
+    <li><code>6287_UM1589Li_133_FAA.txt</code></li>
+    <li><code>6288_UM1589Lu_133_FAA.txt</code></li>
+    <li><code>6289_H18058Ki_098_FXX.txt</code></li>
+    <li><code>6290_H18058Lu_098_FXX.txt</code></li>
+    <li><code>6291_H18058Li_098_FXX.txt</code></li>
+    <li><code>6292_H17869Lu_075_XCA.txt</code></li>
+    <li><code>6293_H17869Ki_075_XCA.txt</code></li>
+    <li><code>6294_H17869Li_075_XCA.txt</code></li>
+    <li><code>7446_UM1690Li_140_MCA.txt</code></li>
+    <li><code>7447_UM1621Li_130_MCA.txt</code></li>
+    <li><code>7448_UM1631Li_133_MAA.txt</code></li>
+    <li><code>7449_UM1566Li_134_MAA.txt</code></li>
+    <li><code>7450_H18354Li_096_MXX.txt</code></li>
+    <li><code>7451_H18381Li_096_MXX.txt</code></li>
+    <li><code>7452_H18390Li_094_MXX.txt</code></li>
+    <li><code>7453_H18401Li_076_XXX.txt</code></li>
+    <li><code>7454_H18508Li_076_XXX.txt</code></li>
+    <li><code>7455_H18535Li_075_XXX.txt</code></li>
+    <li><code>7456_WU0831Li_1.7y_FCA.txt</code></li>
+    <li><code>7457_WU3881Li_3.0y_MAA.txt</code></li>
+    <li><code>7458_WU5025Li_2.7y_FXX.txt</code></li>
+  </ul>
+  <p>These were tab delimited files, with key information stored in the name of 
+   the file itself. The filename can be split into eight pieces:</p>
+  <ul>
+    <li>id1 (a unique id code for each microarray chip)</li>
+    <li>loc (location. UM=University of Maryland, H=Harvard, WU=Washington 
+    University)</li>
+    <li>id2 (a second id code)</li>
+    <li>tis (tissue type. Ki=kidney, Li=liver, Lu=lung)</li>
+    <li>age (age in days if prenatal, in years if postnatal)</li>
+    <li>unt (unit, empty=days, y=years)</li>
+    <li>sex (F=female, M=male, X=unknown)</li>
+    <li>rac (race/ethnicity. AA=African American, CA=Caucasian, XX=unknown)</li>
+  </ul>
+  <p>&nbsp;The first line in each file included the following names for the data:</p>
+  <ul>
+    <li>Probeset</li>
+    <li>6286_Signal</li>
+    <li>6286_Detection</li>
+    <li>6286_Detection P Value</li>
+    <li>6286_Stat Pairs</li>
+    <li>6286_Stat Pairs Used</li>
+  </ul>
+  <p>The second column, the signal, is the most important piece of information. 
+   Third column gives a detection code based on the fourth column, the detection 
+   p-value. The three codes are:</p>
+  <ul>
+    <li>A (if the p-value is larger than 0.065),</li>
+    <li>M (if the p-value is between 0.065 and 0.05), and</li>
+    <li>P (if the p-value is smaller than 0.05).</li>
+  </ul>
+  <p>I had to convert from a tab delimited file to a comma separated file. There 
+   are several ways to do this. For example, you can read the tab delimited file 
+   into Excel and then save it as a .CSV file). I found it faster to search and 
+   replace the TAB character with a comma. It is hard to search directly for a 
+   tab character, but if your software allows it, you can look for the ASCII 
+   code 09.</p>
+  <p>Once I had the comma separated values, I created the pieces of the file 
+   separately and pasted them together. This took longer than just typing the 
+   names of the files, but in the long run I save time because several of these 
+   pieces become important variables in the analysis.</p>
+  <p>Here is the R code for importing this data.</p>
+</blockquote>
+<pre>us &lt;- &quot;_&quot;
+dir &lt;- &quot;x:/sleeder/csv/&quot;
+id1 &lt;- as.character(c(6286:6294,7446:7458))
+loc &lt;- c(   &quot;UM&quot;,   &quot;UM&quot;,   &quot;UM&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,
+             &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,   &quot;UM&quot;,   &quot;UM&quot;,   &quot;UM&quot;,
+            &quot;UM&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,
+             &quot;H&quot;,   &quot;WU&quot;,   &quot;WU&quot;,   &quot;WU&quot;)
+id2 &lt;- c( &quot;1589&quot;, &quot;1589&quot;, &quot;1589&quot;,&quot;18058&quot;,&quot;18058&quot;,&quot;18058&quot;,
+         &quot;17869&quot;,&quot;17869&quot;,&quot;17869&quot;, &quot;1690&quot;, &quot;1621&quot;, &quot;1631&quot;,
+          &quot;1566&quot;,&quot;18354&quot;,&quot;18381&quot;,&quot;18390&quot;,&quot;18401&quot;,&quot;18508&quot;,
+	 &quot;18535&quot;, &quot;0831&quot;, &quot;3881&quot;, &quot;5025&quot;)
+tis &lt;- c(   &quot;Ki&quot;,   &quot;Li&quot;,   &quot;Lu&quot;,   &quot;Ki&quot;,   &quot;Lu&quot;,   &quot;Li&quot;,
+            &quot;Lu&quot;,   &quot;Ki&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,
+            &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,
+            &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;)
+age &lt;- c(  &quot;133&quot;,  &quot;133&quot;,  &quot;133&quot;,  &quot;098&quot;,  &quot;098&quot;,  &quot;098&quot;,
+           &quot;075&quot;,  &quot;075&quot;,  &quot;075&quot;,  &quot;140&quot;,  &quot;130&quot;,  &quot;133&quot;,
+           &quot;134&quot;,  &quot;096&quot;,  &quot;096&quot;,  &quot;094&quot;,  &quot;076&quot;,  &quot;076&quot;,
+	   &quot;075&quot;,  &quot;1.7&quot;,  &quot;3.0&quot;,  &quot;2.7&quot;)
+unt &lt;- c(     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,
+              &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,
+              &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,
+              &quot;&quot;,    &quot;y&quot;,    &quot;y&quot;,    &quot;y&quot;)
+sex &lt;- c(    &quot;F&quot;,    &quot;F&quot;,    &quot;F&quot;,     &quot;F&quot;,    &quot;F&quot;,   &quot;F&quot;,
+             &quot;X&quot;,    &quot;X&quot;,    &quot;X&quot;,     &quot;M&quot;,    &quot;M&quot;,   &quot;M&quot;,
+             &quot;M&quot;,    &quot;M&quot;,    &quot;M&quot;,     &quot;M&quot;,    &quot;X&quot;,   &quot;X&quot;,
+             &quot;X&quot;,    &quot;F&quot;,    &quot;M&quot;,     &quot;F&quot;)
+rac &lt;- c(   &quot;AA&quot;,   &quot;AA&quot;,   &quot;AA&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,
+            &quot;CA&quot;,   &quot;CA&quot;,   &quot;CA&quot;,   &quot;CA&quot;,   &quot;CA&quot;,   &quot;AA&quot;,
+            &quot;AA&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,
+            &quot;XX&quot;,   &quot;CA&quot;,   &quot;AA&quot;,   &quot;XX&quot;)
+ext &lt;- &quot;.csv&quot;
+
+fz &lt;- paste(dir,id1,us,loc,id2,tis,us,age,unt,us,sex,rac,ext,sep=&quot;&quot;)
+
+signal.all &lt;- matrix(-1,54675,22)
+detect.all &lt;- matrix(-1,54675,22)
+for (i in 1:22) {
+	tmp &lt;- read.csv(fz[i])
+	signal.all[,i] &lt;- tmp[,2]
+	detect.all[,i] &lt;- tmp[,3]
+}</pre>
+<blockquote>
+  <p>The value of breaking the filenames up into segments becomes apparent when 
+   you want to look at a particular subset of the genes. For example, the R code</p>
+</blockquote>
+<p><code>signal.li &lt;- signal.all[,tis==&quot;Li&quot;]</code></p>
+<blockquote>
+  <p>will create an array consisting of the 16 chips associated with liver 
+   tissue. We can get the gender information for these 16 patients with the 
+   command</p>
+</blockquote>
+<p><code>gender.li &lt;- gender[tis==&quot;Li&quot;]</code></p>
+<blockquote>
+  <p>and so forth.</p>
+</blockquote>
+<p><b>Averting a disaster in the prenatal liver study</b></p>
+<blockquote>
+  <p>When I was trying to normalize the data, I noticed that three of the arrays 
+   had rather unusual properties. When trying to normalize array 6287 versus the 
+   median array, the R vs I plot looked like</p>
+  <p><img border="0" src="../01/images/import01.gif" width="480" height="480"></p>
+  <p>which was much more scattered than most of the other plots, such as 7446.</p>
+  <p><img border="0" src="../01/images/import02.gif" width="480" height="480"></p>
+  <p>When I plotted pairs of arrays versus each other, it became even more 
+   apparent. Here is what 6287 versus 7446 looked like.</p>
+  <p><img border="0" src="../01/images/import03.gif" width="480" height="480"></p>
+  <p>Compare this to 7446 versus 7447.</p>
+  <p><img border="0" src="../01/images/import04.gif" width="480" height="480"></p>
+  <p>It turns out that the order of the genes were not the same in all of the 
+   files. For example in file 6287, the first ten genes were</p>
+  <ol>
+    <li>1007_s_at</li>
+    <li>1053_at</li>
+    <li>117_at </li>
+    <li>121_at</li>
+    <li>1255_g_at</li>
+    <li>1294_at</li>
+    <li>1316_at</li>
+    <li>1320_at</li>
+    <li>1405_i_at</li>
+    <li>1431_at</li>
+  </ol>
+  <p>while in file 7446, the first ten genes were</p>
+  <ol>
+    <li>117_at</li>
+    <li>121_at</li>
+    <li>177_at</li>
+    <li>179_at</li>
+    <li>320_at</li>
+    <li>336_at</li>
+    <li>564_at</li>
+    <li>632_at</li>
+    <li>823_at</li>
+    <li>1053_at</li>
+  </ol>
+  <p>By assuming that all the files listed their genes in the exact same order, 
+   I had effectively shuffled the values of three of the arrays and effectively 
+   ruined any analyses. To fix this, I had to sort the CSV files to insure that 
+   the gene names were in the same order for each file. Then I added a couple of 
+   extra lines of code to double-check that the files were now in a consistent 
+   order. First, I got the probeset list from the first file. Then when reading 
+   in the remaining files, I compared the probeset list to the first file. If 
+   there were any mismatches, then the sum would equal a value larger than zero.</p>
+</blockquote>
+<p><font color="#FF0000"></font><code><font color="#FF0000">tmp &lt;- 
+ read.csv(fz[1])<br>
+ signal.all[,1] &lt;- tmp[,2]<br>
+ detect.all[,1] &lt;- tmp[,3]<br>
+ gene.probeset &lt;- trimWhiteSpace(as.character(tmp$Probeset))</font><br>
+ for (i in <font color="#FF0000">2</font>:22) { tmp &lt;- read.csv(fz[i])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; signal.all[,i] &lt;- tmp[,2]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect.all[,i] &lt;- tmp[,3]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000">check.probeset 
+ &lt;- trimWhiteSpace(as.character(tmp$Probeset))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print(sum(gene.probeset!=check.probeset))<br>
+ </font>}</code></p>
+<blockquote>
+  <p>I should have been more careful at the beginning, but at least I caught the 
+   problem before I ran any serious analyses. Whew!</p>
+</blockquote>
+
+</body>
+
+</html>

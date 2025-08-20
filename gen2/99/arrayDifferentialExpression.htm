@@ -1,0 +1,137 @@
+<html>
+
+<head>
+
+<title>Stats: Differential expression in microarray data (no date)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Differential expression in microarray data (no date)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/micro-array-differential-expression/">new website</a>.</p>
+
+<blockquote>
+  <p>You can compute an expression ratio for each gene by taking the average of 
+   the log expression levels in the treatment group and subtracting the average 
+   of the log expression levels in the control group. This actually produces a 
+   log ratio, and you can compute the actual ratio by taking the antilog. </p>
+  <p><font color="#FF0000"><code>m2.control &lt;- as.matrix(m2.normalize3[,1:4])<br>
+   m2.treat &lt;- as.matrix(m2.normalize3[,5:8])<br>
+   m2.logratio &lt;- apply(m2.treat,1,mean)-apply(m2.control,1,mean)</code></font></p>
+  <p>Which of these expression levels is significantly different from 1? The 
+   answer to this question is surprisingly difficult. Here are some approaches.</p>
+  <ol>
+    <li>Declare any ratio bigger than 2 or smaller than 0.5 to be significant</li>
+    <li>Compute a two-sample t-test for each gene</li>
+    <li>Modify the significance level of the t-test using Bonferroni</li>
+    <li>Add a fudge factor to the denominator of each t-test.</li>
+    <li>Pool results across similar genes</li>
+  </ol>
+  <p>The simplest approach, but an approach that is probably not defensible, is 
+   to state that any ratios beyond a certain threshold represent genes with 
+   differential expression. Typically, this approach highlights ratios larger 
+   than 2 (and smaller than 1/2) though threshold of 3 (1/3) and 5 (1/5) have 
+   also been used.</p>
+  <p>Although I cannot recommend this approach, here is how it would work in R. 
+   Recall that a ratios of 2 and 1/2 correspond to log ratios of -1 and +1 if 
+   you use base 2 logarithms.</p>
+  <p><code><font color="#FF0000">diff1 &lt;- m2.logratio[abs(m2.logratio)&gt;1]<br>
+   names(diff1)</font><br>
+   <br>
+   [1] &quot;5&quot; &quot;11&quot; &quot;16&quot; &quot;17&quot; &quot;37&quot; &quot;49&quot; &quot;50&quot; &quot;53&quot; &quot;54&quot; &quot;57&quot; <br>
+   [11] &quot;58&quot; &quot;60&quot; &quot;63&quot; &quot;64&quot; &quot;65&quot; &quot;68&quot; &quot;80&quot; &quot;98&quot; &quot;102&quot; &quot;105&quot; <br>
+   [21] &quot;107&quot; &quot;116&quot; &quot;125&quot; &quot;133&quot; &quot;134&quot; &quot;147&quot; &quot;150&quot; &quot;158&quot; &quot;162&quot; &quot;166&quot; <br>
+   [31] &quot;168&quot; &quot;171&quot; &quot;173&quot; &quot;177&quot; &quot;193&quot; &quot;205&quot; &quot;218&quot; &quot;224&quot; &quot;232&quot; &quot;236&quot; <br>
+   .<br>
+   .<br>
+   .<br>
+   [601] &quot;3253&quot; &quot;3260&quot; &quot;3261&quot; &quot;3271&quot; &quot;3272&quot; &quot;3282&quot; &quot;3289&quot; &quot;3290&quot; &quot;3311&quot; &quot;3331&quot;<br>
+   [611] &quot;3348&quot; &quot;3350&quot; &quot;3354&quot; &quot;3358&quot; &quot;3367&quot; &quot;3379&quot; &quot;3404&quot; &quot;3421&quot; &quot;3423&quot;</code></p>
+  <p>Another approach is to apply a two-sample t-test or a related statistic to 
+   each gene.</p>
+  <p><code><font color="#FF0000">f.custom.t &lt;- function(x) {<br>
+&nbsp; t.test(x[1:4],x[5:8])$p.value<br>
+   }<br>
+   m2.t.tests &lt;- apply(m2.normalize3,1,f.custom.t)<br>
+   diff2 &lt;- m2.t.tests[m2.t.tests &lt; 0.05]<br>
+   names(diff2)</font><br>
+   <br>
+   [1] &quot;3&quot; &quot;5&quot; &quot;8&quot; &quot;9&quot; &quot;11&quot; &quot;13&quot; &quot;16&quot; &quot;17&quot; &quot;19&quot; &quot;21&quot; <br>
+   [11] &quot;22&quot; &quot;26&quot; &quot;27&quot; &quot;30&quot; &quot;32&quot; &quot;33&quot; &quot;35&quot; &quot;36&quot; &quot;37&quot; &quot;40&quot; <br>
+   [21] &quot;42&quot; &quot;47&quot; &quot;49&quot; &quot;50&quot; &quot;53&quot; &quot;54&quot; &quot;55&quot; &quot;57&quot; &quot;58&quot; &quot;59&quot; <br>
+   [31] &quot;60&quot; &quot;63&quot; &quot;64&quot; &quot;65&quot; &quot;68&quot; &quot;72&quot; &quot;76&quot; &quot;79&quot; &quot;80&quot; &quot;81&quot; <br>
+   .<br>
+   .<br>
+   .<br>
+   [1731] &quot;3401&quot; &quot;3403&quot; &quot;3404&quot; &quot;3405&quot; &quot;3407&quot; &quot;3408&quot; &quot;3410&quot; &quot;3412&quot; &quot;3421&quot; &quot;3423&quot;<br>
+   [1741] &quot;3430&quot; &quot;3433&quot;</code></p>
+  <p>The problem with this approach, of course, is that you are running 
+   thousands of t-test simultaneously. Some of these tests will end up being 
+   significant, even if nothing is going on.</p>
+  <p>To adjust for the large number of multiple tests, you can use a correction, 
+   such as Bonferroni. Here's how Bonferroni would work.</p>
+  <p><code><font color="#FF0000">diff3 &lt;- m2.t.tests[m2.t.tests &lt; 
+   (0.05/m2.n.genes)]<br>
+   names(diff3)</font><br>
+   <br>
+   [1] &quot;5&quot; &quot;64&quot; &quot;102&quot; &quot;224&quot; &quot;232&quot; &quot;305&quot; &quot;311&quot; &quot;339&quot; &quot;354&quot; &quot;384&quot; <br>
+   [11] &quot;462&quot; &quot;516&quot; &quot;560&quot; &quot;591&quot; &quot;603&quot; &quot;736&quot; &quot;745&quot; &quot;758&quot; &quot;778&quot; &quot;798&quot; <br>
+   [21] &quot;805&quot; &quot;834&quot; &quot;931&quot; &quot;967&quot; &quot;987&quot; &quot;988&quot; &quot;1000&quot; &quot;1029&quot; &quot;1065&quot; &quot;1103&quot;<br>
+   [31] &quot;1129&quot; &quot;1157&quot; &quot;1202&quot; &quot;1235&quot; &quot;1263&quot; &quot;1269&quot; &quot;1290&quot; &quot;1305&quot; &quot;1352&quot; &quot;1356&quot;<br>
+   .<br>
+   .<br>
+   .<br>
+   [101] &quot;2905&quot; &quot;2910&quot; &quot;2990&quot; &quot;3031&quot; &quot;3063&quot; &quot;3142&quot; &quot;3195&quot; &quot;3209&quot; &quot;3220&quot; &quot;3225&quot;<br>
+   [111] &quot;3252&quot; &quot;3267&quot; &quot;3311&quot; &quot;3354&quot; &quot;3358&quot;</code></p>
+  <p>The Bonferroni approach has been criticized for being too conservative. 
+   There are several alternatives that look at p-values in sequence and apply a 
+   more strict standard for the smallest p-values, but loosen this standard as 
+   more p-values are examined.</p>
+  <ul>
+    <li>Holm-Bonferroni</li>
+    <li>Holm-Sidak</li>
+    <li>Hochberg</li>
+    <li>Westfall-Young</li>
+  </ul>
+  <p>The Holm-Bonferroni approach is the easiest one to follow. Sort the 
+   p-values from smallest to largest. Adjust the smallest p-value by mulitplying 
+   by K where K is the number of genes being tested. Multiply the next smallest 
+   p-value by (K-1), the next smallest by (K-2) and so forth. </p>
+  <p><code><font color="#FF0000">o &lt;- order(m2.t.tests)<br>
+   m2.sorted.pvalues &lt;- m2.t.tests[o]<br>
+   m2.sorted.names &lt;- names(m2.t.tests)[o]<br>
+   m2.adjusted.pvalues &lt;- cummax(pmin(m2.sorted.pvalues*(m2.n.genes:1),1.0))<br>
+   m2.sorted.names[m2.adjusted.pvalues &lt; 0.05]<br>
+   </font><br>
+   [1] &quot;354&quot; &quot;2854&quot; &quot;1103&quot; &quot;1379&quot; &quot;3225&quot; &quot;2252&quot; &quot;2766&quot; &quot;3358&quot; &quot;1458&quot; &quot;1546&quot;<br>
+   [11] &quot;1696&quot; &quot;3195&quot; &quot;2067&quot; &quot;1690&quot; &quot;2744&quot; &quot;1430&quot; &quot;384&quot; &quot;1629&quot; &quot;560&quot; &quot;1758&quot;<br>
+   [21] &quot;1269&quot; &quot;3031&quot; &quot;1915&quot; &quot;1499&quot; &quot;2199&quot; &quot;988&quot; &quot;2445&quot; &quot;3063&quot; &quot;1751&quot; &quot;2910&quot;<br>
+   [31] &quot;798&quot; &quot;1821&quot; &quot;1434&quot; &quot;339&quot; &quot;3252&quot; &quot;3311&quot; &quot;1548&quot; &quot;1352&quot; &quot;745&quot; &quot;2038&quot;<br>
+   .<br>
+   .<br>
+   .<br>
+   [101] &quot;1931&quot; &quot;3267&quot; &quot;1925&quot; &quot;311&quot; &quot;591&quot; &quot;834&quot; &quot;1889&quot; &quot;1671&quot; &quot;64&quot; &quot;516&quot; <br>
+   [111] &quot;2905&quot; &quot;2810&quot; &quot;2651&quot; &quot;2863&quot; &quot;2023&quot; &quot;2686&quot;</code></p>
+</blockquote>
+<p><b>Differential expression (DE)</b></p>
+<blockquote>
+  <p><b>DE - Within gene analysis</b></p>
+  <p>[Explain]</p>
+  <p><b>DE - Borrowing strength across genes</b></p>
+  <p>[Explain]</p>
+  <p>Local pooled error. At various levels of expression, pool standard 
+   deviations of multiple genes.</p>
+  <p>Model variance as a function of the mean. Sometimes this approach is not 
+   flexible enough.</p>
+  <p>Shrinkage estimates. Add a constant to the denominator.</p>
+  <p><b>DE - Adjusting for multiple tests</b></p>
+  <p>Family Wise Error Rate: Bonferroni, Holm (1979) step down, Hochberg.</p>
+  <p>False Discovery Rate</p>
+  <p>Classic reference Alizadeh et al (2000)</p>
+</blockquote>
+
+</body>
+
+</html>
