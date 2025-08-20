@@ -1,0 +1,139 @@
+---
+title: Illustrating splines using the Worcester Heart Attack Study
+source: "New"
+author: Steve Simon
+date: 2024-05-07
+categories:
+- "*Blog post"
+- 2024
+- Incomplete pages
+- Survival analysis
+- R programming
+- Uses R code
+output: html_document
+page_update: complete
+---
+
+Splines provide a useful way to model relationships that are more complex than a simple linear relationship. They work in a variety of regression models. Here is an illustration of how to use a spline in a Cox regression model with data from the Worcester Heart Attack Study.
+
+<!---more--->
+
+```{r}
+#| label: setup
+#| echo: false
+#| message: false
+#| warning: false
+
+library(broom)
+library(pspline)
+library(readr)
+library(rms)
+library(survival)
+library(tidyverse)
+library(yaml)
+```
+
+```{r}
+#| label: yaml
+#| echo: false
+
+f0 <- "https://raw.githubusercontent.com/pmean/datasets/master/"
+f1 <- "whas100.yaml"
+dd <- read_yaml(paste0(f0, f1))
+```
+
+Here is a brief description of the whas100 dataset, taken from the [data dictionary][sim3] on my github site.
+
+`r dd$description`
+
+[sim3]: https://raw.githubusercontent.com/pmean/datasets/master/whas100-data-dictionary.yaml
+
+Here are the first few rows of data and the last few rows of data. Row 101 needs to be removed.
+
+```{r}
+#| label: read
+#| echo: false
+
+f2 <- "whas100.dat"
+raw_data <- read.fwf(
+  file=paste0(f0, f2),
+  widths=c(7, 12, 12, 5, 9, 5, 7, 4, 8))
+wa <- raw_data
+names(wa) <- c(
+  "id",
+  "admitdate",
+  "foldate",
+  "los",
+  "lenfol",
+  "fstat",
+  "age",
+  "gender",
+  "bmi")
+head(wa)
+tail(wa)
+wa <- wa[-101, ]
+wa$lenfol <- wa$lenfol/365.25
+```
+
+Here are a few descriptive statistics
+
+```{r}
+#| label: descriptives-1
+#| echo: false
+
+summary(wa$id)
+summary(wa$los)
+summary(wa$lenfol)
+count(wa, fstat)
+summary(wa$age)
+count(wa, gender)
+summary(wa$bmi)
+```
+
+Here is an overall survival curve.
+
+```{r}
+#| label: km
+
+plot(Surv(wa$lenfol, wa$fstat))
+```
+
+The linear fit shows a hazard ratio larger than 1. The risk of death increases with age.
+
+```{r}
+#| label: cox
+
+linear_fit <- coxph(
+  Surv(wa$lenfol, wa$fstat)~age,
+  data=wa)
+linear_fit
+```
+
+The coefficients of the spline fit are impossible to interpret. It is better to view the spline fit graphically.
+
+```{r}
+#| label: spline-1
+
+spline_fit <- coxph(
+  Surv(wa$lenfol, wa$fstat)~rcs(age),
+  data=wa)
+spline_fit
+```
+
+The risk of death increases linearly with age up to about 80 years and then take a sharp curve upward. This shows that each additional year of age beyond 80 has a large impact on survival, much larger than additional years of age earlier in life.
+
+```{r}
+#| label: spline-2
+
+age_sequence <- data.frame(
+  age = seq(min(wa$age), max(wa$age), length=100))
+age_sequence$prediction <- 
+  predict(spline_fit, newdata=age_sequence, type="lp")
+ggplot(data=age_sequence, aes(age, prediction)) +
+  geom_line()
+```
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/survival-spline/

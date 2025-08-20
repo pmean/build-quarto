@@ -45,11 +45,11 @@ add_extra <- function(file_name) {
 	return(extra_lines)
 }
 
-file_path <- "../text/18"
+file_path <- "../gen5/99"
 x <- add_extra("what-i-did.md") 
 cat(x, sep="\n")
 
-file_path <- "../text/06"
+file_path <- "../gen5/00"
 x <- add_extra("wax-fruit.md") 
 cat(x, sep="\n")
 ```

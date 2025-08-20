@@ -1,0 +1,28 @@
+---
+title: "Git cartoon from xkcd"
+source: new
+date: "2022-06-29"
+categories:
+- "*Recommendation"
+- 2022
+- Statistical computing
+output: html_document
+page_update: complete
+---
+
+![Figure 1. xkcd cartoon](https://imgs.xkcd.com/comics/git.png){width=80%}
+
+::: notes
+
+I use git for version control, but I have to admit that I don't understand most of its commands. This cartoon satirizes my perspective, which apparently is common among many git users.
+
+Scott Munro. git.  Available in [html format][mun1].
+
+[mun1]: https://xkcd.com/1597/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/git-xkcd/
+
+:::

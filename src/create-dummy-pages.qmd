@@ -23,22 +23,37 @@ library(tidyverse)
 ```{r}
 #| label: names
 
-yr <- 24
+yr <- "00"
 
-md_files <- list.files(glue("../text/{yr}"))
+md_files <- list.files(glue("../gen5/{yr}"))
 md_files |>
+	str_subset("md$") |>
   str_remove("\\.qmd$") |>
   str_remove("\\.md$") -> root_names
 root_names
 ```
 
-## Read bare_page
+## Create bare_page
 
 ```{r}
 #| label: read
 
-bare_page <- read_lines("../results/bare_page.html")
-bare_page
+# bare_page <- read_lines("../results/bare_page.html")
+# bare_page
+bare_page <- c(
+	"<html>",
+  "<head>",
+  "<title>This page (ROOT) has moved</title>",
+  "</head>",
+  "<body>",
+  "<p><b>ROOT</b></p>",
+  "<p>This page (ROOT) has moved to ",
+  '<a href="http://pmean.com/posts/ROOT/">',
+  "a new website</a>.</p>",
+  "</body>",
+  "</html>")
+
+cat(bare_page, sep="\n")
 ```
 
 ## Loop
@@ -51,11 +66,11 @@ This code is loosely adapted from [a stack overflow query][ref-stack-nodate]
 #| label: loop
 
 for (root in root_names) {
-  blog_dir <- glue("../{yr}/{root}")
+  blog_dir <- glue("../gen4/{yr}/{root}")
   if (!file.exists(blog_dir)) {
     dir.create(blog_dir)}
   bare_page |>
-    str_replace("ROOT", root) |>
+    str_replace_all("ROOT", root) |>
     write_lines(file=glue("{blog_dir}/index.html"))
 }
 ```

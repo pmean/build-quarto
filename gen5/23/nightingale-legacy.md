@@ -1,0 +1,28 @@
+---
+title: "Florence Nightingale's legacy lives on"
+source: "New"
+date: "2023-06-12"
+categories:
+- "*Recommendation"
+- 2023
+- Important statisticians
+output: html_document
+page_update: complete
+---
+
+![Figure 1. Excerpt from article](http://www.pmean.com/new-images/23/nightingale-legacy-01.png){width=80%}
+
+::: notes
+
+A nice summary of the importance of Statistics and Evidence-Based Health Care to the work of Florence Nightingale.
+
+[Steven Julious][jul1]. On the battlefields of the Crimean War and in the hills of Sheffield, Florence Nightingale's legacy lives on. How Nightingale used numbers to revolutionise medicine. The Sheffied Tribune, 2023-02-18.
+
+[jul1]: https://www.sheffieldtribune.co.uk/p/on-the-battlefields-of-the-crimean
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/nightingale-legacy/
+
+:::
