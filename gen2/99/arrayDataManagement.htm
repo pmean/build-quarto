@@ -1,0 +1,287 @@
+<html>
+
+<head>
+
+<title>Stats: Data management in a microarray experiment (no date)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong> Data management in a microarray experiment (no date)</strong> [incomplete]</p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/micro-array-data-management/">new website</a>.</p>
+
+<p><b>Selecting a subset of genes from the prenatal liver study</b></p>
+<blockquote>
+  <p>I was asked to concentrate on a set of genes associated with the Folate 
+   pathway. This list of 43 genes, </p>
+  <blockquote>
+    <p>ABCB1, ABCC1, ABCC3, ABCC4, ABCG2, AHCYL1, AHCYL1, AMT, ATIC, BHMT, 
+     BHMT2, CBS, CTH, DHFR, FOLH1, FOLH2, FOLR1, FOLR2, FOLR2L, FOLR3, FPGS, 
+     FTCD, FTH1, FTHFD, FTHFSDC1, GART, GCH1, GGH, GNMT, MAT1A, MAT2A, MAT2B, 
+     MTHFD1, MTHFD2, MTHFR, MTHFS, MTR, MTRR, PPAT, PTS, RUVBL2, SHMT1, SLC19A1, 
+     and TYMS</p>
+  </blockquote>
+  <p>were stored in an Excel file called FolateGeneList.xls. I converted this 
+   file to a csv format, and read it into R.</p>
+</blockquote>
+<p><code>f0 &lt;- &quot;x:/sleeder/csv/FolateGeneList.csv&quot;<br>
+ folate.dat &lt;- read.csv(f0,header=F)</code></p>
+<blockquote>
+  <p>Unfortunately, none of these names matched the names found in the Probeset 
+   column of the data sets. I had to look instead at a separate file, 
+   HG-U133_Plus_2_annot.xls, which I also converted to csv format and read into 
+   R.</p>
+</blockquote>
+<p><code>f1 &lt;- &quot;x:/sleeder/csv/HG-U133_Plus_2_annot.csv&quot;<br>
+ annotate.dat &lt;- read.csv(f1)<br>
+ dim(annotate.dat)<br>
+ <br>
+ <font color="#FF0000">[1] 54675&nbsp; 43</font><br>
+ <br>
+ names(annotate.dat)<br>
+ <br>
+ <font color="#FF0000">&nbsp;[1] &quot;Probe.Set.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;GeneChip.Array&quot; <br>
+ &nbsp;[3] &quot;Species.Scientific.Name&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Annotation.Date&quot; <br>
+ &nbsp;[5] &quot;Sequence.Type&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Sequence.Source&quot; <br>
+ &nbsp;[7] &quot;Transcript.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Target.Description&quot; <br>
+ &nbsp;[9] &quot;Representative.Public.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Archival.UniGene.Cluster&quot; <br>
+ [11] &quot;UniGene.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Genome.Version&quot; <br>
+ [13] &quot;Alignments&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Gene.Title&quot; <br>
+ [15] &quot;Gene.Symbol&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Chromosomal.Location&quot; <br>
+ [17] &quot;Unigene.Cluster.Type&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Ensembl&quot; <br>
+ [19] &quot;LocusLink&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;SwissProt&quot; <br>
+ [21] &quot;EC&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;OMIM&quot; <br>
+ [23] &quot;RefSeq.Protein.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;RefSeq.Transcript.ID&quot; <br>
+ [25] &quot;FlyBase&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;AGI&quot; <br>
+ [27] &quot;WormBase&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;MGI.Name&quot; <br>
+ [29] &quot;RGD.Name&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;SGD.accession.number&quot; <br>
+ [31] &quot;Gene.Ontology.Biological.Process&quot; &quot;Gene.Ontology.Cellular.Component&quot;<br>
+ [33] &quot;Gene.Ontology.Molecular.Function&quot; &quot;Pathway&quot; <br>
+ [35] &quot;Protein.Families&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Protein.Domains&quot; <br>
+ [37] &quot;InterPro&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Trans.Membrane&quot; <br>
+ [39] &quot;QTL&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Annotation.Description&quot; <br>
+ [41] &quot;Annotation.Transcript.Cluster&quot;&nbsp;&nbsp;&nbsp; &quot;Transcript.Assignments&quot;
+ <br>
+ [43] &quot;Annotation.Notes&quot; </font></code></p>
+<blockquote>
+  <p>This file is so complex in part because there are so many different ways 
+   that you can name a gene. For this particular experiment, here is what the 
+   columns represent.</p>
+  <blockquote>
+    <ol>
+      <li><b>&quot;Probe.Set.ID&quot;</b> is a medium length string (6-27 characters) that 
+      represents the Affymetrix name. The values are unique. Examples include
+      <font color="#FF0000">236631_at</font> and <font color="#FF0000">
+      AFFX-r2-Ec-bioB-M_at</font>.</li>
+      <li><b>&quot;GeneChip.Array&quot;</b> is <font color="#FF0000">Human Genome U133 
+      Plus 2.0 Array</font> for all rows.</li>
+      <li><b>&quot;Species.Scientific.Name&quot;</b> is <font color="#FF0000">Homo sapiens</font> 
+      for all rows.</li>
+      <li><b>&quot;Annotation.Date&quot; </b>is&nbsp; <font color="#FF0000">7-Dec-04</font> 
+      for all rows.</li>
+      <li><b>&quot;Sequence.Type&quot;</b> is <font color="#FF0000">Consensus sequence
+      </font>(39,534), <font color="#FF0000">Exemplar sequence</font> (15,079), 
+      or <font color="#FF0000">Control sequence</font> (62). &quot;An Exemplar is a 
+      single nucleotide sequence taken directly from a public database. This 
+      sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide 
+      sequence assembled by Affymetrix, based on one or more sequence taken from 
+      a public database.&quot;
+      <a href="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GPL93">
+      www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GPL93</a> </li>
+      <li><b>&quot;Sequence.Source&quot;</b> is <font color="#FF0000">GenBank</font> 
+      (54,600) or <font color="#FF0000">Affymetrix Proprietary Database</font> 
+      (75).</li>
+      <li><b>&quot;Transcript.ID&quot;</b> is a medium length string (6-24 characters). 
+      The values are not unique. Examples include <font color="#FF0000">
+      Hs.121419.0</font> and <font color="#FF0000">Hs.138751.0</font>. It is 
+      never missing in this data set.</li>
+      <li><b>&quot;Target.Description&quot;</b> is a long text string (56 to 1,023 
+      characters). An example is <font color="#FF0000">U48705 /FEATURE=mRNA 
+      /DEFINITION=HSU48705 Human receptor tyrosine kinase DDR gene, complete cds 
+      51842 Levels: Cluster Incl. AB001325:Human AQP3 gene for aquaporine 3 
+      (water channel), partail cds /cds=(60,938) /gb=AB001325 /gi=1854373 /ug=Hs.234642 
+      /len=1442</font> ... </li>
+      <li><b>&quot;Representative.Public.ID&quot;</b> is a medium length string (6-24 
+      characters). The values are not unique. Examples include
+      <font color="#FF0000">NM_001785</font> and <font color="#FF0000">AL525367</font>. 
+      It is never missing in this data set.</li>
+      <li><b>&quot;Archival.UniGene.Cluster&quot;</b> is a short text string (3-17 
+      characters). The values are not unique and it is missing for 12,430 rows. 
+      This and the next variable are part of &quot;an experimental system for 
+      automatically partitioning GenBank sequences into a non-redundant set of 
+      gene-oriented clusters. Each UniGene cluster contains sequences that 
+      represent a unique gene, as well as related information such as the tissue 
+      types in which the gene has been expressed and map location.&quot; Examples 
+      include <font color="#FF0000">Hs.220998</font>, <font color="#FF0000">--- 
+      /// Hs.900316</font>, and <font color="#FF0000">Hs.6336</font>. </li>
+      <li><b>&quot;UniGene.ID&quot;</b> is a medium length string (3-135 characters). The 
+      values are not unique and they are missing for 12,878 rows. Examples 
+      include <font color="#FF0000">Hs.278441</font>, <font color="#FF0000">
+      Hs.383534 /// Hs.449450 /// Hs.511725 /// Hs.511727 /// Hs.511728 /// 
+      Hs.534484</font> and <font color="#FF0000">Hs.249587 /// Hs.406224</font>.</li>
+      <li><b>&quot;Genome.Version&quot;</b> is <font color="#FF0000">May 2004 (NCBI 35)</font> 
+      for all rows,</li>
+      <li><b>&quot;Alignments&quot;</b> is a long text string (3-1,004 characters). An 
+      example is <font color="#FF0000">chr6:30964144-30975910 (+) // 95.63 // 
+      p21.33 50315 Levels: --- chr1:100038786-100101597 (+) // 99.57 // p21.2 
+      ... chrY:9897982-9899549 (+) // 98.23 // p11.2 /// chrY:9938577-9940161 
+      (+) // 96.58 // p11.2 /// chrY:9238824-9240391 (+) // 98.16 // p11.2 /// 
+      chrY:9279448-9281015 (+) // 98.16 // p11.2 /// chrY:9958907-9960474 (+) // 
+      98.16 // p11.2 /// chrY:9218491-9220076 (+) // 96.51 // p11.2 /// 
+      chrY:9259103-9260669 (+) // 98.16 // p11.2 /// chrY:9918294-9919879 (+) // 
+      96.39 // p11.2 /// chrY:6157682-6159243 (+) // 97.72 // p11.2 /// 
+      chrY:9979090-9980643 (+) // 90.56 // p11.2</font>.</li>
+      <li><b>&quot;Gene.Title&quot;</b> is a long text string (3-30,000 characters). It is 
+      missing for 12,267 rows. An example is <font color="#FF0000">androgen 
+      receptor (dihydrotestosterone receptor; testicular feminization; spinal 
+      and bulbar muscular atrophy; Kennedy disease) /// androgen receptor (dihydrotestosterone 
+      receptor; testicular feminization; spinal and bulbar muscular atrophy; 
+      Kennedy disease)</font>.</li>
+      <li><b>&quot;Gene.Symbol&quot;</b> is a long text string (1-8,911 characters). 
+      Examples include <font color="#FF0000">RANBP2</font>,
+      <font color="#FF0000">MGC27165 /// IGH@ /// IGHG1</font>, and
+      <font color="#FF0000">PLK4</font>. The values are not unique and they are 
+      missing for 16,943 rows.</li>
+      <li><b>&quot;Chromosomal.Location&quot;</b> gives the physical location of the gene. 
+      Examples include <font color="#FF0000">chr5q35.3</font> and
+      <font color="#FF0000">chr6p22.1-p21.2</font>. It is missing for 15,891 
+      rows.</li>
+      <li><b>&quot;Unigene.Cluster.Type&quot;</b> is <font color="#FF0000">full length</font> 
+      (33,859), <font color="#FF0000">est /// full length</font> (30), or
+      <font color="#FF0000">est</font> (3). It is missing for 20,783 rows.</li>
+      <li><b>&quot;Ensembl&quot;</b> Examples include <font color="#FF0000">
+      ENSG00000166478</font> and <font color="#FF0000">ENSG00000006606</font>.&nbsp; 
+      It is missing for 22,243 rows.</li>
+      <li><b>&quot;LocusLink&quot;</b> is a classification scheme developed by the 
+      National Center for Biotechnology Information, but it has been superceded 
+      by Entrez Gene. Examples include <font color="#FF0000">399655 /// 9534</font> 
+      and <font color="#FF0000">440033</font>. It is missing for 15,777 rows.</li>
+      <li><b>&quot;SwissProt&quot;</b> is a repository for protein data developed by the 
+      Swiss Institute of Bioinformatics and the European Bioinformatics 
+      Institute. Examples include <font color="#FF0000">Q8N6H1 /// Q6UXD7 /// 
+      Q6XYD4 /// Q9H6H6</font> and <font color="#FF0000">P29992 /// Q96DH5</font>. 
+      It is missing for 19,162 rows.</li>
+      <li>&quot;EC&quot; is the Enzyme Commission family number.</li>
+      <li>&quot;OMIM&quot; is the Online Mendelian Inheritance in Man accession number.</li>
+      <li>&quot;RefSeq.Protein.ID&quot; is the ID of the protein sequence in the NCBI 
+      RefSeq database.</li>
+      <li>&quot;RefSeq.Transcript.ID&quot;</li>
+      <li>&quot;FlyBase&quot;</li>
+      <li>&quot;AGI&quot;</li>
+      <li>&quot;WormBase&quot;</li>
+      <li>&quot;MGI.Name&quot;</li>
+      <li>&quot;RGD.Name&quot;</li>
+      <li>&quot;SGD.accession.number&quot;</li>
+      <li>&quot;Gene.Ontology.Biological.Process&quot;</li>
+      <li>&quot;Gene.Ontology.Cellular.Component&quot;</li>
+      <li>&quot;Gene.Ontology.Molecular.Function&quot;</li>
+      <li>&quot;Pathway&quot;</li>
+      <li>&quot;Protein.Families&quot;</li>
+      <li>&quot;Protein.Domains&quot;</li>
+      <li>&quot;InterPro&quot;</li>
+      <li>&quot;Trans.Membrane&quot;</li>
+      <li>&quot;QTL&quot;</li>
+      <li>&quot;Annotation.Description&quot;</li>
+      <li>&quot;Annotation.Transcript.Cluster&quot;</li>
+      <li>&quot;Transcript.Assignments&quot;</li>
+      <li>&quot;Annotation.Notes&quot; </li>
+    </ol>
+    <p>EC Enzyme Commission family number. OMIM OMIM: Online Mendelian 
+     Inheritance in Man accession number. RefSeq Protein ID ID of the protein 
+     sequence in the NCBI RefSeq database. RefSeq Transcript ID References to 
+     multiple sequences in RefSeq. The field contains the ID and Description for 
+     each entry, and there can be multiple entries per ProbeSet. Gene Ontology 
+     Biological Process Gene Ontology Consortium Biological Process derived from 
+     LocusLink. Each annotation consists of three parts: &quot;Accession Number // 
+     Description // Evidence&quot;. The description corresponds directly to the GO 
+     ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;. Gene Ontology Cellular 
+     Component Gene Ontology Consortium Cellular Component derived from 
+     LocusLink. Each annotation consists of three parts: &quot;Accession Number // 
+     Description // Evidence&quot;. The description corresponds directly to the GO 
+     ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;. Gene Ontology Molecular 
+     Function Gene Ontology Consortium Molecular Function derived from LocusLink. 
+     Each annotation consists of three parts: &quot;Accession Number // Description 
+     // Evidence&quot;. The description corresponds directly to the GO ID. The 
+     evidence can be &quot;direct&quot;, or &quot;extended&quot;. Also see<a href="http://www.affymetrix.com/support/technical/manual/taf_manual.affx"> 
+    www.affymetrix.com/support/technical/manual/taf_manual.affx</a> </p>
+    <p>Obviously, we need to match with column 15 (Gene.Symbol). One difficulty 
+     is that the order that the probesets are presented in the 
+     HG-U133_Plus_2_annot file is not the same as the order that the probesets 
+     are presented in data files. So you have to match twice. First you find the 
+     Gene.Symbol values in the annotate data set that match the symbols in the 
+     FolateGeneList file. Get the associated Probe.Set.ID value from the 
+     HG-U133_Plus_2_annot file. Now match this with the appropriate probeset 
+     values in the data files. Here is the R code to do all this.</p>
+  </blockquote>
+  <p><code>f0 &lt;- &quot;x:/sleeder/csv/FolateGeneList.csv&quot;<br>
+   folate.dat &lt;- read.csv(f0,header=F)<br>
+   f1 &lt;- &quot;x:/sleeder/csv/HG-U133_Plus_2_annot.csv&quot;<br>
+   annotate.dat &lt;- read.csv(f1)<br>
+   folate.symbol &lt;- trimWhiteSpace(as.character(folate.dat$V1))<br>
+   annotate.symbol &lt;- trimWhiteSpace(as.character(annotate.dat$Gene.Symbol))<br>
+   annotate.probeset &lt;- trimWhiteSpace(as.character(annotate.dat$Probe.Set.ID))<br>
+   symbol.match &lt;- annotate.symbol %in% folate.symbol<br>
+   folate.probeset &lt;- annotate.probeset[symbol.match]<br>
+   probeset.match &lt;- gene.probeset %in% folate.probeset</code></p>
+  <blockquote>
+    <p>Now you might want to know what the symbols are for each of the 
+     probeset.match values. You just reverse the search process.</p>
+  </blockquote>
+  <p><code>reverse.match &lt;- annotate.probeset %in% gene.probeset[probeset.match]<br>
+   gene.symbol &lt;- annotate.symbol[reverse.match]</code></p>
+  <blockquote>
+    <p>Now let's see what sort of graphs we can draw using the folate pathway. 
+     Note that the 14th through 16th values represent postnatal ages in years 
+     and have to be converted to post-conceptual age in days to match the rest 
+     of the data.</p>
+  </blockquote>
+  <p><code>age.pca &lt;- as.numeric(age[tis==&quot;Li&quot;])<br>
+   age.pca[14:16] &lt;- age.pca[14:16]*365+270<br>
+   age.group &lt;- (age.pca&gt;76)+(age.pca&gt;98)+(age.pca&gt;140)<br>
+   win.print(width=7,height=7,pointsize=12,printer=&quot;Adobe PDF&quot;)<br>
+   for (i in 1:94) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; plot(age.group,folate.signal[i,])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title(gene.symbol[i],&quot;0=75-76, 
+   1=94-98, 2=130-140, 3=postnatal&quot;)<br>
+   }<br>
+   dev.off()</code></p>
+  <p><b>Dumping data to a text file </b></p>
+  <p>In the prenatal liver study, I needed to give some of 
+   the normalized gene expression levels to a researcher in a form he could use. 
+   The data he needed was in a data frame with 94 rows and 16 columns (folate.signal). 
+   But unfortunately, the names of the rows (gene.symbol) and columns (liver.names) 
+   were stored in separate objects. Here's one way to match the values back up.</p>
+  <p>&nbsp;First, there are duplicates in the gene.symbol list, so 
+   to create new names, use the makeUnique function found in the limma library. 
+   Then change folate.signal from a data frame to a matrix. Use the dimnames 
+   function to add the row and column names to the matrix. Finally, use the 
+   write.table function to create a text file.</p>
+  <p><code>gene.unique &lt;- makeUnique(paste(gene.symbol,&quot; &quot;))<br>
+   </code><code>folate.matrix &lt;- as.matrix(folate.signal)<br>
+   </code><code>dimnames(folate.matrix) &lt;- list(gene.unique,liver.names)<br>
+   </code><code>write.table(folate.matrix,&quot;x:/sleeder/folate.txt&quot;)</code></p>
+</blockquote>
+
+</body>
+
+</html>

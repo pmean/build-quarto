@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<title>Stats: Unsupervised learning for microarray data (no date)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Unsupervised learning (no date)</strong> [incomplete]</p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/micro-array-unsupervised-learning/">new website</a>.</p>
+
+<blockquote>
+<p>Here are some documented examples of how to use unsupervised learning methods 
+of the analysis of microarray data.</p>
+</blockquote>
+<p><b>Unsupervised learning</b></p>
+<blockquote>
+  <p>The examples in this section will use the Khan data set that is part of 
+   the DNAMR library. To read in the Khan data set, use the following commands:</p>
+  <p><font color="#FF0000"><code>rDirectory &lt;- &quot;c:/Program Files/R/rw1090&quot; <br>
+   FileName &lt;- &quot;/library/DNAMR/data/Khan.txt&quot;<br>
+   kh.dat &lt;- read.table(file=paste(rDirectory,FileName,sep=&quot;&quot;))<br>
+   kh.log &lt;- log(kh.dat,base=2)[,-1]</code></font></p>
+  <p>The <font color="#FF0000"><code>[,-1]</code></font> at the end of the last 
+   command omits the first column from the data set before computing logs, since 
+   the first column is an image id.</p>
+</blockquote>
+<p><b>Unsupervised learning (class discovery)</b></p>
+<blockquote>
+  <p>Hierarchical clustering, partitioning clustering (silhouette widths), model 
+   based clustering.</p>
+  <p>Clustering methods in the Acuity software system:</p>
+  <ul>
+    <li>Hierarchical Clustering</li>
+    <li>K-Means Clustering</li>
+    <li>K-Medians Clustering</li>
+    <li>Gap Statistic</li>
+    <li>Self-Organizing Maps</li>
+    <li>Gene Shaving</li>
+    <li>Principal Components Analysis</li>
+  </ul>
+</blockquote>
+
+</body>
+
+</html>

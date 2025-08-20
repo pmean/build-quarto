@@ -1,0 +1,301 @@
+<html>
+
+<head>
+
+<title>Stats: Normalization for microarray data (no date)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><b>Normalization for microarray data</b><strong> (no date)</strong> [incomplete]</p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/micro-array-normalization/">new website</a>.</p>
+
+<blockquote>
+<p>Normalization is the process of adjusting values in a microarray experiment 
+to improve consistency and reduce bias.</p>
+</blockquote>
+<p><b>Image processing</b></p>
+<blockquote>
+  <p>[explain]</p>
+</blockquote>
+<p><b>Background correction</b></p>
+<blockquote>
+  <p>[explain]</p>
+</blockquote>
+<p><b>Log transformation</b></p>
+<blockquote>
+  <p>[explain]</p>
+</blockquote>
+<p><b>Normalization</b></p>
+<blockquote>
+  <p>If you run the same biological sample on two separate microarrays (or on 
+   both the red and the green channel of a two color array), you will get 
+   slightly different results. This is just part of the inherent variation that 
+   you have with any laboratory assay.</p>
+  <p>Normalization is a method that attempts to remove some of this variation. 
+   There are several approaches which can be used separately or in combination 
+   to normalize a set of microarrays.</p>
+  <p>1. Multiply each array by a constant to make the mean (median) intensity 
+   the same for each individual array.</p>
+  <p>2. Adjust the arrays using some control or housekeeping genes that you 
+   would expect to have the same intensity level across all of the samples.</p>
+  <p>3. Match the percentiles of each array.</p>
+  <p>4. Adjust using a nonlinear smoothing curve.</p>
+  <p>5. Adjust using control genes</p>
+  <p>Amaratunga and Cabrera (2004) include a library of R functions with their 
+   book and that library includes several sample data sets. The data set 
+   mice2.txt represents a simple microarray experiment with four control mice 
+   and four treated mice. There is substantial variation in the arrays.</p>
+  <p>The following program reads the mice2.txt file, compute the base 2 
+   logarithm for each value, and then estimates the average intensity.</p>
+  <p><font color="#FF0000"><code>rDirectory &lt;- &quot;c:/Program Files/R/rw1090&quot; <br>
+   FileName &lt;- &quot;/library/DNAMR/data/mice2.txt&quot;<br>
+   m2.dat &lt;- read.table(file=paste(rDirectory,FileName,sep=&quot;&quot;))<br>
+   m2.log &lt;- log(m2.dat,base=2)<br>
+   m2.array.means &lt;- apply(m2.log,2,mean)<br>
+   print(round(m2.array.means,2))</code></font></p>
+  <p>Here is what the output looks like (I slightly modified the appearance of 
+   this output and some of the later output so it would fit better on this web 
+   page).</p>
+  <p><code>cnt1011a1 9.07 <br>
+   cnt1011a2 9.03 <br>
+   cnt1011b1 8.93 <br>
+   cnt1011b2 9.2 <br>
+   trt2501a1 8.8 <br>
+   trt2501a2 9.08 <br>
+   trt2501b1 9.49 <br>
+   trt2501b2 9.23</code></p>
+  <p><font color="#FF0000"><code>
+   boxplot(split(as.matrix(m2.log),col(as.matrix(m2.log))))</code></font></p>
+  <p><img border="0" src="../01/images/microa1.gif" width="399" height="418"></p>
+  <p>Notice that even within the control and treatment arrays there is some 
+   variation in the average intensity. There are several factors that can cause 
+   this. Perhaps one array got slightly more DNA, or maybe there are slight 
+   variations during the production of the arrays. Maybe there were variations 
+   in the laboratory environment (temperature or humidity) during the 
+   preparation of these samples that influenced the readings.</p>
+  <p>Here's a direct comparison of the seventh and eighth arrays.</p>
+  <p><font color="#FF0000"><code>par(mar=c(5,4,0,0)+0.1)<br>
+   plot(m2.log[,7],m2.log[,8],<br>
+&nbsp; xlim=range(m2.log),ylim=range(m2.log))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa3.gif" width="401" height="380"></p>
+  <p>Notice how the bulk of the data lies below the diagonal line. This is an 
+   indication that signal intensity was lower, across the board, for the eighth 
+   array.</p>
+  <p>What you are seeing with these eight arrays is not too much different than 
+   what you might experience if you burn your own mix of songs onto a CD. Some 
+   of the songs might be recorded at a louder or softer volume than others, and 
+   if you take no steps to adjust the recording, then you would have to be 
+   constantly adjusting your volume as you listen to that CD.</p>
+  <p>The simplest adjustment is to <b>take each signal and divide it by the 
+   average signal for each array</b>. This guarantees that the adjusted signals 
+   will all have a mean of 1.0. Here is the R code to normalize each array to 
+   have the same mean intensity.</p>
+  <p><font color="#FF0000"><code>m2.n.genes &lt;- dim(m2.log)[[1]]<br>
+   m2.n.arrays &lt;- dim(m2.log)[[2]]<br>
+   m2.normalize1 &lt;- matrix(NA,m2.n.genes,m2.n.arrays)<br>
+   for (i in 1:m2.n.arrays) {<br>
+&nbsp; m2.normalize1[,i] &lt;- m2.log[,i]/mean(m2.log[,i])<br>
+   }</code></font></p>
+  <p>By the way, experts in R would probably point out the inefficiencies in 
+   this code. In general, if you can use matrix operations to avoid using loops, 
+   you should. Here's a bit more efficient code</p>
+  <p><font color="#FF0000"><code>one &lt;- matrix(1,3434,1)<br>
+   m2.normalize1a &lt;- m2.log / (one%*%m2.array.means)</code></font></p>
+  <p>You might wonder if this normalization is good or bad. It is possible, 
+   perhaps, that the treatment changes the cells by upregulating most genes to 
+   produce more mRNA. This is indeed possible, and normalization would 
+   effectively remove most of the effect of the treatment before you had a 
+   chance to analyze it.</p>
+  <p>Fortunately, the more likely scenario is that a treatment would upregulate 
+   only a few genes, downregulate only a few more genes, and would leave the 
+   vast majority of genes unaffected. There's safety in numbers for most 
+   microarrays, so normalization does not end up distorting your data.</p>
+  <p>Since the mean is influenced by outliers, some people prefer to <b>adjust 
+   by the median intensity level</b> rather than the mean level. Another 
+   commonly used choice is to adjust using the 75th percentile. The rationale 
+   for this choice is that about half the genes might not show any significant 
+   expression, so the 75th percentile represents the median of the remaining 
+   50%.</p>
+  <p><code><font color="#FF0000">&gt; round(f.concor(m2.log),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.97 0.97 0.96 0.78 0.80 0.75 0.78<br>
+   cna2 0.97 1.00 0.97 0.96 0.78 0.81 0.76 0.79<br>
+   cnb1 0.97 0.97 1.00 0.96 0.82 0.80 0.75 0.79<br>
+   cnb2 0.96 0.96 0.96 1.00 0.77 0.81 0.79 0.81<br>
+   tra1 0.78 0.78 0.82 0.77 1.00 0.92 0.85 0.89<br>
+   tra2 0.80 0.81 0.80 0.81 0.92 1.00 0.92 0.96<br>
+   trb1 0.75 0.76 0.75 0.79 0.85 0.92 1.00 0.95<br>
+   trb2 0.78 0.79 0.79 0.81 0.89 0.96 0.95 1.00<br>
+   <br>
+   <font color="#FF0000">&gt; round(f.concor(m2.normalize1),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.97 0.98 0.97 0.80 0.80 0.79 0.79<br>
+   cna2 0.97 1.00 0.97 0.97 0.79 0.81 0.80 0.80<br>
+   cnb1 0.98 0.97 1.00 0.98 0.82 0.81 0.80 0.81<br>
+   cnb2 0.97 0.97 0.98 1.00 0.80 0.82 0.81 0.81<br>
+   tra1 0.80 0.79 0.82 0.80 1.00 0.94 0.95 0.94<br>
+   tra2 0.80 0.81 0.81 0.82 0.94 1.00 0.96 0.97<br>
+   trb1 0.79 0.80 0.80 0.81 0.95 0.96 1.00 0.96<br>
+   trb2 0.79 0.80 0.81 0.81 0.94 0.97 0.96 1.00</code></p>
+  <p><font color="#FF0000"><code>plot(m2.normalize1[,7],m2.normalize1[,8],<br>
+&nbsp; xlim=range(m2.normalize1),ylim=range(m2.normalize1))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa4.gif" width="401" height="380"></p>
+  <p><font color="#FF0000"><code>boxplot(split(as.matrix(m2.normalize1),<br>
+&nbsp; col(as.matrix(m2.normalize1))))</code></font></p>
+  <p><img border="0" src="../01/images/microa2.gif" width="399" height="418"></p>
+  <p>This normalization helps only a little. There is still too much of the data 
+   below the diagonal line. The problem is that the variation from array to 
+   array is often intensity dependent and these arrays show systematic 
+   variations at low intensities that differ from variations seen at medium and 
+   high intensities.</p>
+  <p>Another approach is <b>quantile normalization</b>. If you look at the 
+   sorted values of any two arrays, they will deviate from an identity line.</p>
+  <p><font color="#FF0000"><code>plot(sort(m2.log[,7]),sort(m2.log[,8]),<br>
+&nbsp; xlim=range(m2.log),ylim=range(m2.log))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa5.gif" width="401" height="380"></p>
+  <p>Quantile normalization will match up these values across all the arrays so 
+   that the smallest value on each array is identical, the second smallest is 
+   identical, and so forth. Note that the smallest value for one array might be 
+   a different gene than the smallest value on another array.</p>
+  <p>The DNAMR package includes a function, f.qn() that performs quantile 
+   normalization. Let's apply this to the data and see what we get.</p>
+  <p><font color="#FF0000"><code>library(&quot;DNAMR&quot;)<br>
+   m2.normalize2 &lt;- f.qn(m2.log)<br>
+   plot(sort(m2.normalize2[,7]),sort(m2.normalize2[,8]),<br>
+   &nbsp;xlim=range(m2.normalize2),ylim=range(m2.normalize2))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa6.gif" width="401" height="380"></p>
+  <p><code><font color="#FF0000">&gt; round(f.concor(m2.normalize2),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.97 0.98 0.97 0.80 0.82 0.83 0.81<br>
+   cna2 0.97 1.00 0.97 0.97 0.80 0.82 0.83 0.81<br>
+   cnb1 0.98 0.97 1.00 0.99 0.82 0.82 0.84 0.83<br>
+   cnb2 0.97 0.97 0.99 1.00 0.81 0.82 0.83 0.82<br>
+   tra1 0.80 0.80 0.82 0.81 1.00 0.95 0.97 0.94<br>
+   tra2 0.82 0.82 0.82 0.82 0.95 1.00 0.96 0.97<br>
+   trb1 0.83 0.83 0.84 0.83 0.97 0.96 1.00 0.97<br>
+   trb2 0.81 0.81 0.83 0.82 0.94 0.97 0.97 1.00</code></p>
+  <p><font color="#FF0000"><code>plot(m2.normalize2[,7],m2.normalize2[,8],<br>
+&nbsp; xlim=range(m2.normalize2),ylim=range(m2.normalize2))<br>
+   abline(a=0,b=1)<br>
+&nbsp;</code></font></p>
+  <p><img border="0" src="../01/images/microa7.gif" width="401" height="380"></p>
+  <p><font color="#FF0000"><code>boxplot(split(as.matrix(m2.normalize2),<br>
+&nbsp; col(as.matrix(m2.normalize2))))</code></font></p>
+  <p><img border="0" src="../01/images/microa11.gif" width="399" height="418"></p>
+  <p>Notice that the concordance correlations are just a bit better. The seventh 
+   and eighth arrays line up better as well, with about half the genes above and 
+   below the diagonal.</p>
+  <p>It's interesting to look at the code behind the f.qn() function.</p>
+  <p><code><font color="#FF0000">&gt; f.qn</font><br>
+   function (x) <br>
+   {<br>
+&nbsp; xm &lt;- apply(x, 2, sort)<br>
+&nbsp; xxm &lt;- f.rmedian.na(xm)<br>
+&nbsp; xr &lt;- c(apply(x, 2, rank))<br>
+&nbsp; array(approx(1:nrow(x), xxm, xr)$y, dim(x), dimnames(x))<br>
+   }</code></p>
+  <p>The program creates a temporary matrix xm consisting of the sorted columns 
+   of x. Then it computes a median across all the rows of xm. Then the approx() 
+   function applies linear interpolation to the data.</p>
+  <p>A third approach to normalization uses <b>smoothing curves</b> to adjust. 
+   Define a median signal across all the arrays and then look at the 
+   relationship between the smooth fit and the diagonal line. Adjust the array 
+   values up or down depending on whether the smooth fit is below or above the 
+   diagonal line.</p>
+  <p><code><font color="#FF0000">m2.median &lt;- apply(m2.log,1,median)<br>
+   m2.deviation &lt;- matrix(NA,m2.n.genes,m2.n.arrays)<br>
+   for (i in 1:8) {<br>
+&nbsp; smooth.fit &lt;- fitted(loess(m2.log[,i]~m2.median))<br>
+&nbsp; m2.deviation[,i] &lt;- smooth.fit - m2.median<br>
+&nbsp; plot(m2.median,m2.log[,i],<br>
+&nbsp;&nbsp;&nbsp; xlim=range(m2.log),ylim=range(m2.log))<br>
+&nbsp; abline(a=0,b=1)<br>
+&nbsp; points(m2.median,smooth.fit,col=3)<br>
+   }</font><br>
+   </code><img border="0" src="../01/images/microa8.gif" width="401" height="380"></p>
+  <p><code><font color="#FF0000">m2.normalize3 &lt;- m2.log - m2.deviation<br>
+   round(f.concor(m2.normalize3),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.98 0.98 0.98 0.83 0.82 0.80 0.82<br>
+   cna2 0.98 1.00 0.98 0.98 0.82 0.82 0.79 0.81<br>
+   cnb1 0.98 0.98 1.00 0.99 0.85 0.83 0.81 0.82<br>
+   cnb2 0.98 0.98 0.99 1.00 0.82 0.81 0.78 0.80<br>
+   tra1 0.83 0.82 0.85 0.82 1.00 0.95 0.96 0.94<br>
+   tra2 0.82 0.82 0.83 0.81 0.95 1.00 0.95 0.96<br>
+   trb1 0.80 0.79 0.81 0.78 0.96 0.95 1.00 0.96<br>
+   trb2 0.82 0.81 0.82 0.80 0.94 0.96 0.96 1.00<br>
+   <br>
+   <font color="#FF0000">plot(m2.normalize3[,7],m2.normalize3[,8],<br>
+&nbsp; xlim=range(m2.normalize2),ylim=range(m2.normalize2))<br>
+   abline(a=0,b=1)</font></code></p>
+  <p><img border="0" src="../01/images/microa9.gif" width="401" height="380"></p>
+  <p><code><font color="#FF0000">boxplot(split(as.matrix(m2.normalize3),<br>
+&nbsp; col(as.matrix(m2.normalize3))))</font></code></p>
+  <p><img border="0" src="../01/images/microa12.gif" width="399" height="418"></p>
+  <p>This normalization seems to work about as well as the quantile 
+   normalization did.</p>
+  <p>You can get a better feel for the need for normalization by using an <b>MvA 
+   plot</b>. This plot effectively rotates the plot 45 degrees so that the 
+   diagonal reference line becomes a horizontal reference line. Here's some code 
+   for creating an MvA plot and an example of how that plot differs from the one 
+   shown just above.</p>
+  <p><font color="#FF0000"><code>mva.plot &lt;- function(x,y) {<br>
+&nbsp; m &lt;- y-x<br>
+&nbsp; a &lt;- (x+y)/2<br>
+&nbsp; plot(a,m)<br>
+&nbsp; abline(h=0)<br>
+   }<br>
+   mva.plot(m2.normalize3[,7],m2.normalize3[,8])</code></font></p>
+  <p><img border="0" src="../01/images/microa10.gif" width="401" height="380"></p>
+  <p>You can do your normalization calculations on the MvA plot, though they 
+   should not be significantly different from the&nbsp; normalizations described 
+   above. The MvA plot is also called a Bland-Altman plot.</p>
+  <p>Depending on what you know about the microarrays, you might want to 
+   consider <b>additional normalization steps</b>. For example, if you know the 
+   physical location of the spots on the microarray, you might want to see if 
+   there are physical regions of the array where signals are stronger or weaker. 
+   If the array was printed used a set of 16 print tips, you might want to see 
+   if some of the tips produced stronger or weaker signals than the others.</p>
+  <p>I did not discuss the use of <b>control genes</b> for normalization. There 
+   are several problems with the use of control genes. First, these genes might 
+   not cover the full range of intensity levels on the array. Second, there is 
+   some question about whether certain genes will truly serve effectively as 
+   controls, and they may not have the same expression levels across different 
+   samples.</p>
+  <p>Once the data is normalized, you may wish to store in an object of class &quot;exprSet&quot;. 
+   Here are the R commands to do this.</p>
+  <p><code><font color="#FF0000">library(&quot;marray&quot;)<br>
+   m2.indicators &lt;- data.frame(ic=c(1,1,1,1,0,0,0,0),<br>
+&nbsp; it=c(0,0,0,0,1,1,1,1),row.names=dimnames(m2.dat)[[2]])<br>
+   covLabels &lt;- list(&quot;Indicator for Control&quot;,&quot;Indicator for Treatment&quot;)<br>
+   names(covLabels) &lt;- names(m2.indicators)<br>
+   m2.phenoData &lt;- new(&quot;phenoData&quot;,pData=m2.indicators,varLabels=covLabels)<br>
+   m2.exprSet &lt;- new(&quot;exprSet&quot;,exprs=as.matrix(m2.normalize3),<br>
+&nbsp; phenoData=m2.phenoData)<br>
+   print(m2.exprSet)<br>
+   </font><br>
+   Expression Set (exprSet) with <br>
+   3434 genes<br>
+   8 samples<br>
+   phenoData object with 2 variables and 8 cases<br>
+   varLabels<br>
+   ic: Indicator for Control<br>
+   it: Indicator for Treatment</code></p>
+  <p>You can then use this object with most of the Bioconductor routines for 
+   differential expression, clustering, and so forth.</p>
+</blockquote>
+
+</body>
+
+</html>
