@@ -3115,7 +3115,7 @@ vertical-align: -.125em;
 <section id="get-names" class="level2">
 <h2 class="anchored" data-anchor-id="get-names">Get names</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>yr <span class="ot">&lt;-</span> <span class="st">&quot;00&quot;</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>yr <span class="ot">&lt;-</span> <span class="st">&quot;23&quot;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>md_files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="fu">glue</span>(<span class="st">&quot;../gen5/{yr}&quot;</span>))</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>md_files <span class="sc">|&gt;</span></span>
@@ -3124,27 +3124,70 @@ vertical-align: -.125em;
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_remove</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.md$&quot;</span>) <span class="ot">-&gt;</span> root_names</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>root_names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] &quot;acknowledge-help&quot;           &quot;alternating-treatments&quot;    
- [3] &quot;association-vs-causation&quot;   &quot;best-fitting-curve&quot;        
- [5] &quot;binary-outcome-sample-size&quot; &quot;composite-scores&quot;          
- [7] &quot;control-chart-sigma&quot;        &quot;copyright-notice&quot;          
- [9] &quot;copyright&quot;                  &quot;exporting-spss-graphs&quot;     
-[11] &quot;future-plans&quot;               &quot;hand17&quot;                    
-[13] &quot;hand17d&quot;                    &quot;hand18&quot;                    
-[15] &quot;hand18condensed&quot;            &quot;important-disclaimer&quot;      
-[17] &quot;links-from-outside&quot;         &quot;mann-whitney-sample-size&quot;  
-[19] &quot;obsolete-pages&quot;             &quot;personal-information&quot;      
-[21] &quot;physician-performance-data&quot; &quot;professional-resume&quot;       
-[23] &quot;protocol-changes&quot;           &quot;quota-stratified-sampling&quot; 
-[25] &quot;regression-to-the-mean&quot;     &quot;removing-outliers&quot;         
-[27] &quot;research-paper-flaws&quot;       &quot;sample-size-for-ci&quot;        
-[29] &quot;spreadsheet-or-database&quot;    &quot;statistics-jargon&quot;         
-[31] &quot;stratified-sample&quot;          &quot;web-page-software&quot;         
-[33] &quot;what-is-bootstrap&quot;          &quot;what-is-collinearity&quot;      
-[35] &quot;what-is-fishers-exact-test&quot; &quot;what-is-itt&quot;               
-[37] &quot;what-is-kaplan-meier-curve&quot; &quot;what-is-mixture-model&quot;     
-[39] &quot;what-is-nnt&quot;                &quot;what-is-spline-curve&quot;      
-[41] &quot;what-is-stein-paradox&quot;     </code></pre>
+<pre><code> [1] &quot;ai-danger&quot;                             
+ [2] &quot;ai-fairness&quot;                           
+ [3] &quot;another-graphic-novel-pitch&quot;           
+ [4] &quot;apache-arrow&quot;                          
+ [5] &quot;bayesian-bias&quot;                         
+ [6] &quot;bio-blurb&quot;                             
+ [7] &quot;bmj-open-thanks&quot;                       
+ [8] &quot;correct-paper&quot;                         
+ [9] &quot;data-science-with-r&quot;                   
+[10] &quot;data-sharing-critique&quot;                 
+[11] &quot;data-technologies&quot;                     
+[12] &quot;display-commands&quot;                      
+[13] &quot;dlstats-package&quot;                       
+[14] &quot;documenting-sample-size-justifications&quot;
+[15] &quot;early-micro-array-pages&quot;               
+[16] &quot;essential-statistics&quot;                  
+[17] &quot;exponential-hedging-hyperprior&quot;        
+[18] &quot;feature-engineering-and-selection&quot;     
+[19] &quot;file-uploads&quot;                          
+[20] &quot;finding-examples&quot;                      
+[21] &quot;generative-ai-resources&quot;               
+[22] &quot;geocomputation-with-r&quot;                 
+[23] &quot;ggplot2-book&quot;                          
+[24] &quot;git-local-installation&quot;                
+[25] &quot;git-local-updates&quot;                     
+[26] &quot;git-personal-repository&quot;               
+[27] &quot;git-shared-repository&quot;                 
+[28] &quot;grants-for-scholarly-works&quot;            
+[29] &quot;hoffman-interview&quot;                     
+[30] &quot;introduction-to-harrell-verse&quot;         
+[31] &quot;latex-guide&quot;                           
+[32] &quot;magrittr-aliases&quot;                      
+[33] &quot;man-of-one-study&quot;                      
+[34] &quot;mckinney-joins-posit&quot;                  
+[35] &quot;mcnemar-test&quot;                          
+[36] &quot;mixture-of-normals&quot;                    
+[37] &quot;modified-power-prior&quot;                  
+[38] &quot;mwl-grant-information&quot;                 
+[39] &quot;nightingale-legacy&quot;                    
+[40] &quot;non-standard-evaluation&quot;               
+[41] &quot;normal-hedging-hyperprior-part-1&quot;      
+[42] &quot;normal-hedging-hyperprior-part-2&quot;      
+[43] &quot;normal-hedging-hyperprior-part-3&quot;      
+[44] &quot;pediatric-pandemic-network&quot;            
+[45] &quot;primer-on-python&quot;                      
+[46] &quot;privacy-references&quot;                    
+[47] &quot;randomization-tests-overview&quot;          
+[48] &quot;re-reading-14-points&quot;                  
+[49] &quot;reasons-to-run-a-pilot&quot;                
+[50] &quot;relative-risk-using-glm&quot;               
+[51] &quot;reshape-sas&quot;                           
+[52] &quot;rule-of-16&quot;                            
+[53] &quot;sas-webinars&quot;                          
+[54] &quot;scope-of-work&quot;                         
+[55] &quot;sdss-2023&quot;                             
+[56] &quot;standardized-survival&quot;                 
+[57] &quot;suggested-methodology-topics&quot;          
+[58] &quot;swarm-plot-examples&quot;                   
+[59] &quot;taylor-series-approximation&quot;           
+[60] &quot;teaching-confounding&quot;                  
+[61] &quot;teaching-reproducibility&quot;              
+[62] &quot;too-many-colors&quot;                       
+[63] &quot;using-work-resources&quot;                  
+[64] &quot;what-is-a-partial-correlation&quot;         </code></pre>
 </div>
 </div>
 </section>
