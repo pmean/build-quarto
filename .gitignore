@@ -2,14 +2,6 @@
 .Rhistory
 *.RData
 *.Rproj
-data/*.*
-doc/*.*
-images/*.*
-text/tags/*.*
-*.bak
-*.docx
-*.pdf
-*.html
-*.png
+results/*.*
 
 /.quarto/

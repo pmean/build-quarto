@@ -1,0 +1,89 @@
+---
+title: "Sweep html files from src to results"
+format: 
+  html:
+    embed-resources: true
+execute: 
+  echo: false
+---
+
+## File details
+
+This program moves html files from various folders into a general results folder. It was written by Steve Simon on 2025-01-08 with major modifications on 2025-08-20 and is placed in the public domain. 
+
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+
+movable_extensions <- c("docx", "html", "pdf", "pptx")
+z100 <- c(glue("0{1:9}"), as.character(10:99), "00")
+```
+
+## Identify html files
+
+```{r}
+#| label: identify
+
+identify_files <- function(subdir, ext) {
+  list.files(
+    path=subdir,
+    pattern=ext)
+}
+```
+
+## Move html files
+
+```{r}
+#| label: sweep
+
+sweep_files <- function(subdir, file_name) {
+  old <- glue("{subdir}/{file_name}")
+  new <- glue("../results/{file_name}")
+  file.rename(from=old, to=new)
+}
+```
+
+## Loop across folders
+
+```{r}
+#| label: loop
+
+loop_folders <- function(folder_name) {
+  print(glue("Searching in {folder_name}"))
+  file_list <- character(0)
+  for (ext in movable_extensions) {
+    file_list <- c(file_list, identify_files(folder_name, ext))
+  }
+  if (length(file_list) == 0) return("---{folder_name} No files found")
+  for (f in file_list) {
+    # sweep_files(s, f)
+  }
+  return(glue("---{folder_name} {file_list}"))
+}
+```
+
+## text folders
+
+```{r}
+#| label: text-folders
+
+folder_list <- paste0("../text/", z100[c(99, 100, 1:25)])
+for (folder_name in folder_list) {
+  loop_results <- loop_folders(folder_name)
+  print(loop_results)
+}
+
+```
+
+## src folder
+
+```{r}
+#| label: src-folder
+
+loop_folders("../src")
+```
