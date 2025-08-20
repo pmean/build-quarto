@@ -1,0 +1,444 @@
+<html>
+
+<head>
+
+<title>Stats: Confidence intervals (November 29, 2004)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Confidence Intervals (November 29, 2004)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/what-is-confidence-interval/">new website</a>.</p>
+
+<p><em>Dear Professor Mean:&nbsp; Can you give me a simple explanation of what a 
+ confidence interval is?</em></p>
+<blockquote>
+  <p>We statisticians have a habit of <strong>hedging our bets</strong>. We 
+   always insert qualifiers into our reports, warn about all sorts of 
+   assumptions, and never admit to anything more extreme than probable. There's 
+   a famous saying: <b>&quot;</b><strong>Statistics means never having to say you're 
+   certain</strong>.<b>&quot;</b></p>
+  <p>We qualify our statements, of course, because we are always <strong>dealing 
+   with imperfect information</strong>. In particular, we are often asked to 
+   make statements about a population (a large group of subjects) using 
+   information from a sample (a small, but carefully selected subset of this 
+   population). No matter how carefully this sample is selected to be a fair and 
+   unbiased representation of the population, <strong>relying on information 
+   from a sample will always lead to some level of uncertainty</strong>.</p>
+  <p>I'll show some of the formulas and calculations below, but here are some 
+   spreadsheets that I commonly use to make simple confidence interval 
+   calculations.</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForSingleMean.xls">
+    ConfidenceIntervalForSingleMean.xls</a></li>
+    <li><a href="../01/images/ConfidenceIntervalForSingleProportion.xls">
+    ConfidenceIntervalForSingleProportion.xls</a></li>
+    <li><a href="../01/images/ConfidenceIntervalForTwoUnpairedMeans.xls">
+    ConfidenceIntervalForTwoUnpairedMeans.xls</a></li>
+    <li><a href="../01/images/ConfidenceIntervalForTwoUnpairedProportions.xls">
+    ConfidenceIntervalForTwoUnpairedProportions.xls</a></li>
+    <li><a href="../01/images/ConfidenceIntervalForCorrelation.xls">
+    ConfidenceIntervalForCorrelation.xls</a></li>
+    <li><a href="../01/images/ConfidenceIntervalForOddsRatio.xls">
+    ConfidenceIntervalForOddsRatio.xls</a></li>
+    <li><a href="../01/images/ConfidenceIntervalForRateRatio.xls">
+    ConfidenceIntervalForRateRatio.xls</a></li>
+  </ul>
+</blockquote>
+<p><strong>Short Explanation</strong></p>
+<blockquote>
+  <p><strong>A confidence interval is a range of values that tries to quantify 
+   this uncertainty</strong>. Consider it as a <strong>range of plausible values</strong>. 
+   A narrow confidence interval implies high precision; we can specify plausible 
+   values to within a tiny range. A wide interval implies poor precision; we can 
+   only specify plausible values to a broad and uninformative range.</p>
+  <p>Consider a recent study of <strong>homoeopathic treatment of pain and 
+   swelling after oral surgery</strong> (Lokken 1995). When examining swelling 3 
+   days after the operation, they showed that <font color="#FF0000"><strong>
+   homoeopathy led to 1 mm less swelling on average</strong></font>. The
+   <font color="#FF0000"><strong>95% confidence interval</strong><b>, however, 
+   ranged from </b><strong>-5.5 to 7.5 mm</strong></font>. From what little I 
+   know about oral surgery, this appears to be a very wide interval. This 
+   interval implies that <strong>neither a large improvement due to homoeopathy 
+   nor a large decrement could be ruled out</strong>.</p>
+  <p>Generally <strong>when a confidence interval is very wide</strong> like 
+   this one, it is an indication of an <strong>inadequate sample size</strong>, 
+   an issue that the authors mention in the discussion section of this paper.</p>
+</blockquote>
+<p><strong>How to Interpret a Confidence Interval</strong></p>
+<blockquote>
+  <p>When you see a confidence interval in a published medical report, you 
+   should look for two things. First, <strong>does the interval contain a value 
+   that implies no change or no effect</strong>? For example, with a confidence 
+   interval for a difference look to see whether that interval includes zero. 
+   With a confidence interval for a ratio, look to see whether that interval 
+   contains one.</p>
+  <p>Here's an example of a confidence interval that contains the null value.
+   <strong>The interval shown below implies no statistically significant change</strong>.</p>
+  <p>
+   <img src="../12a/journal/Images/conf21.gif" alt="Figure 2.1" WIDTH="318" HEIGHT="63"></p>
+  <p>Here's an example of a confidence interval that excludes the null value. If 
+   we assume that larger implies better, then <strong>the interval shown below 
+   would imply a statistically significant improvement</strong>.</p>
+  <p>
+   <img src="../12a/journal/Images/conf22.gif" alt="Figure 2.2 (1222 bytes)" WIDTH="318" HEIGHT="63"></p>
+  <p>Here's a different example of a confidence interval that excludes the null 
+   value. <strong>The interval shown below implies a statistically significant 
+   decline</strong>.</p>
+  <p>
+   <img src="../12a/journal/Images/conf23.gif" alt="Figure 2.3 (1214 bytes)" WIDTH="318" HEIGHT="63"></p>
+</blockquote>
+<p><strong>Practical Significance</strong></p>
+<blockquote>
+  <p>You should also see <strong>whether the confidence interval lies partly or 
+   entirely within a range of clinical indifference</strong>. Clinical 
+   indifference represents values of such a trivial size that you would not want 
+   to change your current practice. For example, you would not recommend a 
+   special diet that showed a one year weight loss of only five pounds. You 
+   would not order a diagnostic test that had a predictive value of less than 
+   50%.</p>
+</blockquote>
+<blockquote>
+  <p><strong>Clinical indifference is a medical judgement, and not a statistical 
+   judgement</strong>. It depends on your knowledge of the range of possible 
+   treatments, their costs, and their side effects. As statistician, I can only 
+   speculate on what a range of clinical indifference is. I do want to 
+   emphasize, however, that <strong>if a confidence interval is contained 
+   entirely within your range of clinical indifference</strong>, then you have<strong>
+   </strong>clear and convincing evidence to <strong>keep doing things the same 
+   way</strong> (see below).</p>
+  <p>
+   <img src="../12a/journal/Images/conf24.gif" alt="Figure 2.4 (1558 bytes)" WIDTH="318" HEIGHT="63"></p>
+  <p>One the other hand, <strong>if part of the confidence interval lies outside 
+   the range of clinical indifference</strong>, then you should consider the 
+   possibility that <strong>the sample size is too small</strong> (see below).</p>
+  <p>
+   <img src="../12a/journal/Images/conf25.gif" alt="Figure 2.5 (1553 bytes)" WIDTH="318" HEIGHT="63"></p>
+  <p>Some studies have sample sizes that are so large that even trivial 
+   differences are declared statistically significant. If your <strong>
+   confidence interval excludes the null value but still lies entirely within 
+   the range of clinical indifference</strong>, then you have a result with
+   <strong>statistical significance, but no practical significance</strong> (see 
+   below).</p>
+  <p>
+   <img src="../12a/journal/Images/conf26.gif" alt="Figure 2.6 (1548 bytes)" WIDTH="318" HEIGHT="63"></p>
+  <p>Finally, if your <strong>confidence interval excludes the null value and 
+   lies outside the range of clinical indifference</strong>, then you have
+   <strong>both statistical and practical significance</strong> (see below).</p>
+  <p>
+   <img src="../12a/journal/Images/conf27.gif" alt="Figure 2.7 (1550 bytes)" WIDTH="318" HEIGHT="63"></p>
+</blockquote>
+<p><strong>The Standard Error</strong></p>
+<blockquote>
+  <p>In many situations, the width of a confidence interval is proportional to 
+   the standard error. The <strong>standard error is defined the variability for 
+   a statistical estimate</strong>. You can compute a crude confidence interval 
+   by taking the estimate plus or minus twice the standard error.</p>
+</blockquote>
+<p><strong>Confidence Interval for a Simple Average</strong></p>
+<blockquote>
+  <p>There are lots of different formulas for the confidence interval and the 
+   standard error, depending on the context of the problem. The simplest formula 
+   appears when you estimate an average from a single sample. In this situation, 
+   the standard error would be</p>
+  <p>
+   <img src="../12a/journal/Images/conf28.gif" alt="Sigma/Sqrt(n) (972 bytes)" WIDTH="37" HEIGHT="56"></p>
+  <p>where sigma represents the variability of the original data and n 
+   represents the size of the sample. The crude confidence interval would be the 
+   sample mean plus or minus two standard errors.</p>
+  <p>The <strong>width of your confidence interval goes down as the sample size 
+   goes up</strong>, since you are placing a larger value in the denominator. 
+   This is a classic and intuitive relationship in statistics: larger sample 
+   sizes provide greater precision (that is, narrower confidence intervals).</p>
+  <p>One way of <strong>planning a sample size</strong> for your study is to try 
+   to <strong>make sure your confidence interval has an adequate amount of 
+   precision</strong>. Although larger sample sizes mean narrower confidence 
+   intervals, there is usually a point of diminishing returns. This occurs when 
+   further shrinking of the interval is not worth the cost of additional 
+   subjects.</p>
+  <p>An often overlooked strategy for <strong>gaining precision</strong> is by
+   <strong>finding a way to shrink sigma</strong>, the variability in your 
+   original data set. For example, use of calibration and quality control checks 
+   in a laboratory can often provide substantially smaller values for sigma.</p>
+  <p>I have a spreadsheet that calculates confidence intervals for a simple 
+   average:</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForSingleMean.xls">
+    ConfidenceIntervalForSingleMean.xls</a></li>
+  </ul>
+</blockquote>
+<p><strong>Confidence Interval for a Difference Between Two Averages</strong></p>
+<blockquote>
+  <p>If we were interested in estimating the <strong>difference in averages</strong> 
+   between two independent samples of data, the standard error of the estimated 
+   difference would be</p>
+  <p>
+   <img src="../12a/journal/Images/conf29.gif" alt="Sqrt(sigma1^2/n1+sigma2^2/n2) (1232 bytes)" WIDTH="97" HEIGHT="69"></p>
+  <p>where the subscripts 1 and 2 indicate whether the values come from the 
+   first or the second group. Notice that the standard error and hence <strong>
+   the width of the confidence interval goes down as either or both sample sizes 
+   go up</strong>.</p>
+  <p>When you are planning a research study comparing two groups, it is often 
+   helpful to consider different allocations of samples to the two groups. For 
+   example, if your first group is much more variable than the second group, you 
+   might be better off trying for a larger sample size in that group, rather 
+   than trying to get equal numbers in each group.</p>
+  <p>I have a spreadsheet that calculates the confidence interval for the 
+   difference between two averages:</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForTwoUnpairedMeans.xls">
+    ConfidenceIntervalForTwoUnpairedMeans.xls</a></li>
+  </ul>
+</blockquote>
+<p><strong>Confidence Interval for a Proportion</strong></p>
+<blockquote>
+  <p>If we compute a proportion, p, from a sample, the standard error of that 
+   proportion would be</p>
+  <p>
+   <img src="../12a/journal/Images/conf2a.gif" alt="sqrt(p*(1-p)/n) (1210 bytes)" WIDTH="113" HEIGHT="62"></p>
+  <p>Just like the previous examples, <strong>larger sample sizes lead to 
+   smaller standard errors</strong> and narrower confidence intervals.</p>
+  <p>Did you notice in this formula that <strong>the width of the confidence 
+   interval is related to the estimate itself</strong>. A bit of work with 
+   calculus will show you that, assuming the sample size stays the same, <strong>
+   the widest confidence interval occurs when p=0.5</strong>. Both rarer and 
+   more frequent events than 50% will produce narrower intervals.</p>
+  <p>Here is a simple spreadsheet that will calculate the confidence interval 
+   for a proportion.</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForSingleProportion.xls">
+    ConfidenceIntervalForSingleProportion.xls</a></li>
+  </ul>
+</blockquote>
+<p><strong>Confidence Interval for an Odds Ratio</strong></p>
+<blockquote>
+  <p>The final example involves computing an odds ratio. We often use t<strong>he 
+   odds ratio to summarize data in a two by two table</strong>. The rows of the 
+   table might represent disease status (healthy/diseased) and the columns might 
+   represent exposure status (exposed/unexposed). In this case, the odds ratio 
+   would represent the relative change in the odds of disease between exposed 
+   and unexposed patients.</p>
+  <p>Or possibly the rows might represent treatment status (active drug/placebo) 
+   and the columns might represent health outcome (improvement/no improvement). 
+   Here, the odds ratio represents the relative change in the odds of 
+   improvement between drug and placebo.</p>
+  <p>If we let the letters a, b, c, and d represent the frequency counts in a 
+   two by two table (see below)</p>
+  <p>
+   <img src="../12a/journal/Images/conf2b.gif" alt="Two by two matrix (1013 bytes)" WIDTH="49" HEIGHT="62"></p>
+  <p>then <strong>the odds ratio would be ad/bc</strong>. The odds ratio is 
+   skewed, so we cannot easily compute a standard error for the odds ratio 
+   itself. We can, however, find <strong>a standard error for the natural 
+   logarithm of the odds ratio</strong>. It is simply</p>
+  <p>
+   <img src="../12a/journal/Images/conf2c.gif" alt="sqrt(1/a+1/b+1/c+1/d) (1280 bytes)" WIDTH="138" HEIGHT="62"></p>
+  <p>We see that <strong>as any or all of the counts in the two by two table 
+   increase, the confidence interval for the log odds ratio shrinks</strong>. 
+   Also, it turns out that the smallest count in the two by two table plays the 
+   largest role in determining the size of the standard error.</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForOddsRatio.xls">
+    ConfidenceIntervalForOddsRatio.xls</a></li>
+  </ul>
+</blockquote>
+<b>
+<p>Confidence interval for a Rate Ratio</p>
+</b>
+<blockquote>
+  <p>[[Details to be provided soon.]]</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForRateRatio.xls">
+    ConfidenceIntervalForRateRatio.xls</a></li>
+  </ul>
+</blockquote>
+<b>
+<p>Confidence interval for a Relative Risk</p>
+</b>
+<blockquote>
+  <p>[[Details to be provided soon.]]</p>
+  <ul>
+    <li>[[Spreadsheet to be provided soon.]]</li>
+  </ul>
+</blockquote>
+<b>
+<p>Confidence interval for a Correlation</p>
+</b>
+<blockquote>
+  <p>[[Details to be provided soon.]]</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForCorrelation.xls">
+    ConfidenceIntervalForCorrelation.xls</a></li>
+  </ul>
+</blockquote>
+<b>
+<p>Example of a Confidence Interval For a Mean</b></p>
+<blockquote>
+  <p>In a study of immunotherapy in children with asthma, <font color="#FF0000">
+   <b>61 patients showed an average improvement of 2.5% peak expiratory flow 
+   rate with a standard deviation of 11%</b></font>. We divide the standard 
+   deviation by the square root of 61 to get a <font color="#FF0000"><b>standard 
+   error of 1.4</b></font>. A crude confidence interval would be
+   <font color="#FF0000"><b>2.5% plus or minus 2.8% which equals 0.3% to 4.8%</b></font>. 
+   I'm not an expert of asthma, but if we defined a range of clinical 
+   indifference to be an improvement of less than 5%, then this confidence 
+   interval is entirely within the range of clinical indifference.</p>
+</blockquote>
+<b>
+<p>Example of a Confidence Interval for An Odds Ratio</b></p>
+<blockquote>
+  <p>In the same study, the author noted that <b><font color="#FF0000">15 out of 
+   53 immunotherapy patients showed partial remission on their need for 
+   medication</font></b>. This sample size is smaller because of a small number 
+   of dropouts. In the <b><font color="#FF0000">placebo group, 12 out of 57 
+   showed partial remission</font></b>. The two by two table for these data 
+   looks like</p>
+  <p>
+   <img src="../12a/journal/Images/conf31.gif" alt="wpeB9.gif (1899 bytes)" WIDTH="321" HEIGHT="92"></p>
+  <p>The <b><font color="#FF0000">odds ratio is 1.5</font></b>, which shows that 
+   the immunotherapy treatment increases the odds of partial remission. The
+   <font color="#FF0000"><b>natural log of the odds ratio is 0.6</b></font>. For 
+   this calculation, be sure that you use a natural logarithm and not a base 10 
+   logarithm.</p>
+  <p>The standard error of the log odds ratio is</p>
+  <p>
+   <img src="../12a/journal/Images/conf32.gif" alt="wpeBA.gif (1493 bytes)" WIDTH="228" HEIGHT="62">
+  </p>
+  <p>So a <font color="#FF0000"><b>crude confidence interval for the log odds 
+   ratio is 0.6 plus or minus 0.9 which equals -0.5 to 1.3</b></font>. We can 
+   exponentiate (use the exp button on your scientific calculator) to convert 
+   back to the original measurement scale. This gives us <font color="#FF0000">
+   <b>a confidence interval of 0.6 to 3.6 for the odds ratio itself</b></font>. 
+   Even though this interval contains 1, we still have to allow for the 
+   possibility that the improvement might be as large as two-fold or three-fold.</p>
+</blockquote>
+<p><b>Confidence interval for the difference compared to two separate confidence 
+ intervals</b></p>
+<blockquote>
+  <p>It's important to avoid comparing two separate confidence intervals to see 
+   if they overlap. Someone brought me data where the proportion of patients who 
+   tested positive was 41.6% (n=202) for the first group and 50.7% (n=802) in 
+   the second group. The individual confidence intervals are (34.8% to 48.4%) 
+   and (47.2% to 54.2%). Notice that the two intervals overlap, but just barely. 
+   The confidence interval for the difference in two proportions, however, is 
+   (-16.7% to -1.5%) which provides evidence that the two proportions differ. 
+   This is a borderline result, of course, since one side of the interval almost 
+   reaches zero.</p>
+  <p>The reason that you can have overlap in the individual intervals is that 
+   you don't add the two standard errors together. The standard error for the 
+   two individual intervals would be</p>
+  <p><img border="0" src="../weblog/images/ci02.gif"></p>
+  <p>and the standard error for the difference is</p>
+  <p><img border="0" src="../weblog/images/ci01.gif"></p>
+  <p>You can compare these calculations by using the spreadsheet</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForTwoUnpairedProportions.xls">
+    ConfidenceIntervalForTwoUnpairedProportions.xls</a></li>
+  </ul>
+  <p>and comparing the result to the spreadsheet that computes a confidence 
+   interval for a single proportion:</p>
+  <ul>
+    <li><a href="../01/images/ConfidenceIntervalForSingleProportion.xls">
+    ConfidenceIntervalForSingleProportion.xls</a></li>
+  </ul>
+  <p>These are not very sophisticated spreadsheets and they use the simplest 
+   formulas available. The nice thing, though, about these spreadsheets is that 
+   they allow you to play a bunch of &quot;what if&quot; games.</p>
+</blockquote>
+<p><b>Exact confidence intervals</b></p>
+<blockquote>
+  <p>Some alternate confidence intervals based on the exact binomial 
+   distribution will provide better results than my spreadsheet, which uses the 
+   normal approximation to the binomial distribution. You can get such an 
+   interval using <a href="http://www.cytel.com/StatXact/Default.asp">StatXact 
+   software</a>, produced by <a href="http://www.cytel.com/home/default.asp">
+   Cytel, Inc</a>. A paper (PDF format) at the their web site
+   <a href="http://www.cytel.com/Library/Issue_seven/smallerPvalues-final.pdf">
+   discusses some of these exact procedures and how to get p-values from an 
+   exact confidence interval</a>.</p>
+</blockquote>
+<p><b>Confidence intervals for complex research designs</b></p>
+<blockquote>
+  <p>Someone asked me by email about confidence intervals in complex research 
+   designs. This person had rejected the use of <a href="../02/posthoc.html">
+   post hoc power calculations</a>, and wanted instead to use confidence 
+   intervals to help answer the question about whether the sample size was 
+   adequate. In a simple setting, such as the comparison of a treatment group to 
+   a control group, the choice of confidence interval is obvious, but how would 
+   you handle complex research designs (more than two groups and/or repeated 
+   measurements over time).</p>
+  <p>For example, if you are comparing a low, medium, and high dose to a 
+   placebo, then three confidence intervals for the difference between each dose 
+   and placebo might be interesting. If there is no dose response pattern, then 
+   a confidence interval comparing the two extreme doses might be helpful 
+   because it places limits on the size of any possible dose response pattern.</p>
+  <p>If your repeated measures include a baseline, 6 month and 12 month 
+   measures, then a confidence interval for the short term change (6 month minus 
+   baseline) and an interval for the long term change (12 month minus baseline) 
+   might be useful. Combining the two scenarios together, perhaps you know there 
+   is a strong placebo response, so then you might want a confidence interval 
+   for the long term change score between each dose and the placebo.</p>
+  <p>If you end up with more than two or three confidence intervals, you might 
+   want to consider some sort of adjustment like <a href="bonferroni.html">
+   Bonferroni</a>.</p>
+</blockquote>
+<p><b>Other pages that compute confidence intervals</b></p>
+<blockquote>
+  <p>There are lots of web pages out there that do confidence interval 
+   calculations, using Java or JavaScript. Here are a few nice examples of 
+   confidence intervals for a single proportion:</p>
+  <blockquote>
+    <p><b><a href="http://members.aol.com/johnp71/confint.html">Exact Binomial 
+     and Poisson Confidence Intervals</a></b>, John C. Pezzullo. members.aol.com/johnp71/confint.html</p>
+    <p><b><a href="http://faculty.vassar.edu/lowry/prop1.html">The Confidence 
+     Interval of a Proportion</a></b>, Richard Lowry. faculty.vassar.edu/lowry/prop1.html</p>
+    <p><b><a href="http://www.graphpad.com/quickcalcs/ConfInterval1.cfm">
+     Confidence interval of a proportion or count</a></b>, GraphPad. 
+     www.graphpad.com/quickcalcs/ConfInterval1.cfm</p>
+    <p><b><a href="http://stat.tamu.edu/~jhardin/applets/signed/case6.html">
+     Large Sample Confidence Interval for a Proportion Applet</a></b>, James W. 
+     Hardin. stat.tamu.edu/~jhardin/applets/signed/case6.html </p>
+  </blockquote>
+  <p>and for the difference between two proportions:</p>
+  <blockquote>
+    <p><b><a href="http://faculty.vassar.edu/lowry/prop2_ind.html">The 
+     Confidence Interval for the Difference Between Two Independent Proportions</a></b>, 
+     Richard Lowry. faculty.vassar.edu/lowry/prop2_ind.html</p>
+  </blockquote>
+  <p>A nice general reference for web pages that do statistical calculations is</p>
+  <blockquote>
+    <p><strong><a href="http://members.aol.com/johnp71/javastat.html">Web Pages 
+     that Perform Statistical Calculations</a></strong>. Pezzullo JC. Accessed 
+     on 2004-07-08. members.aol.com/johnp71/javastat.html</p>
+  </blockquote>
+</blockquote>
+<p><strong><font face="Times New Roman">Summary</font></strong></p>
+<blockquote>
+  <p><strong>A confidence interval is a range of plausible values that accounts 
+   for uncertainty in a statistical estimate.</strong>. A narrow confidence 
+   interval implies high precision; a wide interval implies poor precision.</p>
+  <p>When you see a confidence interval in a published medical report, you 
+   should look for two things.</p>
+  <ol style="font-weight: bold">
+    <li><strong>Does the interval contain a value that implies no change or no 
+    effect</strong>?</li>
+    <li><b>Does the confidence interval lie partly or entirely within a range of 
+    clinical indifference? </b></li>
+  </ol>
+</blockquote>
+<p><strong><font face="Times New Roman">Further Reading</font></strong></p>
+<ol>
+  <li><a href="http://www.cma.ca/cmaj/vol-152/0169.htm">
+  www.cma.ca/cmaj/vol-152/0169.htm</a> is a web version of an article in the 
+  Canadian Medical Association Journal about confidence intervals. I should add 
+  this to the FURTHER READING section. </li>
+  <li><a href="http://www.uwcm.ac.uk/uwcm/ms/Robert2.html">
+  www.uwcm.ac.uk/uwcm/ms/Robert2.html</a> Robert Newcombe has a nice page that 
+  presents alternatives to the traditional confidence interval for a single 
+  proportion and for a difference between two proportions. </li>
+</ol>
+
+</body>
+
+</html>

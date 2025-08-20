@@ -1,0 +1,392 @@
+<html>
+
+<head>
+
+<title>Stats: Guidelines for reliability/validity models (January 13, 2004)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Reliability/Validity (January 13, 2004)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/steps-in-establishing-reliability-and-validity/">new website</a>.</p>
+
+  <p><em>Dear Professor Mean, How do I show that a measurement has validity and reliability? Meek 
+ Mark</em></p>
+  <p>Dear Meek,</p>
+  <blockquote>
+       <p>Just list Professor Mean as one of your co-authors. My reputation will establish validity 
+       and reliability all by itself.</p>
+  </blockquote>
+  <p><b>Short Answer</b></p>
+  <blockquote>
+       <p>The terms validity and reliability have different meanings to different people, so be sure 
+       you understand exactly what is needed for your particular discipline. As a general rule, 
+       reliability is established by showing a good level of correlation, concordance, or agreement 
+       between multiple assessments of the same measurement. For example, you could ask two people 
+       to rate the same individual patient and then compare the results. Or if the condition is 
+       stable over time, you might ask for assessments at two different times of your measurement. 
+       You establish validity by comparing your measurement to an external standard. The hard part 
+       is coming up with an appropriate standard.</p>
+  </blockquote>
+  <p><b>Estimating reliability from repeated measurements by the same observer.</b></p>
+  <blockquote>
+       <p>The simplest way to assess reliability is to ask an observer to measure the same patient 
+       twice. Common sense tells you to be careful here. Don't schedule the two measurements in such 
+       a way that the first measurement would influence the second measurement. Make sure the 
+       measurements are far enough apart in time that the observer is unlikely to remember at the 
+       time of the second measurement what the first measurement was. On the other hand, don't 
+       schedule the measurements so far apart that the patient has had enough time to substantially 
+       improve or worsen on the condition you are trying to measure.</p>
+       <p>The estimate of reliability in this situation uses a one factor random effects model. This 
+       model works well when the repeated measurements are more or less exchangeable. </p>
+       <p>Generally, you will find it easiest to get two measurements on the same patient, but if 
+       circumstances allow for a third or fourth measurement, the one factor random effects model 
+       allows you to use those data. You can also have a different number of measurements on 
+       different patients without any problem. The formulas get a bit more complex, but statistical 
+       software like SPSS does all the work for you.</p>
+       <p>Here's some data from a chiropractic assessment of 19 individual patients. The assessment 
+       was the millimeters of distance along the spine of a particular condition. This measurement 
+       was done twice on each patient by the same chiropractor. Here's a listing of the data (turned 
+       sideways to save space).</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab1.gif"></p>
+  <blockquote>
+       <p>Here's a simple graph of the data.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab2.gif"></p>
+  <blockquote>
+       <p>Notice that some measurements are very consistent (patient 11 has measurements that are 
+       only 6 mm apart) and that other measurements are not so consistent. (patient 16 has 
+       measurements that are 120 mm apart, patient 17 has measurements that are 103 mm apart).</p>
+       <p>To quantify the degree of reliability of these measurements, select ANALYZE | GENERAL 
+       LINEAR MODEL | VARIANCE COMPONENTS from the SPSS menu.</p>
+       <p><img border="0" src="../01/images/reliab3.gif"></p>
+       <p>The measurement itself is the dependent variable and the code for each individual patient 
+       is the random factor in this model. There are several options for computing variance 
+       components.</p>
+       <p><img border="0" src="../01/images/reliab4.gif"></p>
+       <p>The ANOVA option is the easiest method, but can sometimes lead to negative variance 
+       estimates, which are a bit difficult to interpret. In practice, a negative estimate is 
+       unlikely to occur in a reliability situation unless the measurement totally lacks any level 
+       of reliability.</p>
+       <p><img border="0" src="../01/images/reliab5.gif"></p>
+       <p>Although SPSS does not directly produce an estimate of the intraclass correlation 
+       coefficient the formula is Var(subj) / (Var(subj) + Var(Error)). In this case it works out to 
+       be 1738 / (1738+1150) = 0.6.</p>
+       <p>As a general rule of thumb (Shoukri and Edge 1996), a reliability coefficient (r) is</p>
+       <ul>
+        <li>
+        Excellent if r is larger than 0.75,<li>
+        Good if r is between 0.4 and 0.75,<li>
+        Poor if r is less than 0.4.</ul>
+       <p>So this measurement has good reliability, but not excellent.</p>
+  </blockquote>
+  <p><b>On your own</b></p>
+  <blockquote>
+       <p>Three additional chiropractors evaluated patients on two separate occasions. Here are the 
+       data.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab6.gif"></p>
+  <p><img border="0" src="../01/images/reliab7.gif"></p>
+  <p><img border="0" src="../01/images/reliab8.gif"></p>
+  <blockquote>
+       <p>Estimate a separate reliability coefficient for each of the three chiropractors.</p>
+  </blockquote>
+  <p><b>Estimating reliability from&nbsp; measurements by multiple observers.</b></p>
+  <blockquote>
+       <p>The data shown above is interesting because you can re-organize it to represent another 
+       common method for reliability, having multiple observers provide a measurement for each 
+       patient.</p>
+       <p>Here is the data.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab9.gif"></p>
+  <blockquote>
+       <p>Here is a graph of this data.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab10.gif"></p>
+  <blockquote>
+       <p>This data represents a two factor random effects model, since you have to account for 
+       variability between raters and variability between subjects.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab11.gif"></p>
+  <blockquote>
+       <p>You have to specify a model without an interaction, because there is not enough data to 
+       estimate this interaction. Click on the MODEL button to do this.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab12.gif"></p>
+  <blockquote>
+       <p>You should specify a CUSTOM model and place the SUBJ and EV variables in the model and 
+       avoid specifying an interaction. When you have done this click on the CONTINUE button and the 
+       OK button in the previous dialog box.</p>
+       <p>&nbsp;The output from SPSS gives the following three variance components.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab13.gif"></p>
+  <blockquote>
+       <p>The intraclass correlation is computed as Var(subj) / (Var(subj) + Var(ev) + Var(Error)). 
+       In this example, it would be 1538 / (1538 + 170 + 1943) = 0.42.</p>
+  </blockquote>
+  <p><b>On your own</b></p>
+  <blockquote>
+       <p>Here is the other half of the chiropractic reliability data. Calculate the reliability 
+       among these four observer.</p>
+  </blockquote>
+  <p><img border="0" src="../01/images/reliab14.gif"></p>
+  <p><b>Further reading</b></p>
+  <blockquote>
+       <p><b>Age of First Use: Its Reliability and Predictive Utility.</b> Labouvie E, Bates ME, 
+       Pandina RJ. Journal of Studies on Alcohol 1997: 58(6); 638-643. </p>
+       <p><b>Assessment of trans-fatty acid intake with a food frequency questionnaire and 
+       validation with adipose tissue levels of trans-fatty acids.</b> Lemaitre RN, King IB, 
+       Patterson RE, Psaty BM, Kestin M, Heckbert SR. Am J Epidemiol 1998: 148(11); 1085-93. </p>
+       <p><b>Caffeine reversal of sleep deprivation effects on alertness and mood.</b> Penetar D, 
+       McCann U, Thorne D, Kamimori G, Galinski C, Sing H, Thomas M, Belenky G. Psychopharmacology (Berl) 
+       1993: 112(2-3); 359-65.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=7871042&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Characteristics of individuals and long term reproductibility of dietary reports: the 
+       Tecumseh Diet Methodology Study.</b> Thompson F, Metzner H, Lamphiear D, Hawthorne V. J Clin 
+       Epidemiol 1990: 43(11); 1169-78. </p>
+       <p><b>Clinician agreement on physical findings in child sexual abuse cases.</b> Sinal SH, 
+       Lawless MR, Rainey DY, Everett VD, Runyan DK, Frothingham T, Herman-Giddens M, St Claire K. 
+       Arch Pediatr Adolesc Med 1997: 151(5); 497-501. </p>
+       <p><b>Comparison of food frequency questionnaires: the reduced block and Willett 
+       questionnaires differ in ranking on nutrient intakes.</b> Wirfait A, Jeffery R, Elmer P. AJE 
+       1998: 148(12); 1148-56. </p>
+       <p><b>A comparison of patient and proxy symptom assessments in advanced cancer patients.</b> 
+       Nekolaichuk CL, Bruera E, Spachynski K, MacEachern T, Hanson J, Maguire TO. Palliat Med 1999: 
+       13(4); 311-23.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=10659100&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Comparison of the Block and the Willett self-administered semiquantitative food 
+       frequency questionnaires with an interviewer-administered dietary history.</b> Caan B, 
+       Slattery M, Potter J, Quesenberry CJ, Coates A, Schaffer D. AJE 1998: 148(12); 1137-47. </p>
+       <p><strong><a href="http://www.udc.es/dep/mate/biometria2003/Archivos/ot76.pdf">The 
+       concordance correlation coefficient estimated through variance components [PDF]</a></strong>. 
+       Carrasco J, Jover J. Accessed on 2003-12-1. www.udc.es/dep/mate/biometria2003/Archivos/ot76.pdf</p>
+       <p><b>Construct Validity in Psychological Tests.</b> Cronbach LJ. Psychological Bulletin 
+       1955: 52281-302. </p>
+       <p><b>Construct Validity of the MiniClinical Evaluation Exercise (MiniCEX).</b> Holmboe ES, 
+       Huot S, Chung J, Norcini J, Hawkins RE. Acad Med 2003: 78(8); 826-830.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12915378&dopt=Abstract">
+       [Medline]</a> <a href="http://www.academicmedicine.org/cgi/content/abstract/78/8/826">
+       [Abstract]</a> <a href="http://www.academicmedicine.org/cgi/content/full/78/8/826">[Full 
+       text]</a> <a href="http://www.academicmedicine.org/cgi/reprint/78/8/826.pdf">[PDF]</a></p>
+       <p><b>The CRIB (clinical risk index for babies) score: a tool for assessing initial neonatal 
+       risk and comparing performance of neonatal intensive care units. The International Neonatal 
+       Network.</b> No authors listed. Lancet 1993: 342(8865); 193-8. </p>
+       <p><b>The CRIB (clinical risk index for babies) score: a tool for assessing initial neonatal 
+       risk and comparing performance of neonatal intensive care units. The International Neonatal 
+       Network.</b> Unknown A. Lancet 1993: 342(8865); 193-8. </p>
+       <p><b>Depth of sedation in children undergoing computed tomography: validity and reliability 
+       of the University of Michigan Sedation Scale (UMSS).</b> Malviya S, Voepel-Lewis T, Tait AR, 
+       Merkel S, Tremper K, Naughton N. Br J Anaesth 2002: 88(2); 241-5.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=11878656&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Developing a scale for measuring the barriers to condom use in Nigeria.</b> Sunmola AM. 
+       Bull World Health Organ 2001: 79(10); 926-32. </p>
+       <p><b>Differential recall bias and spurious associations in case/control studies.</b> Barry 
+       D. Statistics in Medicine 1996: 15(23); 2603-16.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=8961466&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Do health interview surveys yield reliable data on chronic illness among older 
+       respondents?</b> Beckett M, Weinstein M, Goldman N, Yu-Hsuan L. American Journal of 
+       Epidemiology 2000: 151(3); 315-23. </p>
+       <p><b>Empirical Evidence of Correlated Biases in Dietary Assessment Instruments and Its 
+       Implications.</b> Kipnis V, Midthune D, Freedman LS, Bingham S, Schatzkin A, Subar A, Carroll 
+       RJ. Am. J. Epidemiol. 2001: 153(4); 394-403. </p>
+       <p><b>Epidemiological assessment of diet: a comparison of a 7-day diary with a food frequency 
+       questionnaire using urinary markers of nitrogen, potassium and sodium.</b> Day N, McKeown N, 
+       Wong M, Welch A, Bingham S. Int J Epidemiol 2001: 30(2); 309-17. </p>
+       <p><b>Evaluating Novel Cardiovascular Risk Factors: Can We Better Predict Heart Attacks?</b> 
+       Ridker PM. Annals of Internal Medicine 1999: 130(11); 933-937. </p>
+       <p><b>Examination of instruments used to rate quality of health information on the internet: 
+       chronicle of a voyage with an unclear destination.</b> Gagliardi A, Jadad AR. Bmj 2002: 
+       324(7337); 569-73.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=11884320&dopt=Abstract">
+       [Medline]</a> <a href="http://bmj.com/cgi/content/abstract/324/7337/569">[Abstract]</a>
+       <a href="http://bmj.com/cgi/content/full/324/7337/569">[Full text]</a>
+       <a href="http://bmj.com/cgi/reprint/324/7337/569.pdf">[PDF]</a></p>
+       <p><strong><a href="http://www.skepdic.com/myersb.html">The Forer effect (a.k.a. the P.T. 
+       Barnum effect and subjective validation)</a></strong>. Carroll RT, The Skeptic's Dictionary. 
+       Accessed on 2003-03-10. www.skepdic.com/myersb.html</p>
+       <p><b>Forming inferences about some intraclass correlation coefficients.</b> McGraw KO, Wong 
+       SP. Psychological Methods 1996: 130-46 error corrections - 390. </p>
+       <p><b>Genetic test evaluation: information needs of clinicians, policy makers, and the 
+       public.</b> Burke W, Atkins D, Gwinn M, Guttmacher A, Haddow J, Lau J, Palomaki G, Press N, 
+       Richards CS, Wideroff L, Wiesner GL. Am J Epidemiol 2002: 156(4); 311-8.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12181100&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><strong><a href="http://http://www.kelcom.igs.net/~nhodgins/instrument_validity.html">
+       Instrument Validity.</a></strong>. The Royal Windsor Society for Nursing 
+       Research. Accessed on 2003-www.kelcom.igs.net/~nhodgins/instrument_validity.html</p>
+       <p><b>The intraclass correlation coefficient as a measure of reliability.</b> Bartko JJ. 
+       Psychological Reports 1966: 19(1); 3-11.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=5942109&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Intraclass Correlations: Uses in Assessing Rater Reliability.</b> Shrout PE, Fleiss JL. 
+       Psychological Bulletin 1979: 86(2); 420-28. </p>
+       <p><b>Measures of agreement: a single procedure.</b> Bartko JJ. Statistics in Medicine 1994: 
+       13(5-7); 737-45.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=8023046&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Misclassification rates for current smokers misclassified as nonsmokers.</b> Wells A, 
+       English P, Posner S, Wagenknecht L, Perez-Stable E. American Journal of Public Health 1998: 
+       88(10); 1503-09. </p>
+       <p><b>Modeling Smoking History: A Comparison of Different Approaches.</b> Leffondre K, 
+       Abrahamowicz M, Siemiatycki J, Rachet B. Am. J. Epidemiol. 2002: 156(9); 813-823. </p>
+       <p><strong><a href="http://skepdic.com/mozart.html">The Mozart Effect</a></strong>. Carroll 
+       RT, The Skeptic's Dictionary. Accessed on 2003-06-09. skepdic.com/mozart.html</p>
+       <p><strong><a href="http://www.skepdic.com/myersb.html">Myers-Briggs Type Indicator®</a></strong>. 
+       Carroll RT, The Skeptic's Dictionary. Accessed on 2003-03-10. www.skepdic.com/myersb.html</p>
+       <p><b>The Mystery of the Mozart Effect: Failure to Replicate.</b> Stelle KM, Bass KE, Crook 
+       MD. Psychological Science 1999: 10(4); 366-369.
+       <a href="http://www.acs.appstate.edu/dept/psych/Documents/Mozart_PS.pdf">[PDF]</a></p>
+       <p><b>A new index of prognostic severity for chronic asthma.</b> Ellman MS, Viscoli CM, Sears 
+       MR, Taylor DR, Beckett WS, Horwitz RI. Chest 1997: 112(3); 582-90.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=9315788&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>On Various Intraclass Correlation Reliability Coefficients.</b> Bartko JJ. 
+       Psychological Bulletin 1976: 83(5); 762-765. </p>
+       <p><b>A patient survey system to measure quality improvement: questionnaire reliability and 
+       validity.</b> Carey RG, Seibert JH. Med Care 1993: 31(9); 834-45. </p>
+       <p><b>Patterns of psychiatric morbidity in a genito-urinary clinic. A validation of the 
+       Hospital Anxiety Depression scale (HAD).</b> Barczak P, Kane N, Andrews S, Congdon AM, Clay 
+       JC, Betts T. Br J Psychiatry 1988: 152698-700.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=3167448&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><strong><a href="http://trochim.human.cornell.edu/tutorial/driebe/tweb1.htm">A Plethora of 
+       Threats: A Mildly Amusing Guide for the Weary Student and Anyone Else Encountering the How 
+       To's and What If's of Construct Validity.</a></strong>. Driebe NM. Accessed on 2003-09-17. 
+       trochim.human.cornell.edu/tutorial/driebe/tweb1.htm</p>
+       <p><b>Problems in using the hospital anxiety and depression scale for screening patients in 
+       general practice.</b> Dowell AC, Biran LA. Br J Gen Pract 1990: 40(330); 27-8.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=2107836&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Prospective cohort study of routine use of risk assessment scales for prediction of 
+       pressure ulcers.</b> Schoonhoven L, Haalboom JR, Bousema MT, Algra A, Grobbee DE, Grypdonck 
+       MH, Buskens E. Bmj 2002: 325(7368); 797.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12376437&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Rating health information on the Internet: navigating to knowledge or to Babel?</b> 
+       Jadad AR, Gagliardi A. Jama 1998: 279(8); 611-4.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=9486757&dopt=Abstract">
+       [Medline]</a> <a href="http://jama.ama-assn.org/cgi/content/abstract/279/8/611">[Abstract]</a>
+       <a href="http://jama.ama-assn.org/cgi/content/full/279/8/611">[Full text]</a>
+       <a href="http://jama.ama-assn.org/cgi/reprint/279/8/611.pdf">[PDF]</a></p>
+       <p><b>Rationale, interpretation, validation, and uses of sperm function tests.</b> Muller C. 
+       Journal of Andrology 2000: 21(1); 10-30.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=10670516&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Reliability and validity of the Children's Health Survey for Asthma.</b> Asmussen L, 
+       Olson LM, Grant EN, Fagan J, Weiss KB. Pediatrics 1999: 104(6); e71.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=10586005&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Reliability and validity of the Women's Health Initiative Insomnia Rating Scale.</b> 
+       Levine DW, Kripke DF, Kaplan RM, Lewis MA, Naughton MJ, Bowen DJ, Shumaker SA. Psychol Assess 
+       2003: 15(2); 137-48.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12847774&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><strong><a href="http://www.ambpeds.org/ReliabilityandValidity.pdf">Reliability and 
+       Validity: Meaning and Measurement [PDF]</a></strong>. Lewis R, J., Ph.D., Annual Meeting Of 
+       the Society for Academic Emergency Medicine. Accessed on 2004-01-12. www.ambpeds.org/ReliabilityandValidity.pdf</p>
+       <p><b>Reliability of death certificate diagnoses.</b> Moussa MA, Shafie MZ, Khogali MM, el-Sayed 
+       AM, Sugathan TN, Cherian G, Abdel-Khalik AZ, Garada MT, Verma D. J Clin Epidemiol 1990: 
+       43(12); 1285-95.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=2254765&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>The reliability of medical record review for estimating adverse event rates.</b> Thomas 
+       E, Studdert D, Brennan T. Ann Intern Med 2002: 136(11); 812-816.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12044129&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>The reliability of medical record review for estimating adverse event rates.</b> Thomas 
+       E, Studdert DM, Brennan TA. Ann Intern Med 2002: 136(11); 812-816. </p>
+       <p><b>Reporting accuracy among mothers of malformed and nonmalformed infants.</b> Werler MM, 
+       Pober BR, Nelson K, Holmes LB. Am J Epidemiol 1989: 129(2); 415-21.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=2643303&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Reporting on quality of life in randomised controlled trials: bibliographic study.</b> 
+       Sanders C, Egger M, Donovan J, Tallon D, Frankel S. Bmj 1998: 317(7167); 1191-4.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=9794853&dopt=Abstract">
+       [Medline]</a> <a href="http://bmj.com/cgi/content/abstract/317/7167/1191">[Abstract]</a>
+       <a href="http://bmj.com/cgi/content/full/317/7167/1191">[Full text]</a>
+       <a href="http://bmj.com/cgi/reprint/317/7167/1191.pdf">[PDF]</a></p>
+       <p><b>Reporting on quality of life in RCTs.</b> Wright SP. British Medical Journal 1999: 
+       318(7191); 1142. <a href="http://bmj.com/cgi/content/full/318/7191/1142">[Full text]</a> </p>
+       <p><strong><a href="http://www.urmc.rochester.edu/SON/Fables/snowht.htm">Research Fables from 
+       the Sisters Grinn, No. 2. Snow White and the Seven Threats to Validity.</a></strong>. Grace 
+       J, University of Rochester School of Nursing. Accessed on 2003-05-27. www.urmc.rochester.edu/SON/Fables/snowht.htm</p>
+       <p><b>A review of validations of dietary assessment methods.</b> Block G. American Journal of 
+       Epidemiology 1982: 115(4); 492-505.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=7041631&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Sample Size Requirements for Precise Estimates of Reliability, Generalizability, and 
+       Validity Coefficients.</b> Charter RA. Journal of Clinical and Experimental Neuropsychology 
+       1999: 21(4); 559-566. </p>
+       <p><b>Score for Neonatal Acute Physiology: a physiologic severity index for neonatal 
+       intensive care.</b> Richardson DK, Gray JE, McCormick MC, Workman K, Goldmann DA. Pediatrics 
+       1993: 91(3); 617-23. </p>
+       <p><strong><a href="http://www.spss.com/tech/stat/macros/Iccsf.htm">Technical Support – 
+       Statistical Macro Library</a></strong>. SPSS Inc. Accessed on 2003-11-06. www.spss.com/tech/stat/macros/Iccsf.htm</p>
+       <p><b>Treatment of acute childhood diarrhea with homeopathic medicine: a randomized clinical 
+       trial in Nicaragua.</b> Jacobs J, Jimenez LM, Gloyd SS, Gale JL, Crothers D. Pediatrics 1994: 
+       93(5); 719-25. </p>
+       <p><b>True scores, error, reliability, and unit of analysis in environment and behavior 
+       research.</b> Levine D. Environment and Behavior 1994: 26(2); 261-92. </p>
+       <p><strong><a href="http://trochim.human.cornell.edu/kb/reltypes.htm">Types of Reliability</a></strong>. 
+       Trochim WMK. Accessed on 2003-trochim.human.cornell.edu/kb/reltypes.htm</p>
+       <p><b>Underascertainment of child maltreatment fatalities by death certificates, 1990-1998.</b> 
+       Crume TL, DiGuiseppi C, Byers T, Sirotnak AP, Garrett CJ. Pediatrics 2002: 110(2 Pt 1); e18 
+       (1 - 6).
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12165617&dopt=Abstract">
+       [Medline]</a> <a href="http://pediatrics.aappublications.org/cgi/content/abstract/110/2/e18">
+       [Abstract]</a> <a href="http://pediatrics.aappublications.org/cgi/content/full/110/2/e18">
+       [Full text]</a> <a href="http://pediatrics.aappublications.org/cgi/reprint/110/2/e18">[PDF]</a></p>
+       <p><b>Validation of 2 pain scales for use in the pediatric emergency department.</b> Bulloch 
+       B, Tenenbein M. Pediatrics 2002: 110(3); e33.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12205283&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Validation of a short telephone administered questionnaire to evaluate dietary 
+       interventions in low income communities in Montreal, Canada.</b> Gray-Donald K, O'Loughlin J, 
+       Richard L, Paradis G. Journal of Epidemiology and Community Health 1997: 51(3); 326-331. </p>
+       <p><strong><a href="http://pdf.vivometrics.com/vivo/APSSPoster061003.pdf">Validation of an 
+       Autoscoring Algorithm to Detect Obstructive Sleep Apnea [PDF]</a></strong>. Coyle M, Carter 
+       G, Horsager A, Mendelson W. Accessed on 2003-12-01. pdf.vivometrics.com/vivo/APSSPoster061003.pdf</p>
+       <p><b>Validation of Analytical Methods.</b> Taylor JK. Analytical Chemistry 1983: </p>
+       <p><b>Validation of the Cardiovascular Limitations and Symptoms Profile (CLASP) in chronic 
+       stable angina.</b> Lewin RJ, Thompson DR, Martin CR, Stuckey N, Devlen J, Michaelson S, 
+       Maguire P. J Cardiopulm Rehabil 2002: 22(3); 184-91.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12042687&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Validity of Children's Food Portion Estimates: A Comparison of 2 Measurement Aids.</b> 
+       Matheson DM, Hanson KA, McDonald TE, Robinson TN. Arch Pediatr Adolesc Med 2002: 156(9); 
+       867-71.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12197792&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Validity of Maternal Report of Prenatal Alcohol, Cocaine, and Smoking in Relation to 
+       Neurobehavioral Outcome.</b> Jacobson SW, Chiodo LM, Sokol RJ, Jacobson JL. Pediatrics 2002: 
+       109(5); 815-825. <a href="http://www.pediatrics.org/cgi/content/abstract/109/5/815">
+       [Abstract]</a> </p>
+       <p><b>The validity of the Hospital Anxiety and Depression Scale. An updated literature 
+       review.</b> Bjelland I, Dahl AA, Haug TT, Neckelmann D. J Psychosom Res 2002: 52(2); 69-77.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=11832252&dopt=Abstract">
+       [Medline]</a> </p>
+       <p><b>Validity study of the severity index, a simple measure of urinary incontinence in women 
+       [In Process Citation].</b> Hanley J, Capewell A, Hagen S. British Medical Journal 2001: 
+       322(7294); 1096-7. </p>
+       <p><b>A validity test of movie, television, and video-game ratings.</b> Walsh DA, Gentile DA. 
+       Pediatrics 2001: 107(6); 1302-8. </p>
+       <p><b>The visual analogue pain intensity scale: what is moderate pain in millimetres?</b> 
+       Collins SL, Moore RA, McQuay HJ. Pain 1997: 72(1-2); 95-7. </p>
+       <p><b>What's Wrong with This Picture?</b> Lilienfeld SO, Wood JM, Garb HN. Scientific 
+       American 2001: 284(5); 80-87.
+       <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=11341164&dopt=Abstract">
+       [Medline]</a>
+       <a href="http://www.psychologicalscience.org/pdfreq.cfm?PATH_INFO=/newsresearch/publications/journals/sa1_2.pdf&VARACTION=GO&CFID=1205220&CFTOKEN=17007476">
+       [PDF]</a></p>
+  </blockquote>
+  
+</body>
+
+</html>

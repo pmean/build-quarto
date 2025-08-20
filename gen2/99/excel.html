@@ -1,0 +1,114 @@
+<html>
+
+<head>
+
+<title>Stats: Importing spreadsheet data into SPSS (August 20, 1999)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Importing spreadsheet data into SPSS (created 1999-09-20)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/importing-excel-into-spss/">new website</a>.</p>
+
+<p><em><font face="Times New Roman">Dear Professor Mean, </font>I need to import 
+ data in an Excel spreadsheet, but I can't get SPSS to read this data properly. 
+ Can you help? -- Stumped Stan</em></p>
+<p>Dear Stumped,</p>
+<p>Nothing works right the first time, but you can do a few things that will 
+   make it easier to import your Excel data. Every data set has its own unique 
+   problems, of course, so <strong>there is no foolproof way to ensure that your 
+   data will move perfectly</strong>.</p>
+<p>Here are the four general steps that I recommend for someone who is 
+   importing Excel data.</p>
+<ol>
+  <li><b>Close the Excel file</b> before you try to import in SPSS. </li>
+  <li>Arrange the data in a <strong>rectangular grid</strong></li>
+  <li><strong>Don't mix</strong> strings and numbers.</li>
+  <li>Put <strong>descriptive names</strong> in your first row.</li>
+</ol>
+
+<p><b>Rectangular grid</b></p>
+<p>A rectangular gird is a systematic layout of your data so that that 
+   the intersection of every column and row contains a single number. 
+   The data should start in the first row of the spreadsheet, or the second row, 
+   if you use the first row as column labels. Don't leave any &quot;holes&quot; in the 
+   spreadsheet.</p>
+<p>Be sure to delete any rows of your spreadsheet that contains 
+   summary data like totals or means. You don't want SPSS to think that 
+   this summary row is just another row of data.</p>
+<b>
+<p>Don't mix strings and numbers.</p></b>
+<p>A mixture of strings and numbers in a single column will confuse SPSS.  SPSS uses the first value that it sees in a column to decide if that column 
+  should be stored using string, date, or numeric format. If any further values 
+  in that column do not match the format of your first value, SPSS will convert 
+  that value to missing.<b></p>
+<p>Here's an example of a mixture of strings and numbers &quot;1&quot;, &quot;2&quot;, &quot;3 or 
+   more&quot;. This type of coding will ensure that a large amount of your data 
+   gets converted to missing values. Which values stay and which ones don't 
+   depend on what appears first in your column.</p>
+<p><b>Provide brief descriptive names</b></p>
+<p>SPSS can use the first row of your spreadsheet as variable names, 
+   as long as you keep within the proper restrictions. Keep you names 
+   short. Although the previous restriction to eight characters or less, names 
+   that are very long become unwieldy and don't display well in the graphs and 
+   tables. You can (and should) use the variable label in SPSS to provide a 
+   longer and more detailed description of this variable.</p>
+<p>The name has to be one word with no blanks. You can use the underscore 
+   symbol &quot;_&quot; or the dot to simulate blanks. You can also use 
+   MixedCapitalization to simulate blanks.</p>
+<p>Avoid special symbols (other than the underscore and dot). Symbols like the 
+   dash (-) and the slash (/) cause problems because they imply some sort of 
+   arithmetic operation.</p>
+<p>A variable name like &quot;Mother's Age&quot; causes problems because it 
+   includes a special symbol (the apostrophe) and it has a blank. If 
+   you tried to use this name, SPSS would create a generic name like VAR00001 
+   and use &quot;Mother's Age&quot; as a variable label. A name that SPSS will tolerate 
+   would be &quot;mom_age&quot; or &quot;MomAge&quot; or &quot;mom.age&quot;.</p>
+<p>It takes some creativity to describe a variable well with only 
+   eight characters. Do the best you can. Remember that you can always 
+   add a lengthy variable label later that has blanks, special symbols.</p>
+<p><strong><font face="Times New Roman">Close the Excel file</font></strong></p>
+<p>SPSS cannot import data from a spreadsheet that is currently open in Excel. Excel marks that spreadsheet as &quot;in use&quot; and SPSS avoids importing anything with such a mark. This actually provides an extra level of security, as you probably would not want to import data into SPSS that was possibly being editted in Excel at the same time.</p>
+<p><font face="Times New Roman"><strong>Here is an Excel spreadsheet with data 
+  from a breast feeding study</strong>. I have already arranged the data in a 
+  rectangular grid and placed brief descriptive names in the first row..</font></p>
+<p><img border="0" src="../02/images/excel01.gif"></p>
+<p><strong>Make sure that Excel is closed before you try to import in SPSS</strong>. 
+   SPSS is very jealous. It will not want to open your data file if it knows 
+   that some other software is currently using it. SPSS will warn you about a 
+  &quot;sharing violation&quot;.</p>
+<p><strong>Open SPSS and select FILE | OPEN from the menu</strong>. Here is 
+   the SPSS dialog box that you will see. Click on the down arrow in the FILE OF 
+   TYPE field and select the EXCEL (*.XLS) option. Find your file on the proper 
+   drive and folder of your computer.</p>
+<p><img border="0" src="../02/images/excel02.gif"></p>
+<p>When you click on the OPEN button, you get the dialog box shown below.
+  <strong>Click on the READ VARIABLE NAMES BUTTON if the first row of your 
+  spreadsheet has variable names</strong>. Then click on the OK button.</p>
+<p><img border="0" src="../02/images/excel03.gif"></p>
+<p><strong>Check if you got the correct number of variables (columns) and 
+   cases (rows)</strong>. A common problem is that SPSS will sometimes import a 
+   bunch of extra blank rows. You can delete the blank rows manually.</p>
+<p><img border="0" src="../02/images/excel04.gif"></p>
+<p>Here is what the SPSS data window looks like. <strong>We are now ready to 
+   do things like adjusting the number of decimal places displayed and adding 
+   documentation.</strong></p>
+<p><img border="0" src="../02/images/excel05.gif"></p>
+<p><strong>Summary</strong></p>
+<p>If you want to import Microsoft Excel data into SPSS, follow these four 
+   steps:</p>
+<ol>
+  <li>Close the Excel file</li>
+  <li>Arrange the data in a <strong>rectangular grid</strong></li>
+  <li><strong>Don't mix</strong> strings and numbers.</li>
+  <li>Put <strong>descriptive names</strong> in your first row.</li>
+</ol>
+<p>Once you have done this, s<strong>elect FILE | OPEN DATA</strong> from the 
+   SPSS menu. Then <strong>click on FILE OF TYPE field and select the EXCEL (*.XLS) 
+   option</strong>.</p>
+
+</body>
+
+</html>

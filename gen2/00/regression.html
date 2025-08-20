@@ -1,0 +1,148 @@
+<html>
+
+<head>
+
+<title>Stats: Regression to the mean (January 27, 2000)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Regression to the mean (created 2000-01-27).</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/regression-to-the-mean/">new website</a>.</p>
+
+  <p><em>Dear Professor Mean, In a stat course I was introduced to the term &quot;regression to the 
+  mean&quot;. Today we administered a pretest to 4th graders. In Feb we will again test, with the same 
+  exam, to see &quot;how much they've learned&quot;. I explained to the principal that, of course they would 
+  do better, no matter how well they were taught, that this was a classic case of regression to the 
+ mean. Am I correct, close, or way off on this?</em></p>
+  <blockquote>
+       <p>You're half right, but Professor Mean doesn't give partial credit.</p>
+       <p><strong>Regression to the mean can explain how individuals behave, but it does not usually 
+       characterize how groups of individuals behave</strong>. The one exception is when the group 
+       is selected on the basis of one of the variables.</p>
+       <p>It might help to remember the application where the concept of regression to the mean was 
+       first discovered. <strong>Sir Francis Galton was interested in the relationship between a 
+       child's height (when the child reaches adulthood) and the height of the parents</strong>. 
+       There are several ways to look at the data: the height of the father versus the height of the 
+       child, the height of the mother versus the height of the child, or the average height of both 
+       parents versus the height of the child.</p>
+       <p>One example, described on page 169 of Friedman, Pisani and Purves (1998), examines the 
+       relationship between the height of the father and the height of a male child. For this data, 
+       the correlation was 0.5. When you look at the prediction equation, though, the results at 
+       first seem a bit counterintuitive. <strong>Without knowing anything else, you might expect 
+       that the best prediction for a male child's height would be the father's height</strong>. In 
+       other words, if the father is 74 inches, your best prediction of the male child's height 
+       would also be 74 inches.</p>
+       <p>It doesn't quite work out that way, partly because <strong>the average child's height (69 
+       inches) was one inch greater than the average father's height (68 inches)</strong>. That may 
+       be due to better nutrition or some other environmental factor. Both groups did have the same 
+       standard deviation, though (2.7).</p>
+       <p><img border="0" src="../03/images/rtm3.gif" align="right" width="231" height="248">Another surprising finding was that
+       <strong>the slope of the regression line was 0.5 rather than 1.0</strong>. What does this 
+       mean? If the father's height is above average, say by six inches, the child's height would be 
+       expected to be above average, but to a lesser degree (three inches). If the father's height 
+       was below average, say by four inches, the child's height would also be expected to be below 
+       average but by only two inches.</p>
+       <p>So the rule for predicting child height is this. <strong>Note how much the father's height 
+       deviates from the father mean of 68 inches. Cut that deviation in half. That tells you how 
+       much you would expect the child's height to deviate from the child mean of 69 inches.</strong> 
+       For example, suppose a father's height is 72 inches. This is 4 inches above the father mean 
+       of 68. We would expect the child's height to be only 2 inches above the child mean of 69 
+       inches. This means that 71 inches is our best prediction of the child's height.</p>
+       <p><img border="0" src="../03/images/rtm4.gif" align="left" width="320" height="320">This is the classic example of 
+       regression to the mean. <strong>Tall fathers tend to have tall children, but not usually as 
+       tall as they are. Short fathers tend to have short children, but not usually as short as they 
+       are</strong>. This doesn't ALWAYS hold true, of course. There are some tall fathers who 
+       produce even taller children; there are some short fathers who produce even shorter children. 
+       But the general tendency is for the children to have heights slightly closer to the mean than 
+       their fathers.</p>
+       <p>The same general tendencies hold, by the way, when you look at the mother's height, or the 
+       average of father's and mother's height.</p>
+       <p>Now keep in mind that regression to the mean informs you about individual deviations from 
+       the group average. The children in the Galton's example as a whole were one inch taller than 
+       the fathers. Regression to the mean doesn't tell us anything about how an entire generation 
+       differs from the generation before it. What it tells us is how individuals deviate from the 
+       mean of their group.</p>
+       <p>The same thing might happen in your data set. <strong>Suppose the average student scores 
+       50 at the start of classes and 70 at the end of classes</strong>. Then regression to the mean 
+       will tell you how much students deviate from the mean of 70 at the end of classes on the 
+       basis of how much they deviated from the mean of 50 at the beginning of classes.</p>
+       <p><strong>A student who is one standard deviation above the average score of 50 at the start 
+       of classes is probably going to be a bit less than a full standard deviation above average 
+       score of 70 at the end of classes</strong>. So you might be a bit disappointed with students 
+       in the &quot;smart&quot; class.</p>
+       <p><strong>A student who is one standard deviation below the average score of 50 at the start 
+       of classes is probably going to be a bit less than one standard deviation below the average 
+       score of 70 at the end of classes</strong>. You might get encouraged by students in the 
+       &quot;dumb&quot; class.</p>
+       <p><strong>Where regression to the mean tends to cause unexpected results is when you select 
+       students on the basis of their pre-test values</strong>. For example, a naive researcher 
+       might split a sample of students into a &quot;smart&quot; class and a &quot;dumb&quot; class on the basis of a 
+       preliminary test. There might be, say a 10 point gap between the two groups based on the 
+       preliminary test. But all other things being equal, you should expect the gap between the 
+       &quot;smart&quot; and the &quot;dumb&quot; class to be narrower by the end of the year.</p>
+       <p>Of course, you don't use terms like &quot;smart&quot; and &quot;dumb&quot; for your students. The point here 
+       is that if you segregate students on the basis of their performance at the start of the 
+       class, the amount the two groups appear to learn at the end of classes will vary even if 
+       nothing else differs between the two groups.</p>
+       <p><strong>Regression to the mean also can appear in medical settings</strong>. Quite often 
+       we will segregate patients into &quot;sick&quot; and &quot;healthy&quot; categories on the basis of some medical 
+       test. If we re-tested these groups at a later date, we would probably see that the &quot;sick&quot; 
+       category probably isn't quite as sick as we thought they were and the &quot;healthy&quot; category 
+       probably isn't as healthy as we thought they were.</p>
+       <p><strong>Suppose we measure cholesterol levels in 100 patients and select the 50 patients 
+       with above average cholesterol levels for a special diet and exercise program</strong>. Even 
+       if that program were entirely ineffective, you would probably see some level of cholesterol 
+       reduction. The change would have been balanced out by the 50 patients in the below average 
+       group who would probably show an increase on average if we had taken the time and trouble to 
+       follow them as well.</p>
+       <p>Sometimes patients will self-select themselves for a new treatment. Some illnesses are 
+       cyclical, with random peaks and troughs in how the patient feels. <strong>Patients are most 
+       likely to adopt a new approach (change doctors, discontinue medication, etc.) when they are 
+       in a trough. When the inevitable rebound occurs, the patient might falsely attribute the 
+       rebound to the change in treatment</strong>. This is especially true when the patient focuses 
+       on a small time scale.</p>
+  </blockquote>
+  <p><b>Some special situations</b></p>
+  <blockquote>
+       <p><b>Some processes show a natural progression in the averages, and we would expect a 
+       roughly similar progression in individual values.</b> For example, almost all children 
+       grow--short children grow and tall children grow too. So, for example, a three year old child 
+       with a height above the average of all three year olds will, after a year, grow (maybe a 
+       little and maybe a lot). This pretty much guarantees that, at the age of four, this child 
+       will be even farther above the average height of all three year olds. That's not surprising 
+       and it is not a contradiction of regression to the mean. What you have to do, of course, is 
+       to look at that child's height relative to all four year old children.</p>
+       <p><b>When there is a natural progression in averages, regression to the mean is chasing a 
+       moving target.</b> If you select a group of normal healthy three year old children who all 
+       have heights above the average of all three year olds, then after a year, they will have 
+       heights that are above the average of all four year olds, but possibly by a smaller amount. 
+       Similarly, a group of sixth grade children who read at levels above the average of all sixth 
+       graders, will probably read at an even higher level a year later. But you would need to 
+       compare them, after a year, to the average reading level of all seventh graders.</p>
+       <p>Also, <b>regression to the mean for individuals on the low end will tend to balance out 
+       regression to the mean for individuals on the high end</b>. So, if you select an average or 
+       unremarkable group of individuals, and there is no preferential selection of individuals 
+       above average and no screening or exclusion of individuals who are below average, then that 
+       group, as a whole, will not exhibit regression to the mean.</p>
+       <p>Finally, <b>regression to the mean is a statistical tendency, so there will always be 
+       exceptions</b>. There will be some individuals who are above average at baseline and even 
+       more above average at the end of the study. It's also possible, once in a while for an entire 
+       group to move in a direction opposite of what regression to the mean would tell you. After 
+       all, any time you have randomness, unpredictable things can happen.</p>
+  </blockquote>
+  <p><strong>Further reading</strong></p>
+  <blockquote>
+       <p><b>Statistics Third Edition.</b> David Freedman, Robert Pisani, Roger Purves (1998) New 
+       York: W.W. Norton &amp; Company. ISBN: 0-393-97083-3.</p>
+       <p><b>Effect of regression to the mean on decision making in health care.</b> Veronica 
+       Morton, David J Torgerson. BMJ 2003: 326(7398); 1083-1084.
+       <a href="http://bmj.com/cgi/content/full/326/7398/1083">[Full text]</a>
+       <a href="http://bmj.com/cgi/reprint/326/7398/1083.pdf">[PDF]</a></p>
+  </blockquote>
+
+</body>
+
+</html>

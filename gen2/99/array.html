@@ -1,0 +1,1511 @@
+<html>
+
+<head>
+
+<title>Stats: Steps in a typical micro array data analysis (no date)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Steps in a typical micro array analysis (no date)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/steps-in-micro-array-analysis/">new website</a>.</p>
+
+<p>I am not an expert in micro array data analysis. In fact, I'm just starting. 
+ I thought that outlining some of the things I am learning as I start to do 
+ micro array data analyses would be helpful to others.</p>
+<p>This page is a composite of several different pages:</p>
+<ul>
+  <li><a href="arrayWhatIs.htm">What is a microarray?</a></li>
+  <li><a href="arrayImport.htm">Importing data from a microarray experiment</a></li>
+  <li><a href="arrayDataManagement.htm">Data management in a microarray 
+  experiment</a></li>
+  <li><a href="arraySoftware.htm">Software for microarray data analysis</a></li>
+  <li><a href="arrayDesign.htm">Design of microarray experiments</a></li>
+  <li><a href="arrayNormalization.htm">Normalization for microarray data</a></li>
+  <li><a href="arrayDifferentialExpression.htm">Differential expression in 
+  microarray data</a></li>
+  <li><a href="arraySupervisedLearning.htm">Supervised learning for microarray 
+  data</a></li>
+  <li><a href="arrayUnsupervisedLearning.htm">Unsupervised learning for 
+  microarray data</a></li>
+  <li><a href="arrayBibliography.htm">Microarray bibliography and links</a></li>
+</ul>
+<p>You may also want to look at some of the additional material about 
+ microarrays on my <a href="../08/weblog.asp">weblog</a>. Entries without a link 
+ represent more recent entries which were not yet archived when I added them to 
+ this list.</p>
+<ul>
+  <li>RMA normalization of microarrays (October 24, 2005)</li>
+  <li>More on discovering gene information (October 12, 2005)</li>
+  <li>A simple trick in R (October 11, 2005)</li>
+  <li>Naming conventions for genes, proteins, etc. (September 8, 2005)</li>
+  <li>Finding more information about a gene (September 6, 2005)</li>
+  <li><a href="../08/weblog2005/MicroArrayF.asp">Statistical Analysis of 
+  Microarrays by Insightful (August 31, 2005)</a></li>
+  <li><a href="../08/weblog2005/MicroArrayE.asp">Publicly available microarray data 
+  (August 18, 2005)</a></li>
+  <li><a href="../08/weblog2005/DatesInR.asp">Dates in Excel and R (August 10, 
+  2005)</a></li>
+  <li><a href="../08/weblog2005/MicroArrayD.asp">More on normalization (July 28, 
+  2005)</a></li>
+  <li><a href="../08/weblog2005/MovingRObjects.asp">Moving R objects (July 28, 
+  2005)</a></li>
+  <li><a href="../08/weblog2005/PermutationTests.asp">Permutation tests for 
+  microarrays (July 27, 2005)</a></li>
+  <li><a href="../08/weblog2005/GeneExpression.asp">Analysis of Gene Expression 
+  Data Short Course (July 26, 2005)</a></li>
+  <li><a href="../08/weblog2005/MergingInR.asp">Merging in R (July 26, 2005)</a></li>
+  <li><a href="../08/weblog2005/RegularExpressions.asp">More on regular expressions 
+  (July 21, 2005)</a></li>
+  <li><a href="../08/weblog2005/DumpingData.asp">Dumping data from R to a text file 
+  (June 27, 2005)</a></li>
+  <li><a href="../08/weblog2005/InformationTheoryA.asp">Information theory and 
+  microarrays (June 1, 2005)</a></li>
+  <li><a href="../08/weblog2005/ROCcurve.asp">Application of the ROC curve to 
+  microarray data (May 26, 2005)</a></li>
+  <li><a href="../08/weblog2005/DimensionReduction.asp">Dimension reduction in a 
+  microarray experiment (May 25, 2005)</a></li>
+  <li><a href="../08/weblog2005/DisasterAverted.asp">A disaster averted (May 16, 
+  2005)</a></li>
+  <li><a href="../08/weblog2005/StringsR.asp">String manipulations in R (May 10, 
+  2005)</a></li>
+  <li><a href="../08/weblog2005/MicroarrayC.asp">Microarray data analysis, again 
+  (April 22, 2005)</a></li>
+  <li><a href="../08/weblog2005/InformationTheory.asp">More on information theory 
+  models (March 24, 2005)</a></li>
+  <li><a href="../08/weblog2005/MicroArrayB.asp">More articles on microarrays 
+  (March 10, 2005)</a></li>
+  <li><a href="../08/weblog2005/MicroArrayA.asp">Review articles on microarrays 
+  (March 7, 2005)</a></li>
+  <li><a href="../08/weblog2005/DataMining.asp">Two cautionary tales about data 
+  mining (January 6, 2005)</a></li>
+  <li><a href="../08/weblog2004/SurromedDecisionSite.asp">Surromed and the 
+  DecisionSite S-Plus Server Solution (December 8, 2004)</a></li>
+  <li><a href="../08/weblog2004/AutomatingAnalyses.asp">Automating statistical 
+  analyses (October 25, 2004)</a></li>
+  <li><a href="../08/weblog2004/information1.asp">More on information theory models 
+  (August 31, 2004)</a></li>
+  <li><a href="../08/weblog2004/xml.asp">The impact of XML on Statistics (June 23, 
+  2004)</a></li>
+  <li><a href="../08/weblog2004/ArrayAnalyzer.asp">S+ArrayAnalyzer web seminar 
+  (June 22, 2004)</a></li>
+  <li><a href="../08/weblog2004/acuity.asp">Acuity microarray analysis software 
+  (May 6, 2004)</a></li>
+  <li><a href="../08/weblog2004/microarray.asp">Microarray data analysis (March 18, 
+  2004)</a></li>
+</ul>
+<p>Keep an eye on my weblog for more recent entries (newer than July 20, 2004)</p>
+<hr>
+  <!--webbot bot="Include" U-Include="arrayWhatIs.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>What is a microarray? (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<p><b>What is a microarray?</b></p>
+<blockquote>
+  <p>A microarray is a tool for measuring the amount of messenger RNA (mRNA) 
+  that is circulating in a cell. It is the mRNA that transfers information from 
+  the genes from DNA inside the nucleus of a cell to create various proteins. 
+  Even though they have the exact same DNA, different cells have different 
+  amounts of various mRNA because they need to produce different proteins. For 
+  example, only certain cells in the pancreas produce insulin even though the 
+  DNA code for producing insulin exists inside all cells.</p>
+  <p>Genes that produce a lot of mRNA are said to be upregulated and genes that 
+   produce little or no mRNA are said to be downregulated.</p>
+  <p>Microarrays simultaneously measure the amount of circulating mRNA for 
+   hundreds or even thousands of different mRNAs. They have applications in many 
+   different research areas.</p>
+  <ol>
+    <li>Because the types and amounts of circulating mRNA effectively 
+    distinguish one type of cell from another, microarrays can help us better 
+    understand the factors that differentiate cells.</li>
+    <li>Stems cells are undifferentiated cells that have the potential to 
+    transform into many different types of cells. Microarrays can help us 
+    understand how the transformation from a stem cell to a differentiated cell 
+    occurs.</li>
+    <li>Within a cell, the types and amounts of mRNA vary during different 
+    stages of a cells life, so microarrays can help us understand what proteins 
+    are needed during these different stages.</li>
+    <li>Certain diseases occur because of the failure of cells to produce the 
+    proteins that they are expected to produce, so microarrays can help us 
+    understand these diseases better and identify targets for new therapies.</li>
+    <li>Other diseases like cancer occur when a group of cells grows out of 
+    control. Microarrays can help us better understand what triggers this rapid 
+    uncontrolled growth. </li>
+  </ol>
+</blockquote>
+<p><b>How does a microarray work?</b></p>
+<blockquote>
+  <p>Circulating mRNA from a clump of cells is converted to the complementary 
+   DNA strands (cDNA). The cDNA is amplified by polymerase chain reaction (PCR) 
+   and a molecular tag that glows is attached to each piece of cDNA. This 
+   mixture is then washed over a slide that has spots where the cDNA can bind. 
+   Any loose or unbound cDNA is then washed away. The amount of fluorescence at 
+   a particular spot on the microarray gives you an indication as to how much 
+   mRNA of a particular type was in the original sample. </p>
+  <p><a href="http://www.faseb.org/opa/bloodsupply/pcr.html">The Polymerase 
+   Chain Reaction. Tabitha M. Powledge</a>.</p>
+</blockquote>
+<p><b>Spotted arrays</b></p>
+<blockquote>
+  <p>[Insert a brief discussion here.]</p>
+</blockquote>
+<p><b>The Affy chip</b></p>
+<blockquote>
+  <p>Affymetrix produces a different type of microarray that uses 
+   photolithography to build the microarray, a process similar to the approach 
+   used to create semiconductor chips.&nbsp; The Affy chips as they are often 
+   called, place thousands or tens of thousands of genes on a slide that can fit 
+   in the palm of your hand. Unlike spotted arrays, that places spots of the 
+   full sequence of the gene (or Expressed Sequence Tag) on a slide, the Affy 
+   chip selects 20 probes for each gene, each of which has a length of 25 base 
+   pairs. Next to each of these probes is another probe that represents the same 
+   25 base pair sequence except that the middle base is changed. The 20 probes 
+   are called PM (Perfect Match) probes and the probes with the changed middle 
+   base are called MM (MisMatch) probes. The MM probes are an attempt to measure 
+   and control for cross-hybridization, the tendency for genes that are similar, 
+   but not identical to a particular gene sequence to bind weakly to these 
+   sites.</p>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="36984" endspan --> <hr>
+  <!--webbot bot="Include" U-Include="arrayImport.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>Importing data from microarray studies (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<p>There are so many different ways that data can come to you in a microarray 
+ experiment that it is hard to document how to import the data. Here are a few 
+ examples, plus some random notes and thoughts.</p>
+<p><b>The data structure for Affymetrix chips</b></p>
+<blockquote>
+  <p>Affymetrix has several formats, DAT (image), CEL (probe), and CHP. [Explain 
+   what these formats are]</p>
+</blockquote>
+<p><b>The data structure for cDNA arrays</b></p>
+<blockquote>
+  <p>A cDNA array (spotted array) is interesting from a statistical perspective 
+   because there is a pairing that adds precision but which also adds a layer of 
+   complexity.</p>
+  <p STYLE="page-break-after: avoid; margin-bottom: 0cm">Red signal is also 
+   called the Cy5 signal. The green signal is also called the Cy3 signal.</p>
+  <p>Typically, data from these arrays appears in large text files with tab or 
+   comma delimiters. There are several header lines at the top of the file 
+   before you see data on individual spots. Because these formats are text 
+   files, you can manipulate them easily. But there is only limited 
+   standardization of these files at this stage. A nice summary of the 
+   conflicting data formats appears at<a href="http://www.scmbb.ulb.ac.be/~jvanheld/web_course_microarrays/practicals/data_formats.html"> 
+  www.scmbb.ulb.ac.be/~jvanheld/web_course_microarrays/practicals/data_formats.html</a>.</p>
+  <p>There is usually one file per slide with a header of several lines. Here's 
+   an example of the header file for
+   <a href="http://llmpp.nih.gov/lymphoma/data/rawdata/lc4b007rex2.DAT">array 
+   lc4b007</a> from the <a href="http://llmpp.nih.gov/lymphoma/">website 
+   providing supplemental data</a> for the
+   <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=10676951&dopt=Abstract">
+   Alizadeh 2000 Nature Study</a>. This file was produced by the
+   <a href="http://rana.lbl.gov/manuals/ScanAlyzeDoc.pdf">ScanAlyze software 
+   system</a> which is available for free for academic and non-profit 
+   researchers from <a href="http://rana.lbl.gov/index.htm">Eisen Lab</a> at 
+   Lawrence Berkeley National Lab..</p>
+  <ul>
+    <li>HEADER SPOT GRID TOP LEFT BOT RIGHT ROW COL CH1I CH1B CH1AB CH2I CH2B 
+    CH2AB SPIX BGPIX EDGE RAT2 MRAT REGR CORR LFRAT CH1GTB1 CH2GTB1 CH1GTB2 
+    CH2GTB2 CH1EDGEA CH2EDGEA FLAG CH1KSD CH1KSP CH2KSD CH2KSP</li>
+    <li>REMARK SOFTWARE ScanAlyze</li>
+    <li>REMARK SOFTVERS 2.30</li>
+    <li>REMARK CH1 IMAGE lc4b007g1</li>
+    <li>REMARK CH2 IMAGE lc4b007r1</li>
+    <li>REMARK GRID FILE ..\..\AshGrids\lc4b007.SAG</li>
+    <li>REMARK DATE 8/28/99</li>
+    <li>REMARK TIME 10:59:34 AM</li>
+  </ul>
+  <p>The first line provides names for each of the columns to follow. The SPOT, 
+   GRID, TOP, LEFT, BOT, RIGHT ROW, and COL give information about the physical 
+   location of the spot. The values for CH*I (* equals 1 for channel 1 and 2 for 
+   channel 2) are the green and red intensities for an individual spot on the 
+   array. The values for CH*B are median background intensities and CH*BA are 
+   mean background intensities. SPIX and BGPIX are the number of pixels used for 
+   the spot and the background, respectively. The quantities MRAT, REGR, CORR, 
+   and LFRAT represent quality checks on the spot image. In a large production 
+   environment, these values might be useful in a quality control chart. 
+   Additional parameters for assessing the quality of a spot are CH*GTB1 which 
+   represent how many pixels in the spot exceed background. For a weak spot, 
+   these values will be close to 0.5. Alternate measures CH*GTB2, CH*KSD, and 
+   CH*KSP represent other criteria for identifying weak spots. FLAG is a user 
+   defined variable to identify spots that the user has special information on.</p>
+  <p>Here's what the header looks like for another file, produced locally with 
+   Affymetrix Jaguar Image Analysis software:</p>
+  <ul>
+    <li>Row Col SpotQuality Girl647 ALEXA647SD ALEXA647Pixels ALEXA647BG 
+    ALEXA647BGSD Normal555 ALEXA555SD ALEXA555Pixels ALEXA555BG ALEXA555BGSD 
+    `647/555 Name Name Name Name</li>
+  </ul>
+  <p>The spot intensities are stored under &quot;Girl 647&quot; and &quot;Normal 555.&quot; The 
+   standard deviation of the spot intensity is labelled SD, Pixels is the number 
+   of pixels in the spot, BG is the intensity of the background, and BGSD is the 
+   standard deviation of the background. The 647/555 column represents the ratio 
+   of spot intensities (unadjusted for background levels).</p>
+  <p>Genepix uses a format (GPR) that has similar information about the signal 
+   and background, with some quality checks along the lines of those produced by 
+   SnanAlyze software. The specification for the GPR format is on the web at<a href="http://www.axon.com/gn_GenePix_File_Formats.html#gpr"> 
+  www.axon.com/gn_GenePix_File_Formats.html#gpr</a>.</p>
+  <p>The GPR format is also a text file. It has several header lines that give 
+   information about the particular experiment. After the header lines comes 
+   data about particular spots:</p>
+  <ul>
+    <li>Block Column Row Name ID X Y Dia. F635Median F635Mean F635SD B635Median 
+    B635Mean B635SD %&gt;B635+1SD %&gt;B635+2SD F635%Sat. F532Median F532Mean F532SD 
+    B532Median B532Mean B532SD %&gt;B532+1SD %&gt;B532+2SD F532%Sat. RatioOfMedians 
+    RatioOfMeans MedianOfRatios MeanOfRatios RatioSD RgnRatio RgnR2 FPixels 
+    BPixels SumOfMedians SumOfMeans LogRatio Flags Normalize F1Median-B1 
+    F2Median-B2 F1Mean-B1 F2Mean-B2 SNR1 F1TotalIntensity Index UserDefined</li>
+  </ul>
+  <p>The first seven columns of data give the location and information about 
+   individual spots. The green signal information is labeled as 635 and the red 
+   signal information is labeled as 532, though later in the file the signals 
+   are 1 and 2, respectively. The letter F refers to the Foreground and B refers 
+   to the background.</p>
+  <p>Spot is an open source software program for image analysis of microarrays 
+   that also uses the R programming language. The files produced by Spot has a 
+   single header line</p>
+  <ul>
+    <li>indexs grid.r grid.c spot.r spot.c area Gmean Gmedian GIQR Rmean Rmedian 
+    RIQR bgGmean bgGmed bgGSD bgRmean bgRmed bgRSD valleyG valleyR morphG 
+    morphG.erode morphG.close.open morphR morphR.erode morphR.close.open 
+    logratio perimeter circularity badspot </li>
+  </ul>
+  <p>The letter G represents the green signal, R represents red. and bg 
+   represents background information.</p>
+  <p><b>Layout files</b></p>
+  <p>A second file will provide information linking particular spots for an 
+   array to gene names. For the Alizadeh study, this appears as two separate 
+   text files. The
+   <a href="http://llmpp.nih.gov/lymphoma/data/rawdata/chip_spot_well.tab.txt">
+   first text file</a> links spots on a particular slide to an inhouse DNA ID 
+   number. The
+   <a href="http://llmpp.nih.gov/lymphoma/data/rawdata/well_cloneid_name.tab.txt">
+   second text file</a> links the inhouse DNA ID number to CLONEID and curated 
+   names. This is a bit messy because several different batches of chips were 
+   used and the gene locations moved around from one batch to another.</p>
+  <p>Genepix software has a format for a layout file (GAL format) that appears 
+   to be widely used. The specification for the GAL format is on the web at<a href="http://www.axon.com/gn_GenePix_File_Formats.html#gal"> 
+  www.axon.com/gn_GenePix_File_Formats.html#gal</a>.</p>
+  <p>Here the header lines for a GAL file that comes with Bioconductor.</p>
+  <ul>
+    <li>ATF 1.0</li>
+    <li>19 5</li>
+    <li>&quot;Type=GenePix ArrayList V1.0&quot;</li>
+    <li>&quot;BlockCount=16&quot;</li>
+    <li>&quot;BlockType=0&quot;</li>
+    <li>&quot;Block1= 500, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block2= 4996, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block3= 9492, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block4= 13988, 500, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block5= 500, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block6= 4996, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block7= 9492, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block8= 13988, 4996, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block9= 500, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block10= 4996, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block11= 9492, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block12= 13988, 9492, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block13= 500, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block14= 4996, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block15= 9492, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block16= 13988, 13988, 100, 24, 180, 22, 180&quot;</li>
+    <li>&quot;Block&quot; &quot;Row&quot; &quot;Column&quot; &quot;ID&quot; &quot;Name&quot;</li>
+  </ul>
+  <p>The &quot;19 5&quot; in the second line tells you that there are 19 header lines and 
+   that the information about individual spots comes in 5 columns. This 
+   particular array has a four by four grid of printing tips and the Block 
+   information gives details about where these tips produced spots on the 
+   microarray. On this microarray, each spot is uniquely identified by the 
+   printing tip (block), row and column. Id is an internal code name and Name is 
+   the actual name of the gene.&nbsp; </p>
+  <p>If your layout information does not come in a GAL file, it is not too 
+   difficult to convert it to this format. You can skip all of the block 
+   information, if you like. It helps some software link particular data values 
+   to locations on the image file, but that is completely optional. A minimal 
+   GAL file would have the following header:</p>
+  <ul>
+    <li>ATF 1.0</li>
+    <li>1 4</li>
+    <li>&quot;Type=GenePix ArrayList V1.0&quot;</li>
+    <li>&quot;Block&quot; &quot;Column&quot; &quot;Row&quot; &quot;ID&quot;</li>
+  </ul>
+  <p>If your data has only one block then number that block &quot;1&quot; for all of the 
+   spots on your array.</p>
+  <p>Here's some R code that reads in the two layout files for the Alizadeh 
+   study, selects the rows corresponding to the </p>
+  <ul>
+    <li>#</li>
+    <li># f0 gives the path, f1 and f2 the file names</li>
+    <li>#</li>
+    <li>f0 &lt;- &quot;d:/Data/work040524/Bioconductor/&quot;</li>
+    <li>f1 &lt;- &quot;chip_spot_well_tab.txt&quot;</li>
+    <li>f2 &lt;- &quot;well_cloneid_name_tab.txt&quot;</li>
+    <li>#</li>
+    <li># the read.table function gets data from a text file.</li>
+    <li># sep=&quot;\t&quot; for tab delimited file</li>
+    <li># fill=T</li>
+    <li>#</li>
+    <li>chip.spot &lt;- read.table(paste(f0,f1,sep=&quot;&quot;),header=FALSE,sep=&quot;\t&quot;,fill=T)</li>
+    <li>well.clone &lt;- read.table(paste(f0,f2,sep=&quot;&quot;),header=FALSE,sep=&quot;\t&quot;,fill=T)</li>
+    <li>#</li>
+    <li># Since there is no header, we provide variable names below</li>
+    <li>#</li>
+    <li>names(chip.spot) &lt;- c(&quot;ChipBatch&quot;,&quot;SpotNum&quot;,&quot;InhouseID&quot;)</li>
+    <li>names(well.clone) &lt;- c(&quot;InhouseID&quot;,&quot;CloneID&quot;,&quot;CuratedName&quot;)</li>
+    <li>#</li>
+    <li># select the rows of chip.spot corresponding to lc4b</li>
+    <li>#</li>
+    <li>ch0 &lt;- chip.spot[chip.spot$ChipBatch==&quot;lc4b&quot;,]</li>
+    <li>#</li>
+    <li># combine these rows with well.clone</li>
+    <li># all.x=T preserves any unmatched rows</li>
+    <li>#</li>
+    <li>ch1 &lt;- merge(ch0,well.clone,all.x=T)</li>
+    <li>#</li>
+    <li># This layout file does not include rows and columns</li>
+    <li># so we compute them ourselves</li>
+    <li>#</li>
+    <li>row &lt;- ceiling(ch1$SpotNum/24)</li>
+    <li>col &lt;- ch1$SpotNum-24*(row-1)</li>
+    <li>#</li>
+    <li># We need four lines at the beginning of the file</li>
+    <li># Since the GAL format uses double quotes,</li>
+    <li># you should surround these strings with single quotes</li>
+    <li>#</li>
+    <li>h1 &lt;- 'ATF 1.0'</li>
+    <li>h2 &lt;- '1 4'</li>
+    <li>h3 &lt;- '&quot;Type=GenePix ArrayList V1.0&quot;</li>
+    <li>h4 &lt;- '&quot;Block&quot; &quot;Column&quot; &quot;Row&quot; &quot;ID&quot;'</li>
+    <li>#</li>
+    <li># Combine the block (always=1), row, col, and CloneID</li>
+    <li># sep=&quot;\t&quot; places tabs between each value</li>
+    <li>#</li>
+    <li>tail &lt;- paste(rep(1,9216),row,col,ch1$CloneID,sep=&quot;\t&quot;)</li>
+    <li>#</li>
+    <li># f3 is the name of the new file</li>
+    <li>#</li>
+    <li>f3 &lt;- paste(&quot;lc4b&quot;,&quot;.gal&quot;,sep=&quot;&quot;)</li>
+    <li>write(c(h1,h2,h3,h4,tail),file=paste(f0,f3))</li>
+  </ul>
+</blockquote>
+<p><b>Image files</b></p>
+<blockquote>
+  <p>In addition to these text files, microarray data sets will often include an 
+   image of the array in TIFF format.</p>
+</blockquote>
+<p STYLE="page-break-after: avoid; margin-bottom: 0cm"><b>Reading information 
+ into Bioconductor</b></p>
+<p STYLE="page-break-after: avoid; margin-bottom: 0cm">In all of these files, 
+ the four key pieces of information you definitely need are the green signal, 
+ the green background, the red signal, and the red background.</p>
+<p>The marrayInput library of Bioconductor has </p>
+<blockquote>
+  <ul>
+    <li>read.Genepix()</li>
+    <li>read.SMD()</li>
+    <li>read.Spot()</li>
+    <li>read.marrayRaw()</li>
+  </ul>
+</blockquote>
+<p>for reading various microarray formats. While you are reading in the data, 
+ you can also specify layout values, probe sequence information, and/or target 
+ sample information.</p>
+<p><b>MAGE-ML or Microarray Gene Expression Markup Language</b></p>
+<blockquote>
+  <p>[Explain]</p>
+</blockquote>
+<p><b>Importing data from the prenatal liver study</b></p>
+<blockquote>
+  <p>I received 22 Excel files for this project.</p>
+  <ul>
+    <li><code>6286_UM1589Ki_133_FAA.txt</code></li>
+    <li><code>6287_UM1589Li_133_FAA.txt</code></li>
+    <li><code>6288_UM1589Lu_133_FAA.txt</code></li>
+    <li><code>6289_H18058Ki_098_FXX.txt</code></li>
+    <li><code>6290_H18058Lu_098_FXX.txt</code></li>
+    <li><code>6291_H18058Li_098_FXX.txt</code></li>
+    <li><code>6292_H17869Lu_075_XCA.txt</code></li>
+    <li><code>6293_H17869Ki_075_XCA.txt</code></li>
+    <li><code>6294_H17869Li_075_XCA.txt</code></li>
+    <li><code>7446_UM1690Li_140_MCA.txt</code></li>
+    <li><code>7447_UM1621Li_130_MCA.txt</code></li>
+    <li><code>7448_UM1631Li_133_MAA.txt</code></li>
+    <li><code>7449_UM1566Li_134_MAA.txt</code></li>
+    <li><code>7450_H18354Li_096_MXX.txt</code></li>
+    <li><code>7451_H18381Li_096_MXX.txt</code></li>
+    <li><code>7452_H18390Li_094_MXX.txt</code></li>
+    <li><code>7453_H18401Li_076_XXX.txt</code></li>
+    <li><code>7454_H18508Li_076_XXX.txt</code></li>
+    <li><code>7455_H18535Li_075_XXX.txt</code></li>
+    <li><code>7456_WU0831Li_1.7y_FCA.txt</code></li>
+    <li><code>7457_WU3881Li_3.0y_MAA.txt</code></li>
+    <li><code>7458_WU5025Li_2.7y_FXX.txt</code></li>
+  </ul>
+  <p>These were tab delimited files, with key information stored in the name of 
+   the file itself. The filename can be split into eight pieces:</p>
+  <ul>
+    <li>id1 (a unique id code for each microarray chip)</li>
+    <li>loc (location. UM=University of Maryland, H=Harvard, WU=Washington 
+    University)</li>
+    <li>id2 (a second id code)</li>
+    <li>tis (tissue type. Ki=kidney, Li=liver, Lu=lung)</li>
+    <li>age (age in days if prenatal, in years if postnatal)</li>
+    <li>unt (unit, empty=days, y=years)</li>
+    <li>sex (F=female, M=male, X=unknown)</li>
+    <li>rac (race/ethnicity. AA=African American, CA=Caucasian, XX=unknown)</li>
+  </ul>
+  <p>&nbsp;The first line in each file included the following names for the data:</p>
+  <ul>
+    <li>Probeset</li>
+    <li>6286_Signal</li>
+    <li>6286_Detection</li>
+    <li>6286_Detection P Value</li>
+    <li>6286_Stat Pairs</li>
+    <li>6286_Stat Pairs Used</li>
+  </ul>
+  <p>The second column, the signal, is the most important piece of information. 
+   Third column gives a detection code based on the fourth column, the detection 
+   p-value. The three codes are:</p>
+  <ul>
+    <li>A (if the p-value is larger than 0.065),</li>
+    <li>M (if the p-value is between 0.065 and 0.05), and</li>
+    <li>P (if the p-value is smaller than 0.05).</li>
+  </ul>
+  <p>I had to convert from a tab delimited file to a comma separated file. There 
+   are several ways to do this. For example, you can read the tab delimited file 
+   into Excel and then save it as a .CSV file). I found it faster to search and 
+   replace the TAB character with a comma. It is hard to search directly for a 
+   tab character, but if your software allows it, you can look for the ASCII 
+   code 09.</p>
+  <p>Once I had the comma separated values, I created the pieces of the file 
+   separately and pasted them together. This took longer than just typing the 
+   names of the files, but in the long run I save time because several of these 
+   pieces become important variables in the analysis.</p>
+  <p>Here is the R code for importing this data.</p>
+</blockquote>
+<pre>us &lt;- &quot;_&quot;
+dir &lt;- &quot;x:/sleeder/csv/&quot;
+id1 &lt;- as.character(c(6286:6294,7446:7458))
+loc &lt;- c(   &quot;UM&quot;,   &quot;UM&quot;,   &quot;UM&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,
+             &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,   &quot;UM&quot;,   &quot;UM&quot;,   &quot;UM&quot;,
+            &quot;UM&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,    &quot;H&quot;,
+             &quot;H&quot;,   &quot;WU&quot;,   &quot;WU&quot;,   &quot;WU&quot;)
+id2 &lt;- c( &quot;1589&quot;, &quot;1589&quot;, &quot;1589&quot;,&quot;18058&quot;,&quot;18058&quot;,&quot;18058&quot;,
+         &quot;17869&quot;,&quot;17869&quot;,&quot;17869&quot;, &quot;1690&quot;, &quot;1621&quot;, &quot;1631&quot;,
+          &quot;1566&quot;,&quot;18354&quot;,&quot;18381&quot;,&quot;18390&quot;,&quot;18401&quot;,&quot;18508&quot;,
+	 &quot;18535&quot;, &quot;0831&quot;, &quot;3881&quot;, &quot;5025&quot;)
+tis &lt;- c(   &quot;Ki&quot;,   &quot;Li&quot;,   &quot;Lu&quot;,   &quot;Ki&quot;,   &quot;Lu&quot;,   &quot;Li&quot;,
+            &quot;Lu&quot;,   &quot;Ki&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,
+            &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,
+            &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;,   &quot;Li&quot;)
+age &lt;- c(  &quot;133&quot;,  &quot;133&quot;,  &quot;133&quot;,  &quot;098&quot;,  &quot;098&quot;,  &quot;098&quot;,
+           &quot;075&quot;,  &quot;075&quot;,  &quot;075&quot;,  &quot;140&quot;,  &quot;130&quot;,  &quot;133&quot;,
+           &quot;134&quot;,  &quot;096&quot;,  &quot;096&quot;,  &quot;094&quot;,  &quot;076&quot;,  &quot;076&quot;,
+	   &quot;075&quot;,  &quot;1.7&quot;,  &quot;3.0&quot;,  &quot;2.7&quot;)
+unt &lt;- c(     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,
+              &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,
+              &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,     &quot;&quot;,
+              &quot;&quot;,    &quot;y&quot;,    &quot;y&quot;,    &quot;y&quot;)
+sex &lt;- c(    &quot;F&quot;,    &quot;F&quot;,    &quot;F&quot;,     &quot;F&quot;,    &quot;F&quot;,   &quot;F&quot;,
+             &quot;X&quot;,    &quot;X&quot;,    &quot;X&quot;,     &quot;M&quot;,    &quot;M&quot;,   &quot;M&quot;,
+             &quot;M&quot;,    &quot;M&quot;,    &quot;M&quot;,     &quot;M&quot;,    &quot;X&quot;,   &quot;X&quot;,
+             &quot;X&quot;,    &quot;F&quot;,    &quot;M&quot;,     &quot;F&quot;)
+rac &lt;- c(   &quot;AA&quot;,   &quot;AA&quot;,   &quot;AA&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,
+            &quot;CA&quot;,   &quot;CA&quot;,   &quot;CA&quot;,   &quot;CA&quot;,   &quot;CA&quot;,   &quot;AA&quot;,
+            &quot;AA&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,   &quot;XX&quot;,
+            &quot;XX&quot;,   &quot;CA&quot;,   &quot;AA&quot;,   &quot;XX&quot;)
+ext &lt;- &quot;.csv&quot;
+
+fz &lt;- paste(dir,id1,us,loc,id2,tis,us,age,unt,us,sex,rac,ext,sep=&quot;&quot;)
+
+signal.all &lt;- matrix(-1,54675,22)
+detect.all &lt;- matrix(-1,54675,22)
+for (i in 1:22) {
+	tmp &lt;- read.csv(fz[i])
+	signal.all[,i] &lt;- tmp[,2]
+	detect.all[,i] &lt;- tmp[,3]
+}</pre>
+<blockquote>
+  <p>The value of breaking the filenames up into segments becomes apparent when 
+   you want to look at a particular subset of the genes. For example, the R code</p>
+</blockquote>
+<p><code>signal.li &lt;- signal.all[,tis==&quot;Li&quot;]</code></p>
+<blockquote>
+  <p>will create an array consisting of the 16 chips associated with liver 
+   tissue. We can get the gender information for these 16 patients with the 
+   command</p>
+</blockquote>
+<p><code>gender.li &lt;- gender[tis==&quot;Li&quot;]</code></p>
+<blockquote>
+  <p>and so forth.</p>
+</blockquote>
+<p><b>Averting a disaster in the prenatal liver study</b></p>
+<blockquote>
+  <p>When I was trying to normalize the data, I noticed that three of the arrays 
+   had rather unusual properties. When trying to normalize array 6287 versus the 
+   median array, the R vs I plot looked like</p>
+  <p><img border="0" src="../01/images/import01.gif" width="480" height="480"></p>
+  <p>which was much more scattered than most of the other plots, such as 7446.</p>
+  <p><img border="0" src="../01/images/import02.gif" width="480" height="480"></p>
+  <p>When I plotted pairs of arrays versus each other, it became even more 
+   apparent. Here is what 6287 versus 7446 looked like.</p>
+  <p><img border="0" src="../01/images/import03.gif" width="480" height="480"></p>
+  <p>Compare this to 7446 versus 7447.</p>
+  <p><img border="0" src="../01/images/import04.gif" width="480" height="480"></p>
+  <p>It turns out that the order of the genes were not the same in all of the 
+   files. For example in file 6287, the first ten genes were</p>
+  <ol>
+    <li>1007_s_at</li>
+    <li>1053_at</li>
+    <li>117_at </li>
+    <li>121_at</li>
+    <li>1255_g_at</li>
+    <li>1294_at</li>
+    <li>1316_at</li>
+    <li>1320_at</li>
+    <li>1405_i_at</li>
+    <li>1431_at</li>
+  </ol>
+  <p>while in file 7446, the first ten genes were</p>
+  <ol>
+    <li>117_at</li>
+    <li>121_at</li>
+    <li>177_at</li>
+    <li>179_at</li>
+    <li>320_at</li>
+    <li>336_at</li>
+    <li>564_at</li>
+    <li>632_at</li>
+    <li>823_at</li>
+    <li>1053_at</li>
+  </ol>
+  <p>By assuming that all the files listed their genes in the exact same order, 
+   I had effectively shuffled the values of three of the arrays and effectively 
+   ruined any analyses. To fix this, I had to sort the CSV files to insure that 
+   the gene names were in the same order for each file. Then I added a couple of 
+   extra lines of code to double-check that the files were now in a consistent 
+   order. First, I got the probeset list from the first file. Then when reading 
+   in the remaining files, I compared the probeset list to the first file. If 
+   there were any mismatches, then the sum would equal a value larger than zero.</p>
+</blockquote>
+<p><font color="#FF0000"></font><code><font color="#FF0000">tmp &lt;- 
+ read.csv(fz[1])<br>
+ signal.all[,1] &lt;- tmp[,2]<br>
+ detect.all[,1] &lt;- tmp[,3]<br>
+ gene.probeset &lt;- trimWhiteSpace(as.character(tmp$Probeset))</font><br>
+ for (i in <font color="#FF0000">2</font>:22) { tmp &lt;- read.csv(fz[i])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; signal.all[,i] &lt;- tmp[,2]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect.all[,i] &lt;- tmp[,3]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000">check.probeset 
+ &lt;- trimWhiteSpace(as.character(tmp$Probeset))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print(sum(gene.probeset!=check.probeset))<br>
+ </font>}</code></p>
+<blockquote>
+  <p>I should have been more careful at the beginning, but at least I caught the 
+   problem before I ran any serious analyses. Whew!</p>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="33383" endspan --> <hr>
+  <!--webbot bot="Include" U-Include="arrayDataManagement.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>Data management in a microarray experiment (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<p><b>Selecting a subset of genes from the prenatal liver study</b></p>
+<blockquote>
+  <p>I was asked to concentrate on a set of genes associated with the Folate 
+   pathway. This list of 43 genes, </p>
+  <blockquote>
+    <p>ABCB1, ABCC1, ABCC3, ABCC4, ABCG2, AHCYL1, AHCYL1, AMT, ATIC, BHMT, 
+     BHMT2, CBS, CTH, DHFR, FOLH1, FOLH2, FOLR1, FOLR2, FOLR2L, FOLR3, FPGS, 
+     FTCD, FTH1, FTHFD, FTHFSDC1, GART, GCH1, GGH, GNMT, MAT1A, MAT2A, MAT2B, 
+     MTHFD1, MTHFD2, MTHFR, MTHFS, MTR, MTRR, PPAT, PTS, RUVBL2, SHMT1, SLC19A1, 
+     and TYMS</p>
+  </blockquote>
+  <p>were stored in an Excel file called FolateGeneList.xls. I converted this 
+   file to a csv format, and read it into R.</p>
+</blockquote>
+<p><code>f0 &lt;- &quot;x:/sleeder/csv/FolateGeneList.csv&quot;<br>
+ folate.dat &lt;- read.csv(f0,header=F)</code></p>
+<blockquote>
+  <p>Unfortunately, none of these names matched the names found in the Probeset 
+   column of the data sets. I had to look instead at a separate file, 
+   HG-U133_Plus_2_annot.xls, which I also converted to csv format and read into 
+   R.</p>
+</blockquote>
+<p><code>f1 &lt;- &quot;x:/sleeder/csv/HG-U133_Plus_2_annot.csv&quot;<br>
+ annotate.dat &lt;- read.csv(f1)<br>
+ dim(annotate.dat)<br>
+ <br>
+ <font color="#FF0000">[1] 54675&nbsp; 43</font><br>
+ <br>
+ names(annotate.dat)<br>
+ <br>
+ <font color="#FF0000">&nbsp;[1] &quot;Probe.Set.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;GeneChip.Array&quot; <br>
+ &nbsp;[3] &quot;Species.Scientific.Name&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Annotation.Date&quot; <br>
+ &nbsp;[5] &quot;Sequence.Type&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Sequence.Source&quot; <br>
+ &nbsp;[7] &quot;Transcript.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Target.Description&quot; <br>
+ &nbsp;[9] &quot;Representative.Public.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Archival.UniGene.Cluster&quot; <br>
+ [11] &quot;UniGene.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Genome.Version&quot; <br>
+ [13] &quot;Alignments&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Gene.Title&quot; <br>
+ [15] &quot;Gene.Symbol&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Chromosomal.Location&quot; <br>
+ [17] &quot;Unigene.Cluster.Type&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Ensembl&quot; <br>
+ [19] &quot;LocusLink&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;SwissProt&quot; <br>
+ [21] &quot;EC&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;OMIM&quot; <br>
+ [23] &quot;RefSeq.Protein.ID&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;RefSeq.Transcript.ID&quot; <br>
+ [25] &quot;FlyBase&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;AGI&quot; <br>
+ [27] &quot;WormBase&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;MGI.Name&quot; <br>
+ [29] &quot;RGD.Name&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;SGD.accession.number&quot; <br>
+ [31] &quot;Gene.Ontology.Biological.Process&quot; &quot;Gene.Ontology.Cellular.Component&quot;<br>
+ [33] &quot;Gene.Ontology.Molecular.Function&quot; &quot;Pathway&quot; <br>
+ [35] &quot;Protein.Families&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Protein.Domains&quot; <br>
+ [37] &quot;InterPro&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Trans.Membrane&quot; <br>
+ [39] &quot;QTL&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ &quot;Annotation.Description&quot; <br>
+ [41] &quot;Annotation.Transcript.Cluster&quot;&nbsp;&nbsp;&nbsp; &quot;Transcript.Assignments&quot;
+ <br>
+ [43] &quot;Annotation.Notes&quot; </font></code></p>
+<blockquote>
+  <p>This file is so complex in part because there are so many different ways 
+   that you can name a gene. For this particular experiment, here is what the 
+   columns represent.</p>
+  <blockquote>
+    <ol>
+      <li><b>&quot;Probe.Set.ID&quot;</b> is a medium length string (6-27 characters) that 
+      represents the Affymetrix name. The values are unique. Examples include
+      <font color="#FF0000">236631_at</font> and <font color="#FF0000">
+      AFFX-r2-Ec-bioB-M_at</font>.</li>
+      <li><b>&quot;GeneChip.Array&quot;</b> is <font color="#FF0000">Human Genome U133 
+      Plus 2.0 Array</font> for all rows.</li>
+      <li><b>&quot;Species.Scientific.Name&quot;</b> is <font color="#FF0000">Homo sapiens</font> 
+      for all rows.</li>
+      <li><b>&quot;Annotation.Date&quot; </b>is&nbsp; <font color="#FF0000">7-Dec-04</font> 
+      for all rows.</li>
+      <li><b>&quot;Sequence.Type&quot;</b> is <font color="#FF0000">Consensus sequence
+      </font>(39,534), <font color="#FF0000">Exemplar sequence</font> (15,079), 
+      or <font color="#FF0000">Control sequence</font> (62). &quot;An Exemplar is a 
+      single nucleotide sequence taken directly from a public database. This 
+      sequence could be an mRNA or EST. A Consensus sequence, is a nucleotide 
+      sequence assembled by Affymetrix, based on one or more sequence taken from 
+      a public database.&quot;
+      <a href="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GPL93">
+      www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GPL93</a> </li>
+      <li><b>&quot;Sequence.Source&quot;</b> is <font color="#FF0000">GenBank</font> 
+      (54,600) or <font color="#FF0000">Affymetrix Proprietary Database</font> 
+      (75).</li>
+      <li><b>&quot;Transcript.ID&quot;</b> is a medium length string (6-24 characters). 
+      The values are not unique. Examples include <font color="#FF0000">
+      Hs.121419.0</font> and <font color="#FF0000">Hs.138751.0</font>. It is 
+      never missing in this data set.</li>
+      <li><b>&quot;Target.Description&quot;</b> is a long text string (56 to 1,023 
+      characters). An example is <font color="#FF0000">U48705 /FEATURE=mRNA 
+      /DEFINITION=HSU48705 Human receptor tyrosine kinase DDR gene, complete cds 
+      51842 Levels: Cluster Incl. AB001325:Human AQP3 gene for aquaporine 3 
+      (water channel), partail cds /cds=(60,938) /gb=AB001325 /gi=1854373 /ug=Hs.234642 
+      /len=1442</font> ... </li>
+      <li><b>&quot;Representative.Public.ID&quot;</b> is a medium length string (6-24 
+      characters). The values are not unique. Examples include
+      <font color="#FF0000">NM_001785</font> and <font color="#FF0000">AL525367</font>. 
+      It is never missing in this data set.</li>
+      <li><b>&quot;Archival.UniGene.Cluster&quot;</b> is a short text string (3-17 
+      characters). The values are not unique and it is missing for 12,430 rows. 
+      This and the next variable are part of &quot;an experimental system for 
+      automatically partitioning GenBank sequences into a non-redundant set of 
+      gene-oriented clusters. Each UniGene cluster contains sequences that 
+      represent a unique gene, as well as related information such as the tissue 
+      types in which the gene has been expressed and map location.&quot; Examples 
+      include <font color="#FF0000">Hs.220998</font>, <font color="#FF0000">--- 
+      /// Hs.900316</font>, and <font color="#FF0000">Hs.6336</font>. </li>
+      <li><b>&quot;UniGene.ID&quot;</b> is a medium length string (3-135 characters). The 
+      values are not unique and they are missing for 12,878 rows. Examples 
+      include <font color="#FF0000">Hs.278441</font>, <font color="#FF0000">
+      Hs.383534 /// Hs.449450 /// Hs.511725 /// Hs.511727 /// Hs.511728 /// 
+      Hs.534484</font> and <font color="#FF0000">Hs.249587 /// Hs.406224</font>.</li>
+      <li><b>&quot;Genome.Version&quot;</b> is <font color="#FF0000">May 2004 (NCBI 35)</font> 
+      for all rows,</li>
+      <li><b>&quot;Alignments&quot;</b> is a long text string (3-1,004 characters). An 
+      example is <font color="#FF0000">chr6:30964144-30975910 (+) // 95.63 // 
+      p21.33 50315 Levels: --- chr1:100038786-100101597 (+) // 99.57 // p21.2 
+      ... chrY:9897982-9899549 (+) // 98.23 // p11.2 /// chrY:9938577-9940161 
+      (+) // 96.58 // p11.2 /// chrY:9238824-9240391 (+) // 98.16 // p11.2 /// 
+      chrY:9279448-9281015 (+) // 98.16 // p11.2 /// chrY:9958907-9960474 (+) // 
+      98.16 // p11.2 /// chrY:9218491-9220076 (+) // 96.51 // p11.2 /// 
+      chrY:9259103-9260669 (+) // 98.16 // p11.2 /// chrY:9918294-9919879 (+) // 
+      96.39 // p11.2 /// chrY:6157682-6159243 (+) // 97.72 // p11.2 /// 
+      chrY:9979090-9980643 (+) // 90.56 // p11.2</font>.</li>
+      <li><b>&quot;Gene.Title&quot;</b> is a long text string (3-30,000 characters). It is 
+      missing for 12,267 rows. An example is <font color="#FF0000">androgen 
+      receptor (dihydrotestosterone receptor; testicular feminization; spinal 
+      and bulbar muscular atrophy; Kennedy disease) /// androgen receptor (dihydrotestosterone 
+      receptor; testicular feminization; spinal and bulbar muscular atrophy; 
+      Kennedy disease)</font>.</li>
+      <li><b>&quot;Gene.Symbol&quot;</b> is a long text string (1-8,911 characters). 
+      Examples include <font color="#FF0000">RANBP2</font>,
+      <font color="#FF0000">MGC27165 /// IGH@ /// IGHG1</font>, and
+      <font color="#FF0000">PLK4</font>. The values are not unique and they are 
+      missing for 16,943 rows.</li>
+      <li><b>&quot;Chromosomal.Location&quot;</b> gives the physical location of the gene. 
+      Examples include <font color="#FF0000">chr5q35.3</font> and
+      <font color="#FF0000">chr6p22.1-p21.2</font>. It is missing for 15,891 
+      rows.</li>
+      <li><b>&quot;Unigene.Cluster.Type&quot;</b> is <font color="#FF0000">full length</font> 
+      (33,859), <font color="#FF0000">est /// full length</font> (30), or
+      <font color="#FF0000">est</font> (3). It is missing for 20,783 rows.</li>
+      <li><b>&quot;Ensembl&quot;</b> Examples include <font color="#FF0000">
+      ENSG00000166478</font> and <font color="#FF0000">ENSG00000006606</font>.&nbsp; 
+      It is missing for 22,243 rows.</li>
+      <li><b>&quot;LocusLink&quot;</b> is a classification scheme developed by the 
+      National Center for Biotechnology Information, but it has been superceded 
+      by Entrez Gene. Examples include <font color="#FF0000">399655 /// 9534</font> 
+      and <font color="#FF0000">440033</font>. It is missing for 15,777 rows.</li>
+      <li><b>&quot;SwissProt&quot;</b> is a repository for protein data developed by the 
+      Swiss Institute of Bioinformatics and the European Bioinformatics 
+      Institute. Examples include <font color="#FF0000">Q8N6H1 /// Q6UXD7 /// 
+      Q6XYD4 /// Q9H6H6</font> and <font color="#FF0000">P29992 /// Q96DH5</font>. 
+      It is missing for 19,162 rows.</li>
+      <li>&quot;EC&quot; is the Enzyme Commission family number.</li>
+      <li>&quot;OMIM&quot; is the Online Mendelian Inheritance in Man accession number.</li>
+      <li>&quot;RefSeq.Protein.ID&quot; is the ID of the protein sequence in the NCBI 
+      RefSeq database.</li>
+      <li>&quot;RefSeq.Transcript.ID&quot;</li>
+      <li>&quot;FlyBase&quot;</li>
+      <li>&quot;AGI&quot;</li>
+      <li>&quot;WormBase&quot;</li>
+      <li>&quot;MGI.Name&quot;</li>
+      <li>&quot;RGD.Name&quot;</li>
+      <li>&quot;SGD.accession.number&quot;</li>
+      <li>&quot;Gene.Ontology.Biological.Process&quot;</li>
+      <li>&quot;Gene.Ontology.Cellular.Component&quot;</li>
+      <li>&quot;Gene.Ontology.Molecular.Function&quot;</li>
+      <li>&quot;Pathway&quot;</li>
+      <li>&quot;Protein.Families&quot;</li>
+      <li>&quot;Protein.Domains&quot;</li>
+      <li>&quot;InterPro&quot;</li>
+      <li>&quot;Trans.Membrane&quot;</li>
+      <li>&quot;QTL&quot;</li>
+      <li>&quot;Annotation.Description&quot;</li>
+      <li>&quot;Annotation.Transcript.Cluster&quot;</li>
+      <li>&quot;Transcript.Assignments&quot;</li>
+      <li>&quot;Annotation.Notes&quot; </li>
+    </ol>
+    <p>EC Enzyme Commission family number. OMIM OMIM: Online Mendelian 
+     Inheritance in Man accession number. RefSeq Protein ID ID of the protein 
+     sequence in the NCBI RefSeq database. RefSeq Transcript ID References to 
+     multiple sequences in RefSeq. The field contains the ID and Description for 
+     each entry, and there can be multiple entries per ProbeSet. Gene Ontology 
+     Biological Process Gene Ontology Consortium Biological Process derived from 
+     LocusLink. Each annotation consists of three parts: &quot;Accession Number // 
+     Description // Evidence&quot;. The description corresponds directly to the GO 
+     ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;. Gene Ontology Cellular 
+     Component Gene Ontology Consortium Cellular Component derived from 
+     LocusLink. Each annotation consists of three parts: &quot;Accession Number // 
+     Description // Evidence&quot;. The description corresponds directly to the GO 
+     ID. The evidence can be &quot;direct&quot;, or &quot;extended&quot;. Gene Ontology Molecular 
+     Function Gene Ontology Consortium Molecular Function derived from LocusLink. 
+     Each annotation consists of three parts: &quot;Accession Number // Description 
+     // Evidence&quot;. The description corresponds directly to the GO ID. The 
+     evidence can be &quot;direct&quot;, or &quot;extended&quot;. Also see<a href="http://www.affymetrix.com/support/technical/manual/taf_manual.affx"> 
+    www.affymetrix.com/support/technical/manual/taf_manual.affx</a> </p>
+    <p>Obviously, we need to match with column 15 (Gene.Symbol). One difficulty 
+     is that the order that the probesets are presented in the 
+     HG-U133_Plus_2_annot file is not the same as the order that the probesets 
+     are presented in data files. So you have to match twice. First you find the 
+     Gene.Symbol values in the annotate data set that match the symbols in the 
+     FolateGeneList file. Get the associated Probe.Set.ID value from the 
+     HG-U133_Plus_2_annot file. Now match this with the appropriate probeset 
+     values in the data files. Here is the R code to do all this.</p>
+  </blockquote>
+  <p><code>f0 &lt;- &quot;x:/sleeder/csv/FolateGeneList.csv&quot;<br>
+   folate.dat &lt;- read.csv(f0,header=F)<br>
+   f1 &lt;- &quot;x:/sleeder/csv/HG-U133_Plus_2_annot.csv&quot;<br>
+   annotate.dat &lt;- read.csv(f1)<br>
+   folate.symbol &lt;- trimWhiteSpace(as.character(folate.dat$V1))<br>
+   annotate.symbol &lt;- trimWhiteSpace(as.character(annotate.dat$Gene.Symbol))<br>
+   annotate.probeset &lt;- trimWhiteSpace(as.character(annotate.dat$Probe.Set.ID))<br>
+   symbol.match &lt;- annotate.symbol %in% folate.symbol<br>
+   folate.probeset &lt;- annotate.probeset[symbol.match]<br>
+   probeset.match &lt;- gene.probeset %in% folate.probeset</code></p>
+  <blockquote>
+    <p>Now you might want to know what the symbols are for each of the 
+     probeset.match values. You just reverse the search process.</p>
+  </blockquote>
+  <p><code>reverse.match &lt;- annotate.probeset %in% gene.probeset[probeset.match]<br>
+   gene.symbol &lt;- annotate.symbol[reverse.match]</code></p>
+  <blockquote>
+    <p>Now let's see what sort of graphs we can draw using the folate pathway. 
+     Note that the 14th through 16th values represent postnatal ages in years 
+     and have to be converted to post-conceptual age in days to match the rest 
+     of the data.</p>
+  </blockquote>
+  <p><code>age.pca &lt;- as.numeric(age[tis==&quot;Li&quot;])<br>
+   age.pca[14:16] &lt;- age.pca[14:16]*365+270<br>
+   age.group &lt;- (age.pca&gt;76)+(age.pca&gt;98)+(age.pca&gt;140)<br>
+   win.print(width=7,height=7,pointsize=12,printer=&quot;Adobe PDF&quot;)<br>
+   for (i in 1:94) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; plot(age.group,folate.signal[i,])<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; title(gene.symbol[i],&quot;0=75-76, 
+   1=94-98, 2=130-140, 3=postnatal&quot;)<br>
+   }<br>
+   dev.off()</code></p>
+  <p><b>Dumping data to a text file </b></p>
+  <p>In the prenatal liver study, I needed to give some of 
+   the normalized gene expression levels to a researcher in a form he could use. 
+   The data he needed was in a data frame with 94 rows and 16 columns (folate.signal). 
+   But unfortunately, the names of the rows (gene.symbol) and columns (liver.names) 
+   were stored in separate objects. Here's one way to match the values back up.</p>
+  <p>&nbsp;First, there are duplicates in the gene.symbol list, so 
+   to create new names, use the makeUnique function found in the limma library. 
+   Then change folate.signal from a data frame to a matrix. Use the dimnames 
+   function to add the row and column names to the matrix. Finally, use the 
+   write.table function to create a text file.</p>
+  <p><code>gene.unique &lt;- makeUnique(paste(gene.symbol,&quot; &quot;))<br>
+   </code><code>folate.matrix &lt;- as.matrix(folate.signal)<br>
+   </code><code>dimnames(folate.matrix) &lt;- list(gene.unique,liver.names)<br>
+   </code><code>write.table(folate.matrix,&quot;x:/sleeder/folate.txt&quot;)</code></p>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="60183" endspan -->
+<hr>
+  <!--webbot bot="Include" U-Include="arraySoftware.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>Software for microarray data analysis (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<p><b>R and the Bioconductor package</b></p>
+<blockquote>
+  <p>There is a wide range of software available for the analysis of microarrays. 
+   I will use Bioconductor which is a set of libraries for a statistical 
+   programming language called R. Both Bioconductor and R are open source, which 
+   means that you can obtain the pacakge at no cost. Open source also means that 
+   you can modify the program, if you are so inclined, to add new features. Most 
+   of us (myself especially) do not have the programming skills to modify 
+   Bioconductor or R, but there are scores of graduate students and faculty who 
+   do have this skill and who open source software as a way to quickly publicize 
+   and promote their research. As a result, R and Bioconductor have some of the 
+   best and most cutting edge analysis methods around.</p>
+  <p>Instructions for setting up R on your computer are on the web at</p>
+  <ul>
+    <li><a href="http://www.r-project.org/">http://www.r-project.org/</a></li>
+  </ul>
+  <p>For Windows users, this simply means downloading and running an install 
+   program. To install Bioconductor, type in the following two commands:</p>
+  <ul>
+    <li>source(&quot;http://www.bioconductor.org/getBioC.R&quot;)</li>
+    <li>getBioC()</li>
+  </ul>
+  <p>This will get the default set of packages. You can install a particular set 
+   of packages, such as the &quot;affy&quot; packages by typing in</p>
+  <ul>
+    <li>getBioC(libName=&quot;affy&quot;)</li>
+  </ul>
+  <p>and if you have a high speed connection and some free time,&nbsp; you can 
+   download the entire Bioconductor system by typing</p>
+  <ul>
+    <li>getBioC(libName=&quot;all&quot;)</li>
+  </ul>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="32832" endspan --><hr>
+  <!--webbot bot="Include" U-Include="arrayDesign.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>Design of microarray experiments (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<blockquote>
+<p>There are a variety of research designs that you can use in a microarray 
+experiment.</p>
+</blockquote>
+<p><b>Designs for cDNA arrays</b></p>
+<blockquote>
+  <p>Loop designs [explain]</p>
+  <p>A dye swap design use the treated DNA as red on the first array and as 
+   green on the second array. The control is green on the first array and red on 
+   the second. A second pair of treated and control DNA would use a third and 
+   fourth array.</p>
+  <p>In contrast, a loop design has overlap between pairs of treated and control 
+   DNA. It still uses the first treated DNA sample as red on the first array and 
+   green on the second. The first control uses red on the second array and green 
+   on the third. The second treated DNA sample is red on the third array and 
+   green on the fourth. This continues similarly. The last control DNA sample is 
+   red on the last array and green on the first array. The return to the last 
+   sample to the first array is the loop design.</p>
+  <p STYLE="page-break-after: avoid; margin-bottom: 0cm">Expression level 
+   polymorphism is a quantitative variation in gene expression associated with a 
+   complex process such as resistance.</p>
+  <p STYLE="page-break-after: avoid; margin-bottom: 0cm">Duplicate samples give 
+   the biggest boost in power. Triplicates and higher levels of replication 
+   provide smaller but still significant gains.</p>
+</blockquote>
+<p><b>Designs for Affy arrays</b></p>
+<blockquote>
+  <p>[Explain]</p>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="59054" endspan --><hr>
+  <!--webbot bot="Include" U-Include="arrayNormalization.htm" TAG="BODY" startspan --><!--start-->
+
+<p><b>Normalization for microarray data</b><strong> (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<blockquote>
+<p>Normalization is the process of adjusting values in a microarray experiment 
+to improve consistency and reduce bias.</p>
+</blockquote>
+<p><b>Image processing</b></p>
+<blockquote>
+  <p>[explain]</p>
+</blockquote>
+<p><b>Background correction</b></p>
+<blockquote>
+  <p>[explain]</p>
+</blockquote>
+<p><b>Log transformation</b></p>
+<blockquote>
+  <p>[explain]</p>
+</blockquote>
+<p><b>Normalization</b></p>
+<blockquote>
+  <p>If you run the same biological sample on two separate microarrays (or on 
+   both the red and the green channel of a two color array), you will get 
+   slightly different results. This is just part of the inherent variation that 
+   you have with any laboratory assay.</p>
+  <p>Normalization is a method that attempts to remove some of this variation. 
+   There are several approaches which can be used separately or in combination 
+   to normalize a set of microarrays.</p>
+  <p>1. Multiply each array by a constant to make the mean (median) intensity 
+   the same for each individual array.</p>
+  <p>2. Adjust the arrays using some control or housekeeping genes that you 
+   would expect to have the same intensity level across all of the samples.</p>
+  <p>3. Match the percentiles of each array.</p>
+  <p>4. Adjust using a nonlinear smoothing curve.</p>
+  <p>5. Adjust using control genes</p>
+  <p>Amaratunga and Cabrera (2004) include a library of R functions with their 
+   book and that library includes several sample data sets. The data set 
+   mice2.txt represents a simple microarray experiment with four control mice 
+   and four treated mice. There is substantial variation in the arrays.</p>
+  <p>The following program reads the mice2.txt file, compute the base 2 
+   logarithm for each value, and then estimates the average intensity.</p>
+  <p><font color="#FF0000"><code>rDirectory &lt;- &quot;c:/Program Files/R/rw1090&quot; <br>
+   FileName &lt;- &quot;/library/DNAMR/data/mice2.txt&quot;<br>
+   m2.dat &lt;- read.table(file=paste(rDirectory,FileName,sep=&quot;&quot;))<br>
+   m2.log &lt;- log(m2.dat,base=2)<br>
+   m2.array.means &lt;- apply(m2.log,2,mean)<br>
+   print(round(m2.array.means,2))</code></font></p>
+  <p>Here is what the output looks like (I slightly modified the appearance of 
+   this output and some of the later output so it would fit better on this web 
+   page).</p>
+  <p><code>cnt1011a1 9.07 <br>
+   cnt1011a2 9.03 <br>
+   cnt1011b1 8.93 <br>
+   cnt1011b2 9.2 <br>
+   trt2501a1 8.8 <br>
+   trt2501a2 9.08 <br>
+   trt2501b1 9.49 <br>
+   trt2501b2 9.23</code></p>
+  <p><font color="#FF0000"><code>
+   boxplot(split(as.matrix(m2.log),col(as.matrix(m2.log))))</code></font></p>
+  <p><img border="0" src="../01/images/microa1.gif" width="399" height="418"></p>
+  <p>Notice that even within the control and treatment arrays there is some 
+   variation in the average intensity. There are several factors that can cause 
+   this. Perhaps one array got slightly more DNA, or maybe there are slight 
+   variations during the production of the arrays. Maybe there were variations 
+   in the laboratory environment (temperature or humidity) during the 
+   preparation of these samples that influenced the readings.</p>
+  <p>Here's a direct comparison of the seventh and eighth arrays.</p>
+  <p><font color="#FF0000"><code>par(mar=c(5,4,0,0)+0.1)<br>
+   plot(m2.log[,7],m2.log[,8],<br>
+&nbsp; xlim=range(m2.log),ylim=range(m2.log))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa3.gif" width="401" height="380"></p>
+  <p>Notice how the bulk of the data lies below the diagonal line. This is an 
+   indication that signal intensity was lower, across the board, for the eighth 
+   array.</p>
+  <p>What you are seeing with these eight arrays is not too much different than 
+   what you might experience if you burn your own mix of songs onto a CD. Some 
+   of the songs might be recorded at a louder or softer volume than others, and 
+   if you take no steps to adjust the recording, then you would have to be 
+   constantly adjusting your volume as you listen to that CD.</p>
+  <p>The simplest adjustment is to <b>take each signal and divide it by the 
+   average signal for each array</b>. This guarantees that the adjusted signals 
+   will all have a mean of 1.0. Here is the R code to normalize each array to 
+   have the same mean intensity.</p>
+  <p><font color="#FF0000"><code>m2.n.genes &lt;- dim(m2.log)[[1]]<br>
+   m2.n.arrays &lt;- dim(m2.log)[[2]]<br>
+   m2.normalize1 &lt;- matrix(NA,m2.n.genes,m2.n.arrays)<br>
+   for (i in 1:m2.n.arrays) {<br>
+&nbsp; m2.normalize1[,i] &lt;- m2.log[,i]/mean(m2.log[,i])<br>
+   }</code></font></p>
+  <p>By the way, experts in R would probably point out the inefficiencies in 
+   this code. In general, if you can use matrix operations to avoid using loops, 
+   you should. Here's a bit more efficient code</p>
+  <p><font color="#FF0000"><code>one &lt;- matrix(1,3434,1)<br>
+   m2.normalize1a &lt;- m2.log / (one%*%m2.array.means)</code></font></p>
+  <p>You might wonder if this normalization is good or bad. It is possible, 
+   perhaps, that the treatment changes the cells by upregulating most genes to 
+   produce more mRNA. This is indeed possible, and normalization would 
+   effectively remove most of the effect of the treatment before you had a 
+   chance to analyze it.</p>
+  <p>Fortunately, the more likely scenario is that a treatment would upregulate 
+   only a few genes, downregulate only a few more genes, and would leave the 
+   vast majority of genes unaffected. There's safety in numbers for most 
+   microarrays, so normalization does not end up distorting your data.</p>
+  <p>Since the mean is influenced by outliers, some people prefer to <b>adjust 
+   by the median intensity level</b> rather than the mean level. Another 
+   commonly used choice is to adjust using the 75th percentile. The rationale 
+   for this choice is that about half the genes might not show any significant 
+   expression, so the 75th percentile represents the median of the remaining 
+   50%.</p>
+  <p><code><font color="#FF0000">&gt; round(f.concor(m2.log),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.97 0.97 0.96 0.78 0.80 0.75 0.78<br>
+   cna2 0.97 1.00 0.97 0.96 0.78 0.81 0.76 0.79<br>
+   cnb1 0.97 0.97 1.00 0.96 0.82 0.80 0.75 0.79<br>
+   cnb2 0.96 0.96 0.96 1.00 0.77 0.81 0.79 0.81<br>
+   tra1 0.78 0.78 0.82 0.77 1.00 0.92 0.85 0.89<br>
+   tra2 0.80 0.81 0.80 0.81 0.92 1.00 0.92 0.96<br>
+   trb1 0.75 0.76 0.75 0.79 0.85 0.92 1.00 0.95<br>
+   trb2 0.78 0.79 0.79 0.81 0.89 0.96 0.95 1.00<br>
+   <br>
+   <font color="#FF0000">&gt; round(f.concor(m2.normalize1),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.97 0.98 0.97 0.80 0.80 0.79 0.79<br>
+   cna2 0.97 1.00 0.97 0.97 0.79 0.81 0.80 0.80<br>
+   cnb1 0.98 0.97 1.00 0.98 0.82 0.81 0.80 0.81<br>
+   cnb2 0.97 0.97 0.98 1.00 0.80 0.82 0.81 0.81<br>
+   tra1 0.80 0.79 0.82 0.80 1.00 0.94 0.95 0.94<br>
+   tra2 0.80 0.81 0.81 0.82 0.94 1.00 0.96 0.97<br>
+   trb1 0.79 0.80 0.80 0.81 0.95 0.96 1.00 0.96<br>
+   trb2 0.79 0.80 0.81 0.81 0.94 0.97 0.96 1.00</code></p>
+  <p><font color="#FF0000"><code>plot(m2.normalize1[,7],m2.normalize1[,8],<br>
+&nbsp; xlim=range(m2.normalize1),ylim=range(m2.normalize1))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa4.gif" width="401" height="380"></p>
+  <p><font color="#FF0000"><code>boxplot(split(as.matrix(m2.normalize1),<br>
+&nbsp; col(as.matrix(m2.normalize1))))</code></font></p>
+  <p><img border="0" src="../01/images/microa2.gif" width="399" height="418"></p>
+  <p>This normalization helps only a little. There is still too much of the data 
+   below the diagonal line. The problem is that the variation from array to 
+   array is often intensity dependent and these arrays show systematic 
+   variations at low intensities that differ from variations seen at medium and 
+   high intensities.</p>
+  <p>Another approach is <b>quantile normalization</b>. If you look at the 
+   sorted values of any two arrays, they will deviate from an identity line.</p>
+  <p><font color="#FF0000"><code>plot(sort(m2.log[,7]),sort(m2.log[,8]),<br>
+&nbsp; xlim=range(m2.log),ylim=range(m2.log))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa5.gif" width="401" height="380"></p>
+  <p>Quantile normalization will match up these values across all the arrays so 
+   that the smallest value on each array is identical, the second smallest is 
+   identical, and so forth. Note that the smallest value for one array might be 
+   a different gene than the smallest value on another array.</p>
+  <p>The DNAMR package includes a function, f.qn() that performs quantile 
+   normalization. Let's apply this to the data and see what we get.</p>
+  <p><font color="#FF0000"><code>library(&quot;DNAMR&quot;)<br>
+   m2.normalize2 &lt;- f.qn(m2.log)<br>
+   plot(sort(m2.normalize2[,7]),sort(m2.normalize2[,8]),<br>
+   &nbsp;xlim=range(m2.normalize2),ylim=range(m2.normalize2))<br>
+   abline(a=0,b=1)</code></font></p>
+  <p><img border="0" src="../01/images/microa6.gif" width="401" height="380"></p>
+  <p><code><font color="#FF0000">&gt; round(f.concor(m2.normalize2),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.97 0.98 0.97 0.80 0.82 0.83 0.81<br>
+   cna2 0.97 1.00 0.97 0.97 0.80 0.82 0.83 0.81<br>
+   cnb1 0.98 0.97 1.00 0.99 0.82 0.82 0.84 0.83<br>
+   cnb2 0.97 0.97 0.99 1.00 0.81 0.82 0.83 0.82<br>
+   tra1 0.80 0.80 0.82 0.81 1.00 0.95 0.97 0.94<br>
+   tra2 0.82 0.82 0.82 0.82 0.95 1.00 0.96 0.97<br>
+   trb1 0.83 0.83 0.84 0.83 0.97 0.96 1.00 0.97<br>
+   trb2 0.81 0.81 0.83 0.82 0.94 0.97 0.97 1.00</code></p>
+  <p><font color="#FF0000"><code>plot(m2.normalize2[,7],m2.normalize2[,8],<br>
+&nbsp; xlim=range(m2.normalize2),ylim=range(m2.normalize2))<br>
+   abline(a=0,b=1)<br>
+&nbsp;</code></font></p>
+  <p><img border="0" src="../01/images/microa7.gif" width="401" height="380"></p>
+  <p><font color="#FF0000"><code>boxplot(split(as.matrix(m2.normalize2),<br>
+&nbsp; col(as.matrix(m2.normalize2))))</code></font></p>
+  <p><img border="0" src="../01/images/microa11.gif" width="399" height="418"></p>
+  <p>Notice that the concordance correlations are just a bit better. The seventh 
+   and eighth arrays line up better as well, with about half the genes above and 
+   below the diagonal.</p>
+  <p>It's interesting to look at the code behind the f.qn() function.</p>
+  <p><code><font color="#FF0000">&gt; f.qn</font><br>
+   function (x) <br>
+   {<br>
+&nbsp; xm &lt;- apply(x, 2, sort)<br>
+&nbsp; xxm &lt;- f.rmedian.na(xm)<br>
+&nbsp; xr &lt;- c(apply(x, 2, rank))<br>
+&nbsp; array(approx(1:nrow(x), xxm, xr)$y, dim(x), dimnames(x))<br>
+   }</code></p>
+  <p>The program creates a temporary matrix xm consisting of the sorted columns 
+   of x. Then it computes a median across all the rows of xm. Then the approx() 
+   function applies linear interpolation to the data.</p>
+  <p>A third approach to normalization uses <b>smoothing curves</b> to adjust. 
+   Define a median signal across all the arrays and then look at the 
+   relationship between the smooth fit and the diagonal line. Adjust the array 
+   values up or down depending on whether the smooth fit is below or above the 
+   diagonal line.</p>
+  <p><code><font color="#FF0000">m2.median &lt;- apply(m2.log,1,median)<br>
+   m2.deviation &lt;- matrix(NA,m2.n.genes,m2.n.arrays)<br>
+   for (i in 1:8) {<br>
+&nbsp; smooth.fit &lt;- fitted(loess(m2.log[,i]~m2.median))<br>
+&nbsp; m2.deviation[,i] &lt;- smooth.fit - m2.median<br>
+&nbsp; plot(m2.median,m2.log[,i],<br>
+&nbsp;&nbsp;&nbsp; xlim=range(m2.log),ylim=range(m2.log))<br>
+&nbsp; abline(a=0,b=1)<br>
+&nbsp; points(m2.median,smooth.fit,col=3)<br>
+   }</font><br>
+   </code><img border="0" src="../01/images/microa8.gif" width="401" height="380"></p>
+  <p><code><font color="#FF0000">m2.normalize3 &lt;- m2.log - m2.deviation<br>
+   round(f.concor(m2.normalize3),2)</font><br>
+   <br>
+&nbsp;&nbsp;&nbsp;&nbsp; cna1 cna2 cnb1 cnb2 tra1 tra2 trb1 trb2<br>
+   cna1 1.00 0.98 0.98 0.98 0.83 0.82 0.80 0.82<br>
+   cna2 0.98 1.00 0.98 0.98 0.82 0.82 0.79 0.81<br>
+   cnb1 0.98 0.98 1.00 0.99 0.85 0.83 0.81 0.82<br>
+   cnb2 0.98 0.98 0.99 1.00 0.82 0.81 0.78 0.80<br>
+   tra1 0.83 0.82 0.85 0.82 1.00 0.95 0.96 0.94<br>
+   tra2 0.82 0.82 0.83 0.81 0.95 1.00 0.95 0.96<br>
+   trb1 0.80 0.79 0.81 0.78 0.96 0.95 1.00 0.96<br>
+   trb2 0.82 0.81 0.82 0.80 0.94 0.96 0.96 1.00<br>
+   <br>
+   <font color="#FF0000">plot(m2.normalize3[,7],m2.normalize3[,8],<br>
+&nbsp; xlim=range(m2.normalize2),ylim=range(m2.normalize2))<br>
+   abline(a=0,b=1)</font></code></p>
+  <p><img border="0" src="../01/images/microa9.gif" width="401" height="380"></p>
+  <p><code><font color="#FF0000">boxplot(split(as.matrix(m2.normalize3),<br>
+&nbsp; col(as.matrix(m2.normalize3))))</font></code></p>
+  <p><img border="0" src="../01/images/microa12.gif" width="399" height="418"></p>
+  <p>This normalization seems to work about as well as the quantile 
+   normalization did.</p>
+  <p>You can get a better feel for the need for normalization by using an <b>MvA 
+   plot</b>. This plot effectively rotates the plot 45 degrees so that the 
+   diagonal reference line becomes a horizontal reference line. Here's some code 
+   for creating an MvA plot and an example of how that plot differs from the one 
+   shown just above.</p>
+  <p><font color="#FF0000"><code>mva.plot &lt;- function(x,y) {<br>
+&nbsp; m &lt;- y-x<br>
+&nbsp; a &lt;- (x+y)/2<br>
+&nbsp; plot(a,m)<br>
+&nbsp; abline(h=0)<br>
+   }<br>
+   mva.plot(m2.normalize3[,7],m2.normalize3[,8])</code></font></p>
+  <p><img border="0" src="../01/images/microa10.gif" width="401" height="380"></p>
+  <p>You can do your normalization calculations on the MvA plot, though they 
+   should not be significantly different from the&nbsp; normalizations described 
+   above. The MvA plot is also called a Bland-Altman plot.</p>
+  <p>Depending on what you know about the microarrays, you might want to 
+   consider <b>additional normalization steps</b>. For example, if you know the 
+   physical location of the spots on the microarray, you might want to see if 
+   there are physical regions of the array where signals are stronger or weaker. 
+   If the array was printed used a set of 16 print tips, you might want to see 
+   if some of the tips produced stronger or weaker signals than the others.</p>
+  <p>I did not discuss the use of <b>control genes</b> for normalization. There 
+   are several problems with the use of control genes. First, these genes might 
+   not cover the full range of intensity levels on the array. Second, there is 
+   some question about whether certain genes will truly serve effectively as 
+   controls, and they may not have the same expression levels across different 
+   samples.</p>
+  <p>Once the data is normalized, you may wish to store in an object of class &quot;exprSet&quot;. 
+   Here are the R commands to do this.</p>
+  <p><code><font color="#FF0000">library(&quot;marray&quot;)<br>
+   m2.indicators &lt;- data.frame(ic=c(1,1,1,1,0,0,0,0),<br>
+&nbsp; it=c(0,0,0,0,1,1,1,1),row.names=dimnames(m2.dat)[[2]])<br>
+   covLabels &lt;- list(&quot;Indicator for Control&quot;,&quot;Indicator for Treatment&quot;)<br>
+   names(covLabels) &lt;- names(m2.indicators)<br>
+   m2.phenoData &lt;- new(&quot;phenoData&quot;,pData=m2.indicators,varLabels=covLabels)<br>
+   m2.exprSet &lt;- new(&quot;exprSet&quot;,exprs=as.matrix(m2.normalize3),<br>
+&nbsp; phenoData=m2.phenoData)<br>
+   print(m2.exprSet)<br>
+   </font><br>
+   Expression Set (exprSet) with <br>
+   3434 genes<br>
+   8 samples<br>
+   phenoData object with 2 variables and 8 cases<br>
+   varLabels<br>
+   ic: Indicator for Control<br>
+   it: Indicator for Treatment</code></p>
+  <p>You can then use this object with most of the Bioconductor routines for 
+   differential expression, clustering, and so forth.</p>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="27074" endspan --> <hr>
+  <!--webbot bot="Include" U-Include="arrayDifferentialExpression.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>Differential expression in microarray data (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<blockquote>
+  <p>You can compute an expression ratio for each gene by taking the average of 
+   the log expression levels in the treatment group and subtracting the average 
+   of the log expression levels in the control group. This actually produces a 
+   log ratio, and you can compute the actual ratio by taking the antilog. </p>
+  <p><font color="#FF0000"><code>m2.control &lt;- as.matrix(m2.normalize3[,1:4])<br>
+   m2.treat &lt;- as.matrix(m2.normalize3[,5:8])<br>
+   m2.logratio &lt;- apply(m2.treat,1,mean)-apply(m2.control,1,mean)</code></font></p>
+  <p>Which of these expression levels is significantly different from 1? The 
+   answer to this question is surprisingly difficult. Here are some approaches.</p>
+  <ol>
+    <li>Declare any ratio bigger than 2 or smaller than 0.5 to be significant</li>
+    <li>Compute a two-sample t-test for each gene</li>
+    <li>Modify the significance level of the t-test using Bonferroni</li>
+    <li>Add a fudge factor to the denominator of each t-test.</li>
+    <li>Pool results across similar genes</li>
+  </ol>
+  <p>The simplest approach, but an approach that is probably not defensible, is 
+   to state that any ratios beyond a certain threshold represent genes with 
+   differential expression. Typically, this approach highlights ratios larger 
+   than 2 (and smaller than 1/2) though threshold of 3 (1/3) and 5 (1/5) have 
+   also been used.</p>
+  <p>Although I cannot recommend this approach, here is how it would work in R. 
+   Recall that a ratios of 2 and 1/2 correspond to log ratios of -1 and +1 if 
+   you use base 2 logarithms.</p>
+  <p><code><font color="#FF0000">diff1 &lt;- m2.logratio[abs(m2.logratio)&gt;1]<br>
+   names(diff1)</font><br>
+   <br>
+   [1] &quot;5&quot; &quot;11&quot; &quot;16&quot; &quot;17&quot; &quot;37&quot; &quot;49&quot; &quot;50&quot; &quot;53&quot; &quot;54&quot; &quot;57&quot; <br>
+   [11] &quot;58&quot; &quot;60&quot; &quot;63&quot; &quot;64&quot; &quot;65&quot; &quot;68&quot; &quot;80&quot; &quot;98&quot; &quot;102&quot; &quot;105&quot; <br>
+   [21] &quot;107&quot; &quot;116&quot; &quot;125&quot; &quot;133&quot; &quot;134&quot; &quot;147&quot; &quot;150&quot; &quot;158&quot; &quot;162&quot; &quot;166&quot; <br>
+   [31] &quot;168&quot; &quot;171&quot; &quot;173&quot; &quot;177&quot; &quot;193&quot; &quot;205&quot; &quot;218&quot; &quot;224&quot; &quot;232&quot; &quot;236&quot; <br>
+   .<br>
+   .<br>
+   .<br>
+   [601] &quot;3253&quot; &quot;3260&quot; &quot;3261&quot; &quot;3271&quot; &quot;3272&quot; &quot;3282&quot; &quot;3289&quot; &quot;3290&quot; &quot;3311&quot; &quot;3331&quot;<br>
+   [611] &quot;3348&quot; &quot;3350&quot; &quot;3354&quot; &quot;3358&quot; &quot;3367&quot; &quot;3379&quot; &quot;3404&quot; &quot;3421&quot; &quot;3423&quot;</code></p>
+  <p>Another approach is to apply a two-sample t-test or a related statistic to 
+   each gene.</p>
+  <p><code><font color="#FF0000">f.custom.t &lt;- function(x) {<br>
+&nbsp; t.test(x[1:4],x[5:8])$p.value<br>
+   }<br>
+   m2.t.tests &lt;- apply(m2.normalize3,1,f.custom.t)<br>
+   diff2 &lt;- m2.t.tests[m2.t.tests &lt; 0.05]<br>
+   names(diff2)</font><br>
+   <br>
+   [1] &quot;3&quot; &quot;5&quot; &quot;8&quot; &quot;9&quot; &quot;11&quot; &quot;13&quot; &quot;16&quot; &quot;17&quot; &quot;19&quot; &quot;21&quot; <br>
+   [11] &quot;22&quot; &quot;26&quot; &quot;27&quot; &quot;30&quot; &quot;32&quot; &quot;33&quot; &quot;35&quot; &quot;36&quot; &quot;37&quot; &quot;40&quot; <br>
+   [21] &quot;42&quot; &quot;47&quot; &quot;49&quot; &quot;50&quot; &quot;53&quot; &quot;54&quot; &quot;55&quot; &quot;57&quot; &quot;58&quot; &quot;59&quot; <br>
+   [31] &quot;60&quot; &quot;63&quot; &quot;64&quot; &quot;65&quot; &quot;68&quot; &quot;72&quot; &quot;76&quot; &quot;79&quot; &quot;80&quot; &quot;81&quot; <br>
+   .<br>
+   .<br>
+   .<br>
+   [1731] &quot;3401&quot; &quot;3403&quot; &quot;3404&quot; &quot;3405&quot; &quot;3407&quot; &quot;3408&quot; &quot;3410&quot; &quot;3412&quot; &quot;3421&quot; &quot;3423&quot;<br>
+   [1741] &quot;3430&quot; &quot;3433&quot;</code></p>
+  <p>The problem with this approach, of course, is that you are running 
+   thousands of t-test simultaneously. Some of these tests will end up being 
+   significant, even if nothing is going on.</p>
+  <p>To adjust for the large number of multiple tests, you can use a correction, 
+   such as Bonferroni. Here's how Bonferroni would work.</p>
+  <p><code><font color="#FF0000">diff3 &lt;- m2.t.tests[m2.t.tests &lt; 
+   (0.05/m2.n.genes)]<br>
+   names(diff3)</font><br>
+   <br>
+   [1] &quot;5&quot; &quot;64&quot; &quot;102&quot; &quot;224&quot; &quot;232&quot; &quot;305&quot; &quot;311&quot; &quot;339&quot; &quot;354&quot; &quot;384&quot; <br>
+   [11] &quot;462&quot; &quot;516&quot; &quot;560&quot; &quot;591&quot; &quot;603&quot; &quot;736&quot; &quot;745&quot; &quot;758&quot; &quot;778&quot; &quot;798&quot; <br>
+   [21] &quot;805&quot; &quot;834&quot; &quot;931&quot; &quot;967&quot; &quot;987&quot; &quot;988&quot; &quot;1000&quot; &quot;1029&quot; &quot;1065&quot; &quot;1103&quot;<br>
+   [31] &quot;1129&quot; &quot;1157&quot; &quot;1202&quot; &quot;1235&quot; &quot;1263&quot; &quot;1269&quot; &quot;1290&quot; &quot;1305&quot; &quot;1352&quot; &quot;1356&quot;<br>
+   .<br>
+   .<br>
+   .<br>
+   [101] &quot;2905&quot; &quot;2910&quot; &quot;2990&quot; &quot;3031&quot; &quot;3063&quot; &quot;3142&quot; &quot;3195&quot; &quot;3209&quot; &quot;3220&quot; &quot;3225&quot;<br>
+   [111] &quot;3252&quot; &quot;3267&quot; &quot;3311&quot; &quot;3354&quot; &quot;3358&quot;</code></p>
+  <p>The Bonferroni approach has been criticized for being too conservative. 
+   There are several alternatives that look at p-values in sequence and apply a 
+   more strict standard for the smallest p-values, but loosen this standard as 
+   more p-values are examined.</p>
+  <ul>
+    <li>Holm-Bonferroni</li>
+    <li>Holm-Sidak</li>
+    <li>Hochberg</li>
+    <li>Westfall-Young</li>
+  </ul>
+  <p>The Holm-Bonferroni approach is the easiest one to follow. Sort the 
+   p-values from smallest to largest. Adjust the smallest p-value by mulitplying 
+   by K where K is the number of genes being tested. Multiply the next smallest 
+   p-value by (K-1), the next smallest by (K-2) and so forth. </p>
+  <p><code><font color="#FF0000">o &lt;- order(m2.t.tests)<br>
+   m2.sorted.pvalues &lt;- m2.t.tests[o]<br>
+   m2.sorted.names &lt;- names(m2.t.tests)[o]<br>
+   m2.adjusted.pvalues &lt;- cummax(pmin(m2.sorted.pvalues*(m2.n.genes:1),1.0))<br>
+   m2.sorted.names[m2.adjusted.pvalues &lt; 0.05]<br>
+   </font><br>
+   [1] &quot;354&quot; &quot;2854&quot; &quot;1103&quot; &quot;1379&quot; &quot;3225&quot; &quot;2252&quot; &quot;2766&quot; &quot;3358&quot; &quot;1458&quot; &quot;1546&quot;<br>
+   [11] &quot;1696&quot; &quot;3195&quot; &quot;2067&quot; &quot;1690&quot; &quot;2744&quot; &quot;1430&quot; &quot;384&quot; &quot;1629&quot; &quot;560&quot; &quot;1758&quot;<br>
+   [21] &quot;1269&quot; &quot;3031&quot; &quot;1915&quot; &quot;1499&quot; &quot;2199&quot; &quot;988&quot; &quot;2445&quot; &quot;3063&quot; &quot;1751&quot; &quot;2910&quot;<br>
+   [31] &quot;798&quot; &quot;1821&quot; &quot;1434&quot; &quot;339&quot; &quot;3252&quot; &quot;3311&quot; &quot;1548&quot; &quot;1352&quot; &quot;745&quot; &quot;2038&quot;<br>
+   .<br>
+   .<br>
+   .<br>
+   [101] &quot;1931&quot; &quot;3267&quot; &quot;1925&quot; &quot;311&quot; &quot;591&quot; &quot;834&quot; &quot;1889&quot; &quot;1671&quot; &quot;64&quot; &quot;516&quot; <br>
+   [111] &quot;2905&quot; &quot;2810&quot; &quot;2651&quot; &quot;2863&quot; &quot;2023&quot; &quot;2686&quot;</code></p>
+</blockquote>
+<p><b>Differential expression (DE)</b></p>
+<blockquote>
+  <p><b>DE - Within gene analysis</b></p>
+  <p>[Explain]</p>
+  <p><b>DE - Borrowing strength across genes</b></p>
+  <p>[Explain]</p>
+  <p>Local pooled error. At various levels of expression, pool standard 
+   deviations of multiple genes.</p>
+  <p>Model variance as a function of the mean. Sometimes this approach is not 
+   flexible enough.</p>
+  <p>Shrinkage estimates. Add a constant to the denominator.</p>
+  <p><b>DE - Adjusting for multiple tests</b></p>
+  <p>Family Wise Error Rate: Bonferroni, Holm (1979) step down, Hochberg.</p>
+  <p>False Discovery Rate</p>
+  <p>Classic reference Alizadeh et al (2000)</p>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="3933" endspan -->
+<hr>
+  <!--webbot bot="Include" U-Include="arrayUnsupervisedLearning.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>Unsupervised learning (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<blockquote>
+<p>Here are some documented examples of how to use unsupervised learning methods 
+of the analysis of microarray data.</p>
+</blockquote>
+<p><b>Unsupervised learning</b></p>
+<blockquote>
+  <p>The examples in this section willl use the Khan data set that is part of 
+   the DNAMR library. To read in the Khan data set, use the following commands:</p>
+  <p><font color="#FF0000"><code>rDirectory &lt;- &quot;c:/Program Files/R/rw1090&quot; <br>
+   FileName &lt;- &quot;/library/DNAMR/data/Khan.txt&quot;<br>
+   kh.dat &lt;- read.table(file=paste(rDirectory,FileName,sep=&quot;&quot;))<br>
+   kh.log &lt;- log(kh.dat,base=2)[,-1]</code></font></p>
+  <p>The <font color="#FF0000"><code>[,-1]</code></font> at the end of the last 
+   command omits the first column from the data set before computing logs, since 
+   the first column is an image id.</p>
+</blockquote>
+<p><b>Unsupervised learning (class discovery)</b></p>
+<blockquote>
+  <p>Hierarchical clustering, partitioning clustering (silhouette widths), model 
+   based clustering.</p>
+  <p>Clustering methods in the Acuity software system:</p>
+  <ul>
+    <li>Hierarchical Clustering</li>
+    <li>K-Means Clustering</li>
+    <li>K-Medians Clustering</li>
+    <li>Gap Statistic</li>
+    <li>Self-Organizing Maps</li>
+    <li>Gene Shaving</li>
+    <li>Principal Components Analysis</li>
+  </ul>
+</blockquote>
+
+
+
+
+<!--webbot bot="Include" i-checksum="45023" endspan -->
+<hr>
+  <!--webbot bot="Include" U-Include="arraySupervisedLearning.htm" TAG="BODY" startspan --><!--start-->
+
+<p><strong>Supervised learning (no date)</strong>
+ <a href="../category/DataMining.html">Category: Data mining</a> [incomplete]</p>
+<blockquote>
+<p>Here are some documented examples of how to use supervised learning methods 
+of the analysis of microarray data.</p>
+</blockquote>
+<p><b>Supervised learning</b></p>
+<blockquote>
+  <p>The Bioconductor package has a sample data set, golubEsets, that is 
+   available on the web at</p>
+  <p><a href="http://www-genome.wi.mit.edu/mpr/data_set_ALL_AML.html">
+   http://www-genome.wi.mit.edu/mpr/data_set_ALL_AML.html</a></p>
+  <p>and is based on the publication</p>
+  <p><b>Molecular Classification of Cancer: Class Discovery and Class Prediction 
+   by Gene Expression.</b> Golub TR, Slonim DK, Tamayo P, Huard C, Gaasenbeek M, 
+   Mesirov JP, Coller H, Loh M, Downing JR, Caligiuri MA, Bloomfield CD, Lander 
+   ES. Science 1999: 286; 531-537.
+   <a href="http://www.broad.mit.edu/mpr/publications/projects/Leukemia/Golub_et_al_1999.pdf">
+   [PDF]</a></p>
+  <p>To get this data, use the following commands:</p>
+  <p><font color="#FF0000"><code>library(&quot;marray&quot;)<br>
+   library(&quot;golubEsets&quot;)<br>
+   data(golubTrain)<br>
+   data(golubTest)<br>
+   data(golubMerge)</code></font></p>
+  <p>The phenotypic data for the training data set looks like</p>
+  <p><code><font color="#FF0000">&gt; pData(golubTrain)<br>
+   <br>
+&nbsp;&nbsp; </font>Samples ALL.AML BM.PB T.B.cell ... Source<br>
+   1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; ALL&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp; B-cell ...&nbsp;&nbsp; DFCI<br>
+   2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp; ALL&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp; T-cell ...&nbsp;&nbsp; DFCI<br>
+   3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp; ALL&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp; T-cell ...&nbsp;&nbsp; DFCI<br>
+   .<br>
+   .<br>
+   .<br>
+   32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 32&nbsp;&nbsp;&nbsp;&nbsp; AML&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp;&nbsp;&nbsp; &lt;NA&gt; ...&nbsp; CALGB<br>
+   33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 33&nbsp;&nbsp;&nbsp;&nbsp; AML&nbsp;&nbsp;&nbsp; 
+   BM&nbsp;&nbsp;&nbsp;&nbsp; &lt;NA&gt; ...&nbsp; CALGB<br>
+   <br>
+   <font color="#FF0000">table(pData(golubTrain)$ALL.AML)</font><br>
+   <br>
+   ALL AML <br>
+   27 11<br>
+   <br>
+   <font color="#FF0000">table(pData(golubTest)$ALL.AML)</font><br>
+   <br>
+   ALL AML <br>
+   20 14 <br>
+   <br>
+   <font color="#FF0000">table(pData(golubMerge)$ALL.AML)</font><br>
+   <br>
+   ALL AML <br>
+   47 25 </code></p>
+  <p><code><font color="#FF0000">x &lt;- exprs(GolubTrain)</font></code></p>
+</blockquote>
+<p><b>Supervised learning (class prediction)</b></p>
+<blockquote>
+  <p>Regression analysis, discriminant analysis, cart, neural net</p>
+  <p>support vector machines:
+   <a href="http://www.acm.org/sigs/sigkdd/explorations/issue2-2/bennett.pdf">
+   http://www.acm.org/sigs/sigkdd/explorations/issue2-2/bennett.pdf</a></p>
+</blockquote>
+
+</body>
+
+</html>

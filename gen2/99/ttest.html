@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+<title>Stats: T-test (April 18, 1999)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>T-test (created 1999-04-18)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/what-is-t-test/">new website</a>.</p>
+
+<p><em><font face="Times New Roman">Dear Professor Mean, How do you analyze a 
+  t-test. I have a t-test value, and I know that I have to compare it to a 
+ t-distribution. I'm not sure how to do that.</font></em></p>
+<p><font face="Times New Roman">A t-test covers a wide range of tests. It 
+  appears when you are <strong>testing whether the mean for a given group has 
+    exceeded a certain standard</strong>. It appears when you <strong>compare the 
+      means of two different groups</strong>. It also appears in <strong>linear 
+        regression models</strong>.</font></p>
+<p><font face="Times New Roman">When you t<strong>ake a statistic and dividie 
+  by its estiamted variation, which is often known as the standard error</strong>, 
+  the result is a t-test. You would compare this t-test to percentiles from a t 
+  distribution. Tables of these percentiles are found in the back of most 
+  statistical text books.</font></p>
+<p><font face="Times New Roman">Most computer software will provide a p-value 
+  to accompany the t-test. <strong>A p-value makes the use of t percentile 
+    tables unnecessary</strong>.</font></p>
+<p><strong><font face="Times New Roman">Short explanation</font></strong></p>
+<p><font face="Times New Roman">A simple interpretation of the t-test is that 
+  it measures <strong>how many standard errors our statistical estimate is from 
+    a hypothesized value</strong>. A large positive t-test implies that our 
+  estimate is quite a bit larger than the hypothesized value. A large negative 
+  t-test implies that our estimate is quite a bit smaller than our hypothesized 
+  value.</font></p>
+<p><strong><font face="Times New Roman">More details</font></strong></p>
+<p>The behavior of the t-test depends greatly on how good our standard error 
+   is. If we have a very precise estimate of the variation in our statistic, 
+   then the t-test has a distribution that is very close to a standard normal 
+   distribution. If we have an imprecise estimate of the variation in our 
+   statistic, then the t-test will be more variable than a standard normal 
+   distribution.</p>
+<p>We can quantify how good our standard error is by the <strong>degrees of 
+   freedom</strong>. The degrees of freedom is related to <strong>how much data 
+   we have</strong> and <strong>how many things we are trying to estimate</strong> 
+  with that data.</p>
+<p>Here's an example of how a t-test would behave if it had 25 degrees of 
+   freedom. Notice that it looks quite a bit like a standard normal 
+   distribution.</p>
+<p>
+  <img src="../03/images/ttest21.gif" alt="wpe22.gif (2344 bytes)" WIDTH="480" HEIGHT="366"></p>
+<p>It looks and behaves quite a bit like a standard normal distibution. Here's 
+   a t-distribution with 2 degrees of freedom.</p>
+<p>
+  <img src="../03/images/ttest22.gif" alt="wpe20.gif (2295 bytes)" WIDTH="480" HEIGHT="366"></p>
+<p>It has the same bell-hspaed curve, but notice that the tails of the 
+   distribution don't touch the axis, even at plus or minus 4. That means that 
+   extreme values are more likely with this t-distribution than the previous 
+   one.</p>
+<p>Usually, you <strong>compare your t-test with a value from a t-percentile 
+   table</strong>. Extreme values of the t-test (for example, a value larger 
+   than the 95th percentile) indicate that your statistic is more extreme than 
+   you would expect from sampling error. If you get a t-test from computer 
+   software like SPSS, then you will usually get a p-value with your t-test. If 
+   your p-value is small, that implies that your t-test is more extreme than 
+   most percentiles from a t-distribution.</p>
+<p><strong><font face="Times New Roman">Example</font></strong></p>
+<p><font face="Times New Roman">We have a <strong>sample of 30 informational 
+  pamphlets</strong>. We record the reading level of each pamphlet and notice 
+  that the <strong>average level is 9.8</strong>. We want an average reading 
+  level for all the pamphlets that we produce to be at an 8th grade level. It 
+  looks like our sample of pamphlets is <strong>writen at a level 1.8 years 
+    higher than we want</strong>. But could a deviation of that size be due to 
+  sampling error?</font></p>
+<p><font face="Times New Roman">We can use a one-sample t-test in SPSS to 
+  check. Select ANALYZE | COMPARE MEANS | ONE-SAMPLE T TEST from the menu. The 
+  dialog box appears in Figure 1. Select the variable that you want to test, 
+  and insert 8 into the TEST VALUE field. Then click on the OK button. SPSS 
+  produces two tables of statistics (see Figure 2).</font></p>
+
+<p><font face="Times New Roman">SPSS reports <strong>a mean difference 
+  of 1.8 and a standard error of 0.53</strong>. If you divide the mean 
+  difference by the standard error, you get a <strong>t-test value of 3.380</strong>, 
+  which SPSS shows in table 2. SPSS also informs us that the <strong>degrees of 
+    freedom is 29</strong> (which for the one-sample t-test is always one less 
+  than the smaple size). Looking in any standard textbook, we would find that 
+  the<strong> 95th percentile of a t-distribution with 29 degrees of freedom is 
+    1.699</strong>. Since our t-test is much larger than 1.699, we would conclude 
+  that a deviation as large as 1.8 years is unlikely to arise just by sampling 
+  error.</font></p>
+<p><font face="Times New Roman">We could also look at the p-value. Since the 
+  p-value is so small (.002), the deviation that we see is unlikely to arise 
+  just by sampling error.</font></p>
+<p><strong>Summary</strong></p>
+<p>The t-test is a general test that involves dividing a test statistic by its 
+   standard error. The value is then compared to the t-distribution. The 
+   t-distribution looks a lot like a normal distribution, but it tends to be 
+   more spread out, especially if the degrees of freedom are small.</p>
+<p><strong><font face="Times New Roman">Further reading</font></strong></p>
+<p><font face="Times New Roman">Just about any introductory Statistics book 
+  will talk about the t-distribution. See, for example, chapter 7 of Rosner's 
+  book. There are web pages that will calculate probabilities and percentiles 
+  of the t distribution, such as SurfSTAT (click on the TABLES button on the 
+  main page).</font></p>
+<p><strong>--&gt; SurfSTAT Australia</strong>. Annette Dobson, Anne Young, Bob 
+    Gibson, and others. (Accessed May 15, 2002).
+  <a href="http://www.anu.edu.au/nceph/surfstat/surfstat-home/surfstat.html">
+  www.anu.edu.au/nceph/surfstat/surfstat-home/surfstat.html</a></p>
+<p><strong>--&gt; </strong><b>Fundamentals of Biostatistics, Third Edition. </b>Rosner B.  Belmont CA: Duxbury Press (1990).  ISBN: 0-534-91973-1.</p>
+
+</body>
+
+</html>

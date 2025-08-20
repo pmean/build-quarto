@@ -1,0 +1,283 @@
+<html>
+
+<head>
+
+<title>Stats: Jargon in Statistics (created 2000-01-27)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Jargon in Statistics (created 2000-01-27).</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/statistics-jargon/">new website</a>.</p>
+
+<p><em>Dear Professor Mean, I have to review a paper for journal club and I 
+ don't understand all the obscure statistical jargon that the authors use.</em></p>
+
+  <p>I have a fictional story that I tell people. It's about someone who comes 
+   to my office and says he has trouble understanding a recently published 
+   paper. I look at the title &quot;In vitro and in vivo assessment of Endothelin as 
+   a biomarker of iatrogenically induced alveolar hypoxia in neonates&quot; and say 
+   that I understand why you would have trouble with a paper like this. Yeah, he 
+   says in return, I don't understand what this boxplot is.</p>
+
+  <p>Don't be intimidated by technical terms. <strong>You should focus not on 
+   how the data was analyzed, but on how the data was collected</strong>. The 
+   four big issues in data collection are</p>
+
+  <ol>
+    <li>randomization, </li>
+    <li>blinding, </li>
+    <li>exclusions/dropouts, and </li>
+    <li>protocol deviations.</li>
+  </ol>
+
+  <p>You don't need a Ph.D. in Statistics to assess these issues. </p>
+
+<p><strong>Interpreting the statistical jargon</strong></p>
+
+  <p><strong>Some of the statistical details are there only for the benefit of 
+   those who want to reproduce the research</strong>. Most of you recognize that 
+   you can safely skim over phrases like &quot;reverse ion phase chromatography&quot; so 
+   you likewise skim over phrases like &quot;bootstrap confidence intervals using 
+   bias corrected percentiles (Efron 1982).&quot; </p>
+  <p>When a statistical method is followed by a reference as in the example 
+   above, then you can take some solace in the fact that the authors do not 
+   expect you to be familiar with this method. </p>
+  <p><strong>If a statistical term has several words, focus first on the one 
+   word in the term you are most familiar with</strong>. You may not know what 
+   &quot;reverse ion phase chromatography&quot; is, but you probably have a good general 
+   idea about &quot;chromatography.&quot; Similarly, with the phrase &quot;bootstrap confidence 
+   intervals using bias corrected percentiles&quot; focus on the term &quot;confidence 
+   intervals.&quot;</p>
+  <p>You do have to know some statistical terminology, of course. Anyone reading 
+   research papers should be familiar with Type I and II errors, odds ratios, 
+   survival curves, etc. <strong>A basic appreciation of simple statistical 
+   methods is enough for nine out of ten papers</strong>. </p>
+  <p>I don't want to discourage people from learning more about Statistics, of 
+   course, but neither do I want people to be intimidated by statistical jargon. 
+   I have thought that a fun prank would be to go to a poster session at a 
+   medical conference, look over each poster carefully and then say something 
+   like &quot;Very interesting, but aren't you worried that your results would be 
+   invalidated by the presence of heteroscedascity?&quot; And then I would slowly 
+   walk away.</p>
+
+<p><b>But why are there so many different statistical terms?</b></p>
+
+  <p>Why there are so many different statistics to choose from is sort of like 
+   asking why are there so many tools in a carpenter's shop. <b>Different data 
+   sets require different approaches to understanding them.</b> There isn't one 
+   single statistic that will magically work to explain every possible trend or 
+   pattern that you might see in a data set.</p>
+  <p>Even so, I have to admit that we statisticians sometimes are a <b>bit too 
+   clever for our own good</b>. We invent all sorts of new statistics, and it is 
+   unclear if all of these are truly necessary. In linear regression, for 
+   example, we statisticians have developed alternative methods with names like 
+   least absolute values regression, the Brown-Mood estimator, the Tukey 
+   resistant line, repeated median regression, and least median of squares 
+   regression, just to name a few. I myself added some regression estimators to 
+   this list as part of my Ph.D. dissertation. Most of the methods mentioned 
+   above protect against the undue influence of outliers. But do we really need 
+   all of these estimators?</p>
+  <p>John Tukey coined a phrase <b>&quot;practical power&quot;</b> which is <b>the true 
+   power of a test multiplied by the probability that it will be used</b>. 
+   Although it was developed for a different context, I think it might also 
+   apply to our tendency to develop more statistical estimates than we can 
+   practically use.</p>
+
+<p><strong>Example</strong></p>
+
+<p>Let's look at a publication with some statistical jargon.</p>
+<p>BMJ 1996 Mar 16;312(7032):661-5 Association between air pollution and 
+     acute childhood wheezy episodes: prospective observational study. Buchdahl 
+     R, Parker A, Stebbings T, Babiker A (<a href="http://www.bmj.com/cgi/content/full/312/7032/661">http://www.bmj.com/cgi/content/full/312/7032/661</a>).</p>
+<p>This publication uses the following terms:</p>
+<ul>
+  <li>Locally weighted regression scatterplot smoothing averages</li>
+  <li>Spearman's rank correlation coefficients</li>
+  <li>Poisson regression models</li>
+  <li>Normal models with log-link functions</li>
+  <li>Adjustment for autocorrelation</li>
+  <li>Restricted natural cubic spline function</li>
+</ul>
+<p>It sounds pretty bad, doesn't it? Before we tackle these terms, let's read 
+ the abstract to get a general overview of the paper.</p>
+  <blockquote>
+    <p>OBJECTIVE--To examine the association between the air pollutants ozone, 
+      sulphur dioxide, and nitrogen dioxide and the incidence of acute childhood 
+      wheezy episodes. DESIGN--Prospective observational study over one year. 
+      SETTING--District general hospital. SUBJECTS--1025 children attending the 
+      accident and emergency department with acute wheezy episodes; 4285 children 
+      with other conditions as the control group. MAIN OUTCOME MEASURES--Daily 
+      incidence of acute wheezy episodes. RESULTS--After seasonal adjustment, day 
+      to day variations in daily average concentrations of ozone and sulphur 
+      dioxide were found to have significant associations with the incidence of 
+      acute wheezy episodes. The strongest association was with ozone, for which 
+      a non-linear U shaped relation was seen. In terms of the incidence rate 
+      ratio (1 at a mean 24 hour ozone concentration of 40 microg/m3 (SD=19.1)), 
+      children were more likely to attend when the concentration was two standard 
+      deviations below the mean (incidence rate ratio=3.01; 95% confidence 
+      interval 2.17 to 4.18) or two standard deviations above the mean (1.34; 
+      1.09 to 1.66). Sulphur dioxide had a weaker log-linear relation with 
+      incidence (1.12; 1.05 to 1.19 for each standard deviation (14.1) increase 
+      in sulphur dioxide concentration). Further adjustment for temperature and 
+      wind speed did not significantly alter these associations. 
+      CONCLUSIONS--Independent of season, temperature, and wind speed, 
+      fluctuations in concentrations of atmospheric ozone and sulphur dioxide are 
+      strongly associated with patterns of attendance at accident and emergency 
+      departments for acute childhood wheezy episodes. A critical ozone 
+      concentration seems to exist in the atmosphere above or below which 
+      children are more likely to develop symptoms.</p>
+  </blockquote>
+  <p>Part of the complexity of this paper is due to the non-linear relationship 
+      between ozone and acute wheezy episodes. Here is what appears in the 
+    Statistical Methods section.</p>
+  <blockquote>
+    <p>Data were analysed with the STATA statistical software package.17</p>
+  </blockquote>
+<p><strong>This detail is only for someone who wants to recreate or replicate 
+      these findings</strong>. It also has a reference attached, which means that 
+    the average reader is not expected to be familiar with this software.</p>
+  <blockquote>
+    <p>Scatterplots, locally weighted regression scatterplot smoothing 
+        averages,18 and Spearman's rank correlation coefficients were initially 
+        used to examine possible associations between daily (case and control) 
+        incidence and each of the pollutants (ozone, sulphur dioxide, and nitrogen 
+       dioxide) and weather variables.</p>
+  </blockquote>
+  <p>Locally weighted regression is our first technical term, and it also has a 
+      reference behind it. The details aren't too critical, because this was used 
+      only as an initial screen. The <em>Dictionary of Statistics in the Medical 
+        Sciences</em> has a paragraph explaining this approach. A key part of their 
+      description states that this method is used &quot;for identifying possible 
+    non-linear relationships&quot;.</p>
+  <p>You should also notice a reference to &quot;Spearman's rank correlation 
+      coefficients&quot; in this sentence. There is no reference here, so the 
+      presumption is that the average reader is already familiar with this term. 
+      The <em>Dictionary of Statistics</em> is not too helpful here, as it just 
+      discusses the details of computing Spearman's correlation. But just about any 
+      introductory book on Statistics will have a description of this method. I 
+      found it in Norman and Streiner (1994), Polit (1996), and Rosner (1990). Each 
+      of these references emphasized the use of this correlation for non-normal 
+      and/or ordinal data. As we will see in just a minute, non-normality is a 
+    serious concern.</p>
+  <p>If you didn't have the time or inclination to look up details on the 
+      Spearman correlation, you should still not be intimidated. The phrase 
+    &quot;Spearman's rank&quot; is just a modifier for a term &quot;correlation coefficient&quot; 
+    that you are probably already familiar with. A correlation coefficient is: a 
+  measure of the strength of the relationship between two variables.</p>
+  <blockquote>
+    <p>Poisson regression models were then used to explore formally the effect 
+      of each pollutant on daily incidence.19 These models assume that the daily 
+      incidence followed a Poisson distribution with mean (daily incidence rate) 
+      log-linear in the predictor variables, with initially season as a four 
+      level factor (spring, 22 March to 21 June; summer, 22 June to 21 September; 
+      autumn, 22 September to 21 December; and winter, 22 December to 21 March). 
+      The analysis was repeated, with the addition of temperature and then 
+      temperature and wind speed, and then in the case of ozone the weather 
+      variables plus the other two pollutants. The weather factors have 
+      previously been shown to affect incidence of asthma within seasons.10 11
+    </p>
+    <p>We used the Poisson distribution because the distribution of the daily 
+      incidence was highly skewed. </p>
+  </blockquote>
+  <p>The <em>Dictionary of Statistics</em> discusses the Poisson distribution, 
+      but not Poisson regression. But we learn that the Poisson distribution is 
+      useful for the &quot;number of occurences of some random event.&quot; The outcome 
+      measure in this study, &quot;acute childhood wheezy episodes&quot; fits this definition 
+    well.</p>
+  <p>Finding a good description of Poisson regression models is difficult, but 
+      it helps to focus on the part of this phrase that you are most familiar with, 
+    &quot;regression.&quot; The <em>Dictionary of Statistics</em> tells you that regression 
+      analysis examines a &quot;relationship between a response variable and one or more 
+      explanatory variables.&quot; In the context of this paper, you can see that the 
+      response variable is acute childhood wheezy episodes and the explanatory 
+      variables are pollutant and weather variables. If you look up the term 
+    &quot;log-linear&quot; you will find additional information that corroborates the 
+    emphasis on count data.</p>
+  <blockquote>
+    <p>Normal models but with log-link functions, however, gave qualitatively 
+      similar results, as did adjustment for autocorrelation by incorporating the 
+      previous day's incidence in the model.</p>
+  </blockquote>
+  <p>Don't worry about these terms. They are an alternative to the previously 
+      proposed methods that gave similar results. If you do bother to look up the 
+      term &quot;autocorrelation&quot; you will get information that will help you understand 
+    the term &quot;lag effect&quot; used later on.</p>
+  <blockquote>
+    <p>For each variable v, a restricted natural cubic spline function with 
+      knots at the 10th, 50th, and 90th centiles was used in the Poisson model to 
+      test formally for non-linearity in the relation between v and the daily 
+      incidence.20</p>
+  </blockquote>
+<p>You're not expected to know this term since it has a footnote. The <em>
+  Dictionary of Statistics</em> tells you that splines are used for 
+  &quot;interpolation and some forms of regression analysis.&quot;</p>
+  <blockquote>
+    <p>This amounted to adding a completely specified piecewise cubic function 
+      S(v) to the variable v in the model (see appendix). The test for 
+      non-linearity is equivalent to testing the significance of S(v).</p>
+  </blockquote>
+  <p>Don't worry about anything that belongs in a appendix.</p>
+  <blockquote>
+    <p>The possibility of a lag effect of each of the pollutants was also 
+      explored by comparing rank correlation coefficients of daily incidence with 
+      each variable lagged by 1, 2, 3, 4, 5, 6, or 7 days and by comparing the 
+      resulting deviances obtained when each of the lagged variables was fitted 
+      separately in a Poisson model.</p>
+  </blockquote>
+  <p>The lag effect is what it sounds like. Today's hospitalization might be 
+   caused by ozone from one to seven days earlier.</p>
+  <blockquote>
+    <p>All P values quoted are for two tailed tests, and results are significant 
+      if P&lt;0.05. </p>
+  </blockquote>
+  <p>After handling all these technical terms, it's a relief to come across 
+   familiar terms like &quot;P value&quot; and &quot;two tailed tests&quot;.</p>
+<p>Let's summarize the statistical analysis.</p>
+  <ul>
+    <li>The researchers are trying to predict a count variable, which is why 
+      they need to use Poisson regression.</li>
+    <li>The data are skewed, so the preliminary screen uses a correlation 
+      coefficient, Spearman, that can handle non-normality.</li>
+    <li>There is some evidence of non-linearity, which is why the authors used 
+      smoothing and splines.</li>
+    <li>Autocorrelations and lag effects help determine if a current 
+      hospitlaization is related to pollution over the past one to seven days.</li>
+  </ul>
+<p><strong>Summary</strong></p>
+<p>While statistical jargon may seem intimidating, it is no worse than the 
+   medical terminology you have already learned.</p>
+<ol>
+  <li>Focus on how the data was collected rather than how it was analyzed.</li>
+  <li>Realize that some of the statistical details are only of interest to 
+    those who want to replicate the research.</li>
+  <li>If a statistical term has several words, focus on the word you are most 
+    familiar with.</li>
+</ol>
+<p><strong>Further reading</strong></p>
+<ul>
+    <li><b>Association between air pollution and acute childhood wheezy 
+    episodes: prospective observational study</b>.<br>
+    Buchdahl R, Parker A, Stebbings T, Babiker A.<br>
+    BMJ 1996 Mar 16; 312(7032): 661-5.<br>
+    <a href="http://www.bmj.com/cgi/content/full/312/7032/661">
+    http://www.bmj.com/cgi/content/full/312/7032/661</a> </li>
+    <li><b>Biostatistics. The Bare Essentials<br>
+    </b>Norman GR, Streiner DL.<br>
+    St. Louis MO: Mosby-Year Book, Inc. (1994)<br>
+    ISBN: 1-55664-369-1.</li>
+    <li><b>Data Analysis and Statistics for Nursing Research</b>.<br>
+    Polit DF.<br>
+    Stamford CT: Appleton &amp; Lange (1996)<br>
+    ISBN: 0-8385-6329-5. </li>
+    <li><b>Fundamentals of Biostatistics, Third Edition.<br>
+    </b>Rosner B.<br>
+    Belmont CA: Duxbury Press (1990)<br>
+    ISBN: 0-534-91973-1.</li>
+</ul>
+
+</body>
+
+</html>

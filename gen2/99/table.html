@@ -1,0 +1,207 @@
+<html>
+
+<head>
+
+<title>Stats: Inputting a two-by-two table into SPSS (August 18, 1999)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Inputting a two-by-two table into SPSS (created 1999-09-18)</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/two-by-two-table-in-spss/">new website</a>.</p>
+
+<p><em>Dear Professor Mean, I have the following data in a two by two table:</em></p>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="240" id="AutoNumber2">
+    <tr>
+      <td width="60" height="30" align="center">&nbsp;</td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>D+</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>D-</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>Total</b></font></td>
+    </tr>
+    <tr>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>F+</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>34</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>23</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>57</b></font></td>
+    </tr>
+    <tr>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>F-</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>139</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>119</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>258</b></font></td>
+    </tr>
+    <tr>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>Total</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>173</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>142</b></font></td>
+      <td width="60" height="30" align="center"><font color="#FF0000"><b>315</b></font></td>
+    </tr>
+  </table>
+</div>
+<p><em>When I try to enter this data into SPSS, I can't get it to compute risk 
+ ratios and confidence intervals. What am I doing wrong? -- Jinxed Jason</em></p>
+<p><font face="Times New Roman">Dear Jinxed,</font></p>
+<blockquote>
+  <p>You have values ranging from F- to D+? I hope this isn't data on the grades 
+   you received in college.</p>
+  <p>Actually these data are from a paper: Sands et al (1999). F+ represents 
+   presence of a risk factor (in this case, previous miscarriage) and F- 
+   represents absence of that risk factor. D+ represents presence of a defect 
+   (ventricular septal defect or VSD) and D- represents absence of that defect.</p>
+  <div align="left">
+    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="480" id="AutoNumber1">
+      <tr>
+        <td align="center" width="120" height="48"><b><font color="#FF0000">Risk<br>
+        Factor</font></b></td>
+        <td align="center" width="120" height="48"><b><font color="#FF0000">
+        Group</font></b></td>
+        <td align="center" width="120" height="48"><b><font color="#FF0000">
+        Number/Total<br>
+        (Percent)</font></b></td>
+        <td align="center" width="120" height="48"><b><font color="#FF0000">Odds 
+        Ratio<br>
+        (95%CI)</font></b></td>
+      </tr>
+      <tr>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        Miscarriage</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">VSD<br>
+        Control</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        34/173 (20%)<br>
+        23/142 (16%)</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">1.3 
+        (0.7,2.3)</font></b></td>
+      </tr>
+      <tr>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        Female</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">VSD<br>
+        Control</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        84/173 (49%)<br>
+        60/142 (42%)</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">2.1 
+        (1.3,3.2)</font></b></td>
+      </tr>
+      <tr>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">Low 
+        parity</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">VSD<br>
+        Control</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        76/173 (44%)<br>
+        58/142 (41%)</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">1.1 
+        (0.7,1.8)</font></b></td>
+      </tr>
+      <tr>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        Smoking</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">VSD<br>
+        Control</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        41/173 (24%)<br>
+        39/139 (28%)</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">0.8 
+        (0.5,1.3)</font></b></td>
+      </tr>
+      <tr>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        Alcohol</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">VSD<br>
+        Control</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">
+        18/173 (10%)<br>
+        20/139 (14%)</font></b></td>
+        <td align="center" width="120" height="60"><b><font color="#FF0000">0.7 
+        (0.4,1.5)</font></b></td>
+      </tr>
+    </table>
+  </div>
+  <p>Notice that we have to do a bit of arithmetic to get all the values. <b>
+   <font color="#FF0000">If 34 out of 173 VSD cases had a previous miscarriage, 
+   then 139=173-34 did not. If 23 out of 142 controls had previous miscarriage 
+   as a risk factor, then 119 did not.</font></b></p>
+  <p>For data like this, you have to re-arrange things and then apply weights. 
+   The following discussion talks about SPSS, but the general method works for 
+   most other statistical software. </p>
+  <p>To re-arrange the data, you need to specify three variables: F, D, and 
+   COUNT. <strong>F takes the value of 1 for F+ and 0 for F-. D takes the value 
+   of 1 for D+ and 0 for D-</strong>. The 0-1 coding has some nice mathematical 
+   properties, but you could use 1 and 2 instead. <strong>For each combination 
+   of F and D we will record the sample size in COUNT</strong>. </p>
+  <p>Here's what your re-arranged data would look like</p>
+</blockquote>
+<p><img border="0" src="../02/images/table.9.gif"></p>
+<blockquote>
+  <p><strong>Enter the data, and tell SPSS that W represents a weighting 
+   variable</strong>, and you're ready to rock and roll. You do this by 
+   selecting <b><font color="#FF0000">Data | Weight Cases from the SPSS menu.</font></b></p>
+</blockquote>
+<p><img border="0" src="../02/images/table.10.gif"></p>
+<blockquote>
+  <p>Then select <b><font color="#FF0000">Analyze | Descriptive Statistics | 
+   Crosstabs from the SPSS menu </font></b>to create a two by two table.</p>
+</blockquote>
+<p><img border="0" src="../02/images/table.11.gif"></p>
+<blockquote>
+  <p>Be sure to click on the <b><font color="#FF0000">Statistics button</font></b> 
+   and select the <b><font color="#FF0000">Risk option box</font></b> to ask 
+   SPSS to compute the risk ratios.</p>
+</blockquote>
+<p><img border="0" src="../02/images/table04.gif"></p>
+<blockquote>
+  <p>I also usually find it useful to display the row percentages. To do this, 
+   click on the <b><font color="#FF0000">Cells button</font></b>.</p>
+</blockquote>
+<p><img border="0" src="../02/images/table05.gif"></p>
+<blockquote>
+  <p>In the <b><font color="#FF0000">Crosstabs: Cell Display dialog box</font></b>, 
+   select the <b><font color="#FF0000">Row Percentages option box</font></b>.</p>
+  <p>Here's what the first part of the output looks like.</p>
+</blockquote>
+<p><img border="0" src="../02/images/table06.gif"></p>
+<blockquote>
+  <p>Notice that the rows and columns are reversed in this table. There are 
+   several ways to change how the table is displayed, but it is showing 
+   essentially the same information in any order.</p>
+  <p>Here is what the second part of the output looks like.</p>
+</blockquote>
+<p><img border="0" src="../02/images/table08.gif"></p>
+<blockquote>
+  <p>By the way, if you tried to use the crosstabs procedure without weighting, 
+   you would get exactly one observation in each cell. Pretty boring, eh?</p>
+</blockquote>
+<p><img border="0" src="../02/images/table09.gif"></p>
+<p><strong>Summary</strong></p>
+<blockquote>
+  <p>Jinxed Jason can't figure out <strong>how to enter data from a two by two 
+   table into SPSS</strong>. Professor Mean explains that <strong>you need three 
+   variables to represent a two by two table</strong>. The first variable 
+   indicates <strong>the specific column</strong> of your table and the second 
+   variable indicates <strong>the specific row</strong> (or vice versa). The 
+   third variable indicates <strong>the count or frequency</strong> for each 
+   intersection of row and column. You do not include the row or column totals 
+   in your data entry. You can then <strong>select </strong><b>
+   <font color="#FF0000">Analyze | Descriptive Statistics | Crosstabs from the 
+   SPSS menu</font></b><strong> to analyze the data from your two by two table</strong>. 
+   You get additional analyses by selecting the <font color="#FF0000"><b>Risk 
+   and/or Chi-square option boxes</b></font>.</p>
+</blockquote>
+<p><strong>Further reading</strong></p>
+<ol>
+  <li><b><font color="#FF0000">Incidence and risk factors for ventricular septal 
+  defect in &quot;low risk&quot; neonates. </font></b>Sands AJ, Casey F, Craig B, Dornan 
+  J, Rogers J and Mulholland H. Arch Dis Child Fetal Neonatal Ed 
+  1999:81(1);F61-F63. This paper is
+  <a href="http://adc.bmjjournals.com/cgi/content/full/fetalneonatal;81/1/F61">
+  available on the web</a>. </li>
+</ol>
+
+</body>
+
+</html>

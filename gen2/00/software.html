@@ -1,0 +1,165 @@
+<html>
+
+<head>
+
+<title>Stats: Software used in the creation of these web pages (August 24, 2000)</title>
+
+</head>
+
+<body><!--start-->
+
+<p><strong>Software used to create these web pages.</strong></p>
+
+<p>This page is moving to a <a href="http://new.pmean.com/web-page-software/">new website</a>.</p>
+
+<blockquote>
+  <p>Here are a few details about the software I use to create these pages and 
+   some tricks I have learned over time.</p>
+</blockquote>
+<p><b>Web authoring</b></p>
+<blockquote>
+  <p>I use
+   <a href="http://office.microsoft.com/home/office.aspx?assetid=FX01085802">
+   Microsoft FrontPage</a>. I have several versions depending on whether I am at 
+   work or at home. I try to avoid any fancy features in FrontPage, because I 
+   don't want to use something proprietary that makes it difficult for someone 
+   with an alternative web browser.</p>
+</blockquote>
+<p><b>Math equations</b></p>
+<blockquote>
+  <p>I use <a href="http://www.dessci.com/en/products/mathtype/">MathType</a> to 
+   create most of the formulas on these web pages. I save the files directly in 
+   GIF format and insert them into the page. The nice thing about MathType is 
+   that you can re-open the GIF file and the codes that created that GIF file 
+   reappear for further editing.</p>
+</blockquote>
+<p><b>Screen shots</b></p>
+<blockquote>
+  <p>I've used almost a dozen different screen capture programs for these web 
+   pages. The current program I am using, <a href="http://www.techsmith.com/">
+   SnagIt</a>, is quite good.</p>
+</blockquote>
+<p><b>Importing statistical graphs</b></p>
+<blockquote>
+  <p>I use S-plus to draw a lot of the simple line graphs on my web pages.&nbsp; 
+   Here's an example:</p>
+  <p><img border="0" src="../03/images/mle1a.gif" width="352" height="272"></p>
+  <p>It is very difficult to get the line graphs to look nice because when you 
+   try to scale the graphs, the very fine detail is often lost. I have found 
+   with repeated experience that it is best to produce a GIF file at the size 
+   that I want for the web page.</p>
+  <p><code>graphsheet(file=&quot;histogram##.gif&quot;,width=2.67,height=2,format=&quot;GIF&quot;)<br>
+   # insert graphics code here.<br>
+   dev.off()</code></p>
+  <p>This code produces a graph with a width of 192 pixels and a height of 143 
+   pixels.</p>
+  <p>Watch for text labels and the axes, because these will often be too large 
+   or too small. You can use the command</p>
+  <p><code>par(cex=0.5)<br>
+   </code><code>par(cex=2)</code></p>
+  <p>to make the text half as big or twice as big. If I do not need axes and 
+   labels, then the default graph will include a lot of white space. Te command</p>
+  <p><code>par(mar=rep(0.1,4))</code></p>
+  <p>will trim back almost all of the margins, including space that would have 
+   been reserved for the axes and labels.</p>
+</blockquote>
+<p><b>Bibliography</b></p>
+<blockquote>
+  <p>I maintain a bibliography of research articles, books, and web sites using
+   <a href="http://www.endnote.com/">EndNote</a>. This software has a lot of 
+   nice options for formatting your bibliography the way you like best.</p>
+  <p>I modified the fields for journal articles to include the PubMedID, and the 
+   URLs for the abstract, full text, and/or pdf formats of the article if they 
+   are available. I have a <a href="../details/Images/EndNoteReferenceTypes.pdf">PDF file 
+   describing these modifications</a>.</p>
+  <p>I have an output style, &quot;Formal web format with no abstract&quot; that inserts 
+   html code automatically into any bibliography that I produce. This is what it 
+   currently looks like, though I plan to add a few more features (such as 
+   automatically incorporating a BookFinder4U link for any book that has an 
+   ISBN). </p>
+  <p><img border="0" src="../details/Images/software1.gif" width="429" height="360"></p>
+  <p><br>
+   When I include an article, here is what it looks like:</p>
+  <blockquote>
+    <p><b>Missing the point (estimate)? Confidence intervals for the number 
+     needed to treat.</b> Barrowman NJ. Cmaj 2002: 166(13); 1676-7.
+     <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=12126323&dopt=Abstract">
+     [Medline]</a> <a href="http://www.cmaj.ca/cgi/content/full/166/13/1676">
+     [Full text]</a> <a href="http://www.cmaj.ca/cgi/reprint/166/13/1676.pdf">
+     [PDF]</a></p>
+  </blockquote>
+  <p>Here is what a web site looks like:</p>
+  <blockquote>
+    <p><strong>
+     <a href="http://www.jr2.ox.ac.uk/bandolier/Extraforbando/NNTextra.pdf">
+     Calculating and Using NNTs [pdf]</a></strong>. Bandolier. Accessed on 
+     2003-06-12. www.jr2.ox.ac.uk/bandolier/Extraforbando/NNTextra.pdf</p>
+  </blockquote>
+  <p>Here is what a book looks like:</p>
+  <blockquote>
+    <p><b>Evidence-based Medicine How to Practice and Teach EBM.</b> Sackett DL, 
+     MD, Richardson SW, Rosenberg W, Haynes BR (1998) Edinburgh: Churchill 
+     Livingstone. ISBN: 0443056862. </p>
+  </blockquote>
+  <p>These &quot;Formal web format with no abstract&quot; style is stored with the rest of 
+   the EndNote program under the Styles folder.</p>
+  <p>EndNotes is a complex program, and one of the tricks I learned is how to 
+   incorporate a link only when I have certain information. There are &quot;Forced 
+   Separations&quot; symbols, denoted by the vertical bar (|) and &quot;Link Adjacent 
+   Text&quot; symbols, denoted by a centered dot (<font face="Times New Roman">a 
+   symbol not easily displayed on this web page</font>) that are a bit tricky to 
+   learn how to use. When you learn out how they work, you can safely 
+   distinguish between books with and without an ISBN code.</p>
+  <p><font color="#FF0000"><code>&lt;p&gt;&lt;b&gt;Title.&lt;/b&gt; Author (Year) City: Publisher. 
+   &lt;a&nbsp;<br>
+   href=http://www.bookfinder4u.com/detail/ISBN.html&gt;<br>
+   [BookFinder4U&nbsp;Link]&lt;/a&gt;|&lt;/p&gt;</code></font></p>
+  <p>The trick is to use the Link Adjacent Text symbol between the
+   <font color="#FF0000"><code>&lt;a</code></font> and the <code>
+   <font color="#FF0000">href=</code></font>, and between the <code>
+   <font color="#FF0000">[BookFinder4U</code></font> and the <code>
+   <font color="#FF0000">Link]</code></font>. You also need a forced separation 
+   between the <code><font color="#FF0000">&lt;/a&gt;</code></font> and the
+   <font color="#FF0000"><code>&lt;/p&gt;</code></font>. The Link Adjacent text 
+   insures that the elements always appear together or not at all, depending on 
+   whether the ISBN is known. Text following the Forced Separation appears no 
+   matter what happens with regard to the ISBN. We always want to include the
+   <font color="#FF0000"><code>&lt;/p&gt;</code></font> and while inserting a blank 
+   would work, that leaves an unnecessary blank dangling right before the end of 
+   the paragraph.</p>
+  <p>The same tricks allow EndNotes to insert a link to the Abstract (but only 
+   when the abstract is available on the web), the Full Text (but only when the 
+   full text is available on the web), and so forth. If I have an Accession 
+   Number for a journal article, I can even link to the Medline citation of this 
+   article through the following code:</p>
+  <p><font color="#FF0000"><code>&lt;a&nbsp;href=http://www.ncbi.nlm.nih.gov/entrez/query.fcgi<br>
+   ?cmd=Retrieve&amp;db=PubMed&amp;list_uids=Accession Number&amp;<br>
+   dopt=Abstract&gt;[Medline]&lt;/a&gt;</code></font></p>
+  <p>As in the previous example, you need a Link Adjacent Text symbol between 
+   the <font color="#FF0000"><code>&lt;a</code></font> and the
+   <font color="#FF0000"><code>href=</code></font>. </p>
+</blockquote>
+<p><b>Reprint requests</b></p>
+<blockquote>
+  <p>I have not yet included any comic strips, such as The Far Side or Dilbert, 
+   in my web pages, but I might start sometime soon.</p>
+  <p>Reprint requests for Dilbert are sent to
+   <a href="mailto:reprints@unitedmedia.com">reprints@unitedmedia.com</a>, and 
+   details about reprints appear in the United Media FAQ at</p>
+  <blockquote>
+    <p>
+     <a href="http://www.unitedmedia.com/comics/dilbert/info/faq_and_contacts.html">
+     www.unitedmedia.com/comics/dilbert/info/faq_and_contacts.html</a>.</p>
+  </blockquote>
+  <p>Another nice selection of comics is available at Cartoonbank:</p>
+  <blockquote>
+    <p><a href="http://www.cartoonbank.com/">www.cartoonbank.com/</a> </p>
+  </blockquote>
+  <p>which has many of the cartoons that originally appeared in The New Yorker.</p>
+  <p>I also have an image from the CNN web site that I am asking for permission 
+   to use. The email address for this request went to cnn.viewersource@turner.com.</p>
+</blockquote>
+
+</body>
+
+</html>
