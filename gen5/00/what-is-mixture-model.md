@@ -27,7 +27,8 @@ A quite different type of mixture model is **when you know that your data are a 
 
 **Both types of mixture models require specialized software**. You shouldn't embark on a serious mixture model analysis without a face-to-face consultation with a professional statistician.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/mixture.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/what-is-mixture-model/
+ 

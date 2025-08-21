@@ -45,7 +45,8 @@ Baffled Bob wants to know how to calculate a sample size when his outcome variab
 
 + **[Bayesian sample size determination for estimating binomial parameters from data subject to misclassification](http://www.med.mcgill.ca/epidemiology/Joseph/diagsmp.pdf)**. Elham Rahme, Lawrence Joseph, Theresa W. Gyorkos. Accessed on 2003-05-08. *"We investigate the sample size problem when a binomial parameter is to be estimated, but some degree of misclassification is possible. The problem is especially challenging when the degree to which misclassification occurs is not exactly known."* Published November 29, 1999. www.med.mcgill.ca/epidemiology/Joseph/diagsmp.pdf
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/binary.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/binary-outcome-sample-size/
+ 

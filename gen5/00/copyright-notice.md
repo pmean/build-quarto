@@ -19,7 +19,8 @@ When these pages were originally developed, the lawyers suggested that I copyrig
 
 People will sometimes ask for permission to link to my pages. That has never been an issue. You can link to my site without any restrictions. It would be nice if you could let me know you are linking to my page. Also it would be nice if you could send me the URL of the page that includes the link to my site. That way, I can show my boss how much interest my web pages are attracting.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/copyright.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/copyright-notice/
+ 

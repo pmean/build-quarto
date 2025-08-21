@@ -32,7 +32,8 @@ Donald Wheeler has authored or co-authored three excellent books that explain th
 
 + **Advanced Topics in Statistical Process Control. The Power of  Shewhart's Charts\ **Wheeler DJ.\ Knoxville TN: SPC Press Inc (1995).\ ISBN: 0-945320-45-0.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/sigma.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/control-chart-sigma/
+ 

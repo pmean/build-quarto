@@ -76,7 +76,8 @@ M. Borenstein. The case for confidence intervals in controlled clinical trials. 
     
 HM Couey. Confidence limits and sample size in quarantine research. Forum: Journal of Economic Entomology 1986: 79(4); 887-90.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/confid.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/sample-size-for-ci/
+ 

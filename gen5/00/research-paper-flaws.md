@@ -33,7 +33,8 @@ Finally, **try to avoid false or unproductive dichotomies**. Some people like to
 
 + MacCoun, R. Biases in the interpretation and use of research results. Annu Rev Psychol (1998), 49: 259-87.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/flaws.html
-[sim2]: http://www.pmean.com/original_site.html Flaws in a research paper
+[sim2]: http://new.pmean.com/research-paper-flaws/
+ 

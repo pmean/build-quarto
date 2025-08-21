@@ -14,7 +14,8 @@ These web pages have several Sherlock Holmes quotes. These quotes can be found i
 
 Personal thanks to the many people who have sent comments and corrections. I should especially single out Dicon Montford who caught many spelling and grammar errors.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/ack.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/acknowledge-help/
+ 

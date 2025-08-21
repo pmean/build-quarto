@@ -61,7 +61,8 @@ A recent publication (Marks and Colwell 2000) showed just such a situation. Rupe
 	
 + **Randomised trials, human nature, and reporting guidelines**. Schulz, KF. Lancet, 348: 596-598 (1996).
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/alternate.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/alternating-treatments/
+ 

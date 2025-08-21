@@ -23,7 +23,8 @@ page_update: partial
 
 **You can use a stratified sample only when you know which subjects belong to which strata prior to data collection**. If you only find out information about the strata during the interview or testing of subjects, then you can't control the selection of subjects in advance.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/strata.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/stratified-sample/
+ 

@@ -72,7 +72,8 @@ David Freedman, Robert Pisani, Roger Purves. Statistics Third Edition. (1998) Ne
 
 [mor1]: http://bmj.com/cgi/content/full/326/7398/1083
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/regression.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/regression-to-the-mean/
+ 

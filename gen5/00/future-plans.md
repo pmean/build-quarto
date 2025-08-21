@@ -168,7 +168,8 @@ This page is obsolete. I am keeping it around mostly for nostalgic reasons.
   + Levy and Lemeshow have all the formulas you need.
     + Levy, Paul S. and Lemeshow, Stanley (1991) Sampling of Populations. Methods and Applications. New York NY: John Wiley and Sons, Inc. ISBN: 0-471-50822-5.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/future.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/future-plans/
+ 

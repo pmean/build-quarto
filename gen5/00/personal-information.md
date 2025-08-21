@@ -37,7 +37,8 @@ My B.A., M.S., and Ph.D. all come from the University of Iowa. The latter two de
 
 There's a mug shot of me on the CMH web pages. I was married on May 18, 2002. I have two pictures of my then fiancée, Cathy Ong, and me on a trip we took to China in March 2001. On September 9, 2004, we returned home from Russia with a newly adopted two year old boy, Nicholas Zhenya Simon. Here's a picture taken at the orphanage. More details about the adoption and other personal aspects of my life are on my Personal Update web page.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/simon.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/personal-information/
+ 

@@ -53,7 +53,8 @@ In summary, databases allow for better error checking, for better integration of
 
 Which to choose? It may come down to how large and complex your data set is. **The bigger and messier the data, the more a database can help**.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/sheet.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/spreadsheet-or-database/
+ 

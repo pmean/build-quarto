@@ -36,7 +36,8 @@ The amount of nudging depends on the size of each individual study (the smaller 
 
 My explanation here is simplistic, partly because I don't understand all the technical details myself. If you are really interested in more details, look for references that discuss techniques like "Empirical Bayes estimation" and "random effects models". You might also want to try to understand the concept of "regression toward the mean" as it relates closely to Stein's paradox.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/stein.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/what-is-stein-paradox/
+ 

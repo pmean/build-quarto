@@ -64,7 +64,8 @@ Still, the general explanation is that for this study, the ITT analysis, which i
 
 Inquisitive Irene wants to know **what the phrase "Intention to Treat" means** in all the journal articles she is reading. **Intention to Treat is a method that includes noncompliant patients in the groups to which they were originally randomized into**. There are two reasons why you might use this approach. First, intention to treat **preserves the effects of randomization**. Second, intention to treat often **provides an assessment of the practical impact of a treatment**. There are some examples, however, where **intention to treat may answer a different question than the one you are interested in**.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/intention.html
-[sim2]: http://www.pmean.com/original_site.html Intention to treat
+[sim2]: http://new.pmean.com/what-is-itt/
+ 

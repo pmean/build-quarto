@@ -24,7 +24,8 @@ Everitt has a dictionary of statistics that defines quota sampling. You can also
 + **The Survey Research Handbook. Guidelines and Strategies for Conducting a Survey, Second Edition.** Alreck PL, Settle RB. Chicago, IL: Irwin Professional Publishing (1995). ISBN: 0-7863-0358-1.
 +  **The Cambridge Dictionary of Statistics in the Medical Sciences.** Everitt BS. Cambridge, England: Cambridge University Press (1995). ISBN: 0-521-47928-2.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/quota.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/quota-stratified-sampling/
+ 

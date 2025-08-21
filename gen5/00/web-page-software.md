@@ -116,7 +116,8 @@ which has many of the cartoons that originally appeared in The New Yorker.
 
 I also have an image from the CNN web site that I am asking for permission to use. The email address for this request went to cnn.viewersource@turner.com.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/software.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/web-page-software/
+ 

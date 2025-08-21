@@ -24,7 +24,8 @@ I would argue that **statistics are a poor way to judge which scores are close**
 
 So I would suggest that you **talk to the same people who helped you develop you the weights** for your composite score and ask them to **tell you how much of a change in the composite score would be large enough to have a practical impact**. This is an example where statistics is a poor substitute for human judgment.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/composite.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/composite-scores/
+ 

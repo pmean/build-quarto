@@ -201,7 +201,8 @@ There are many beginning level books on biostatistics that discuss the Kaplan-Me
 + Collett D. Modelling Survival Data in Medical Research. London England: Chapman and Hall (1994). ISBN: 0-412-44890-4.
 + Woolson RF. Statistical Methods for the Analysis of Biomedical Data. New York NY: John Wiley & Sons, Inc. (1987). ISBN: 0-471-80615-3.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/00/kaplan.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/what-is-kaplan-meier-curve/
+ 
