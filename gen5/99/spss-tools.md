@@ -22,3 +22,8 @@ Raynald Levesque. Raynald's SPSS Tools. Available in [html format](http://www.sp
 + SPSS has several ways to extend its features and automate repetitive functions. This includes Macro, Matrix, Python, R, Sax Basic, and basic syntax. This page shows examples of all of these approaches to perform a variety of useful functions.
 
 There is no corresponding page on my original website.
+Earlier versions are [here][sim1] and [here][sim2].
+ 
+[sim1]: new
+[sim2]: http://new.pmean.com/spss-tools/
+ 

@@ -135,7 +135,8 @@ EXECUTE.
 
 You want to **import a Microsoft Access table into SPSS**. To import Access or other database formats, you use a system called ODBC. **Select FILE | DATABASE CAPTURE | NEW QUERY from the SPSS menu**. You will then specify where the data are located and the table or tables in your database you want to import.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/99/access.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/importing-database-into-spss/
+ 

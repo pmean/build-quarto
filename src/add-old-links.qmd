@@ -22,34 +22,46 @@ library(tidyverse)
 ## Loop
 
 ```{r}
-#| label: loop
+#| label: add-extra
 
-add_extra <- function(file_name) {
+add_extra <- function(file_path, file_name) {
 	file_name |>
     str_remove("\\.qmd$") |>
     str_remove("\\.Rmd$") |>
     str_remove("\\.md$") -> root_name
-	read_lines(glue("{file_path}/{file_name}")) |>
+	read_lines(glue("{file_path}/{file_name}")) -> file_text
+	file_text |>
 		str_subset("source: ") |>
 		str_remove_all(fixed('\"')) |>
 		str_remove("source: ") -> src
 	print(src)
 	if (length(src) != 1) return()
+	i1 <- str_which(file_text, fixed("You can find an [earlier version][sim1]"))
+	i2 <- str_which(file_text, "^\\[sim2\\]: ")
+	# print(i1)
+	# print(i2)
+	if (length(i1)==1 & length(i2)==1) file_text <- file_text[-(i1:i2)]
 	extra_lines <- c(
-		" ",
 		"Earlier versions are [here][sim1] and [here][sim2].",
 		" ",
 	  glue("[sim1]: {src}"),
 		glue("[sim2]: http://new.pmean.com/{root_name}/"),
 		" ")
-	return(extra_lines)
+	return(c(file_text, extra_lines))
 }
+```
+
+```{r}
+#| label: loop
 
 file_path <- "../gen5/99"
-x <- add_extra("what-i-did.md") 
-cat(x, sep="\n")
+file_path |>
+  list.files() |>
+  str_subset("md$") -> file_list
 
-file_path <- "../gen5/00"
-x <- add_extra("wax-fruit.md") 
-cat(x, sep="\n")
+for (file_name in file_list) {
+  x <- add_extra(file_path, file_name) 
+  # cat(x, sep="\n")
+  write_lines(x, file=glue("{file_path}/{file_name}"))
+}
 ```

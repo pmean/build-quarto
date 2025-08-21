@@ -150,7 +150,8 @@ and others. (Accessed May 15
 - Third Edition.** Rosner B.
 Belmont CA: Duxbury Press (1990). ISBN: 0-534-91973-1.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/99/ttest.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/what-is-t-test/
+ 

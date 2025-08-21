@@ -528,7 +528,8 @@ by Gotch and Stebbing (2002) is a brief list of useful tips.
 2.  **PSYCHOLOGY WITH STYLE A Hypertext Writing Guide - Version 3.1.**
     Mark Plonsky. <http://www.uwsp.edu/psych/apa4b.htm>
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/99/grants.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/steps-in-writing-research-grants/
+ 

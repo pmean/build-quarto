@@ -47,7 +47,8 @@ If you have a many-to-one merge, select the EXTERNAL FILE IS KEYED TABLE option.
 
 For the record, **it is impossible to do a many-to-many merge in SPSS**. A many-to-many merge would equivalent to multiple husbands and wives and is just too chaotic to contemplate. If you really wanted to do a many-to-many merge, you would create a third file which shows which keys from the first file are linked with which keys from the second file. You would have to merge the first file with this master file and then merge the result with the second file.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/99/merging.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/merging-in-spss/
+ 

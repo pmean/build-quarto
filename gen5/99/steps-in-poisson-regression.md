@@ -451,7 +451,8 @@ densities.** L. M. Lavange
 - P. A. Margolis.
 Stat Med 1994: 13(4); 343-55.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
+Earlier versions are [here][sim1] and [here][sim2].
+ 
 [sim1]: http://www.pmean.com/99/poisson.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/steps-in-poisson-regression/
+ 
