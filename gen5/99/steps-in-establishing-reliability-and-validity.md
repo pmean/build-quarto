@@ -14,8 +14,6 @@ page_update: no
 
 This page is currently being updated from the earlier version of my website. Sorry that it is not yet fully available.
 
-This page is currently being updated from the earlier version of my website. Sorry that it is not yet fully available.
-
 <!---More--->
 
 Earlier versions are [here][sim1] and [here][sim2].

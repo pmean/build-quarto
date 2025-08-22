@@ -14,8 +14,6 @@ output: html_document
 page_update: partial
 ---
 
-This page is currently being updated from the earlier version of my website. Sorry that it is not yet fully available.
-
 *Dear Professor Mean, I get a strange error message when I try to merge two files in SPSS. What is going on? -- Computing Cheryl*
 
 <!---More--->
@@ -29,6 +27,7 @@ First make sure that the KEY VARIABLES are sorted in both files. **Unsorted data
 Also **make sure you are not mixing apples and oranges**. If the KEY VARIABLES in one data set are numeric, but in the other data set they are strings, then you have problems. You also might have problems if both are strings. but the lengths of the strings differ. So if the key variable in the first data set is a string of length 8 but it is a string of length 20 in the other data set, you may have trouble merging.
 
 Second, **identify the type of merge** you are doing:
+
 - one-to-one
 - one-to-many
 - or many-to-one.

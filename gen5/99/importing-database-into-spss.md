@@ -17,8 +17,7 @@ Note: many of the details described here, may have changed. Every new version of
 
 ### Dear Professor Mean,
 
-How do I import database files into SPSS? I don't want to re-type everything
-because there are 70,000 records. The data are stored in a Microsoft Access file. 
+How do I import database files into SPSS? I don't want to re-type everything because there are 70,000 records. The data are stored in a Microsoft Access file.
 
 <!---More--->
 
