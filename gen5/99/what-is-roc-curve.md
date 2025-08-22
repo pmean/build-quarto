@@ -12,158 +12,57 @@ output: html_document
 page_update: partial
 ---
 
-This page is currently being updated from the earlier version of my website. Sorry that it is not yet fully available.
+*Dear Professor Mean, I was at a meeting in Belgium and the buzz statistic was ROC Analysis. I think it stands for Receiver Operating Characteristic curve. It seems to be used for predictive values. I seemed to be a lone ranger in not understanding as they were showing in several presentations "by this curve you can see this is good or bad" and they didn't look very different. Do you have a simple explanation about ROC curves?*
 
-*Dear Professor Mean
-- I was at a meeting in Belgium and the buzz
-statistic was ROC Analysis. I think it stands for Receiver Operating
-Characteristic curve. It seems to be used for predictive values. I
-seemed to be a lone ranger in not understanding as they were showing in
-several presentations "by this curve you can see this is good or bad"
-and they didn't look very different. Do you have a simple explanation
-about ROC curves?*
+To understand an ROC curve, you first have to accept the fact that MDs like to ruin a nice continuous outcome measure by turning it into a dichotomy. For example, doctors have measured the S100 protein in serum and found that higher values tend to be associated with Creutzfeldt-Jakob disease. The median value is 395 pg/ml for the 108 patients with the disease and only 109 pg/ml for the 74 patients without the disease. The doctors set a cut off of 213 pg/ml, even though they realized that 22.2% of the diseased patients had values below the cut off and 18.9% of the disease-free patients had values above the cut off.
 
-To understand an ROC curve
-- you first have to accept the fact that MDs
-like to ruin a nice continuous outcome measure by turning it into a
-dichotomy. For example
-- doctors have measured the S100 protein in
-serum and found that higher values tend to be associated with
-Creutzfeldt-Jakob disease. The median value is 395 pg/ml for the 108
-patients with the disease and only 109 pg/ml for the 74 patients
-without the disease. The doctors set a cut off of 213 pg/ml
-- even
-though they realized that 22.2% of the diseased patients had values
-below the cut off and 18.9% of the disease-free patients had values
-above the cut off.
-
-The two percentages listed above are the false negative and false
-positive rates
-- respectively. If we lowered the cut off value
-- we
-would decrease the false negative rate probability
-- but we would also
-increase the false positive rate. Similarly
-- if we raised the cut off,
-we would decrease the false positive rate
-- but we would increase the
-false negative rate.
+The two percentages listed above are the false negative and false positive rates, respectively. If we lowered the cut off value, we would decrease the false negative rate probability, but we would also increase the false positive rate. Similarly, if we raised the cut off, we would decrease the false positive rate, but we would increase the false negative rate.
 
 **Short explanation**
 
-An ROC curve is a graphical representation of the trade off between
-the false negative and false positive rates for every possible cut
-off. Equivalently
-- the ROC curve is the representation of the
-tradeoffs between sensitivity (Sn) and specificity (Sp).
+An ROC curve is a graphical representation of the trade off between the false negative and false positive rates for every possible cut off. Equivalently, the ROC curve is the representation of the tradeoffs between sensitivity (Sn) and specificity (Sp).
 
-By tradition
-- the plot shows the false positive rate on the X axis and
-1 - the false negative rate on the Y axis. You could also describe
-this as a plot with 1-Sp on the X axis and Sn on the Y axis.
+By tradition, the plot shows the false positive rate on the X axis and 1 - the false negative rate on the Y axis. You could also describe this as a plot with 1-Sp on the X axis and Sn on the Y axis.
 
 **So how can you tell a good ROC curve from a bad one?**
 
-All ROC curves are good
-- it is the diagnostic test which can be good
-or bad. A good diagnostic test is one that has small false positive
-and false negative rates across a reasonable range of cut off values.
-A bad diagnostic test is one where the only cut offs that make the
-false positive rate low have a high false negative rate and vice
-versa.
+All ROC curves are good, it is the diagnostic test which can be good or bad. A good diagnostic test is one that has small false positive and false negative rates across a reasonable range of cut off values. A bad diagnostic test is one where the only cut offs that make the false positive rate low have a high false negative rate and vice versa.
 
-We are usually happy when the ROC curve climbs rapidly towards upper
-left hand corner of the graph. This means that 1- the false negative
-rate is high and the false positive rate is low. We are less happy
-when the ROC curve follows a diagonal path from the lower left hand
-corner to the upper right hand corner. This means that every
-improvement in false positive rate is matched by a corresponding
-decline in the false negative rate.
+We are usually happy when the ROC curve climbs rapidly towards upper left hand corner of the graph. This means that 1- the false negative rate is high and the false positive rate is low. We are less happy when the ROC curve follows a diagonal path from the lower left hand corner to the upper right hand corner. This means that every improvement in false positive rate is matched by a corresponding decline in the false negative rate.
 
-You can quantify how quickly the ROC curve rises to the upper left
-hand corner by measuring the area under the curve. The larger the
-area
-- the better the diagnostic test. If the area is 1.0
-- you have an
-ideal test
-- because it achieves both 100% sensitivity and 100%
-specificity. If the area is 0.5
-- then you have a test which has
-effectively 50% sensitivity and 50% specificity. This is a test that
-is no better than flipping a coin. In practice
-- a diagnostic test is
-going to have an area somewhere between these two extremes. The closer
-the area is to 1.0
-- the better the test is
-- and the closer the area is
-to 0.5
-- the worse the test is.
+You can quantify how quickly the ROC curve rises to the upper left hand corner by measuring the area under the curve. The larger the area, the better the diagnostic test. If the area is 1.0, you have an ideal test, because it achieves both 100% sensitivity and 100% specificity. If the area is 0.5, then you have a test which has effectively 50% sensitivity and 50% specificity. This is a test that is no better than flipping a coin. In practice, a diagnostic test is going to have an area somewhere between these two extremes. The closer the area is to 1.0, the better the test is, and the closer the area is to 0.5, the worse the test is.
 
-Area under the curve does have one direct interpretation. If you take
-a random healthy patient and get a score of X and a random diseased
-patient and get a score of Y
-- then the area under the curve is an
-estimate of P[Y>X] (assuming that large values of the test are
-indicative of disease).
+Area under the curve does have one direct interpretation. If you take a random healthy patient and get a score of X and a random diseased patient and get a score of Y, then the area under the curve is an estimate of P[Y>X] (assuming that large values of the test are indicative of disease).
 
 **Show me an example of an ROC curve.**
 
-Consider a diagnostic test that can only take on five values
-- A
-- B
-- C,
-D
-- and E. We classify diseased (D+) and healthy (D-) patients by this
-test and get the following results:
+Consider a diagnostic test that can only take on five values, A, B, C, D, and E. We classify diseased (D+) and healthy (D-) patients by this test and get the following results:
 
 ![](../../../web/images/99/roc01.gif)
 
-  
+
 
 It's a bit easier if we convert this table to cumulative percentages.
 
 ![](../../../web/images/99/roc02.gif)
 
-We add a row (*) to represent the cumulative percentage of 0% which
-will end up corresponding to a diagnostic test where all the results
-are considered positive regardless of the test value. The last row
-represents the other extreme
-- where all the results are considered
-negative regardless of the test value.
+We add a row (*) to represent the cumulative percentage of 0% which will end up corresponding to a diagnostic test where all the results are considered positive regardless of the test value. The last row represents the other extreme, where all the results are considered negative regardless of the test value.
 
 ![](../../../web/images/99/roc03.gif)
 
-The complementary percentages shown above represent the true positive
-rate (or Sn) and the the false positive rate (or 1-Sp).
+The complementary percentages shown above represent the true positive rate (or Sn) and the the false positive rate (or 1-Sp).
 
-This table includes two extreme cases for the sake of completeness. If
-you always classify a test as positive
-- then you will have a 100% true
-positive rate among those with the disease (Sn=1)
-- but also a 100%
-false positive rate among those who are healthy (Sp=0). Conversely
-- if
-you always classify a test as negative
-- you will have a 0% true
-positive rate among those with the disease (Sn=0)
-- but you will have a
-0% false positive rate among those who are healthy (Sp=1). Neither
-extreme would probably be used in a practical setting; if you always
-classified a test as positive (or negative) that would mean that you
-are ignoring the test results entirely.
+This table includes two extreme cases for the sake of completeness. If you always classify a test as positive, then you will have a 100% true positive rate among those with the disease (Sn=1), but also a 100% false positive rate among those who are healthy (Sp=0). Conversely, if you always classify a test as negative, you will have a 0% true positive rate among those with the disease (Sn=0), but you will have a 0% false positive rate among those who are healthy (Sp=1). Neither extreme would probably be used in a practical setting; if you always classified a test as positive (or negative) that would mean that you are ignoring the test results entirely.
 
 Here is what the graph of the ROC curve would look like.
 
 ![](../../../web/images/99/roc04.gif)
 
-Here is information about Area Under the Curve. This area (0.91) is
-quite good; it is close to the ideal value of 1.0 and much larger than
-worst case value of 0.5.
+Here is information about Area Under the Curve. This area (0.91) is quite good; it is close to the ideal value of 1.0 and much larger than worst case value of 0.5.
 
 ![](../../../web/images/99/roc05.gif)
 
-Here are the actual values used to draw the ROC curve (I selected the
-"Coordinate points of the ROC Curve" button in SPSS).
+Here are the actual values used to draw the ROC curve (I selected the "Coordinate points of the ROC Curve" button in SPSS).
 
 ![](../../../web/images/99/roc06.gif)
 
@@ -171,47 +70,24 @@ Here is the same ROC curve with annotations added
 
 ![](../../../web/images/99/roc07.gif)
 
-Shown below is an artificial ROC curve with an area equal to 0.5. Notice
-that each gain in sensitivity is balanced by the exact same loss in
-specificity and vice versa. Also notice that this curve includes the
-point corresponding to 50% for both sensitivity and specificity. You
-could achieve this level of diagnostic ability by flipping a coin.
-Clearly
-- this curve represents a worst case scenario.
+Shown below is an artificial ROC curve with an area equal to 0.5. Notice that each gain in sensitivity is balanced by the exact same loss in specificity and vice versa. Also notice that this curve includes the point corresponding to 50% for both sensitivity and specificity. You could achieve this level of diagnostic ability by flipping a coin. Clearly, this curve represents a worst case scenario.
 
 ![](../../../web/images/99/roc08.gif)
 
 **What's a good value for the area under the curve?**
 
-Deciding what a good value is for area under the curve is tricky and
-it depends a lot on the context of your individual problem. One way to
-approach the problem is to examine what some of the likelihood ratios
-would be for various areas. A good test should have a LR+ of at least
-2.0 and a LR- of 0.5 or less. This would correspond to an area of
-roughly 0.75. A better test would have likelihood ratios of 5 and 0.2,
-respectively
-- and this corresponds to an area of around 0.92. Even
-better would be likelihood ratios of 10 and 0.1
-- which corresponds
-roughly to an area of 0.97. So here is one interpretation of the
-areas:
+Deciding what a good value is for area under the curve is tricky and it depends a lot on the context of your individual problem. One way to approach the problem is to examine what some of the likelihood ratios would be for various areas. A good test should have a LR+ of at least 2.0 and a LR- of 0.5 or less. This would correspond to an area of roughly 0.75. A better test would have likelihood ratios of 5 and 0.2, respectively, and this corresponds to an area of around 0.92. Even better would be likelihood ratios of 10 and 0.1, which corresponds roughly to an area of 0.97. So here is one interpretation of the areas:
 
 -   0.50 to 0.75 = fair
 -   0.75 to 0.92 = good
 -   0.92 to 0.97 = very good
 -   0.97 to 1.00 = excellent.
 
-These are very rough guidelines; further work on refining these would
-be appreciated.
+These are very rough guidelines; further work on refining these would be appreciated.
 
 **Summary**
 
-The ROC curve plots the false positive rate on the X axis and 1 - the
-false negative rate on the Y axis. It shows the trade-off between the
-two rates. If the area under the ROC curve is close to 1
-- you have a
-very good test. If the area is close to 0.5
-- you have a lousy test.
+The ROC curve plots the false positive rate on the X axis and 1 - the false negative rate on the Y axis. It shows the trade-off between the two rates. If the area under the ROC curve is close to 1, you have a very good test. If the area is close to 0.5, you have a lousy test.
 
 **Further reading**
 

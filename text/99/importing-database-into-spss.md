@@ -17,8 +17,7 @@ Note: many of the details described here, may have changed. Every new version of
 
 ### Dear Professor Mean,
 
-How do I import database files into SPSS? I don't want to re-type everything
-because there are 70,000 records. The data are stored in a Microsoft Access file. 
+How do I import database files into SPSS? I don't want to re-type everything because there are 70,000 records. The data are stored in a Microsoft Access file.
 
 <!---More--->
 
@@ -68,12 +67,7 @@ Here is an example of importing an Access database with data from a growth hormo
 
 **The dialog box shown above gives you a list of all available tables and queries within this database**. Drag the table from the AVAILABLE TABLES field into the RETRIEVE FIELDS IN THIS ORDER field. If you want data from more than one table/query, repeat this process. If there are some variables you do not want to import, drag them out of the RETREIVE FIELDS IN THIS ORDER field.
 
-**If you have a simple import, you can click on the FINISH button now**. If you click on the NEXT button instead, SPSS will give you some options to fine tune your import. You can
-
--   Specifying relationships between tables
--   Selecting a subset of your data
--   Renaming some of the variables
--   Saving the query for re-use
+**If you have a simple import, you can click on the FINISH button now**. If you click on the NEXT button instead, SPSS will give you some options to fine tune your import. You can ,   Specifying relationships between tables,   Selecting a subset of your data,   Renaming some of the variables,   Saving the query for re-use
 
 **Saving the query for re-use is another way of simplifying repeated imports from the same data set**. Saving the query will save not only the location of hte database you want to import from, but also the information about subsets, changes in variable names, etc.
 

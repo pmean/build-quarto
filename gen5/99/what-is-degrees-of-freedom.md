@@ -12,34 +12,15 @@ output: html_document
 page_update: partial
 ---
 
-This page is currently being updated from the earlier version of my website. Sorry that it is not yet fully available.
+*Dear Professor Mean, In your Simple Descriptive Statistics class, you described the standard deviation as the square root of the **average** squared deviation. If it is an average, how come we divide by the degrees of freedom (n-1) rather than n. Is this just a conspiracy among statisticians to make this stuff harder to understand.*
 
-*Dear Professor Mean, In your Simple Descriptive Statistics class, you
-described the standard deviation as the square root of the **average**
-squared deviation. If it is an average, how come we divide by the
-degrees of freedom (n-1) rather than n. Is this just a conspiracy among
-statisticians to make this stuff harder to understand.*
+You've been watching too many episodes of the X-files. We'd make this simpler if we could.
 
-> You've been watching too many episodes of the X-files. We'd make
-> this simpler if we could.
->
-> Degrees of freedom is a **measure of how much precision an estimate of
-> variation has**. A general rule is that **the degrees of freedom
-> decrease when we have to estimate more parameters**.
->
-> **Before you can compute the standard deviation, you have to first
-> estimate a mean**. This causes you to lose a degree of freedom and you
-> should divide by n-1 rather than n. In more complex situations, like
-> Analysis of Variance and Multiple Linear Regression, we usually have
-> to estimate more than one parameter. Measures of variation from these
-> procedures have even smaller degrees of freedom than our standard
-> deviation formula.
->
-> Here's a cute joke I heard that is based on the concepts we just
-> talked about. Two statistics are in a bar, talking and drinking. One
-> statistic turns to the other and says "So how are you finding married
-> life?" The other statistic responds, "It's okay, but you lose a
-> degree of freedom."
+Degrees of freedom is a **measure of how much precision an estimate of variation has**. A general rule is that **the degrees of freedom decrease when we have to estimate more parameters**.
+
+**Before you can compute the standard deviation, you have to first estimate a mean**. This causes you to lose a degree of freedom and you should divide by n-1 rather than n. In more complex situations, like Analysis of Variance and Multiple Linear Regression, we usually have to estimate more than one parameter. Measures of variation from these procedures have even smaller degrees of freedom than our standard deviation formula.
+
+Here's a cute joke I heard that is based on the concepts we just talked about. Two statistics are in a bar, talking and drinking. One statistic turns to the other and says "So how are you finding married life?" The other statistic responds, "It's okay, but you lose a degree of freedom."
 
 Earlier versions are [here][sim1] and [here][sim2].
  
