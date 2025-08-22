@@ -11,6 +11,7 @@ output: html_document
 page_update: partial
 ---
 
+This page is being updated.
 
 Earlier versions are [here][sim1] and [here][sim2].
  

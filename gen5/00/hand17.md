@@ -6,11 +6,13 @@ date: 2000-12-27
 categories:
 - "*Blog post"
 - 2000
+- Incomplete page
 - Quality improvement
 output: html_document
 page_update: no
 ---
 
+This page is being updated.
 
 Earlier versions are [here][sim1] and [here][sim2].
  
