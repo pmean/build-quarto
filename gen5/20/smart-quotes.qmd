@@ -1,0 +1,357 @@
+---
+title: "Smart quotes, em dashes, and en dashes"
+author: "Steve Simon"
+source: new
+date: "2020-03-02"
+categories:
+- "*Blog post"
+- 2020
+- Data management
+- Rmarkdown code
+format:
+  html:
+    embed-resources: true
+page_update: complete
+execute:
+  echo: false
+  fig-width: 1.5
+  fig-height: 1.5
+---
+
+If you work with text data a lot, you will encounter some characters that are sort of close to what you need, but sort of not. These include the smart quotes, em dashes, and en dashes.
+
+**Warning**: Your computer screen may or may not display some of these characters correctly. I tried to develop a system using graphic equivalents of these characters for stability, but I can't guarantee that this page doesn't change from one computer system to another.
+
+I also expanded the size of the characters to try to make subtle differences more obvious.
+
+<!---More--->
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(stringr)
+```
+
+```{r}
+#| label: cplot
+
+cplot <- function(x) {
+  par(mar=rep(0,4))
+  plot(-1:1, -1:1, type="n", axes=FALSE)
+  text(0, 0, paste0(x, collapse=""), cex=5, adj=0.5)
+  segments(-1, -1, -1,   1)
+  segments(-1, -1,  1,  -1)
+  segments(-1,  1,  1,   1)
+  segments( 1, -1,  1,   1)
+}
+```
+
+## Straight quotes
+
+Programmers use a set of standard quotation marks in their work. These are called straight quotes by some and dumb quotes by others.
+
+The straight double quote is one of the standard codes that works pretty much the same on any computer system.
+
+```{r}
+#| label: double-quote
+
+cplot('"')
+```
+
+The straight single quote (') is another standard code,
+
+```{r}
+#| label: single-quote
+
+cplot("'")
+```
+
+On early computer systems, this was all you had. You might have a backwards slanting single quote (`), often called a backtick.
+
+```{r}
+#| label: backtick
+
+cplot("`")
+```
+
+This was a step backwards from Guttenberg's printing press. Actually, the regression occurred when the typewriter was invented. The limited number of keys that you could fit into a typewriter
+
+![](http://www.pmean.com/new-images/20/smart-quotes-01.png)
+
+ prevented the use of a greater variety of quote marks.
+ 
+## The charToRaw function
+ 
+Use the charToRaw function to see the underlying code for the double quote mark,
+
+`charToRaw('"')`
+
+```{r}
+#| label: raw-01
+
+cplot(charToRaw('"'))
+```
+
+the single quote mark,
+
+`charToRaw("'")`
+
+```{r}
+#| label: raw-02
+
+cplot(charToRaw("'"))
+```
+
+and the backtick.
+
+`charToRaw("`")`
+
+```{r}
+#| label: raw-03
+
+cplot(charToRaw("`"))
+```
+
+These values are hexadecimal, so 60 in hexadecimal is 6*16+0 = 96 in decimal.
+
+If you know the hexadecimal code, you can convert it to the character equivalent using the backslash x prefix. For example,
+
+`"\x22"`
+
+```{r}
+#| label: backslash-x
+
+cplot("\x22")
+```
+
+## Unicode
+
+If the 1990s, computers started to expand beyond the limited character set, using a new standard known as Unicode. These quote marks are part of a larger character set known as Unicode. In R (and in many other programming languages), you can access this larger character set with a backslash U prefix. 
+
+With Unicode, you can get characters with accents.
+
+`"\U00E9"`
+
+```{r}
+#| label: accents
+
+cplot("\U00E9")
+```
+
+cedillas,
+
+`"\U00C7"`
+
+```{r}
+#| label: cedillas
+
+cplot("\U00C7")
+```
+
+and tildes.
+
+`"\U00F1"`
+
+```{r}
+#| label: tildes
+
+cplot("\U00F1")
+```
+
+You have to have room for the sharp S in German,
+
+`"\U00DF"`
+
+```{r smart-quotes-24}
+cplot("\U00DF")
+```
+
+the thorn in Icelandic,
+
+`"\U00FE"`
+
+```{r}
+#| label: icelandic
+
+cplot("\U00FE")
+```
+
+and a whole host of new characters in Greek,
+
+`"\U03B1\U03B2\U03B3"`
+
+```{r}
+#| label: greek
+#| fig.width: 3
+
+cplot("\U03B1\U03B2\U03B3")
+```
+
+Arabic,
+
+`"\U062A\U0633\U062C\U0651\U0644"`
+
+```{r}
+#| label: arabic
+#| fig.width: 3
+
+cplot("\U062A\U0633\U062C\U0651\U0644")
+```
+
+and Chinese.
+
+`"\U4E2D\U6587"`
+
+```{r}
+#| label: chinese-1
+#| fig.width: 3
+
+cplot("\U4E2D\U6587")
+```
+
+When you add various emojis
+
+`"\U1F642\U1F622"`
+
+```{r}
+#| label: emojis
+#| fig.width: 3
+
+cplot("\U1F642\U1F622")
+```
+
+the list becomes quite long. 
+
+## Unicode punctuation
+
+Unicode also expanded punctuation. You can You can create the left double quote,
+
+`"\U201C"`
+
+```{r}
+#| label: left-double-quote
+
+cplot("\U201C")
+```
+
+the right double quote,
+
+`"\U201D"`
+
+```{r}
+#| label: right-double-quote
+
+cplot("\U201D")
+```
+
+the left single quote,
+
+`"\U2018"`
+
+```{r}
+#| label: left-single-quote
+
+cplot("\U2018")
+```
+
+and the right single quote
+
+`"\U2019"`
+
+```{r}
+#| label: right-single-quote
+
+cplot("\U2019")
+```
+
+## The UTF-8 representation of Unicode
+
+The rawToChar function provides a surprising result with many Unicode characters.
+
+`charToRaw("\U201C")`
+
+```{r}
+#| label: utf-8
+#| fig.width: 4.5
+
+cplot(charToRaw("\U201C"))
+```
+
+Surprise! 
+
+Now you might wonder why the raw code for the left double quote does not match the 201C shown above. It turns out that the internal storage of Unicode uses a system called UTF-8. UTF-8 maintains storage efficiency and backwards compatibility with earlier coding systems.
+
+This can cause a few snags. The string
+
+```{r}
+#| label: chinese-2
+#| fig.width: 3
+
+cplot("\U4E2D\U6587")
+```
+
+is only two characters, but the UTF-8 format stores it as 
+
+```{r}
+#| label: chinese-3
+#| fig.width: 7.5
+
+cplot(charToRaw("\U4E2D\U6587"))
+```
+
+which is eight bytes long. So be careful to know what you are asking for when you want the length of a string in Unicode.
+
+Don't let me scare you. The UTF-8 format is a good thing because it handles the basic English alphabet, the numbers, and most common symbols without a hitch. The UTF-8 format can easily handle older files, even those created 60 years ago. It's when you need Greek letters, unusual symbols, emojis, etc. that things get a bit tricky.
+
+## The em dash and en dash
+
+There are a couple of additional codes that I should mention. Most programmers use the minus sign in their coding
+
+```{r}
+#| label: dash
+
+cplot("-")
+```
+
+but there are two similar characters that you might see. Herer, first, is the em dash.
+
+`"\U2014"`
+
+```{r}
+#| label: em-dash
+
+cplot("\U2014")
+```
+
+It is called the em dash because it is about as wide as the letter "M" in a proportional width font.
+
+The second variant is the en dash.
+
+`"\U2013"`
+
+```{r}
+#| label: en-dash
+
+cplot("\U2013")
+```
+
+that is also longer than a minus sign, but about half the length of the em dash. It has a width that is equal to the letter "N" in most proportional width fonts.
+
+The em dash and en dash will often cause confusion because they look so much like the minus sign. Watch for them because they can sometimes cause problems in R code.
+
+## If you want to learn more
+
+There's a [nice web page][kuh1] about the historical developments of computer codes for quote marks and dashes and [another page][utf8] that talks about computer codes in general from the perspective of an R programmer.
+
+There are some other variants, such as the prime symbols, described in [this Wikipedia page][wik1].
+
+[kuh1]: https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html
+[utf8]: https://cran.r-project.org/web/packages/utf8/vignettes/utf8.html
+[wik1]: https://en.wikipedia.org/wiki/Prime_(symbol)
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/smart-quotes/
