@@ -16,7 +16,6 @@ Yeshimabeit Milner, Lucas Mason-Brown, Jamelle Watson-Daniels, Stacy Jebett Bull
 
 + A radical call for an end to big data models imposed by outsiders that harm the Black community and a commitment to make data available to that community so they can build their own models. I have often bristled at the many articles that effusively praise big data models without any consideration for the very real threats that these model can cause. The rhetoric on this site is a bit too extreme for my tastes, but their message is most definitely worth listening to.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/d4bl/

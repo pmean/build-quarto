@@ -17,7 +17,6 @@ I am suggesting a talk on secondary data analysis for a seminar series here at U
 
 "Secondary Data Analysis: Three case studies" Retrospective review of secondary data sets is a largely untapped resource for research insights. This talk will present case studies of three very different secondary data sets: a gene expression data set supplied as an appendix to a 2006 publication in Genome Research, a nationally representative hospital survey conducted by the Centers for Disease Control and Prevention, and a de-identified database of electronic health records from Kansas University Hospital. These case studies show how an interesting and easily publishable research study can be done quickly and on a small budget.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/secondary-data-talk/

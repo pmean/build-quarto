@@ -17,7 +17,7 @@ Data Description. Barbershop Music. Available in [text format](https://dasl.data
 
 + A simple tab delimited file with three continuous variables and 34 observations.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
-[sim2]: http://new.pmean.com/barbershop-music/
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/barbershop-music-data/
+ 

@@ -17,7 +17,6 @@ Lambert T. Steve Milloy misfires. Science Blogs 2004-09-03. Available in [html f
 
 + A nice discussion of the tendency of some to be hypercritical of any research study that does not fit with their view of the world.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/milloy-misfires/

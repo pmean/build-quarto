@@ -16,7 +16,6 @@ Leo Kelion. Excel: Why using Microsoft's tool caused Covid-19 results to be lost
 
 A system in England for tracking COVID-19 cases used Microsoft Excel as an intermediate format for uploading data. This was the older Excel format (xls) rather than the more recent format (xlsx). Both formats have a limit on the number of rows, but the limit for xls files (65,536) was an issue that led to data loss and the underreporting of more than 15 thousand cases for a few weeks. There are many reasons why Excel should not be used for serious data collection, management, and analysis, so it is surprising to see this happen.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/excel-error-covid/

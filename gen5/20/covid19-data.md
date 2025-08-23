@@ -17,7 +17,6 @@ Shuja, J., Alanazi, E., Alasmary, W. et al. COVID-19 open source data sets: a co
 
 + There is a wealth of data on COVID-19 that is readily available to anyone who is interested. This article describes many of these data sources, in the areas of medical images, textual data, and speech.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/covid19-data/

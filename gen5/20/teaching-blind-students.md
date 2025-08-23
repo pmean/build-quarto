@@ -15,3 +15,8 @@ A. Jonathan R. Godfrey and M. Theodor Loots. Advice From Blind Teachers on How t
 <!---More--->
 
 + Both authors of this article share their experiences both from their time as students as well as their time as teachers. The article discussed levels of blindness, legal considerations, representations of mathematical equations, how to talk with students about their blindness, and how to approach the presentation of graphic images. Dr. Godfrey also has a [nice web page on statistical software and blind users](https://r-resources.massey.ac.nz/StatSoftware/). You can find additional resources on [JooYoung Seo's blog post of 2018-04-03](https://jooyoungseo.com/post/initial-post/).
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/teaching-blind-students/
+ 

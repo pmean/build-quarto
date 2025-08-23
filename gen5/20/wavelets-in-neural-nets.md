@@ -16,3 +16,8 @@ Travis Williams, Robert Li. Wavelet Pooling for Convolutional Neurual Networks. 
 <!---More--->
 
 +  Both convolutional neural networks and the wavelet transformation are useful with image data. This paper shows how you can use the wavelet transform within a convolutional neural network.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/wavelets-in-neural-nets/
+ 

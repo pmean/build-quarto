@@ -17,7 +17,6 @@ Alex Dmitrienko, Ilya Lipkovich, and Paul Gallo. Biopharmaceutical Section Offer
 
 + The ASA Fellows are prominent statisticians nominated by their peers and reviewed by an awards committee. ASA Fellows are restricted to 1/3 of 1% of the ASA membership each year, so it is a very competitive process. This article offers practical advice on preparing an application for this award from people who have been selected, people who have nominated some of their peers, and people who have served on the awards committee.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/asa-fellow-awards/

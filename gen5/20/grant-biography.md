@@ -19,7 +19,6 @@ Co-Principal Investigator: Steve Simon, Ph.D. will serve as co-principal investi
 
 While Dr. Simon's research expertise is very broad, three areas relevant to this grant are worth noting. First, Dr. Simon regularly co-taught training classes for industrial hygienists while working at the National Institute for Occupational Safety and Health during the 1990s. This included discussion of many topics related to the statistical models proposed in the grant, such as how to analyze log-normal data and how to handle observations below the limit of detection. Second, Dr. Simon has extensive experience teaching the methods of reproducible research in his Introduction to SQL, Introduction to R, and Introduction to SAS classes. In particular, he stresses the importance of documentation, data dictionaries, and other good programming practices in these classes. Third, he is familiar with research design, including how to insure methodological rigor in research studies where randomization is not possible. He teaches a class on research methodology to graduate students in the Department of Biomedical and Health Informatics at UMKC, gives regular talks on Evidence-Based Medicine, and has written a book on the critical appraisal of research studies, Statistical Evidence in Clinical Trials, published by Oxford University Press. 
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/grant-biography/

@@ -16,7 +16,6 @@ Maria Nattestad. Making genome data come alive with circos plots. Medium 2017-09
 
 I learned a new name today at a seminar, circos plots. You've probably seen these plots. There are individual labels arranged around the outside of a circle. Then graceful arcs inside the circle connect some of these labels. The colors and widths of the arcs represent important features of the data. I have mixed feelings about these graphs, but they are used so often that you should be familiar with them. This article introduces the concept of a circos plot and talks about some of the good and bad features. In particular, the author stresses that you should not try to jam too much information into one of these plots.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/circos-plots/

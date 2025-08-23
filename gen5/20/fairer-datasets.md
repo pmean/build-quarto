@@ -18,7 +18,6 @@ Kaiyu Yang, Klint Qinami, Li Fei-Fei, Jia Deng, Olga Russakovsky. Towards Fairer
 
 + A set of image data commonly used to train deep learning models, was shown to be biased against underrepresented groups and used tags that were offensive. This article explains how to fix that problem.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/fairer-datasets/

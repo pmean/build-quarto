@@ -19,7 +19,6 @@ Indrayan A. Aleatory and epistemic uncertainties can completely derail medical r
 
 + The uncertainties of a study go beyond the traditional measures of sampling error. This article outlines additional sources of uncertainty which fall under the general category of epistemic uncertainty.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/history-of-databases/

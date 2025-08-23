@@ -24,7 +24,7 @@ always follow in any consulting interaction. Dr. Zahn also shares a story of whe
 
 Note: combined with an similar post written on 2018-01-22.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/be-more-effective/
+ 

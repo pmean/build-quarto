@@ -19,7 +19,6 @@ You can find this quote in the following paper:
 
 Whitty CJ. What makes an academic paper useful for health policy?. BMC Med. 2015;13:301. Published 2015 Dec 17. doi:10.1186/s12916-015-0544-8. Available in [html format](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4682263/) or [pdf format](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4682263/pdf/12916_2015_Article_544.pdf).
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/model-insights/

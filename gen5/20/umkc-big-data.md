@@ -46,3 +46,8 @@ There is an annual conference on Bioinformatics held in the Kansas City area (or
 Another conference in the Kansas City area goes by the name of IDAD (Innovations in Design, Analysis, and Dissemination) as well as Frontiers in Biostatistics and Data Science. It is jointly sponsored by the Kansas/Western Missouri Chapter of the American Statistical Association, the Department of Biostatistics and Data Science at the University of Kansas Medical Center. In the past, Cerner Corporation was also a sponsor of this conference and they are still providing some of the best speakers. There's a special spot in my heart for this conference because I was one of the invited speakers for the very first conference, back in 2008. The Kansas/Western Missouri chapter hosts the [official website](https://community.amstat.org/kwmchapter/annualsymposium) for this conference.
 
 This conference has been CANCELED for 2020. The link will probably be updated in early 2021 to describe that year's conference.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/umkc-big-data/
+ 

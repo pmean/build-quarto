@@ -16,7 +16,6 @@ SAS Institute. Example 39.11: Complementary Log-Log Model for Interval-censored 
 
 + In addition to the SAS code, this page provides a nice summary of the theory behind using the complementary log-log model to handle interval censored data. The formulas are clearly laid out and explained, so this page is useful even if you don't use SAS.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/interval-censored-sas/

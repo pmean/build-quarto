@@ -17,7 +17,6 @@ Paul Dauenhauer. Tweet, 2020-08-14. Available in [html format](https://twitter.c
 
 + A cute image that starts with data, information, knowledge, insight, and wisdom.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/conspiracy-theory/

@@ -143,9 +143,8 @@ Another big aspect of my work is that I am very interested in research about the
 
 I have the PowerPoint slides available, at least for the short term, at my github site. I include speaker notes in almost all my PowerPoint presentations, because I hate how limiting the bulleted structure of PowerPoint is.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
-[sim2]: http://new.pmean.com/research-interests-2020/
-
 </div>
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/research-interests-2020/

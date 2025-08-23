@@ -43,3 +43,7 @@ Second, I don't come in with a large number of pre-existing biases. I was workin
 Third, I have to ask lots of questions to understand the problem being addressed by EBM, and the process of asking questions helps the subject matter experts to more clearly define their problem. This can, at times, force the experts to rethink the rationale for their approach.
 
 Now I would be the first to admit that taking an abstract approach can have serious problems. If I take an abstract perspective, it always has to be brought back to the special environment of the problem being addressed.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/start-in-ebm/

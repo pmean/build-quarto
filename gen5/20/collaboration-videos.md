@@ -17,7 +17,6 @@ Julia Sharp, Emily Griffith, and Megan Higgs, Ann Hess. Setting the Stage: Stati
 
 + A series of ten short videos (the longest is 5 minutes, 41 seconds) with a simulated consulting experience shown. These videos offer some thoughts on how to handle difficult issues that might arise during consulting.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/collaboration-videos/

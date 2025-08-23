@@ -140,7 +140,7 @@ SPSS does not have specific color palettes for nominal data, but it does organiz
 
 Ordinal data is often well represented by a gradient of dark to light levels of a particular color, but this is a poor choice for nominal data. With nominal data, you want a good amount of separation between any two colors. You can get this by selecting evenly spaced values on a color wheel.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/poor-color-choice/
+ 

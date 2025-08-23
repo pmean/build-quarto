@@ -51,7 +51,6 @@ I am in the process of updating my website and blog and am adopting a simpler ap
 
 [sas1]: https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/lesysoptsref/n1ieb4hg6fijzon1slcsyiqu7972.htm
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/rmarkdown-to-png/

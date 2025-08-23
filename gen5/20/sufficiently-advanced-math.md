@@ -23,3 +23,8 @@ I'm guessing that the author of this quote intended to be disparaging of the con
 [pon1]: https://www.nytimes.com/2021/09/23/arts/television/review-foundation.html
 [wik1]: https://en.wikipedia.org/wiki/Psychohistory_(fictional)
 [wik2]: https://en.wikipedia.org/wiki/Chaos_theory
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/sufficiently-advanced-math/
+ 

@@ -3131,18 +3131,23 @@ vertical-align: -.125em;
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    i2 <span class="ot">&lt;-</span> <span class="fu">str_which</span>(file_text, <span class="st">&quot;^</span><span class="sc">\\</span><span class="st">[sim2</span><span class="sc">\\</span><span class="st">]: &quot;</span>)</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print(i1)</span></span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># print(i2)</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(i1)<span class="sc">==</span><span class="dv">1</span> <span class="sc">&amp;</span> <span class="fu">length</span>(i2)<span class="sc">==</span><span class="dv">1</span>) file_text <span class="ot">&lt;-</span> file_text[<span class="sc">-</span>(i1<span class="sc">:</span>i2)]</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># if (length(i1)==1 &amp; length(i2)==1) file_text &lt;- file_text[-(i1:i2)]</span></span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    extra_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Earlier versions are [here][sim1] and [here][sim2].&quot;</span>,</span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot; &quot;</span>,</span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      <span class="fu">glue</span>(<span class="st">&quot;[sim1]: {src}&quot;</span>),</span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="fu">glue</span>(<span class="st">&quot;[sim2]: http://new.pmean.com/{root_name}/&quot;</span>),</span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot; &quot;</span>)</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(file_text, extra_lines))</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    extra_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;An earlier version is [here][sim2].&quot;</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot; &quot;</span>,</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">glue</span>(<span class="st">&quot;[sim2]: http://new.pmean.com/{root_name}/&quot;</span>),</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot; &quot;</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(file_text, extra_lines))</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5/00&quot;</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5/20&quot;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>file_path <span class="sc">|&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list.files</span>() <span class="sc">|&gt;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_subset</span>(<span class="st">&quot;md$&quot;</span>) <span class="ot">-&gt;</span> file_list</span>
@@ -3153,48 +3158,82 @@ vertical-align: -.125em;
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_lines</span>(x, <span class="at">file=</span><span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>))</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;http://www.pmean.com/00/ack.html&quot;
-[1] &quot;http://www.pmean.com/00/alternate.html&quot;
-[1] &quot;http://www.pmean.com/00/causation.html&quot;                                                                                                                                                                                                                                                                                                                                                                                                                    
-[2] &quot;+ **[Association and Cause](http://www.agius.com/hew/resource/assoc.htm)**. Agius R. Accessed on 2004-01-20. Aims of this reTo enable an understanding of the important concepts in determining causes of ill-health with emphasis on epidemiology and the environmental and occupational aspects of public health. To enable a distinction to be made between associations that are likely to be causal and those which probably have other explanations.&quot;
-[1] &quot;http://www.pmean.com/00/bestfit.html&quot;
-[1] &quot;http://www.pmean.com/00/binary.html&quot;
-[1] &quot;http://www.pmean.com/00/composite.html&quot;
-[1] &quot;http://www.pmean.com/00/sigma.html&quot;
-[1] &quot;http://www.pmean.com/00/copyright.html&quot;
-[1] &quot;http://www.pmean.com/00/copyright.html&quot;
-[1] &quot;http://www.pmean.com/00/export.html&quot;
-[1] &quot;http://www.pmean.com/00/future.html&quot;
-[1] &quot;http://www.pmean.com/07/hand17.htm&quot;
-[1] &quot;http://www.pmean.com/07/hand17d.htm&quot;
-[1] &quot;http://www.pmean.com/07/hand18.htm&quot;
-[1] &quot;http://www.pmean.com/07/hand18condensed.htm&quot;
-[1] &quot;http://www.pmean.com/00/disclaimer.html&quot;
-[1] &quot;http://www.pmean.com/00/links.html&quot;
-[1] &quot;http://www.pmean.com/00/mann.html&quot;
-[1] &quot;http://www.pmean.com/00/ObsoletePages.html&quot;
-[1] &quot;http://www.pmean.com/00/simon.html&quot;
-[1] &quot;http://www.pmean.com/00/performance.html&quot;
-[1] &quot;http://www.pmean.com/00/resume.html&quot;
-[1] &quot;http://www.pmean.com/00/protocol.html&quot;
-[1] &quot;http://www.pmean.com/00/quota.html&quot;
-[1] &quot;http://www.pmean.com/00/regression.html&quot;
-[1] &quot;http://www.pmean.com/00/outliers.html&quot;
-[1] &quot;http://www.pmean.com/00/flaws.html&quot;
-[1] &quot;http://www.pmean.com/00/confid.html&quot;
-[1] &quot;http://www.pmean.com/00/sheet.html&quot;
-[1] &quot;http://www.pmean.com/00/jargon.html&quot;
-[1] &quot;http://www.pmean.com/00/strata.html&quot;
-[1] &quot;http://www.pmean.com/00/software.html&quot;
-[1] &quot;http://www.pmean.com/00/bootstrap.html&quot;
-[1] &quot;http://www.pmean.com/00/collinearity.html&quot;
-[1] &quot;http://www.pmean.com/00/fishers.html&quot;
-[1] &quot;http://www.pmean.com/00/intention.html&quot;
-[1] &quot;http://www.pmean.com/00/kaplan.html&quot;
-[1] &quot;http://www.pmean.com/00/mixture.html&quot;
-[1] &quot;http://www.pmean.com/00/nnt.html&quot;
-[1] &quot;http://www.pmean.com/00/splines.html&quot;
-[1] &quot;http://www.pmean.com/00/stein.html&quot;</code></pre>
+<pre><code>[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;
+[1] &quot;new&quot;</code></pre>
 </div>
 </div>
 </section>

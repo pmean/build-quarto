@@ -16,3 +16,7 @@ page_update: complete
 
 <!---More--->
 
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/tears-wiped-off/
+ 

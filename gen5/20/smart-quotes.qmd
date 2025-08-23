@@ -351,7 +351,6 @@ There are some other variants, such as the prime symbols, described in [this Wik
 [utf8]: https://cran.r-project.org/web/packages/utf8/vignettes/utf8.html
 [wik1]: https://en.wikipedia.org/wiki/Prime_(symbol)
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/smart-quotes/

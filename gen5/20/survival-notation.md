@@ -58,3 +58,7 @@ $h(\cdot, X_i, \beta) = e^{X_i \beta}h_0(\cdot)$
 
 where $h_0(\cdot)$ is a baseline hazard rate.
 
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/survival-notation/
+ 

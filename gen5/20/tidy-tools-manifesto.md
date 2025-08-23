@@ -15,3 +15,8 @@ Hadley Wickham. The tidy tools manifesto. 2019-11-19. Available in [html format]
 <!---More--->
 
 + Hadley Wickham outlines the general principles that underlie all of the packages published in the so-called tidyverse.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/tidy-tools-manifesto/
+ 

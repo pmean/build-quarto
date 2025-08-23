@@ -16,3 +16,8 @@ International Statistical Institute. Statisticians React to the News. Available 
 <!---More--->
 
 + This is a weekly blog started in July 2020 and written by a variety of prominent statisticians. The blog uses recent news reports as an opportunity to explore different issues in Statistics. The blog posts so far relate mostly to the COVID-19 crisis, which makes sense as that is the dominant news story in August 2020.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/statisticians-react/
+ 

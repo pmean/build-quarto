@@ -15,3 +15,8 @@ nstitute of Medicine. 2012. Envisioning a Transformed Clinical Trials Enterprise
 <!---More--->
 
 + This book outlines recent changes in clinical trial methodology.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/transformed-clinical-trials/
+ 

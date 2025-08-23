@@ -40,11 +40,16 @@ add_extra <- function(file_path, file_name) {
 	i2 <- str_which(file_text, "^\\[sim2\\]: ")
 	# print(i1)
 	# print(i2)
-	if (length(i1)==1 & length(i2)==1) file_text <- file_text[-(i1:i2)]
+	# if (length(i1)==1 & length(i2)==1) file_text <- file_text[-(i1:i2)]
 	extra_lines <- c(
 		"Earlier versions are [here][sim1] and [here][sim2].",
 		" ",
 	  glue("[sim1]: {src}"),
+		glue("[sim2]: http://new.pmean.com/{root_name}/"),
+		" ")
+	extra_lines <- c(
+	  "An earlier version is [here][sim2].",
+	  " ",
 		glue("[sim2]: http://new.pmean.com/{root_name}/"),
 		" ")
 	return(c(file_text, extra_lines))
@@ -54,7 +59,7 @@ add_extra <- function(file_path, file_name) {
 ```{r}
 #| label: loop
 
-file_path <- "../gen5/00"
+file_path <- "../gen5/20"
 file_path |>
   list.files() |>
   str_subset("md$") -> file_list

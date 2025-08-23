@@ -15,3 +15,7 @@ Torrin M. Liddell and John K. Kruschke. Analyzing ordinal data with metric model
 <!---More--->
 
 + This article offers very harsh criticism for the commonly used practice of analyzing ordinal data as if it were continuous.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/analyzing-ordinal-data/

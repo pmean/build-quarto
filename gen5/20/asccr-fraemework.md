@@ -17,7 +17,7 @@ Eric A. Vance, Heather S. Smith. The ASCCR Frame for Learning Essential Collabor
 
 + This article provides a structure that statistical consultants can use with the clients that they interact with.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
-[sim2]: http://new.pmean.com/asccr-framework/
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/asccr-fraemework/
+ 

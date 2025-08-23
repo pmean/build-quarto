@@ -16,7 +16,6 @@ Kathryn Everson. Friends! Did you know that legitimate scientists publish their 
 
 + A very basic overview of the scientific publishing process in an infographic format. The designer is making these images available under a Creative Commons Non-commercial Share Alike license.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/getting-science-published/

@@ -17,7 +17,6 @@ This project is a collaborative effort to find clinical trials used in regulator
 
 Jessica Franklin and Sebastian Schneeweiss. RCT DUPLICATE. Available in [html format](https://www.rctduplicate.org/).
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/rct-duplicate/

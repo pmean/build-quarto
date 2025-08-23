@@ -17,7 +17,6 @@ In [medicine] there is automatic downgrading of observational studies below rand
 
 Found at https://statmodeling.stat.columbia.edu/2020/05/13/is-jama-potentially-guilty-of-manslaughter/.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/greenland-observational-quote/

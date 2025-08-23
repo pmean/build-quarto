@@ -191,7 +191,7 @@ Whatever the choice of missing value codes, it should be documented in the data 
 
 Text files use a basic set of characters known as 7-bit ASCII. These files can come in a fixed width format or a delimited format. The most common delimiters are spaces, commas, and the tab character. Missing value codes can be represented by an empty entry, by an extreme value like 999 or -1, by a symbol like a single dot, or by the letters NA.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/reading-text-files/
+ 

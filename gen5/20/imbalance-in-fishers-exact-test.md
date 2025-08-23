@@ -25,7 +25,6 @@ Here's an example of a peer reviewed publication where the Fisher Exact test was
 
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6932840/
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/imbalance-in-fishers-exact-test/

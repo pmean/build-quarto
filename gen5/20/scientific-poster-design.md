@@ -16,7 +16,6 @@ Kathryn Everson. The Scientist's Guide to Poster Design. Available in [html form
 
 + A nice and fairly comprehensive list of the issues that you will face when preparing a poster for a scientific conference.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/scientific-poster-design/

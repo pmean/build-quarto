@@ -16,3 +16,8 @@ Linus Larsson. Upload data from R to an HTML page with rmarkdown and ftpUpload, 
 <!---More--->
 
 + I've wanted for the longest time to be able to automate production of web pages. This includes the upload step which is often slow and tedious. This page explains how you do this using the ftpUpload function in the RCurl package.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/upload-to-web/
+ 

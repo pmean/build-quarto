@@ -15,3 +15,8 @@ City of Albuquerque. Food inspections. Available in [html format](http://data.ca
 <!---More--->
 
 + The city of Albuquerque, New Mexico, has an open data policy and places much of its data in a publicly available repository. This data set shows information on food inspections. It has 26 variables.
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/albuquerque-food-inspections/
+ 

@@ -16,7 +16,6 @@ Rhea W. Boyd Edwin G. Lindo Lachelle D. Weeks Monica R. McLemore. On Racism: A N
 
 + Our graduate research seminar yesterday covered racial inequalities and one of the papers that emerged from that discussion was a very nice overview on how to present racial disparities appropriately. Of particular note is that we should be very careful not to attribute disparities to genetic factors when it is unwarranted, to confront explicit factors that cause racial disparities instead of alluding to abstract concepts of implicit bias, and to avoid citing mistrust from Tuskegee as an explanation since it ends up blaming the victim. 
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/publishing-racial-disparities/

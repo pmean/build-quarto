@@ -26,7 +26,7 @@ I have not had a chance to try this, but there is another closely related packag
 
 If I had to identify two areas where Bayesian analysis shines, it would be in hierarchical models and imputation of missing values. You should focus your efforts on these areas once you master the simpler models.
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
+An earlier version is [here][sim2].
+ 
 [sim2]: http://new.pmean.com/beginner-bayesian/
+ 

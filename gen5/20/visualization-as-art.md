@@ -21,3 +21,8 @@ The [New York Times article](https://www.nytimes.com/2019/05/21/t-magazine/chris
 Near the end of the article, she mentions a book, [Data Portraits: Visualizing Black America](https://www.amazon.com/dp/B07JQ2LWVB/) which shows and comments on a series of hand drawn data visualization by W.E.B. DuBois that illustrate the lives of black Americans in 1900.
 
 That page mentions another interesting book, [Dear Data](https://www.amazon.com/Dear-Data-Giorgia-Lupi/dp/1616895322/), written by Giuorgia Lupi and Stefanie Posavec, two artists who shared insights about their lives in a series of postcards filled with hand-drawn graphics. 
+
+An earlier version is [here][sim2].
+ 
+[sim2]: http://new.pmean.com/visualization-as-art/
+ 
