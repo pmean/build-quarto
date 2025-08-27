@@ -38,10 +38,11 @@ add_extra <- function(file_path, file_name) {
 	if (length(src) != 1) return()
 	i1 <- str_which(file_text, fixed("You can find an [earlier version][sim1]"))
 	i2 <- str_which(file_text, "^\\[sim2\\]: ")
-	# print(i1)
-	# print(i2)
-	# if (length(i1)==1 & length(i2)==1) file_text <- file_text[-(i1:i2)]
+	print(i1)
+	print(i2)
+	if (length(i1)==1 & length(i2)==1) file_text <- file_text[-(i1:i2)]
 	extra_lines <- c(
+	  " ",
 		"Earlier versions are [here][sim1] and [here][sim2].",
 		" ",
 	  glue("[sim1]: {src}"),
@@ -54,7 +55,7 @@ add_extra <- function(file_path, file_name) {
 ```{r}
 #| label: loop
 
-file_path <- "../gen5/18"
+file_path <- "../gen5/16"
 file_path |>
   list.files() |>
   str_subset("md$") -> file_list
