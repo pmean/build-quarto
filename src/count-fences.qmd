@@ -1,0 +1,59 @@
+---
+title: "Add old links to the bottom of files"
+format:
+  html:
+    embed-resources: true
+---
+
+This program was written by Steve Simon on 2025-08-19 and is placed in the public domain.
+
+## Preliminaries
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+```
+
+
+## function
+
+```{r}
+#| label: function
+
+count_fences <- function(file_path, file_name) {
+	read_lines(glue("{file_path}/{file_name}")) -> file_text
+	file_text |>
+		str_subset("<div|</div|:::") |>
+	  length() -> n
+	
+	if (n %%2 ==0) return(n)
+	
+	cat("\n")
+	cat(glue("{file_path}/{file_name}"))
+	return(n)
+}
+```
+
+```{r}
+#| label: loop
+
+yr_list <- c("00", as.character(16:25))
+
+n_list <- NULL
+for (yr in yr_list) {
+  file_path <- glue("../gen5/{yr}")
+  file_path |>
+    list.files() |>
+    str_subset("md$") -> file_list
+
+  for (file_name in file_list) {
+    count_fences(file_path, file_name) |> append(n_list) -> n_list
+  }
+}
+
+table(n_list)
+```

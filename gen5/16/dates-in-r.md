@@ -24,7 +24,8 @@ Cole Beck. Handling date-times in R. 2012 (August 30). Available at in [pdf form
 [beck1]: http://biostat.mc.vanderbilt.edu/wiki/pub/Main/ColeBeck/datestimes.pdf
  
 Earlier versions are [here][sim1] and [here][sim2].
- 
+
 [sim1]: http://blog.pmean.com/dates-in-r/
 [sim2]: http://new.pmean.com/dates-in-r/
  
+</div>
