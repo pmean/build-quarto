@@ -53,15 +53,7 @@ and click on the run icon. This program is not publicly available. It
 stored in MyDocuments/survival/src folder on my laptop and requires a
 data file, fruitfly.csv, found in the MyDocuments/survival/dat folder.
 ```
-
-
-
-
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/structure-for-documentation/
 [sim2]: http://new.pmean.com/structure-for-documentation/
- 

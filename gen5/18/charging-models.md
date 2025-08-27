@@ -65,9 +65,6 @@ If you charge by the project, be sure to ask for some of the money up
 front, before you start your work and more of the money as you reach one
 or more mid-project milestones.
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/charging-models/

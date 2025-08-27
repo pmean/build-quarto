@@ -23,9 +23,7 @@ This is an AMA (Ask Me Anything) session with Mike Bostock, a former graphics ed
 
 [bos1]: https://www.reddit.com/r/dataisbeautiful/comments/3k3if4/hi_im_mike_bostock_creator_of_d3js_and_a_former/
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/mike-bostock/
 [sim2]: http://new.pmean.com/mike-bostock/
- 

@@ -13,6 +13,7 @@ page_update: complete
 ---
 
 I've been teaching a variety of classes that require students to run a statistical analysis in a package like SAS or R and report the results. There is a tremendous variety of formats that students use, and I thought it would be helpful to offer some guidance. It would save me time in grading, but more importantly it would emphasize that students need to think about what they produce rather than just tossing together whatever comes out of the computer. The five requirements for homework assignments are they be
+
 -   complete
 -   concise
 -   clear
@@ -31,15 +32,10 @@ I've been teaching a variety of classes that require students to run a statistic
 
 **Interpretable**. Every piece of output that you include must be accompanied by a simple explanation. If a plot shows a trend, describe that trend. If a table shows a surprising disparity, point out that disparity. Use descriptive language rather than abstract number or letter codes.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/grading-rubric/
-[sim2]: http://blog.pmean.com
-
 [sim3]: http://new.pmean.com/structure-for-documentation/
 [dat1]: http://dataabinitio.com/?p=454%C2%A0
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/grading-rubric/
 [sim2]: http://new.pmean.com/grading-rubric/
- 

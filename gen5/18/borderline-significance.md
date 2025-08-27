@@ -29,10 +29,6 @@ One of my teachers from the University of Iowa made the interesting observation 
 
 We should also view the "borderline" p-values as a teaching opportunity. In particular, the confidence interval becomes very important in these settings. More important than the location of the p-value relative to 0.05 or 0.10 is the location of the upper confidence limit relative to the minimum clinically important difference. So if someone wants to use the phrase "trending to efficacy," that's okay but they should also talk about whether the confidence interval, though including the null value, still stretches up far enough to include values that are clinically important.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/borderline-significance/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/borderline-significance/

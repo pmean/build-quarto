@@ -74,9 +74,7 @@ If I get a chance, I want to experiment with an interactive display
 which allows you to hover over a point and see the full paragraph of
 text associated with that point.
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/christmas-carol/
 [sim2]: http://new.pmean.com/christmas-carol/
- 

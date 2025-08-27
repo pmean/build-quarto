@@ -19,12 +19,8 @@ This article starts with a nice anecdote about how you can be hurt by being dism
 
 Douglas Zahn. How to be more effective in your professional life. Amstat News, September 2009. Available in [html format][zah1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/effective-consulting/
-[sim2]: http://blog.pmean.com
-
 [zah1]: http://magazine.amstat.org/blog/2009/09/01/heartofastatcareersept09/
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/effective-consulting/

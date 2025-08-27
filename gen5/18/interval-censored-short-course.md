@@ -24,12 +24,6 @@ Available at
 
 ![](http://www.pmean.com/new-images/18/interval-censored01.png)
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/interval-censored/
-[sim2]: http://blog.pmean.com
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/interval-censored/

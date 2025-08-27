@@ -47,10 +47,6 @@ What do you do to relax away from work? Any hobbies? Anything completely apart f
 
 I run 5K and 10K races. I'm rather slow, but you're competing against yourself, so it doesn't matter if 90% of the runners finish before you. The best part are these major races like the Plaza 10K. They shut down all the big streets and you're running down the middle of Ward Parkway like you own the roadway.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/short-bio/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/short-bio/

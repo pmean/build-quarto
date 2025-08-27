@@ -24,7 +24,6 @@ https://cran.r-project.org/web/packages/survival/vignettes/adjcurve.pdf
 
 </div>
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/adjusted-survival-curves/

@@ -15,13 +15,9 @@ page_update: complete
 
 <!---More--->
 
-I have been somewhat lax in making my work accessible for people with
-disabilities. This video covers some of the basic things you can do with
-a PDF file to insure that it is can be easily read by screen reading
-software. There are similar videos for [Microsoft Word][you2] and [Microsoft Powerpoint][you3] files.
+I have been somewhat lax in making my work accessible for people with disabilities. This video covers some of the basic things you can do with a PDF file to insure that it is can be easily read by screen reading software. There are similar videos for [Microsoft Word][you2] and [Microsoft Powerpoint][you3] files.
 
-National Clearinghouse of Rehabilitation Training Materials. PDF
-Accessibility -- Part One. Publsied on Feb6, 2017. Available in [video format][you1].
+National Clearinghouse of Rehabilitation Training Materials. PDF Accessibility -- Part One. Publsied on Feb6, 2017. Available in [video format][you1].
 
 [you1]: https://www.youtube.com/watch?v=PJvDoArpZ0g
 [you2]: https://www.youtube.com/watch?v=6Enn9gJU_EE
@@ -31,4 +27,3 @@ Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/pdf-accessibility/
 [sim2]: http://new.pmean.com/pdf-accessibility/
- 

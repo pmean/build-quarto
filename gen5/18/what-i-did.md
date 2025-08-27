@@ -27,10 +27,6 @@ I helped with the planning of a big data/data science initiative at UMKC, and he
 
 **Goals**: My goals for the upcoming year are to complete work on the Introduction to SQL class, adapt the online classes MEDB 5505, 5506, and 5507 to meet ADA requirements, and submit a research grant to study Bayesian simulation of clinical trials.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/what-i-did/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/what-i-did/

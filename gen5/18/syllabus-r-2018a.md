@@ -12,7 +12,7 @@ page_update: partial
 ---
 
 I am teaching a class, Introduction to R (MEDB 5505). Here is the
-syllabus for Spring<U+00A0> Semester 2018.
+syllabus for Spring Semester 2018.
 
 <!---More--->
 
@@ -350,9 +350,7 @@ in a different course.
 This course follows the "Faculty allowing recording" option of the
 Academic Inquiry, Course Discussion and Privacy policy.
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/syllabus-r-2018a/
 [sim2]: http://new.pmean.com/syllabus-r-2018a/
- 

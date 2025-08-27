@@ -32,11 +32,7 @@ from Meta's Binder Fulla Women in Analytics. Available at
 
 ![](http://www.pmean.com/new-images/18/women-in-analytics01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/women-in-analytics/
 [sim2]: http://new.pmean.com/women-in-analytics/
- 

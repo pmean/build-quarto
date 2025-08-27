@@ -20,16 +20,8 @@ I got a question about Bayesian meta-analysis and found this nice teaching examp
 
 John K. Kruschke. Bayesian meta-analysis of two proportions in random control trials. Doing Bayesian Data Analysis blog, 2016-11-03. Available in [html format][kru1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/bayesian-meta-analysis/
-[sim2]: http://blog.pmean.com
-
 [bay1]: https://arxiv.org/abs/1711.08683
 [kru1]: http://doingbayesiandataanalysis.blogspot.com/2016/11/bayesian-meta-analysis-of-two.html
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  

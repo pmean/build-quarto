@@ -17,10 +17,7 @@ Deming. As quoted at
 
 <!---more--->
 
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/without-data/
 [sim2]: http://new.pmean.com/without-data/
- 

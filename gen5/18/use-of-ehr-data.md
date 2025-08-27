@@ -19,18 +19,9 @@ This press releases announces a "Guidance for Industry" document that the U.S. F
 
 U.S. FDA. FDA issues policy to facilitate the use of electronic health record data in clinical investigations. 2018-07-18. Available in [html format][fda1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/use-of-ehr-data/
-[sim2]: http://blog.pmean.com
-
 [fda1]: https://www.fda.gov/NewsEvents/Newsroom/FDAInBrief/ucm613793.htm
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/use-of-ehr-data/
 [sim2]: http://new.pmean.com/use-of-ehr-data/
- 

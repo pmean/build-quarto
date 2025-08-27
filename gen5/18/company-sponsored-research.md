@@ -30,11 +30,7 @@ Medical Research: GPP3. Ann Intern Med. 2015;163:461--464. doi:
 
 ![](http://www.pmean.com/new-images/18/company-sponsored-research01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/company-sponsored-research/
 [sim2]: http://new.pmean.com/company-sponsored-research/
- 

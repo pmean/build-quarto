@@ -22,18 +22,9 @@ There's a new package, which I have not tried yet, that will do a direct transla
 
 Daniel Anderson. Convert PowerPoint Slides to xaringan (remark.js) Slides. Available at the [datalorax github repository][and1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/convert-powerpoint/
-[sim2]: http://blog.pmean.com
-
 [and1]: https://github.com/datalorax/slidex
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/convert-powerpoint/
 [sim2]: http://new.pmean.com/convert-powerpoint/
- 

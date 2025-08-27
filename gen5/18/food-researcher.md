@@ -28,11 +28,7 @@ You can find an [earlier version][sim1] of this page on my [blog][sim2].
 
 [res1]: https://www.vox.com/science-and-health/2018/9/19/17879102/brian-wansink-cornell-food-brand-lab-retractions-jama
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/food-researcher/
 [sim2]: http://new.pmean.com/food-researcher/
- 

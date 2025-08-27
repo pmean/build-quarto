@@ -17,10 +17,6 @@ In many text mining or natural language processing applications, you will have p
 
 Bernhard Learns. Cleaning Words with R: Stemming, Lemmatization & Replacing with More Common Synonym. Blog post. April 27, 2017. [Link is broken]
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/stemming/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/accessible-r-markdown/

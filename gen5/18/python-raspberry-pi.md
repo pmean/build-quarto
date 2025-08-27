@@ -27,17 +27,17 @@ There are several ways to get started with Anaconda. I chose a minimalist approa
 
 I followed the [download instructions for Miniconda on the simoncos github site][min1], but there are lots of others out there. It's worthwhile to review the directions in detail.
 
-    wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
+wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-armv7l.sh
 
 The wget command retrieves the installation script found on the web. Note that we are using the Linux version of Miniconda (there are also versions of Miniconda for Windows and Mac OS X). Also notice that it's not Miniconda for just any version of Linux, but a Miniconda Linux version for the Armv7l processor.
 
 The Armv7l processor is the heart of the Raspberry Pi and it's worth [reading a bit about it][wik2]. This processor uses a RISC (Reduced Instruction Set Computer) architecture, and while this sounds more primitive than the CISC (Complex Instruction Set Computer) architecture used in many computers. But a RISC architecture is cheaper, lighter, and consumes less power.
 
-    sudo md5sum Miniconda3-latest-Linux-armv7l.sh # (optional) check md5
+sudo md5sum Miniconda3-latest-Linux-armv7l.sh # (optional) check md5
 
 The sudo command tells your system to treat anything that follows as if it were being run as a superuser (sort of like what administrator privileges are like in the Windows operating environment). The md5sum command takes the file you just downloaded, and computes an [md5 hash][wik1] as a quality check against accidental corruption during download. This is, as noted in the comment, an option and not a required command.
 
-    sudo /bin/bash Miniconda3-latest-Linux-armv7l.sh # -> change default directory to /home/pi/miniconda3
+sudo /bin/bash Miniconda3-latest-Linux-armv7l.sh # -> change default directory to /home/pi/miniconda3
 
 Note that you have to change into the proper subdirectory before running this command.
 
@@ -45,17 +45,17 @@ The bash command runs the shell script that you just downloaded (note the .sh ex
 
 The term bash (short for Bourne Again SHell, an insider homage to [Stephen Bourne][bou1]) refers to a system of commands that are common to almost all Unix systems. It also refers to a command, bash, that runs a shell script containing these commands. This particular shell script installs Miniconda. You might want to peek at the first few lines of this shell script using a command like
 
-    head -100 Miniconda3-latest-Linux-armv7l.sh
+head -100 Miniconda3-latest-Linux-armv7l.sh
 
 but don't try to list everything because the shell script includes several ugly binary files.
 
-    sudo nano /home/pi/.bashrc # -> add: export PATH="/home/pi/miniconda3/bin:$PATH"
+sudo nano /home/pi/.bashrc # -> add: export PATH="/home/pi/miniconda3/bin:$PATH"
 
 The nano command runs a small text editor called nano on a file called .bashrc. You need to add a line of code to this file. The [.bashrc file][bas1] is a hidden system file with commands that load whenever you open up a terminal window.
 
 Finally, restart your Raspberry Pi with the command
 
-    sudo reboot -h now
+sudo reboot -h now
 
 I'm not sure what the "-h now" option does. It's interesting how this process is forcing me to learn all sorts of things beyond just Python.
 

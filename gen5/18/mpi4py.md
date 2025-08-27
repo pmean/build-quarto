@@ -19,19 +19,12 @@ The [Python Software Foundation][pys1] supports [PyPA][pyp1], the Python Packagi
 
 Python Software Foundation. mpi4py 3.0.0. Available in [html format][mpi1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/mpi4py/
-[sim2]: http://blog.pmean.com
-
 [mpi1]: https://pypi.org/project/mpi4py/
 [pyp1]: https://www.pypa.io/en/latest/
 [pyp2]: https://pypi.org/
 [pys1]: https://www.python.org/psf/
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/mpi4py/
 [sim2]: http://new.pmean.com/mpi4py/
- 

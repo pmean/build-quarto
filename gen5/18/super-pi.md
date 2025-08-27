@@ -39,14 +39,10 @@ What would the Super Pi-KC users group do? I want to brainstorm about this, but 
 
 These are just some ideas for discussion, and I am open to any suggestions about these ideas or other ideas that you might have. Send me an email if you can't show up for the organizational meeting on November 10, 2018.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/super-pi/
-[sim2]: http://blog.pmean.com
-
 [bit1]: https://www.digitaltrends.com/computing/how-to-mine-bitcoin/
 [dig1]: https://en.wikipedia.org/wiki/Approximations_of_p
 [pri1]: https://arxiv.org/abs/1709.09963
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/super-pi/

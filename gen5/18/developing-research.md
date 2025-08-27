@@ -88,9 +88,7 @@ demographic subgroups. If your subgroup analysis comes up empty, that
 tells you that new health care interventions should be applied to all
 groups equally. Either way, you win.
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/developing-research/
 [sim2]: http://new.pmean.com/developing-research/
- 

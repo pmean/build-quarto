@@ -20,18 +20,10 @@ I heard about this from the [UMKC Bioinformatics twitter feed][umk1]. Google has
 
 Natasha Noy. Making it easier to discover datasets. Search blog, published September 5, 2018. Available in [html format][noy1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/dataset-search/
-[sim2]: http://blog.pmean.com
-
 [noy1]: https://www.blog.google/products/search/making-it-easier-discover-datasets/amp/
 [umk1]: https://twitter.com/umkcbiomed?lang=en
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/dataset-search/
 [sim2]: http://new.pmean.com/dataset-search/
- 

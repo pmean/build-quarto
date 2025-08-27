@@ -21,12 +21,8 @@ I have not tried this package but it was independently recommended by two separa
 
 Vladimir Agafonkin. Leaflet, an open source Javascript library for mobile-friendly interactive maps. Available in [html format][aga1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/leaflet/
-[sim2]: http://blog.pmean.com
-
 [aga1]: https://leafletjs.com/
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/leaflet/

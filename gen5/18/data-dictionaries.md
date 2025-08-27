@@ -21,9 +21,6 @@ Available at <http://dataabinitio.com/?p=454%C2%A0>.
 
 ![](http://www.pmean.com/new-images/18/data-dictionaries01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/data-dictionaries/

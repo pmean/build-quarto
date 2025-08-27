@@ -32,18 +32,13 @@ Will Knight. [Microsoft is creating an oracle for catching biased AI algorithms]
 
 Cathy O'Neil. Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy. Crown Publishers (2016). ISBN: 978-0553418811. Also check out Cathy O'Neil's blog: [Mathbabe: Exploring and Venting About Quantitative Issues][one1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/dark-side/
-[sim2]: http://blog.pmean.com
-
 [bag1]: https://www.jstor.org/stable/27801549
 [coh1]: https://www.healthaffairs.org/doi/full/10.1377/hlthaff.2014.0048
 [kni1]: https://www.technologyreview.com/s/611138/microsoft-is-creating-an-oracle-for-catching-biased-ai-algorithms
 [kua1]: https://www.nytimes.com/2017/11/21/magazine/can-ai-be-taught-to-explain-itself.html
 [one1]: https://mathbabe.org/
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/dark-side/
 [sim2]: http://new.pmean.com/dark-side-talk-2018/
- 

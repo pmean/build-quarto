@@ -20,8 +20,7 @@ abstract.
 
 Mining the Electronic Health Record, Why and How.
 
-Stephen D. Simon\
-Department of Biomedical and Health Informatics, UMKC
+Stephen D. Simon, Department of Biomedical and Health Informatics, UMKC
 
 Medical records are now stored electronically, allowing opportunities
 for research and quality improvement studies that did not exist before.
@@ -31,9 +30,7 @@ strengths and limitations of this data compared to other commonly used
 health care data sets. I will also show a simple example of creating a
 medical record phenotype and validating it against a tumor registry.
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/mining-ehr/
 [sim2]: http://new.pmean.com/mining-ehr/
- 

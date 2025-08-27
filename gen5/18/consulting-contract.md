@@ -21,32 +21,13 @@ I have never used a contract, unless the client draws one up. If you
 want a contract, talk to a lawyer, and make sure it addresses the
 following issues.
 
-
-
-
-
-\- your consulting rate and payment schedule
-
-\- the scope of work
-
-\- who maintains copyright and/or patient rights over any material
-produced
-
-\- how liability is handled if a third party sues both you and your
-client
-
-\- how disputes over contract details should be handled
-
-\- conditions under which either party can sever the contract
-
-\- what terms of the contract remain in force after severance
-
-
-
-
-
-
-
+- your consulting rate and payment schedule
+- the scope of work
+- who maintains copyright and/or patient rights over any material produced
+- how liability is handled if a third party sues both you and your client
+- how disputes over contract details should be handled
+- conditions under which either party can sever the contract
+- what terms of the contract remain in force after severance
 
 Earlier versions are [here][sim1] and [here][sim2].
  

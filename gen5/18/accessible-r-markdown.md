@@ -21,14 +21,10 @@ A class covering on-line teaching has reminded me about accessibility issues. Th
 A. Jonathan R. Godfrey. Accessible R Markdown Documents. Available
 in [html format][god1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/accessible-r-markdown/
-[sim2]: http://blog.pmean.com
-
 [god1]: https://r-resources.massey.ac.nz/rmarkdown/
 
 </div>
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/accessible-r-markdown/

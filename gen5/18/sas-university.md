@@ -53,11 +53,6 @@ Third, SAS Studio provides a nice menu driven approach for generating SAS code. 
 
 I'll try to post some simple SAS University examples on my blog as I learn and try new things.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/sas-university/
-[sim2]: http://blog.pmean.com
-
 [sas1]: https://www.sas.com/en_us/software/university-edition.html
 [sas2]: https://communities.sas.com/t5/SAS-Analytics-U/bd-p/sas_analytics_u
 [sas3]: https://www.sas.com/store/books/categories/getting-started/an-introduction-to-sas-university-edition/prodBK_68380_en.html
@@ -65,8 +60,8 @@ You can find an [earlier version][sim1] of this page on my [blog][sim2].
 [sas5]: http://jupyter.org/
 [sas6]: http://homepage.divms.uiowa.edu/~rlenth/SASweave/
 [sas7]: https://en.wikipedia.org/wiki/Literate_programming
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/sas-university/
 [sim2]: http://new.pmean.com/sas-university/
- 

@@ -20,11 +20,6 @@ When you are working with text mining, you might want to reduce the dimensionali
 
 Dmitriy Selivanov. GloVe Word Embeddings. Available in [html format][sel1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/word-vector-embeddings/
-[sim2]: http://blog.pmean.com
-
 [sel1]: https://cran.r-project.org/web/packages/text2vec/vignettes/glove.html
 Earlier versions are [here][sim1] and [here][sim2].
  

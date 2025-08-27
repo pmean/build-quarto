@@ -19,18 +19,9 @@ The University of California (UC) is in the midst of a difficult negotiation wit
 
 Michael Hiltzik. In UC's battle with the world's largest scientific publisher, the future of information is at stake. The Los Angeles Times, December 7, 2018. Available in [html format][hil1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/elsevier-vs-uc/
-[sim2]: http://blog.pmean.com
-
 [hil1]: https://www.latimes.com/business/hiltzik/la-fi-hiltzik-uc-elsevier-20181207-story.html
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/elsevier-vs-uc/
 [sim2]: http://new.pmean.com/elsevier-vs-uc/
- 

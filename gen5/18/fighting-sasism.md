@@ -34,10 +34,6 @@ I've switched from SAS to R, but I've come to notice the same sort of bias among
 
 When I teach these days, I try to do it from a software agnostic perspective. This is not easy, but what you do is try to show examples of the models you are teaching using more than one statistical package. Because no one package, not SAS, not R, not anything, has a monopoly on all the good statistical tools.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/fighting-sasism/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/fighting-sasism/

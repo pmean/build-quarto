@@ -19,12 +19,8 @@ This is a nice overview of the various dimensions of security that you need to c
 
 Tanvi Desai, Felix Ritchie, Richard Welpton. The Five Safes: Designing Data Access for Research. Economic Working Paper Series 1601, University of the West of England. Available in [pdf format][des1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/five-safes/
-[sim2]: http://blog.pmean.com
-
 [des1]: http://www2.uwe.ac.uk/faculties/BBS/Documents/1601.pdf
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/five-safes/

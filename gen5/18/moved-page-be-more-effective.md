@@ -13,10 +13,6 @@ page_update: no
 
 This post has been combined with a similar post written on 2020-08-06.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/effective-consulting/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/be-more-effective/

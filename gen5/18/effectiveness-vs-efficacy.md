@@ -26,11 +26,7 @@ at
 
 ![](http://www.pmean.com/new-images/18/effectiveness-vs-efficacy01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/effectiveness-vs-efficacy/
 [sim2]: http://new.pmean.com/effectiveness-vs-efficacy/
- 

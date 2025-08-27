@@ -62,6 +62,7 @@ This causes all sorts of problems.
 
 So here is the SAS code that I wrote to read in the file.
 
+```{}
     * housing_import.sas;
     * written by Steve Simon;
     * February 26, 2018;
@@ -81,13 +82,16 @@ So here is the SAS code that I wrote to read in the file.
         data=MEDB5507.housing_v01 (obs=10);
       title "Printout of housing_v01";
     run;
+```
 
 When you run the code, you get a strange warning.
 
+```{}
     Number of names found is less than number of variables found.
     Name PRICE  SQFT  AGE FEATS   NE    CUST     COR         TAX truncated to
     PRICE__SQFT__AGE_FEATS___NE____C.
     Problems were detected with provided names.  See LOG.
+```
 
 There are two warnings actually. The first is that the number of names
 at the top of the file does not match the number of variables found in
@@ -111,8 +115,10 @@ change from a tab delimiter to a space delimiter. When you do that, the
 variable names come in just fine, but the data is mucked up. You see
 this with a warning.
 
+```{}
     Number of names found is greater than number of variables found.
     Number of names found is greater than number of variables found.
+```
 
 The results from PROC PRINT show that you have just jumped from the
 frying pan into the fire.
@@ -121,9 +127,11 @@ frying pan into the fire.
 good](http://www.pmean.com/18/images/housing_import04.png)
 
 The first way that does work is to patch up the file after the fact with
-the RENAME command.\
+the RENAME command.
+
 Here's the SAS code to do this.
 
+```{}
     data MEDB5507.housing_v01a;
       set MEDB5507.housing_v01 (
         firstobs=2
@@ -143,6 +151,7 @@ Here's the SAS code to do this.
         data=MEDB5507.housing_v01a (obs=18);
       title "Printout of housing_v01a";
     run;
+```
 
 ![Screenshot of the output from PROC PRINT, much better this
 time](http://www.pmean.com/18/images/housing_import05.png)
@@ -153,6 +162,7 @@ rather than a dot, but that's something I showed in an earlier file.
 You can also skip the first two lines of the file and specify the
 variable names with an INPUT statement.
 
+```{}
     data MEDB5507.housing_v03 replace;
       infile housing delimiter='09'x firstobs=2 ;
       input
@@ -170,6 +180,7 @@ variable names with an INPUT statement.
         data=MEDB5507.housing_v03 (obs=18);
       title "Printout of housing_v03";
     run;
+```
 
 A third way is to retype the first line of the file using the tab key
 rather than the space bar between variable names.
@@ -179,6 +190,7 @@ re-typed](http://www.pmean.com/18/images/housing_import06.png)
 
 Here's the SAS code for reading in the recoded file.
 
+```{}
     proc import
         datafile=housing_recoded
         dbms=dlm
@@ -190,6 +202,7 @@ Here's the SAS code for reading in the recoded file.
         data=MEDB5507.housing_v04 (obs=18);
       title "Printout of housing_v01";
     run;
+```
 
 AS you can see, there is more than one way to skin a cat.
 
@@ -198,4 +211,3 @@ Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/mixed-up-names/
 [sim2]: http://new.pmean.com/mixed-up-names/
- 

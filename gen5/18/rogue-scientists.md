@@ -19,18 +19,9 @@ This is a nice review inspired by recent controversial work of a Chinese scienti
 
 Maggie Koerth-Baker. FiveThirtyEight blog, December 10, 2018. Available in [html format][koe1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/rogue-scientists/
-[sim2]: http://blog.pmean.com
-
 [koe1]: https://fivethirtyeight.com/features/we-have-ways-to-stop-rogue-scientists-they-dont-always-work/
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/rogue-scientists/
 [sim2]: http://new.pmean.com/rogue-scientists/
- 

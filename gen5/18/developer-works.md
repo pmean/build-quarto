@@ -15,24 +15,16 @@ page_update: partial
 I got this recommendation from a friend. IBM has a large number of free
 resources explaining things like cloud computing and blockchain. I'm
 most interested in their section on analytics. There's a nice
-introduction
-- for example
-- to natural language processing.
+introduction, for example, to natural language processing.
 
 <!---More--->
 
-IBM. Welcome to developerWorks. Find tutorials
-- tools
-- and communities
+IBM. Welcome to developerWorks. Find tutorials, tools, and communities
 for developers. Available at <https://www.ibm.com/developerworks/>.
 
 ![](http://www.pmean.com/new-images/18/developer-works01.png)
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/developer-works/
 [sim2]: http://new.pmean.com/developer-works/
- 

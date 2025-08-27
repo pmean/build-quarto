@@ -63,10 +63,6 @@ attr(,"class")
 There are a variety of ways that you can reformat these values, and I'll
 try to summarize them soon.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/what-day-is-it/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/what-day-is-it/

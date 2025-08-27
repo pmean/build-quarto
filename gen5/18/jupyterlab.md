@@ -19,14 +19,9 @@ Jupyter is an integrated development environment that uses a notebook interface.
 
 The JupyterLab Team and Project Jupyter. JupyterLab is Ready for Users. Jupyter blog, February 20, 2018. Available in [html format][jup1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
 [jup1]: https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906
 
-[sim1]: http://blog.pmean.com/jupyterlab/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/jupyterlab/
 [sim2]: http://new.pmean.com/jupyterlab/
- 

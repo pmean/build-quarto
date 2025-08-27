@@ -20,6 +20,7 @@ You have several ways of installing the Raspbian operating system for the Raspbe
 The Raspberry Pi Foundatiton. NOOBS -- Raspberry Pi documentation. Available in [html format][ras1].
 
 [ras1]: https://www.raspberrypi.org/documentation/installation/noobs.md
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/noobs-installation/

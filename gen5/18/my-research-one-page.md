@@ -24,7 +24,7 @@ cutting-edge methodology and computational tools for solving
 high-dimensional problem. I also will describe my efforts to help others
 be successful in their research endeavors.
 
-\#\# Mining the electronic health record
+## Mining the electronic health record
 
 In January 2016, I was offered the opportunity to work on a research
 grant funded by the Patient Centered Outcomes Research Institute
@@ -59,7 +59,7 @@ functions interfacing SQL databases and R. This library would query meta
 data descriptors as well, expanding the types of analyses available to
 the end user.
 
-\#\# Helping others with research
+## Helping others with research
 
 I am a great believer in the Harry Truman quote "Anything is possible if
 you don't care who gets the credit." A major portion of my career has
@@ -90,9 +90,7 @@ them a sense of self-confidence that they are working on an important
 problem and that they have a solid and defensible plan for solving that
 problem.
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/my-research-one-page/
 [sim2]: http://new.pmean.com/my-research-one-page/
- 

@@ -24,16 +24,7 @@ better work and do it more efficiently.
 Charlie Custer. 9 Reasons Excel Users Should Consider Learning Programming. Dataquest blog, December 27, 2018. Available in [html
 format][cus1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/excel-users/
-[sim2]: http://blog.pmean.com
-
 [cus1]: https://www.dataquest.io/blog/9-reasons-excel-users-should-consider-learning-programming/
-
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  

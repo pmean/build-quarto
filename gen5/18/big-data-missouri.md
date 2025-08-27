@@ -36,9 +36,7 @@ emphasizes "a collaborative approach to disease treatment and prevention
 that accounts for individual variability in genes, environment and
 lifestyle."
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/big-data-missouri/
 [sim2]: http://new.pmean.com/big-data-missouri/
- 

@@ -24,11 +24,7 @@ Informatics, @nd edition. 2006. Springer: New York NY. ISBN 1441920722.
 
 ![](http://www.pmean.com/new-images/18/evaluation-methods01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/evaluation-methods/
 [sim2]: http://new.pmean.com/evaluation-methods/
- 

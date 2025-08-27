@@ -25,7 +25,7 @@ clinical trials and with mining information from the electronic health
 record. I also need to describe my efforts to help others be successful
 in their research endeavors.
 
-\#\# Patient accrual
+## Patient accrual
 
 In 2006, I gave a journal club presentation on how to use control charts
 to monitor the process of patient accrual in a clinical trial. Too many
@@ -126,7 +126,7 @@ many other IRBs to ask to replicate this work, but none have shown any
 interest. But I plan to continue to ask anyone who works on an IRB to
 help me.
 
-\#\# Mining the electronic health record
+## Mining the electronic health record
 
 In January 2016, I was offered the opportunity to work on a research
 grant funded by the Patient Centered Outcomes Research Institute.<U+FFFD> The
@@ -194,7 +194,7 @@ functions interfacing SQL databases and R. This library would pull
 appropriate meta data descriptors as well, expanding the types of
 analyses available to the end user.
 
-\#\# Helping others with research
+## Helping others with research
 
 I am a great believer in the Harry Truman quote "Anything is possible if
 you don't care who gets the credit." A major portion of my career has
@@ -275,9 +275,7 @@ optimal research design by ethical constraints and our job is to help
 find an alternative design that meets the needs of the researcher while
 still protecting the rights of the research volunteers.
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/my-research/
 [sim2]: http://new.pmean.com/my-research/
- 

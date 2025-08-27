@@ -19,11 +19,6 @@ Anaconda provides an easy way to manage the installation of both R and Python. T
 
 Chris Conlan. Installing R and Python in Anaconda for Biologists. Blog entry, June 24, 2017. Available in [html format][con1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/anaconda/
-[sim2]: http://blog.pmean.com
-
 [con1]: https://chrisconlan.com/installing-r-python-anaconda-biologists/
 Earlier versions are [here][sim1] and [here][sim2].
  

@@ -29,6 +29,7 @@ I found a really simple example of saving a SAS graph as a file, and I
 adapted the code. It takes advantage of the very useful built-in data
 sets. Thank you SAS! Here's' the code.
 
+```{}
     * graph_export.sas;
     * written by Steve Simon;
     * March 23, 2018;
@@ -42,13 +43,16 @@ sets. Thank you SAS! Here's' the code.
     run;
     quit;
     filename grafout clear;
+```
 
 It didn't work and it took me forever to figure out why. Let me show you
 what the log window looks like when you run this on my system.
 
+```{}
     NOTE: Writing HTML Body file: sashtml.htm
     NOTE: 8894 bytes written to C:\Users\simons\AppData\Local\Temp\SAS Temporary
     <U+FFFD><U+FFFD><U+FFFD><U+FFFD><U+FFFD> Files\_TD9268_KC-MED-917PFJ1_\gchart.gif.
+```
 
 It appears that SAS is creating an html file, which is okay by me, but
 it is also creating a graphics file, gchart.gif, buried deep in the
@@ -81,14 +85,14 @@ interesting options that I want to experiment with when I have time.
 Anyway, with the CREATE LISTING option checked, you get the following
 log.
 
+```{}
     NOTE: 8797 bytes written to c:\temp\temp.gif.
+```
 
 And if you navigate to the temp folder, you'll see the file you want.
 Hooray!
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/exporting-sas/
 [sim2]: http://new.pmean.com/exporting-sas/
- 

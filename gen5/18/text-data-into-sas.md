@@ -39,6 +39,7 @@ window](http://www.pmean.com/18/images/backpain01/02-sas-screen-blank-editor-win
 Here, I've ditched the useless left panel and maximized the EDITOR
 window. Load the SAS program backpain\_import.sas.
 
+```{}
     libname MEDB5507
       "c:/Users/simons/Dropbox/u/DBHI/classes/2018a_sas/dat";
     filename backpain
@@ -79,25 +80,32 @@ window. Load the SAS program backpain\_import.sas.
       var Subject Group Years;
       title "Printout of first import attempt";
     run;
+```
 
 Let's take this apart, line by line.
 
+```{}
     libname MEDB5507
       "c:/Users/simons/Dropbox/u/DBHI/classes/2018a_sas/dat";
+```
 
 The LIBNAME statement takes the long and ugly path where I store my
-files and assigns it the nickname "MEDB5507<U+2033>. Your LIBNAME statement, of
+files and assigns it the nickname "MEDB5507". Your LIBNAME statement, of
 course, will look different, and you may prefer a different nickname.
 
+```{}
     filename backpain
       "c:/Users/simons/Dropbox/u/DBHI/classes/2018a_sas/dat/backpain.txt";
+```
 
 The FILENAME statement takes the full path and filename for the location
 of the file we want to use repeatedly and assigns it the nickname
 backpain.
 
+```{}
     data MEDB5507.backpain_v01 replace;
       infile backpain delimiter='09'x firstobs=2 ;
+```
 
 The DATA statement has a two part name. The part before the dot tells
 SAS to use the folder associated with the nickname MEDB5507. The part
@@ -106,12 +114,14 @@ after the dot gives the name of the file.
 The REPLACE option tells SAS that if it encounters an existing file with
 the same name, it's okay to overwrite it with the new file.
 
+```{}
       infile backpain delimiter='09'x firstobs=2 ;
+```
 
 The INFILE statement tells SAS where to find the input. Using the
 backpain nickname that we created earlier with the FILENAME statement
 shortens our code a bit, You could have used LIBNAME
-"C:/YOUR\_VERY\_LONG\_PATH/FILENAME.TXT" and that would have worked
+"C:/YOUR_VERY_LONG_PATH/FILENAME.TXT" and that would have worked
 also.
 
 The DELIMITER option tells SAS that this is a tab delimited file. 09 is
@@ -135,6 +145,7 @@ These are missing value codes using the R convention, and not the SAS
 convention. We'll find out in just a minute that these NA values are the
 cause of all our indigestion.
 
+```{}
       input
         Subject
         Group $
@@ -163,6 +174,7 @@ cause of all our indigestion.
         NL_ITBTFL
         NL_Hamstring
     ;
+```
 
 Back to the code, when you are reading in data using this approach, you
 have to list the variable names. This is a big difference between this
@@ -176,11 +188,13 @@ Years is a numeric variable, or at least that's what SAS thinks. We'll
 come back to this later and warn SAS that Years is not numeric to get
 quite different results.
 
+```{}
     proc print
         data=MEDB5507.backpain_v01;
       var Subject Group Years;
       title "Printout of first import attempt";
     run;
+```
 
 I always like to print all of my data after reading it in, but to make
 things easier, I will only print three of the variables: Subject, Group,
@@ -196,6 +210,7 @@ window.
 
 Page down to see the Invalid data note.
 
+```{}
      NOTE: Invalid data for Years in line 24 31-32.
      RULE:     ----+----1----+----2----+----3----+----4----+----5----+----6----+----7----+----8----+----9----+----0                      
 
@@ -205,6 +220,7 @@ Page down to see the Invalid data note.
      Subject=23 Group=Sedentar Match=5 Age=31 Height=173 Weight=75 Event=None Years=. WeekDist=0 Dominant=Right DF_Iliopsoas=-7
      DF_Rectus=-8 DF_ITBTFL=-8 DF_Hamstring=56 DL_Iliopsoas=30 DL_Rectus=26 DL_ITBTFL=18 DL_Hamstring=98 NF_Iliopsoas=-6 NF_Rectus=-4
      NF_ITBTFL=-8 NF_Hamstring=56 NL_Iliopsoas=28 NL_Rectus=32 NL_ITBTFL=24 NL_Hamstring=104 _ERROR_=1 _N_=23
+```
 
 It occurs on the 24th line of data, the first line with the R code of NA
 for missing. There are several more of these.
@@ -225,6 +241,7 @@ code for a missing value.
 You can avoid all those irritating "Invalid data" messages fairly
 easily.
 
+```{}
     data MEDB5507.backpain_v02 replace;
       infile backpain delimiter='09'x firstobs=2 ;
       input
@@ -262,19 +279,26 @@ easily.
         data=MEDB5507.backpain_v02;
       var Subject Group Years Years_num;
       title "Printout of second import";
+```
 
 Notice the very small change in the input statement.
 
+```{}
         Years $
+```
 
 Since Years is a mixture of numbers and NA codes, you can read it in as
 alphanumeric. That will avoid the Invalid data messages.
 
+```{}
       if (Years="NA") then Years=".";
+```
 
 Then convert the missing code in R (NA) to the missing code in SAS (.).
 
+```{}
       Years_num=input(Years, 3.0);
+```
 
 Then use the input function to convert to numeric. The second argument,
 3.0, means up to 3 digits with no decimal places.
@@ -282,6 +306,7 @@ Then use the input function to convert to numeric. The second argument,
 Now let's see what happens when you try to read in the data set using
 PROC IMPORT.
 
+```{}
     proc import
      datafile=backpain
      dbms=dlm
@@ -294,6 +319,7 @@ PROC IMPORT.
      var Subject Group Years;
      title "Printout of third import";
     run;
+```
 
 This is the code. Notice how short it is, mostly because you don't have
 to tell SAS what the names of the variables are. SAS figures the names
@@ -302,7 +328,7 @@ option). You also don't have to tell SAS which variables are numeric and
 which are alphanumeric.
 
 The LOG window, however, looks quite a bit different than the code.
-
+```{}
     148 /**********************************************************************
     149 * PRODUCT: SAS
     150 * VERSION: 9.4
@@ -397,6 +423,7 @@ The LOG window, however, looks quite a bit different than the code.
     238 ;
     239 if _ERROR_ then call symputx('_EFIERR_',1); /* set ERROR detection macro variable */
     240 run;
+```
 
 This is the code that PROC IMPORT generated.
 
@@ -404,4 +431,3 @@ Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/text-data-into-sas/
 [sim2]: http://new.pmean.com/text-data-into-sas/
- 

@@ -22,12 +22,7 @@ It is being sponsored by the Statistical Consulting Section of the American Stat
 
 I am working on the slides for this talk and will post them here when I have completed them.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/business-essentials-2/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/business-essentials-2/
 [sim2]: http://new.pmean.com/business-talk-2018/
- 

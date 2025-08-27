@@ -23,11 +23,7 @@ Available at <https://www.kaggle.com/c/dogs-vs-cats/data>.
 
 ![](http://www.pmean.com/new-images/18/dogs-vs-cats01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/dogs-vs-cats/
 [sim2]: http://new.pmean.com/dogs-vs-cats/
- 

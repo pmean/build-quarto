@@ -11,27 +11,15 @@ output: html_document
 page_update: partial
 ---
 
-There has been a lot written about data management problems with using
-spreadsheets, and there is a group the European Spreadsheet Risks
-Interest Group that has documented the problem carefully and thoroughly.
-This page on their website lists the big, big, big problems that have
-occurred because of spreadsheet mistakes. Any program is capable of
-producing mistakes, of course, but spreadsheets are particularly prone
-to errors for a variety of reasons that this group
-documents.
+There has been a lot written about data management problems with using spreadsheets, and there is a group the European Spreadsheet Risks Interest Group that has documented the problem carefully and thoroughly. This page on their website lists the big, big, big problems that have occurred because of spreadsheet mistakes. Any program is capable of producing mistakes, of course, but spreadsheets are particularly prone to errors for a variety of reasons that this group documents.
 
 <!---More--->
 
-European Spreadsheet Risks Interest Group. EuSpRIG Horror Stories.
-Available at <http://www.eusprig.org/horror-stories.htm>.
+European Spreadsheet Risks Interest Group. EuSpRIG Horror Stories. Available at <http://www.eusprig.org/horror-stories.htm>.
 
 ![](http://www.pmean.com/new-images/18/spreasheet-horror01.png)
-
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/spreasheet-horror/
 [sim2]: http://new.pmean.com/spreasheet-horror/
- 

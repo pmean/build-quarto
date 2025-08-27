@@ -25,4 +25,3 @@ Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/r-within-spss/
 [sim2]: http://new.pmean.com/r-within-spss/
- 

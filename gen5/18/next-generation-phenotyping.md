@@ -19,15 +19,10 @@ This article was recommended at a talk I attended. The thesis is that we need to
 
 George Hripcsak and David J Albers. Next-generation phenotyping of electronic health records. J Am Med Inform Assoc. 2013 Jan-Feb; 20(1): 117--121. Available in [html format][hri1] or [pdf format][hri2].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/next-generation-phenotyping/
-[sim2]: http://blog.pmean.com
-
 [hri1]: https://academic.oup.com/jamia/article/20/1/117/2909152
 [hri2]: https://academic.oup.com/jamia/article-pdf/20/1/117/9516924/20-1-117.pdf
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/next-generation-phenotyping/
 [sim2]: http://new.pmean.com/next-generation-phenotyping/
- 

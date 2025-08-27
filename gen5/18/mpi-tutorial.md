@@ -19,14 +19,9 @@ MPI (Message Passing Interface) is the grandfather of all parallel programming s
 
 Wes Kendall. MPI Tutorial Introduction. Available in [html format][ken1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/mpi-tutorial/
-[sim2]: http://blog.pmean.com
-
 [ken1]: http://mpitutorial.com/tutorials/mpi-introduction/
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/mpi-tutorial/
 [sim2]: http://new.pmean.com/mpi-tutorial/
- 

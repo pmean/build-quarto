@@ -25,12 +25,7 @@ There's also a consideration of the method being used. If you rely on a simplist
 
 Finally, you need to ask yourself why the data is missing, and this often requires speculation beyond the data set itself. Certain types of missing value mechanisms, like missing completely at random, are easily addressed, even if you have a large fraction of missing data. But watch out for informative missingness or data missing not at random . These are setting where the fact that a value is missing is directly associated with the value that you don't know. If you are measuring something sensitive, and you know that people are more likely to skip answering if they have this sensitive condition, then even a small fraction of missing data can cause serious problems.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/how-much-missingness/
-[sim2]: http://blog.pmean.com
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/how-much-missingness/
 [sim2]: http://new.pmean.com/how-much-missingness/
- 

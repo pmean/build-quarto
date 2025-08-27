@@ -19,14 +19,9 @@ I have not run too many Structural Equation Modeling (SEM), so I can't comment t
 
 Yves Rousseel. lavaan tutorial. Available in [html format][rou1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/lavaan/
-[sim2]: http://blog.pmean.com
-
 [rou1]: http://lavaan.ugent.be/tutorial/index.html
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/lavaan/
 [sim2]: http://new.pmean.com/lavaan/
- 

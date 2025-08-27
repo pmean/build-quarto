@@ -1,6 +1,6 @@
 ---
 title: "Cleaning Words with R: Stemming, Lemmatization & Replacing with More Common Synonym"
-source: "http://blog.pmean.com/stemming/"
+source: "(deleted)"
 author: Steve Simon
 date: "2018-02-20"
 categories:
@@ -22,13 +22,9 @@ Bernhard Learns. Cleaning Words with R: Stemming, Lemmatization & Replacing with
 
 [lea1]: http://www.bernhardlearns.com/2017/04/cleaning-words-with-r-stemming.html
 
-An earlier version of this page appeared on my [blog][sim2], but had to be deleted for technical reasons.
-
-[sim2]: http://blog.pmean.com
-
 </div>
-Earlier versions are [here][sim1] and [here][sim2].
+
+An earlier version is available [here][sim2].
  
-[sim1]: http://blog.pmean.com/stemming/
 [sim2]: http://new.pmean.com/stemming/
  

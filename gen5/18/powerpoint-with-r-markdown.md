@@ -20,12 +20,8 @@ This is a 42 minute presentation that covers the basics of using R Markdown to p
 
 Nathan Stephens. Make PowerPoint Presentations with R Markdown. RStudio Webinars, 2018-11-30. Available in [html format][ste1].
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/powerpoint-with-r-markdown/
-[sim2]: http://blog.pmean.com
-
 [ste1]: https://support.rstudio.com/hc/en-us/articles/360004672913-Rendering-PowerPoint-Presentations-with-RStudio
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/powerpoint-with-r-markdown/

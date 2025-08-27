@@ -20,6 +20,7 @@ I am working on creating a cluster computer using three Raspberry Pis. Once I ge
 Pimoroni. Cluster Hat 2.0. Available in [html format][pim1].
 
 [pim1]: https://shop.pimoroni.com/products/cluster-hat
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/cluster-hat/

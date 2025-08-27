@@ -25,8 +25,8 @@ You can find an [earlier version][sim1] of this page on my [blog][sim2].
 [sim2]: http://blog.pmean.com
 
 [nmd1]: https://ibis.health.state.nm.us/resource/SMR_ISR.html
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/smr-example/
 [sim2]: http://new.pmean.com/smr-example/
- 

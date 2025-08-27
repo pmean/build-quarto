@@ -28,6 +28,7 @@ I'm sorry but I can't disagree more with Dr. Carroll's commentary. The thesis th
 [sim3]: http://new.pmean.com/intellectual-coi/
 [car1]: https://www.nytimes.com/2018/12/31/upshot/congratulations-on-the-promotion-but-did-science-get-a-demotion.html
 [cor1]: https://www.science.org/content/article/trump-s-epa-has-blocked-agency-grantees-serving-science-advisory-panels-here-what-it
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/nonfinancial-conflicts/

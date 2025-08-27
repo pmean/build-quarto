@@ -59,9 +59,7 @@ HERON](http://www.kumc.edu/miea/medical-informatics/heron/heron-manual.html).
 This repository talks about applications with direct access to the data
 rather than access through i2b2.
 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/heron-i2b2-analytics/
 [sim2]: http://new.pmean.com/heron-i2b2-analytics/
- 

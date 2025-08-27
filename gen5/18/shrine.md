@@ -11,13 +11,7 @@ output: html_document
 page_update: partial
 ---
 
-I'm ginvg a talk about i2b2 (among other things) and when browsing
-through their website, I cam across an interesting project, SHRINE. This
-is an acronym for Shared health Research Informatics NEtwork., and
-represents a way of allowing users to review information across multiple
-i2b2 sites. It requires the individual institutions who have i2b2
-systems to cooperate with one another, which is not always easy. But
-this has tremendous potential.
+I'm ginvg a talk about i2b2 (among other things) and when browsing through their website, I cam across an interesting project, SHRINE. This is an acronym for Shared health Research Informatics NEtwork., and represents a way of allowing users to review information across multiple i2b2 sites. It requires the individual institutions who have i2b2 systems to cooperate with one another, which is not always easy. But this has tremendous potential.
 
 <!---More--->
 
@@ -26,11 +20,7 @@ Data Sharing Network (SHRINE). Available at
 
 ![](http://www.pmean.com/new-images/18/recommended-data-sharing-network-shrine01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/recommended-data-sharing-network-shrine/
 [sim2]: http://new.pmean.com/shrine/
- 

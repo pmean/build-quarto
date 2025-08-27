@@ -27,11 +27,7 @@ Care, Fix the Electronic Health Record. Harvard Business Review, March
 
 ![](http://www.pmean.com/new-images/18/fix-the-ehr01.png)
 
-
-
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/fix-the-ehr/
 [sim2]: http://new.pmean.com/fix-the-ehr/
- 
