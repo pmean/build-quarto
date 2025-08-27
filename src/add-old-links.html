@@ -3138,16 +3138,11 @@ vertical-align: -.125em;
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      <span class="fu">glue</span>(<span class="st">&quot;[sim1]: {src}&quot;</span>),</span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="fu">glue</span>(<span class="st">&quot;[sim2]: http://new.pmean.com/{root_name}/&quot;</span>),</span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot; &quot;</span>)</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    extra_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;An earlier version is [here][sim2].&quot;</span>,</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot; &quot;</span>,</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>        <span class="fu">glue</span>(<span class="st">&quot;[sim2]: http://new.pmean.com/{root_name}/&quot;</span>),</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot; &quot;</span>)</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(file_text, extra_lines))</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(file_text, extra_lines))</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5/20&quot;</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5/18&quot;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>file_path <span class="sc">|&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list.files</span>() <span class="sc">|&gt;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_subset</span>(<span class="st">&quot;md$&quot;</span>) <span class="ot">-&gt;</span> file_list</span>
@@ -3158,82 +3153,128 @@ vertical-align: -.125em;
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_lines</span>(x, <span class="at">file=</span><span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>))</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;
-[1] &quot;new&quot;</code></pre>
+<pre><code>[1] &quot;http://blog.pmean.com/accessible-r-markdown/&quot;
+[1] &quot;http://blog.pmean.com/adjusted-survival-curves/&quot;
+[1] &quot;http://blog.pmean.com/anaconda/&quot;
+[1] &quot;http://blog.pmean.com/ansi-8601/&quot;
+[1] &quot;http://blog.pmean.com/applied-survival-analysis/&quot;
+[1] &quot;http://blog.pmean.com/bayesian-meta-analysis/&quot;
+[1] &quot;http://blog.pmean.com/beepr/&quot;
+[1] &quot;http://blog.pmean.com/biased-algorithms/&quot;
+[1] &quot;http://blog.pmean.com/big-data-missouri/&quot;
+[1] &quot;http://blog.pmean.com/short-bio/&quot;
+[1] &quot;http://blog.pmean.com/biostatistician-effort/&quot;
+[1] &quot;http://blog.pmean.com/borderline-significance/&quot;
+[1] &quot;http://blog.pmean.com/budgeting-time/&quot;
+[1] &quot;http://blog.pmean.com/business-essentials-2/&quot;
+[1] &quot;http://blog.pmean.com/case-cohort-review/&quot;
+[1] &quot;http://blog.pmean.com/changes-to-classes/&quot;
+[1] &quot;http://blog.pmean.com/charging-models/&quot;
+[1] &quot;http://blog.pmean.com/christmas-carol/&quot;
+[1] &quot;http://blog.pmean.com/accessible-r-markdown/&quot;
+[1] &quot;http://blog.pmean.com/clone-sd-cards/&quot;
+[1] &quot;http://blog.pmean.com/cluster-hat/&quot;
+[1] &quot;http://blog.pmean.com/company-sponsored-research/&quot;
+[1] &quot;http://blog.pmean.com/complex-trials/&quot;
+[1] &quot;http://blog.pmean.com/consulting-contract/&quot;
+[1] &quot;http://blog.pmean.com/consulting-webinars/&quot;
+[1] &quot;http://blog.pmean.com/convert-powerpoint/&quot;
+[1] &quot;http://blog.pmean.com/ctsa-grant/&quot;
+[1] &quot;http://blog.pmean.com/dark-side/&quot;
+[1] &quot;http://blog.pmean.com/dasl/&quot;
+[1] &quot;http://blog.pmean.com/data-dictionaries/&quot;
+[1] &quot;http://blog.pmean.com/dataset-search/&quot;
+[1] &quot;http://blog.pmean.com/deep-learning-mooc/&quot;
+[1] &quot;http://blog.pmean.com/developer-works/&quot;
+[1] &quot;http://blog.pmean.com/developing-research/&quot;
+[1] &quot;http://blog.pmean.com/dogs-vs-cats/&quot;
+[1] &quot;http://blog.pmean.com/effective-consulting/&quot;
+[1] &quot;http://blog.pmean.com/effectiveness-vs-efficacy/&quot;
+[1] &quot;http://blog.pmean.com/ehr-fda-guidance/&quot;
+[1] &quot;http://blog.pmean.com/elsevier-vs-uc/&quot;
+[1] &quot;http://blog.pmean.com/encyclopedia-of-big-data/&quot;
+[1] &quot;http://blog.pmean.com/equivalence-talk/&quot;
+[1] &quot;http://blog.pmean.com/evaluation-methods/&quot;
+[1] &quot;http://blog.pmean.com/excel-users/&quot;
+[1] &quot;http://blog.pmean.com/exploits-of-a-mom/&quot;
+[1] &quot;http://blog.pmean.com/exporting-sas/&quot;
+[1] &quot;http://blog.pmean.com/false-positive-psychology/&quot;
+[1] &quot;http://blog.pmean.com/fighting-sasism/&quot;
+[1] &quot;http://blog.pmean.com/five-safes/&quot;
+[1] &quot;http://blog.pmean.com/fix-the-ehr/&quot;
+[1] &quot;http://blog.pmean.com/food-researcher/&quot;
+[1] &quot;http://blog.pmean.com/function-argumentsr/&quot;
+[1] &quot;http://blog.pmean.com/grading-rubric/&quot;
+[1] &quot;http://blog.pmean.com/heron-i2b2-analytics/&quot;
+[1] &quot;http://blog.pmean.com/history-hadoop/&quot;
+[1] &quot;http://blog.pmean.com/homework-format/&quot;
+[1] &quot;http://blog.pmean.com/how-much-missingness/&quot;
+[1] &quot;http://blog.pmean.com/implementation-science/&quot;
+[1] &quot;http://blog.pmean.com/interval-censored/&quot;
+[1] &quot;http://blog.pmean.com/interval-regression/&quot;
+[1] &quot;http://blog.pmean.com/jupyterlab/&quot;
+[1] &quot;http://blog.pmean.com/lavaan/&quot;
+[1] &quot;http://blog.pmean.com/leaflet/&quot;
+[1] &quot;http://blog.pmean.com/learning-sas/&quot;
+[1] &quot;http://blog.pmean.com/least-important-variable/&quot;
+[1] &quot;http://blog.pmean.com/lightweight-latex/&quot;
+[1] &quot;http://blog.pmean.com/machine-learning-comparison/&quot;
+[1] &quot;http://blog.pmean.com/maternal-mortality/&quot;
+[1] &quot;http://blog.pmean.com/mike-bostock/&quot;
+[1] &quot;http://blog.pmean.com/mining-ehr/&quot;
+[1] &quot;http://blog.pmean.com/mixed-up-names/&quot;
+[1] &quot;http://blog.pmean.com/be-more-effective/&quot;
+[1] &quot;http://blog.pmean.com/mpi-tutorial/&quot;
+[1] &quot;http://blog.pmean.com/mpi4py/&quot;
+[1] &quot;http://blog.pmean.com/my-research-one-page/&quot;
+[1] &quot;http://blog.pmean.com/my-research/&quot;
+[1] &quot;http://blog.pmean.com/my-teaching-approach/&quot;
+[1] &quot;http://blog.pmean.com/my-teaching-interests-one-page/&quot;
+[1] &quot;http://blog.pmean.com/next-generation-phenotyping/&quot;
+[1] &quot;http://blog.pmean.com/next-stop-bmc/&quot;
+[1] &quot;http://blog.pmean.com/nih-criteria/&quot;
+[1] &quot;http://blog.pmean.com/nis-standards/&quot;
+[1] &quot;http://blog.pmean.com/nonfinancial-conflicts/&quot;
+[1] &quot;http://blog.pmean.com/noobs-installation/&quot;
+[1] &quot;http://blog.pmean.com/origins-of-big-data/&quot;
+[1] &quot;http://blog.pmean.com/pdf-accessibility/&quot;
+[1] &quot;http://blog.pmean.com/peer-grading/&quot;
+[1] &quot;http://blog.pmean.com/recommended-philosophy-news-network-postmodernism-special-report/&quot;
+[1] &quot;http://blog.pmean.com/recommended-philosophy-news-network-postmodernism-special-report/&quot;
+[1] &quot;http://blog.pmean.com/powerpoint-with-r-markdown/&quot;
+[1] &quot;http://blog.pmean.com/pretest-posttest/&quot;
+[1] &quot;http://blog.pmean.com/proc-transpose/&quot;
+[1] &quot;http://blog.pmean.com/python-raspberry-pi/&quot;
+[1] &quot;http://blog.pmean.com/qi-resources/&quot;
+[1] &quot;http://blog.pmean.com/r-within-spss/&quot;
+[1] &quot;http://blog.pmean.com/r2d3/&quot;
+[1] &quot;http://blog.pmean.com/reinhart-rogoff-error/&quot;
+[1] &quot;http://blog.pmean.com/reproducible-stata/&quot;
+[1] &quot;http://blog.pmean.com/rogue-scientists/&quot;
+[1] &quot;http://blog.pmean.com/sas-ods/&quot;
+[1] &quot;http://blog.pmean.com/sas-university/&quot;
+[1] &quot;http://blog.pmean.com/recommended-data-sharing-network-shrine/&quot;
+[1] &quot;http://blog.pmean.com/shut-the-heck-up/&quot;
+[1] &quot;http://blog.pmean.com/smr-example/&quot;
+[1] &quot;http://blog.pmean.com/spam-data/&quot;
+[1] &quot;http://blog.pmean.com/spark-pi/&quot;
+[1] &quot;http://blog.pmean.com/spreasheet-horror/&quot;
+[1] &quot;http://blog.pmean.com/stemming/&quot;
+[1] &quot;http://blog.pmean.com/structure-for-documentation/&quot;
+[1] &quot;http://blog.pmean.com/super-pi/&quot;
+[1] &quot;http://blog.pmean.com/support-for-research/&quot;
+[1] &quot;http://blog.pmean.com/survey-newsletter/&quot;
+[1] &quot;http://blog.pmean.com/syllabus-r-2018a/&quot;
+[1] &quot;http://blog.pmean.com/syllabus-sas-2018a/&quot;
+[1] &quot;http://blog.pmean.com/teaching-and-research/&quot;
+[1] &quot;http://blog.pmean.com/text-data-into-sas/&quot;
+[1] &quot;http://blog.pmean.com/ucla-software/&quot;
+[1] &quot;http://blog.pmean.com/use-of-ehr-data/&quot;
+[1] &quot;http://blog.pmean.com/what-day-is-it/&quot;
+[1] &quot;http://blog.pmean.com/what-i-did/&quot;
+[1] &quot;http://blog.pmean.com/without-data/&quot;
+[1] &quot;http://blog.pmean.com/women-in-analytics/&quot;
+[1] &quot;http://blog.pmean.com/word-vector-embeddings/&quot;</code></pre>
 </div>
 </div>
 </section>

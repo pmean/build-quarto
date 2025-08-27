@@ -47,11 +47,6 @@ add_extra <- function(file_path, file_name) {
 	  glue("[sim1]: {src}"),
 		glue("[sim2]: http://new.pmean.com/{root_name}/"),
 		" ")
-	extra_lines <- c(
-	  "An earlier version is [here][sim2].",
-	  " ",
-		glue("[sim2]: http://new.pmean.com/{root_name}/"),
-		" ")
 	return(c(file_text, extra_lines))
 }
 ```
@@ -59,7 +54,7 @@ add_extra <- function(file_path, file_name) {
 ```{r}
 #| label: loop
 
-file_path <- "../gen5/20"
+file_path <- "../gen5/18"
 file_path |>
   list.files() |>
   str_subset("md$") -> file_list

@@ -1,8 +1,8 @@
 ---
 title: "AI Fairness 360 Open Source Toolkit"
 source: new
-date: "2020-08-21"
-categories:
+date: "2020-08-21" 
+categories: 
 - "*Recommendation"
 - 2020
 - Data science
@@ -19,4 +19,3 @@ IBM. AI Fairness 360 Open Source Toolkit. Available in [html format](https://aif
 An earlier version is [here][sim2].
  
 [sim2]: http://new.pmean.com/ai-fairness-360/
- 
