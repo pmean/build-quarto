@@ -18,14 +18,18 @@ Many statistical procedures are based on the assumption that your data has a nor
 
 You can use the housing data set to illustrate the use of the normal probability plot.
 
-```{r qqplot-01}
+```{r}
+#| label: qqplot-01
+
 fn <- "http://www.pmean.com/00files/housing.txt"
 al <- read.table(file=fn,header=TRUE)
 head(al)
 tail(al)
 ```
 
-```{r qqplot-02}
+```{r}
+#| label: qqplot-02
+
 al$age <- as.numeric(al$AgeYears)
 summary(al$Price)
 summary(al$SquareFeet)
@@ -40,7 +44,9 @@ The qqplot compares the data values to evenly spaced percentiles of the normal d
 
 You can read more about this on my 2009 blog entry about normal probability plots.
 
-```{r qqplot-03}
+```{r}
+#| label: qqplot-03
+
 qqnorm(al$Price)
 ```
 
@@ -48,7 +54,9 @@ Figure 1. Normal probability plot for house prices.
 
 In a linear model, the critical assumption is NOT that the predictor (independent) variables are normally distributed. It is NOT that the outcome (dependent) variable is normally distributed. It is that the residuals are normally distributed.
 
-```{r qqplot-04}
+```{r}
+#| label: qqplot-04
+
 al.model <- lm(Price~SquareFeet+CustomBuild,data=al)
 summary(al.model)
 qqnorm(resid(al.model))
@@ -56,11 +64,9 @@ qqnorm(resid(al.model))
 
 Figure 2. Normal probability plot of residuals
 
-
-[sim3]: http://www.pmean.com/09/NormalPlot.html
- 
-Earlier versions are [here][sim1] and [here][sim2].
+ Earlier versions are [here][sim1] and [here][sim2]. Also look at a [closely related file][sim3].
  
 [sim1]: http://www.pmean.com/qqplot.html
 [sim2]: http://new.pmean.com/qqplot/
- 
+[sim3]: http://www.pmean.com/09/NormalPlot.html
+

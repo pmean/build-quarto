@@ -20,19 +20,21 @@ I wanted to provide an overview of how you analyze a classic nonlinear regressio
 
 Here are some simple examples of nonlinear regression. We will use the built-in data set Theoph for all our examples.
 
-```{r difference-in-two-exponentials-01}
+```{r}
+#| label: difference-in-two-exponentials-01
+
 head(Theoph)
 ```
 
-```{r difference-in-two-exponentials-02}
+```{r}
+#| label: difference-in-two-exponentials-02
+
 tail(Theoph)
 ```
 
 ### look at just the first patient.
-
  
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/difference-of-two-exponentials/
 [sim2]: http://new.pmean.com/difference-of-two-exponentials/
- 
