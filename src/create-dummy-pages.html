@@ -3115,7 +3115,7 @@ vertical-align: -.125em;
 <section id="get-names" class="level2">
 <h2 class="anchored" data-anchor-id="get-names">Get names</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>yr <span class="ot">&lt;-</span> <span class="st">&quot;16&quot;</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>yr <span class="ot">&lt;-</span> <span class="st">&quot;13&quot;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>md_files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="fu">glue</span>(<span class="st">&quot;../gen5/{yr}&quot;</span>))</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>md_files <span class="sc">|&gt;</span></span>
@@ -3124,55 +3124,26 @@ vertical-align: -.125em;
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_remove</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.md$&quot;</span>) <span class="ot">-&gt;</span> root_names</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>root_names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] &quot;a-lot-longer&quot;               &quot;all-this-math-stuff&quot;       
- [3] &quot;analysis-biological-data&quot;   &quot;bayesian-book&quot;             
- [5] &quot;biggest-statistics-papers&quot;  &quot;biography-2016&quot;            
- [7] &quot;breast-cancer-study&quot;        &quot;business-essentials&quot;       
- [9] &quot;chapter-on-r&quot;               &quot;chart-review&quot;              
-[11] &quot;circle.Rmd&quot;                 &quot;cluster-randomized&quot;        
-[13] &quot;coin-flip&quot;                  &quot;cold-call&quot;                 
-[15] &quot;commas-in-sql&quot;              &quot;complex-survey-spss&quot;       
-[17] &quot;consult-by-email&quot;           &quot;dates-in-r&quot;                
-[19] &quot;defining-urban&quot;             &quot;differing-versions&quot;        
-[21] &quot;documentation-standards&quot;    &quot;dplyr-and-pipes&quot;           
-[23] &quot;effect-size&quot;                &quot;election-predictions&quot;      
-[25] &quot;encode&quot;                     &quot;enrichment-designs&quot;        
-[27] &quot;evidence-of-bias&quot;           &quot;faculty-profile&quot;           
-[29] &quot;fair-principles&quot;            &quot;flipped-classroom&quot;         
-[31] &quot;font-size-in-r&quot;             &quot;font-size-in-rstudio&quot;      
-[33] &quot;forensic-bioinformatics&quot;    &quot;git-and-github&quot;            
-[35] &quot;github-standards&quot;           &quot;gpc-work&quot;                  
-[37] &quot;greedy&quot;                     &quot;grumpy-editorials&quot;         
-[39] &quot;hadley-wickham&quot;             &quot;hate-about-consulting&quot;     
-[41] &quot;hundred-data-sets&quot;          &quot;idre&quot;                      
-[43] &quot;incentivizing&quot;              &quot;ingelfinger&quot;               
-[45] &quot;inla&quot;                       &quot;lasso&quot;                     
-[47] &quot;loops-in-r&quot;                 &quot;megabyte&quot;                  
-[49] &quot;merging-in-dplyr&quot;           &quot;misunderstanding-autism&quot;   
-[51] &quot;one-small-grant&quot;            &quot;open-source-km&quot;            
-[53] &quot;oracle-dates&quot;               &quot;organizing-data&quot;           
-[55] &quot;part-timer&quot;                 &quot;personal-biography&quot;        
-[57] &quot;pilot-study&quot;                &quot;pipes-in-r-2&quot;              
-[59] &quot;pipes-in-r&quot;                 &quot;plos-one-2015&quot;             
-[61] &quot;pmean-analysis-plan&quot;        &quot;power-for-two-by-two-table&quot;
-[63] &quot;practical-advice&quot;           &quot;procrastination&quot;           
-[65] &quot;quality-of-rct&quot;             &quot;qualtrics&quot;                 
-[67] &quot;r-and-sqlserver&quot;            &quot;r-class-2016&quot;              
-[69] &quot;reader-pays&quot;                &quot;readmission-rates&quot;         
-[71] &quot;recent-advances&quot;            &quot;rotating-text&quot;             
-[73] &quot;save-time&quot;                  &quot;screen-sharing&quot;            
-[75] &quot;searching-files&quot;            &quot;selection-of-controls&quot;     
-[77] &quot;shortening-survey&quot;          &quot;silver-interview&quot;          
-[79] &quot;simulating-power&quot;           &quot;single-imputation&quot;         
-[81] &quot;skin-of-my-teeth&quot;           &quot;space-center&quot;              
-[83] &quot;sparse-matrices&quot;            &quot;string-substitutions&quot;      
-[85] &quot;structure-i2b2&quot;             &quot;subjects-per-variable&quot;     
-[87] &quot;systematic-overview&quot;        &quot;ten-simple-rules&quot;          
-[89] &quot;the-survey-statistician&quot;    &quot;tibbles&quot;                   
-[91] &quot;too-many-priors&quot;            &quot;turning-off-large-blocks&quot;  
-[93] &quot;understanding-sql&quot;          &quot;using-bad-examples&quot;        
-[95] &quot;which-r-package&quot;            &quot;zero-in-table&quot;             
-[97] &quot;zero-or-infinity&quot;          </code></pre>
+<pre><code> [1] &quot;accrual-duration-code&quot;        &quot;accrual-sample-size-code-alt&quot;
+ [3] &quot;accrual-sample-size-code&quot;     &quot;adjusted-probability&quot;        
+ [5] &quot;assignment-in-r&quot;              &quot;bad-prediction&quot;              
+ [7] &quot;ci-too-narrow&quot;                &quot;claims-lacking-specificity&quot;  
+ [9] &quot;clt&quot;                          &quot;comparing-diagnostic-tests&quot;  
+[11] &quot;confusion-about-bugs&quot;         &quot;confusion-intervals&quot;         
+[13] &quot;counting-squares&quot;             &quot;data-mind&quot;                   
+[15] &quot;deciphering-nonlinear-curve&quot;  &quot;experience-vs-memory&quot;        
+[17] &quot;five-fridays&quot;                 &quot;focus-on-subset&quot;             
+[19] &quot;fourier-transform&quot;            &quot;hedging-your-bets&quot;           
+[21] &quot;jags-from-r&quot;                  &quot;kc-star-letter&quot;              
+[23] &quot;legal&quot;                        &quot;logistic-predictions&quot;        
+[25] &quot;mind-into-software&quot;           &quot;modern-programming&quot;          
+[27] &quot;open-questions&quot;               &quot;possibility-theory&quot;          
+[29] &quot;propensity-monte-carlo&quot;       &quot;ready-for-testing&quot;           
+[31] &quot;revised-standards&quot;            &quot;row-over-screening&quot;          
+[33] &quot;secondary-data-sources&quot;       &quot;steps-descriptive&quot;           
+[35] &quot;study-development&quot;            &quot;subgroup-description&quot;        
+[37] &quot;testing-r-function&quot;           &quot;twenty-tips&quot;                 
+[39] &quot;two-questions&quot;                &quot;you-can-now-register&quot;        </code></pre>
 </div>
 </div>
 </section>
