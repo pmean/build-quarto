@@ -1,5 +1,5 @@
 ---
-title: "Add old links to the bottom of files"
+title: "Count fences in all gen5 files"
 format:
   html:
     embed-resources: true
@@ -24,17 +24,31 @@ library(tidyverse)
 ```{r}
 #| label: function
 
-count_fences <- function(file_path, file_name) {
+start_fence <- c(
+  div=fixed('<div class="notes">'),
+  colons="^::: notes",
+  backticks="^```\\{")
+
+end_fence <- c(
+  div=fixed('</div>'),
+  colons="^:::$",
+  backticks="^```$")
+
+count_fences <- function(file_path, file_name, i) {
 	read_lines(glue("{file_path}/{file_name}")) -> file_text
+  
 	file_text |>
-		str_subset("<div|</div|:::") |>
-	  length() -> n
+		str_subset(start_fence[i]) |>
+	  length() -> n1
 	
-	if (n %%2 ==0) return(n)
+	file_text |>
+		str_subset(end_fence[i]) |>
+	  length() -> n2
+	if (n1 == n2) return(n1*100+n2)
 	
 	cat("\n")
 	cat(glue("{file_path}/{file_name}"))
-	return(n)
+	return(n1*100+n2)
 }
 ```
 
@@ -42,6 +56,7 @@ count_fences <- function(file_path, file_name) {
 #| label: loop
 
 yr_list <- c("00", as.character(16:25))
+fence <- "backticks"
 
 n_list <- NULL
 for (yr in yr_list) {
@@ -51,7 +66,7 @@ for (yr in yr_list) {
     str_subset("md$") -> file_list
 
   for (file_name in file_list) {
-    count_fences(file_path, file_name) |> append(n_list) -> n_list
+    count_fences(file_path, file_name, fence) |> append(n_list) -> n_list
   }
 }
 

@@ -22,7 +22,7 @@ Patric Riley. Practical advice for analysis of large, complex data sets. The Uno
 
 [rile1]: http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html
 
-<div>
+</div>
  
 Earlier versions are [here][sim1] and [here][sim2].
  

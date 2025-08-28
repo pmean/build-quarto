@@ -55,7 +55,7 @@ add_extra <- function(file_path, file_name) {
 ```{r}
 #| label: loop
 
-file_path <- "../gen5/16"
+file_path <- "../gen5/13"
 file_path |>
   list.files() |>
   str_subset("md$") -> file_list

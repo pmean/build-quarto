@@ -13,7 +13,7 @@ page_update: complete
 
 ![](http://www.pmean.com/new-images/19/sas-blog01.png)
 
-<div class=:notes">
+<div class="notes">
 
 A nice site that aggregates blog posts about SAS from a variety of authors.
 
@@ -22,8 +22,6 @@ PROC-X.com. An online (unofficial) SAS journal written by bloggers. Available in
 [pro1]: http://proc-x.com/
 
 </div>
-
-
 
 Earlier versions are [here][sim1] and [here][sim2].
  

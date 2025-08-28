@@ -59,11 +59,6 @@ sudo reboot -h now
 
 I'm not sure what the "-h now" option does. It's interesting how this process is forcing me to learn all sorts of things beyond just Python.
 
-You can find an [earlier version][sim1] of this page on my [blog][sim2].
-
-[sim1]: http://blog.pmean.com/python-raspberry-pi/
-[sim2]: http://blog.pmean.com
-
 [ana1]: https://en.wikipedia.org/wiki/Anaconda_(Python_distribution)
 [bas1]: https://www.maketecheasier.com/what-is-bashrc/
 [bou1]: https://en.wikipedia.org/wiki/Stephen_R._Bourne
@@ -74,8 +69,8 @@ You can find an [earlier version][sim1] of this page on my [blog][sim2].
 [tho1]: https://thonny.org/
 [wik1]: https://en.wikipedia.org/wiki/MD5
 [wik2]: https://en.wikipedia.org/wiki/ARM_architecture
+
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://blog.pmean.com/python-raspberry-pi/
 [sim2]: http://new.pmean.com/python-raspberry-pi/
- 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Add old links to the bottom of files</title>
+<title>Count fences in all gen5 files</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -3087,7 +3087,7 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Add old links to the bottom of files</h1>
+<h1 class="title">Count fences in all gen5 files</h1>
 </div>
 
 
@@ -3115,39 +3115,95 @@ vertical-align: -.125em;
 <section id="function" class="level2">
 <h2 class="anchored" data-anchor-id="function">function</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>count_fences <span class="ot">&lt;-</span> <span class="cf">function</span>(file_path, file_name) {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read_lines</span>(<span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>)) <span class="ot">-&gt;</span> file_text</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    file_text <span class="sc">|&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_subset</span>(<span class="st">&quot;&lt;div|&lt;/div|:::&quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">length</span>() <span class="ot">-&gt;</span> n</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (n <span class="sc">%%</span><span class="dv">2</span> <span class="sc">==</span><span class="dv">0</span>) <span class="fu">return</span>(n)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>))</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(n)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>start_fence <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">div=</span><span class="fu">fixed</span>(<span class="st">&#39;&lt;div class=&quot;notes&quot;&gt;&#39;</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">colons=</span><span class="st">&quot;^::: notes&quot;</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">backticks=</span><span class="st">&quot;^```</span><span class="sc">\\</span><span class="st">{&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>end_fence <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">div=</span><span class="fu">fixed</span>(<span class="st">&#39;&lt;/div&gt;&#39;</span>),</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">colons=</span><span class="st">&quot;^:::$&quot;</span>,</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">backticks=</span><span class="st">&quot;^```$&quot;</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>count_fences <span class="ot">&lt;-</span> <span class="cf">function</span>(file_path, file_name, i) {</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read_lines</span>(<span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>)) <span class="ot">-&gt;</span> file_text</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    file_text <span class="sc">|&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_subset</span>(start_fence[i]) <span class="sc">|&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">length</span>() <span class="ot">-&gt;</span> n1</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    file_text <span class="sc">|&gt;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_subset</span>(end_fence[i]) <span class="sc">|&gt;</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>      <span class="fu">length</span>() <span class="ot">-&gt;</span> n2</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (n1 <span class="sc">==</span> n2) <span class="fu">return</span>(n1<span class="sc">*</span><span class="dv">100</span><span class="sc">+</span>n2)</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>))</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(n1<span class="sc">*</span><span class="dv">100</span><span class="sc">+</span>n2)</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>yr_list <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;00&quot;</span>, <span class="fu">as.character</span>(<span class="dv">16</span><span class="sc">:</span><span class="dv">25</span>))</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>n_list <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (yr <span class="cf">in</span> yr_list) {</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  file_path <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;../gen5/{yr}&quot;</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  file_path <span class="sc">|&gt;</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list.files</span>() <span class="sc">|&gt;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_subset</span>(<span class="st">&quot;md$&quot;</span>) <span class="ot">-&gt;</span> file_list</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (file_name <span class="cf">in</span> file_list) {</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count_fences</span>(file_path, file_name) <span class="sc">|&gt;</span> <span class="fu">append</span>(n_list) <span class="ot">-&gt;</span> n_list</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(n_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>fence <span class="ot">&lt;-</span> <span class="st">&quot;backticks&quot;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>n_list <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (yr <span class="cf">in</span> yr_list) {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  file_path <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;../gen5/{yr}&quot;</span>)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  file_path <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list.files</span>() <span class="sc">|&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_subset</span>(<span class="st">&quot;md$&quot;</span>) <span class="ot">-&gt;</span> file_list</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (file_name <span class="cf">in</span> file_list) {</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">count_fences</span>(file_path, file_name, fence) <span class="sc">|&gt;</span> <span class="fu">append</span>(n_list) <span class="ot">-&gt;</span> n_list</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+../gen5/00/what-is-kaplan-meier-curve.md
+../gen5/16/circle.Rmd
+../gen5/16/commas-in-sql.md
+../gen5/16/greedy.md
+../gen5/16/megabyte.md
+../gen5/16/rotating-text.md
+../gen5/16/single-imputation.md
+../gen5/16/sparse-matrices.md
+../gen5/16/string-substitutions.md
+../gen5/16/structure-i2b2.md
+../gen5/16/turning-off-large-blocks.md
+../gen5/17/first-jags.md
+../gen5/17/interview-questions.md
+../gen5/17/looks-like-a-blank.md
+../gen5/18/shut-the-heck-up.md
+../gen5/18/structure-for-documentation.md
+../gen5/18/teaching-and-research.Rmd
+../gen5/18/what-day-is-it.md
+../gen5/20/reading-text-files.qmd
+../gen5/20/rmarkdown-to-png.md
+../gen5/21/anonymizing-ids.qmd
+../gen5/21/blogdown-first-steps.md
+../gen5/21/nhanes-overview.md
+../gen5/21/poisson-regression-overview.qmd
+../gen5/21/results-folder.md
+../gen5/21/very-simple-splines.qmd
+../gen5/22/analysis-of-means-example.qmd
+../gen5/22/missing-value-functions.md
+../gen5/22/missing-value-hell.md
+../gen5/22/numbers-as-variable-names.md
+../gen5/22/sas-statement-order.md
+../gen5/22/writing-goals-may-2022.md
+../gen5/23/git-local-installation.md
+../gen5/23/git-local-updates.md
+../gen5/23/reshape-sas.md</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(n_list)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>n_list
-  0   2  12  44  50 
-622 249   2   1   1 </code></pre>
+   0    2    4    6    8   10   12   14   16   18   43  100  101  110  113  201 
+ 782    6    3    3    3    4    2    3    1    1    1    1    7    1    1    1 
+ 202  206  303  404  505  507  606  707  808  909 1010 1014 1111 1212 1214 1414 
+   2    1    8    4    1    1    3    6    4    1    4    1    4    3    1    2 
+1515 1616 2727 2828 3737 3838 4242 
+   1    2    1    1    1    1    2 </code></pre>
 </div>
 </div>
 </section>

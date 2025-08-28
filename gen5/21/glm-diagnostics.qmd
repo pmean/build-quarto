@@ -11,9 +11,18 @@ categories:
 - Rmarkdown graphs
 output: html_document
 page_update: complete
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-There are a broad range of diagnostic methods (mostly graphical) that can help you decide from among a dizzying array of alternative models for count data. The most important consideration is to start at the shallow end of the pool with the simplest approaches. Don't jump in at the deep end and try something really complex before you've had the chance to look at simpler models, even if you know they are overly simplistic.
+There are a broad range of diagnostic methods (mostly graphical) that
+can help you decide from among a dizzying array of alternative models
+for count data. The most important consideration is to start at the
+shallow end of the pool with the simplest approaches. Don't jump in at
+the deep end and try something really complex before you've had the
+chance to look at simpler models, even if you know they are overly
+simplistic.
 
 ```{r}
 #| label: glm-diagnostics-01
@@ -30,7 +39,12 @@ library(pscl)
 
 ### The dataset used in this example
 
-Francis Huang has a [nice web page][hua1] showing two datasets and how to analyze them using the Poisson regression model as well as several more sophisticated models. The first data set is available for anyone to download. The link I originally used no longer works.
+Francis Huang has a [nice web
+page](https://francish.netlify.app/post/poisson-and-negative-binomial-regression-using-r/)
+showing two datasets and how to analyze them using the Poisson
+regression model as well as several more sophisticated models. The first
+data set is available for anyone to download. The link I originally used
+no longer works.
 
 ```{r}
 #| label: glm-diagnostics-02
@@ -41,7 +55,13 @@ articles <- read.csv(fn)
 head(articles)
 ```
 
-Here is a [different link][rod3] for the same file, used at [German Rodriguez's website][rod2]. I've placed a [copy][sim3] on my website in case this link breaks. Also, this dataset is available with the [pscl library][zei1] of R under the name, bioChemists.
+Here is a [different link](http://www.pmean.com/00files/couart2.dta) for
+the same file, used at [German Rodriguez's
+website](https://data.princeton.edu/wws509/r/overdispersion). I've
+placed a [copy](http://www.pmean.com/00files/couart2.dta) on my website
+in case this link breaks. Also, this dataset is available with the [pscl
+library](https://cran.r-project.org/web/packages/pscl/vignettes/countreg.pdf)
+of R under the name, bioChemists.
 
 ```{r}
 #| label: glm-diagnostics-03
@@ -51,23 +71,16 @@ articles <- read.dta(fn)
 head(articles)
 ```
 
-[hua1]: https://francish.netlify.app/post/poisson-and-negative-binomial-regression-using-r/
-[rod2]: https://data.princeton.edu/wws509/r/overdispersion
-[rod3]: http://www.pmean.com/00files/couart2.dta
-[sim3]: http://www.pmean.com/00files/couart2.dta
-[zei1]: https://cran.r-project.org/web/packages/pscl/vignettes/countreg.pdf
-
-The variables are
-+ gender (fem),
-+ marital status (mar),
-+ number of children (kid5),
-+ prestige of graduate program (phd), 
-+ the number of articles published by the individual's mentor (ment)
-+ the number of articles published by the scientist (art: the outcome).
+The variables are + gender (fem), + marital status (mar), + number of
+children (kid5), + prestige of graduate program (phd), + the number of
+articles published by the individual's mentor (ment) + the number of
+articles published by the scientist (art: the outcome).
 
 ### Histogram of outcome variable
 
-Look at the possible values for your outcome variable, which is usually a count. If you have rate data, do a histogram both for counts and rates.
+Look at the possible values for your outcome variable, which is usually
+a count. If you have rate data, do a histogram both for counts and
+rates.
 
 ```{r}
 #| label: glm-diagnostics-04
@@ -76,7 +89,13 @@ ggplot(articles, aes(art)) +
   geom_histogram(binwidth=1, color="black", fill="white")
 ```
 
-Compare this to a bar chart of Poisson probabilities. The outcome variable from a Poisson regression model does not need to follow a single simple Poisson set of probabilities. It is more likely a mixture of different Poisson variables depending on the covariate pattern. Nevertheless, it can't hurt to look at the Poisson probabilities, as long as you don't get too concerned about discrepancies between the actual data and the Poisson probabilities.
+Compare this to a bar chart of Poisson probabilities. The outcome
+variable from a Poisson regression model does not need to follow a
+single simple Poisson set of probabilities. It is more likely a mixture
+of different Poisson variables depending on the covariate pattern.
+Nevertheless, it can't hurt to look at the Poisson probabilities, as
+long as you don't get too concerned about discrepancies between the
+actual data and the Poisson probabilities.
 
 ```{r}
 #| label: glm-diagnostics-05
@@ -87,11 +106,13 @@ data.frame(x=0:max(articles$art)) %>%
     geom_col(color="black", fill="white")
 ```
 
-Here there seems to be a disparity at zero, which may (or may not) indicate the need for a zero-inflated model.
+Here there seems to be a disparity at zero, which may (or may not)
+indicate the need for a zero-inflated model.
 
 ### Descriptive statistics on indepdent variables
 
-It helps to know the general descriptive statistics (means, standard deviations, percentages) for each of the independent variables.
+It helps to know the general descriptive statistics (means, standard
+deviations, percentages) for each of the independent variables.
 
 ```{r}
 #| label: glm-diagnostics-06
@@ -121,14 +142,16 @@ articles %>%
   summarize(n=n())
 ```
 
-```{rglm-diagnostics-10
+```{r}
+#| label: glm-diagnostics-10
 
 articles %>%
   group_by(kid5) %>%
   summarize(n=n())
 ```
 
-The wide ranges for ment and phd may make it difficult to interpret. A simple approach is to scale them to the interval 0 to 1.
+The wide ranges for ment and phd may make it difficult to interpret. A
+simple approach is to scale them to the interval 0 to 1.
 
 ```{r}
 #| label: glm-diagnostics-11
@@ -140,9 +163,15 @@ articles %>%
 
 ### Bivariate plots
 
-Although you are going to fit multiple independent variables, it does not hurt to look at the bivariate relationships first. A variable that looks important from a bivariate perspective, may be unimportant from the multivariate perspective and vice versa. So don't read too much into these plots. It is intended to get you familiar with trends and patterns that might (or might not) show up in more complex models.
+Although you are going to fit multiple independent variables, it does
+not hurt to look at the bivariate relationships first. A variable that
+looks important from a bivariate perspective, may be unimportant from
+the multivariate perspective and vice versa. So don't read too much into
+these plots. It is intended to get you familiar with trends and patterns
+that might (or might not) show up in more complex models.
 
-Use boxplots when the independent variable is categorical and scatterplots when the independent variable is continuous.
+Use boxplots when the independent variable is categorical and
+scatterplots when the independent variable is continuous.
 
 ```{r}
 #| label: glm-diagnostics-12
@@ -181,9 +210,12 @@ ggplot(articles, aes(factor(kid5), art)) +
   geom_boxplot()
 ```
 
-There aren't any huge trends here. It looks like there might not be much going on here at all. If there are differences, they seem to show up in the values above the 75th percentile. 
+There aren't any huge trends here. It looks like there might not be much
+going on here at all. If there are differences, they seem to show up in
+the values above the 75th percentile.
 
-The one cause for early concern is that the effect of ment seems to level off after a certain point.
+The one cause for early concern is that the effect of ment seems to
+level off after a certain point.
 
 ### Fit simple models first
 
@@ -222,9 +254,14 @@ pois_kid5 <- glm(art ~ kid5, family=poisson, data = articles_scaled)
 summary(pois_kid5)
 ```
 
-For all of these models, the deviance is much greater than the degrees of freedom, indicating a poor fit. This could be failure to include all the variables in a multivariate sense or a problem with the underlying Poisson model.
+For all of these models, the deviance is much greater than the degrees
+of freedom, indicating a poor fit. This could be failure to include all
+the variables in a multivariate sense or a problem with the underlying
+Poisson model.
 
-Don't put too much stock in the p-values just yet, but several of them are small. This may change when we look at the independent variables in combination.
+Don't put too much stock in the p-values just yet, but several of them
+are small. This may change when we look at the independent variables in
+combination.
 
 ### Fit graually more complex models
 
@@ -259,9 +296,17 @@ pois_crude %>%
 
 ### Examine residuals
 
-A good general plot is fitted (predicted) values versus residuals. Since the fitted value is a composite of all the independent variables, it is likely to show unusual behavior if there are issues involving any of the independent variables.
+A good general plot is fitted (predicted) values versus residuals. Since
+the fitted value is a composite of all the independent variables, it is
+likely to show unusual behavior if there are issues involving any of the
+independent variables.
 
-An ideal pattern would be a random scatter of points spread across all regions of the graph. A curvilinear pattern (e.g., high in the middle, low at either extreme) or a fanning out pattern (e.g., more variation on the right side of the graph than the left) is indication that there are unusual features in the data that are not fully captured by the current model.
+An ideal pattern would be a random scatter of points spread across all
+regions of the graph. A curvilinear pattern (e.g., high in the middle,
+low at either extreme) or a fanning out pattern (e.g., more variation on
+the right side of the graph than the left) is indication that there are
+unusual features in the data that are not fully captured by the current
+model.
 
 ```{r}
 #| label: glm-diagnostics-24}
@@ -271,7 +316,8 @@ ggplot(r_pois, aes(.fitted, .resid)) +
   geom_smooth()
 ```
 
-Clearly there is something unusual going on with the largest fitted value.
+Clearly there is something unusual going on with the largest fitted
+value.
 
 ```{r}
 #| label: glm-diagnostics-26
@@ -281,9 +327,12 @@ r_pois %>%
   data.frame
 ```
 
-This appears to be the subject where the scaled value for ment equals 1. In other words, the highest possible value for ment.
+This appears to be the subject where the scaled value for ment equals 1.
+In other words, the highest possible value for ment.
 
-You should also plot the residuals versus every independent variable, although the plots versus binary independent variables are unlikely to show anything interesting.
+You should also plot the residuals versus every independent variable,
+although the plots versus binary independent variables are unlikely to
+show anything interesting.
 
 ```{r}
 #| label: glm-diagnostics-27
@@ -322,7 +371,9 @@ ggplot(r_pois, aes(factor(kid5), .resid)) +
   geom_boxplot()
 ```
 
-Perhaps, the value of a mentor is good only to a point and anything after offers no additional help. Let's compute a new value for ment where any value above 40 is set equal to 40.
+Perhaps, the value of a mentor is good only to a point and anything
+after offers no additional help. Let's compute a new value for ment
+where any value above 40 is set equal to 40.
 
 ```{r}
 #| label: glm-diagnostics-32
@@ -413,7 +464,9 @@ summary(zinb)
 
 ### Comparing competing models
 
-The AIC statistic is useful for comparing models, but it is not produced automatically for negative binomial regression or the zero-inflated models. It requires you to pull the individual components from the 
+The AIC statistic is useful for comparing models, but it is not produced
+automatically for negative binomial regression or the zero-inflated
+models. It requires you to pull the individual components from the
 
 ```{r}
 #| label: glm-diagnostics-99
@@ -422,7 +475,5 @@ The AIC statistic is useful for comparing models, but it is not produced automat
 save.image(file="glm_diagnostics.RData")
 ```
 
-An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
-
-[sim1]: http://new.pmean.com
-[sim2]: http://new.pmean.com/glm-daignostics/
+An [earlier version](http://new.pmean.com/glm-daignostics/) of this page
+was published on [new.pmean.com](http://new.pmean.com).

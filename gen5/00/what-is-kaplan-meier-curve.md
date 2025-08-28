@@ -76,7 +76,7 @@ and you can continue along these lines to get
 
 $P[T > t_i]$
 
-$\ =\ P[T > t_i | T > t_{i-1}]$
+$\ =\ P[T > t_i | T > t_{i-1}]$   
 
 $\qquad \times \  P[T > t_{i-1} | T > t_{i-2}]$
 
@@ -94,7 +94,7 @@ $n_i=n_{i-1}-c_i-d_i$
 
 In other words, the number at risk at any specific time point is just the number at risk at the previous time point, minus the number of deaths/failures and the number of censored observations. For convenience, you should define $n_0$ as the number of patients in the study, $c_0$ as the number of censored observations prior to the first death, and $d_0$ as the number of deaths at the start of the study, which is always zero.
 
-Next you extimate the conditional probability of survival:
+Next you estimate the conditional probability of survival:
 
 $P[T > t_i | T > t_{i-1}]=1-\frac{d_i}{n_i}$
 
@@ -106,7 +106,7 @@ $P[T > t_i]=\prod\big(1-\frac{d_i}{n_i}\big)$
 
 The following example is from Chadha et al (2000). The authors studied a sample of 36 pediatric patients undergoing acute peritoneal dialysis through Cook Catheters. They wished to examine how long these catheters performed properly. They noted the date of complication (either occlusion, leakage, exit-site infection, or peritonitis).
 
-```
+```{}
 Day Removed Failed
 --- ------- ------
  1     8      2
@@ -129,7 +129,7 @@ But how would you estimate the probability of surviving two days? four days? ten
 
 This is tricky, because the censored observations provide information up to the day of censoring, but cannot tell us anything more about surviving beyond that day. What you need to do is compute the number of catheters at risk for failure on a particular day. It would exclude any catheters that failed on previous days and it would exclude any catheters that were censored on previous days.
 
-```
+```{}
 Day Removed Failed   At risk
 --- ------- ------  ---------
  1     8      2            34
@@ -148,7 +148,7 @@ You then need to compute the conditional probability of surviving at each time p
 
 (number at risk - number of failures)/(number at risk)
 
-```
+```{}
                               Conditional
 Day Removed Failed   At risk  probability
 --- ------- ------  --------- -----------
@@ -166,7 +166,7 @@ Day Removed Failed   At risk  probability
 
 Then we compute the cumulative product of these probabilities. This represents the Kaplan-Meier estimate of the survival probability.
 
-```
+```{}
                               Conditional     Cumulative
 Day Removed Failed   At risk  probability      product  
 --- ------- ------  --------- -----------   --------------

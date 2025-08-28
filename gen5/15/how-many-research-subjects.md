@@ -1,0 +1,34 @@
+---
+title: "How many research subjects"
+author: "Steve Simon"
+source: "http://blog.pmean.com/how-many-research-subjects/"
+date: "2015-10-13"
+categories:
+- "*Blog post"
+- 2015
+- Sample size justification
+output: html_document
+page_update: complete
+---
+
+![Figure 1. Graphic image of a light bulb joke](http://www.pmean.com/new-images/15/how-many-research-subjects01.png)
+
+<div class="notes">
+
+Here's a quote from yours truly. 
+
+How many research subjects does it take to screw in a light bulb? At least 300 if you want the bulb to have adequate power.
+
+I've added a cute graphic from the public domain (downloaded from [Pixabay][pix1] to liven it up a bit.
+
+
+
+[pix1]: www.pixabay.com
+
+</div>
+ 
+Earlier versions are [here][sim1] and [here][sim2].
+ 
+[sim1]: http://blog.pmean.com/how-many-research-subjects/
+[sim2]: http://new.pmean.com/how-many-research-subjects/
+ 
