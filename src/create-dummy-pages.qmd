@@ -23,7 +23,7 @@ library(tidyverse)
 ```{r}
 #| label: names
 
-yr <- "13"
+yr <- "12"
 
 md_files <- list.files(glue("../gen5/{yr}"))
 md_files |>

@@ -3115,7 +3115,7 @@ vertical-align: -.125em;
 <section id="get-names" class="level2">
 <h2 class="anchored" data-anchor-id="get-names">Get names</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>yr <span class="ot">&lt;-</span> <span class="st">&quot;13&quot;</span></span>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>yr <span class="ot">&lt;-</span> <span class="st">&quot;12&quot;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>md_files <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="fu">glue</span>(<span class="st">&quot;../gen5/{yr}&quot;</span>))</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>md_files <span class="sc">|&gt;</span></span>
@@ -3124,26 +3124,62 @@ vertical-align: -.125em;
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_remove</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.md$&quot;</span>) <span class="ot">-&gt;</span> root_names</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>root_names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] &quot;accrual-duration-code&quot;        &quot;accrual-sample-size-code-alt&quot;
- [3] &quot;accrual-sample-size-code&quot;     &quot;adjusted-probability&quot;        
- [5] &quot;assignment-in-r&quot;              &quot;bad-prediction&quot;              
- [7] &quot;ci-too-narrow&quot;                &quot;claims-lacking-specificity&quot;  
- [9] &quot;clt&quot;                          &quot;comparing-diagnostic-tests&quot;  
-[11] &quot;confusion-about-bugs&quot;         &quot;confusion-intervals&quot;         
-[13] &quot;counting-squares&quot;             &quot;data-mind&quot;                   
-[15] &quot;deciphering-nonlinear-curve&quot;  &quot;experience-vs-memory&quot;        
-[17] &quot;five-fridays&quot;                 &quot;focus-on-subset&quot;             
-[19] &quot;fourier-transform&quot;            &quot;hedging-your-bets&quot;           
-[21] &quot;jags-from-r&quot;                  &quot;kc-star-letter&quot;              
-[23] &quot;legal&quot;                        &quot;logistic-predictions&quot;        
-[25] &quot;mind-into-software&quot;           &quot;modern-programming&quot;          
-[27] &quot;open-questions&quot;               &quot;possibility-theory&quot;          
-[29] &quot;propensity-monte-carlo&quot;       &quot;ready-for-testing&quot;           
-[31] &quot;revised-standards&quot;            &quot;row-over-screening&quot;          
-[33] &quot;secondary-data-sources&quot;       &quot;steps-descriptive&quot;           
-[35] &quot;study-development&quot;            &quot;subgroup-description&quot;        
-[37] &quot;testing-r-function&quot;           &quot;twenty-tips&quot;                 
-[39] &quot;two-questions&quot;                &quot;you-can-now-register&quot;        </code></pre>
+<pre><code> [1] &quot;accrual-dropouts&quot;                    
+ [2] &quot;accrual-elbow-model&quot;                 
+ [3] &quot;accrual-using-geometric-distribution&quot;
+ [4] &quot;accrual-with-slow-start&quot;             
+ [5] &quot;analyzing-nhamcs-data&quot;               
+ [6] &quot;animations-in-r&quot;                     
+ [7] &quot;bad-roc-scaling&quot;                     
+ [8] &quot;bayesian-adaptive-trial&quot;             
+ [9] &quot;binomial-and-negative-binomial&quot;      
+[10] &quot;binomial-mixture&quot;                    
+[11] &quot;borderline-p-value&quot;                  
+[12] &quot;boxplot-whiskers&quot;                    
+[13] &quot;bugs-homogenous-accrual&quot;             
+[14] &quot;bugs-mistake&quot;                        
+[15] &quot;care-wtih-medical-basis&quot;             
+[16] &quot;change-of-variable&quot;                  
+[17] &quot;comparing-proportions-name&quot;          
+[18] &quot;consultation-co-authorship&quot;          
+[19] &quot;counting-my-pages&quot;                   
+[20] &quot;data-management-r-vs-sas&quot;            
+[21] &quot;data-sharing-articles&quot;               
+[22] &quot;distributions-from-wikipedia&quot;        
+[23] &quot;ethics-argument&quot;                     
+[24] &quot;fishers-versus-chi-square&quot;           
+[25] &quot;fishy-randomization&quot;                 
+[26] &quot;iowa-talk-accrual&quot;                   
+[27] &quot;kumc-talk-lasso&quot;                     
+[28] &quot;kumc-talk-lasso1&quot;                    
+[29] &quot;kumc-talk-lasso2&quot;                    
+[30] &quot;kumc-talk-lasso3&quot;                    
+[31] &quot;kumc-talk-lasso4&quot;                    
+[32] &quot;kumc-talk-lasso5&quot;                    
+[33] &quot;kumc-talk-lasso6&quot;                    
+[34] &quot;mapping-my-runs&quot;                     
+[35] &quot;nhamcs&quot;                              
+[36] &quot;non-statistical-skills&quot;              
+[37] &quot;parsing-xml&quot;                         
+[38] &quot;pesky-tabs&quot;                          
+[39] &quot;poisson-bugs&quot;                        
+[40] &quot;power-statements&quot;                    
+[41] &quot;predictions-using-correlation&quot;       
+[42] &quot;qualified-to-comment&quot;                
+[43] &quot;questions-for-panel&quot;                 
+[44] &quot;r-contest-honorable-mention&quot;         
+[45] &quot;reviewers-demand-post-hoc-power&quot;     
+[46] &quot;sample-size-animal-study&quot;            
+[47] &quot;silly-graph&quot;                         
+[48] &quot;simple-accrual-redefined&quot;            
+[49] &quot;single-wild-value&quot;                   
+[50] &quot;snowball-sampling-debate&quot;            
+[51] &quot;traits-of-consultant&quot;                
+[52] &quot;wealth-secret&quot;                       
+[53] &quot;web-20-promotion&quot;                    
+[54] &quot;whats-new-2012-04&quot;                   
+[55] &quot;your-own-questionnaire&quot;              
+[56] &quot;zero-p-value&quot;                        </code></pre>
 </div>
 </div>
 </section>
