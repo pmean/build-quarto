@@ -119,3 +119,8 @@ You can find an [earlier version][sim1] of this page on my [original website][si
 
 [sim1]: http://www.pmean.com/01/random42.html
 [sim2]: http://www.pmean.com/original_site.html
+
+Earlier versions are [here][sim1] and [here][sim2].
+ 
+[sim1]: http://www.pmean.com/01/random42.html
+[sim2]: http://new.pmean.com/bmj-letter-randomization/

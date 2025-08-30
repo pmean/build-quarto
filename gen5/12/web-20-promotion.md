@@ -15,14 +15,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
- 
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/promoting.html
-[sim2]: http://new.pmean.com/web-20-promotion/
- 
-
-Earlier versions are [here][sim1] and [here][sim2].
+ Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://www.pmean.com/12/promoting.html
 [sim2]: http://new.pmean.com/web-20-promotion/

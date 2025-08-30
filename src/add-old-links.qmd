@@ -31,12 +31,11 @@ add_extra <- function(file_path, file_name) {
     str_remove("\\.md$") -> root_name
 	read_lines(glue("{file_path}/{file_name}")) -> file_text
 	file_text |>
-		str_subset("source: ") |>
-		str_remove_all(fixed('\"')) |>
-		str_remove("source: ") -> src
+		str_subset("^\\[sim1\\]\\: ") |>
+		str_remove_all("\\[sim1\\]: ") -> src
 	print(src)
-	if (length(src) != 1) return()
-	i1 <- str_which(file_text, fixed("You can find an [earlier version][sim1]"))
+	if (length(src) != 1) return(file_text)
+	i1 <- str_which(file_text, fixed("You can find an [earlier version][sim1]")) 
 	i2 <- str_which(file_text, "^\\[sim2\\]: ")
 	print(i1)
 	print(i2)
@@ -56,7 +55,7 @@ add_extra <- function(file_path, file_name) {
 ```{r}
 #| label: loop
 
-file_path <- "../gen5/12"
+file_path <- "../gen5/01"
 file_path |>
   list.files() |>
   str_subset("md$") -> file_list
@@ -64,6 +63,7 @@ file_path |>
 for (file_name in file_list) {
   x <- add_extra(file_path, file_name) 
   # cat(x, sep="\n")
+  if (length(x) == 0) next
   write_lines(x, file=glue("{file_path}/{file_name}"))
 }
 ```

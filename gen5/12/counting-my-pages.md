@@ -1,6 +1,7 @@
 ---
 title: Counting pages at my old and new websites
 author: Steve Simon
+sources: "http://www.pmean.com/12/counting.html"
 date: 2012-07-03
 categories:
 - "*Blog post"
@@ -50,7 +51,7 @@ This is a total of 303 pages. Add to this the 83 category pages, the 27 newslett
 
 I'm sure I'll revise this number as I continue to update things, but it looks like the size of my website more than tripled from 490 to 1,542 pages.
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/12/counting.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/counting-my-pages/

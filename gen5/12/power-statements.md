@@ -19,8 +19,3 @@ Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://www.pmean.com/12/PowerStatements.html
 [sim2]: http://new.pmean.com/power-statements/
-
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/PowerStatements.html
-[sim2]: http://new.pmean.com/power-statements/

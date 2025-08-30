@@ -25,10 +25,5 @@ One last comment. Pilot testing is absolutely vital for a home-grown questionnai
 
 Earlier versions are [here][sim1] and [here][sim2].
  
-[sim1]: http://www.pmean.com/12/questionnaire.html
-[sim2]: http://new.pmean.com/your-own-questionnaire/
-
-Earlier versions are [here][sim1] and [here][sim2].
- 
 [sim1]: http://www.pmean.com/12/zero.html
 [sim2]: http://new.pmean.com/your-own-questionnaire/

@@ -137,3 +137,8 @@ You can find an [earlier version][sim1] of this page on my [original website][si
 [sim1]: http://www.pmean.com/01/quick.html
 [sim2]: http://www.pmean.com/original_site.html
 [sim3]: https://www.tandfonline.com/doi/full/10.1080/10543400902964217
+
+Earlier versions are [here][sim1] and [here][sim2].
+ 
+[sim1]: http://www.pmean.com/01/quick.html
+[sim2]: http://new.pmean.com/quick-sample-size-calculations/

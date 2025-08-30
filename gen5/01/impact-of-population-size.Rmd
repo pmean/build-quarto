@@ -71,3 +71,8 @@ You can find an [earlier version][sim1] of this page on my [original website][si
 [sim2]: http://www.pmean.com/original_site.html
 
 [new1]: https://news.gallup.com/poll/7174/yes-polling-works.aspx
+
+Earlier versions are [here][sim1] and [here][sim2].
+ 
+[sim1]: http://www.pmean.com/01/population.html
+[sim2]: http://new.pmean.com/impact-of-population-size/

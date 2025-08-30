@@ -11,18 +11,16 @@ output: html_document
 page_update: no
 ---
 
-Here is a brief abstract.
+I've made a lot of updates to my website. Here are some of the recent highlights:
+
+I gave a talk at the University of Iowa on April 5. You can see the handout that I used for this talk. I tossed in my classic placebo cartoon
+
+Cartoon about placebos
+
+just for kicks and also shared a graph of accrual.
+
 
 <!---more--->
-
-Here are more details.
-
- 
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/new04.html
-[sim2]: http://new.pmean.com/whats-new-2012-04/
- 
 
 Earlier versions are [here][sim1] and [here][sim2].
  

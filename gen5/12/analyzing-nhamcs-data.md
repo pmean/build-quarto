@@ -15,8 +15,3 @@ Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://www.pmean.com/12/nhamcs.html
 [sim2]: http://new.pmean.com/analyzing-nhamcs-data/
-
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/nhamcs.html
-[sim2]: http://new.pmean.com/analyzing-nhamcs-data/

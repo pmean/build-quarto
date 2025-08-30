@@ -2,7 +2,7 @@
 title: New post
 source: "New"
 author: Steve Simon
-date: 20xx-xx-xx
+date: 2012-06-22
 categories:
 - "*Blog post"
 - 2012

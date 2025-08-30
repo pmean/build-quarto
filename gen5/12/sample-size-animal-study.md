@@ -44,13 +44,6 @@ This is sort of like betting on red at the roulette wheel but getting two spins.
 
 [sim3]: http://new.pmean.com/early-stopping-animal/
 
- 
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/animal.html
-[sim2]: http://new.pmean.com/sample-size-animal-study/
- 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://www.pmean.com/12/animal.html

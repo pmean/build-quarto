@@ -116,12 +116,6 @@ attr(,"useBytes")
 ```
 
 This shows that, at least for this data set, thee string " lon=", if it is found, always starts in column 22, and always has length of 5. Certain regular expressions have variable length, so this match.length attribute can be important at times. The useBytes attribute is helpful when you are working with certain languages, such as Chinese, where the individual "letters" require two bytes rather than one.
- 
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/xml.html
-[sim2]: http://new.pmean.com/parsing-xml/
- 
 
 Earlier versions are [here][sim1] and [here][sim2].
  

@@ -15,13 +15,6 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
- 
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/IowaTalk.html
-[sim2]: http://new.pmean.com/iowa-talk-accrual/
- 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://www.pmean.com/12/IowaTalk.html

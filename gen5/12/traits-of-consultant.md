@@ -11,13 +11,6 @@ output: html_document
 page_update: no
 ---
 
- 
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/good.html
-[sim2]: http://new.pmean.com/traits-of-consultant/
- 
-
 Earlier versions are [here][sim1] and [here][sim2].
  
 [sim1]: http://www.pmean.com/12/good.html

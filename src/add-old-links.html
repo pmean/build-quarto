@@ -3122,29 +3122,28 @@ vertical-align: -.125em;
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_remove</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">.md$&quot;</span>) <span class="ot">-&gt;</span> root_name</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">read_lines</span>(<span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>)) <span class="ot">-&gt;</span> file_text</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    file_text <span class="sc">|&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_subset</span>(<span class="st">&quot;source: &quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_remove_all</span>(<span class="fu">fixed</span>(<span class="st">&#39;</span><span class="sc">\&quot;</span><span class="st">&#39;</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_remove</span>(<span class="st">&quot;source: &quot;</span>) <span class="ot">-&gt;</span> src</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(src)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(src) <span class="sc">!=</span> <span class="dv">1</span>) <span class="fu">return</span>()</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    i1 <span class="ot">&lt;-</span> <span class="fu">str_which</span>(file_text, <span class="fu">fixed</span>(<span class="st">&quot;You can find an [earlier version][sim1]&quot;</span>))</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    i2 <span class="ot">&lt;-</span> <span class="fu">str_which</span>(file_text, <span class="st">&quot;^</span><span class="sc">\\</span><span class="st">[sim2</span><span class="sc">\\</span><span class="st">]: &quot;</span>)</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(i1)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(i2)</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(i1) <span class="sc">!=</span> <span class="dv">1</span>) i1 <span class="ot">&lt;-</span> <span class="dv">9999</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(i2) <span class="sc">!=</span> <span class="dv">1</span>) i2 <span class="ot">&lt;-</span> <span class="dv">9999</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> ((i1<span class="sc">-</span>i2)<span class="sc">==</span><span class="dv">3</span>) file_text <span class="ot">&lt;-</span> file_text[<span class="sc">-</span>(i1<span class="sc">:</span>i2)]</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    extra_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;&quot;</span>,</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Earlier versions are [here][sim1] and [here][sim2].&quot;</span>,</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot; &quot;</span>,</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      <span class="fu">glue</span>(<span class="st">&quot;[sim1]: {src}&quot;</span>),</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>        <span class="fu">glue</span>(<span class="st">&quot;[sim2]: http://new.pmean.com/{root_name}/&quot;</span>))</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(file_text, extra_lines))</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_subset</span>(<span class="st">&quot;^</span><span class="sc">\\</span><span class="st">[sim1</span><span class="sc">\\</span><span class="st">]</span><span class="sc">\\</span><span class="st">: &quot;</span>) <span class="sc">|&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">str_remove_all</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">[sim1</span><span class="sc">\\</span><span class="st">]: &quot;</span>) <span class="ot">-&gt;</span> src</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(src)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(src) <span class="sc">!=</span> <span class="dv">1</span>) <span class="fu">return</span>(file_text)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    i1 <span class="ot">&lt;-</span> <span class="fu">str_which</span>(file_text, <span class="fu">fixed</span>(<span class="st">&quot;You can find an [earlier version][sim1]&quot;</span>)) </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    i2 <span class="ot">&lt;-</span> <span class="fu">str_which</span>(file_text, <span class="st">&quot;^</span><span class="sc">\\</span><span class="st">[sim2</span><span class="sc">\\</span><span class="st">]: &quot;</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(i1)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">print</span>(i2)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(i1) <span class="sc">!=</span> <span class="dv">1</span>) i1 <span class="ot">&lt;-</span> <span class="dv">9999</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(i2) <span class="sc">!=</span> <span class="dv">1</span>) i2 <span class="ot">&lt;-</span> <span class="dv">9999</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> ((i1<span class="sc">-</span>i2)<span class="sc">==</span><span class="dv">3</span>) file_text <span class="ot">&lt;-</span> file_text[<span class="sc">-</span>(i1<span class="sc">:</span>i2)]</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    extra_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;&quot;</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;Earlier versions are [here][sim1] and [here][sim2].&quot;</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot; &quot;</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      <span class="fu">glue</span>(<span class="st">&quot;[sim1]: {src}&quot;</span>),</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>        <span class="fu">glue</span>(<span class="st">&quot;[sim2]: http://new.pmean.com/{root_name}/&quot;</span>))</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">c</span>(file_text, extra_lines))</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5/12&quot;</span></span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>file_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5/01&quot;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>file_path <span class="sc">|&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">list.files</span>() <span class="sc">|&gt;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_subset</span>(<span class="st">&quot;md$&quot;</span>) <span class="ot">-&gt;</span> file_list</span>
@@ -3152,163 +3151,34 @@ vertical-align: -.125em;
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (file_name <span class="cf">in</span> file_list) {</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">add_extra</span>(file_path, file_name) </span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># cat(x, sep=&quot;\n&quot;)</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_lines</span>(x, <span class="at">file=</span><span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>))</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(x) <span class="sc">==</span> <span class="dv">0</span>) <span class="cf">next</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write_lines</span>(x, <span class="at">file=</span><span class="fu">glue</span>(<span class="st">&quot;{file_path}/{file_name}&quot;</span>))</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;http://www.pmean.com/12/exclusions.html&quot;
-integer(0)
-[1] 18
-character(0)
-[1] &quot;http://www.pmean.com/12/geometric.html&quot;
-integer(0)
-[1] 18
-character(0)
-[1] &quot;http://www.pmean.com/12/nhamcs.html&quot;
-integer(0)
-[1] 17
-[1] &quot;http://www.pmean.com/12/animations.html&quot;
-integer(0)
-[1] 21
-[1] &quot;http://www.pmean.com/12/badroc.html&quot;
-integer(0)
-[1] 21
-[1] &quot;http://www.pmean.com/12/adaptive.html&quot;
-integer(0)
-[1] 25
-[1] &quot;http://www.pmean.com/12/negbin.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/binomial.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/borderline.html&quot;
-integer(0)
-[1] 21
-[1] &quot;http://www.pmean.com/12/whiskers.html&quot;
-integer(0)
-[1] 21
-[1] &quot;http://www.pmean.com/12/homogenous.html&quot;
-integer(0)
-[1] 21
-[1] &quot;http://www.pmean.com/12/amateur.html&quot;
-integer(0)
-[1] 213
-character(0)
-[1] &quot;http://www.pmean.com/12/change.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/name.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/free.html&quot;
-integer(0)
-[1] 18
-character(0)
-[1] &quot;http://www.pmean.com/12/sas.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/sharing.html&quot;
-integer(0)
-[1] 22
-character(0)
-[1] &quot;http://www.pmean.com/12/arguing.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/fishers.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/fishy.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/IowaTalk.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/lasso.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/lasso1.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/lasso2.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/lasso3.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/lasso4.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/lasso5.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/lasso6.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/maps.html&quot;
-integer(0)
-[1] 22
-[1] &quot;New&quot;
-integer(0)
-[1] 125
-character(0)
-[1] &quot;http://www.pmean.com/12/xml.html&quot;
-integer(0)
-[1] 123
-[1] &quot;http://www.pmean.com/12/pesky.html&quot;
-integer(0)
-[1] 85
-[1] &quot;http://www.pmean.com/12/PoissonBugs.html&quot;
-integer(0)
-[1] 21
-[1] &quot;http://www.pmean.com/12/PowerStatements.html&quot;
-integer(0)
-[1] 21
-[1] &quot;http://www.pmean.com/12/correlation.html&quot;
-integer(0)
-[1] 21
-character(0)
-[1] &quot;http://www.pmean.com/12/questions.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/contest.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/PeerReview.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/animal.html&quot;
-integer(0)
-[1] 51
-[1] &quot;http://www.pmean.com/12/SillyGraph.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/redefined.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/ttest.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/snowball.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/good.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/wealth.html&quot;
-integer(0)
-[1] 18
-[1] &quot;http://www.pmean.com/12/promoting.html&quot;
-integer(0)
-[1] 22
-[1] &quot;http://www.pmean.com/12/new04.html&quot;
-integer(0)
-[1] 24
-[1] &quot;http://www.pmean.com/12/zero.html&quot;
-integer(0)
-[1] 29
-[1] &quot;http://www.pmean.com/12/zero.html&quot;
-integer(0)
-[1] 22</code></pre>
+<pre><code>[1] &quot;http://www.pmean.com/01/random42.html&quot;
+[2] &quot;http://www.pmean.com/01/random42.html&quot;
+[1] &quot;http://www.pmean.com/01/negative.html&quot;
+[2] &quot;http://www.pmean.com/01/negative.html&quot;
+[1] &quot;http://www.pmean.com/01/population.html&quot;
+[2] &quot;http://www.pmean.com/01/population.html&quot;
+[1] &quot;http://www.pmean.com/01/mdac.html&quot; &quot;http://www.pmean.com/01/mdac.html&quot;
+[1] &quot;http://www.pmean.com/01/oddsratio.html&quot;
+[2] &quot;http://www.pmean.com/01/oddsratio.html&quot;
+[1] &quot;http://www.pmean.com/01/parametric.html&quot;
+[2] &quot;http://www.pmean.com/01/parametric.html&quot;
+[1] &quot;http://www.pmean.com/01/placebo.html&quot;
+[2] &quot;http://www.pmean.com/01/placebo.html&quot;
+[1] &quot;http://www.pmean.com/01/quick.html&quot; &quot;http://www.pmean.com/01/quick.html&quot;
+[1] &quot;http://www.pmean.com/01/small.html&quot; &quot;http://www.pmean.com/01/small.html&quot;
+[1] &quot;http://www.pmean.com/01/power.html&quot; &quot;http://www.pmean.com/01/power.html&quot;
+[1] &quot;http://www.pmean.com/01/descriptive.html&quot;
+[2] &quot;http://www.pmean.com/01/descriptive.html&quot;
+[1] &quot;http://www.pmean.com/01/methods.html&quot;
+[2] &quot;http://www.pmean.com/01/methods.html&quot;
+[1] &quot;http://www.pmean.com/01/unequal.html&quot;
+[2] &quot;http://www.pmean.com/01/unequal.html&quot;
+[1] &quot;http://www.pmean.com/01/webpoll.html&quot;
+[2] &quot;http://www.pmean.com/01/webpoll.html&quot;</code></pre>
 </div>
 </div>
 </section>
