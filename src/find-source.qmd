@@ -33,7 +33,9 @@ identify_source <- function(file_text) {
     str_subset("^source: ") |>
     str_remove("source: ") |>
     str_remove_all('"') -> file_source
-  if (length(file_source) != 1) return("abend")
+  if (length(file_source) != 1) {
+    cat("\nNo source found.\n")
+    return("abend")}
   return(file_source)
 }
 
@@ -41,7 +43,9 @@ identify_sim1 <- function(file_text) {
   file_text |>
     str_subset("^\\[sim1\\]: ") |>
     str_remove("\\[sim1\\]: ") -> file_source
-  if (length(file_source) != 1) return("abend")
+  if (length(file_source) != 1) {
+    cat("\nNo sim1 found.\n")
+    return("abend")}
   return(file_source)
 }
 
@@ -73,7 +77,7 @@ update_sim2 <- function(file_text, file_root) {
 #| label: loop
 #| error: false
 
-file_path <- "../gen5/04"
+file_path <- "../gen5/03"
 test_run <- FALSE
 
 file_path |>
@@ -86,18 +90,35 @@ for (file_name in file_list) {
     str_remove("\\.Rmd$") |>
     str_remove("\\.md$") -> file_root
 
+  cat("\n**** ")
+  cat(file_root)
+  cat("\n")
+
   file_text <- read_page(file_path, file_name)
   file_sim1 <- identify_sim1(file_text)
-  if (file_sim1 == "abend") next
+  file_source <- identify_source(file_text)
   
-  if (identify_source(file_text) == "abend") file_text <- insert_source(file_text, file_sim1)
+  if (file_sim1 == "abend" & file_source == "abend") next
+
+  if (file_sim1 == "abend") {
+    extra_lines <- c(
+      "",
+      "Earlier versions are [here][sim1] and [here][sim2].",
+      "",
+      glue("[sim1]: {file_source}"),
+      glue("[sim2]: http://new.pmean.com/{file_root}/"),
+      "")
+    file_text <- c(file_text, extra_lines)
+  }
+  
+  if (file_source == "abend") file_text <- insert_source(file_text, file_sim1)
+  
   file_text <- update_found(file_text)
   file_text <- update_sim2(file_text, file_root)
-  cat("\n\n\n**** ")
-  cat(file_root)
-  cat("\n\n")
+  
   cat(file_text, sep="\n")
-  if (test_run == TRUE) next
+  
+  if (test_run) next
   write_lines(file_text, file=glue("{file_path}/{file_name}"))
 }
 ```

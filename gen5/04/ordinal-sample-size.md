@@ -121,4 +121,10 @@ calculations for the ordinal logistic regression
 model](../00files/PowerForProportionalOddsModel.xls). It is not
 thoroughly tested, so use it at your own risk.
 
-You can find an [earlier version](http://www.pmean.com/04/OrdinalLogistic.html) of this page on my [original website](http://www.pmean.com/original_site.html).
+Earlier versions are [here][sim1] and [here][sim2].
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/04/OrdinalLogistic.html
+[sim2]: http://new.pmean.com/ordinal-sample-size/
+

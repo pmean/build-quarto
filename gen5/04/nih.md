@@ -103,4 +103,10 @@ page_update: partial
 > much of the grants process. In particular, you can now optionally
 > submit competitive grants electronically.
 
-You can find an [earlier version](http://www.pmean.com/04/nih.html) of this page on my [original website](http://www.pmean.com/original_site.html).
+Earlier versions are [here][sim1] and [here][sim2].
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/04/nih.html
+[sim2]: http://new.pmean.com/nih/
+

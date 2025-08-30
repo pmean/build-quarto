@@ -151,4 +151,10 @@ to do this if I hadn't computed a crosstabulation earlier. It is very
 important to do a few simple crosstabulations before you run a logistic
 regression model, because it helps you orient yourself to the data.
 
-You can find an [earlier version](http://www.pmean.com/04/categorical.html) of this page on my [original website](http://www.pmean.com/original_site.html).
+Earlier versions are [here][sim1] and [here][sim2].
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/04/categorical.html
+[sim2]: http://new.pmean.com/categorical-iv/
+

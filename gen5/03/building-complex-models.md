@@ -23,4 +23,10 @@ Always check the more complex models against your intuition and against the simp
 
 Don't rely on stepwise regression or other automated procedures. Stepwise regression fails to incorporate what you already understand even if only imperfectly) from a medical and scientific perspective and has been shown to often develop inferior models.
 
-You can find an [earlier version](http://www.pmean.com/03/complex.html) of this page on my [original website](http://www.pmean.com/original_site.html).
+Earlier versions are [here][sim1] and [here][sim2].
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/03/complex.html
+[sim2]: http://new.pmean.com/building-complex-models/
+
