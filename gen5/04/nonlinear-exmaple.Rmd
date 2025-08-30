@@ -1,0 +1,30 @@
+---
+title: Nonlinear Least Squares in S-plus and R
+author: Steve Simon
+source: http://www.pmean.com/04/nonlinear.html
+date: 2004-06-28
+categories:
+- "*Blog post"
+- 2004
+- Nonlinear regression
+output: html_document
+page_update: partial
+---
+
+I've worked on a brief explanation of how to [fit an S-shaped curve][sim1] using SPSS and someone wanted to know how to do this in R.
+
+Here's a simple example.
+
+```{r}
+xc <- c(0.8,0.5,0.2,-0.2,-0.5,-0.8)
+yn <- c(0.02,0.10,0.29,0.20,0.80,1.00)
+nls.mod1 <- nls(yn~1/(1+exp(b*xc-a)),start=list(a=0,b=10))
+summary(nls.mod1)
+```
+Earlier versions are [here][sim1] and [here][sim2].
+
+Also see [this related file][sim3].
+
+[sim1]: http://www.pmean.com/04/nonlinear.html
+[sim2]: http://new.pmean.com/nonlinear-exmaple/
+[sim3]: http://new.pmean.com/post/scurve.html

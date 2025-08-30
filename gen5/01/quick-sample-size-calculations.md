@@ -1,6 +1,7 @@
 ---
 title: Quick sample size calculations
 author: Steve Simon
+source: "http://www.pmean.com/01/quick.html"
 date: 2001-01-01
 categories:
 - "*Blog post"
@@ -130,12 +131,7 @@ The denominator is the effect size squared. Round the numerator up to 16.
 These rules of thumb were originally derived by Gerald van Belle who published them on a website that was a preview for his book, Statistical Rules of Thumb. For some reason, the rule of 50 did not make it into the book, which is a shame because it is a very useful rule of thumb. I wrote to Dr. van Belle to ask him about this and he said that it was an oversight and that he would have to update the website with the rule of 50, but it looks like he never has.
 
 I mentioned this omission in a [book review][sim3] I wrote for the second edition of Statistical Rules of Thumb:
- * 
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
-[sim1]: http://www.pmean.com/01/quick.html
-[sim2]: http://www.pmean.com/original_site.html
 [sim3]: https://www.tandfonline.com/doi/full/10.1080/10543400902964217
 
 Earlier versions are [here][sim1] and [here][sim2].

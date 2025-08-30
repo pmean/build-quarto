@@ -1,6 +1,7 @@
 ---
 title: The minimal impact of population size on power and precision
 author: Steve Simon
+source: "http://www.pmean.com/01/population.html"
 date: 2001-01-19
 categories:
 - "*Blog post"
@@ -64,11 +65,6 @@ Uncle Gene wants an explanation of why a sample for a population of 10 million p
 Frank Newport. Yes, Polling Works. Gallup blog, 2002-11-11. Available in [html format][new1]
 
 "There's little question that some Americans are skeptical of polls and the process by which we use small samples to represent the views of millions of people. We pick up that skepticism when we poll people about polls (something we do from time to time!), and I certainly hear it when I am on a radio talk show or make a speech and get bombarded with questions about the believability of our polls, which are based on what seems to the questioners to be ridiculously small numbers of people."
-
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
-[sim1]: http://www.pmean.com/01/population.html
-[sim2]: http://www.pmean.com/original_site.html
 
 [new1]: https://news.gallup.com/poll/7174/yes-polling-works.aspx
 

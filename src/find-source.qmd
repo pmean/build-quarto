@@ -1,0 +1,103 @@
+---
+title: "Find source location and update files accordingly"
+format:
+  html:
+    embed-resources: true
+---
+
+This program was written by Steve Simon on 2025-08-19 and is placed in the public domain.
+
+## Preliminaries
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+```
+
+
+## Read page
+
+```{r}
+#| label: read-page
+
+read_page <- function(file_path, file_name) {
+  	read_lines(glue("{file_path}/{file_name}"))
+}
+
+identify_source <- function(file_text) {
+  file_text |>
+    str_subset("^source: ") |>
+    str_remove("source: ") |>
+    str_remove_all('"') -> file_source
+  if (length(file_source) != 1) return("abend")
+  return(file_source)
+}
+
+identify_sim1 <- function(file_text) {
+  file_text |>
+    str_subset("^\\[sim1\\]: ") |>
+    str_remove("\\[sim1\\]: ") -> file_source
+  if (length(file_source) != 1) return("abend")
+  return(file_source)
+}
+
+insert_source <- function(file_text, file_source) {
+  text1 <- file_text[1:3]
+  text2 <- glue("source: {file_source}")
+  text3 <- file_text[-(1:3)]
+  return(c(text1, text2, text3))
+}
+
+update_found <- function(file_text) {
+  n1 <- str_which(file_text, "^You can find an ")
+  if (length(n1) != 1) return(file_text)
+  file_text[n1] <- "Earlier versions are [here][sim1] and [here][sim2]."
+  return(file_text)
+}
+
+update_sim2 <- function(file_text, file_root) {
+  n2 <- str_which(file_text, "^\\[sim2\\]: ")
+  if (length(n2) != 1) return(file_text)
+  file_text[n2] <- glue("[sim2]: http://new.pmean.com/{file_root}/")
+  return(file_text)
+}
+```
+
+## Loop
+
+```{r}
+#| label: loop
+#| error: false
+
+file_path <- "../gen5/01"
+test_run <- FALSE
+
+file_path |>
+  list.files() |>
+  str_subset("md$") -> file_list
+
+for (file_name in file_list) {
+  file_name |>
+    str_remove("\\.qmd$") |>
+    str_remove("\\.Rmd$") |>
+    str_remove("\\.md$") -> file_root
+
+  file_text <- read_page(file_path, file_name)
+  file_sim1 <- identify_sim1(file_text)
+  if (file_sim1 == "abend") next
+  
+  if (identify_source(file_text) == "abend") file_text <- insert_source(file_text, file_sim1)
+  file_text <- update_found(file_text)
+  file_text <- update_sim2(file_text, file_root)
+  cat("\n\n\n**** ")
+  cat(file_root)
+  cat("\n\n")
+  cat(file_text, sep="\n")
+  if (test_run == TRUE) next
+  write_lines(file_text, file=glue("{file_path}/{file_name}"))
+}
+```

@@ -1,6 +1,7 @@
 ---
 title: Writing the methods section of your grant
 author: Steve Simon
+source: "http://www.pmean.com/01/methods.html"
 date: 2001-01-15
 categories:
 - "*Blog post"
@@ -91,11 +92,6 @@ How to Report Statistics in Medicine.
 Lang TA, Secic M.
 Phildelphia PA: American College of Physicians (1997).
 ISBN: 0-943126-44-4.
-
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
-[sim1]: http://www.pmean.com/01/methods.html
-[sim2]: http://www.pmean.com/original_site.html
 
 Earlier versions are [here][sim1] and [here][sim2].
  

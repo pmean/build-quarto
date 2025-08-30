@@ -1,6 +1,7 @@
 ---
 title: Three things you need for a power calculation
 author: Steve Simon
+source: http://www.pmean.com/01/power.html
 date: 2001-01-01
 categories:
 - "*Blog post"
@@ -22,7 +23,7 @@ That reminds me of a cute joke. How many research subjects does it take to screw
 
 Sorry, I was digressing. Is forty subjects an adequate sample size? That depends on a lot of factors. The basic idea, though, is to select a sample size which ensures that your study has adequate power. Power is the probability that your research study will successfully detect a difference, assuming that the treatment or exposure you are examining actually can cause an important difference. If you don't care whether your experiment is successful or not, then you can use just about any sample size.
 
-### Short answer
+## Short answer
 
 Power is to a research design like sensitivity is to a diagnostic test. A diagnostic test with good sensitivity is normally able to detect a disease when the disease is present. A research study with good power is normally able to detect a change when your treatment is indeed effective.
 
@@ -34,13 +35,13 @@ The actual calculation of power requires three pieces of information:
 
 Calculating power is sometimes difficult and it may require you to go to the time and expense of running a pilot study. But you should NEVER start a research project without knowing what your power is. That would be like using a diagnostic test with unknown sensitivity.
 
-### Research hypothesis
+## Research hypothesis
 
 A research hypothesis will provide specific information that will determine what type of analysis is needed. A common structure for a research hypothesis is specification of the subject group you are testing, the treatment or exposure that this group will receive, the outcome measure, and the comparison or control group.
 
 Some exploratory studies may not have a research hypothesis, of course, and for those studies you determine an appropriate sample size in a different way (for example, by insuring that the estimates from this exploratory study have adequate precision).
 
-### Variability of your outcome measure
+## Variability of your outcome measure
 
 You also need to have an estimate of the variability of your outcome measure. I'm assuming here that your outcome measure is continuous variable like birth weight or cholesterol level. If you are using a categorical outcome measure like mortality or cancer remission, then you need some estimate of the rate of mortality or remission in your control group.
 
@@ -60,7 +61,7 @@ Fourth, you may have to use a clearly flawed estimate, but a flawed estimate of 
 
 If you've tried and you still can't come up with an estimate of variability, then don't despair. A pilot study can provide you with an estimate of variability when all else fails. Usually 20 to 30 subjects produce a reasonably stable estimate of variability. A pilot study is also helpful for finding out how quickly you can recruit subjects. Furthermore, a pilot study will also identify any weaknesses in the logistics of your research. Finally, if the protocol remains substantially unchanged after the pilot study, you can usually include those pilot subjects in the final analysis.
 
-### Clinically relevant difference
+## Clinically relevant difference
 
 Wow, that was exhausting! You're not done, though, until you can tell me what a clinically relevant difference would be for your outcome measure. This is a difference that is large enough to be considered important by a practicing clinician.
 
@@ -84,7 +85,7 @@ It may be unrealistic to look for changes much smaller than 0.2 standard deviati
 
 Like the other two rules, this rule is also not perfect. In some animal experiments, for example, the similarity in the gene pool can often reduce variation to such an extent that changes of more than a full standard deviation are quite realistic. If you are trying to specify a clinically relevant difference, there is no substitute for a good understanding of the context of your research.
 
-### But I can't do it.
+## But I can't do it.
 
 A lot of people tell me that they can't do this. They can't provide an estimate of variability or they can't determine what a clinically relevant difference is, even after I explain all of the above suggestions.
 
@@ -102,7 +103,7 @@ The bottom line is that if you know so little about this avenue of research that
 
 But do something, because your ability to perform the research and to publish your research depends on your justification of the sample size.
 
-### Example
+## Example
 
 In a study of two different skin barriers for burn patients, we are interested in three outcome measures: pain, healing time, and cost. We will randomly assign half of the patients to one skin barrier and half to the other.
 
@@ -133,11 +134,6 @@ Using the same rule of thumb, we get an estimate of the standard deviation of ei
 A sample size of 63 is untenable, so we decide that we can live with a study that could only detect a $1.00 change in costs. For this size difference, we would need 16 subjects per group using the larger standard deviation.
 
 In summary, to achieve adequate power for all three endpoints, we would need 36 patients per group,. This is larger than we need for the healing time endpoint. It is also larger than what we need for the cost endpoint, unless we wanted to detect a $0.50 change in costs. To detect such a small difference, we need a sample size of 63 subjects per group.
-
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
-[sim1]: http://www.pmean.com/01/power.html
-[sim2]: http://www.pmean.com/original_site.html
 
 Earlier versions are [here][sim1] and [here][sim2].
  

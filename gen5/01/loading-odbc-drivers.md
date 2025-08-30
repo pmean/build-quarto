@@ -1,6 +1,7 @@
 ---
 title: Loading ODBC drivers from the Microsoft Data Access Pack
 author: Steve Simon
+source: "http://www.pmean.com/01/mdac.html"
 date: 2001-01-24
 categories:
 - "*Blog post"
@@ -59,11 +60,6 @@ I also found a copy on the Access 97 CD. I knew it had to be somewhere on the SP
 You need the driver for the application that contains the data. Since the data are in Access 97 - you will need the Access ODBC driver. (If the data were in SPSS - you would need the SPSS ODBC driver.) Microsoft ODBC drivers are located in the system subdirectory of your windows directory. The file names begin with ODBC and have a .DLL extension. If they have been wiped out or corrupted, you can reinstall them by reinstalling Access. The following technical note contains related information that may be useful.
 
 + [support.microsoft.com/support/kb/articles/Q237/5/75.ASP](http://support.microsoft.com/support/kb/articles/Q237/5/75.ASP).
-
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
-
-[sim1]: http://www.pmean.com/01/mdac.html
-[sim2]: http://www.pmean.com/original_site.html
 
 Earlier versions are [here][sim1] and [here][sim2].
  
