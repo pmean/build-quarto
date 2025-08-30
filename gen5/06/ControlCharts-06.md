@@ -47,3 +47,9 @@ page_update: partial
 > There is also a large amount of commercial software that you can buy.
 > I don't have a lot of recommendations here, because I have not used
 > any of this software.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ControlCharts-06.html
+[sim2]: http://new.pmean.com/ControlCharts-06/
+

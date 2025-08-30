@@ -64,3 +64,9 @@ coefficient of determination is used for both models.
 **Further reading:**
 
 -   [Stats: R-squared](../ask/rsquared.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/CoefficientDetermination.html
+[sim2]: http://new.pmean.com/CoefficientDetermination/
+

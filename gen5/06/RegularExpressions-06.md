@@ -67,3 +67,9 @@ look more readable, but they used the same sort of trick.
     10, 2005)](file:///J:/weblog2005/StringsR.asp)
 -   [Stats: The impact of XML on Statistics (June
     23, 2004)](file:///J:/weblog2004/xml.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RegularExpressions-06.html
+[sim2]: http://new.pmean.com/RegularExpressions-06/
+

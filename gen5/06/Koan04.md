@@ -77,3 +77,9 @@ page_update: partial
 > over such a small thing. Were the jewels of great beauty and
 > incomparable value? Then do not let any small thing stand in the way
 > of possibly recovering such a great treasure.*"
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/Koan04.html
+[sim2]: http://new.pmean.com/Koan04/
+

@@ -1,6 +1,7 @@
 ---
 title: Meta-analysis with non-comparable procedures
 author: Steve Simon
+source: http://www.pmean.com/11/noncomparable.html
 date: 2011-10-31
 categories:
 - "*Blog post"
@@ -28,7 +29,7 @@ Now that's the frying pan. The fire is reducing your sample size by including on
 
 So which is worse, the frying pan or the fire? I'd jump into the fire here, but that's just me. Either way, your meta-analysis has problems and produces confidence intervals that are much too wide. That's the price that you pay when you don't make an effort to coordinate your research efforts more carefully. Do something about it, please. What? They don't listen to your advice either. Darn it all. The world would be a nicer place if we were dictators who could bend all of the world's researchers to our will. Until that happens, we just have to suffer with meta-analyses that are unhelpful. Well, they are helpful in that they point out how haphazardly the research is being done, but they are unhelpful in that they cannot provide good guidance on clinical practice.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/noncomparable.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/noncomparable/

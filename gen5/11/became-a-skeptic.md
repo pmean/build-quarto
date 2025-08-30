@@ -1,6 +1,7 @@
 ---
 title: How I became a skeptic
 author: Steve Simon
+source: http://www.pmean.com/11/Skeptic.html
 date: 2011-06-15
 categories:
 - "*Blog post"
@@ -22,7 +23,7 @@ Oh what a shock to my system. But his relatively mild critical comments made me 
 
 Fighting for a rational approach to science is a constant battle and struggle for me, but the skeptic community provides useful tools. I've become more savvy about scientific and medical claims over time through a variety of skeptical sources, but most notably the Skeptical Inquirer magazine, and the Skeptic's Dictionary website.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Skeptic.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/became-a-skeptic/

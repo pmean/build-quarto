@@ -1,6 +1,7 @@
 ---
 title: Calculating a confidence interval for a standard deviation
 author: Steve Simon
+source: http://www.pmean.com/11/StandardDeviation.html
 date: 2011-07-10
 categories:
 - "*Blog post"
@@ -67,7 +68,7 @@ $S \sqrt{\frac{79}{56.3}}=1.184*S$
 
 Notice that I put the larger Chisquare percentile in the denominator of the lower confidence limit. Our confidence interval is 86% to 118% of the sample standard deviation, which indicates a small amount of sampling error.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/StandardDeviation.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/standard-deviation-ci/

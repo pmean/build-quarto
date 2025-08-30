@@ -1,6 +1,7 @@
 ---
 title: Yet another biography
 author: Steve Simon
+source: http://www.pmean.com/11/ShortBio.html
 date: 2011-05-16
 categories:
 - "*Blog post"
@@ -24,7 +25,7 @@ I earned a Ph.D. in Statistics from the University of Iowa in 1982. I currently 
 
 I am a highly sought after speaker, and have provided numerous invited talks and short courses. as well as a popular webinar series: Statistics for Medical Librarians. I take great pride in the repeat invitations that I have gotten from many organizations. One of my current research interests and the proposed presentation topic is Bayesian models to plan and monitor patient accrual in clinical trials. It is an easy to follow talk on an area important with many members of your audience.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/ShortBio.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/biography-2011/

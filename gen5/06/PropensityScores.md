@@ -22,3 +22,9 @@ excellent reference on this technique can be found on the web at:
     Published in the Proceedings of the International Conference on
     Nonrandomized Comparative Clinical Studies in Heidelberg, April 10
     -11,1997. Accessed on 2005-01-12. www.symposion.com/nrccs/rubin.htm
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PropensityScores.html
+[sim2]: http://new.pmean.com/PropensityScores/
+

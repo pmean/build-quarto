@@ -46,3 +46,9 @@ and here is my abstract:
 > articles where the full free text is available on the web. A handout
 > for this seminar can be found at
 > [www.childrens-mercy.org/stats/training/hand67.asp](http://www.childrens-mercy.org/stats/training/hand67.asp).
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/MetaAnalysisDiagnostic.html
+[sim2]: http://new.pmean.com/MetaAnalysisDiagnostic/
+

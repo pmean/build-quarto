@@ -1,6 +1,7 @@
 ---
 title: Lasagna's Law on patient recruitment
 author: Steve Simon
+source: http://www.pmean.com/11/lasagna.html
 date: 2011-10-24
 categories:
 - "*Blog post"
@@ -114,10 +115,10 @@ Moher D, Dulberg CS, Wells GA. Statistical power, sample size, and their reporti
 
 I'll certainly continue searching for more references along these lines and refine the results for incorporation into the draft grant I am preparing for patient accrual.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/lasagna.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/lasagna/
 
 [act1]: https://www.appliedclinicaltrialsonline.com/view/recruitment-roles
 [ams1]: https://aph-qualityhandbook.org/media/zx0knp2e/recruiting-participants.pdf

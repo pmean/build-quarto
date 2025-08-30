@@ -186,3 +186,9 @@ OA journals offer digital content at no cost and with limited copyright restrict
 [sor2]: www.soros.org/openaccess/read.shtml
 [spa1]: www.arl.org/sparc/about/index.html
 [wel1]: www.wellcome.ac.uk/doc_WTD002766.html
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/07/OATalk.html
+[sim2]: http://new.pmean.com/OATalk/
+

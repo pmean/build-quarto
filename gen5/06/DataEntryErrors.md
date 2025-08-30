@@ -53,3 +53,9 @@ page_update: partial
 > population size, you might consider a 100% audit. The fpc might reduce
 > you to 90% or even 80% of the total sample size, but when the audit
 > size becomes this large you might a well audit everybody.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/DataEntryErrors.html
+[sim2]: http://new.pmean.com/DataEntryErrors/
+

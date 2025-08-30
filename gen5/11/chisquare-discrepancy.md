@@ -1,6 +1,7 @@
 ---
 title: Discrepancies in the chisquare test
 author: Steve Simon
+source: http://www.pmean.com/11/discrepancy.html
 date: 2011-12-16
 categories:
 - "*Blog post"
@@ -48,7 +49,7 @@ The other tip-off as to which table is correct is the grand total. The true samp
 
 It's an easy mistake to make. When you are entering data into a two by two table, be sure that a patient can belong to only one of the four cells in the table. If a patient can potentially contribute to the count in more than one cell, then you have artificially inflated your sample size and your chisquare statistic will be invalid.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/discrepancy.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/chisquare-discrepancy/

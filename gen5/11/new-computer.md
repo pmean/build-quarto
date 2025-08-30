@@ -1,6 +1,7 @@
 ---
 title: What I'd look for in a new computer
 author: Steve Simon
+source: http://www.pmean.com/11/NewComputer.html
 date: 2011-05-16
 categories:
 - "*Blog post"
@@ -62,7 +63,7 @@ Wireless networking: This is very helpful for laptop computers, as it allows you
 
 Warning: This advice, even if it were from a computer expert, would probably be obsolete in six months. From me, it is intended only as very general guidance. It can help you understand some of the options before you, but you should definitely talk to an expert (or at least a computer salesperson) about what configuration makes sense for you.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/NewComputer.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/new-computer/

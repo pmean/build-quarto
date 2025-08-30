@@ -1,6 +1,7 @@
 ---
 title: "Publicity for your consulting career"
 author: Steve Simon
+source: http://www.pmean.com/11/Publicity.html
 date: 2011-08-04
 categories:
 - "*Blog post"
@@ -83,10 +84,10 @@ While you are welcome to write about a broad range of topics, you should conside
 
 These niches are already filled, of course, but they give you an idea of ways that you can specialize.
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Publicity.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/consulting-pr/
 
 [bay1]: http://twitter.com/#!/CjBayesian
 [one1]: http://onertipaday.blogspot.com/

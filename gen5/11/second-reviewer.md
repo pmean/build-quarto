@@ -1,6 +1,7 @@
 ---
 title: How much work does that second reviewer have to do in a meta-analysis
 author: Steve Simon
+source: http://www.pmean.com/11/SecondReviewer.html
 date: 2011-06-20
 categories:
 - "*Blog post"
@@ -20,7 +21,7 @@ If you do a certain percentage, there are some numbers (10%, 20%) that appear of
 
 If you wanted to do this a bit more rigorously, you would justify the sample size by showing that the statistics produced by your comparison of the two raters (typically a correlation of some type) have sufficiently narrow confidence intervals.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SecondReviewer.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/second-reviewer/

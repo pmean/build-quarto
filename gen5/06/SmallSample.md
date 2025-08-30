@@ -100,3 +100,9 @@ blessed, but when this does happen, it is not outrageous to expect to
 see an all-or nothing response. Another research setting where you might
 get by with a very small sample size is a cross-over trial, because in
 that trial, each subject serves as their own control.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SmallSample.html
+[sim2]: http://new.pmean.com/SmallSample/
+

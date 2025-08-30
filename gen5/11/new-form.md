@@ -1,6 +1,7 @@
 ---
 title: New shortened structure for NIH grants
 author: Steve Simon
+source: http://www.pmean.com/11/NewForm.html
 date: 2011-06-02
 categories:
 - "*Blog post"
@@ -95,10 +96,10 @@ vAll Personnel Report Format Page
 
 The Resources and Facilities section should provide a description of how the scientific environment will contribute to the probability of success of the project.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/NewForm.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/new-form/
 
 [mus1]: http://research.musc.edu/nih/Schachte_newpagelimits.pdf
 [nih1]: http://enhancing-peer-review.nih.gov/docs/application_changes.pdf

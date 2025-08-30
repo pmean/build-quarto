@@ -212,3 +212,9 @@ page_update: partial
 > noticed. Another participant pointed out that if there are negative or
 > cautionary findings and you do not report them to the regulator, you
 > will have a disaster on your hands.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StatisticalConsultants.html
+[sim2]: http://new.pmean.com/StatisticalConsultants/
+

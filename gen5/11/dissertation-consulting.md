@@ -1,6 +1,7 @@
 ---
 title: Is it ethical to provide statistical consulting on a disseration to a Ph.D. candidate
 author: Steve Simon
+source: http://www.pmean.com/11/DissertationConsulting.html
 date: 2011-05-11
 categories:
 - "*Blog post"
@@ -24,7 +25,7 @@ What are the limits to what a consultant should do? Obviously the writing itself
 
 I'd also suggest that the candidate must have a level of understanding sufficient to be able to defend their work in a hostile environment. Everything I do is intended to enhance the candidate's ability to defend their work. So no spoon feeding and no black boxes. Other than that, I just try to respect the wishes of the chair and the committee.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/DissertationConsulting.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/dissertation-consulting/

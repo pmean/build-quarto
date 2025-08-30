@@ -39,3 +39,9 @@ today:
 > Houghton Mifflin Co.\]*
 >
 > <http://irp.savstate.edu/irp/glossary/correlation.html>
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/InterpretCorrelation.html
+[sim2]: http://new.pmean.com/InterpretCorrelation/
+

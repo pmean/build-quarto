@@ -57,3 +57,9 @@ page_update: partial
 >
 > which outlines the issue far better than anything I have written on
 > the topic.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HarrellPhilosophy.html
+[sim2]: http://new.pmean.com/HarrellPhilosophy/
+

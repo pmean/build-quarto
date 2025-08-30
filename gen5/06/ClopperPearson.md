@@ -52,3 +52,9 @@ page_update: partial
 >
 > Neither of these papers is readily available on the web for free.
 > Sorry!
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ClopperPearson.html
+[sim2]: http://new.pmean.com/ClopperPearson/
+

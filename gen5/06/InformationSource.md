@@ -196,3 +196,9 @@ opposite view. So don't be too open-minded about opposing arguments.
 > open is as useless as a window stuck closed. In either case, you've
 > lost the use of the window.*
 > [www.brucewoolley.com/TherapeuticsReport/1998/Oct98.html](http://www.brucewoolley.com/TherapeuticsReport/1998/Oct98.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/InformationSource.html
+[sim2]: http://new.pmean.com/InformationSource/
+

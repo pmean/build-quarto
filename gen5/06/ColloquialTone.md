@@ -94,3 +94,9 @@ models to see if they produce reasonable results.
     3, 2006)](AdverseEvents.html)
 -   [Stats: Control charts for monitoring mortality rates (February
     11, 2005)](http://www.pmean.com/weblog2005/ControlCharts.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ColloquialTone.html
+[sim2]: http://new.pmean.com/ColloquialTone/
+

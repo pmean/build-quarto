@@ -130,3 +130,9 @@ unresolved issues:
 -   diagnostic tests and graphs,
 -   non-normal random effects,
 -   and mixture models.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/MixedSeminar.html
+[sim2]: http://new.pmean.com/MixedSeminar/
+

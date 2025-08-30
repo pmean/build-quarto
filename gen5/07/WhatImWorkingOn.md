@@ -44,3 +44,9 @@ Here's an example of an ANOM chart
 A common theme for all three of these areas is that they lend themselves well to simple graphical summaries. I have always enjoyed the more visual applications of statistics (like regression analysis) and I believe that a single well constructed graph can provide a wealth of information.
 
 An earlier version of this page has been lost.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/07/WhatImWorkingOn.html
+[sim2]: http://new.pmean.com/WhatImWorkingOn/
+

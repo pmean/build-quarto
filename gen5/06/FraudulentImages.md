@@ -48,3 +48,9 @@ artificially enhance or remove important features.
     text\]](http://www.pubmedcentral.gov/articlerender.fcgi?tool=pubmed&pubmedid=15085181)
     [\[PDF\]](http://www.pubmedcentral.gov/picrender.fcgi?artid=385420&blobtype=pdf)
     **(Evidence, Corroboration)**
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/FraudulentImages.html
+[sim2]: http://new.pmean.com/FraudulentImages/
+

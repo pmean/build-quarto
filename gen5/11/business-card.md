@@ -1,6 +1,7 @@
 ---
 title: What goes on your business card
 author: Steve Simon
+source: http://www.pmean.com/11/BusinessCard.html
 date: 2011-08-04
 categories:
 - "*Blog post"
@@ -32,7 +33,7 @@ You should consider a company logo (mine appears at the top of the page). Also c
 
 If you have a company name, company logo, or company tag line, try to use it in all your business correspondance, all your emails, on your website, etc.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/BusinessCard.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/business-card/

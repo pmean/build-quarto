@@ -1,6 +1,7 @@
 ---
 title: I can't get SAS to model the cluster effects in the MEPS data set
 author: Steve Simon
+source: http://www.pmean.com/11/meps.html
 date: 2011-09-02
 categories:
 - "*Blog post"
@@ -22,9 +23,9 @@ MEPS is a complicated data set that uses stratification, clustering, multiple st
 
 While proc glimmix does work for clustering, it doesn't take all the other factors into consideration. I pretty sure that glimmix, even with weights, won't produce meaningful results. The SAS examples at the website noted above all use proc surveymeans. You can also use SUDAAN (which was built with this type of survey in mind), Stata (with the svy commands), or SPSS (only with the complex survey add-on).
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/meps.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/meps-clusters/
 
 [mep1]: http://www.meps.ahrq.gov/mepsweb/survey_comp/standard_errors.jsp

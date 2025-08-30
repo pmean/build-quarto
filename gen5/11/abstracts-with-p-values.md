@@ -1,6 +1,7 @@
 ---
 title: Example abstracts for a training class
 author: Steve Simon
+source: http://www.pmean.com/11/abstracts.html
 date: 2011-12-08
 categories:
 - "*Blog post"
@@ -73,10 +74,10 @@ Journal article: Susanne Ostrowitzki, Dennis Deptula, Lennart Thurfjell, Frederi
 
 Abstract: BACKGROUND: Gantenerumab is a fully human anti-AB monoclonal antibody in clinical development for the treatment of Alzheimer disease (AD). OBJECTIVES: To investigate whether treatment with gantenerumab leads to a measurable reduction in the level of AB amyloid in the brain and to elucidate the mechanism of amyloid reduction. DESIGN: A multicenter, randomized, double-blind, placebo-controlled, ascending-dose positron emission tomographic study. Additionally, ex vivo studies of human brain slices from an independent sample of patients who had AD were performed. SETTING: Three university medical centers. Patients:  Patients with mild-to-moderate AD. InterventionÂ  Two consecutive cohorts of patients received 2 to 7 infusions of intravenous gantenerumab (60 or 200 mg) or placebo every 4 weeks. Brain slices from patients who had AD were coincubated with gantenerumab at increasing concentrations and with human microglial cells. MAIN OUTCOME MEASURES: Percent change in the ratio of regional carbon 11-labeled Pittsburgh Compound B retention in vivo and semiquantitative assessment of gantenerumab-induced phagocytosis ex vivo. RESULTS: Sixteen patients with end-of-treatment positron emission tomographic scans were included in the analysis. The mean (95% CI) percent change from baseline difference relative to placebo (n = 4) in cortical brain amyloid level was -15.6% (95% CI, -42.7 to 11.6) for the 60-mg group (n = 6) and -35.7% (95% CI, -63.5 to -7.9) for the 200-mg group (n = 6). Two patients in the 200-mg group showed transient and focal areas of inflammation or vasogenic edema on magnetic resonance imaging scans at sites with the highest level of amyloid reduction. Gantenerumab induced phagocytosis of human amyloid in a dose-dependent manner ex vivo. CONCLUSION: Gantenerumab treatment resulted in a dose-dependent reduction in brain amyloid level, possibly through an effector cell-mediated mechanism of action. Available in [html format][ost1].
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/abstracts.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/abstracts-with-p-values/
 
 [cut1]: http://www.ncbi.nlm.nih.gov/pubmed/18334909
 [gre1]: http://www.ncbi.nlm.nih.gov/pubmed/20009055

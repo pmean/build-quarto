@@ -22,3 +22,9 @@ this.
 
 -   [Stats: Vote for me (December 21, 2005,
     General)](http://www.pmean.com/weblog2005/VoteForMe.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/KickAround.html
+[sim2]: http://new.pmean.com/KickAround/
+

@@ -188,3 +188,9 @@ page_update: partial
 >
 > So a bit of postmodernism is probably good medicine, as long as you
 > don't overdose on it.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PostmodernThought.html
+[sim2]: http://new.pmean.com/PostmodernThought/
+

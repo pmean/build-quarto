@@ -1,6 +1,7 @@
 ---
 title: Lost page
 author: Steve Simon
+source: http://www.pmean.com/10/Interesting2010.html
 date: 2010-01-14
 categories:
 - "*Blog post"
@@ -166,7 +167,7 @@ G. David Garson. StatNotes: Topics in Multivariate Analysis. Description: This i
 Robert Muenchen. R-SAS-SPSS Add-on Module Comparison. Excerpt: "R has over 3,000 add-on packages, many containing multiple procedures, so it can do most of the things that SAS and SPSS can do and quite a bit more. The table below focuses only on SAS and SPSS products and which of them have counterparts in R. As a result, some categories are extremely broad (e.g. regression) while others are quite narrow (e.g. conjoint analysis). This table does not contain the hundreds of R packages that have no counterparts in the form of SAS or SPSS products. There are many important topics (e.g. mixed models) offered by all three that are not listed because neither SAS Institute nor IBM's SPSS Company sell a product focused just on that." [Accessed January 14, 2010]. Available at: http://r4stats.com/add-on-modules.
 G. David Carson. Reliability Analysis: Statnotes, from North Carolina State University, Public Administration Program. Excerpt: "Researchers must demonstrate instruments are reliable since without reliability, research results using the instrument are not replicable, and replicability is fundamental to the scientific method. Reliability is the correlation of an item, scale, or instrument with a hypothetical one which truly measures what it is supposed to. Since the true instrument is not available, reliability is estimated in one of four ways: 1. Internal consistency: Estimation based on the correlation among the variables comprising the set (typically, Cronbach's alpha). 2. Split-half reliability: Estimation based on the correlation of two equivalent forms of the scale (typically, the Spearman-Brown coefficient). 3. Test-retest reliability: Estimation based on the correlation between two (or more) administrations of the same item, scale, or instrument for different times, locations, or populations, when the two administrations do not differ on other relevant variables (typically, the Spearman Brown coefficient). 4. Inter-rater reliability: Estimation based on the correlation of scores between/among two or more raters who rate the same item, scale, or instrument (typically, intraclass correlation, of which there are six types discussed below). These four reliability estimation methods are not necessarily mutually exclusive, nor need they lead to the same results. All reliability coefficients are forms of correlation coefficients, but there are multiple types discussed below, representing different meanings of reliability and more than one might be used in single research setting. " [Accessed January 1, 2010]. Available at: http://faculty.chass.ncsu.edu/garson/PA765/reliab.htm.
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/Interesting2010.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/interesting-2010/

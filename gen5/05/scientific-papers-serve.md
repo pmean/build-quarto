@@ -1,6 +1,7 @@
 ---
 title: Scientific papers serve the needs of their authors
 author: Steve Simon
+source: New
 date: 2005-02-21
 categories:
 - "*Quotation"
@@ -9,9 +10,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Interesting quote: Scientific papers
-serve\... (February 21, 2005)** [Category:
-Quotations](../category/InterestingQuotes.html)
 
 > *\...scientific papers serve the needs of their authors above those of
 > their readers. Why else would a journal devote five pages to a paper

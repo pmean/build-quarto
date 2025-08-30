@@ -60,3 +60,9 @@ The abstract of the first article explains the genesis of this review:
 > background documentation. We describe here the background and methods
 > of these reviews, which are being published in Health Research Policy
 > and Systems together with this introduction.*
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/MedicalGuidelines.html
+[sim2]: http://new.pmean.com/MedicalGuidelines/
+

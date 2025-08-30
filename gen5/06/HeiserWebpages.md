@@ -19,3 +19,9 @@ page_update: partial
 > includes a list of the various measures of skewness and kurtosis. I
 > only skimmed these resources, but they look quite good.
 > www.daheiser.info
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HeiserWebpages.html
+[sim2]: http://new.pmean.com/HeiserWebpages/
+

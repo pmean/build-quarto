@@ -1,6 +1,7 @@
 ---
 title: Statistics is more than just cutting computer code
 author: Steve Simon
+source: http://www.pmean.com/11/CuttingCode.html
 date: 2011-09-06
 categories:
 - "*Blog post"
@@ -21,7 +22,7 @@ If you were in a talkative mood, you could say that programming is an important 
 
 Or you could even say, with some honesty, that "cutting code" is far more difficult to do well than conducting a statistical analysis. I have a lot of respect for talented programmers, and would not consider being compared to these people as an insult.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/CuttingCode.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/cutting-code/

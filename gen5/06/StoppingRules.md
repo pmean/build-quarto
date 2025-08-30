@@ -186,3 +186,9 @@ validity of the study as a whole.
     plans for their individual trials.*
     http://www.cancer.gov/clinicaltrials/conducting/dsm-guidelines
 
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StoppingRules.html
+[sim2]: http://new.pmean.com/StoppingRules/
+

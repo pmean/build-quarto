@@ -1,6 +1,7 @@
 ---
 title: Using Social Media to promote your consulting career
 author: Steve Simon
+source: http://www.pmean.com/11/SocialMedia.html
 date: 2011-08-01
 categories:
 - "*Blog post"
@@ -108,7 +109,7 @@ Here are some questions for discussion.
 
 Creative Commons License This page was written by Steve Simon and is licensed under the Creative Commons Attribution 3.0 United States License. Need more information? I have a page with general help resources. You can also browse for pages similar to this one at Human Side of Statistics.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SocialMedia.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/using-social-media/

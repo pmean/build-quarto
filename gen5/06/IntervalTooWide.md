@@ -79,3 +79,9 @@ Unfortunately, most papers don't even mention clinical importance.
 assessment of randomized controlled trials**. K. B. Chan, M.
 Man-Son-Hing, F. J. Molnar, A. Laupacis. Cmaj 2001: 165(9); 1197-202.
 [www.cmaj.ca/cgi/content/abstract/165/9/1197](http://www.cmaj.ca/cgi/content/abstract/165/9/1197)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/IntervalTooWide.html
+[sim2]: http://new.pmean.com/IntervalTooWide/
+

@@ -20,3 +20,9 @@ of medical journals, is celebrating its 35th anniversary. Some
 statistics are revealing. Medline currently indexes over 4,900 journals
 and has over 13 million entries. In the previous fiscal year alone, over
 600 thousand citations were indexed.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/MedlineVeryBusy.html
+[sim2]: http://new.pmean.com/MedlineVeryBusy/
+

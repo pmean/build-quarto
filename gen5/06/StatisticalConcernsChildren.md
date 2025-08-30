@@ -442,3 +442,9 @@ sample size concerns and subgroup analysis issues. Finally, you may need
 to collect a greater level of detail about the child's age, information
 about the pre-natal exposures and delivery and possibly special data on
 the child's environment and diet.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StatisticalConcernsChildren.html
+[sim2]: http://new.pmean.com/StatisticalConcernsChildren/
+

@@ -53,3 +53,9 @@ discussion.
     [\[Full
     text\]](http://archpedi.ama-assn.org/cgi/content/full/157/6/560)
     [\[PDF\]](http://archpedi.ama-assn.org/cgi/reprint/157/6/560.pdf)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/CaseStudiesChildren.html
+[sim2]: http://new.pmean.com/CaseStudiesChildren/
+

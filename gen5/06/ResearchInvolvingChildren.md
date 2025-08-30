@@ -69,3 +69,9 @@ Statistical issues can be divided into two areas: subgroup analysis and
 sample size issues.
 
 **\[\[To be continued\...\]\]**
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ResearchInvolvingChildren.html
+[sim2]: http://new.pmean.com/ResearchInvolvingChildren/
+

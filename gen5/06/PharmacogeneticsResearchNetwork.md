@@ -34,3 +34,9 @@ page_update: partial
 >
 > Some of these interest groups deal with the complex statistical
 > analysis issues that arise in this area.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PharmacogeneticsResearchNetwork.html
+[sim2]: http://new.pmean.com/PharmacogeneticsResearchNetwork/
+

@@ -48,3 +48,9 @@ page_update: partial
 > off keeping all your covariates in. There are a lot of opportunities
 > for mischief if you start tinkering with the covariate list. I'll try
 > to write more about this when I have time.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/Multicollinearity.html
+[sim2]: http://new.pmean.com/Multicollinearity/
+

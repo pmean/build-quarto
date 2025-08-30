@@ -1,6 +1,7 @@
 ---
 title: Unrealistic scenarios for sample size calculations
 author: Steve Simon
+source: http://www.pmean.com/11/unrealistic.html
 date: 2011-12-20
 categories:
 - "*Blog post"
@@ -24,7 +25,7 @@ I suspect that the researcher is not using the minimum clinically important diff
 
 By the way, if you really want to do a sample size calculation here, you cannot use the traditional power calculation programs. Almost all of them rely on the normal approximation to the binomial distribution, and that approximation does not work when one of the proportions is zero. Instead, you need to use a program that calculates power for the Fisher's Exact test.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/unrealistic.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/unrealistic-sample-size/

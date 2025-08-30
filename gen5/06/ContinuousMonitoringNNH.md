@@ -142,3 +142,9 @@ patients seen between each dropout is going to be smaller.
 The gray line in this graph is drawn at the mean. The mean of the gaps
 can be shown to be equivalent to the number needed to harm (under the
 presumption, of course, that a drop-out represents a harmful event).
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ContinuousMonitoringNNH.html
+[sim2]: http://new.pmean.com/ContinuousMonitoringNNH/
+

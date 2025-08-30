@@ -73,3 +73,9 @@ increases.
 So if a referee tries to get picky, just show them the normal
 probability plot and remind them of the value of the central limit
 theorem.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ParametricTestForRatio.html
+[sim2]: http://new.pmean.com/ParametricTestForRatio/
+

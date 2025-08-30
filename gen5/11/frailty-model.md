@@ -1,6 +1,7 @@
 ---
 title: Conditional Frailty Models
 author: Steve Simon
+source: http://www.pmean.com/06/FrailtyModel.html
 date: 2011-10-11
 categories:
 - "*Blog post"
@@ -27,10 +28,10 @@ Modeling Survival Data. Extending the Cox Model. Therneau TM, Grambsch PM (2000)
 
 When I get more time, I want to document some of the features of the frailty model. It is very useful for modeling events that can occur repeatedly, like infection and re-hospitalization.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/06/FrailtyModel.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/frailty-model/
 
 [osu1]: http://psweb.sbs.ohio-state.edu/prism/sseries.htm
 [osu2]: http://psweb.sbs.ohio-state.edu/prism/civil_peace_m16.pdf

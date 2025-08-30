@@ -18,3 +18,9 @@ page_update: partial
 > I'd like to add commentary to each of the koans, but I want<U+FFFD> to
 > encourage people to ponder the messages first before they read my
 > interpretation.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/KoanPage.html
+[sim2]: http://new.pmean.com/KoanPage/
+

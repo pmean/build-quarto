@@ -174,3 +174,9 @@ would just randomly shuffle the entire block.
     a permutation within any pair of scores is as likely as the reverse.
     That simple idea forms the basis of our test.*
     www.uvm.edu/~dhowell/StatPages/Resampling/RandomMatchedSample/RandomMatchedSample.html
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PairedRandomization.html
+[sim2]: http://new.pmean.com/PairedRandomization/
+

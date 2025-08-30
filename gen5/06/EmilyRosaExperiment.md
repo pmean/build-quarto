@@ -185,3 +185,9 @@ discredited his fervently held beliefs:
 > *You see, that is why we never do double-blind testing anymore. It
 > never works!* as quoted on
 > [www.quackwatch.org/01QuackeryRelatedTopics/ideomotor.html](http://www.quackwatch.org/01QuackeryRelatedTopics/ideomotor.html).
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/EmilyRosaExperiment.html
+[sim2]: http://new.pmean.com/EmilyRosaExperiment/
+

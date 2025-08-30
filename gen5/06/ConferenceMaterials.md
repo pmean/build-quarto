@@ -49,3 +49,9 @@ page_update: partial
 >     Treatments](../training/hand53.asp)
 > -   [Stats \#71: Control charts for continuous monitoring of the
 >     number needed to harm](../training/hand71.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ConferenceMaterials.html
+[sim2]: http://new.pmean.com/ConferenceMaterials/
+

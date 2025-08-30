@@ -1,6 +1,7 @@
 ---
 title: When you're stuck writing major sections of another person's grant
 author: Steve Simon
+source: http://www.pmean.com/11/AnotherPersonsGrant.html
 date: 2011-06-02
 categories:
 - "*Blog post"
@@ -28,7 +29,7 @@ To insure consistency, ask for everything that's already been written, even sect
 
 You might also find this checklist helpful if you are consolidating the writing of several other people into a single cohesive grant. Make sure to look at voice, pronouns, descriptions of patients, and so forth, and rewrite anything of anyone else that has a major deviation. You may be uncomfortable rewording someone else's words, but you absolutely, positively, 100% must do this. You can check to make sure that you haven't mangled someone else's ideas, but do that the time to rewrite. If you drop in major sections unedited, you will end up with a camel.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/AnotherPersonsGrant.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/another-persons-grant/

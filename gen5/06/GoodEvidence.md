@@ -79,3 +79,9 @@ are evidence based is
 
 and the results presented in this paper are comparable to the previous
 paper.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/GoodEvidence.html
+[sim2]: http://new.pmean.com/GoodEvidence/
+

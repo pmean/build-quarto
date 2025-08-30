@@ -65,3 +65,9 @@ have quoted some of this advice at:
     variation?](../definitions/SpecialCause.htm) and
 -   [Stats: What is a common cause of
     variation?](../definitions/CommonCause.htm)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ControlChartAdvice.html
+[sim2]: http://new.pmean.com/ControlChartAdvice/
+

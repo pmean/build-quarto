@@ -1,6 +1,7 @@
 ---
 title: Acknowledging the
 author: Steve Simon
+source: http://www.pmean.com/09/AcknowledgingContributions.html
 date: 2009-02-16
 categories:
 - "*Blog post"
@@ -30,7 +31,7 @@ I do need to see a copy of anything that my name is listed on in any fashion bef
 
 I'm glad that you are hoping to get this paper published. Good luck!
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/09/AcknowledgingContributions.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/acknowledging-contributions/

@@ -53,3 +53,9 @@ language query system for Medline
     [askmedline.nlm.nih.gov/ask/ask.php](http://askmedline.nlm.nih.gov/ask/ask.php)
 
 **Note:** some additional resources added on May 30, 2006.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HighLevel.html
+[sim2]: http://new.pmean.com/HighLevel/
+

@@ -1,6 +1,7 @@
 ---
 title: Positive statements about no conflicts of interest
 author: Steve Simon
+source: http://www.pmean.com/11/PositiveStatements.html
 date: 2011-08-16
 categories:
 - "*Blog post"
@@ -24,7 +25,7 @@ There is a lot of confusion about when you can report "No conflict of interest."
 
 Note that I am restricting these statements to "commercial products". If a paper advocates greater use of a general medical approach, such as surgery or massage, there is no conflict of interest to report, even if the author is a surgeon or masseuse. Also, financial ties to products that are irrelevant to the paper do not consistute a reportable conflict of interest. Finally, the mere mention of a product does not trigger the need to report a conflict of interest. It is only relevant if there is advocacy: promotion or discouragement of the use of a commercial product or suopport or oppostion to regulations that affect the promotion or sales of a commercial product.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/PositiveStatements.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/positive-statements/

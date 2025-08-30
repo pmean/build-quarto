@@ -51,3 +51,9 @@ clinical practice. I can also think of examples that support this
 particular statistic. I would be very curious to find out if there is
 any additional research that would provide empirical support for this
 statistic.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/05/SeventeenYears.html
+[sim2]: http://new.pmean.com/seventeen-years/
+

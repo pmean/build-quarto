@@ -22,3 +22,9 @@ page_update: partial
 > There is a nice review of this book on Evidence Based Medicine 2005;
 > 10:60,
 > [ebm.bmjjournals.com/cgi/content/full/10/2/60](http://ebm.bmjjournals.com/cgi/content/full/10/2/60)<U+FFFD>
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/FavoriteBooks10.html
+[sim2]: http://new.pmean.com/FavoriteBooks10/
+

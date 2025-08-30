@@ -95,3 +95,9 @@ and an earlier grant in these weblog entries
 -   [Stats: Upcoming talks about control charts (May
     25, 2006)](ControlChartsA.asp)
 -   [Stats: I want to write a grant (April 25, 2006)](WriteGrant.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SecondGrantPart3.html
+[sim2]: http://new.pmean.com/SecondGrantPart3/
+

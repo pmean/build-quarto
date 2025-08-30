@@ -1,6 +1,7 @@
 ---
 title: Can I salvage my negative confidence interval
 author: Steve Simon
+source: http://www.pmean.com/11/NegativeInterval.html
 date: 2011-09-02
 categories:
 - "*Blog post"
@@ -30,7 +31,7 @@ The only time people wrestle with borderline findings is when they are on the "w
 
 Don't let me stop you from talking about your non-significant finding though. Too many people treat a p-value larger than 0.05 as a gag rule and limit their discussion only to those tests and confidence intervals yielding statistically significant results.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/NegativeInterval.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/negative-interval/

@@ -66,3 +66,9 @@ in Medical Trials, through Oxford University Press. He is the architect
 and designer of StATS (Steve's Attempt to Teach Statistics) a widely
 cited web site with over one thousand pages and has contributed material
 to two other prominent web sites: Chance News and Wikipedia.*
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PharmaIqTalks.html
+[sim2]: http://new.pmean.com/PharmaIqTalks/
+

@@ -1,6 +1,7 @@
 ---
 title: "New flat rate for consulting"
 author: Steve Simon
+source: http://www.pmean.com/11/NewFlatRate.html
 date: 2011-08-17
 categories:
 - "*Blog post"
@@ -18,7 +19,7 @@ One policy that won't change is that I offer the first hour of consulting for fr
 
 Note (2024-06-25): I never completed a description of my flat rate policy. I still charge by the hour. 
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/NewFlatRate.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/new-flat-rate/

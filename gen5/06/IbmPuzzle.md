@@ -22,3 +22,9 @@ involve statistics and/or probability, such as the January 2006 puzzle:
 > into n pieces. This month's puzzle asks 1. What is the expected
 > (average) size of the smallest piece? 2. What is the expected
 > (average) size of the largest piece?*
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/IbmPuzzle.html
+[sim2]: http://new.pmean.com/IbmPuzzle/
+

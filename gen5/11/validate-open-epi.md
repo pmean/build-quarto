@@ -1,6 +1,7 @@
 ---
 title: Validation of OpenEpi software
 author: Steve Simon
+source: http://www.pmean.com/11/Validation.html
 date: 2011-07-27
 categories:
 - "*Blog post"
@@ -162,10 +163,10 @@ The p-values match.
 
 The confidence intervals match.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Validation.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/validate-open-epi/
 
 [mid1]: http://www.ijmhs.com/content/5/1/14
 [mid2]: https://ijmhs.biomedcentral.com/track/pdf/10.1186/1752-4458-5-14.pdf

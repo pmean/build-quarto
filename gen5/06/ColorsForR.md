@@ -92,3 +92,9 @@ provides much useful information about graphs in R.
 - FL: Chapman & Hall /
     CRC Press. [BookFinder4U
     link]](http://www.bookfinder4u.com/detail/1-58488-486-X.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ColorsForR.html
+[sim2]: http://new.pmean.com/ColorsForR/
+

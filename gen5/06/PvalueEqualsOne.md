@@ -136,3 +136,9 @@ for his/her comment and save your ammunition for another battle.
 In the future, when you get a p-value of 1.0, round it down to 0.9999
 and when you get a p-value of 0, round it up to 0.0001. That will give
 the nit pickers of the world one less nit to pick with you.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PvalueEqualsOne.html
+[sim2]: http://new.pmean.com/PvalueEqualsOne/
+

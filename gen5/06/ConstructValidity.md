@@ -580,3 +580,9 @@ younger and older age groups both yielded very good agreement in the
 PACU but only moderate agreement on the ward. On the basis of data from
 this study, we recommend CHEOPS as a valid, reliable and practical
 tool.*
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ConstructValidity.html
+[sim2]: http://new.pmean.com/ConstructValidity/
+

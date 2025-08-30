@@ -1,6 +1,7 @@
 ---
 title: "Finding the standard deviation for a power calculation"
 author: Steve Simon
+source: http://www.pmean.com/09/PowerExample.html
 date: 2010-01-27
 categories:
 - "*Blog post"
@@ -15,7 +16,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/09/PowerExample.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/sd-for-power/

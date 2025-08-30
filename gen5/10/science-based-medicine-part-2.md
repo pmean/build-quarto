@@ -153,7 +153,7 @@ From the first link on post modernism: "A tulip bulb is a rhizhome." AAArgh!!! I
 
 I really did not know that. I guess that shows how little I truly know about science. In my defense, my mind was probably still a bit fuzzy after reading all that post-modern writing. I see a lot of value in post-modern philosophy when it isn't taken to excess, but it is very hard to read.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/ScienceBasedMedicinePt2.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/science-based-medicine-part-2/

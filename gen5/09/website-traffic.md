@@ -1,6 +1,7 @@
 ---
 title: NYTimes advice on increasing website traffic
 author: Steve Simon
+source: http://www.pmean.com/09/WebsiteTraffic.html
 date: 2009-05-11
 categories:
 - "*Blog post"
@@ -15,7 +16,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/09/WebsiteTraffic.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/website-traffic/

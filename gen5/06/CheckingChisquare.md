@@ -80,3 +80,9 @@ appear after the YES category.
 **Related links on this web site:**
 
 -   [Stats: Inputting a two-by-two table into SPSS](../data/table.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/CheckingChisquare.html
+[sim2]: http://new.pmean.com/CheckingChisquare/
+

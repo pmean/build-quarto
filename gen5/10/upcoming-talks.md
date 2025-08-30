@@ -21,7 +21,7 @@ I might be asked to give a talk in February and I wanted to offer two possible c
 + The surprisal matrix and its role in identifying anomalous observations.
   + Abstract: The surprisal, defined as the negative of the base 2 logarithm of a probability, is a fundamental component used in the calculation of entropy. In this talk, I will define a surprisal matrix for a data set consisting of multiple discrete variables, possibly with different supports. The surprisal matrix is useful in identifying areas of high heterogeneity in such a data set, which often corresponds to interesting and unusual patterns among the observations or among the variables. I will illustrate two applications of the surprisal matrix: monitoring data quality in a large stream of fixed format text data, and examining consensus in the evaluation of sperm morphology. A webpage outlining some of the ideas in this talk is available at http://www.pmean.com/09/SurprisalMatrix.html.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/UpcomingTalks.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/upcoming-talks/

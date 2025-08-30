@@ -40,3 +40,9 @@ page_update: partial
 >     25, 2005)](http://www.pmean.com/weblog2005/HardLessons.asp)
 > -   [Stats: Non-destructive data editing (November
 >     2, 2005)](http://www.pmean.com/weblog2005/NondestructiveEditing.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/LessonsLearned.html
+[sim2]: http://new.pmean.com/LessonsLearned/
+

@@ -1,6 +1,7 @@
 ---
 title: Software that I use on my computers
 author: Steve Simon
+source: http://www.pmean.com/11/Software.html
 date: 2011-06-21
 categories:
 - "*Blog post"
@@ -68,10 +69,10 @@ Thunderbird. I greatly prefer this free program to Microsoft Outlok.
 
 WinZip. I've tried other file compression programs, but I like the WinZip interface far better. You can download an evaluation version at http://www.winzip.com.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Software.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/software-that-i-use/
 
 [all1]: http://allwaysync.com
 [fir1]: http://www.mozilla.com/firefox

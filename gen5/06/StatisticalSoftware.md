@@ -29,3 +29,9 @@ two interesting articles from recent issues.
 2.  **Interactive Biplot Construction.** Udina F. Journal of Statistical
     Software 2005: 13(5);
     [\[PDF\]](http://www.jstatsoft.org/v13/i05/paper)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StatisticalSoftware.html
+[sim2]: http://new.pmean.com/StatisticalSoftware/
+

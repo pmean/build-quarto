@@ -1,6 +1,7 @@
 ---
 title: Lost page
 author: Steve Simon
+source: http://www.pmean.com/10/AnovaPower.html
 date: 2010-10-16
 categories:
 - "*Blog post"
@@ -95,7 +96,7 @@ This all may seem a bit intimidating, but most power calculation software will h
 
 that allows you to calculate the effect size if you know the means in each group.
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/AnovaPower.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/anova-power/

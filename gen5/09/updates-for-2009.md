@@ -1,6 +1,7 @@
 ---
 title: "Updates for 2009"
 author: Steve Simon
+source: http://www.pmean.com/09/Updates2009.html
 date: 2009-01-21
 categories:
 - "*Blog post"
@@ -14,9 +15,9 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 The link to the earlier page no longer works.
 
 [sim1]: http://www.pmean.com/09/Updates2009.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/updates-for-2009/

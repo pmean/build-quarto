@@ -61,3 +61,9 @@ that they do not seriously influence the outcomes.
 5\. In many research studies none of the above calculations is
 reasonable. If this is the case, just refuse to calculate the NNT/NNH
 rather than report a number that you know is misleading.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HandlingDropouts.html
+[sim2]: http://new.pmean.com/HandlingDropouts/
+

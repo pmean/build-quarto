@@ -1,6 +1,7 @@
 ---
 title: Thinking about the title for my second book
 author: Steve Simon
+source: http://www.pmean.com/11/BookTitle.html
 date: 2011-04-11
 categories:
 - "*Blog post"
@@ -20,7 +21,7 @@ I also had been considering a title along the lines of "The First Three Steps" s
 
 I might use something like "Keeping your research project on track" but I'm still ruminating.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/BookTitle.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/book-title/

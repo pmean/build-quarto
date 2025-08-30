@@ -20,3 +20,9 @@ I created a table that illustrates many of the classic calculations for a diagno
 This image appeared somewhere in my earlier website, but the actual location is lost to history. You can find a similar, but not identical image in [my pdf booklet on diagnostic testing][sim3].
 
 [sim3]: http://www.pmean.com/00files/Diagnostic.pdf
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: unknown
+[sim2]: http://new.pmean.com/CalculationsDiagnosticTest/
+

@@ -1,6 +1,7 @@
 ---
 title: Fighting the claim that any size difference is clinically important
 author: Steve Simon
+source: http://www.pmean.com/10/AnySize.html
 date: 2010-08-05
 categories:
 - "*Blog post"
@@ -15,7 +16,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/AnySize.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/any-size/

@@ -1,6 +1,7 @@
 ---
 title: Possible webcast topics for a new client
 author: Steve Simon
+source: http://www.pmean.com/11/WebcastTopics.html
 date: 2011-11-14
 categories:
 - "*Blog post"
@@ -44,10 +45,10 @@ I was asked to develop a list of webcast topics for a client working in the phar
 
 Most of the links above come from a [training page][sim3] on my old website and a [webinar page][sim4] on my new website.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/WebcastTopics.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/webcast-topics/
 [sim3]: http://www.pmean.com/training.aspx
 [sim4]: http://www.pmean.com/webinars/archive.html
 

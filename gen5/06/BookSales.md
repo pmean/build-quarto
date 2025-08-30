@@ -22,3 +22,9 @@ can work extensively on promoting my book.
 -   [Stats: Statistical Evidence in Medical Trials](../evidence.asp)
 -   [Stats: Resources for Statistical Evidence in Medical
     Trials](Resources.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/BookSales.html
+[sim2]: http://new.pmean.com/BookSales/
+

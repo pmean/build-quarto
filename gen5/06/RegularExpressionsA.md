@@ -32,3 +32,9 @@ use the following
 To find the first line that does not begin with a blank, use
 
 -   \^\[\^ \]
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RegularExpressionsA.html
+[sim2]: http://new.pmean.com/RegularExpressionsA/
+

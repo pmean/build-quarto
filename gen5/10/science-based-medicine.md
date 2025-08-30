@@ -36,10 +36,10 @@ As to whether we should use p-values or Bayes factors (as Goodman recommends), t
 
 The blog raises important issues and comments intelligently on them. I disagree with the need to distinguish between SBM and EBM. Maybe we should distinguish between EBM and PIEBM (Poorly Implemented Evidence Based Medicine).
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/ScienceBasedMedicine.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/science-based-medicine/
 
 [atw1]: https://sciencebasedmedicine.org/evidence-based-medicine-human-studies-ethics-and-the-gonzalez-regimen-a-disappointing-editorial-in-the-journal-of-clinical-oncology-part-1/
 

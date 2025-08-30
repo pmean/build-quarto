@@ -55,3 +55,9 @@ fired if a critic gets a charge of fraud to stick. It is very important
 to make sure that any resolution of allegations of fraud follow an
 appropriate format that allows for full and fair investigation into the
 facts of the allegation.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PoliticalEnd.html
+[sim2]: http://new.pmean.com/PoliticalEnd/
+

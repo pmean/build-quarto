@@ -1,6 +1,7 @@
 ---
 title: Do multiple time points require a Bonferroni adjustment
 author: Steve Simon
+source: http://www.pmean.com/09/MultipleTimePoints.html
 date: 2009-07-08
 categories:
 - "*Blog post"
@@ -15,7 +16,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/09/MultipleTimePoints.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/multiple-time-points/

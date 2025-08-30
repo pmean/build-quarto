@@ -23,3 +23,9 @@ page_update: partial
 > I have an [entry about citing software](../ask/citation.asp) in my
 > [Ask Professor Mean section](../category/AskProfessorMean.html), and I
 > have updated it to include this observation.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/CitingSoftware.html
+[sim2]: http://new.pmean.com/CitingSoftware/
+

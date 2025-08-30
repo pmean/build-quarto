@@ -16,3 +16,9 @@ page_update: partial
 > in November and December). There were 197 weblog entries in 2005.
 > I'll try to keep up the pace in 2006 and investigates things like an
 > RSS feed (as was suggested by one of my readers).
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PastYear.html
+[sim2]: http://new.pmean.com/PastYear/
+

@@ -58,3 +58,9 @@ There are additional terms used in the research literature such as
 mediator variable and intervening variable. I generally try to avoid
 using these terms, and even shy away from the commonly used term
 "confounding variable."
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/05/ModeratorVariable.html
+[sim2]: http://new.pmean.com/moderator-variable/
+

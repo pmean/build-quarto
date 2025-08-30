@@ -53,3 +53,9 @@ and/or seriously unequal variation from one group to another.
     22, 2004)](../04/MultipleDF.html)
 -   [Stats: Guidelines for ANOVA models](../03/anova.asp)
 -   [Stats: Bonferroni correction](../99/bonferroni.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PostHocComparisons.html
+[sim2]: http://new.pmean.com/PostHocComparisons/
+

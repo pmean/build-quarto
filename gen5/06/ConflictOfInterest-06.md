@@ -42,3 +42,9 @@ page_update: partial
 > process is, the less you have to worry about a conflict of interest.
 > So, for example, you might accept a meta-analysis from a group that
 > has a financial stake in the outcome, but not an invited editorial.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ConflictOfInterest-06.html
+[sim2]: http://new.pmean.com/ConflictOfInterest-06/
+

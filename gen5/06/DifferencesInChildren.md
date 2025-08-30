@@ -149,3 +149,9 @@ they don't start many of these abusive and neglectful habits until they
 are well on their way into adulthood. As a result, most of the
 conditions that we treat children for stem from congenital causes rather
 than from abuse and neglect.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/DifferencesInChildren.html
+[sim2]: http://new.pmean.com/DifferencesInChildren/
+

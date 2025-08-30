@@ -123,3 +123,9 @@ on 2006-01-09.
 The work by Mandelbrot may not be useful in the context of the original
 question, but it is still a fascinating and very active area of
 research.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ExtremeValue.html
+[sim2]: http://new.pmean.com/ExtremeValue/
+

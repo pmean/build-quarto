@@ -120,3 +120,9 @@ So the good news is that you can do whatever you like. If you do a lot
 of work with odds ratios (and other ratios like the relative risk), you
 just have to get comfortable with the fact that an odds ratio of 2.0 and
 an odds ratio of 0.5 are just the opposite sides of the same coin.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/07/SevenFormulas.html
+[sim2]: http://new.pmean.com/SevenFormulasa/
+

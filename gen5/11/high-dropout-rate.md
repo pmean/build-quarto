@@ -1,6 +1,7 @@
 ---
 title: Why is a 20% dropout rate bad?
 author: Steve Simon
+source: http://www.pmean.com/11/dropouts.html
 date: 2011-11-21
 categories:
 - "*Blog post"
@@ -38,7 +39,7 @@ It would be very difficult to come up with an evidence based justifcation of thi
 
 As an aside, the typical randomized trial has two arms (treatment and control) and dropouts are possible in either arm. The mathematics don't change much, but it is worth noting that a dropout rate that differs between the treatment and control arms is almost always big trouble. A differential dropout rate could be caused by a variety of things, but it would hard to imagine a setting where a differential dropout rate between treatments and controls did not carry with it a large and unignorable degree of differential prognosis between completers and dropouts.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/dropouts.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/high-dropout-rate/

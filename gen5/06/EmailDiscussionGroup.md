@@ -65,3 +65,9 @@ has number of email discussion groups of interest to statisticians. The
 page that lists these groups is at
 
 -   [mail.amstat.org/archives/index.html](http://mail.amstat.org/archives/index.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/EmailDiscussionGroup.html
+[sim2]: http://new.pmean.com/EmailDiscussionGroup/
+

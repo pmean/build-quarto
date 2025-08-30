@@ -1,6 +1,7 @@
 ---
 title: My special Zotero style
 author: Steve Simon
+source: http://www.pmean.com/11/ZoteroStyle.html
 date: 2011-02-22
 categories:
 - "*Blog post"
@@ -28,10 +29,10 @@ Nagoya University Graduate School of Law. CSL Metadata Field Index Description: 
 
 Zotero. Zotero Reference Test pane Description: You can load your Zotero style on this webpage and it will show you what the citations and bibliography look like. When you make changes to your style on this page, the citations and bibliography update automatically. Available in [html format][zot1].
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/ZoteroStyle.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/zotero-style/
 
 [dok1]: http://www.zotero.org/support/dev/creating_citation_styles
 [dok2]: http://www.zotero.org/support/dev/csl_syntax_summary

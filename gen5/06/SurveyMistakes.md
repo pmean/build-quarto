@@ -74,3 +74,9 @@ clear and measurable goals, as well as the importance of getting a
 representative sample. You can read the full article at
 
 -   [www.isixsigma.com/library/content/c040119b.asp](http://www.isixsigma.com/library/content/c040119b.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SurveyMistakes.html
+[sim2]: http://new.pmean.com/SurveyMistakes/
+

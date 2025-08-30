@@ -19,7 +19,7 @@ I didn't think about it too much in my personal situation. I just kept going unt
 
 You do, however, have the option of getting the Masters degree now, earning a bit of money in the real world, and then coming back to get your Ph.D. later. For some people, the Statistics classes take on a greater relevance after you have seen how Statistics is practiced in the real world.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/MSorPHD.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/ms-or-phd/

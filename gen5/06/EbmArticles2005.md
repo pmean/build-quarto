@@ -130,3 +130,9 @@ Here's a list of the papers that other people cited:
     hospital. J Gen Intern Med. 2005 Apr;20(4):340-3.
 
 I will dig out the details of these papers when I get some time.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/EbmArticles2005.html
+[sim2]: http://new.pmean.com/EbmArticles2005/
+

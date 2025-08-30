@@ -1,6 +1,7 @@
 ---
 title: Accounting for clusters in an individually randomized clinical trial
 author: Steve Simon
+source: http://www.pmean.com/09/AccountingForClusters.html
 date: 2009-10-13
 categories:
 - "*Blog post"
@@ -22,7 +23,7 @@ A while back I took a course on this topic and the instructor said something ver
 
 Here's another bit of intuition that might help. Randomizing within each center will effectively make the treatment effect and the center effect orthogonal to one another. If you account for and remove a source of uncertainty due to the center effect, that reduces your noise. Since it is orthogonal, you don't have to worry about any collinearity effects mucking things up.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/09/AccountingForClusters.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/accounting-for-clusters/

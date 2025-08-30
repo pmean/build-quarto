@@ -19,7 +19,7 @@ Yes, you can do this. The statistics change slightly, but in a predictable and l
 
 It gets a bit trickier when the statistic of interest is a single proportion (e.g., sensitivity/specificity), especially when there are some publications where the proportion equals 1.0. If you try to weight by the inverse variance, these studies get infinite weight.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/SingleMean.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/single-mean-meta-analysis/

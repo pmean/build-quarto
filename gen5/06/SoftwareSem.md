@@ -27,3 +27,9 @@ You can find a lot of information about these software programs and
 about structural equations models, in general, at the [SEMNET
 archives](http://bama.ua.edu/cgi-bin/wa?A0=semnet&D=1&H=0&O=D&T=1) and
 the [Ed Rigdon's SEMENT FAQ](http://www2.gsu.edu/~mkteer/semfaq.html).
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SoftwareSem.html
+[sim2]: http://new.pmean.com/SoftwareSem/
+

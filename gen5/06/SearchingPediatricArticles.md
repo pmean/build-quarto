@@ -76,3 +76,9 @@ of relevant articles (ie, articles with the desired age-specific
 content) that are retrieved; specificity is the proportion of
 nonrelevant articles (ie, articles that are outside the desired
 age-specific content) not retrieved*.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SearchingPediatricArticles.html
+[sim2]: http://new.pmean.com/SearchingPediatricArticles/
+

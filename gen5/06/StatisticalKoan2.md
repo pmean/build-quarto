@@ -43,3 +43,9 @@ I should probably attach titles to these koans. The first koan could be
 and the second one could be
 
 -   **The other ninety nine samples.**
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StatisticalKoan2.html
+[sim2]: http://new.pmean.com/StatisticalKoan2/
+

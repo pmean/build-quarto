@@ -127,3 +127,9 @@ You can also browse
 for pages similar to this one at [Category: Ethics in
 research](../category/EthicsInResearch.html).
 
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/05/SelfExperimentation.html
+[sim2]: http://new.pmean.com/self-experimentation/
+

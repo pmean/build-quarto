@@ -59,3 +59,9 @@ them, and then runs back to his master. "So," says the farmer.
 there be 40?" exclaims the farmer. "I only bought 38!" "I
 know," says the dog. "But I rounded them up."*
 [www.netfunny.com/rhf/jokes/06/Aug/sheepdog.html](http://www.netfunny.com/rhf/jokes/06/Aug/sheepdog.html)  
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RoundingNumbers.html
+[sim2]: http://new.pmean.com/RoundingNumbers/
+

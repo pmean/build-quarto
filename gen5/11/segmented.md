@@ -1,6 +1,7 @@
 ---
 title: A simple segmented linear regression model, borrowed from the BUGS manual
 author: Steve Simon
+source: http://www.pmean.com/11/Segmented.html
 date: 2011-05-25
 categories:
 - "*Blog post"
@@ -122,7 +123,7 @@ no longer has the bimodal pattern. The table of estimates and credible intervals
 
 is slightly different and much closer to the results reported in BUGS.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Segmented.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/segmented/

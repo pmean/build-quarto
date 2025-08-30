@@ -1,6 +1,7 @@
 ---
 title: Using entropy and the surprisal value to measure the degree of agreement with the consensus finding
 author: Steve Simon
+source: http://www.pmean.com/10/AgreementWithConsensus.html
 date: 2010-04-11
 categories:
 - "*Blog post"
@@ -136,7 +137,7 @@ Here's another example of a very poor agreement. The other raters are torn betwe
 
 Agreement with consensus is not necessarily the best choice. If there is an expert who can provide an accurate classification, you should compare your results to the expert.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/AgreementWithConsensus.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/agreement-with-consensus/

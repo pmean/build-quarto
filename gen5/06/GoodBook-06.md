@@ -106,3 +106,9 @@ page_update: partial
 >     books.](http://www.graphpad.com/index.cfm?cmd=library.page&pageID=22&categoryID=2)**.
 >     GaphPad Software. Accessed on 2006-02-13.
 >     www.graphpad.com/index.cfm?cmd=library.page&pageID=22&categoryID=2
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/GoodBook-06.html
+[sim2]: http://new.pmean.com/GoodBook-06/
+

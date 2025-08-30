@@ -69,3 +69,9 @@ for pages similar to this one at [Category: Measuring
 benefit/risk](../category/MeasuringBenefitRisk.html).
 --->
 
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/05/SideEffects-05.html
+[sim2]: http://new.pmean.com/cox-2-inhibitors/
+

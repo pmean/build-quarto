@@ -35,3 +35,9 @@ page_update: partial
 > estimate the overall rate across all zip codes and find a sample size
 > that would produce a width of plus/minus 20% when the rate was exactly
 > equal to the overall rate.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/InsufficientData.html
+[sim2]: http://new.pmean.com/InsufficientData/
+

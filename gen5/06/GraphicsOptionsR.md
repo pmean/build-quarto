@@ -93,3 +93,9 @@ use one or more trailing zeros with `%02d` (01, 02, 03, etc.) or `%03d`
     Software)](http://www.pmean.com/weblog2005/TrickR.asp)
 -   [Stats: Dates in Excel and R (August 10, 2005, Model,
     Software)](http://www.pmean.com/weblog2005/DatesInR.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/GraphicsOptionsR.html
+[sim2]: http://new.pmean.com/GraphicsOptionsR/
+

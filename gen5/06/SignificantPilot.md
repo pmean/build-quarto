@@ -270,3 +270,9 @@ additional 15 patients in each arm.
     Plans](http://www.som.ucsf.edu/som/research/clinical_research/resources/dsmp.asp)**.
     UCSF School of Medicine. Accessed on 2003-01-21.
     www.som.ucsf.edu/som/research/clinical\_research/resources/dsmp.asp
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SignificantPilot.html
+[sim2]: http://new.pmean.com/SignificantPilot/
+

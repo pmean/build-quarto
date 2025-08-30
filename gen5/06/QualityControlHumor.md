@@ -22,3 +22,9 @@ illustrated in this cute story on rec.humor.funny.
 My favorite specification is "*Outer-diameter of all pipes must exceed
 the inner-diameter. Otherwise, the hole will be on the outside of the
 pipe.*"
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/QualityControlHumor.html
+[sim2]: http://new.pmean.com/QualityControlHumor/
+

@@ -58,3 +58,9 @@ page_update: partial
 > These are the two simplest and most commonly used clustering
 > algorithms. There are many other clustering approaches, which I will
 > try to describe when I have time.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ClusteringAlgorithms.html
+[sim2]: http://new.pmean.com/ClusteringAlgorithms/
+

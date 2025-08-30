@@ -113,3 +113,9 @@ Another problem is the tendency for researchers and the media to
 overstate the impact of a positive finding. Why is it that a p-value
 that is just barely below the threshold of 0.05 is not also called a
 borderline finding?
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ContradictoryResearch.html
+[sim2]: http://new.pmean.com/ContradictoryResearch/
+

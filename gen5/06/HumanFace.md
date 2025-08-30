@@ -22,3 +22,9 @@ prostate cancer. He has some advice about how patients like him should
 proactively research information about medicine that is relevant to
 their own lives. I've only read a bit of this so far, but it is both
 very compelling and very instructive.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HumanFace.html
+[sim2]: http://new.pmean.com/HumanFace/
+

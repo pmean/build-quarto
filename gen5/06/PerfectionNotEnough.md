@@ -28,3 +28,9 @@ have such small sample sizes.
 
 -   [Stats: Fisher's Exact Test](../ask/fishers.asp)
 -   [Stats: Rule of three](../size/zeroevents.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PerfectionNotEnough.html
+[sim2]: http://new.pmean.com/PerfectionNotEnough/
+

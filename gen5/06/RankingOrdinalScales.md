@@ -71,3 +71,9 @@ without any active intervention or thought by you the researcher. The
 distortion will be based not on any property inherent in the categories
 themselves but solely in how frequently the different categories are
 populated.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RankingOrdinalScales.html
+[sim2]: http://new.pmean.com/RankingOrdinalScales/
+

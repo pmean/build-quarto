@@ -44,3 +44,9 @@ An interesting application of IRT appears at
     [\[Abstract\]](http://www.biomedcentral.com/1472-6920/5/9/abstract)
     [\[Full text\]](http://www.biomedcentral.com/1472-6920/5/9)
     [\[PDF\]](http://www.biomedcentral.com/content/pdf/1472-6920-5-9.pdf)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ItemResponseTheory.html
+[sim2]: http://new.pmean.com/ItemResponseTheory/
+

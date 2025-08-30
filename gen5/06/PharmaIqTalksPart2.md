@@ -251,3 +251,9 @@ page_update: partial
 >
 > It's hard to take good notes, so I apologize to the speakers if I did
 > not accurately portray their messages.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PharmaIqTalksPart2.html
+[sim2]: http://new.pmean.com/PharmaIqTalksPart2/
+

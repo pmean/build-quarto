@@ -77,3 +77,9 @@ page_update: partial
 > hoping is to find a good koan that illustrates the logical flaws of
 > traditional hypothesis testing. If I am successful it will lead to my
 > first Bayesian epiphany.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StatisticalKoan1.html
+[sim2]: http://new.pmean.com/StatisticalKoan1/
+

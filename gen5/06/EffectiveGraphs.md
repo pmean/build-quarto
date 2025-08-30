@@ -122,3 +122,9 @@ offered a minor correction (the title of her book is Creating More
 Effective Graphs, not Creating Effective Graphs) which I just fixed
 and confirmed that the Heiberger book "Statistical Analysis and Data
 Display" is indeed the book she was referring to.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/EffectiveGraphs.html
+[sim2]: http://new.pmean.com/EffectiveGraphs/
+

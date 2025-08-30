@@ -29,3 +29,9 @@ I will revise my page
 
 in the next week or so and use that page to provide supplemental
 materials, list any corrections, and so forth.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/FirstPeek.html
+[sim2]: http://new.pmean.com/FirstPeek/
+

@@ -1,6 +1,7 @@
 ---
 title: How independent consulting is different
 author: Steve Simon
+source: http://www.pmean.com/11/ConsultingDifferences.html
 date: 2011-05-09
 categories:
 - "*Blog post"
@@ -104,7 +105,7 @@ As a consultant for an academic consulting center, you pretty much have to help 
 
 As an independent consultant, it's easy to keep your boss happy. I've had some very nice bosses over the years. They have typically allowed me a fair amount of latitude on how I schedule and how I conduct my work. But even the most flexible of bosses can't be as good as being your own boss. There's something quite liberating about not having to ask anyone for permission.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/ConsultingDifferences.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/consulting-differences/

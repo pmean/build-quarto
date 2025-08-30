@@ -48,3 +48,9 @@ page_update: partial
 > -   [Can you get fired over the wording of a
 >     questionnaire?](http://chance.dartmouth.edu/chancewiki/index.php/Chance_News_4#Can_you_get_fired_over_the_wording_of_a_questionnaire.3F)
 >     (Issue 4)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ChanceNews.html
+[sim2]: http://new.pmean.com/ChanceNews/
+

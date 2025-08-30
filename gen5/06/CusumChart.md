@@ -64,3 +64,9 @@ trial. Some references which I might cite in a literature review are:
 11. **A surveillance system based on a short memory scheme.** D. L.
     Shore, D. Quade. Stat Med 1989: 8(3); 311-22; discussion 331-2.
     [\[Medline\]](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=2711063&dopt=Abstract)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/CusumChart.html
+[sim2]: http://new.pmean.com/CusumChart/
+

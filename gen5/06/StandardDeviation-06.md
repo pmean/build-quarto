@@ -48,3 +48,9 @@ Here is the R code that produced this data and graph.
     error](www.childrensmercy.org/definitions/stderr.htm)
 -   [Definition: Standard
     deviation](www.childrensmercy.org/definitions/stdev.htm)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StandardDeviation-06.html
+[sim2]: http://new.pmean.com/StandardDeviation-06/
+

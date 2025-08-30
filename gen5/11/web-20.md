@@ -1,6 +1,7 @@
 ---
 title: Promoting your consulting career in the era of Web 2.0
 author: Steve Simon
+source: http://www.pmean.com/11/web20.html
 date: 2011-05-20
 categories:
 - "*Blog post"
@@ -16,10 +17,10 @@ I was approached by a member of the planning committee for the [American Statist
 
 Title: Promoting your consulting career in the era of Web 2.0. Speaker: Steve Simon, P.Mean Consulting and Department of Biomedical and Health Informatics, University of Missouri-Kansas City. Abstract: Web 2.0, defined by Wikipedia as "web applications that facilitate participatory information sharing, interoperability, user-centered design, and collaboration on the World Wide Web" offers new opportunities for you to promote your consulting career. These tools are mostly free or very inexpensive, though they are labor intensive. In this talk, I will describe some Web 2.0 tools that I have used to promote my independent consulting career (Facebook, Twitter, LinkedIn), as well as some of the unwritten rules about appropriate usage of these tools. I will contrast these tools with simpler Internet methods (static websites, email newsletters) and some non-computer methods that can help promote your consulting career. Web 2.0 will not replace more traditional modes of career promotion, but it offers some unique opportunities to supplement these efforts.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/web20.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/web-20/
 
 [csp1]: http://www.amstat.org/meetings/csp/2012/index.cfm
 [jsm1]: http://www.amstat.org/meetings/jsm/2011/index.cfm

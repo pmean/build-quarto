@@ -63,3 +63,9 @@ statistician that a control chart would. Nevertheless, a control chart
 is still valuable because it will be used more often by
 non-statisticians and will allow more people to engage themselves in the
 examination of safety issues.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/DataMining-06.html
+[sim2]: http://new.pmean.com/DataMining-06/
+

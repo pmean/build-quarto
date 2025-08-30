@@ -45,3 +45,9 @@ page_update: partial
 > co-authorship, including the recent cloning scandal in South Korea.
 > When I get time, I want to include a few links and references about
 > this.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/Coauthorship.html
+[sim2]: http://new.pmean.com/Coauthorship/
+

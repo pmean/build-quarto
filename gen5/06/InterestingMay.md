@@ -67,3 +67,9 @@ Interesting quotes](../quote/InterestingQuotes.asp).
 > From?](http://spot.pcc.edu/~mtrigobo/personal/newideas.html)**.
 > Michael Trigoboff, Portland Community College. Accessed on 2006-05-17.
 > **(Plan, Research)** spot.pcc.edu/\~mtrigobo/personal/newideas.html
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/InterestingMay.html
+[sim2]: http://new.pmean.com/InterestingMay/
+

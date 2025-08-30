@@ -54,3 +54,9 @@ telling which charts will work without reviewing the entire chart. If
 you believe that only one out of every four charts meets your needs,
 then you should pull 248 charts to make sure that you will have around
 62 that qualify when you are done.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HowManyCharts.html
+[sim2]: http://new.pmean.com/HowManyCharts/
+

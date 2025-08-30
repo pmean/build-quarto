@@ -24,3 +24,9 @@ page_update: partial
 > during the most dangerous part of the journey, I blindfolded him
 > because if he could not see the loose rocks on the path, he would not
 > slip on them.*"
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StatisticalKoan3.html
+[sim2]: http://new.pmean.com/StatisticalKoan3/
+

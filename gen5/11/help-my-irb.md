@@ -1,6 +1,7 @@
 ---
 title: I won't serve on my IRB, but there is a way I can still help.
 author: Steve Simon
+source: http://www.pmean.com/11/HelpMyIrb.html
 date: 2011-02-17
 categories:
 - "*Blog post"
@@ -18,7 +19,7 @@ Most IRBs attempt to track their performance through regular audits. This could 
 
 Unless an audit focuses on an individual project or investigator, there is likely to be some element of statistical sampling and data analysis involved. This is where I could help. I won't do any data collection or data entry, but I will provide advice during these phases, and I'll help produce numerical summaries of these results.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/HelpMyIrb.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/help-my-irb/

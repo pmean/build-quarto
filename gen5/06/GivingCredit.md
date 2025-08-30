@@ -31,3 +31,9 @@ page_update: partial
 > interesting study about\..."
 >
 > I hope that is a reasonable compromise.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/GivingCredit.html
+[sim2]: http://new.pmean.com/GivingCredit/
+

@@ -143,3 +143,9 @@ by some.
 -   [Stats: Interactions in logistic regression (April 8, 2004, Model,
     Logistic
     regression)](http://www.pmean.com/weblog2004/interactions.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SlashAndBurn-06.html
+[sim2]: http://new.pmean.com/SlashAndBurn-06/
+

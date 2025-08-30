@@ -1,6 +1,7 @@
 ---
 title: BUGS is more than just one program
 author: Steve Simon
+source: http://www.pmean.com/10/BugsVersions.html
 date: 2010-11-19
 categories:
 - "*Blog post"
@@ -48,7 +49,7 @@ Wikipedia has a nice series of brief articles about these programs:
  * http://en.wikipedia.org/wiki/OpenBUGS
  * http://en.wikipedia.org/wiki/Just_another_Gibbs_sampler
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/BugsVersions.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/bugs-versions/

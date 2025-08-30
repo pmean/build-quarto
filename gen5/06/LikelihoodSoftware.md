@@ -57,3 +57,9 @@ interesting links if you want to explore this further are listed below.
     hypothesis tests, statistical significance tests, significance
     tests, etc.) to observational studies."*
     www.cnr.colostate.edu/\~anderson/thompson1.html
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/LikelihoodSoftware.html
+[sim2]: http://new.pmean.com/LikelihoodSoftware/
+

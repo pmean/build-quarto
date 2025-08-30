@@ -19,3 +19,9 @@ page_update: partial
 > below for details).
 >
 > -   [Stats: Archive organized by topics](../TopicList.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/CategorizingWeblog.html
+[sim2]: http://new.pmean.com/CategorizingWeblog/
+

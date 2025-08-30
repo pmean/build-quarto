@@ -1,6 +1,7 @@
 ---
 title: Looking at another grant opportunity
 author: Steve Simon
+source: http://www.pmean.com/11/PilotGrant.html
 date: 2011-11-07
 categories:
 - "*Blog post"
@@ -66,9 +67,9 @@ Agreement between the two raters will be assessed using Cohen's Kappa and papers
 
 I will update this webpage as I progress in filling out the details of this grant application.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/PilotGrant.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/pilot-grant/
 
 [fro1]: http://www.kumc.edu/frontiers/pilot-studies-grant-awards.html

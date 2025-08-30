@@ -57,3 +57,9 @@ Other sessions
     Spitzner and William H. Woodall (Monday 10:30am)
 
 Ironically, the two Monday talks are in different sessions.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ControlChartsA.html
+[sim2]: http://new.pmean.com/ControlChartsA/
+

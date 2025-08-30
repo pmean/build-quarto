@@ -1,6 +1,7 @@
 ---
 title: Does a wide confidence interval mean that my conclusions are all wrong?
 author: Steve Simon
+source: http://www.pmean.com/11/WideInterval.html
 date: 2011-03-24
 categories:
 - "*Blog post"
@@ -24,7 +25,7 @@ I tell a story about a researcher who gets a 5 year 6 million dollar grant. At t
 
 So when you write up your results, point out that the confidence intervals are wide, indicating that the sample size was too small (better for you to admit it than to have a referee force you to make the statement). Then point out that any conclusions that you might try to draw from the data need to be replicated with a larger sample size.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/WideInterval.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/wide-interval-interpretation/

@@ -52,3 +52,9 @@ Interesting quotes](../quote/InterestingQuotes.asp).
 > diagnostic equipment can be developed based on this new technology in
 > the field of ECG, EEG and macroscopic and microscopic image analysis
 > systems.*
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/InterestingApril.html
+[sim2]: http://new.pmean.com/InterestingApril/
+

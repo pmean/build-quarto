@@ -1,6 +1,7 @@
 ---
 title: Resources for Comparative Effectiveness Research
 author: Steve Simon
+source: http://www.pmean.com/11/cer.html
 date: 2011-04-13
 categories:
 - "*Blog post"
@@ -18,10 +19,10 @@ I attended an interesting webinar on Comparative Effectiveness Research (CER). I
 
 2. The [Institute of Medicine report][iom1] on Comparative Effectiveness Research is available in a book format or as a free PDF file and covers research priorities for CER. Here is a brief description from the introduction to this report: "Comparative effectiveness research (CER) identifies what works best for which patients under what circumstances. Congress, in the American Recovery and Reinvestment Act (ARRA) of 2009, tasked the Institute of Medicine (IOM) to recommend national priorities for research questions to be addressed by CER and supported by ARRA funds. In its 2009 report, Initial National Priorities for Comparative Effectiveness Research, the authoring committee establishes a working definition of CER, develops a priority list of research topics to be undertaken with ARRA funding using broad stakeholder input, and identifies the necessary requirements to support a robust and sustainable CER enterprise. The full list of priorities and recommendations can be found in the below report brief."
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/cer.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/cer/
 
 [iom1]: https://www.ncbi.nlm.nih.gov/books/NBK64787/
 [pco1]: https://www.pcori.org/

@@ -1,6 +1,7 @@
 ---
 title: Looking for help to test software for monitoring accrual in a clinical trial
 author: Steve Simon
+source: http://www.pmean.com/11/AccrualHelp.html
 date: 2011-06-16
 categories:
 - "*Blog post"
@@ -18,7 +19,7 @@ With a colleague, I have developed a Bayesian model that can forecast the remain
 
 I'd really like to work with someone who has access to lots of clinical trials to examine the general patterns of accrual and how often researchers provide overly optimistic estimates of the duration of a clinical trial. I'd also like to test my software on a few prospective trials to see how it performs in a real world setting. If you know someone who can help with this, I'd be very grateful if you could put me in touch with them.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/AccrualHelp.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/accrual-help/

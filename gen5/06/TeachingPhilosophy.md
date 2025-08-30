@@ -19,3 +19,9 @@ a good model to look at (though Statistics and Engineering are quite
 different subjects). The full text of this book is online at
 
 -   <https://engineering.purdue.edu/ChE/News_and_Events/Publications/teaching_engineering/index.html>
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/TeachingPhilosophy.html
+[sim2]: http://new.pmean.com/TeachingPhilosophy/
+

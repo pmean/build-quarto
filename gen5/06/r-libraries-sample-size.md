@@ -668,3 +668,9 @@ noted in Cohen's book on sample size.
     modules are large in file size, please view them through a T1
     network rather than a modem connection).*
     seamonkey.ed.asu.edu/\~alex/teaching/WBI/power\_es.html
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SampleSizeR.html
+[sim2]: http://new.pmean.com/r-libraries-sample-size/
+

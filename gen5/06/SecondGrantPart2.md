@@ -177,3 +177,9 @@ page_update: partial
     6, 2006)](FundingSources.asp)
 -   [Stats: Early detection of accrual problems in clinical trials (June
     30, 2006)](AccrualProblems1.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SecondGrantPart2.html
+[sim2]: http://new.pmean.com/SecondGrantPart2/
+

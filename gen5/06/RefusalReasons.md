@@ -80,3 +80,9 @@ assess the scientific validity of the study.
 Now, it is unclear if the research situation cited above showed adequate
 respect for the patients' right to be left alone, but I know that if
 you are careful, you can query refusals without violating their rights.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RefusalReasons.html
+[sim2]: http://new.pmean.com/RefusalReasons/
+

@@ -253,3 +253,9 @@ overpredict at the two extremes.
 **Criticisms of a quadratic regression model**
 
 [To be added]
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/QuadraticRegression.html
+[sim2]: http://new.pmean.com/QuadraticRegression/
+

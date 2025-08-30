@@ -1,6 +1,7 @@
 ---
 title: Justifying the sample size in a qualitative research study
 author: Steve Simon
+source: http://www.pmean.com/11/QualitativeSampleSize.html
 date: 2011-11-22
 categories:
 - "*Blog post"
@@ -19,7 +20,7 @@ Qualitative studies have a level of flexibility that would cause trouble for a q
 
 That's all well and good, but you have to submit a grant and the budget for the grant before any qualitative research is done. What you have to do is to rely on sample sizes used in similar qualitative studies, project a reasonable upper bound, and then say that sampling will continue until saturation occurs or the upper bound is reached. You might want to also toss in something along the lines of "the sampling approach will be modified if the upper bound for sample size is being approached without any evidence of convergence of themes."
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/QualitativeSampleSize.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/qualitative-sample-size/

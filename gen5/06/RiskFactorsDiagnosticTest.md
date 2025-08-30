@@ -70,3 +70,9 @@ and tend to be overrepresented in outpatient and inpatient settings.
 -   **Making Medical Decisions**. Richard Gross (1999) Philadelphia, PA:
     American College of Physicians. [\[BookFinder4U
     link\]](http://www.bookfinder4u.com/detail/0943126754.html)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RiskFactorsDiagnosticTest.html
+[sim2]: http://new.pmean.com/RiskFactorsDiagnosticTest/
+

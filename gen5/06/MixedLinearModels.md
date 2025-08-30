@@ -158,3 +158,9 @@ practical consequence.
 The covariance parameters provide you with an estimate of between and
 within subject variation. These numbers are very useful for planning
 future research studies.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/MixedLinearModels.html
+[sim2]: http://new.pmean.com/MixedLinearModels/
+

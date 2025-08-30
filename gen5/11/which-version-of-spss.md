@@ -1,6 +1,7 @@
 ---
 title: Which version of SPSS should you get
 author: Steve Simon
+source: http://www.pmean.com/11/WhichVersion.html
 date: 2011-06-03
 categories:
 - "*Blog post"
@@ -43,10 +44,10 @@ If you know the specialized procedures you will need, then you can buy just thos
 
 This will change, of course, as new versions come out and you should talk to your SPSS sales representative rather than trust what I am saying.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/WhichVersion.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/which-version-of-spss/
 
 [sps1]: http://www-01.ibm.com/software/analytics/spss/products/statistics/base/
 [sps2]: http://www-01.ibm.com/software/analytics/spss/products/statistics/stats-standard/

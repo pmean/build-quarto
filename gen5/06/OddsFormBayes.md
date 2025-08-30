@@ -52,3 +52,9 @@ When the test is negative, we get a similar result:
 Note that Se/(1-Sp) is the formula for the likelihood ratio of a
 positive result and that (1-Se)/Sp is the formula for the likelihood
 ratio for a negative result.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/OddsFormBayes.html
+[sim2]: http://new.pmean.com/OddsFormBayes/
+

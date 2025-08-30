@@ -46,3 +46,9 @@ summarized at
     Experts](http://core.ecu.edu/psyc/wuenschk/docs30/IgnorantExperts.htm).
     Wuensch K. Last viewed on 2006-11-24.
     core.ecu.edu/psyc/wuenschk/docs30/IgnorantExperts.htm
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RebuttingReviewer.html
+[sim2]: http://new.pmean.com/RebuttingReviewer/
+

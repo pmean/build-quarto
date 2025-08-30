@@ -1,6 +1,7 @@
 ---
 title: The nature of advice on email discussion lists
 author: Steve Simon
+source: http://www.pmean.com/11/Advice.html
 date: 2011-03-08
 categories:
 - "*Blog post"
@@ -28,7 +29,7 @@ That's just the nature of advice on a list like this. No one is going to invest 
 
 I do wish you the best of luck with your project. I have not offered any answers to your questions earlier because you are already getting better advice than I could provide. Seriously! You have some of the rock stars of Statistics offering you advice and I've learned a lot from reading their comments.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Advice.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/discussion-board-advice/

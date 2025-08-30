@@ -1,6 +1,7 @@
 ---
 title: There's more than one way to calculate a Fisher's exact p-value
 author: Steve Simon
+source: http://www.pmean.com/11/Fishers.html
 date: 2011-07-21
 categories:
 - "*Blog post"
@@ -89,8 +90,8 @@ The two tailed p-value associated with Fisher's exact test is 0.308088. This is 
 
 Both programs are correct, as verified by my hand calculations shown above. The discrepancy is caused by a different computational algorithm in the two programs.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Fishers.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/fishers-exact-p-value/
   

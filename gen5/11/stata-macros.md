@@ -1,6 +1,7 @@
 ---
 title: Macros in Stata
 author: Steve Simon
+source: http://www.pmean.com/11/StataMacro.html
 date: 2011-03-08
 categories:
 - "*Blog post"
@@ -99,7 +100,7 @@ Also note that we cannot use k=5/8 in the forvalues loop because it would end up
 
 Now for all of these examples, you don't end up saving a lot of time. But when the tasks are repeated in a few dozen different areas of the program, the time savings can really add up.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/StataMacro.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/stata-macros/

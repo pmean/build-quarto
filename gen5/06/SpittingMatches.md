@@ -148,3 +148,9 @@ more collegial view.
 There are a lot more ideas presented in this web page. While I dislike
 the spartan format of an outline, Dr. Kritzer lists some important and
 provocative questions.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SpittingMatches.html
+[sim2]: http://new.pmean.com/SpittingMatches/
+

@@ -91,3 +91,9 @@ page_update: partial
 >     8, 2005)](http://www.pmean.com/weblog2005/NamingGenes.asp)
 > -   [Stats: Finding more information about a gene (September
 >     6, 2005)](http://www.pmean.com/weblog2005/FindingGenes.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/EnsemblSearch.html
+[sim2]: http://new.pmean.com/EnsemblSearch/
+

@@ -68,3 +68,9 @@ page_update: partial
 > This article makes a strong argument for the value of qualitative
 > information and offers a good model for how to use focus groups to
 > collect this information.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/FocusGroups-06.html
+[sim2]: http://new.pmean.com/FocusGroups-06/
+

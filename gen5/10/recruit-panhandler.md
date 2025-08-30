@@ -19,7 +19,7 @@ I suspect the researcher is trying to help out someone who obviously needs help,
 
 Now it may be that the protocol never mentioned how subjects were going to be recruited. If so, shame on you for approving such a vague protocol. But if there is some detail about the recruitment process, it surely did not specify random encounters with panhandlers. So hold this researcher to his/her original plan. It may or may not be ethical to recruit panhandlers, but it fails from a statistical perspective, so that in itself is enough justification to say no.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/Panhandler.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/recruit-panhandler/

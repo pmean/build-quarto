@@ -134,7 +134,7 @@ p2 <- duration.plot(n=350,T=3,P=0, m=41,tm=239/365,Tmax=10)
 
 The due date for a submission is October 31.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/contest.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/r-contest-entry/

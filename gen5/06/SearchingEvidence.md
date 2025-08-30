@@ -37,3 +37,9 @@ actually quite varied and interesting. One entry in particular,
     weblogs.elearning.ubc.ca/googlescholar/EBMJan20\_06.pdf
 
 looks like an excellent resource.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SearchingEvidence.html
+[sim2]: http://new.pmean.com/SearchingEvidence/
+

@@ -25,3 +25,9 @@ by selecting EDIT | OPTIONS from the menu.
 ![](http://www.pmean.com/new-images/06/PageBreaksSPSS01.gif)
 
 Click on the VIEWER tab and select an infinite length for LENGTH.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PageBreaksSPSS.html
+[sim2]: http://new.pmean.com/PageBreaksSPSS/
+

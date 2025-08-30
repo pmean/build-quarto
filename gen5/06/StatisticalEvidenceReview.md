@@ -121,3 +121,9 @@ are perfect partners.
 
 This page was updated on October 9, 2006 to include some details from
 the International Journal of Epidemiology review.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/StatisticalEvidenceReview.html
+[sim2]: http://new.pmean.com/StatisticalEvidenceReview/
+

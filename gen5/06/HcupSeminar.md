@@ -41,3 +41,9 @@ page_update: partial
 > I have worked in the past with other AHRQ data sets. I will try to
 > document how to work with these large databases as well as large
 > databases at CDC (NAMS and NHAMCS, for example) when I have some time.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HcupSeminar.html
+[sim2]: http://new.pmean.com/HcupSeminar/
+

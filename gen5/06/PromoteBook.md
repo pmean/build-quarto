@@ -59,3 +59,9 @@ page_update: partial
 > will have to pay.
 >
 > 4\. Don't use pop-up windows, frames, or animation on your web pages.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PromoteBook.html
+[sim2]: http://new.pmean.com/PromoteBook/
+

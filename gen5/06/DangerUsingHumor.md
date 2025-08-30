@@ -62,3 +62,9 @@ page_update: partial
 > are seriously ill are more likely to experience bad events like
 > re-hopsitalization, and provide you with the sort of precision that
 > you need to make meaningful statements about risk.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/DangerUsingHumor.html
+[sim2]: http://new.pmean.com/DangerUsingHumor/
+

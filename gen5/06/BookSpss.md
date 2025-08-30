@@ -21,3 +21,9 @@ for what to say. Recommending a book is actually quite difficult,
 though, because people's needs vary so much. A common request is for a
 book about SPSS, and the book mentioned above looks pretty good, though
 I have not read it yet.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/BookSpss.html
+[sim2]: http://new.pmean.com/BookSpss/
+

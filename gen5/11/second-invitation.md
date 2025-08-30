@@ -1,6 +1,7 @@
 ---
 title: Second invitation to talk about how independent consulting is different
 author: Steve Simon
+source: http://www.pmean.com/11/SecondInvitation.html
 date: 2011-07-24
 categories:
 - "*Blog post"
@@ -20,7 +21,7 @@ As someone who is currently working as an independent consultant part-time and p
 
 Keywords: academic consuling, customer billing, professional development.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SecondInvitation.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/second-invitation/

@@ -15,3 +15,9 @@ page_update: partial
 
 [roa1]: http://archneur.ama-assn.org/cgi/content/full/62/9/1475
 [roa2]: http://archneur.ama-assn.org/cgi/reprint/62/9/1475.pdf
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: Lost page
+[sim2]: http://new.pmean.com/ProperTreatment/
+

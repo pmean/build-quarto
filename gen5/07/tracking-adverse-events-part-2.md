@@ -242,3 +242,9 @@ warning limit (or the two sigma limit) is computed as
 ```
 
 The upper warning limit is 25.9 and the lower warning limit is negative.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/07/TrackingAdverseEventsPart2.html
+[sim2]: http://new.pmean.com/tracking-adverse-events-part-2/
+

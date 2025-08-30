@@ -27,3 +27,9 @@ problems than other types of studies. Finally, I'd like to do a
 qualitative data analysis of the "excuses" that people give in their
 reports when the actual conduct of the research fails to match their
 initial projections.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SecondGrant.html
+[sim2]: http://new.pmean.com/SecondGrant/
+

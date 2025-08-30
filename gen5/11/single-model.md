@@ -1,6 +1,7 @@
 ---
 title: A bunch of univariate nonparametric tests versus a single parametric model
 author: Steve Simon
+source: http://www.pmean.com/11/SingleModel.html
 date: 2011-11-03
 categories:
 - "*Blog post"
@@ -26,7 +27,7 @@ If it were me, I'd run the multivariate linear regression model. Nonnormality is
 
 That just my preference. But there is no formal consensus in the research community, so you do have some latitude.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SingleModel.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/single-model/

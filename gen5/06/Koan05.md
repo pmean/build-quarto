@@ -20,3 +20,9 @@ Over the weekend, I wrote three new koans.
 Two of these were inspired by a short course I took on Friday on
 Bayesian statistics. I will probably write some entries in my weblog
 based on other things I learned in this course.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/Koan05.html
+[sim2]: http://new.pmean.com/Koan05/
+

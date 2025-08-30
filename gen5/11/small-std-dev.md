@@ -1,6 +1,7 @@
 ---
 title: Why is my standard deviation so small
 author: Steve Simon
+source: http://www.pmean.com/11/SmallStdDev.html
 date: 2011-05-02
 categories:
 - "*Blog post"
@@ -22,8 +23,8 @@ What is a bit surprising, perhaps, is that the standard deviation is not a lot s
 
 There are a few qualifiers, of course. If one item has a much smaller standard deviation than the other items, it is possible for the mean to have a larger standard deviation than those individual item (but still smaller than the standard deviation of the other items). Some other anomalies might appear with unbalanced data. But as a general rule, averages are less variable than individuals and we statisticians are glad for it.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SmallStdDev.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/small-std-dev/
 

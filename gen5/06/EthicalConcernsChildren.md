@@ -433,3 +433,9 @@ to worry about any compensation issues.
     [Full
     text]](http://archpedi.ama-assn.org/cgi/content/full/155/11/1197)
     [PDF]](http://archpedi.ama-assn.org/cgi/reprint/155/11/1197.pdf)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/EthicalConcernsChildren.html
+[sim2]: http://new.pmean.com/EthicalConcernsChildren/
+

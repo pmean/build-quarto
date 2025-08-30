@@ -1,6 +1,7 @@
 ---
 title: Net-accessible resources for group sequential designs
 author: Steve Simon
+source: http://www.pmean.com/11/GroupSequential.html
 date: 2011-10-19
 categories:
 - "*Blog post"
@@ -34,10 +35,10 @@ You should do a PubMed search, of course, as well as Google Scholar. If these fa
 
 I'm not sure that I'd spring for the price of some of these commercial packages though, unless you are running some very expensive clinical trials. The price of some of these packages is very steep. Try R first, but if R is too much to learn, then perhaps you need to spend the big money for a commercial package.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/GroupSequential.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/group-sequential/
 
 [sim3]: http://www.pmean.com/category/EarlyStopping.html
 [sim4]: http://www.pmean.com/weblog2005/GroupSequential.aspx

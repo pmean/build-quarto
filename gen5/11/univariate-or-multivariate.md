@@ -1,6 +1,7 @@
 ---
 title: Should I report the univariate or the multivariate logistic regression analysis?
 author: Steve Simon
+source: http://www.pmean.com/11/report.html
 date: 2011-09-07
 categories:
 - "*Blog post"
@@ -33,7 +34,7 @@ Notice in this example, that the effect of adjusting is to attenuate all of the 
 
 As a general guide on how to write up statistical analyses, look for a wonderful book: How to Report Statistics in Medicine: Annotated Guidelines for Authors, Editors, and Reviewers by Thomas A. Lang and Michelle Secic.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/report.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/univariate-or-multivariate/

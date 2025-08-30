@@ -1,6 +1,7 @@
 ---
 title: Sharing the same classroom for five consecutive years
 author: Steve Simon
+source: http://www.pmean.com/11/classroom.html
 date: 2011-09-12
 categories:
 - "*Blog post"
@@ -64,7 +65,7 @@ The table fuction (shown above) lists the number of times that a pair or triple 
 
 So noting two particular students who shared the same classroom across all five years is fairly improbable (0.5^2), but when you look across all possible pairs of students, it is not only probable, it is a mathematical certainty.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/classroom.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/classroom-probability/

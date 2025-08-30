@@ -95,3 +95,9 @@ She then invited the statistician in and asked "*What is one plus
 one?*" The statistician looked around very carefully, then went up and
 closed the door, lowered the window shades, and asked very quietly
 "*What do you want it to be?*"
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/IrbStatistician.html
+[sim2]: http://new.pmean.com/IrbStatistician/
+

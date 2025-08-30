@@ -1,6 +1,7 @@
 ---
 title: DNA binding image
 author: Steve Simon
+source: http://www.pmean.com/09/BindingImage.html
 date: 2009-01-01
 categories:
 - "*Blog post"
@@ -14,9 +15,9 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 The link to this page is broken.
 
 [sim1]: http://www.pmean.com/09/BindingImage.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/binding-image/

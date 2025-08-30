@@ -54,3 +54,9 @@ serious mischief.
 
 So don't be fooled by an impressive bibliography. The process that was
 used to create that bibliography is important.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/CherryPicking.html
+[sim2]: http://new.pmean.com/CherryPicking/
+

@@ -47,3 +47,9 @@ pages.
     distribution](www.childrensmercy.org/definitions/poisson.htm)
 -   [Stats: Sample size for an ordinal outcome (September
     22, 2004)](http://www.pmean.com/weblog2004/OrdinalLogistic.asp)
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PoissonRegression-06.html
+[sim2]: http://new.pmean.com/PoissonRegression-06/
+

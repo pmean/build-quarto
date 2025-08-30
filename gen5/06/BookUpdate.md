@@ -20,3 +20,9 @@ Amazon and Barnes & Noble. See my web page about the book:
 -   [Stats: Statistical Evidence](../evidence.asp)
 
 for more details.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/BookUpdate.html
+[sim2]: http://new.pmean.com/BookUpdate/
+

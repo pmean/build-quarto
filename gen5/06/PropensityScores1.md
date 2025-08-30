@@ -93,3 +93,9 @@ model, and that works reasonably well for this data set. In many
 research settings, though, the number of covariates becomes so large
 that adjustment for all of the variables simultaneously will not work.
 In these cases, a propensity score model is very useful.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/PropensityScores1.html
+[sim2]: http://new.pmean.com/PropensityScores1/
+

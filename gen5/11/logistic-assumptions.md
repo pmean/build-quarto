@@ -1,6 +1,7 @@
 ---
 title: What are the assumptions of logistic regression
 author: Steve Simon
+source: http://www.pmean.com/11/LogisticAssumptions.html
 date: 2011-09-01
 categories:
 - "*Blog post"
@@ -24,7 +25,7 @@ There is a formal test of linearity called the Hosmer and Lemeshow test. You spl
 
 Linearity, of course, is a moot point if your predictor variable is categorical. A binary predictor variable, for example, reduces to a two by two table, and the only assumption for a two by two table is independence.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/LogisticAssumptions.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/logistic-assumptions/

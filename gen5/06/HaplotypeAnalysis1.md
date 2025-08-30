@@ -106,3 +106,9 @@ page_update: partial
 >     Malkinson, M. You. Exp Lung Res 1998: 24(4); 481-97.
 >     [\[Medline\]](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&db=PubMed&list_uids=9659579&dopt=Abstract)
 >     **(Medicine, Genetics)**
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/HaplotypeAnalysis1.html
+[sim2]: http://new.pmean.com/HaplotypeAnalysis1/
+

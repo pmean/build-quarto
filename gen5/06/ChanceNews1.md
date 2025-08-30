@@ -37,3 +37,9 @@ page_update: partial
 >
 > There are a lot of interesting articles written by others that I
 > should cite and comment on in this weblog.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/ChanceNews1.html
+[sim2]: http://new.pmean.com/ChanceNews1/
+

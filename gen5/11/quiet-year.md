@@ -1,6 +1,7 @@
 ---
 title: It's been a quiet year
 author: Steve Simon
+source: http://www.pmean.com/11/QuietYear.html
 date: 2011-06-01
 categories:
 - "*Blog post"
@@ -24,7 +25,7 @@ I am a member of the CAM Statisticians group and attended the meeting for this g
 
 I wrote 27 articles for Chance News, an wiki-based summary of recent events in the news that highlight applications of statistics. I wrote 52 webpages from July 2010 through June 2011, provided annotated links to 171 external resources, and distributed seven email newsletters. I currently have 351 subscribers to this newsletter.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/QuietYear.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/quiet-year/

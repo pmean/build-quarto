@@ -1,6 +1,7 @@
 ---
 title: Using a binary coding trick illustrated by a Car Talk puzzler
 author: Steve Simon
+source: http://www.pmean.com/11/BinaryCoding.html
 date: 2011-05-21
 categories:
 - "*Blog post"
@@ -108,9 +109,9 @@ cti   (28)     1
 
 Note that b=acute lower back pain, n=neurologic problems, i=iv drug abuse, t=trauma, and c=cancer.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [car1]: https://www.cartalk.com/radio/puzzler/search-bogus-coins
 
 [sim1]: http://www.pmean.com/11/BinaryCoding.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/binary-coding/

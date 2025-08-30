@@ -102,3 +102,9 @@ page_update: partial
 > [11386894](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=retrieve&db=pubmed&list_uids=11386894&dopt=Abstract).
 > Sorry that I do not even have time to give a full bibliographic
 > citation right now.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/GeneralizingResearch.html
+[sim2]: http://new.pmean.com/GeneralizingResearch/
+

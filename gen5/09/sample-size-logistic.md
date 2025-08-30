@@ -71,7 +71,7 @@ Sample size calculations for ordered categorical data. J. Whitehead. Stat Med 19
 
 Sample size for logistic repression with small response probability. Alice Whittemore. Journal of the American Statistical Association 1981: 76(373); 27-32.
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/09/sample-size-logistic.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/sample-size-logistic/

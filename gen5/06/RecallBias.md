@@ -83,3 +83,9 @@ License](http://i.creativecommons.org/l/by/3.0/us/80x15.png)](http://creativecom
 This work is licensed under a [Creative Commons Attribution 3.0 United
 States License](http://creativecommons.org/licenses/by/3.0/us/). It was
 written by Steve Simon and was last modified on 04/01/2010.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/RecallBias.html
+[sim2]: http://new.pmean.com/RecallBias/
+

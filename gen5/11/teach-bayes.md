@@ -1,6 +1,7 @@
 ---
 title: How you can teach Bayesian methods in an introductory Statistics class and why you should
 author: Steve Simon
+source: http://www.pmean.com/11/TeachBayes.html
 date: 2011-10-17
 categories:
 - "*Blog post"
@@ -40,10 +41,10 @@ More importantly, a student without an understanding of prior and posterior dist
 
 In a traditional 3 semester hour class, I'd suggest that one week would be worth devoting to Bayesian data analysis. Will it be easy? No. But it does need to be done.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/TeachBayes.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/teach-bayes/
 
 [alb1]: http://www.amstat.org/publications/jse/v3n3/albert.html
 [sim3]: http://www.pmean.com/webinars/archive.html

@@ -374,3 +374,9 @@ page_update: partial
 >     Andis Robeznieks, Published in Amercian Medical News on February
 >     21, 2005. Accessed on 2005-02-16. **(Medicine, Quality)**
 >     www.ama-assn.org/amednews/2005/02/21/prsc0221.htm
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/06/SpcHealthcare.html
+[sim2]: http://new.pmean.com/SpcHealthcare/
+

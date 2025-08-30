@@ -1,6 +1,7 @@
 ---
 title: Establishing accuracy for a statistical program (created 2011-07-14).
 author: Steve Simon
+source: http://www.pmean.com/11/Accuracy.html
 date: 2011-07-14
 categories:
 - "*Blog post"
@@ -100,7 +101,7 @@ So how many examples do you need to establish accuracy. It's a subjective call. 
 
 You should also establish accuracy by generating artificial examples and running them both in OpenEpi and in a well established software package. I will write up details about this in a future webpage.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Accuracy.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/establishing-program-accuracy/

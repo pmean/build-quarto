@@ -1,6 +1,7 @@
 ---
 title: Fewer than 10 events per variable
 author: Steve Simon
+source: http://www.pmean.com/09/FewerThanTen.html
 date: 2009-02-18
 categories:
 - "*Blog post"
@@ -15,7 +16,7 @@ This page is currently being updated from the earlier version of my website. Sor
 
 <!---More--->
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/09/FewerThanTen.html
-[sim2]: http://www.pmean.com/original_site.html
+[sim2]: http://new.pmean.com/fewer-than-ten/

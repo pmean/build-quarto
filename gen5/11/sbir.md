@@ -1,6 +1,7 @@
 ---
 title: Small business grant? Maybe not (created 2011-06-16).
 author: Steve Simon
+source: http://www.pmean.com/11/sbir.html
 date: 2011-06-16
 categories:
 - "*Blog post"
@@ -71,10 +72,10 @@ Another important extension is the use of more complex accrual distributions tha
 
 Things are very fluid at this point in time, so this is only a general description.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/sbir.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/sbir/
 
 [nih1]: http://grants.nih.gov/grants/funding/sbir_announcements.htm
 [nih2]: http://grants.nih.gov/grants/guide/pa-files/PA-11-096.html

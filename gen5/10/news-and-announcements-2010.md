@@ -45,7 +45,7 @@ This page is obsolete, but is being kept around anyway.
 
 2010-01-06. Free webinar: "The first three steps in a descriptive data analysis", Thursday, January 21, 2010, 11am-noon, CST. Abstract: This one hour training class will give you a general introduction to descriptive data analysis using PASW (formerly known as SPSS) software. The first three steps in a descriptive data analysis are: (1) know how much dat you have and how much data is missing; (2) compute ranges or frequencies for individual variables; and (3) compute crosstabs, boxplots, or scatterplots to examine relationships among pairs of variables. This class is useful for anyone who needs to analyze research data. No statistical experience is necessary (explain). No special hardware/software is needed (explain). To register, send an email to with the words "January 21 webinar" in the subject line.  A draft handout is available. The final handout is available, one slide per page or six slides per page. General information about the webinar series is at (sign up link no longer active).
 
-You can find an [earlier version][sim1] of this page on my [website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/10/Updates2010.html
-[sim2]: http://www.pmean.com
+[sim2]: http://new.pmean.com/news-and-announcements-2010/

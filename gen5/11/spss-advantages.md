@@ -1,6 +1,7 @@
 ---
 title: The advantages of IBM SPSS software
 author: Steve Simon
+source: http://www.pmean.com/11/SpssAdvantages.html
 date: 2011-08-11
 categories:
 - "*Blog post"
@@ -34,10 +35,10 @@ Here are the four reasons why I recommend IBM SPSS over any of these previously 
 
 4. An easy to learn menu driven interface. Many of the competing statistical software programs, such as R, SAS, and Stata, are run primarily as a programming language. While a programming language offers some important advantages, it takes much longer to learn. Furthermore, the complexity often discourages you from trying a new and different approach.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SpssAdvantages.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/spss-advantages/
 
 [bur1]: www.burns-stat.com/pages/Tutor/spreadsheet_addiction.html
 [cry1]: http://www.cs.uiowa.edu/~jcryer/JSMTalk2001.pdf.

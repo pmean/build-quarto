@@ -1,6 +1,7 @@
 ---
 title: A simple hierarchical model for the Poisson distribution, borrowed from the BUGS manual
 author: Steve Simon
+source: http://www.pmean.com/11/Hierarchical.html
 date: 2011-05-20
 categories:
 - "*Blog post"
@@ -148,7 +149,7 @@ It is trivial to run this example within BUGS, but running it through R allows y
 
 It is wothwhile to compare the crude rates to the rates estimated by BUGS. The rates estimated by BUGS show shrinkage towards the mean with greater shrinkage for those pumps with less data and for those pumps which have a rate further away from the overal rate.
 
-You can find an [earlier version][sim1] of this page on my [original website][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/Hierarchical.html
-[sim2]: http://www.pmean.com/original_site.html 
+[sim2]: http://new.pmean.com/hierarchical-poisson/
