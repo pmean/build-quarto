@@ -3130,10 +3130,9 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="set-old-and-new-locations">Set old and new locations</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>old_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5&quot;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>old_directories <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;99&quot;</span>, <span class="fu">paste0</span>(<span class="st">&quot;0&quot;</span>, (<span class="dv">0</span><span class="sc">:</span><span class="dv">9</span>)), <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="dv">10</span><span class="sc">:</span><span class="dv">25</span>)))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>old_directories <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">&quot;0&quot;</span>, (<span class="dv">0</span><span class="sc">:</span><span class="dv">8</span>)), <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="dv">12</span><span class="sc">:</span><span class="dv">25</span>, <span class="dv">99</span>)))</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>new_path <span class="ot">&lt;-</span> <span class="st">&quot;../../qblog4/posts&quot;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>file_pattern <span class="ot">&lt;-</span> <span class="st">&quot;md$&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>old_directories <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">&quot;0&quot;</span>, (<span class="dv">0</span><span class="sc">:</span><span class="dv">9</span>)), <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="dv">10</span><span class="sc">:</span><span class="dv">25</span>, <span class="dv">99</span>)))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>new_path <span class="ot">&lt;-</span> <span class="st">&quot;../../qblog4/posts&quot;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>file_pattern <span class="ot">&lt;-</span> <span class="st">&quot;md$&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="find-files-function" class="level2">
@@ -3165,6 +3164,9 @@ Searching through 187 files in ../gen5/05
 Searching through 176 files in ../gen5/06
 Searching through 156 files in ../gen5/07
 Searching through 159 files in ../gen5/08
+Searching through 54 files in ../gen5/09
+Searching through 101 files in ../gen5/10
+Searching through 78 files in ../gen5/11
 Searching through 56 files in ../gen5/12
 Searching through 40 files in ../gen5/13
 Searching through 78 files in ../gen5/14
@@ -3205,7 +3207,7 @@ Searching through 42 files in ../gen5/99</code></pre>
 <span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">str_glue</span>(<span class="st">&quot;Total files copied: {n_files}&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Total files copied: 2015</code></pre>
+<pre><code>Total files copied: 2248</code></pre>
 </div>
 </div>
 </section>
