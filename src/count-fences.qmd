@@ -27,12 +27,14 @@ library(tidyverse)
 start_fence <- c(
   div=fixed('<div class="notes">'),
   colons="^::: notes",
-  backticks="^```\\{")
+  backticks="^```\\{",
+  dashes="---")
 
 end_fence <- c(
   div=fixed('</div>'),
   colons="^:::$",
-  backticks="^```$")
+  backticks="^```$",
+  dashes="---")
 
 count_fences <- function(file_path, file_name, i) {
 	read_lines(glue("{file_path}/{file_name}")) -> file_text
@@ -44,7 +46,7 @@ count_fences <- function(file_path, file_name, i) {
 	file_text |>
 		str_subset(end_fence[i]) |>
 	  length() -> n2
-	if (n1 == n2) return(n1*100+n2)
+	if (n1 > 0) return(n1*100+n2)
 	
 	cat("\n")
 	cat(glue("{file_path}/{file_name}"))
@@ -55,8 +57,8 @@ count_fences <- function(file_path, file_name, i) {
 ```{r}
 #| label: loop
 
-yr_list <- c("00", as.character(16:25))
-fence <- "backticks"
+yr_list <- c("99", paste0("0", 0:8), as.character(12:25))
+fence <- "dashes"
 
 n_list <- NULL
 for (yr in yr_list) {

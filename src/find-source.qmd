@@ -73,7 +73,7 @@ update_sim2 <- function(file_text, file_root) {
 #| label: loop
 #| error: false
 
-file_path <- "../gen5/01"
+file_path <- "../gen5/04"
 test_run <- FALSE
 
 file_path |>
