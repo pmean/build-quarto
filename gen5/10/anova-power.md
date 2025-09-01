@@ -1,5 +1,5 @@
 ---
-title: Lost page
+title: Reconciling the various ways to calculate power for an ANOVA model
 author: Steve Simon
 source: http://www.pmean.com/10/AnovaPower.html
 date: 2010-10-16
@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-P.Mean: Reconciling the various ways to calculate power for an ANOVA model (created 2010-10-16).
 
 I am trying to reconcile all the different ways that power can be calculated for an ANOVA model. The various formulas are confusing.
 

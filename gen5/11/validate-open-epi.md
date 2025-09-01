@@ -19,13 +19,13 @@ When there is a large disagreement, results will be adjudicated by hand calculat
 
 Open Epi produced no more than small disagreements with four artificial data sets and two published peer-reviewed research resources. Here are the details.
 
-### Artificial examples.
+## Artificial examples.
 
 There are four artificial examples for evaluation of Open Epi and a comparison program. I chose epitools, a package in R, for comparison, because epitools produces many of the same confidence intervals and p-values. I wanted to look at sample sizes that were small and large. I also wanted one test case to have a large p-value and one test case to have a small p-value.
 
 Here are the test cases.
 
-```
+```{}
 Test Case 1
 
  5 10
@@ -47,7 +47,7 @@ Test Case 4
 4000 8100
 ```
 
-#### Test Case 1
+## Test Case 1
 
 Here are the results of Test Case 1. For this and all other test cases, results from Open Epi are shown above the results from epitools/R. The number circles were added by the screen capture software.
 
@@ -59,7 +59,7 @@ The uncorrected chi square p-values (1) match to the third decimal place. The Mi
 
 The Mid-P Exact and Fishers Exact confidence limits (1) agree to four significant digits. The Taylor series confidence limits agree to three significant digits.
 
-#### Test Case 2
+## Test Case 2
 
 Here are the results for Test Case 2.
 
@@ -71,7 +71,7 @@ The uncorrected chisquare (1) and Mid-P Exact (2) p-values agree to four signifi
 
 The Mid-P Exact confidence intervals (1) agree to three significant digits and the Fisher Exact (2) and Taylor series (3) confidence intervals agree to four significant digits.
 
-#### Test Case 3
+## Test Case 3
 
 Here are the results for test case 3.
 
@@ -85,7 +85,7 @@ The uncorrected chi square p-values (1) are relatively easy to compute, even for
 
 The confidence intervals also agree to at least four significant digits.
 
-#### Test Case 4.
+## Test Case 4.
 
 Here are the results for test case 4.
 
@@ -97,7 +97,7 @@ The p-values agree to at least four significant digits.
 
 The confidence intervals also agree.
 
-### Peer-reviewed paper 1
+## Peer-reviewed paper 1
 
 The first peer-reviewed example comes from Sanna Siponen, Riitta Ahonen, Piia Savolainen, Katri Hameen-Anttila. Children's health and parental socioeconomic factors: a population-based survey in Finland BMC Public Health. 2011;11(1):457. Available in [html format][sip1].
 
@@ -113,7 +113,7 @@ The p-value (1) is 0.81. You need to take the time to verify that the paper used
 
 This is a perfect match.
 
-### Peer-reviewed paper 2
+## Peer-reviewed paper 2
 
 Here's another example:
 
@@ -123,7 +123,7 @@ Marhani Midin, Rosdinom Razali, Ruzanna ZamZam, Aaron Fernandez, Lim C Hum, Sham
 
 You have to skip the age variable, but you can replicate the two by two tables for gender, ethnicity, marital status, and eduation level.
 
-#### Here are the results for gender:
+## Here are the results for gender:
 
 ![Figure 12. Replication of p-value in OpenEpi](http://www.pmean.com/new-images/11/Accuracy08.jpg)
 
@@ -133,7 +133,7 @@ The Fisher exact p-value matches the p-value in the paper.
 
 The Taylor Series confidence interval matches the interval in the paper.
 
-#### Here are the results for ethnicity.
+## Here are the results for ethnicity.
 
 ![Figure 13. Replication of p-value in OpenEpi](http://www.pmean.com/new-images/11/Accuracy10.jpg)
 
@@ -143,7 +143,7 @@ The p-values match.
 
 The confidence intervals match (let's allow a bit of latitude for rounding error here).
 
-#### Here are the results for marital status.
+## Here are the results for marital status.
 
 ![Figure 15. Replication of p-value in OpenEpi](http://www.pmean.com/new-images/11/Accuracy12.jpg)
 
@@ -153,7 +153,7 @@ The p-values match.
 
 The confidence intervals match.
 
-#### Here are the results for education level.
+## Here are the results for education level.
 
 ![Figure 17. Replication of p-value in OpenEpi](http://www.pmean.com/new-images/11/Accuracy14.jpg)
 

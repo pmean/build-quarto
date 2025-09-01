@@ -33,43 +33,43 @@ Johannes C van der Wouden, Annette H Blankenstein, Marcus J H Huibers, Danielle 
 
 Lasagna's Law flies in the face of Interational Conference on Harmonization Guidelines on research (ICH E6/R1).
 
-<blockquote>4.2.1 The investigator should be able to demonstrate (e.g., based on retrospective data) a potential for recruiting the required number of suitable subjects within the agreed recruitment period.</blockquote>
+*4.2.1 The investigator should be able to demonstrate (e.g., based on retrospective data) a potential for recruiting the required number of suitable subjects within the agreed recruitment period.*
 
 There are several variations on Lasagna's Law. Several imply a ten fold discrepancy between the patients available and the number that you can recruit successfully.
 
-<blockquote>In any trial, the incidence of the disease studied will be reduced to 10% of the original estimate. As quoted [here][pct1].</blockquote>
+*In any trial, the incidence of the disease studied will be reduced to 10% of the original estimate.* As quoted [here][pct1].
 
-<blockquote>In clinical research the prevalence of any disease falls to about 10% of what you thought it was the day you start to look for cases for your study. As quoted at http://www.bmj.com/content/327/7414/565/reply </blockquote>
+*In clinical research the prevalence of any disease falls to about 10% of what you thought it was the day you start to look for cases for your study.* As quoted at http://www.bmj.com/content/327/7414/565/reply 
 
-<blockquote>As soon as a clinical trial begins, the supply of patients becomes one-tenth of what it was thought to be beforehand. As quoted in Clinical Trials in Neurology by Roberto J. Guiloff.</blockquote>
+*As soon as a clinical trial begins, the supply of patients becomes one-tenth of what it was thought to be beforehand.* As quoted in Clinical Trials in Neurology by Roberto J. Guiloff.
 
-<blockquote>If the annual supply of suitable patients when the trial is designed is n, when the trial commences it will reduce to n/10. As quoted in Interpretation and Uses of Medical Statistics by Leslie E. Daly and Geoffrey Joseph Bourke.</blockquote>
+*If the annual supply of suitable patients when the trial is designed is n, when the trial commences it will reduce to n/10.* As quoted in Interpretation and Uses of Medical Statistics by Leslie E. Daly and Geoffrey Joseph Bourke.
 
 One quote implies a five fold discrepancy.
 
-<blockquote>As soon as a study begins, the number of patients available instantly drops from a theoretical pool of 100 percent down to 20 percent; as soon as a study concludes, the pool jumps back to 100 percent. As quoted in Reinventing Patient Recruitment: Revolutionary Ideas for Clinical Trials Success by Joan F. Bachenheimer and Bonnie A. Brescia.</blockquote>
+*As soon as a study begins, the number of patients available instantly drops from a theoretical pool of 100 percent down to 20 percent; as soon as a study concludes, the pool jumps back to 100 percent.* As quoted in Reinventing Patient Recruitment: Revolutionary Ideas for Clinical Trials Success by Joan F. Bachenheimer and Bonnie A. Brescia.
 
 Another quote implies a two fold discrepancy.
 
-<blockquote>At the commencement of a study the incidence of the condition under investigation will drop by one-half, and will not return to its former rate until the study is close or the investigator retires, whichever comes first. As quoted in Modeling Survival Data: Extending the Cox Model by Terry M. Thernau and Patricia M. Grambsch.</blockquote>
+*At the commencement of a study the incidence of the condition under investigation will drop by one-half, and will not return to its former rate until the study is close or the investigator retires, whichever comes first.* As quoted in Modeling Survival Data: Extending the Cox Model by Terry M. Thernau and Patricia M. Grambsch.
 
 Another offers a ten to three fold discrepancy.
 
-<blockquote>The number of patients who are actually available for a trial is about 1/10 to 1/3 of what was originally estimated. As quoted in Principles of Medical Statistics by Alvan R. Feinstein.</blockquote>
+*The number of patients who are actually available for a trial is about 1/10 to 1/3 of what was originally estimated.* As quoted in Principles of Medical Statistics by Alvan R. Feinstein.
 
 Others imply a general decline without any quantification.
 
-<blockquote>Before a study actually starts at investigative site, there always seem to be more than enough potential subjects waiting in the wings. For some reason, however, it frequently happens that as soon as the trial starts, these potential subjects disappear. When the study is over, there seems, again, to be plenty of suitable subjects. As quoted at http://clinicalresearchzone.blogspot.com/2008/11/louis-lasagna-do-we-still-remember-him.html</blockquote>
+*Before a study actually starts at investigative site, there always seem to be more than enough potential subjects waiting in the wings. For some reason, however, it frequently happens that as soon as the trial starts, these potential subjects disappear. When the study is over, there seems, again, to be plenty of suitable subjects.* As quoted at http://clinicalresearchzone.blogspot.com/2008/11/louis-lasagna-do-we-still-remember-him.html
 
-<blockquote>A well recognised phenomenon which states that as soon as a clinical trial begins all the subjects who were thought to be suitable for the study disappear. As quoted at http://pharmaschool.co/jargon03.asp?ID=155</blockquote>
+*A well recognised phenomenon which states that as soon as a clinical trial begins all the subjects who were thought to be suitable for the study disappear.* As quoted at http://pharmaschool.co/jargon03.asp?ID=155
 
-<blockquote>The incidence of the disease under study will drastically decrease once the study begins. It will not return to its previous level until the completion of study (if completion occurs before the investigators retire. As quoted in Statistics in the Pharmaceutical Industry by Charles Ralph Buncher and Jia-Yeong Tsay.</blockquote>
+*The incidence of the disease under study will drastically decrease once the study begins. It will not return to its previous level until the completion of study (if completion occurs before the investigators retire.* As quoted in Statistics in the Pharmaceutical Industry by Charles Ralph Buncher and Jia-Yeong Tsay.
 
-<blockquote>Before a study begins, a large number of relevatn patients are available to the investigator. As soon as the study begins, the patients disappear, only to reappear after the study ends. As quoted in Patient Recruitment in Clinical Research: A Guide to Europe by Danielle Jacobs.</blockquote>
+*Before a study begins, a large number of relevatn patients are available to the investigator. As soon as the study begins, the patients disappear, only to reappear after the study ends.* As quoted in Patient Recruitment in Clinical Research: A Guide to Europe by Danielle Jacobs.
 
 A variant, called Munch's law (be sure to also search for Munch's law with an umlaut or Muench's law) uses the previously cited ten fold discrepancy
 
-<blockquote>In order to be realistic, the number of cases promised in any clinical trial must be divided by a factor of at least ten. as quoted in the Dictionary of Pharmaceutical Medicine by Gerhard Nahler and Annette Mollet.</blockquote>
+*In order to be realistic, the number of cases promised in any clinical trial must be divided by a factor of at least ten.* as quoted in the Dictionary of Pharmaceutical Medicine by Gerhard Nahler and Annette Mollet.
 
 There's lots of speculation at these sites as to why this overestimation of patient availability occurs, such as very narrow inclusion criteria, high refusal rates among patients, and insufficient resources to approach eligible patients.
 
@@ -83,19 +83,19 @@ Katrien Oude Rengerink, Brent C Opmeer, Sabine L M Logtenberg, Lotty Hooft, Kitt
 
 Several other resources tried to quantify the extent to which research projects failed to meet recruitment goals.
 
-<blockquote>Successfully recruiting research participants is a key aspect for the success of a research project. However, this is also a difficult part. Therefore, the Quality Committee of the EMGO Institute started an investigation in 2006 to determine to what extent EMGO research projects were able to successfully recruit participants and what the possible determinants and outcomes of successful and unsuccessful recruitments were. Of the 61 research projects included, one third included less than 90% of the needed participants and 60% of the projects had to extend the inclusion period. As a result, at least 22% of the projects exceeded their research budget. In addition, researchers reported to have withdrawn part of the research protocol, to have skipped/unanswered research questions and to have shortened the follow-up period. As quoted [here][ams1].</blockquote>
+*Successfully recruiting research participants is a key aspect for the success of a research project. However, this is also a difficult part. Therefore, the Quality Committee of the EMGO Institute started an investigation in 2006 to determine to what extent EMGO research projects were able to successfully recruit participants and what the possible determinants and outcomes of successful and unsuccessful recruitments were. Of the 61 research projects included, one third included less than 90% of the needed participants and 60% of the projects had to extend the inclusion period. As a result, at least 22% of the projects exceeded their research budget. In addition, researchers reported to have withdrawn part of the research protocol, to have skipped/unanswered research questions and to have shortened the follow-up period.* As quoted [here][ams1].
 
 This study quoted a previous paper that notes over the period 2001-2005 among 113 research projects, 49% included less than 80% of the needed participants.
 
-<blockquote>Almost 90% of trials are delayed, primarily because of patient recruitment problems. Public perception of the clinical trial process and, indeed, the pharmaceutical industry on the whole is largely very negative. As such, patient recruitment can be a lengthy process, and every extra day spent in clinical trials makes a huge dent in profits: pharmaceutical companies can lose out on anything from $600,000 to $8 million. Source for this quote cannot be found.</blockquote>
+*Almost 90% of trials are delayed, primarily because of patient recruitment problems. Public perception of the clinical trial process and, indeed, the pharmaceutical industry on the whole is largely very negative. As such, patient recruitment can be a lengthy process, and every extra day spent in clinical trials makes a huge dent in profits: pharmaceutical companies can lose out on anything from $600,000 to $8 million.* Source for this quote cannot be found.
 
-<blockquote>The one aspect of conducting clinical trials that sites usually spend the most time working on is Patient Recruitment, and yet, statistics show that despite their efforts, reaching enrollment goals per timeline is frustratingly elusive in many studies. The September 2011 volume of Applied Clinical Trials provides the current statistics: "Today, nearly 80% of clinical trials fail to meet enrollment timelines and up to 50% of research sites enroll one or no patients." (Kremidas, J. (2011). Recruitment roles. Applied Clinical Trials, 20 (9), p. 32. Available in [html format][act1]).</blockquote>
+*The one aspect of conducting clinical trials that sites usually spend the most time working on is Patient Recruitment, and yet, statistics show that despite their efforts, reaching enrollment goals per timeline is frustratingly elusive in many studies. The September 2011 volume of Applied Clinical Trials provides the current statistics: "Today, nearly 80% of clinical trials fail to meet enrollment timelines and up to 50% of research sites enroll one or no patients." (Kremidas, J. (2011). Recruitment roles.* Applied Clinical Trials, 20 (9), p. 32. Available in [html format][act1]).
 `
-<blockquote>Nearly 90% of clinical trials are completed with significant delays. As quoted [here][vet1].</blockquote>
+*Nearly 90% of clinical trials are completed with significant delays.* As quoted [here][vet1].
 
-<blockquote>In 2001, over 85 percent of all completed medical research studies experienced recruitment delays, and 34 percent were delayed for more than one month. As quoted [here][bea1]. This article cites the following two references: 1. Gamache V. Minimizing Volunteer Dropout. CenterWatch Monthly. 2002;1:9-12. 2. Lightfoot GD, Getz KA, Hovde M, Sanford SM, Stepp PM, Vogel JR. ACRP's White Paper on Future Trends. Spring 1999.</blockquote>
+*In 2001, over 85 percent of all completed medical research studies experienced recruitment delays, and 34 percent were delayed for more than one month. As quoted [here][bea1]. This article cites the following two references: 1. Gamache V. Minimizing Volunteer Dropout.* CenterWatch Monthly. 2002;1:9-12. 2. Lightfoot GD, Getz KA, Hovde M, Sanford SM, Stepp PM, Vogel JR. ACRP's White Paper on Future Trends. Spring 1999.
 
-<blockquote>Statistics show that despite pharma/CROs efforts, reaching enrolment goals per timelines seem elusive in many studies, The majority (nearly 85%) of clinical trials conducted in the United States fail to enrol subjects within the contract period. As quoted [here][hcl1]. Note that this brochure references [my website][sim1].</blockquote>
+*Statistics show that despite pharma/CROs efforts, reaching enrolment goals per timelines seem elusive in many studies, The majority (nearly 85%) of clinical trials conducted in the United States fail to enrol subjects within the contract period.* As quoted [here][hcl1]. Note that this brochure references [my website][sim1].
 
 Thompson Centerwatch pulbishes a regular review of the clinical trials industry and several sources have quoted from the 2007 guide.
 

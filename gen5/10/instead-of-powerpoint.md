@@ -11,6 +11,7 @@ categories:
 output: html_document
 page_update: partial
 ---
+
 Someone on LinkedIn asked a question about what technologies people use for their presentations (laptop, flipchart, or whiteboard). For most of my presentations, I use none of these technologies. Instead I create a webpage of my presentation and then print it and hand out copies.
 
 I dislike Powerpoint or any similar software that relies on a computer projector for a variety of reasons. First, there is no guarantee that everyone in a crowded room will be able to see all of the screen. Second, I enjoy having to bypass the setup required for computer projection. Third, paper never suffers from computer glitches. Fourth, I like to leave people with something tangible after my talk. Fifth, having the handout as a webpage helps to promote my website.

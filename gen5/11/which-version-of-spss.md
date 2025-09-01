@@ -58,4 +58,3 @@ Earlier versions are [here][sim1] and [here][sim2].
 [exa1]: http://www-01.ibm.com/software/analytics/spss/products/statistics/exact-tests
 [for1]: http://www-01.ibm.com/software/analytics/spss/products/statistics/forecasting
 [neu1]: http://www-01.ibm.com/software/analytics/spss/products/statistics/neural-networks
-

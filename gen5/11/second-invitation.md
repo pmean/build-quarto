@@ -15,7 +15,7 @@ I have a second invitation to talk on how independent consulting is different in
 
 <!---More--->
 
-### How independent consulting is different
+## How independent consulting is different
 
 As someone who is currently working as an independent consultant part-time and part-tine consultant in an academic setting, I have noticed several important differences about independent consulting. As an indpendent consultant: (1) you aren't the gatekeeper; (2) you have to bill regularly; (3) no one will subsidize your professional development or your independent research program; (4) you do not have a support network. On the positive side: (1) you can pick and choose your customers, and (2) it's easy to keep your boss happy. In this talk, I will elaborate on each of these points.
 

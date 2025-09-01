@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Steve Simon">
-<meta name="dcterms.date" content="2024-11-09">
 
-<title>Copy files from build-website to qblog4</title>
+<title>Count words in all gen5 files</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +18,6 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
-}
-
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -3089,26 +3053,14 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Copy files from build-website to qblog4</h1>
+<h1 class="title">Count words in all gen5 files</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Steve Simon </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 9, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -3118,96 +3070,48 @@ vertical-align: -.125em;
 </header>
 
 
-<p>This program was written by Steve Simon on 2024-11-09 with a major modification on 2025-07-21 and is placed in the public domain.</p>
+<p>This program was written by Steve Simon on 2025-08-19 and is placed in the public domain.</p>
 <section id="preliminaries" class="level2">
 <h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 </section>
-<section id="set-old-and-new-locations" class="level2">
-<h2 class="anchored" data-anchor-id="set-old-and-new-locations">Set old and new locations</h2>
+<section id="function" class="level2">
+<h2 class="anchored" data-anchor-id="function">function</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>old_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5&quot;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>old_directories <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">&quot;0&quot;</span>, (<span class="dv">0</span><span class="sc">:</span><span class="dv">9</span>)), <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="dv">10</span><span class="sc">:</span><span class="dv">25</span>, <span class="dv">99</span>)))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>new_path <span class="ot">&lt;-</span> <span class="st">&quot;../../qblog4/posts&quot;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>file_pattern <span class="ot">&lt;-</span> <span class="st">&quot;md$&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="find-files-function" class="level2">
-<h2 class="anchored" data-anchor-id="find-files-function">Find files function</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>files <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>subdirectories <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (dir <span class="cf">in</span> old_directories) {</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">glue</span>(<span class="st">&quot;{old_path}/{dir}&quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list.files</span>() <span class="sc">|&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_subset</span>(file_pattern) <span class="ot">-&gt;</span> to_be_copied</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  n_to_be_copied <span class="ot">&lt;-</span> <span class="fu">length</span>(to_be_copied)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  subdirectories <span class="ot">&lt;-</span> <span class="fu">append</span>(subdirectories, <span class="fu">rep</span>(dir, n_to_be_copied))</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  files <span class="ot">&lt;-</span> <span class="fu">append</span>(files, to_be_copied)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  message <span class="ot">&lt;-</span> <span class="fu">glue</span>(</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Searching through {n_to_be_copied} files in {old_path}/{dir}&quot;</span>)</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(message)</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Searching through 41 files in ../gen5/00
-Searching through 14 files in ../gen5/01
-Searching through 21 files in ../gen5/02
-Searching through 22 files in ../gen5/03
-Searching through 133 files in ../gen5/04
-Searching through 187 files in ../gen5/05
-Searching through 176 files in ../gen5/06
-Searching through 156 files in ../gen5/07
-Searching through 159 files in ../gen5/08
-Searching through 54 files in ../gen5/09
-Searching through 101 files in ../gen5/10
-Searching through 78 files in ../gen5/11
-Searching through 56 files in ../gen5/12
-Searching through 40 files in ../gen5/13
-Searching through 78 files in ../gen5/14
-Searching through 56 files in ../gen5/15
-Searching through 97 files in ../gen5/16
-Searching through 76 files in ../gen5/17
-Searching through 122 files in ../gen5/18
-Searching through 65 files in ../gen5/19
-Searching through 76 files in ../gen5/20
-Searching through 116 files in ../gen5/21
-Searching through 148 files in ../gen5/22
-Searching through 64 files in ../gen5/23
-Searching through 53 files in ../gen5/24
-Searching through 19 files in ../gen5/25
-Searching through 42 files in ../gen5/99</code></pre>
+<pre><code>  word_count file_count avg_words
+1    861,369       2248     383.2</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>files <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_remove</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">..*&quot;</span>) <span class="ot">-&gt;</span> roots</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>files <span class="sc">|&gt;</span> </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_remove</span>(<span class="st">&quot;^.*</span><span class="sc">\\</span><span class="st">.&quot;</span>) <span class="ot">-&gt;</span> extensions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>new_paths <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;{new_path}/{roots}&quot;</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>new_files <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;{new_paths}/index.{extensions}&quot;</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>old_files <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;{old_path}/{subdirectories}/{roots}.{extensions}&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>n_files <span class="ot">&lt;-</span> <span class="fu">length</span>(files)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_files) {</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(new_paths[i])) {<span class="fu">dir.create</span>(new_paths[i])}</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  test1 <span class="ot">&lt;-</span> <span class="fu">file.copy</span>(<span class="at">from=</span>old_files[i], <span class="at">to=</span>new_files[i], <span class="at">overwrite=</span><span class="cn">TRUE</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">next</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">glue</span>(<span class="st">&quot;{test1}: {old_files[i]} copied to {new_files[i]}&quot;</span>))</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">list.files</span>(new_paths[i]))</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">str_glue</span>(<span class="st">&quot;Total files copied: {n_files}&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Total files copied: 2250</code></pre>
+<pre><code>          dir word_count file_count avg_words
+1  ../gen5/00     34,367         41     838.2
+2  ../gen5/01     20,055         14    1432.5
+3  ../gen5/02     21,985         21    1046.9
+4  ../gen5/03     19,398         22     881.7
+5  ../gen5/04     65,521        133     492.6
+6  ../gen5/05     67,992        187     363.6
+7  ../gen5/06     88,186        176     501.1
+8  ../gen5/07     80,970        156     519.0
+9  ../gen5/08     23,762        159     149.4
+10 ../gen5/09      2,512         54      46.5
+11 ../gen5/10     33,514        101     331.8
+12 ../gen5/11     44,007         78     564.2
+13 ../gen5/12      7,128         56     127.3
+14 ../gen5/13      7,692         40     192.3
+15 ../gen5/14     26,393         78     338.4
+16 ../gen5/15     16,252         56     290.2
+17 ../gen5/16     47,607         97     490.8
+18 ../gen5/17     18,469         76     243.0
+19 ../gen5/18     48,886        122     400.7
+20 ../gen5/19      9,199         65     141.5
+21 ../gen5/20     22,308         76     293.5
+22 ../gen5/21     39,443        116     340.0
+23 ../gen5/22     31,350        148     211.8
+24 ../gen5/23     25,639         64     400.6
+25 ../gen5/24     13,722         53     258.9
+26 ../gen5/25      3,052         17     179.5
+27 ../gen5/99     41,960         42     999.0</code></pre>
 </div>
 </div>
 </section>

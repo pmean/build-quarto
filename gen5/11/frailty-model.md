@@ -12,6 +12,7 @@ page_update: complete
 ---
 
 One of the people I am working with is interested in using gap time analysis with a conditional frailty model. I was impressed with this request and asked her to send any relevant references that she had.
+
 <!---More--->
 
 She gave me a pointer to the following PDF file:

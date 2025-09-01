@@ -1,6 +1,6 @@
 ---
 title: New post
-source: "New"
+source: http://www.pmean.com/12/nhamcs.html
 author: Steve Simon
 date: 2012-06-22
 categories:
@@ -120,6 +120,7 @@ in 2005 and earlier and
 
 for 2006 and later.
  
-An earlier version is [here][sim2].
+Earlier versions are [here][sim1] and [here][sim2].
  
+[sim1]: http://www.pmean.com/12/nhamcs.html
 [sim2]: http://new.pmean.com/nhamcs/

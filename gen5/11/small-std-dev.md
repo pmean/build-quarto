@@ -27,4 +27,3 @@ Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SmallStdDev.html
 [sim2]: http://new.pmean.com/small-std-dev/
-

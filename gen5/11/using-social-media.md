@@ -107,8 +107,6 @@ Here are some questions for discussion.
 
 5. How can newer Internet tools be combined with more traditional approaches to promoting your career?
 
-Creative Commons License This page was written by Steve Simon and is licensed under the Creative Commons Attribution 3.0 United States License. Need more information? I have a page with general help resources. You can also browse for pages similar to this one at Human Side of Statistics.
-
 Earlier versions are [here][sim1] and [here][sim2].
 
 [sim1]: http://www.pmean.com/11/SocialMedia.html

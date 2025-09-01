@@ -1,5 +1,5 @@
 ---
-title: (Being updated)
+title: An interesting mistake I made in BUGS
 author: Steve Simon
 source: http://www.pmean.com/12/amateur.html
 date: 2012-05-22
@@ -206,11 +206,6 @@ And you can't say I wasn't warned! This is a screen shot from the main page of t
 I'm not thrilled about adding arbitrary constants to my data sets, so I'm going to look at some alternative formulations for this problem. I've got several ideas that I'd like to try. You could insist that the researcher collect the time down to the exact second that someone is recruited to a trial, but this is impractical.
 
 As I develop alternatives to the problem with zero waiting times, I will post those details on my website.
-
-Earlier versions are [here][sim1] and [here][sim2].
- 
-[sim1]: http://www.pmean.com/12/amateur.html
-[sim2]: http://new.pmean.com/bugs-mistake/
 
 Earlier versions are [here][sim1] and [here][sim2].
  

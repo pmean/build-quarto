@@ -383,3 +383,8 @@ standard). If this is the case, simply calculate how wide you would
 expect your confidence interval for the correlation to be. Specify a
 sample size and a target for your correlation. Then your sample size is
 adequate if the confidence interval is sufficiently narrow.
+
+Earlier versions are [here][sim1] and [here][sim2].
+
+[sim1]: http://www.pmean.com/10/SampleSize.html
+[sim2]: http://new.pmean.com/chapter-sample-size/

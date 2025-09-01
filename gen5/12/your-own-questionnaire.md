@@ -1,7 +1,7 @@
 ---
 title: "Don't write your own questionnaire"
 author: Steve Simon
-source: http://www.pmean.com/12/zero.html
+source: http://www.pmean.com/12/questionnaire.html
 date: 2012-10-04
 categories:
 - "*Blog post"
@@ -13,7 +13,7 @@ page_update: no
 
 Someone asked for general guidance on how to write your own questionnaire. I wrote a rather negative response.
 
-I Short answer: don't do it!
+Short answer: don't do it!
 
 Long answer: the research field is plagued with people who invent their own questionnaires of dubious validity. It weakens the individual research study, but even worse, it makes the process of meta-analysis next-to-impossible.
 
@@ -25,5 +25,5 @@ One last comment. Pilot testing is absolutely vital for a home-grown questionnai
 
 Earlier versions are [here][sim1] and [here][sim2].
  
-[sim1]: http://www.pmean.com/12/zero.html
+[sim1]: http://www.pmean.com/12/questionnaire.html
 [sim2]: http://new.pmean.com/your-own-questionnaire/

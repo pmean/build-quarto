@@ -1,4 +1,4 @@
----
+                                                                                                                                               ---
 title: Possible webcast topics for a new client
 author: Steve Simon
 source: http://www.pmean.com/11/WebcastTopics.html
@@ -15,7 +15,7 @@ I was asked to develop a list of webcast topics for a client working in the phar
 
 <!---More--->
 
-### Top priority studies (listed roughly in priority order)
+## Top priority studies (listed roughly in priority order)
 
 1. P-values, confidence intervals, and the Bayesian alternative. I would re-use or adapt material from these previous talks: [1][pva1], [2][pva2], [3][pva3], [4][pva4], [5][pva5], and [6][pva6].
 2. Equivalence, non-inferiority, and superiority trials. This would be new material.
@@ -25,7 +25,7 @@ I was asked to develop a list of webcast topics for a client working in the phar
 6. Observational studies. I would re-use or adapt material from these previous talks: [1][obs1] and [2][obs2].
 7. Systematic overviews/meta-analysis. I would re-use or adapt material from these previous talks: [1][sys1], [2][sys2], and [3][sys3].
 
-### Lower priority studies (there is no priority ordering here)
+###\ Lower priority studies (there is no priority ordering here)
 
 + Conflict of interest and fraud in research. I would re-use or adapt material from this previous talk: [1][coi1].
 + Survival curves. I would re-use or adapt material from this previous talk: [1][sur1].

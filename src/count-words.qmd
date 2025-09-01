@@ -1,0 +1,141 @@
+---
+title: "Count words in all gen5 files"
+format:
+  html:
+    embed-resources: true
+execute: 
+  echo: false
+---
+
+This program was written by Steve Simon on 2025-08-19 and is placed in the public domain.
+
+## Preliminaries
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+```
+
+
+## function
+
+```{r}
+#| label: function
+
+
+test_text <- '
+---
+title: "Data masking in R"
+source: "New"
+author: Steve Simon
+date: "2024-10-05"
+categories: 
+- "*Recommendation"
+- 2024
+- R programming
+output: html_document
+page_update: no
+---
+
+![](http://www.pmean.com/new-images/24/data-masking-in-r-01.png "Excerpt from recommended website"){width=80%}
+
+::: notes
+
+One major innovation of tidyverse is the use of non-standard evaluation. It allows you to avoid a lot of repetition of dataframe names in R code. I wrote a [page about non-standard evaluation][ref-simon-2023] about a year ago, and referenced some key website that explain things. It was not a very good explanation, and the references that I included, although a bit better, were still difficult.
+
+I ran across this page, which tries to clarify things. It uses a simpler term, data masking, instead of non-standard evaluation and it explains how distinguishing between programming variables (env-variables) and statistical variables (data-variables) is difficult inside of R functions and loops.
+
+The topic is still not easy to follow, but this page seems to be better than my descriptions and earlier resources about this topic.
+
+-   Lionel Henry, Hadley Wickham. Argument type: data-masking. Available in [html format][ref-henry-nodate].
+
+[ref-henry-nodate]: https://rlang.r-lib.org/reference/args_data_masking.html
+[ref-simon-2023]: http://new.pmean.com/non-standard-evaluation/
+
+An [earlier version][sim2] of this page was published on [new.pmean.com][sim1].
+
+[sim1]: http://new.pmean.com
+[sim2]: http://new.pmean.com/data-masking-in-r/
+
+:::
+'
+	# read_lines(glue("{file_path}/{file_name}")) -> file_text
+
+vector_strip <- function(x_vector, removal_string) {
+  x_vector[x_vector != removal_string]
+}
+
+count_words <- function(file_text) {
+	file_text |>
+	  paste0(collapse=" ") |>
+    str_replace_all("\n", " ") |>              # line breaks
+    str_replace("---.*?---", " ") |>           # yaml fence
+    str_replace_all("\\[.*?\\]", " ") |>       # square bracketed text
+    str_replace_all("http://\\S+", " ") |>     # web links
+    str_replace_all("[^A-Za-z-]", " ") |>      # non-letters
+    # str_replace_all("[=%]", " ") |>            # miscellaneous
+    # str_replace_all('"', " ") |>               # double quotes
+    # str_replace_all("'", " ") |>               # single quotes
+	  # str_replace_all("\\s+", " ") |>            # multiple whitespace
+    # str_replace_all("[\\(\\)]", " ") |>        # parentheses
+    # str_replace_all("[<>{}]", " ") |>          # brackets
+    # str_replace_all("[/\\\\]", " ") |>         # slahses
+    # str_replace_all("[0-9]", " ") |>           # numbers
+    str_replace_all("-+", " ") |>              # multiple dashes
+    str_split(" ") |>
+    unlist() |>
+    vector_strip("") |>
+    vector_strip("-")
+}
+```
+
+```{r}
+#| label: loop
+
+n_list <- NULL
+
+yr <- c("99", glue("0{0:9}"), as.character(10:25))
+dir_list <- glue("../gen5/{yr}")
+
+for (file_path in dir_list) {
+  file_path |>
+    list.files() |>
+    str_subset("md$") -> file_list
+
+    for (file_name in file_list) {
+      file_text <- read_lines(glue("{file_path}/{file_name}"))
+      n_words <- length(count_words(file_text))
+      n_list <- bind_rows(
+        n_list,
+        data.frame(
+          dir=file_path,
+          page=file_name,
+          word_count=n_words))
+    }
+  
+}
+```
+
+```{r}
+n_list |>
+  summarize(
+    word_count=sum(word_count),
+    file_count=n()) |>
+    mutate(avg_words=round(word_count/file_count, 1)) |>
+    mutate(word_count=format(word_count, big.mark=","))
+```
+
+```{r}
+n_list |>
+  group_by(dir) |>
+  summarize(
+    word_count=sum(word_count),
+    file_count=n()) |>
+    mutate(avg_words=round(word_count/file_count, 1)) |>
+    mutate(word_count=format(word_count, big.mark=",")) |>
+    data.frame()
+```

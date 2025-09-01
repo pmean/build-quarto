@@ -12,7 +12,7 @@ page_update: complete
 ---
 
 I often need to see how often certain variables and combinations of those variables appear in a data set. If the variable is binary, there is a trick for doing this that is illustrated by a Car Talk puzzler.
-
+ 
 <!---More--->
 
 Car Talk is a program on National Public Radio where listeners call in to ask questions about car repair from two experts, Tom and Ray Magliozzi. As part of the show, they include a Puzzler. The Puzzler is a question, sometimes related to automobiles, but sometimes not. Some of the most interesting Puzzlers (to me anyway) are about Mathematics.
@@ -21,7 +21,7 @@ One Mathematical Puzzler actually relates to the coding problem described above.
 
 + [Car talk puzzler][car1]
 
-The basic setup is that you have seven stacks of coins. Each stack has 100 coins in it, and all of the coins in the stack are either genuine or counterfeit. A genuine coin weights 10 grams and a counterfeit coin weights 11 grams. You could tell whether a stack of coins was counterfeit by weighing the stack. A value of 1,000 grams indicates a genuine stack of coins and a value of 1,100 grams indicates a counterfeit stack. Do this six more times and you would establish which stacks were genuine and which stacks were counterfeit. But there is a way to identify whether none, some, or all of the stacks are counterfeit and which ones they are using a single weighing.
+The basic setup is that you have seven stacks of coins. Each stack has 100 coins in it, and all of the  coins in the stack are either genuine or counterfeit. A genuine coin weights 10 grams and a counterfeit coin weights 11 grams. You could tell whether a stack of coins was counterfeit by weighing the stack. A value of 1,000 grams indicates a genuine stack of coins and a value of 1,100 grams indicates a counterfeit stack. Do this six more times and you would establish which stacks were genuine and which stacks were counterfeit. But there is a way to identify whether none, some, or all of the stacks are counterfeit and which ones they are using a single weighing.
 
 The way you do this is to select 127 coins: 1 from the first stack, 2 from the second stack, 4 (not 3) from the third stack, 8 from the fourth stack, etc. Following this sequence of powers of two, you would get 64 (=2^7) coins from the seventh stack. Notice that 1 + 2 + 4 + 8 + 16 + 32 + 64 = 127.
 

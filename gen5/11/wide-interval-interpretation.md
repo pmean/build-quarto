@@ -11,13 +11,13 @@ output: html_document
 page_update: complete
 ---
 
-### Dear Professor Mean,
+## Dear Professor Mean,
 
 My confidence intervals are very wide. I do not know how to explain this. Does this mean that my results are likely to be wrong?
 
 <!---More--->
 
-### Dear Reader,
+## Dear Reader,
 
 Wide confidence intervals mean that your sample size was too small. You probably had a gut feeling that this was the case, and now you have some quantitative confirmation of your feelings. A small sample size does not mean that your results are "wrong". It means that the data is consistent with a wide range of possible hyoptheses.
 

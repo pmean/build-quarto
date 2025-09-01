@@ -11,17 +11,17 @@ output: html_document
 page_update: complete
 ---
 
-### Dear Professor Mean,
+## Dear Professor Mean,
 
 I have results from four univariate logistic regression models and one multivariate logistic regression model with all four variables. In my univariate analysis, all the variables are significant. But, in multivariate analysis, only x1 is significant. Which results should I report?
 
 <!---More--->
 
-### Dear Reader,
+## Dear Reader,
 
 There are several different approaches, but here is one I use frequently. The univariate analyses are labelled as "unadjusted" because they represent the effect without controlling for the other variables in the model. The multivariate model provides four "adjusted" effects because it represents the impact of a given variable after holding all the other variables constant. Your table of odds ratios and confidence intervals would look something like
 
-```
+```{}
      unadjusted      adjusted
      odds ratio     odds ratio
  x1 2.4 (1.6,3.6)  2.3 (1.5,3.5)
