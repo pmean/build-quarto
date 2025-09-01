@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Taguchi methods (created
-2005-02-22)**.
 
 [Genichi Taguchi](http://en.wikipedia.org/wiki/Genichi_Taguchi) was a
 Japanese engineer and statistician who developed a wide range of

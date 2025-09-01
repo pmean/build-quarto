@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Presenting Numbers, Tables, and
-Charts (April 15, 2005)**
 
 I got a nice email from Sally Bigwood, one of the coauthors of
 

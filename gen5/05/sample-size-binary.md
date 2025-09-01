@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Sample size for a binary endpoint (August
-12, 2005)**
 
 Someone sent me an email asking for the sample size needed to detect a
 10% shift in the probability of recurrence of an event after one of two

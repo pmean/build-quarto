@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Sample size calculation for a
-nonparametric test (March 8, 2005)**
 
 I got an email inquiry about how to calculate power for a Wilcoxon
 signed ranks test. I don't have a perfect reference for this, but I do

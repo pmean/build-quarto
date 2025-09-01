@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Sample size for a binomial confidence
-interval (October 3, 2005)**
 
 Someone asked me for some help with a homework question. I hesitate to
 offer too much advice in these situations because I don't want to

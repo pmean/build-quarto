@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Publicon software (March 14, 2005)**
 
 [Wolfram Research](http://www.wolfram.com/), makers of the famous
 software for symbolic mathematical calculations,

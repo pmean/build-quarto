@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Summing ordinal data (April 5, 2005)**
 
 You have a questionnaire which asks several related questions on a
 Likert scale (1=Strongly Disagree, 2=Disagree, etc.). You want to add

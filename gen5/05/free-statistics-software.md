@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Free statistics software (September
-15, 2005)**
 
 The number and quality of free statistical software offerings appears to
 be increasing. Here are two interesting sites that offer good quality

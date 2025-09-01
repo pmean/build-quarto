@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: PowerPoint Counterpoint (March 2, 2005)**
 
 I am a rather harsh critic of PowerPoint,
 

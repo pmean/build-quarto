@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Profile analysis and MANOVA (April
-18, 2005)**
 
 Someone asked me about profile analysis as alternative analysis to
 MANOVA (Multivariate Analysis of Variance). Typically you would use

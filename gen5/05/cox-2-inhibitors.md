@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Side effects of Cox-2 inhibitors
-(February 15, 2005)**
 
 There has been so much published about side effects of Cox-2 inhibitors
 that it is hard to keep up with the evolving story. Here are a few

@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: When can I stop my CQI study? (June 6,
-2005)**
 
 I was asked today about a CQI project where children were being tested
 for a certain condition, but they never tested positive. This was going

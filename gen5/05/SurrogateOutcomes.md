@@ -10,8 +10,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Surrogate outcomes (March 23, 2005,
-Evidence, Clinical Importance)**
 
 I'm on the mailing list of the Alliance for Human Research
 Protection, and they highlighted a book review:

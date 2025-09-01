@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Determining the optimal threshold for a
-diagnostic test (April 27, 2005)**
 
 Someone asked me about how to design an experiment that would use the
 ROC curve to determine an appropriate threshold for a diagnostic test.

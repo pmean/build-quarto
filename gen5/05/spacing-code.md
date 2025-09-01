@@ -11,6 +11,7 @@ categories:
 output: html_document
 page_update: partial
 ---
+
 Note that this page is obsolete (I am writing this note on 2020-10-26). I am currently transitioning to using Markdown and RMarkdown for my website.
 
 I am starting to write a lot of web pages that show program code for
@@ -59,7 +60,6 @@ id2 <- c( "1589", "1589", "1589","18058","18058","18058",
 which is very nice. It's also important to use the *br* tag rather than the *p* tag because otherwise your program ends up being double spaced. Finally, if you are cutting and pasting in Microsoft Front Page, be sure to use PASTE SPECIAL and choose the ONE FORMATTED PARAGRAPH option.
 
 Earlier versions are [here][sim1] and [here][sim2].
-
 
 [sim1]: http://www.pmean.com/05/SpacingHtml.html
 [sim2]: http://new.pmean.com/spacing-code/

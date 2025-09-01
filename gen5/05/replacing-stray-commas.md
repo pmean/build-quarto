@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **More on regular expressions (July 21,
-2005)** [Category: Data management](../category/DataManagement.html)
 
 As I work more and more with microarrays, the more I realize that having
 a knowledge of regular expressions will help. For example, I had a comma

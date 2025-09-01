@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Public access to publications from
-NIH-funded research (February 15, 2005)**
 
 The NIH is now requesting publication in [PubMed
 Central](http://www.pubmedcentral.nih.gov/) of research publications

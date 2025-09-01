@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Self experimentation (created
-2005-09-13)**
 
 Stephen Dubner and Steven D. Levitt, authors of the hot selling book,
 **Freakonomics: A Rogue Economist Explores the Hidden Side of

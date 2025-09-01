@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Importing value labels from Access into
-SPSS (May 24, 2005)**.
 
 Someone asked about importing data from Access into SPSS. The Access
 file has value labels (e.g., 1=Male, 2=Female, 3=Missing) and wanted to

@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Re-weighting the data (January 25,
-2005)**.
 
 A recent article
 

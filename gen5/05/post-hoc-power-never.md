@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Post hoc power is never justified
-(May 13, 2005)**.
 
 Someone wrote in and was upset that a referee was insisting on post hoc
 power for all the outcome measures, and he only wanted to compute post

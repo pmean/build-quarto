@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **More on the top ten studies in EBM
-(February 28, 2005)**
 
 I may never get this paper done, but the effort is still worthwhile in
 that I am learning a lot. I rediscovered a wonderful web page developed

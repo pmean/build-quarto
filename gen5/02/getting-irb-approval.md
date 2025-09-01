@@ -12,8 +12,7 @@ output: html_document
 page_update: no
 ---
 
-
-(To be added)
+This page is currently being updated from the earlier version of my website. Sorry that it is not yet fully available.
 
 <!---More--->
 

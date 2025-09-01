@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Summary Receiver Operating Characteristic
-Curve (January 21, 2005)**
 
 In the past week, I have had two inquiries about how to perform a
 meta-analysis of studies of a diagnostic test. An intriguing idea that I

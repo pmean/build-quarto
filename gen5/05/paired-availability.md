@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **The paired availability design (May
-31, 2005)**
 
 In the quest to finish my book on Statistical Evidence, I had to leave
 some material on the cutting room floor. One of the nicer descriptions

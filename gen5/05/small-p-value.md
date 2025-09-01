@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **A small p-value does not mean a large
-difference (February 8, 2005)**
 
 Someone asked me if the p-value for a t-test indicates the size of the
 difference between two groups. It turns out that the p-value is related

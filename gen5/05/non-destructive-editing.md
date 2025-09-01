@@ -11,9 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Non-destructive data editing
-(November 2, 2005)**. [Category: Data
-management](../category/DataManagement.html)
 
 I recently worked on a project looking at patients having two
 different types of operations, with and without collar sutures. The

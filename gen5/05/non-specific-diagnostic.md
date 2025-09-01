@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **A nonspecific diagnostic test
-(October 13, 2005)**
 
 Someone posted a note on the IRBFORUM complaining that the IRB was
 preventing him/her from volunteering for a test. This company has a

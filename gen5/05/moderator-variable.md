@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Moderator variables (February 15,
-2005)**.
 
 I've always disliked the excessive use of detailed terminology, but
 when someone asked me about moderator variables, I had to look up the

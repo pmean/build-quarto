@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **More on the retroactive prayer study
-(June 10, 2005)**
 
 I discuss an interesting study on the effects of prayer ([Leibovici
 2001](http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=retrieve&db=pubmed&list_uids=11751349&dopt=Abstract))

@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Small relative risks (January 13, 2005)**
 
 I found a quote on the [Skeptic's Dictionary web
 site](http://skepdic.com) that is worth commenting on. The author,

@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Stepwise regression to screen for
-covariates (November 25, 2005)**.
 
 Someone wrote asking about how best to use stepwise regression in a
 research problem where there were a lot of potential covariates. A

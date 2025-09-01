@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **The fate of retracted articles
-(October 14, 2005)**
 
 A member of the Evidence Based Health email discussion group noted an
 interesting discussion about a recently retracted Cochrane review:

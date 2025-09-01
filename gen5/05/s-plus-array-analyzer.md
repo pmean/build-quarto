@@ -17,6 +17,5 @@ This page is currently being updated from the earlier version of my website. Sor
 
 Earlier versions are [here][sim1] and [here][sim2].
 
-
 [sim1]: http://www.pmean.com/05/MicroArrayF.html
 [sim2]: http://new.pmean.com/s-plus-array-analyzer/

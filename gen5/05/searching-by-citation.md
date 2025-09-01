@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Searching the Internet (April 26,
-2005)**
 
 A response to a question on the [stat-l discussion
 group](http://lists.mcgill.ca/archives/stat-l.html) provided a clever

@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Another open site closes (May 23,
-2005)**
 
 I often link to interesting resources on the web, and it is always
 distressing to find that content which had been available freely is now

@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Non-random samples (March 25, 2005)**
 
 Someone sent me an email asking about a project that involved interviews
 of women at higher levels of management in an organization. This is a

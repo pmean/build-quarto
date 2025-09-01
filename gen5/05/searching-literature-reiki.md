@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Searching the literature (May 3,
-2005)**
 
 Next week, our hospital will have a seminar on Reiki. I thought it would
 be useful to see what evidence there was on this technique. My search

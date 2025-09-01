@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Odds ratios less than one (January 6,
-2005)**
 
 Someone sent me an email asking how to interpret an odds ratio less than
 1. An odds ratio of 1 means that the odds of an event is the same in

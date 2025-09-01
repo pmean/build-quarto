@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Science mentoring (September 12,
-2005)**
 
 I received an email notice through the Kansas/Western Missouri chapter
 of the American Statistical Association about "Meet the Science Mentor

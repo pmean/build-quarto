@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Tolerance limits (created
-2005-04-15)**.
 
 Someone asked me about the difference between control limits and
 tolerance limits.

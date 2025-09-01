@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Stratified Cox regression models
-(March 22, 2005)**
 
 Someone sent me an email asking about a Cox regression model that
 included a strata for clinics. What's the best way to handle strata?

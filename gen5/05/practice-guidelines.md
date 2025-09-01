@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]: Developing good practice guidelines
-(February 18, 2005)** [](../category/TeachingResources.html)
 
 A physician here, Lloyd Olson, who has been aggressively promoting
 Evidence Based Medicine suggested the following interesting article on

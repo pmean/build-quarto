@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Registration of clinical trials (July
-22, 2005)**
 
 International Committee of Medical Journal Editors (ICMJE) has called
 for a requirement for registration of clinical trials. All clinical

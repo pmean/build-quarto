@@ -11,9 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Quality of published research (March
-14, 2005)** [Category: Systematic
-overviews](../category/SystematicOverviews.html)
 
 One of the big advantages of meta-analysis is that it allows you to
 review a series of publications in an area to see if there are any

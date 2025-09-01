@@ -10,8 +10,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **A totally negative microarray
-experiment (October 14, 2005)**.
 
 I've been cleaning out my old emails and am finding some real gems of
 good advice. Someone wrote into the Bioconductor email list wondering

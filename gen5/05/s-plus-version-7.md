@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **S-plus version 7 (April 19, 2005)**
 
 I attended a web seminar by David Smith introducing the latest version
 of S-plus, version 7.This software, produced by Insightful Corporation,

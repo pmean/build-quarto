@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **A simple trick in R (October 11,
-2005)**
 
 There may be times when you have a string in R that represents a
 specific R command. How would you run this command. This was answered

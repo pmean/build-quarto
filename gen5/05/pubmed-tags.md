@@ -11,7 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **PubMed tags (April 28, 2005)**
 
 Searching in PubMed can be tricky. If you don't find what you want the
 first time, it may help to specify exactly what part of the PubMed

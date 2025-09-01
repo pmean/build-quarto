@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Monetary incentives (created
-2005-01-03)**
 
 Someone on the IRBForum asked about monetary incentives in research.
 This is a controversial area (see the [OHRP
