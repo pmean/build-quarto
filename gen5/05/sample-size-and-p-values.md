@@ -11,8 +11,6 @@ categories:
 output: html_document
 page_update: partial
 ---
-**[StATS]:** **Relationship between sample size and
-p-values (February 14, 2005)**
 
 I got a rather basic inquiry about p-values, but it is worth mentioning.
 Someone had a data set with 9,000 observations and was unhappy with the

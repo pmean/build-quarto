@@ -1,0 +1,98 @@
+---
+title: "tally files with specific phrase"
+format:
+  html:
+    embed-resources: true
+execute: 
+  echo: false
+---
+
+This program was written by Steve Simon on 2025-09-01 and is placed in the public domain.
+
+## Preliminaries
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+```
+
+
+## function
+
+```{r}
+#| label: function
+
+tally_pages <- function(file_text, file_string) {
+  file_text |>
+    str_detect(file_string) |>
+    sum()
+}
+```
+
+```{r}
+#| label: loop
+
+search_string <- fixed("author: ")
+
+tally_loop <- function(search_string, tally_name=search_string) {
+  n_list <- NULL
+  yr_list <- as.character(1999:2025)
+  if (search_string == tally_name) tally_name <- str_remove_all(search_string, "[^A-Za-z]")
+
+  for (yr in yr_list) {
+    file_path <- glue("../gen5/{str_sub(yr, 3, 4)}")
+    file_path |>
+      list.files() |>
+      str_subset("md$") -> file_list
+
+    for (file_name in file_list) {
+      file_text <- read_lines(glue("{file_path}/{file_name}"))
+      tally <- tally_pages(file_text, search_string)
+      new_row <- data.frame(yr, file_name, tally)
+      names(new_row)[3] <- tally_name
+      n_list <- bind_rows(n_list, new_row)
+    }
+    
+  }
+  return(n_list)
+}
+```
+
+```{r}
+#| label: string-1
+
+n_no <- tally_loop("page_update: no", tally_name="no")
+n_partial <- tally_loop("page_update: partial", tally_name="partial")
+n_complete <- tally_loop("page_update: complete", tally_name="complete")
+n_no |>
+  full_join(n_partial) |>
+  full_join(n_complete) -> n_page_update
+
+n_page_update
+```
+
+## `r search_string`
+
+```{r}
+#| eval: false 
+n_no |>
+  group_by(yr) |>
+  summarize(
+    author=sum(author > 0),
+    file_count=n()) |>
+    data.frame() -> year_totals
+
+year_totals |>
+  summarize(
+    author=sum(author),
+    file_count=sum(file_count)) |>
+  mutate(yr="All") -> grand_total
+
+bind_rows(year_totals, grand_total) |>
+  mutate(pct=round(100*author/file_count)) |>
+  mutate(pct=paste0(pct, "%"))
+```
