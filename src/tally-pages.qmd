@@ -29,14 +29,12 @@ library(tidyverse)
 tally_pages <- function(file_text, file_string) {
   file_text |>
     str_detect(file_string) |>
-    sum()
+    any() # equals TRUE if any matches at all
 }
 ```
 
 ```{r}
 #| label: loop
-
-search_string <- fixed("author: ")
 
 tally_loop <- function(search_string, tally_name=search_string) {
   n_list <- NULL
@@ -65,34 +63,35 @@ tally_loop <- function(search_string, tally_name=search_string) {
 ```{r}
 #| label: string-1
 
+s1 <- "This page is currently being updated from the earlier version of my website"
+
 n_no <- tally_loop("page_update: no", tally_name="no")
 n_partial <- tally_loop("page_update: partial", tally_name="partial")
 n_complete <- tally_loop("page_update: complete", tally_name="complete")
+n_being_updated <- 
 n_no |>
   full_join(n_partial) |>
   full_join(n_complete) -> n_page_update
 
-n_page_update
+n_page_update 
 ```
 
-## `r search_string`
+## Summarize
 
 ```{r}
-#| eval: false 
-n_no |>
+#| label: summarize
+
+n <- ncol(n_page_update)
+
+n_page_update |>
+  mutate(file_count=TRUE) |>
   group_by(yr) |>
-  summarize(
-    author=sum(author > 0),
-    file_count=n()) |>
+  summarize(across(2:n, sum)) |>
     data.frame() -> year_totals
 
 year_totals |>
-  summarize(
-    author=sum(author),
-    file_count=sum(file_count)) |>
+  summarize(across(2:n, sum)) |>
   mutate(yr="All") -> grand_total
 
-bind_rows(year_totals, grand_total) |>
-  mutate(pct=round(100*author/file_count)) |>
-  mutate(pct=paste0(pct, "%"))
+bind_rows(year_totals, grand_total) 
 ```
