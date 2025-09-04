@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/scientist-brain/"
 date: "2017-01-28"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Hypothesis testing
 output: html_document

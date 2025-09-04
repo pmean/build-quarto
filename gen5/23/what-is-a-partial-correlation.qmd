@@ -7,7 +7,6 @@ categories:
 - "*Blog post"
 - 2023
 - Correlation
-- Definitions
 - Uses R code
 output: html_document
 page_update: complete

@@ -8,7 +8,7 @@ categories:
 - 2008
 - Descriptive statistics
 output: html_document
-page_update: partial
+page_update: complete
 ---
 
 A recent discussion on the Medstats group highlighted some of the confusion about computing percentiles. I use a simple formula. If you want the pth percentile of a set of n observations, select the p(n+1) value from the data. If p(n+1) is not a whole number then choose a value halfway between the two adjacent values.

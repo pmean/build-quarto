@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/systematic-overviews-reliable/"
 date: "2017-02-25"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Systematic overviews
 output: html_document

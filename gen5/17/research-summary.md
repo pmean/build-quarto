@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/research-summary/"
 date: "2017-08-28"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Professional details
 output: html_document

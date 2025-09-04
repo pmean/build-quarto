@@ -12,15 +12,7 @@ output: html_document
 page_update: no
 ---
 
-This page is currently being updated from the earlier version of my website. Sorry that it is not yet fully available.
+This page is missing, both in the current version in my blog and in earlier versions. I should delete these pages totally and pretend that they never existed.
 
-Note that the image file, CytelAccrual_files/image002.jpg, is missing.
-
-<!---More--->
-
-Earlier versions are [here][sim1] and [here][sim2].
-
-Note the earlier version is missing.
-
-[sim1]: http://www.pmean.com/08/CytelAccrual.html
-[sim2]: http://new.pmean.com/cytel-accrual/
+-   http://www.pmean.com/08/CytelAccrual.html
+-   http://new.pmean.com/cytel-accrual/

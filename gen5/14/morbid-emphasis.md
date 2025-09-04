@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/morbid-emphasis/"
 date: "2014-02-06"
 categories:
-- "*Quote"
+- "*Quotation"
 - 2014
 - Teaching resources
 output: html_document

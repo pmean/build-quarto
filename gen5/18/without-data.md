@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/without-data/"
 date: "2018-02-09"
 categories: 
-- "*Quote"
+- "*Quotation"
 - 2018
 - Quality improvement
 output: html_document

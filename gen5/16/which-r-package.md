@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/which-r-package/"
 date: "2016-05-10"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2016
 - R software
 output: html_document

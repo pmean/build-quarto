@@ -25,8 +25,8 @@ library(tidyverse)
 clean_files <- function(
     old, 
     new="Not yet", 
-    dir_root="text", 
-    subdir_list=c("99", zpad(0:23)),
+    dir_root="gen5", 
+    subdir_list=c("99", paste0("0", 0:9), as.character(10:25)),
     file_pattern="*\\.md$") {
   if (!exists("ok_to_replace")) ok_to_replace <- FALSE 
   k1 <- 0
@@ -77,7 +77,7 @@ ok_to_replace <- TRUE
 ok_to_replace <- FALSE
 
 clean_files(
-  '- "* Blog post"',
-  '- "*Blog post"',
-  dir_root="text", 
+  fixed('- "*Quote"'),
+  '- "*Quotation"',
+  dir_root="gen5", 
   file_pattern="md$")

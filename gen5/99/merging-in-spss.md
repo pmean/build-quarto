@@ -8,7 +8,7 @@ categories:
 - 1999
 - Being updated
 - Data management
-- Dear Professor Mean
+- Ask Professor Mean
 - SPSS software
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ date: "2023-07-05"
 categories:
 - "*Recommendation"
 - 2023
-- Improtant statisticians
+- Important statisticians
 output: html_document
 page_update: complete
 ---
