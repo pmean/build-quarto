@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/losing-track/"
 date: "2017-11-22"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - R software
 output: html_document

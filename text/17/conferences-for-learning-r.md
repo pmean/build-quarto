@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/conferences-for-learning-r/"
 date: "2017-08-13"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - R software
 output: html_document

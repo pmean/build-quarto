@@ -1,17 +1,17 @@
 # clean_files.R. This program was written by Steve Simon on 2020-05-24.
 
-suppressMessages(suppressWarnings(library(base64enc)))
-suppressMessages(suppressWarnings(library(curl     )))
-suppressMessages(suppressWarnings(library(glue     )))
-suppressMessages(suppressWarnings(library(knitr    )))
-suppressMessages(suppressWarnings(library(lubridate)))
-suppressMessages(suppressWarnings(library(magrittr )))
-suppressMessages(suppressWarnings(library(readr    )))
-suppressMessages(suppressWarnings(library(rmarkdown)))
-suppressMessages(suppressWarnings(library(stringr  )))
-suppressMessages(suppressWarnings(library(tidyverse)))
+# suppressMessages(suppressWarnings(library(base64enc)))
+# suppressMessages(suppressWarnings(library(curl     )))
+library(glue)
+# suppressMessages(suppressWarnings(library(knitr    )))
+# suppressMessages(suppressWarnings(library(lubridate)))
+# suppressMessages(suppressWarnings(library(magrittr )))
+# suppressMessages(suppressWarnings(library(readr    )))
+# suppressMessages(suppressWarnings(library(rmarkdown)))
+# suppressMessages(suppressWarnings(library(stringr  )))
+library(tidyverse)
 
-source(file="src/standard_functions.R")
+# source(file="src/standard_functions.R")
 
 # I had some trouble with write_lines until
 # I used the option "lazy=FALSE" in the
@@ -33,8 +33,8 @@ clean_files <- function(
   k2 <- 0
   for (subdir in subdir_list) {
     cat(glue("\n\n{subdir}"))
-    glue("{dir_root}/{subdir}") %>%
-      list.files %>%
+    glue("{dir_root}/{subdir}") |>
+      list.files() |>
       str_subset(file_pattern) -> file_list
     glue(
       "\nSearching through ",
@@ -58,8 +58,8 @@ clean_files <- function(
       }
       cat(paste0(tf, collapse="\n\n"))
       if (ok_to_replace) {
-        tx %>%
-          str_replace_all(old, new) %>%
+        tx |>
+          str_replace_all(old, new) |>
           write_lines(fn)
       }
     }
@@ -77,6 +77,7 @@ ok_to_replace <- TRUE
 ok_to_replace <- FALSE
 
 clean_files(
-  "- [Dd]atasets$",
+  '- "* Blog post"',
+  '- "*Blog post"',
   dir_root="text", 
   file_pattern="md$")

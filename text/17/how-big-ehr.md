@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/how-big-ehr/"
 date: "2017-05-02"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Professional details
 output: html_document

@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/talk-at-ku/"
 date: "2017-11-28"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Professional details
 output: html_document

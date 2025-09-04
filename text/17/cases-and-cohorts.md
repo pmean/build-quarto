@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/cases-and-cohorts/"
 date: "2017-02-17"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Observational studies
 output: html_document

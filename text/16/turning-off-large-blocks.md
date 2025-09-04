@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/turning-off-large-blocks/"
 date: "2016-09-13"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2016
 - R software
 output: html_document

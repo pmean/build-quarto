@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/consulting-trap/"
 date: "2017-05-04"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Human side of statistics
 output: html_document

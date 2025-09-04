@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/interview-questions/"
 date: "2017-10-17"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - Statistical theory
 output: html_document

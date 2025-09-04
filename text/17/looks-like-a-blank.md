@@ -4,7 +4,7 @@ author: "Steve Simon"
 source: "http://blog.pmean.com/looks-like-a-blank/"
 date: "2017-05-24"
 categories:
-- "* Blog post"
+- "*Blog post"
 - 2017
 - R software
 output: html_document
