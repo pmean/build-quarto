@@ -20,9 +20,9 @@ I want to use an unusual format for these case studies: a graphic novel format. 
 
 The graphic novel format is ideally suited for case studies in research ethics because:
 
-+ it makes the stories more accessible. A graphic novel format is easy to pick up and read.
-+ it shows the range of human emotion better than text can. The stories involving research ethics issues involves serious suffering: in some stories emotional and in other real physical suffering. Illustrations combined with text can convey this far better than text alone.
-+ the target audience for these case studies, young people starting out their research careers are a demographic group that are already heavy consumers of this type of publishing.
+-   it makes the stories more accessible. A graphic novel format is easy to pick up and read.
+-   it shows the range of human emotion better than text can. The stories involving research ethics issues involves serious suffering: in some stories emotional and in other real physical suffering. Illustrations combined with text can convey this far better than text alone.
+-   the target audience for these case studies, young people starting out their research careers are a demographic group that are already heavy consumers of this type of publishing.
 
 I propose to illustrate an important case study, the TGN-1412 trials, and make it available on my web pages as a PowerPoint presentation and as a series of web pages with questions at the end. The web pages would satisfy an immediate need for more ethics training opportunities for CMH employees. These case studies would add some variety and offer a break from all the traditional didactic lectures that I others currently offer.
 
