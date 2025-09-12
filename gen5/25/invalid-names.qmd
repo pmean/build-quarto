@@ -52,7 +52,7 @@ Read in the file using the read_csv function in the readr library (included when
 #| label: read
 
 beatles_1 <- read_csv(
-  file = "invalid-names.csv",
+  file = "http://pmean.com/new-images/25/invalid-names.csv",
   col_names = TRUE,
   col_types = "cc")
 beatles_1

@@ -1,4 +1,4 @@
----
+     ---
 title: Effect sizes in linear regression and analysis of variance
 source: "New"
 author: Steve Simon
