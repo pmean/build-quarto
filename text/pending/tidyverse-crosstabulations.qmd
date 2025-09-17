@@ -1,0 +1,121 @@
+---
+title: "Making nice looking crosstabulations using the tidyverse tools"
+author: "Steve Simon"
+source: new
+date: "2025-09-17"
+categories:
+- Blog post
+tags:
+- R software
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: true
+  echo: true
+page_update: complete
+---
+
+The dplyr library, part of the tidyverse is a very powerful tool for data summarization. It does not list crosstabulations, though, in a format you want, at least not with the default options. But you can make these tables very effectively with the pivot_wider function. Here is an outline of how you might do this using a small artificial dataset. This takes material from a [2002 webpage of mine][ref-simon-2002] on crosstabulation written from a more generic perspective.
+
+<!---more--->
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(tidyverse)
+```
+
+
+## Money and happiness
+
+Does money buy happiness? Maybe, maybe not. Here is an artificial dataset where 200 hypothetical subjects were classified by income (rich or poor) and by mood (happy or miserable). Normally, I would place the data in a text file, but this is so small that I decided to just create it in R.
+
+```{r}
+#| label: create-data
+
+income <- rep(c("rich", "poor"), c(40, 160))
+mood <- rep(c("happy", "miserable", "happy", "miserable"), c(30, 10, 90, 70))
+
+mbh <- tibble(income, mood) # mbh is short for money buys happiness
+glimpse(mbh)
+```
+
+## Using the table function
+
+Before the tidyverse came along, you might use the table function to create a crosstabulation.
+
+```{r}
+#| label: table
+
+table(mbh$income, mbh$mood)
+```
+
+Now for this and all future tables, I want to show the results for rich income first and poor income second. There is no good reason for this other than that is how I arranged things in the 2002 webpage.
+
+```{r}
+#| label: factor
+
+mbh$income <- factor(mbh$income, levels=c("rich", "poor"))
+```
+
+Here is the table with the rows swapped.
+
+```{r}
+#| label: swap
+
+table(mbh$income, mbh$mood)
+```
+
+It is easy to turn the table 90 degrees. Just place mood in the first argument and income in the second argument. You can calculate totals with the addmargins function and proportions with the prop.table function. All is well and good, but I want to do this the tidyverse way.
+
+## Using the count function in dplyr
+
+The count function is simple and produces the same counts as table, but notice how it is laid out differently.
+
+```{r}
+#| label: count
+
+mbh |>
+  count(income, mood)
+```
+
+The counts are in a single 4 by 1 column. If you want to arrange this in a rectangular grid, you should use the pivot_wider function.
+
+```{r}
+#| label: pivot-1
+
+mbh |>
+  count(income, mood) |>
+  pivot_wider(names_from=mood, values_from=n)
+```
+
+This places income in the rows and mood in the columns. If you wanted the opposite, change the names_from argument to income.
+
+## Calculating percentages
+
+There are multiple percentages that you can calculate and you need to plan this carefully. As a general rule, you usually (but not always) want to have the percentages represent a conditional probability. Also as a general rule, you want to probability to condition on a "cause" variable rather than on an "effect" variable.
+
+It's not always obvious which variable is which. Exposure or intervention variables are usually causes. Demographic variables like race and sex are usually cause variables. Outcome measures are almost always effect variables. If you are unsure, try it both ways.
+
+In this contrived example, consider income as cause and mood as an effect. We want to examine the "money buys happiness" hypothesis. Here is how to compute the probability of happy or miserable moods given income.
+
+```{r}
+#| label: conditional
+
+mbh |>
+  count(income, mood) |>
+  group_by(income) |>
+  mutate(total=sum(n)) |>
+  mutate(pct=round(100*n/total))
+```
+
+## Making it look nice
+
+The glue function can produce a layout that is a bit closer to publication quality. There are several possible layouts, but here is one that I like.
+
+[ref-simon-2002]: http://pmean.com/posts/displaying-percentages/

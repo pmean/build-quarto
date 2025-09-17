@@ -1,0 +1,71 @@
+---
+title: "Making an adjustment for inflation"
+author: "Steve Simon"
+source: new
+date: "2025-09-12"
+categories:
+- Blog post
+tags:
+- Data management
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: true
+  echo: true
+page_update: complete
+---
+
+I'm helping out on a project that is looking at, among other things, the cost of home remediation under a lead poisoning prevention program. I was asked how to adjust the costs for inflation.
+
+<!---more--->
+
+It reminds me of a cute joke I heard from someplace I don't remember. A Facebook page credits a similar joke to Joe Weinstein. Here's how I remember it. My dog got quite upset when he saw that Alpo was selling for 99 cents per can. That may not seem like a lot to you, but it almost 7 dollars in dog money.
+
+To adjust for inflation, you need access to the consumer price index (CPI). There are several variations on CPI: seasonally adjusted and without food and energy, to name two. Get the variation of CPI that you think is most appropriate and merge it with your data on costs. Divide your cost by the CPI to get inflation adjusted costs.
+
+Here's a simple example. There were eight Harry Potter movies based on the seven Harry Potter books (the last book was split into two movies). I found the US and Canada gross receopts on opening weekend.
+
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(tidyverse)
+```
+
+The file harry-potter.csv has the information on the opening weekend gross receipts in the US and Canada for each of the films.
+
+```{r}
+#| label: read-hp
+
+hp <- read_csv(
+  "harry-potter.csv",
+  col_types="cnc")
+glimpse(hp)
+```
+
+You can select the film with the highest opening weekend with the slice_max function. I added commas to make the number easier to read.
+
+```{r}
+hp |>
+  slice_max(weekend_gross) |>
+  mutate(weekend_gross=format(weekend_gross, big.mark=","))
+```
+
+The last film in the series, Harry Potter and the Deathly Hallows, Part 2, had the highest opening weekend at 169 million dollars. But there was a nine year gap between the first and last films. Would an adjustment for inflation make one of the earlier releases have a better opening weekend?
+
+To do this, download the CPI. I chose a series that was not seasonally adjusted and stored it in cpi.csv.
+
+```{r}
+
+cpi <- read_csv(
+  "cpi.csv",
+  col_types="cncn")
+glimpse(cpi)
+```
+
+Now, you need to match the correct CPI value with each opening weekend.
+The file cpi.csv
