@@ -1,0 +1,56 @@
+---
+title: "New quarto program"
+author: "Steve Simon"
+source: new
+date: "20xx-xx-xx"
+categories:
+- Blog post
+tags:
+- Graphical display
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: true
+  echo: true
+page_update: complete
+---
+
+Here is a brief abstract.
+
+<!---more--->
+
+Here are more details.
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(tidyverse)
+```
+
+
+```{r}
+#| label: create
+
+x <- c( 5,  7,  9, 11, 13, 15)
+y <- c(29, 21, 15, 25, 11, 19)
+
+mean(x)
+mean(y)
+sum((x-mean(x))^2)
+sum((y-mean(y))^2)
+sum((x-mean(x))*(y-mean(y)))
+
+lm(y~x)
+
+```
+x,yvR
+11,13
+15,9
+19,15
+21,7
+25,11
+29,5

@@ -111,11 +111,25 @@ mbh |>
   count(income, mood) |>
   group_by(income) |>
   mutate(total=sum(n)) |>
-  mutate(pct=round(100*n/total))
+  mutate(pct=round(100*n/total)) |>
+  mutate(pct=glue("{n}/{total} = {pct}%"))
 ```
 
 ## Making it look nice
 
 The glue function can produce a layout that is a bit closer to publication quality. There are several possible layouts, but here is one that I like.
+
+```{r}
+#| label: layout
+
+mbh |>
+  count(income, mood) |>
+  group_by(income) |>
+  mutate(total=sum(n)) |>
+  mutate(pct=round(100*n/total)) |>
+  mutate(pct=glue("{n}/{total} = {pct}%")) |>
+  select(-n, -total) |>
+  pivot_wider(names_from=mood, values_from=pct)
+```
 
 [ref-simon-2002]: http://pmean.com/posts/displaying-percentages/

@@ -102,6 +102,10 @@ Peer-reviewed journals have concerns about the use of Generative AI both in the 
 
 There is an "unconference" on the use of AI in scholarly works. Details are [here][ref11].
 
+## Anthropic - Claude
+
+## OpenAI, ChatGPT
+
 ## Github Copilot
 
 ## NotebookLM

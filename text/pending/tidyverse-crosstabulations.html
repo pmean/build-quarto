@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Steve Simon">
+<meta name="dcterms.date" content="2025-09-17">
 
-<title>Count words in all gen5 files</title>
+<title>Making nice looking crosstabulations using the tidyverse tools</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,6 +20,40 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -3053,14 +3089,29 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Count words in all gen5 files</h1>
-</div>
+<h1 class="title">Making nice looking crosstabulations using the tidyverse tools</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Blog post</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Steve Simon </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 17, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -3070,48 +3121,131 @@ vertical-align: -.125em;
 </header>
 
 
-<p>This program was written by Steve Simon on 2025-08-19 and is placed in the public domain.</p>
-<section id="preliminaries" class="level2">
-<h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
+<p>The dplyr library, part of the tidyverse is a very powerful tool for data summarization. It does not list crosstabulations, though, in a format you want, at least not with the default options. But you can make these tables very effectively with the pivot_wider function. Here is an outline of how you might do this using a small artificial dataset. This takes material from a <a href="http://pmean.com/posts/displaying-percentages/">2002 webpage of mine</a> on crosstabulation written from a more generic perspective.</p>
+<!---more--->
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="money-and-happiness" class="level2">
+<h2 class="anchored" data-anchor-id="money-and-happiness">Money and happiness</h2>
+<p>Does money buy happiness? Maybe, maybe not. Here is an artificial dataset where 200 hypothetical subjects were classified by income (rich or poor) and by mood (happy or miserable). Normally, I would place the data in a text file, but this is so small that I decided to just create it in R.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>income <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">&quot;rich&quot;</span>, <span class="st">&quot;poor&quot;</span>), <span class="fu">c</span>(<span class="dv">40</span>, <span class="dv">160</span>))</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>mood <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">&quot;happy&quot;</span>, <span class="st">&quot;miserable&quot;</span>, <span class="st">&quot;happy&quot;</span>, <span class="st">&quot;miserable&quot;</span>), <span class="fu">c</span>(<span class="dv">30</span>, <span class="dv">10</span>, <span class="dv">90</span>, <span class="dv">70</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>mbh <span class="ot">&lt;-</span> <span class="fu">tibble</span>(income, mood) <span class="co"># mbh is short for money buys happiness</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(mbh)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 200
+Columns: 2
+$ income &lt;chr&gt; &quot;rich&quot;, &quot;rich&quot;, &quot;rich&quot;, &quot;rich&quot;, &quot;rich&quot;, &quot;rich&quot;, &quot;rich&quot;, &quot;rich&quot;,…
+$ mood   &lt;chr&gt; &quot;happy&quot;, &quot;happy&quot;, &quot;happy&quot;, &quot;happy&quot;, &quot;happy&quot;, &quot;happy&quot;, &quot;happy&quot;, …</code></pre>
+</div>
+</div>
 </section>
-<section id="function" class="level2">
-<h2 class="anchored" data-anchor-id="function">function</h2>
+<section id="using-the-table-function" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-table-function">Using the table function</h2>
+<p>Before the tidyverse came along, you might use the table function to create a crosstabulation.</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(mbh<span class="sc">$</span>income, mbh<span class="sc">$</span>mood)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>  word_count file_count avg_words
-1    868,468       2257     384.8</code></pre>
+<pre><code>      
+       happy miserable
+  poor    90        70
+  rich    30        10</code></pre>
 </div>
 </div>
+<p>Now for this and all future tables, I want to show the results for rich income first and poor income second. There is no good reason for this other than that is how I arranged things in the 2002 webpage.</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>mbh<span class="sc">$</span>income <span class="ot">&lt;-</span> <span class="fu">factor</span>(mbh<span class="sc">$</span>income, <span class="at">levels=</span><span class="fu">c</span>(<span class="st">&quot;rich&quot;</span>, <span class="st">&quot;poor&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Here is the table with the rows swapped.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(mbh<span class="sc">$</span>income, mbh<span class="sc">$</span>mood)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>          dir word_count file_count avg_words
-1  ../gen5/00     34,367         41     838.2
-2  ../gen5/01     20,073         14    1433.8
-3  ../gen5/02     22,021         21    1048.6
-4  ../gen5/03     19,398         22     881.7
-5  ../gen5/04     65,917        135     488.3
-6  ../gen5/05     67,852        187     362.8
-7  ../gen5/06     88,183        176     501.0
-8  ../gen5/07     80,970        156     519.0
-9  ../gen5/08     23,710        159     149.1
-10 ../gen5/09      2,512         54      46.5
-11 ../gen5/10     33,727        101     333.9
-12 ../gen5/11     44,275         78     567.6
-13 ../gen5/12      7,537         56     134.6
-14 ../gen5/13      7,692         40     192.3
-15 ../gen5/14     26,393         78     338.4
-16 ../gen5/15     16,252         56     290.2
-17 ../gen5/16     47,607         97     490.8
-18 ../gen5/17     18,469         76     243.0
-19 ../gen5/18     48,886        122     400.7
-20 ../gen5/19      9,199         65     141.5
-21 ../gen5/20     23,747         77     308.4
-22 ../gen5/21     39,443        116     340.0
-23 ../gen5/22     31,350        148     211.8
-24 ../gen5/23     25,639         64     400.6
-25 ../gen5/24     15,444         54     286.0
-26 ../gen5/25      5,845         22     265.7
-27 ../gen5/99     41,960         42     999.0</code></pre>
+<pre><code>      
+       happy miserable
+  rich    30        10
+  poor    90        70</code></pre>
+</div>
+</div>
+<p>It is easy to turn the table 90 degrees. Just place mood in the first argument and income in the second argument. You can calculate totals with the addmargins function and proportions with the prop.table function. All is well and good, but I want to do this the tidyverse way.</p>
+</section>
+<section id="using-the-count-function-in-dplyr" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-count-function-in-dplyr">Using the count function in dplyr</h2>
+<p>The count function is simple and produces the same counts as table, but notice how it is laid out differently.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mbh <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(income, mood)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 3
+  income mood          n
+  &lt;fct&gt;  &lt;chr&gt;     &lt;int&gt;
+1 rich   happy        30
+2 rich   miserable    10
+3 poor   happy        90
+4 poor   miserable    70</code></pre>
+</div>
+</div>
+<p>The counts are in a single 4 by 1 column. If you want to arrange this in a rectangular grid, you should use the pivot_wider function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>mbh <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(income, mood) <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from=</span>mood, <span class="at">values_from=</span>n)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  income happy miserable
+  &lt;fct&gt;  &lt;int&gt;     &lt;int&gt;
+1 rich      30        10
+2 poor      90        70</code></pre>
+</div>
+</div>
+<p>This places income in the rows and mood in the columns. If you wanted the opposite, change the names_from argument to income.</p>
+</section>
+<section id="calculating-percentages" class="level2">
+<h2 class="anchored" data-anchor-id="calculating-percentages">Calculating percentages</h2>
+<p>There are multiple percentages that you can calculate and you need to plan this carefully. As a general rule, you usually (but not always) want to have the percentages represent a conditional probability. Also as a general rule, you want to probability to condition on a “cause” variable rather than on an “effect” variable.</p>
+<p>It’s not always obvious which variable is which. Exposure or intervention variables are usually causes. Demographic variables like race and sex are usually cause variables. Outcome measures are almost always effect variables. If you are unsure, try it both ways.</p>
+<p>In this contrived example, consider income as cause and mood as an effect. We want to examine the “money buys happiness” hypothesis. Here is how to compute the probability of happy or miserable moods given income.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>mbh <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(income, mood) <span class="sc">|&gt;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(income) <span class="sc">|&gt;</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">total=</span><span class="fu">sum</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct=</span><span class="fu">round</span>(<span class="dv">100</span><span class="sc">*</span>n<span class="sc">/</span>total)) <span class="sc">|&gt;</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct=</span><span class="fu">glue</span>(<span class="st">&quot;{n}/{total} = {pct}%&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 4 × 5
+# Groups:   income [2]
+  income mood          n total pct         
+  &lt;fct&gt;  &lt;chr&gt;     &lt;int&gt; &lt;int&gt; &lt;glue&gt;      
+1 rich   happy        30    40 30/40 = 75% 
+2 rich   miserable    10    40 10/40 = 25% 
+3 poor   happy        90   160 90/160 = 56%
+4 poor   miserable    70   160 70/160 = 44%</code></pre>
+</div>
+</div>
+</section>
+<section id="making-it-look-nice" class="level2">
+<h2 class="anchored" data-anchor-id="making-it-look-nice">Making it look nice</h2>
+<p>The glue function can produce a layout that is a bit closer to publication quality. There are several possible layouts, but here is one that I like.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>mbh <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(income, mood) <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(income) <span class="sc">|&gt;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">total=</span><span class="fu">sum</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct=</span><span class="fu">round</span>(<span class="dv">100</span><span class="sc">*</span>n<span class="sc">/</span>total)) <span class="sc">|&gt;</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">pct=</span><span class="fu">glue</span>(<span class="st">&quot;{n}/{total} = {pct}%&quot;</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>n, <span class="sc">-</span>total) <span class="sc">|&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from=</span>mood, <span class="at">values_from=</span>pct)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+# Groups:   income [2]
+  income happy        miserable   
+  &lt;fct&gt;  &lt;glue&gt;       &lt;glue&gt;      
+1 rich   30/40 = 75%  10/40 = 25% 
+2 poor   90/160 = 56% 70/160 = 44%</code></pre>
 </div>
 </div>
 </section>

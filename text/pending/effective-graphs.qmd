@@ -1,0 +1,109 @@
+---
+title: "Effective graphs"
+author: "Steve Simon"
+source: new
+date: "2025-09-19"
+categories:
+- Blog post
+tags:
+- Graphical display
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: true
+  echo: true
+page_update: complete
+---
+
+Joyce Robbins presented a short course for the Kansas/Western Missouri chapter of the American Statistical Association. The title is Effective Graphs with ggplot2 and she shared her [slides and code][ref-robbins-2025] on her [github site][ref-robbins-nodate]. I can't recreate her entire talk here, but I do want to hightlight a few things that resonated with me.
+
+[ref-robbins-2025]: https://github.com/jtr13/kc2025
+[ref-robbins-nodate]: https://github.com/jtr13
+
+<!---more--->
+
+```{r}
+#| label: setup
+#| messages: false
+#| warnings: false
+
+library(tidyverse)
+```
+
+When you specify information in the various ggplot2 functions, it is important to think about settings versus mapping. Settings is a constant. What exactly does this mean? In some contexts, you want to change the color that is used for graphic elements like the border of the bars in a histogram. In that case, you would specify `color="blue"`. In contrast, sometimes you want color to distinguish between different categories of a variable. If you want males and females to use different colors, this is a mapping of gender to a set of colors. If you want a mapping by gender, then you would specify `color=gender`. Using a setting when you want a mapping or vice versa is a big reason why your ggplot2 graphs appear different from the way you want them to.
+
+Joyce Robbins recommends that you should sort the boxplots bty medina. You can do this by using the `reorder` function in the forcats library. The forcats library, which I have not used at all, is part of the tidyverse library but I have to admit that it comes in very handy in this case. She also shows the fct_recode function of forcats and how it can help inside of ggplot.
+
+Joyce has a package ggformat, that you have to install with the remotes library. It restructures the sequence of some ggplot2 code to place commands in a standardized order.
+
+https://github.com/jtr13/ggformat
+
+If you peek at the code inside the ggformat library, there are a couple of interesting things.
+
+First, it uses the rstudioapi function.
+
+Second, it takes advantage of something in RStudio that I had not heard about before, an addin.
+
+```{}
+painters |>
+  rownames_to_column("painter") |>
+  pivot_longer(
+    cols=Composition:Expression,
+    names_to = "elements",
+    values_to = "rating") |>
+  ggplot() +
+    aes(elements, rating) +
+    geom_boxplot()
+```
+
+Joyce said to avoid the coord_flip. You used to need this to change a vertical boxplot to a horizontal boxplot. But more recent versions of ggplot2 will make a horizontal boxplot easier. Just list the categorical variable (string or factor) as the y aesthetic instead of the x aesthetic
+
+ggplot2 version 4.0 is a major release that came out on September 11. It has some big changes that I should try to document.
+
+Using theme_grey(14) or theme_grey(16) will make all fonts larger which may be helpful for presentations.
+
+Another library that I should look at is ggnewscale.
+
+Joyce spent a fair amount of time with RColorBrewer.
+
+Perceptual uniformity is a new concept to me. Joyce also talked about having a wide perceptual range.
+
+Joyce also gave a keynote lecture, 
+
+Leo Breiman, "Random Forests," Machine Learning
+
+Elements of Statistical Learning
+
+Statistical Modeling: The Two Cultures.
+
+Intepretable Machine Learning (IML) vs. Explainable AI (XAI)
+
+Interpretability: intrinsic versus posthoc
+
+Model specific, model agnostic
+
+Global, local
+
+Allen, Genevera, Gan, Zheng 2023. Interpretable machine learning for discovery: statistical challenges and opportunities.
+
+Bordt, Raidl, von Luxburg 2025. Position; Rethinking Machine Learning as Applied Statistics.
+
+Cynthia Rudin 2019 Nature Machine Intelligence.
+
+Stop Explaining Black Box Machine Learning Models for High Stakes Decisions and Use Interpretable Models Instead.
+
+Generalized and Scalable Optimal Sparse Decision Trees.
+TreeFARMS. Trees FAst RashoMon Sets
+SLIM - Supersparse Linear Integer Models
+
+Ustun, Berk, Rudin 2016. Supersparse Linear Integer Models for Optimized Medical Scoring Systems.
+
+Partial Dependency Plots.
+
+Shapley Values. Game Theory, Nobel Prize in Economics, Coalition games.
+
+SHapley Additive exPlanations. Lundberg and Lee 2017.
+
+jtr13@columbia.edu

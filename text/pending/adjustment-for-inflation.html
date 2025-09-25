@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Steve Simon">
+<meta name="dcterms.date" content="2025-09-12">
 
-<title>Count words in all gen5 files</title>
+<title>Making an adjustment for inflation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -18,6 +20,40 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+}
+pre.numberSource { margin-left: 3em; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -3053,14 +3089,29 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Count words in all gen5 files</h1>
-</div>
+<h1 class="title">Making an adjustment for inflation</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Blog post</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Steve Simon </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 12, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -3070,51 +3121,57 @@ vertical-align: -.125em;
 </header>
 
 
-<p>This program was written by Steve Simon on 2025-08-19 and is placed in the public domain.</p>
-<section id="preliminaries" class="level2">
-<h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
-</section>
-<section id="function" class="level2">
-<h2 class="anchored" data-anchor-id="function">function</h2>
+<p>I’m helping out on a project that is looking at, among other things, the cost of home remediation under a lead poisoning prevention program. I was asked how to adjust the costs for inflation.</p>
+<!---more--->
+<p>It reminds me of a cute joke I heard from someplace I don’t remember. A Facebook page credits a similar joke to Joe Weinstein. Here’s how I remember it. My dog got quite upset when he saw that Alpo was selling for 99 cents per can. That may not seem like a lot to you, but it almost 7 dollars in dog money.</p>
+<p>To adjust for inflation, you need access to the consumer price index (CPI). There are several variations on CPI: seasonally adjusted and without food and energy, to name two. Get the variation of CPI that you think is most appropriate and merge it with your data on costs. Divide your cost by the CPI to get inflation adjusted costs.</p>
+<p>Here’s a simple example. There were eight Harry Potter movies based on the seven Harry Potter books (the last book was split into two movies). I found the US and Canada gross receopts on opening weekend.</p>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  word_count file_count avg_words
-1    868,468       2257     384.8</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
+<p>The file harry-potter.csv has the information on the opening weekend gross receipts in the US and Canada for each of the films.</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>hp <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;harry-potter.csv&quot;</span>,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_types=</span><span class="st">&quot;cnc&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(hp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>          dir word_count file_count avg_words
-1  ../gen5/00     34,367         41     838.2
-2  ../gen5/01     20,073         14    1433.8
-3  ../gen5/02     22,021         21    1048.6
-4  ../gen5/03     19,398         22     881.7
-5  ../gen5/04     65,917        135     488.3
-6  ../gen5/05     67,852        187     362.8
-7  ../gen5/06     88,183        176     501.0
-8  ../gen5/07     80,970        156     519.0
-9  ../gen5/08     23,710        159     149.1
-10 ../gen5/09      2,512         54      46.5
-11 ../gen5/10     33,727        101     333.9
-12 ../gen5/11     44,275         78     567.6
-13 ../gen5/12      7,537         56     134.6
-14 ../gen5/13      7,692         40     192.3
-15 ../gen5/14     26,393         78     338.4
-16 ../gen5/15     16,252         56     290.2
-17 ../gen5/16     47,607         97     490.8
-18 ../gen5/17     18,469         76     243.0
-19 ../gen5/18     48,886        122     400.7
-20 ../gen5/19      9,199         65     141.5
-21 ../gen5/20     23,747         77     308.4
-22 ../gen5/21     39,443        116     340.0
-23 ../gen5/22     31,350        148     211.8
-24 ../gen5/23     25,639         64     400.6
-25 ../gen5/24     15,444         54     286.0
-26 ../gen5/25      5,845         22     265.7
-27 ../gen5/99     41,960         42     999.0</code></pre>
+<pre><code>Rows: 8
+Columns: 3
+$ title         &lt;chr&gt; &quot;Harry Potter and the Sorceror&#39;s Stone&quot;, &quot;Harry Potter a…
+$ weekend_gross &lt;dbl&gt; 90294621, 88357488, 93687367, 102685961, 77108414, 77835…
+$ opening_date  &lt;chr&gt; &quot;11-18-2001&quot;, &quot;11-17-2002&quot;, &quot;06-06-2004&quot;, &quot;11-20-2005&quot;, …</code></pre>
 </div>
 </div>
-</section>
+<p>You can select the film with the highest opening weekend with the slice_max function. I added commas to make the number easier to read.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>hp <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice_max</span>(weekend_gross) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">weekend_gross=</span><span class="fu">format</span>(weekend_gross, <span class="at">big.mark=</span><span class="st">&quot;,&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 3
+  title                                        weekend_gross opening_date
+  &lt;chr&gt;                                        &lt;chr&gt;         &lt;chr&gt;       
+1 Harry Potter and the Deathly Hallows: Part 2 169,189,427   07-17-2011  </code></pre>
+</div>
+</div>
+<p>The last film in the series, Harry Potter and the Deathly Hallows, Part 2, had the highest opening weekend at 169 million dollars. But there was a nine year gap between the first and last films. Would an adjustment for inflation make one of the earlier releases have a better opening weekend?</p>
+<p>To do this, download the CPI. I chose a series that was not seasonally adjusted and stored it in cpi.csv.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>cpi <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;cpi.csv&quot;</span>,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">col_types=</span><span class="st">&quot;cncn&quot;</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(cpi)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 140
+Columns: 4
+$ `Series Id` &lt;chr&gt; &quot;CUUR0000SA0&quot;, &quot;CUUR0000SA0&quot;, &quot;CUUR0000SA0&quot;, &quot;CUUR0000SA0&quot;…
+$ Year        &lt;dbl&gt; 2001, 2001, 2001, 2001, 2001, 2001, 2001, 2001, 2001, 2001…
+$ Period      &lt;chr&gt; &quot;M01&quot;, &quot;M02&quot;, &quot;M03&quot;, &quot;M04&quot;, &quot;M05&quot;, &quot;M06&quot;, &quot;M07&quot;, &quot;M08&quot;, &quot;M…
+$ Value       &lt;dbl&gt; 175.1, 175.8, 176.2, 176.9, 177.7, 178.0, 177.5, 177.5, 17…</code></pre>
+</div>
+</div>
+<p>Now, you need to match the correct CPI value with each opening weekend. The file cpi.csv</p>
 
 </main>
 <!-- /main column -->
