@@ -2,32 +2,31 @@
 title: "New quarto program"
 author: "Steve Simon"
 source: new
-date: "20xx-xx-xx"
+date: "2025-09-25"
 categories:
 - Blog post
 tags:
-- Graphical display
+- Linear regression
 format: 
   html:
     embed-resources: true
 editor: source
 execute: 
   error: true
-  echo: true
+  echo: false
 page_update: complete
 ---
 
-Here is a brief abstract.
+The analysis of variance table is used for an analysis of variance model, but it is also used for a linear regression model. I want to offer some intuition on what all the entries mean in this table using a simple artificial dataset.
 
 <!---more--->
-
-Here are more details.
 
 ```{r}
 #| label: setup
 #| message: false
 #| warning: false
 
+library(glue)
 library(tidyverse)
 ```
 
@@ -35,22 +34,139 @@ library(tidyverse)
 ```{r}
 #| label: create
 
-x <- c( 5,  7,  9, 11, 13, 15)
-y <- c(29, 21, 15, 25, 11, 19)
+x <- c( 5,  7,  9, 11, 13, 15) - 1
+y <- c(29, 21, 15, 25, 11, 19) + 1
 
 mean(x)
 mean(y)
+
 sum((x-mean(x))^2)
 sum((y-mean(y))^2)
+
 sum((x-mean(x))*(y-mean(y)))
 
 lm(y~x)
 
 ```
-x,yvR
-11,13
-15,9
-19,15
-21,7
-25,11
-29,5
+
+## The artificial dataset
+
+```{r}
+#| label: print
+
+dat <- data.frame(x, y)
+dat
+```
+
+Most of the time, I try to avoid using artificial datasets. I am making an exception here because I want to show the internal calculations using numbers that are easy to work with.
+
+There are two variables with generic names, x and y. Treat x as the independent variable and y as the dependent variable.
+
+## Scatterplot of the data
+
+```{r}
+#| label: scatter
+
+dat |>
+  ggplot() +
+    aes(x, y) +
+    geom_point() +
+    expand_limits(x=c(0, 20), y=c(0, 40)) +
+    labs(
+      x=" ",
+      y=" ",
+      caption="Simon 2025-09-25, CC0") +
+    scale_y_continuous(breaks=4*(0:10)) +
+    scale_x_continuous(breaks=2*(0:10)) -> p0
+p0
+```
+
+In any linear regression model, even an artificial one like this, you should always display a graph. There appears to be a weak negative trend in the data.
+
+## Least squares regression
+
+-   Collect a sample
+    -   $(X_1,Y_1),\ (X_2,Y_2),\ ...\ (X_n,Y_n)$
+-   Compute residuals
+    -   $e_i=Y_i-(b_0+b_1*X_i)$
+    -   Choose b_0 and b_1 to minimize $\Sigma e_i^2$
+
+The least squares principle is an approach to finding a line that is close to most of the data. It involves compromise because if you try to get too close to one datapoint, the distance to the other data points can get worse.
+
+You measure closeness by computing the residuals. These represent a deviation between the actual data and the prediction you would get using a straight line.
+
+Let's look at some examples.
+
+## A bad fitting line
+
+```{r}
+#| label: bad
+
+plot_fit <- function(b0, b1) {
+
+  predicted <- b0+b1*x
+  residual <- y-predicted
+
+  p0 +
+    geom_segment(xend=x, yend=predicted) +
+    geom_segment(x=0, y=b0, xend=20, yend=b0+b1*20) +
+    geom_label(x=x, y=y, label=y) +
+    geom_label(x=x, y=predicted, label=predicted) -> p1
+  
+  plot(p1)
+  return(data.frame(x, y, predicted, residual))
+}
+
+pf <- plot_fit(22, 1)
+```
+
+## Sum of squared residuals
+
+```{r}
+#| label: sse-1
+
+calculate_ss <- function(pf) {
+  glue("({pf$y}-{pf$predicted})²") |>
+    paste0(collapse=" + ") |>
+    cat()
+
+  cat("\n")
+  
+  glue("({pf$residual})²") |>
+    paste0(collapse=" + ") |>
+    cat()
+
+  cat("\n")
+  
+  pf$residual^2 |>
+    paste0(collapse=" + ") |>
+    cat()
+
+  cat("\n")
+  
+  pf$residual^2 |>
+    sum() |>
+    cat()
+}
+
+calculate_ss(pf)
+```
+
+
+## A better fitting line
+
+```{r}
+#| label: better
+
+pf <- plot_fit(10, 1)
+calculate_ss(pf)
+```
+
+## An even better line
+
+```{r}
+#| label: best
+
+pf <- plot_fit(30, -1)
+calculate_ss(pf)
+```
