@@ -12,7 +12,7 @@ format:
     embed-resources: true
 editor: source
 execute: 
-  error: true
+  error: false
   echo: false
 page_update: complete
 ---
@@ -27,6 +27,7 @@ The analysis of variance table is used for an analysis of variance model, but it
 #| warning: false
 
 library(glue)
+library(gt)
 library(tidyverse)
 ```
 
@@ -36,17 +37,6 @@ library(tidyverse)
 
 x <- c( 5,  7,  9, 11, 13, 15) - 1
 y <- c(29, 21, 15, 25, 11, 19) + 1
-
-mean(x)
-mean(y)
-
-sum((x-mean(x))^2)
-sum((y-mean(y))^2)
-
-sum((x-mean(x))*(y-mean(y)))
-
-lm(y~x)
-
 ```
 
 ## The artificial dataset
@@ -54,31 +44,61 @@ lm(y~x)
 ```{r}
 #| label: print
 
-dat <- data.frame(x, y)
-dat
+dat <- data.frame(x, y, predicted=30-x, flat=mean(y))
+dat |> select(x, y)
 ```
 
 Most of the time, I try to avoid using artificial datasets. I am making an exception here because I want to show the internal calculations using numbers that are easy to work with.
 
 There are two variables with generic names, x and y. Treat x as the independent variable and y as the dependent variable.
 
+## Descriptive statistics
+
+```{r}
+#| label: descriptive
+
+dat |>
+  summarize(
+    x_mean=mean(x),
+    x_stdev=sd(x))
+dat |>
+  summarize(
+    y_mean=mean(y),
+    y_stdev=sd(x))
+```
+
+Here are the means and standard deviations for the two variables. I would normally include an interpretation here, but for an artificial data set, no interpretation is needed.
+
 ## Scatterplot of the data
 
 ```{r}
 #| label: scatter
 
-dat |>
-  ggplot() +
-    aes(x, y) +
-    geom_point() +
+define_graph <- function(p0) {
+  p0 +
     expand_limits(x=c(0, 20), y=c(0, 40)) +
     labs(
       x=" ",
       y=" ",
       caption="Simon 2025-09-25, CC0") +
     scale_y_continuous(breaks=4*(0:10)) +
-    scale_x_continuous(breaks=2*(0:10)) -> p0
-p0
+    scale_x_continuous(breaks=2*(0:10))
+}
+
+dat |>
+  ggplot() +
+  aes(x, y) -> p0
+
+p0 |> define_graph() -> p1
+p1 + geom_point()
+
+dat |>
+  ggplot() +
+  aes(x, y=30-x) -> q0
+
+q0 |> define_graph() -> q1
+q1 + geom_point()
+
 ```
 
 In any linear regression model, even an artificial one like this, you should always display a graph. There appears to be a weak negative trend in the data.
@@ -100,73 +120,194 @@ Let's look at some examples.
 ## A bad fitting line
 
 ```{r}
-#| label: bad
+#| label: functions
 
-plot_fit <- function(b0, b1) {
+plot_fit <- function(p1, b0, b1) {
 
   predicted <- b0+b1*x
   residual <- y-predicted
 
-  p0 +
+  p1 +
     geom_segment(xend=x, yend=predicted) +
     geom_segment(x=0, y=b0, xend=20, yend=b0+b1*20) +
     geom_label(x=x, y=y, label=y) +
-    geom_label(x=x, y=predicted, label=predicted) -> p1
+    geom_label(x=x, y=predicted, label=predicted) -> p2
   
-  plot(p1)
+  plot(p2)
   return(data.frame(x, y, predicted, residual))
 }
 
-pf <- plot_fit(22, 1)
-```
+calculate_ss <- function(y1, y2) {
 
-## Sum of squared residuals
+  calculations_1 <- matrix("+", nrow=4, ncol=11)
+  calculations_1[1, 2*(1:6)-1] <- glue("({y1}-{y2})²")
+  calculations_1[2, 2*(1:6)-1] <- glue("({y1-y2})²")
+  calculations_1[3, 2*(1:6)-1] <- as.character(pf$residual^2)
+  calculations_1[4, 1] <- as.character(sum(pf$residual^2))
+  calculations_1[4, 2:11] <- " "
+  
+  calculations_1 |>
+    data.frame() |> 
+    gt() |> 
+    tab_style(
+      cell_text(align="center"), 
+      locations=cells_body()) |> 
+    tab_options(column_labels.hidden = TRUE) -> calculations_2
+  return(calculations_2)
+}
+```
 
 ```{r}
-#| label: sse-1
+#| label: bad-1
 
-calculate_ss <- function(pf) {
-  glue("({pf$y}-{pf$predicted})²") |>
-    paste0(collapse=" + ") |>
-    cat()
-
-  cat("\n")
-  
-  glue("({pf$residual})²") |>
-    paste0(collapse=" + ") |>
-    cat()
-
-  cat("\n")
-  
-  pf$residual^2 |>
-    paste0(collapse=" + ") |>
-    cat()
-
-  cat("\n")
-  
-  pf$residual^2 |>
-    sum() |>
-    cat()
-}
-
-calculate_ss(pf)
+pf <- plot_fit(p1, 22, 1)
 ```
+
+Just to try to illustrate how linear regression works, I want to show some "trial and error" equations. The actual linear regression algorithm jumps immediately to the best equation, but let's start with a very bad guess.
+
+This graph illustrates what a line with an intercept of 20 and a slope of 1 would look like. Notice that it tends to be too high. Most of the residuals (the difference between the observed values and the values on the fitted line) are negative.
+
+## Sum of squared residuals for the bad fit
+
+```{r}
+#| label: bad-2
+
+calculate_ss(pf$y, pf$predicted)
+```
+
+You measure how well (or in this case how poorly) an equation is by squaring the residuals and adding them up. Squaring does two things. First, it treats deviations above and below the line equally. Being five units above contributes a squared residual of 25 and being five units below also contributed a squared residual of 25.
+
+Squaring the residual also tends to emphasize the larger deviations. You get a squared deviation of 100 when you are ten units above or below the line compared to a squared deviation of 16 when you are four units above or below the line.
+
+This emphasis on large deviations means that linear regression tries very hard to avoid large deviations even for just a single data point.
+
+Notice that the large deviations for this line lead to a very large sum of squared residuals.
 
 
 ## A better fitting line
 
 ```{r}
-#| label: better
+#| label: better-1
 
-pf <- plot_fit(10, 1)
-calculate_ss(pf)
+pf <- plot_fit(p1, 10, 1)
+```
+
+You can improve things somewhat by shifting the line lower. This graph shows how well a line with an intercept of 10 and a slope of 1 performs.
+
+## Sum of squared residuals for a better fit
+
+```{r}
+#| label: better-2
+
+calculate_ss(pf$y, pf$predicted)
 ```
 
 ## An even better line
 
 ```{r}
+#| label: even-better-1
+
+pf <- plot_fit(p1, 30, -1)
+```
+
+You can do even better by changing to a negative slope. The line shown here has an intercept of 30 and a slope of -1.
+
+## Sum of squared residuals for an even better fit
+
+```{r}
 #| label: best
 
-pf <- plot_fit(30, -1)
-calculate_ss(pf)
+calculate_ss(pf$y, pf$predicted)
+```
+
+The sum of squared residuals has declined even further.
+
+It turns out that you can't do any better than this line. If you tried to get closer to some of the data points, any gains would be offset from the points that move further away.
+
+This is the least squares principle. The best line is one that is close to most of the data points. It minimizes the sum of squared residuals.
+
+
+## Comparisons
+
+```{r}
+yi <- c("Y₁", "Y₂", "Y₃", "Y₄", "Y₅", "Y₆")
+
+yhat <- c("Ŷ₁", "Ŷ₂", "Ŷ₃", "Ŷ₄", "Ŷ₅", "Ŷ₆")
+
+ybar <- rep("Ȳ", 6)
+```
+
+```{r}
+#| label: plot-y
+
+p1 +
+  geom_label(label=pf$y)
+```
+
+```{r}
+#| label: plot-ybar
+
+p1 +
+  geom_label(y=rep(mean(y), 6), label=mean(y))
+```
+
+```{r}
+#| label: plot-yhat
+
+p1 +
+  geom_label(y=pf$predicted, label=pf$predicted)
+```
+
+## SS regression plot
+
+```{r}
+#| label: ss-regression-1
+
+pf <- plot_fit(q1, 21, 0)
+```
+
+Just to try to illustrate how linear regression works, I want to show some "trial and error" equations. The actual linear regression algorithm jumps immediately to the best equation, but let's start with a very bad guess.
+
+This graph illustrates what a line with an intercept of 20 and a slope of 1 would look like. Notice that it tends to be too high. Most of the residuals (the difference between the observed values and the values on the fitted line) are negative.
+
+## SS regression calculations
+
+```{r}
+#| label: ss-regression-2
+
+calculate_ss(pf$y, pf$predicted)
+```
+
+## SS total plot
+
+```{r}
+#| label: ss-total-1
+
+pf <- plot_fit(p1, 21, 0)
+```
+
+## SS total calculations
+
+```{r}
+#| label: ss-total-2
+
+calculate_ss(pf$y, pf$predicted)
+```
+
+## Calculate R-squared
+
+## SS error plot
+
+```{r}
+#| ss-error-1
+
+pf <- plot_fit(p1, 30, -1)
+```
+
+## SS error calculations
+
+```{r}
+#| ss-error-2
+
+calculate_ss(pf$y, pf$predicted)
 ```
