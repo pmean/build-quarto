@@ -38,6 +38,13 @@ library(tidyverse)
 x <- c( 5,  7,  9, 11, 13, 15) - 1
 y <- c(29, 21, 15, 25, 11, 19) + 1
 y <- c(33, 19,  9, 31,  5, 23) + 1
+fn <- "https://raw.githubusercontent.com/pmean/data/refs/heads/main/files/hypothetical-regression.csv"
+read_csv(
+  fn, 
+  col_names=TRUE,
+  col_types="nn") |>
+  mutate(predicted=30-x) |>
+  mutate(flat=mean(y)) -> hypothetical
 ```
 
 ## The artificial dataset
@@ -45,8 +52,7 @@ y <- c(33, 19,  9, 31,  5, 23) + 1
 ```{r}
 #| label: print
 
-dat <- data.frame(x, y, predicted=30-x, flat=mean(y))
-dat |> select(x, y)
+hypothetical |> select(x, y)
 ```
 
 Most of the time, I try to avoid using artificial datasets. I am making an exception here because I want to show the internal calculations using numbers that are easy to work with.
@@ -58,11 +64,11 @@ There are two variables with generic names, x and y. Treat x as the independent 
 ```{r}
 #| label: descriptive
 
-dat |>
+hypothetical |>
   summarize(
     x_mean=mean(x),
     x_stdev=sd(x))
-dat |>
+hypothetical |>
   summarize(
     y_mean=mean(y),
     y_stdev=sd(x))
@@ -70,26 +76,74 @@ dat |>
 
 Here are the means and standard deviations for the two variables. I would normally include an interpretation here, but for an artificial data set, no interpretation is needed.
 
+## The analysis of variance table
+
+-   Typically three rows
+    -   Model or Regression or name of the independent variable
+    -   Error or Residual
+    -   Total or Corrected Total
+-   Typically four columns
+    -   Sum of squares or SS
+    -   Degrees of freedom or df
+    -   Mean square or MS
+    -   F or F-ratio
+    -   p or p-value
+
 ## Regression results from R
 
 ```{r}
 #| label: lm
 
-m1 <- lm(y~x, data=dat)
+m1 <- lm(y~x, data=hypothetical)
 anova(m1)
 ```
 
+This is what the analysis of variance table looks like in R. The first row is the name of the independent variable, in this case, just x. The second row is Residual. The third row is...well there is no third row for total or corrected total.
+
+The columns are in a slightly different order. The degrees of freedom, labeled "df", comes first, then the sum of squares, labeled "Sum Sq", followed by the mean square column, labeled ""Mean Sq", the F ratio, labelled "F value" and finally the p-value, labeled as "Pr(>F)".
+
 ## Analysis of variance table in SAS
 
-## Analysis of variance table in SPSS
+![](http://pmean.com/new-images/25/anova-table-01.png)
+
+In SAS, the first row is Model, the second is Error, and the third is Corrected Total. SAS also puts the degrees of freedom column first, labeled "DF", followed by "Sum of Squares", "Mean Square", "F Value", and "Pr>F"
+
+## Analysis of variance table in SPSS, Linear Regression
+
+![](http://pmean.com/new-images/25/anova-table-02.png)
+
+SPSS provides two different analysis of variance tables. If you select Linear Regression from the menu, this is the table you get. The rows are labeled "Regression", "Residual", and "Total".
+
+The columns are in a more logical order, in my opinion, than R or SAS. The first column, "Sum of Squares" is followed by the degrees of freedom column ("df") and the mean square column. The F-ratio, labeled just "F" and the p-value, labeled "Sig" round out the rest of the table.
+
+## Analysis of variance table in SPSS, General Linear Model
+
+![](http://pmean.com/new-images/25/anova-table-03.png)
+
+If you select General Linear Model, you get six rows. You only need three, but for more complex models, you may need more. The first and third rows, "Corrected Model" and "x" are identical, but will differ in more complex regression models. SPSS includes an "Intercept" row, which you will almost always ignore. The fourth row, labeled "Error" is what you would normally see as the second row in most analysis of variance tables. The last row "Corrected Total" is what normally is placed as the third or last row in most other analysis of variance tables. The "Total" row, like the "intercept" row is another row that you almost always ignore.
+
+The first column is labeled "Type III Sum of Squares". The "Type III" is not important in this example, but becomes important when you have multiple independent variables. The rest of the columns match the other SPSS analysis of variance table.
 
 ## Analysis of variance by Andy Field
 
--   Regression: $SS_M$
--   Error: $SS_R$
--   Total: $SS_T$
+-   Does not arrange sums of squares into a table
+    -   Model: $SS_M$, $MS_M$
+    -   Residual: $SS_R$, $MS_R$
+    -   Total: $SS_T$
+    
+I am using a book by Andy Field in a class I am teaching, and thought it would be good to see how he lays out the analysis of variance table. Unfortunately, he does not provide a table in the chapter on linear regression. IN a later chapter on analysis of variance, he does produce such a table, but the row labels only make sense when you have defined the analysis of variance model as something different from the  is different, 
 
-## Scatterplot of the data
+## So what, exactly is the analysis of variance table measuring
+
+-   Model/Regression: Explained variation (signal)
+-   Error/Residual: Unexplained variation (noise)
+-   Total/Corrected total: Total variation
+
+There is a relationship between the various sum of squares. The sum of squares for the model or regression represents explained variation. The sum of squares for error or residual represents unexplained variation. The two combined add up to the sum of squares total or total variation. The relative size of explained versus unexplained variation indicates whether there is a strong relationship, a weak relationship, or little or no relationship between the independent and dependent variable. Let's see what this means with a few graphs and a few calculations.
+
+You can also think of the sum of squares for the model as the signal and the sum of squares for error as the noise. The total variation in your data is partitioned into variation associated with the signal and variation associated with noise.
+
+## Scatterplot of the hypothetical data
 
 ```{r}
 #| label: scatter
@@ -105,20 +159,18 @@ define_graph <- function(p0) {
     scale_x_continuous(breaks=2*(0:10))
 }
 
-dat |>
+hypothetical |>
   ggplot() +
   aes(x, y) -> p0
 
 p0 |> define_graph() -> p1
 p1 + geom_point()
 
-dat |>
+hypothetical |>
   ggplot() +
   aes(x, y=30-x) -> q0
 
 q0 |> define_graph() -> q1
-q1 + geom_point()
-
 ```
 
 In any linear regression model, even an artificial one like this, you should always display a graph. There appears to be a weak negative trend in the data.
@@ -150,11 +202,21 @@ plot_fit <- function(p1, b0, b1) {
   p1 +
     geom_segment(xend=x, yend=predicted) +
     geom_segment(x=0, y=b0, xend=20, yend=b0+b1*20) +
-    geom_label(x=x, y=y, label=y) +
-    geom_label(x=x, y=predicted, label=predicted) -> p2
+    geom_label(x=x, y=predicted, label=predicted) +
+    geom_label(x=x, y=y, label=y) -> p2
   
   plot(p2)
   return(data.frame(x, y, predicted, residual))
+}
+
+display_clean_table <- function(matrix_table) {
+  matrix_table |>
+    data.frame() |> 
+    gt() |> 
+    tab_style(
+      cell_text(align="center"), 
+      locations=cells_body()) |> 
+    tab_options(column_labels.hidden = TRUE)
 }
 
 calculate_ss <- function(y1, y2) {
@@ -235,7 +297,7 @@ You can do even better by changing to a negative slope. The line shown here has 
 ## Sum of squared residuals for an even better fit
 
 ```{r}
-#| label: best
+#| label: even-better-2
 
 calculate_ss(pf$y, pf$predicted)
 ```
@@ -247,37 +309,6 @@ It turns out that you can't do any better than this line. If you tried to get cl
 This is the least squares principle. The best line is one that is close to most of the data points. It minimizes the sum of squared residuals.
 
 
-## Comparisons
-
-```{r}
-yi <- c("Y₁", "Y₂", "Y₃", "Y₄", "Y₅", "Y₆")
-
-yhat <- c("Ŷ₁", "Ŷ₂", "Ŷ₃", "Ŷ₄", "Ŷ₅", "Ŷ₆")
-
-ybar <- rep("Ȳ", 6)
-```
-
-```{r}
-#| label: plot-y
-
-p1 +
-  geom_label(label=pf$y)
-```
-
-```{r}
-#| label: plot-ybar
-
-p1 +
-  geom_label(y=rep(mean(y), 6), label=mean(y))
-```
-
-```{r}
-#| label: plot-yhat
-
-p1 +
-  geom_label(y=pf$predicted, label=pf$predicted)
-```
-
 ## SS regression plot
 
 ```{r}
@@ -287,9 +318,9 @@ y <- 30 - x
 pf <- plot_fit(q1, 21, 0)
 ```
 
-Just to try to illustrate how linear regression works, I want to show some "trial and error" equations. The actual linear regression algorithm jumps immediately to the best equation, but let's start with a very bad guess.
+This plot shows the variation of the predicted values. You can think of this as a comparison of how far the predicted values for the estimated regression line deviates from a flat line. A flat line represents no signal.
 
-This graph illustrates what a line with an intercept of 20 and a slope of 1 would look like. Notice that it tends to be too high. Most of the residuals (the difference between the observed values and the values on the fitted line) are negative.
+If the regression line is very close to flat, this is evidence of a weak signal. A steep line (large positive or large negative slope) is evidence of a strong signal.
 
 ## SS regression calculations
 
@@ -299,14 +330,36 @@ This graph illustrates what a line with an intercept of 20 and a slope of 1 woul
 calculate_ss(pf$y, pf$predicted)
 ```
 
+This shows the actual calculation of the sum of squares for the model.
+
+You might ask. Is this value small (indicating a weak signal), or large (indicating a strong signal). To answer this question, you need to compare the variation in the predicted values or the variation in the signal to something else.
+
+## SS regression in the analysis of variance table
+
+```{r}
+#| label: table-1
+
+anova_table <- matrix(" ", nrow=4, ncol=6)
+anova_table[1, 2:6] <- c("SS", "df", "MS", "F", "p-value")
+anova_table[2:4, 1] <- c("Model", "Residual", "Total")
+anova_table[2, 2] <- "70"
+
+anova_table |>
+  display_clean_table()
+```
+
+You place the sum of squares regression in the first row, first column.
+
 ## SS total plot
 
 ```{r}
 #| label: ss-total-1
 
-y <- dat$y
+y <- hypothetical$y
 pf <- plot_fit(p1, 21, 0)
 ```
+
+To compute the sum of squares total, you compare the observed data to a flat line. These
 
 ## SS total calculations
 
@@ -316,20 +369,173 @@ pf <- plot_fit(p1, 21, 0)
 calculate_ss(pf$y, pf$predicted)
 ```
 
-## Calculate R-squared
+There is a lot of variation in the observed values, much more than the variation in the predicted values.
 
-## SS error plot
+## SS total in the analysis of variance table
 
 ```{r}
-#| ss-error-1
+#| label: table-2
+
+anova_table[4, 2] <- "646"
+
+anova_table |>
+  display_clean_table()
+```
+
+You place the sum of squares total in the third row, first column.
+
+## Calculate R-squared
+
+-   $R^2=\frac{SS_M}{SS_T}=\frac{70}{646}=0.108$
+
+The sum of squares total is always larger than the sum of squares model. Sum of squares total represents variation both explained and unexplained. The ratio of sum of squares model to sum of squares total represents the proportion of explained variation. It is denoted by the symbol $R^2$.
+
+In the hypothetical model, you look at the ratio of 70 to 646, which is 0.108. You interpret this as a weak relationship. A regression model using X to predict Y can only explain about 11% of the variation in Y.
+
+## SS residual plot
+
+```{r}
+#| label: ss-error-1
 
 pf <- plot_fit(p1, 30, -1)
 ```
 
-## SS error calculations
+The other sum of squares is the sum of squares for error or residuals. It represents the deviation of the observed values to the predicted values.
+
+## SS residual calculations
 
 ```{r}
-#| ss-error-2
+#| label: ss-error-2
 
 calculate_ss(pf$y, pf$predicted)
 ```
+
+## SS residual in the analysis of variance table
+
+```{r}
+#| label: table-3
+
+anova_table[3, 2] <- "576"
+
+anova_table |>
+  display_clean_table()
+```
+
+You place the sum of squares residual in the second row, first column.
+
+Notice how the sum of squares add up. Explained variation (SS model) plus unexplained variation (SS residual) equals total variation (SS total).
+
+## Additive relationship among the sum of squares
+
+$\begin{matrix}
+Model & \Sigma(\hat{Y}_i-\bar{Y})^2 & \Sigma(Predicted_i-Mean)^2\ & Signal/Explained\ variation\\
+Residual & \Sigma(Y_i-\hat{Y}_i)^2 & \Sigma(Observed_i-Predicted_i)^2 & Noise/Unexplained\ variation\\
+Total & \Sigma(Y_i-\bar{Y})^2 & \Sigma(Observed_i-Mean)^2 & Total\ variation
+\end{matrix}$
+
+## df model
+
+-   $df_M$ = number of independent variables
+
+```{r}
+#| label: table-4
+
+anova_table[2, 3] <- "1"
+
+anova_table |>
+  display_clean_table()
+```
+
+The degrees of freedom represents the amount of data that is contributing to the various sum of squares quantities. The degrees of freedm is equal to the number of independent variables. In our example, there is only one independent variable, x, so the degrees of freedom associaton with the sum of squares model is 1.
+
+## df total
+
+-   $df_T$ = number of independent variables
+
+```{r}
+#| label: table-5
+
+anova_table[4, 3] <- "5"
+
+anova_table |>
+  display_clean_table()
+```
+
+The degrees of freedom for the total sum of squares is equal ton the number of observations minus 1. You lose a degree of freedom because this sum of squares includes an estimate of the mean.
+
+## df residual
+
+-   $df_R$ = number of observations - number of independent variables - 1
+
+```{r}
+#| label: table-6
+
+anova_table[3, 3] <- "4"
+
+anova_table |>
+  display_clean_table()
+```
+
+The degrees of freedom for the residuals or error with a loss of a degree of freedom for each independent variable and a loss of another degree of freedom for the estimated intercept.
+
+Notice how the degrees of freedom add up.
+
+## Mean square calculations, 1
+
+-  $MS_M$ = $SS_M$ / $df_M$
+
+```{r}
+#| label: table-7
+
+anova_table[2, 4] <- "70"
+
+anova_table |>
+  display_clean_table()
+```
+
+## Mean square calculations, 2
+
+-  $MS_R$ = $SS_R$ / $df_R$
+
+```{r}
+#| label: table-8
+
+anova_table[3, 4] <- "144"
+
+anova_table |>
+  display_clean_table()
+```
+
+## F ratio
+
+-   F = $MS_M$ / $MS_R$
+-   Tests the hypothesis
+    -   $H_0:\ \beta_1=0$
+    -   Accept $H_0$ if F is close to 1
+    -   Reject $H_0$ if F is much larger than 1    
+
+```{r}
+#| label: table-9
+
+anova_table[2, 5] <- "0.49"
+
+anova_table |>
+  display_clean_table()
+```
+
+## p-value
+
+-   Tests the hypothesis
+    -   $H_0:\ \beta_1=0$
+    -   Accept $H_0$ if p-value is large
+    -   Reject $H_0$ if p-value is small
+
+```{r}
+#| label: table-10
+
+anova_table[2, 6] <- "0.524"
+
+anova_table |>
+  display_clean_table()
+```
+
