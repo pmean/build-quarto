@@ -124,6 +124,12 @@ If you select General Linear Model, you get six rows. You only need three, but f
 
 The first column is labeled "Type III Sum of Squares". The "Type III" is not important in this example, but becomes important when you have multiple independent variables. The rest of the columns match the other SPSS analysis of variance table.
 
+## Keeping only the important rows
+
+![](http://pmean.com/new-images/25/anova-table-04.png)
+
+It is easy to remove rows from a table in SPSS. Here is what the table would look like without rows 2, 3, and 5. This table deliberately kept the blank rows visible, but you can easily tighten things up by suppressing the blank rows entirely.
+
 ## Analysis of variance by Andy Field
 
 -   Does not arrange sums of squares into a table
