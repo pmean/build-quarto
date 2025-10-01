@@ -499,6 +499,8 @@ anova_table |>
   display_clean_table()
 ```
 
+The mean square column is just the sum of squares column divided by the degrees of freedom column. In a linear regression analysis with only one independent variable, there 
+
 ## Mean square calculations, 2
 
 -  $MS_R$ = $SS_R$ / $df_R$
@@ -511,6 +513,10 @@ anova_table[3, 4] <- "144"
 anova_table |>
   display_clean_table()
 ```
+
+Do the same calculation for mean square residual by dividing the sum of squares residual by the degrees of freedom for the residual.
+
+although you could do a similar calculation for the total row, dividing the sum of squares total by the degrees of freedom total, this is not normally done. Leave this spot in the analysis of variance table blank.
 
 ## F ratio
 
@@ -529,6 +535,10 @@ anova_table |>
   display_clean_table()
 ```
 
+The F-ratio is the mean square model divided by the mean square residual. This ratio tests the null hypothesis that $\beta_1$ equals zero.
+
+If the mean square model is about equal to the mean square residual, the F-ratio is close to one. This is evidence that the signal, if there is one, is being swamped by the noise. A large F-ratio tells you that the signal stands out prominently relative to the noise in the data.
+
 ## p-value
 
 -   Tests the hypothesis
@@ -545,3 +555,52 @@ anova_table |>
   display_clean_table()
 ```
 
+The p-value provides an alternative way to test the null hypothesis. You should accept the null hypothesis if the p-value is large.
+
+## Reminder: what is the population model?
+
+```{r}
+#| label: population
+
+population <- data.frame(
+  x=runif(1000, min=2, max=18),
+  y=rnorm(1000, mean=22, sd=5),
+  grp="Population")
+
+hypothetical |>
+  mutate(grp="Sample") |>
+  bind_rows(population) |>
+  arrange(desc(grp)) |>
+  ggplot() +
+  aes(x, y, color=factor(grp)) -> p2
+
+p2 |> 
+  define_graph() +
+  geom_point(size=2) + 
+  scale_color_manual(values=c("gray", "black")) +
+  geom_segment(x=0, y=22, xend=22, yend=22, color="gray", linewidth=2) +
+  geom_segment(x=0, y=30, xend=20, yend=10, color="black", linewidth=2)
+```
+
+This is a hypothetical dataset and it represents a sample of 6 hypothetical patients. I am showing, hypothetically, what the population that this sample was drawn from might look like.
+
+The points in black represent the sample and the points in gray represent the population. Notice how much bigger the population is!
+
+The line in black represents the regression line that you would estimate based on the sample of 6 patients. The line in gray represents the regression line that you would estimate based on the population.
+
+Notice that the two lines disagree and this is to be expected. A sample is a subset of a population and even if it is selected without any bias, there will still be a difference between the results of the sample and the results in the population. This is sampling error.
+
+Notice how the gray line is flat. It is showing no relationship between X and Y, even though there is a negative relationship (admittedly a weak negative relationship) when you look just at the sample.
+
+## What is the difference between R-squared and the F-ratio?
+
+-   R-squared measures strength of the relationship
+    -   R-squared > 0.5 implies a strong relationship
+-   F-ratio measures statistical evidence of a relationship.
+    -   A large F-ratio implies lots of evidence of a relationship
+    -   It could be a strong relationship with a small sample size
+    -   it could also be a weak relationship with a large sample size
+-   R-squared is purely descriptive
+    -   R-squared does not change as the sample size increases
+-   F-ratio is inferential
+    -   F-ratio increases as the sample size increases (if there is indeed a relationship of any strength)
