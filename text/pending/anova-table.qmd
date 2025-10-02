@@ -1,5 +1,5 @@
 ---
-title: "New quarto program"
+title: "The analysis of variance table in a linear regression model"
 author: "Steve Simon"
 source: new
 date: "2025-09-25"
@@ -516,7 +516,7 @@ anova_table |>
 
 Do the same calculation for mean square residual by dividing the sum of squares residual by the degrees of freedom for the residual.
 
-although you could do a similar calculation for the total row, dividing the sum of squares total by the degrees of freedom total, this is not normally done. Leave this spot in the analysis of variance table blank.
+Although you could do a similar calculation for the total row, dividing the sum of squares total by the degrees of freedom total, this is not normally done. Leave this spot in the analysis of variance table blank.
 
 ## F ratio
 
@@ -595,7 +595,6 @@ Notice how the gray line is flat. It is showing no relationship between X and Y,
 ## What is the difference between R-squared and the F-ratio?
 
 -   R-squared measures strength of the relationship
-    -   R-squared > 0.5 implies a strong relationship
 -   F-ratio measures statistical evidence of a relationship.
     -   A large F-ratio implies lots of evidence of a relationship
     -   It could be a strong relationship with a small sample size
@@ -604,3 +603,11 @@ Notice how the gray line is flat. It is showing no relationship between X and Y,
     -   R-squared does not change as the sample size increases
 -   F-ratio is inferential
     -   F-ratio increases as the sample size increases (if there is indeed a relationship of any strength)
+    
+Although it seems like R-squared and the F-ratio are just different measures of the same thing, there are some important differences.
+
+R squared measures the strength of the relationship. A value larger than 0.5 implies a strong relationship. A value between 0.1 and 0.5 implies a weak relationship. A value less than 0.1 implies little or no relationship.
+
+The R-ratio measures evidence of a relationship. A large F-ratio implies lots of evidence of a relationship. This could be a strong relationship even if found with a small sample size. It could just as easily be a weak relationship if found with a large enough sample size.
+
+R-squared is purely descriptive. It does not change much as the sample size increases. In contrast, the F-ratio is inferential. As your sample size increases, the F-ratio also increases, assuming that there is indeed a relationship between the dependent and independent variables.
