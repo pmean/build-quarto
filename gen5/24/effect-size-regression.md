@@ -4,8 +4,7 @@ source: "New"
 author: Steve Simon
 date: 2024-07-08
 categories:
-- Blog post
-tags:
+- "*Blog post"
 - Analysis of variance
 - Linear regression
 output: html_document

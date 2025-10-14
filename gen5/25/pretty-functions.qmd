@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - 2025
 - R programming
-- uses R code
+- Uses R code
 output: html_document
 page_update: complete
 ---

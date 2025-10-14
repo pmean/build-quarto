@@ -8,7 +8,7 @@ categories:
 - 2024
 - Missing data
 - R programming
-- Using R code
+- Uses R code
 output: html_document
 page_update: complete
 ---
@@ -146,7 +146,7 @@ The key variable here is i_female, which shows how much different the log odds o
 Notice that the estimate for sexmale changes from one analysis to another, though not by much.
 
 ```{r}
-#| analysis-2
+#| label: analysis-2
 
 ti_with$analyses[[2]]
 ti_with$analyses[[3]]
@@ -157,7 +157,7 @@ ti_with$analyses[[5]]
 Combine all these analyses with the pool function.
 
 ```{r}
-#| pool-1
+#| label: pool-1
 
 ti_pool <- pool(ti_with)
 ti_summary <- summary(ti_pool)

@@ -6,8 +6,9 @@ date: "2025-02-11"
 categories:
 - "*Blog post"
 - 2025
+- Data management
 - R programming
-- uses R code
+- Uses R code
 output: html_document
 page_update: complete
 execute:
@@ -127,7 +128,7 @@ So count implicitly uses the .groups="drop" argument, which is not the default w
 The count function does not have a .groups argument. If you wanted to do something effectively the same as .groups="drop_last" you just need to insert group_by statement after count.
 
 ```{r}
-#| label" count-3
+#| label: count-3
 
 penguins |>
   filter(!is.na(sex)) |>

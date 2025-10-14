@@ -4,8 +4,7 @@ author: "Steve Simon"
 source: new
 date: "2025-09-25"
 categories:
-- Blog post
-tags:
+- "*Blog post"
 - Linear regression
 format: 
   html:
@@ -137,7 +136,7 @@ It is easy to remove rows from a table in SPSS. Here is what the table would loo
     -   Residual: $SS_R$, $MS_R$
     -   Total: $SS_T$
     
-I am using a book by Andy Field in a class I am teaching, and thought it would be good to see how he lays out the analysis of variance table. Unfortunately, he does not provide a table in the chapter on linear regression. IN a later chapter on analysis of variance, he does produce such a table, but the row labels only make sense when you have defined the analysis of variance model as something different from the  is different, 
+I am using a book by Andy Field in a class I am teaching, and thought it would be good to see how he lays out the analysis of variance table. Unfortunately, he does not provide a table in the chapter on linear regression. In a later chapter on analysis of variance, he does produce such a table, but the row labels only make sense when you have defined the analysis of variance model as something different from the linear regression model. More on that in a separate webpage, maybe.
 
 ## So what, exactly is the analysis of variance table measuring
 
@@ -365,7 +364,7 @@ y <- hypothetical$y
 pf <- plot_fit(p1, 21, 0)
 ```
 
-To compute the sum of squares total, you compare the observed data to a flat line. These
+To compute the sum of squares total, you compare the observed data to a flat line.
 
 ## SS total calculations
 
@@ -467,7 +466,7 @@ anova_table |>
   display_clean_table()
 ```
 
-The degrees of freedom for the total sum of squares is equal ton the number of observations minus 1. You lose a degree of freedom because this sum of squares includes an estimate of the mean.
+The degrees of freedom for the total sum of squares is equal to the number of observations minus 1. You lose a degree of freedom because this sum of squares includes an estimate of the mean.
 
 ## df residual
 
@@ -499,7 +498,7 @@ anova_table |>
   display_clean_table()
 ```
 
-The mean square column is just the sum of squares column divided by the degrees of freedom column. In a linear regression analysis with only one independent variable, there 
+The mean square column is just the sum of squares column divided by the degrees of freedom column. In a linear regression analysis with only one independent variable, there is no difference between $SS_M$ and $MS_M$. This will change when you have multiple independent variables.
 
 ## Mean square calculations, 2
 
@@ -539,6 +538,8 @@ The F-ratio is the mean square model divided by the mean square residual. This r
 
 If the mean square model is about equal to the mean square residual, the F-ratio is close to one. This is evidence that the signal, if there is one, is being swamped by the noise. A large F-ratio tells you that the signal stands out prominently relative to the noise in the data.
 
+Place the F-ratio in the fourth column, first row. Nothing goes in any of the other spots in the fourth column, at least for a linear regression with only one independent variable.
+
 ## p-value
 
 -   Tests the hypothesis
@@ -556,6 +557,8 @@ anova_table |>
 ```
 
 The p-value provides an alternative way to test the null hypothesis. You should accept the null hypothesis if the p-value is large.
+
+Place the p-value in the last column, first row. Nothing goes in any of the other spots in the last column, at least for a linear regression with only one independent variable.
 
 ## Reminder: what is the population model?
 
