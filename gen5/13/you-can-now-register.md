@@ -6,7 +6,7 @@ date: "2013-11-30"
 categories:
 - "*Blog post"
 - 2013
-- Obsolete post
+- Obsolete page
 output: html_document
 page_update: complete
 ---
@@ -22,7 +22,6 @@ your brain to make room for this new stuff. I'm currently dumping all my
 knowledge of IBM JCL. Anyway, I just turned on the option that allows
 users to register. You need to register before you can leave comments on
 my blog.
-
  
 Earlier versions are [here][sim1] and [here][sim2].
  

@@ -6,7 +6,7 @@ date: 2000-01-01
 categories:
 - "*Blog post"
 - 2000
-- Obsolete pages
+- Obsolete page
 - Website details
 output: html_document
 page_update: partial

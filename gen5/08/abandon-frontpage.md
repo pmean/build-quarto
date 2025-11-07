@@ -6,7 +6,7 @@ date: 2008-07-24
 categories:
 - "*Blog post"
 - 2008
-- Obsolete pages
+- Obsolete page
 - Website details
 output: html_document
 page_update: no

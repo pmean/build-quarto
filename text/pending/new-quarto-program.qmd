@@ -6,7 +6,7 @@ date: "20xx-xx-xx"
 categories:
 - Blog post
 tags:
-- Graphical display
+- Incomplete page
 format: 
   html:
     embed-resources: true

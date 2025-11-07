@@ -5,7 +5,7 @@ date: "2021-11-27"
 categories:
 - "*Blog post"
 - 2021
-- Linear regressioN
+- Linear regression
 output: html_document
 page_update: complete
 ---

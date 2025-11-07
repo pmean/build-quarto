@@ -6,7 +6,7 @@ date: "2013-11-27"
 categories:
 - "*Blog post"
 - 2013
-- Obsolete pages
+- Obsolete page
 output: html_document
 page_update: complete
 ---

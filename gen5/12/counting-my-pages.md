@@ -6,7 +6,7 @@ date: 2012-07-03
 categories:
 - "*Blog post"
 - 2012
-- Obsolete pages
+- Obsolete page
 output: html_document
 page_update: complete
 ---
