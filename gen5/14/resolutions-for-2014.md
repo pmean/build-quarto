@@ -6,7 +6,7 @@ date: "2014-01-07"
 categories:
 - "*Blog post"
 - 2014
-- website details
+- Website details
 output: html_document
 page_update: complete
 ---

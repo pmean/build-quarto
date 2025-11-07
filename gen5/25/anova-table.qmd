@@ -1,11 +1,10 @@
 ---
-title: "New quarto program"
+title: "The analysis of variance table in a linear regression model"
 author: "Steve Simon"
 source: new
 date: "2025-09-25"
 categories:
-- Blog post
-tags:
+- "*Blog post"
 - Linear regression
 format: 
   html:
@@ -124,6 +123,12 @@ If you select General Linear Model, you get six rows. You only need three, but f
 
 The first column is labeled "Type III Sum of Squares". The "Type III" is not important in this example, but becomes important when you have multiple independent variables. The rest of the columns match the other SPSS analysis of variance table.
 
+## Keeping only the important rows
+
+![](http://pmean.com/new-images/25/anova-table-04.png)
+
+It is easy to remove rows from a table in SPSS. Here is what the table would look like without rows 2, 3, and 5. This table deliberately kept the blank rows visible, but you can easily tighten things up by suppressing the blank rows entirely.
+
 ## Analysis of variance by Andy Field
 
 -   Does not arrange sums of squares into a table
@@ -131,7 +136,7 @@ The first column is labeled "Type III Sum of Squares". The "Type III" is not imp
     -   Residual: $SS_R$, $MS_R$
     -   Total: $SS_T$
     
-I am using a book by Andy Field in a class I am teaching, and thought it would be good to see how he lays out the analysis of variance table. Unfortunately, he does not provide a table in the chapter on linear regression. IN a later chapter on analysis of variance, he does produce such a table, but the row labels only make sense when you have defined the analysis of variance model as something different from the  is different, 
+I am using a book by Andy Field in a class I am teaching, and thought it would be good to see how he lays out the analysis of variance table. Unfortunately, he does not provide a table in the chapter on linear regression. In a later chapter on analysis of variance, he does produce such a table, but the row labels only make sense when you have defined the analysis of variance model as something different from the linear regression model. More on that in a separate webpage, maybe.
 
 ## So what, exactly is the analysis of variance table measuring
 
@@ -359,7 +364,7 @@ y <- hypothetical$y
 pf <- plot_fit(p1, 21, 0)
 ```
 
-To compute the sum of squares total, you compare the observed data to a flat line. These
+To compute the sum of squares total, you compare the observed data to a flat line.
 
 ## SS total calculations
 
@@ -461,7 +466,7 @@ anova_table |>
   display_clean_table()
 ```
 
-The degrees of freedom for the total sum of squares is equal ton the number of observations minus 1. You lose a degree of freedom because this sum of squares includes an estimate of the mean.
+The degrees of freedom for the total sum of squares is equal to the number of observations minus 1. You lose a degree of freedom because this sum of squares includes an estimate of the mean.
 
 ## df residual
 
@@ -493,7 +498,7 @@ anova_table |>
   display_clean_table()
 ```
 
-The mean square column is just the sum of squares column divided by the degrees of freedom column. In a linear regression analysis with only one independent variable, there 
+The mean square column is just the sum of squares column divided by the degrees of freedom column. In a linear regression analysis with only one independent variable, there is no difference between $SS_M$ and $MS_M$. This will change when you have multiple independent variables.
 
 ## Mean square calculations, 2
 
@@ -510,7 +515,7 @@ anova_table |>
 
 Do the same calculation for mean square residual by dividing the sum of squares residual by the degrees of freedom for the residual.
 
-although you could do a similar calculation for the total row, dividing the sum of squares total by the degrees of freedom total, this is not normally done. Leave this spot in the analysis of variance table blank.
+Although you could do a similar calculation for the total row, dividing the sum of squares total by the degrees of freedom total, this is not normally done. Leave this spot in the analysis of variance table blank.
 
 ## F ratio
 
@@ -533,6 +538,8 @@ The F-ratio is the mean square model divided by the mean square residual. This r
 
 If the mean square model is about equal to the mean square residual, the F-ratio is close to one. This is evidence that the signal, if there is one, is being swamped by the noise. A large F-ratio tells you that the signal stands out prominently relative to the noise in the data.
 
+Place the F-ratio in the fourth column, first row. Nothing goes in any of the other spots in the fourth column, at least for a linear regression with only one independent variable.
+
 ## p-value
 
 -   Tests the hypothesis
@@ -550,6 +557,8 @@ anova_table |>
 ```
 
 The p-value provides an alternative way to test the null hypothesis. You should accept the null hypothesis if the p-value is large.
+
+Place the p-value in the last column, first row. Nothing goes in any of the other spots in the last column, at least for a linear regression with only one independent variable.
 
 ## Reminder: what is the population model?
 
@@ -589,7 +598,6 @@ Notice how the gray line is flat. It is showing no relationship between X and Y,
 ## What is the difference between R-squared and the F-ratio?
 
 -   R-squared measures strength of the relationship
-    -   R-squared > 0.5 implies a strong relationship
 -   F-ratio measures statistical evidence of a relationship.
     -   A large F-ratio implies lots of evidence of a relationship
     -   It could be a strong relationship with a small sample size
@@ -598,3 +606,11 @@ Notice how the gray line is flat. It is showing no relationship between X and Y,
     -   R-squared does not change as the sample size increases
 -   F-ratio is inferential
     -   F-ratio increases as the sample size increases (if there is indeed a relationship of any strength)
+    
+Although it seems like R-squared and the F-ratio are just different measures of the same thing, there are some important differences.
+
+R squared measures the strength of the relationship. A value larger than 0.5 implies a strong relationship. A value between 0.1 and 0.5 implies a weak relationship. A value less than 0.1 implies little or no relationship.
+
+The R-ratio measures evidence of a relationship. A large F-ratio implies lots of evidence of a relationship. This could be a strong relationship even if found with a small sample size. It could just as easily be a weak relationship if found with a large enough sample size.
+
+R-squared is purely descriptive. It does not change much as the sample size increases. In contrast, the F-ratio is inferential. As your sample size increases, the F-ratio also increases, assuming that there is indeed a relationship between the dependent and independent variables.

@@ -58,12 +58,33 @@ loop_folders <- function(folder_name) {
   for (ext in movable_extensions) {
     file_list <- c(file_list, identify_files(folder_name, ext))
   }
-  if (length(file_list) == 0) return("---{folder_name} No files found")
   for (file_name in file_list) {
     sweep_files(folder_name, file_name)
   }
+  if (length(file_list) == 0) file_list <- "No files found"
   return(glue("---{folder_name} {file_list}"))
 }
+```
+
+## gen5 folders
+
+```{r}
+#| label: gen5-folders
+
+folder_list <- paste0("../gen5/", z100[c(99, 100, 1:25)])
+for (folder_name in folder_list) {
+  loop_results <- loop_folders(folder_name)
+  cat(loop_results, sep="\n")
+}
+
+```
+
+## src folder
+
+```{r}
+#| label: src-folder
+
+loop_folders("../src")
 ```
 
 ## text folders
@@ -79,10 +100,3 @@ for (folder_name in folder_list) {
 
 ```
 
-## src folder
-
-```{r}
-#| label: src-folder
-
-loop_folders("../src")
-```

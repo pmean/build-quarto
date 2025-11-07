@@ -5,7 +5,7 @@ date: "2021-10-18"
 categories:
 - "*Recommendation"
 - 2021
-- writing research papers
+- Writing research papers
 output: html_document
 page_update: complete
 ---

@@ -1,0 +1,163 @@
+---
+title: "Influence diagnostics in a linear regression model"
+author: "Steve Simon"
+source: new
+date: "2025-10-02"
+categories:
+- Blog post
+tags:
+- Linear regression
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: false
+  echo: false
+page_update: complete
+---
+
+There are four important assumptions in linear regression: normality, homogeneity, linearity, independence. You assess these assumptions with various plots of the residuals. In addition to checking those assumptions, you should also assess various influence diagnostics. Influence diagnostics measure how much your linear regression model is dependent on any one data point.
+
+If you find out that one point out of many influences your model, that is not a violation of assumptions. Rather, it becomes the focus of further investigation.
+
+<!---more--->
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(glue)
+library(gt)
+library(tidyverse)
+```
+
+
+```{r}
+#| label: create
+
+fn <- "https://raw.githubusercontent.com/pmean/data/refs/heads/main/files/hypothetical-regression.csv"
+read_csv(
+  fn, 
+  col_names=TRUE,
+  col_types="nn") |>
+  mutate(predicted=30-x) |>
+  mutate(flat=mean(y)) -> hypothetical
+```
+
+## The artificial dataset
+
+```{r}
+#| label: print
+
+hypothetical |> select(x, y)
+```
+
+Most of the time, I try to avoid using artificial datasets. I am making an exception here because I want to show the internal calculations using numbers that are easy to work with.
+
+There are two variables with generic names, x and y. Treat x as the independent variable and y as the dependent variable. There is nothing unusual about this data. I want to examine how the regression line changes when you remove a data point. It is somewhat reminiscent of the song "You're Gonna Miss Me When I'm Gone." This a song Anna Kendrick was sung by Anna Kendrick in Pitch Perfect that include some clever percussion with an empty cup. The original song actually goes all the way back to 1931. In any case, most data points in a linear regression aren't missed if they are removed. But in a few cases, a point can be missed when the  regression line jumps after that point is removed.
+
+## Scatterplot of the hypothetical data
+
+```{r}
+#| label: scatter
+
+define_graph <- function(d0) {
+  d0 |> 
+    ggplot() +
+    aes(x, y) +
+    expand_limits(x=c(0, 20), y=c(0, 40)) +
+    labs(
+      x=" ",
+      y=" ",
+      caption="Simon 2025-09-25, CC0") +
+    geom_point(size=2) +
+    geom_segment(x=4, y=26, xend=14, yend=16) +
+    scale_y_continuous(breaks=4*(0:10)) +
+    scale_x_continuous(breaks=2*(0:10))
+}
+
+hypothetical |>
+  define_graph()
+```
+
+Here is a plot of the data with the least squares line. There is a weak negative trend.
+
+```{r}
+#| label: function
+
+delete_point <- function(i) {
+  xminus <- hypothetical$x[i]
+  yminus <- hypothetical$y[i]
+
+  hypothetical |>
+    slice(-i) |>
+    lm(y ~ x, data=_) |>
+    coef() -> b
+
+  hypothetical |>
+    define_graph() +
+    geom_text(x=xminus, y=yminus, label="X", color="red") +
+    geom_segment(x=4, y=b[1]+b[2]*4, xend=14, yend=b[1]+b[2]*14, color="red")
+}
+```
+
+## Deleting the first point
+
+```{r}
+#| label: first
+
+delete_point(1)
+```
+
+There is a big change in the predictions when the first data point is removed. A data point is characterized as influential if it is missed when it is gone
+
+## Deleting the second point
+
+```{r}
+#| label: second
+
+delete_point(2)
+```
+
+Ther regression line changes much less after the second data point is removed. This is also true for the third and fourth data points are removed.
+
+## Deleting the third point
+
+```{r}
+#| label: third
+
+delete_point(3)
+```
+
+## Deleting the fourth point
+
+
+```{r}
+#| label: fourth
+
+delete_point(4)
+```
+
+## Deleting the fifth point
+
+```{r}
+#| label: fifth
+
+delete_point(5)
+```
+
+Like the first data point, the fifth data point is influential because of the large jump in the regression line.
+
+## Deleting the sixth point
+
+```{r}
+#| label: sixth
+
+delete_point(6)
+```
+
+The sixth data point is also influential.
+
+## What makes a point influential?

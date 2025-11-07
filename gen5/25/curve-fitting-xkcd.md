@@ -3,8 +3,8 @@ title: "Curve fitting - xkcd"
 source: "New"
 author: Steve Simon
 date: "2025-04-13"
-categories: Recommendation
-tags:
+categories: 
+- "*Recommendation"
 - Linear regression
 output: html_document
 page_update: no

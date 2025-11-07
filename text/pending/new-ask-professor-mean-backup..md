@@ -1,18 +1,25 @@
 ---
-title: New post
+title: New Ask Professor Mean
 source: "New"
 author: Steve Simon
 date: 2025-xx-xx
 categories: 
 - "*Blog post"
 - 2025
+- Ask Professor Mean
 - Being updated
 output: html_document
 page_update: no
 ---
 
-Here is a brief abstract.
+Dear Professor Mean,
+
+*Place question here.* 
+
+Loyal Reader
 
 <!---more--->
 
-Here are more details.
+Dear Reader,
+
+Here is my response.

@@ -4,8 +4,7 @@ author: "Steve Simon"
 source: new
 date: "2025-04-09"
 categories:
-- Blog post
-tags:
+- "*Blog post"
 - R programming
 format: 
   html:

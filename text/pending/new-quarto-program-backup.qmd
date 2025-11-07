@@ -2,10 +2,11 @@
 title: "New quarto program"
 author: "Steve Simon"
 source: new
-date: "20xx-xx-xx"
+date: "2025-xx-xx"
 categories:
-- Blog post
 tags:
+- "*Blog post"
+- 2025
 - Incomplete page
 format: 
   html:

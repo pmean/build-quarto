@@ -8,7 +8,7 @@ categories:
 - 2024
 - Nonlinear regression
 - R programming
-- Using R code
+- Uses R code
 output: html_document
 page_update: complete
 ---

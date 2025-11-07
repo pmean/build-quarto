@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - 2005
 - Being updated
-- Teaching Resources
+- Teaching resources
 output: html_document
 page_update: partial
 ---

@@ -6,7 +6,7 @@ date: 2010-02-11
 categories:
 - "*Blog post"
 - 2010
-- Systematic overview
+- Systematic overviews
 output: html_document
 page_update: partial
 ---

@@ -2,9 +2,10 @@
 title: New post
 source: "New"
 author: Steve Simon
-date: 20xx-xx-xx
+date: 2025-xx-xx
 categories: 
 - "*Blog post"
+- 2025
 - Being updated
 output: html_document
 page_update: no

@@ -3,8 +3,8 @@ title: "regressinator: Simulate and Diagnose (Generalized) Linear Models"
 source: "New"
 author: Steve Simon
 date: "2025-08-03"
-categories: Recommendation
-tags:
+categories:
+- "*Recommendation"
 - Simulation
 output: html_document
 page_update: no
