@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/recommended-philosophy-news-network-postmodernism
 date: "2018-01-02"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Critical appraisal
 output: html_document
 page_update: partial

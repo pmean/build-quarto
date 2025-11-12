@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/bayesian-meta-analysis/"
 date: "2018-07-05"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Bayesian statistics
 - Systematic overviews
 output: html_document

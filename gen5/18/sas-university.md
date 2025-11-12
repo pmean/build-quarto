@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/sas-university/"
 date: "2018-01-12"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - SAS software
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/fighting-sasism/"
 date: "2018-10-30"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - R software
 - SAS software
 output: html_document

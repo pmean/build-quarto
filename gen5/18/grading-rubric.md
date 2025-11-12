@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/grading-rubric/"
 date: "2018-07-20"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Statistical computing
 - Teaching resources
 output: html_document

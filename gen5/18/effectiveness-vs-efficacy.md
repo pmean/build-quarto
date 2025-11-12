@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/effectiveness-vs-efficacy/"
 date: "2018-03-01"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Critical appraisal
 output: html_document
 page_update: partial

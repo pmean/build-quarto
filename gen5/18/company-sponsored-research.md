@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/company-sponsored-research/"
 date: "2018-03-27"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Writing research papers
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/short-bio/"
 date: "2018-03-23"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Professional details
 output: html_document
 page_update: partial

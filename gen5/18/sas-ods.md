@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/sas-ods/"
 date: "2018-03-23"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - SAS software
 output: html_document
 page_update: partial

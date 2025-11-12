@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/mixed-up-names/"
 date: "2018-02-26"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - SAS software
 output: html_document
 page_update: partial

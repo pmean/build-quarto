@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/accessible-r-markdown/"
 date: "2018-10-23"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Incomplete page
 - R software
 - Teaching resources

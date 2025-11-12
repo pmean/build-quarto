@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/adjusted-survival-curves/"
 date: "2018-05-20"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - R software
 - Survival analysis
 output: html_document

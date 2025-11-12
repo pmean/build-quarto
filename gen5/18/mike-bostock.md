@@ -6,7 +6,7 @@ source: "http://blog.pmean.com/mike-bostock/"
 date: "2018-01-23"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Graphical display
 - Important statisticians
 output: html_document

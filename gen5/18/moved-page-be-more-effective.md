@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/be-more-effective/"
 date: "2018-01-22"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Human side of statistics
 output: html_document
 page_update: no

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/encyclopedia-of-big-data/"
 date: "2018-03-25"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Data science
 - Professional details
 output: html_document

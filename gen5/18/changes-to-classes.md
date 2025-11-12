@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/changes-to-classes/"
 date: "2018-03-21"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - R software
 - SAS software
 - SPSS software

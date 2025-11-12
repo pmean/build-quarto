@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/without-data/"
 date: "2018-02-09"
 categories: 
 - "*Quotation"
-- 2018
+- Year 2018
 - Quality improvement
 output: html_document
 page_update: partial

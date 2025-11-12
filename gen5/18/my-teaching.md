@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/my-teaching-interests-one-page/"
 date: "2018-04-02"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Professional details
 output: html_document
 page_update: partial

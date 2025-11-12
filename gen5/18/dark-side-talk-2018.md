@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/dark-side/"
 date: "2018-08-13"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Data science
 - Human side of statistics
 output: html_document

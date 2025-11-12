@@ -6,7 +6,7 @@ source: "http://blog.pmean.com/leaflet/"
 date: "2018-09-07"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Geocoding
 - Graphical display
 output: html_document

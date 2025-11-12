@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/smr-example/"
 date: "2018-12-11"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Epidemiology
 output: html_document
 page_update: complete

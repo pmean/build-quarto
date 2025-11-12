@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/jupyterlab/"
 date: "2018-09-07"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Integrated development environment
 output: html_document
 page_update: complete

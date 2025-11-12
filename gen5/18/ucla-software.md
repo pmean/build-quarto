@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ucla-software/"
 date: "2018-03-24"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - R software
 - SAS software
 - SPSS software

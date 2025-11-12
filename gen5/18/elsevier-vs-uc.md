@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/elsevier-vs-uc/"
 date: "2018-12-11"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Writing research papers
 output: html_document
 page_update: complete

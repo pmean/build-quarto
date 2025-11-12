@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/machine-learning-comparison/"
 date: "2018-04-03"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Data science
 output: html_document
 page_update: partial

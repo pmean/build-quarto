@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/excel-users/"
 date: "2018-12-29"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Data management
 - R software
 output: html_document

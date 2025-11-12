@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/consulting-webinars/"
 date: "2018-01-29"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Human side of statistics
 - Professional details
 output: html_document

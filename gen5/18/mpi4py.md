@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/mpi4py/"
 date: "2018-09-04"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Cluster computing
 output: html_document
 page_update: complete

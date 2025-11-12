@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2018-02-20"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - R software
 - Text mining
 output: html_document

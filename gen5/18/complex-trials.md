@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/complex-trials/"
 date: "2018-09-13"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Research design
 output: html_document
 page_update: complete

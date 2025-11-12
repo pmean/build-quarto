@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/applied-survival-analysis/"
 date: "2018-05-22"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Survival analysis
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/syllabus-r-2018a/"
 date: "2018-01-14"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - R software
 output: html_document
 page_update: partial

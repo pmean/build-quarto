@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/fix-the-ehr/"
 date: "2018-04-01"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Informatics
 output: html_document
 page_update: partial

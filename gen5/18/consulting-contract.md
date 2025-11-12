@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/consulting-contract/"
 date: "2018-06-24"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Human side of statistics
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/r-within-spss/"
 date: "2018-09-23"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - R software
 - SPSS software
 output: html_document

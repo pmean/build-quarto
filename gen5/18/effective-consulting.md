@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/effective-consulting/"
 date: "2018-07-10"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Human side of statistics
 output: html_document
 page_update: complete

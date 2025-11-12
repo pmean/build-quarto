@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/heron-i2b2-analytics/"
 date: "2018-03-29"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Informatics
 output: html_document
 page_update: partial

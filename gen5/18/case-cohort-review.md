@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/case-cohort-review/"
 date: "2018-07-20"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Research design
 output: html_document
 page_update: complete

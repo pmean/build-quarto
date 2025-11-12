@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/spam-data/"
 date: "2018-04-19"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Datasets
 output: html_document
 page_update: partial

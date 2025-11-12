@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/lightweight-latex/"
 date: "2018-04-05"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - R software
 - Reproducible research
 - Writing research papers

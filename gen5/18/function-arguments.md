@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/function-argumentsr/"
 date: "2018-02-04"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - R software
 output: html_document
 page_update: partial

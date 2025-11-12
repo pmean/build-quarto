@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/women-in-analytics/"
 date: "2018-02-28"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Important statisticians
 output: html_document
 page_update: partial

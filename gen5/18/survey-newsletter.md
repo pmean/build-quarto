@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/survey-newsletter/"
 date: "2018-01-30"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Survey design
 output: html_document
 page_update: partial

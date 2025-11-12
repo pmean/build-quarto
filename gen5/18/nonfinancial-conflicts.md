@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/nonfinancial-conflicts/"
 date: "2018-12-31"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Ethics in research
 output: html_document
 page_update: complete

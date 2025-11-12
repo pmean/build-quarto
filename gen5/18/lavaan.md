@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/lavaan/"
 date: "2018-09-07"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Structural Equation Modeling
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/budgeting-time/"
 date: "2018-05-17"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Human side of statistics
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/what-i-did/"
 date: "2018-09-19"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Professional details
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/pdf-accessibility/"
 date: "2018-07-03"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Teaching resources
 output: html_document
 page_update: complete

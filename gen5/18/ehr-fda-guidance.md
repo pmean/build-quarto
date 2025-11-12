@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ehr-fda-guidance/"
 date: "2018-09-13"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Electronic health records
 output: html_document
 page_update: complete

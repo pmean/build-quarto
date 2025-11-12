@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/cluster-hat/"
 date: "2018-09-01"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Cluster computing
 output: html_document
 page_update: complete

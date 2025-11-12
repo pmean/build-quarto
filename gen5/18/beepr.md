@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/beepr/"
 date: "2018-05-13"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - R software
 output: html_document
 page_update: partial

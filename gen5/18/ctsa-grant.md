@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ctsa-grant/"
 date: "2018-01-26"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Data science
 - R software
 - SQL

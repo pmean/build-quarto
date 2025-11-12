@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/data-dictionaries/"
 date: "2018-02-24"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Data management
 output: html_document
 page_update: partial

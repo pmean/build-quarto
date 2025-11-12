@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/interval-censored/"
 date: "2018-05-21"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - R software
 - Survival analysis
 output: html_document

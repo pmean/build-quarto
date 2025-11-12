@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/recommended-data-sharing-network-shrine/"
 date: "2018-04-10"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Informatics
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/reinhart-rogoff-error/"
 date: "2018-04-03"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Data management
 output: html_document
 page_update: partial

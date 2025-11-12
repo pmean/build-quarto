@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/spark-pi/"
 date: "2018-10-23"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Cluster computing
 output: html_document
 page_update: complete

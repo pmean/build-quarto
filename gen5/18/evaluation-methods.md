@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/evaluation-methods/"
 date: "2018-03-29"
 categories:
 - "*Recommendation"
-- 2018
+- Year 2018
 - Informatics
 output: html_document
 page_update: partial

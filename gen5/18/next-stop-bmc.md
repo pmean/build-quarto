@@ -6,7 +6,7 @@ source: "http://blog.pmean.com/next-stop-bmc/"
 date: "2018-03-27"
 categories:
 - "*Blog post"
-- 2018
+- Year 2018
 - Informatics
 - Professional details
 output: html_document
