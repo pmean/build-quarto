@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2023-10-31
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Measuring benefit and risk
 - Uses R code
 output: html_document

@@ -5,7 +5,7 @@ date: "2022-06-01"
 source: new
 categories:
 - "*Blog post"
-- 2022
+- Year 2022
 - Graphical display
 - Incomplete page
 output: html_document

@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2022-05-28
 categories:
 - "*Definitions"
-- 2022
+- Year 2022
 - Measurement scales
 output: html_document
 page_update: no

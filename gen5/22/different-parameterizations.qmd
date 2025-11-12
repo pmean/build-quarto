@@ -5,7 +5,7 @@ source: new
 date: "2022-07-06"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - Analysis of variance
 - Rmarkdown code
 output: html_document

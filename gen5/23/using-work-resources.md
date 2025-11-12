@@ -4,7 +4,7 @@ source: "New"
 date: "2023-02-27"
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Human side of statistics
 output: html_document
 page_update: complete

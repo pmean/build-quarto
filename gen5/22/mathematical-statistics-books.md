@@ -4,7 +4,7 @@ author: "Steve Simon"
 date: "2022-12-10"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - Teaching resources
 source: new
 output: html_document

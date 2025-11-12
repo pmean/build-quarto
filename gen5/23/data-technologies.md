@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2023-08-31"
 categories:
 - "*Recommendation"
-- 2023
+- Year 2023
 - Data management
 - R software
 - SQL software

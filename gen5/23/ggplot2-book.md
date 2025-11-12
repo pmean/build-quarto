@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2023-11-03"
 categories:
 - "*Recommendation"
-- 2023
+- Year 2023
 - Graphical display
 output: html_document
 page_update: complete

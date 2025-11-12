@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2023-08-30
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - SPSS software
 output: html_document
 page_update: complete

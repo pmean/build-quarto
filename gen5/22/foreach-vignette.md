@@ -5,7 +5,7 @@ source: new
 date: "2022-05-11"
 categories: 
 - "*Recommendation"
-- 2022
+- Year 2022
 - R software
 output: html_document
 page_update: complete

@@ -4,7 +4,7 @@ author: "Steve Simon"
 date: "2022-11-12"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - Data science
 - Rmarkdown code
 source: new

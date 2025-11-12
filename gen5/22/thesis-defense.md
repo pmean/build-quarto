@@ -5,7 +5,7 @@ source: new
 date: "2022-09-08"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - Human side of statistics
 output: html_document
 page_update: complete

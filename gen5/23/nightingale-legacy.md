@@ -4,7 +4,7 @@ source: "New"
 date: "2023-06-12"
 categories:
 - "*Recommendation"
-- 2023
+- Year 2023
 - Important statisticians
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2023-05-28
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Incomplete pages
 - Software engineering
 output: html_document

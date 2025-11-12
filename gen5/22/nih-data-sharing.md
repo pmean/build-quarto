@@ -4,7 +4,7 @@ source: new
 date: "2022-06-20"
 categories:
 - "*Recommendation"
-- 2022
+- Year 2022
 - Data sharing
 output: html_document
 page_update: complete

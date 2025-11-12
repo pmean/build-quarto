@@ -4,7 +4,7 @@ source: new
 date: "2022-06-01"
 categories:
 - "*Recommendation"
-- 2022
+- Year 2022
 - Writing research papers
 output: html_document
 page_update: complete

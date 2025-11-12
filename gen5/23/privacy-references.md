@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2023-09-28
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Privacy in research
 output: html_document
 page_update: complete

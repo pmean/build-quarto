@@ -5,7 +5,7 @@ source: new
 date: "2022-05-16"
 categories: 
 - "*Recommendation"
-- 2022
+- Year 2022
 - Data science
 - Complex surveys
 output: html_document

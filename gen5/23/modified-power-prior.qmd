@@ -4,7 +4,7 @@ source: "New"
 date: "2023-03-04"
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Bayesian statistics
 - Incomplete pages
 - Uses R code

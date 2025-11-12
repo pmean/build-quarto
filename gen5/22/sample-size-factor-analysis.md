@@ -4,7 +4,7 @@ source: new
 date: "2022-01-17"
 categories:
 - "*Recommendation"
-- 2022
+- Year 2022
 - Sample size justification
 output: html_document
 page_update: complete

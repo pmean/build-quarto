@@ -4,7 +4,7 @@ source: "New"
 date: "2023-02-17"
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Teaching resources
 output: html_document
 page_update: complete

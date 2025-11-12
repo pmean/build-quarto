@@ -5,7 +5,7 @@ source: new
 date: "2022-08-26"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - Software engineering
 output: html_document
 page_update: complete

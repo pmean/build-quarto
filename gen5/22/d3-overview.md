@@ -4,7 +4,7 @@ source: new
 date: "2022-11-30"
 categories:
 - "*Recommendation"
-- 2022
+- Year 2022
 - Graphical display
 output: html_document
 page_update: complete

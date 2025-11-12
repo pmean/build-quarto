@@ -4,7 +4,7 @@ source: new
 date: "2022-03-07"
 categories:
 - "*Recommendation"
-- 2022
+- Year 2022
 - Bayesian statistics
 output: html_document
 page_update: complete

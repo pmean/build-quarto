@@ -4,7 +4,7 @@ source: new
 date: "2022-01-03"
 categories:
 - "*Recommendation"
-- 2022
+- Year 2022
 - Critical appraisal
 output: html_document
 page_update: complete

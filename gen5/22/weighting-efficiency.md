@@ -5,7 +5,7 @@ source: new
 date: "2022-09-26"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - Statistical theory
 output: html_document
 page_update: complete

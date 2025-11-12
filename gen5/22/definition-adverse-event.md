@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2025-08-10
 categories:
 - "*Definitions"
-- 2022
+- Year 2022
 - Clinical trials
 output: html_document
 page_update: complete

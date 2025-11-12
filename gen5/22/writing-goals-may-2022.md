@@ -4,7 +4,7 @@ source: new
 date: "2022-05-24"
 categories:
 - "*Blog post"
-- 2022
+- Year 2022
 - Website details
 output: html_document
 page_update: complete

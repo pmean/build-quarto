@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2023-10-17
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Sample size justification
 output: html_document
 page_update: complete

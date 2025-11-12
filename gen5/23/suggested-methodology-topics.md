@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2023-12-11
 categories:
 - "*Blog post"
-- 2023
+- Year 2023
 - Research methodology
 output: html_document
 page_update: complete

@@ -67,11 +67,12 @@ clean_files <- function(
 
 verbose <- TRUE
 verbose <- FALSE
+
 ok_to_replace <- TRUE
 ok_to_replace <- FALSE
 
 clean_files(
-  '^- 2025$',
-  '- Year 2025',
+  '^- 2023$',
+  '- Year 2023',
   dir_root="gen5", 
   file_pattern="md$")

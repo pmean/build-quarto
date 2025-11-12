@@ -6,7 +6,7 @@ output:
   html_document: default
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - SAS software
 source: new
 page_update: complete

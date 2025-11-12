@@ -4,7 +4,7 @@ author: "Steve Simon"
 date: "2022-10-30"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - Data management
 source: new
 page_update: complete

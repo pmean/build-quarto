@@ -5,7 +5,7 @@ date: "2022-05-08"
 categories:
 - "*Recommendation"
 - Broken-image-link
-- 2022
+- Year 2022
 - Teaching resources
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: new
 date: "2022-04-14"
 categories: 
 - "*Blog post"
-- 2022
+- Year 2022
 - R software
 - Rmarkdown code
 output: html_document

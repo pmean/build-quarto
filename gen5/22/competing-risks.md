@@ -4,7 +4,7 @@ source: new
 date: "2022-04-22"
 categories:
 - "*Recommendation"
-- 2022
+- Year 2022
 - Data science
 output: html_document
 page_update: complete
