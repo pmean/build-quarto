@@ -4,7 +4,7 @@ source: new
 date: "2021-06-12"
 categories:
 - "*Blog post"
-- 2021
+- Year 2021
 - Python
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: new
 date: "2021-10-18"
 categories:
 - "*Blog post"
-- 2021
+- Year 2021
 - Generalized linear model
 - Incomplete page
 - Rmarkdown graphs

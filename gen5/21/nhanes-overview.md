@@ -4,7 +4,7 @@ source: new
 date: "2021-11-19"
 categories:
 - "*Blog post"
-- 2021
+- Year 2021
 - Secondary data analysis
 output: html_document
 page_update: complete

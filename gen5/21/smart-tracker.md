@@ -4,7 +4,7 @@ source: new
 date: "2021-01-21"
 categories:
 - "*Recommendation"
-- 2021
+- Year 2021
 - SQL
 output: html_document
 page_update: complete

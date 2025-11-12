@@ -5,7 +5,7 @@ date: '2021-09-28'
 output: html_document
 categories:
 - "*Blog post"
-- 2021
+- Year 2021
 - Professional details
 page_update: complete
 ---

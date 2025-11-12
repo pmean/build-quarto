@@ -4,7 +4,7 @@ source: new
 date: "2021-10-07"
 categories:
 - "*Recommendation"
-- 2021
+- Year 2021
 - Health disparities
 output: html_document
 page_update: complete

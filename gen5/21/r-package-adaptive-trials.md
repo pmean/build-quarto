@@ -4,7 +4,7 @@ source: new
 date: "2021-07-08"
 categories:
 - "*Recommendation"
-- 2021
+- Year 2021
 - Bayesian statistics
 - R software
 output: html_document

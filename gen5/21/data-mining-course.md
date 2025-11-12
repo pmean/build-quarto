@@ -5,7 +5,7 @@ source: new
 date: "2021-09-22"
 categories:
 - "*Recommendation"
-- 2021
+- Year 2021
 - Data mining
 output: html_document
 page_update: complete

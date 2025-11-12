@@ -4,7 +4,7 @@ source: new
 date: "2021-12-18"
 categories:
 - "*Recommendation"
-- 2021
+- Year 2021
 - Hypothesis testing
 output: html_document
 page_update: complete

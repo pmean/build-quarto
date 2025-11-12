@@ -4,7 +4,7 @@ source: new
 date: "2021-01-26"
 categories:
 - "*Blog post"
-- 2021
+- Year 2021
 - Teaching resources
 output: html_document
 page_update: complete
