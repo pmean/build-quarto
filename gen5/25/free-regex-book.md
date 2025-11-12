@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2025-08-11"
 categories:
 - "*Recommendation"
-- 2025
+- Year 2025
 - String data
 page_update: no
 output: html_document

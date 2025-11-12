@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2024-01-18"
 categories:
 - "*Recommendation"
-- 2024
+- Year 2024
 - Writing research papers
 output: html_document
 page_update: complete

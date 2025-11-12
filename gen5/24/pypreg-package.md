@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2024-11-07"
 categories: 
 - "*Recommendation"
-- 2024
+- Year 2024
 - Python programming
 output: html_document
 page_update: no

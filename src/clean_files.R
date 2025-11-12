@@ -1,14 +1,8 @@
-# clean_files.R. This program was written by Steve Simon on 2020-05-24.
+# clean_files.R. 
 
-# suppressMessages(suppressWarnings(library(base64enc)))
-# suppressMessages(suppressWarnings(library(curl     )))
+# This program was written by Steve Simon on 2020-05-24.
+
 library(glue)
-# suppressMessages(suppressWarnings(library(knitr    )))
-# suppressMessages(suppressWarnings(library(lubridate)))
-# suppressMessages(suppressWarnings(library(magrittr )))
-# suppressMessages(suppressWarnings(library(readr    )))
-# suppressMessages(suppressWarnings(library(rmarkdown)))
-# suppressMessages(suppressWarnings(library(stringr  )))
 library(tidyverse)
 
 # source(file="src/standard_functions.R")
@@ -77,7 +71,7 @@ ok_to_replace <- TRUE
 ok_to_replace <- FALSE
 
 clean_files(
-  fixed('- "*Quote"'),
-  '- "*Quotation"',
+  '^- 2025$',
+  '- Year 2025',
   dir_root="gen5", 
   file_pattern="md$")

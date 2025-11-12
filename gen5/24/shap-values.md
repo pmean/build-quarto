@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2024-07-10"
 categories:
 - "*Recommendation"
-- 2024
+- Year 2024
 - Interpretable machine learning
 output: html_document
 page_update: no

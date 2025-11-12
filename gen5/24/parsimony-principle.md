@@ -5,7 +5,7 @@ source: new
 date: 2024-01-03
 categories:
 - "*Quotation"
-- 2024
+- Year 2024
 - Modeling issues
 output: html_document
 page_update: complete

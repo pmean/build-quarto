@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2025-01-14"
 categories: 
 - "*Recommendation"
-- 2025
+- Year 2025
 - Human side of statistics
 output: html_document
 page_update: no

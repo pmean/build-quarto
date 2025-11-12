@@ -21,6 +21,8 @@ I was helping a student team doing an analysis of factors affecting length of st
 
 <!---more--->
 
+## Load libraries
+
 ```{r}
 #| label: setup
 #| message: false
@@ -30,39 +32,63 @@ library(broom)
 library(tidyverse)
 ```
 
+## Generate synthetic data
+
+I am not going to show the code for generating an artificial dataset that behaves like the real data set. It is tedious and boring. Do take a look at the variables. In addition to los (length of stay measured in hours), I generated a set of ages for the patients, genders (1 for male, 0 for female), and acute status (1 for acute, 0 for non-acute).
+
+I already calculated the log (base 2) for los.
+
 ```{r}
 #| label: generate-data
+#| echo: false
 
-# Generating artificial data that closely mirrors the original data is a bit 
-# tricky. The mean and standard deviation after a log base 2 transformation are 
-# 5.7 and 2.6. So compute a normal distribution based on these, add in the 
-# effect of a few covariates and then back transform to the original scale.
+# Generating artificial data that 
+# closely mirrors the original data
+# is a bit  tricky. The mean and 
+# standard deviation after a log base 2
+# transformation are # 5.7 and 2.6. So
+# compute a normal distribution based 
+# on these, add in the effect of a few 
+# covariates and then back transform to
+# the original scale.
 
-# Age has a slight but statistically significant affect on log_los with a slope
-# on the log scale of 0.008. Age has a mean of 55 and a standard deviation of
-# 18
+# Age has a slight but statistically 
+# significant affect on log_los with a 
+# slope on the log scale of 0.008. Age
+# has a mean of 55 and a standard 
+# deviation of 18. Gender has a not 
+# statistically significant affect on
+# log_los with males having a mean 
+# which is 0.4 unit higher. Males 
+# account for about 50% of the data.
 
-# Gender has a not statistically significant affect on log_los with males having
-# a mean which is 0.4 unit higher. Males account for about 50% of the data.
+# Acute status has a large and 
+# statistically significant impact on
+# log_los with non-acute cases being 
+# smaller on average by 1.3 log units.
+# Acute cases account for 95% of the
+# cases.
 
-# Acute status has a large and statistically significant impact on log_los with
-# non-acute cases being smaller on average by 1.3 log units. Acute cases account
-# for 95% of the cases.
-
-data.frame(log_los=rnorm(8000, mean=5.7, sd=2.6)) |>
-  mutate(age=runif(8000, min=20, max=90)) |>
+n <- 200
+data.frame(log_los=rnorm(n, mean=5.7, sd=2.6)) |>
+  mutate(age=runif(n, min=20, max=90)) |>
   mutate(age=trunc(age)) |>
   mutate(log_los=log_los+(age-55)*0.008) |>
-  mutate(gender=rbinom(8000, 1, 0.5)) |>
+  mutate(gender=rbinom(n, 1, 0.5)) |>
   mutate(log_los=log_los+(gender-0.5)*0.4) |>
-  mutate(acute=rbinom(8000, 1, 0.95)) |>
+  mutate(acute=rbinom(n, 1, 0.95)) |>
   mutate(log_los=log_los+(acute-0.95)*1.3) |>
 	mutate(log_los=pmax(log_los, abs(log_los))) |>
   mutate(los=2^log_los) |>
   mutate(los=trunc(los)) |>
-	mutate(log_los=log2(los)) -> d5
+	mutate(log_los=log2(los)) 
+  relocate(log_los, .after=los) -> d5
 glimpse(d5)
 ```
+
+## Descriptive statistics and graphs for los
+
+Looking at some descriptive statistics and graphs for los, you will see how extremely skewed this variable is.
 
 ```{r}
 #| label: descriptives-los
@@ -77,14 +103,44 @@ d5 |>
 		n=n())
 ```
 
+Notice the range, from 1 hour to `r max(d5$los)` hours which is roughly `r round(max(d5$los)/365, 1)` years. Also notice how much difference there is between the mean of the data and the median.
+
 ```{r}
 #| label: los histogram
 
+cc0 <- "Steve Simon, CC0"
 d5 |>
   ggplot() +
   aes(los) +
-	geom_histogram(binwidth=7*24, color="black", fill="white")
+	geom_histogram(
+	  binwidth=7*24, 
+	  color="black", 
+	  fill="white") +
+  labs(caption=cc0)
 ```
+
+The histogram shows that most of the los values are small, with a few very large and extreme outliers on the high end.
+
+```{r}
+#| label: los boxplot
+#| fig-width: 6
+#| fig-height: 1.5
+
+d5 |>
+  ggplot() +
+  aes(x=los, y=" ") +
+	geom_boxplot() +
+  labs(
+    x="Length of stay in hours",
+    y=" ",
+    caption=cc0)
+```
+
+The boxplot also shows how bad the skewness is and how extreme the outliers are. 
+
+## Try a log transformation
+
+The log function will often fix a skewed distribution, making it 
 
 ```{r}
 #| label: descriptives-log-los
@@ -105,5 +161,51 @@ d5 |>
 d5 |>
   ggplot() +
   aes(log_los) +
-	geom_histogram(binwidth=1, color="black", fill="white")
+	geom_histogram(
+	  binwidth=1, 
+	  color="black", 
+	  fill="white") +
+  labs(
+    x="Log transformation of length of stay",
+    caption=cc0)
 ```
+
+```{r}
+#| label: log-los boxplot
+#| fig-width: 6
+#| fig-height: 1.5
+
+d5 |>
+  ggplot() +
+  aes(x=log_los, y=" ") +
+	geom_boxplot() +
+  labs(
+    x="Log transformation of length of stay",
+    y=" ",
+    caption=cc0) -> log_los_boxplot
+log_los_boxplot
+```
+
+The units on the log scale are not too intuitive. With a base 2 logarithm, each unit represents a power of 2. So 5, for example, would be 2 raised to the fifth power or 32 hours. It would be better to change the scale to something more natural.
+
+```{r}
+#| label: rescale
+#| fig-width: 6
+#| fig-height: 1.5
+
+los_values <- c(1, 24, 7*24, 30*24, 365*24)
+los_labels <- c(
+    "1 hour", 
+    "1 day", 
+    "1 week", 
+    "1 month", 
+    "1 year")
+
+log_los_boxplot +
+  scale_x_continuous(
+    breaks=log2(los_values),
+    labels=los_labels,
+    minor_breaks=NULL)
+```
+
+This plot shows the values on the log scale that corresponds to one hour, one day, one week, one month, and one year. Notice that the gap between one hour and one day is actually wider on the log scale than the gap between one month and one year. That illustrates how the log transformation squeezes the large values together and stretches the small values apart.

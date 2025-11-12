@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2025-08-21
 categories:
 - "*Blog post"
-- 2025
+- Year 2025
 - Being updated
 - Data management
 - SPSS software

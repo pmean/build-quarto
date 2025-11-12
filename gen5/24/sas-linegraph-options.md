@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2024-07-22
 categories:
 - "*Blog post"
-- 2024
+- Year 2024
 - SAS software
 output: html_document
 page_update: no

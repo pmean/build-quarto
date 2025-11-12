@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2025-09-07"
 categories:
 - "*Recommendation"
-- 2025
+- Year 2025
 - Datasets
 page_update: no
 output: html_document

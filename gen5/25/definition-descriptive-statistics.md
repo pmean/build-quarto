@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2025-08-11
 categories:
 - "*Definitions"
-- 2025
+- Year 2025
 - Descriptive statistics
 output: html_document
 page_update: no

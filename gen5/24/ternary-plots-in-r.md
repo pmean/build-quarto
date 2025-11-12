@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2024-07-06"
 categories:
 - "*Recommendation"
-- 2024
+- Year 2024
 - Graphical display
 output: html_document
 page_update: no

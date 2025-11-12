@@ -5,7 +5,7 @@ source: new
 date: "2025-02-11"
 categories:
 - "*Blog post"
-- 2025
+- Year 2025
 - Data management
 - R programming
 - Uses R code

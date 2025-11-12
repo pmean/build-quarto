@@ -1,0 +1,191 @@
+---
+title: "Consistent sizing of your boxplots"
+author: "Steve Simon"
+source: new
+date: "2025-11-12"
+categories:
+tags:
+- "*Blog post"
+- Year 2025
+- Graphical display
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: true
+  echo: true
+page_update: complete
+---
+
+I wanted to show a series of boxplots comparing how a continuous outcome changes for different levels of a categorical variable. The categorical variable sometimes had two levels, sometimes four, and sometimes 6. I wanted the boxplots to be horizontal and fairly narrow. I hate fat boxplots.
+
+<!---more--->
+
+## Calculations for a single boxplot
+
+It's tricky. Through a bit of trial and error, I discovered that R sets a fixed amount of white space above the top of the plotting area and below the bottom of the plotting area. On my system this is about 20 pixels and 60 pixels respectively. This would change if I put a title or a footnote on the graph.
+
+I want each boxplot in a figure to have a height of about 50 pixels (remember that these are horizontal boxplots).
+
+It looks like there is a gap between each boxplot that is roughly one third the height of the boxplot. So the gaps for a 50 pixel boxplot would be about 17 pixels.
+
+So a single boxplot would have
+
+-   20 pixels image top to graphing area top
+-   17 pixels graphing area top to boxplot top
+-   50 pixels boxplot top to boxplot bottom
+-   17 pixels boxplot bottom to graphing area bottom
+-   60 pixels graphing area bottom to image bottom
+
+This is a total of about 164 pixels. On my screen, there are about 128 pixels per inch. So 164 pixels total is roughly 1.25 inches.
+
+
+## Test: one boxplot with a height of 1.25 inches
+
+Let's test this and see if the boxplot looks reasonable.
+
+```{r}
+#| label: setup
+#| warning: false
+
+library(tidyverse)
+```
+
+```{r}
+#| label: test-1
+#| fig-width: 6
+#| fig-height: 1.25
+
+data.frame(
+  x=rnorm(120), 
+  y=letters[rep(1, 120)]) |>
+  ggplot() +
+  aes(x, y) + geom_boxplot()
+```
+
+I'm not sure if this is exactly 50 pixels, but it looks close.
+
+## Calculations for two boxplots
+
+You wouldn't simply double the height from 1.25 to 2.5 inches. The margins wouldn't need to be doubled. Also the number of gaps to keep two boxplots separated from one another and separated from the top and bottom edges of the plotting area does not double.
+
+Here's a rough calculation.
+
+-   20 pixels image top to graphing area top
+-   17 pixels graphing area top to first boxplot top
+-   50 pixels first boxplot top to first boxplot bottom
+-   17 pixels first boxplot bottom to second boxplot top
+-   50 pixels second boxplot top to second boxplot bottom
+-   17 pixels second boxplot bottom to graphing area bottom
+-   60 pixels graphing area bottom to image bottom
+
+This is a total of 231 pixels or 67 pixels more than what you need for the single boxplot. At 128 pixels per inch, 67 pixels adds a bit more than a half inch to your plot.
+
+## Test: two boxplots with a height of 1.75 inches
+
+Let's test this and see if adding a half inch makes the individual boxplots in an image with two boxplots have about the same 50 pixel height as the boxplot in an image with just one boxplot. 
+
+```{r}
+#| label: test-2
+#| fig-width: 6
+#| fig-height: 1.75
+
+data.frame(
+  x=rnorm(120), 
+  y=letters[rep(1:2, 60)]) |>
+  ggplot() +
+  aes(x, y) + 
+  geom_boxplot()
+
+```
+
+Wow! This actually looks pretty good. Maybe it's not exact, but the boxplot heights here look to be close to the boxplot height in the earlier image.
+
+## Test: three boxplots with 2.25 inches
+
+Without doing all the tedious calculations, let's hope that adding an additional 67 pixels (about another half inch) produces reasonable heights in an image with three boxplots.
+
+```{r}
+#| label: test-3
+#| fig-width: 6
+#| fig-height: 2.25
+
+data.frame(
+  x=rnorm(120), 
+  y=letters[rep(1:3, 40)]) |>
+  ggplot() +
+  aes(x, y) + 
+  geom_boxplot()
+
+```
+
+These also look good. Let's keep going.
+
+## Test: four boxplots with 2.75 inches
+
+Adding a fourth boxplot would bring the total height to 2.75 inches. How well does that work?
+
+```{r}
+#| label: test-4
+#| fig-width: 6
+#| fig-height: 2.75
+
+data.frame(
+  x=rnorm(120), 
+  y=letters[rep(1:4, 30)]) |>
+  ggplot() +
+  aes(x, y) + 
+  geom_boxplot()
+
+```
+
+Again, this looks good.
+
+## Test: five boxplots with 3.25 inches
+
+Dare you shoot for five boxplots? Why not! Adding another half inch brings the proposed size of the entire image to 3.25 inches.
+
+```{r}
+#| label: test-5
+#| fig-width: 6
+#| fig-height: 3.25
+
+data.frame(
+  x=rnorm(120), 
+  y=letters[rep(1:5, 24)]) |>
+  ggplot() +
+  aes(x, y) + 
+  geom_boxplot()
+
+```
+
+It still looks good. I was worried that disparities that are too small to notice small when computing one, two, or three boxplots might become more apparenty with as many as five boxplots.
+
+## Test: six boxplots with 3.75 inches
+
+Do you want to try one more? An image with 6 boxplots should have a height of 3.75 inches, by my rough calculations.
+
+```{r}
+#| label: test-6
+#| fig-width: 6
+#| fig-height: 3.75
+
+data.frame(
+  x=rnorm(120), 
+  y=letters[rep(1:6, 20)]) |>
+  ggplot() +
+  aes(x, y) + 
+  geom_boxplot()
+
+```
+
+This still looks great.
+
+## Some warnings
+
+You might think this is all a bit silly. Things change when you move from one screen to another screen. They change when you add titles or footnotes. They change when you produce these images on a printer rather than on your screen.
+
+Still this is a starting point and if you have to tweak some of the image sizes, the tweaks should be small if you start with the rule of 1.25 inches for a single boxplot and add half an inch for each additional boxplot.
+
+Now, if you want boxplots that are thinner or fatter than 50 pixels, just work on the calculations for an image with one boxplot, recalculate for an image with two boxplots. If those work out, try to extrapolate to an image with three or more boxplots. If the extrapolation doesn't work, revise your estimates for the size of the margins and gaps.

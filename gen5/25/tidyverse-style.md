@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2025-04-03"
 categories: 
 - "*Recommendation"
-- 2025
+- Year 2025
 - R programming
 output: html_document
 page_update: no

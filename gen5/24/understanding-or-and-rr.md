@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2024-10-05"
 categories: 
 - "*Recommendation"
-- 2024
+- Year 2024
 - Measures of risk
 output: html_document
 page_update: no

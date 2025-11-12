@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2025-03-19"
 categories: 
 - "*Recommendation"
-- 2025
+- Year 2025
 - Qualitative research
 output: html_document
 page_update: no

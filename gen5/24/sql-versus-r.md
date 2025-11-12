@@ -5,9 +5,9 @@ author: Steve Simon
 date: 2024-12-12
 categories: 
 - "*Blog post"
-- 2024
+- Year 2024
 - SQL
-- R sotware
+- R software
 output: html_document
 page_update: no
 ---

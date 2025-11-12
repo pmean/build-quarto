@@ -5,7 +5,7 @@ source: new
 date: "2025-02-09"
 categories:
 - "*Blog post"
-- 2025
+- Year 2025
 - R programming
 - Uses R code
 output: html_document

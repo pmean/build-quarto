@@ -5,7 +5,7 @@ author: Steve Simon
 date: "2025-01-29"
 categories: 
 - "*Recommendation"
-- 2025
+- Year 2025
 - Software engineering
 output: html_document
 page_update: no
