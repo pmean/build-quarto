@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/think-positively/"
 date: "2019-01-23"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Research design
 - Teaching resources
 output: html_document

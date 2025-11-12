@@ -4,7 +4,7 @@ source: new
 date: "2020-04-13"
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - Likert scales
 output: html_document
 page_update: complete

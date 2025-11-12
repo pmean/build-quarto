@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/russell-waitman/"
 date: "2019-02-12"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Professional details
 output: html_document
 page_update: complete

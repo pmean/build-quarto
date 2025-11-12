@@ -4,7 +4,7 @@ source: new
 date: "2020-08-21"
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - Clinical trials
 output: html_document
 page_update: complete

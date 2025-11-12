@@ -5,7 +5,7 @@ source: new
 date: "2020-03-10"
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Data science
 output: html_document
 page_update: complete

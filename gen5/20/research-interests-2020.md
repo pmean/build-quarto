@@ -5,7 +5,7 @@ source: new
 date: 2020-09-01
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Professional details
 output: html_document
 page_update: complete

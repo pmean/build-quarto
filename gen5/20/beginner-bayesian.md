@@ -4,7 +4,7 @@ source: new
 date: "2020-11-20"
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Bayesian statistics
 output: html_document
 page_update: complete

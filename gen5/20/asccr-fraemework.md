@@ -5,7 +5,7 @@ source: new
 date: 2020-08-06
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - Professional details
 output: html_document
 page_update: complete

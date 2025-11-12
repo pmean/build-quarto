@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/artist/"
 date: "2019-05-02"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Teaching resources
 output: html_document
 page_update: complete

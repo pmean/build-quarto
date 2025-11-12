@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ai-story/"
 date: "2019-01-09"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Data science
 - Ethics in research
 - Human side of statistics

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ethical-data-mining/"
 date: "2019-04-01"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Data science
 output: html_document
 page_update: complete

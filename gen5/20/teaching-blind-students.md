@@ -4,7 +4,7 @@ source: new
 date: "2020-12-07"
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - Teaching resources
 output: html_document
 page_update: complete

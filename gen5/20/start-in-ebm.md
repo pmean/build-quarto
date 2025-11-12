@@ -4,7 +4,7 @@ source: new
 date: "2020-10-01"
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Evidence-Based Medicine
 output: html_document
 page_update: complete

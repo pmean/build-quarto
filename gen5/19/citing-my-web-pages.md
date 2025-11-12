@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/citing-my-web-pages/"
 date: "2019-01-15"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Writing research papers
 output: html_document
 page_update: complete

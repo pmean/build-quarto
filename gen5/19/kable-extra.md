@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/kableextra/"
 date: "2019-02-09"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - R software
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/grant-writing-styles/"
 date: "2019-05-09"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Grant writing
 output: html_document
 page_update: complete

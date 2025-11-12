@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/writing-methods-section/"
 date: "2019-04-25"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Writing research papers
 output: html_document
 page_update: complete

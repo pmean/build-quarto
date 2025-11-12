@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/framingham-contribution/"
 date: "2019-01-23"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Observational studies
 output: html_document
 page_update: complete

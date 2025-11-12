@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ozone-hole/"
 date: "2019-02-13"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Outliers
 output: html_document
 page_update: complete

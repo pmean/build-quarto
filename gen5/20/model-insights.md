@@ -5,7 +5,7 @@ source: new
 date: "2020-05-05"
 categories:
 - "*Quotation"
-- 2020
+- Year 2020
 - Critical appraisal
 output: html_document
 page_update: complete

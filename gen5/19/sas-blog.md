@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/sas-blog/"
 date: "2019-05-10"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - SAS software
 output: html_document
 page_update: complete

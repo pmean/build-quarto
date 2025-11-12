@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/questionnaire-checklist/"
 date: "2019-02-14"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Survey design
 output: html_document
 page_update: complete

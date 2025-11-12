@@ -5,7 +5,7 @@ source: new
 date: 2020-06-24
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - Hypothesis testing
 output: html_document
 page_update: complete

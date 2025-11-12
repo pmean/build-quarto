@@ -4,7 +4,7 @@ source: new
 date: "2020-10-12"
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Survival analysis
 output: html_document
 page_update: complete

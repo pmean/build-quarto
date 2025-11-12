@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/weird-characters/"
 date: "2019-02-11"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Statistical computing
 output: html_document
 page_update: complete

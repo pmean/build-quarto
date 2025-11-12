@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/finding-me/"
 date: "2019-05-15"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Professional details
 output: html_document
 page_update: complete

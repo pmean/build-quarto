@@ -4,7 +4,7 @@ source: new
 date: "2020-10-20"
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - Graphical display
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/observational-recommendations/"
 date: "2019-01-25"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Observational studies
 output: html_document
 page_update: complete

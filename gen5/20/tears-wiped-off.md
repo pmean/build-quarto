@@ -5,7 +5,7 @@ source: new
 date: 2020-08-11
 categories:
 - "*Quotation"
-- 2020
+- Year 2020
 - Human side of statistics
 output: html_document
 page_update: complete

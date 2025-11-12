@@ -5,7 +5,7 @@ source: new
 date: "2020-04-15"
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Electronic health records
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: new
 date: 2020-08-16
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - R software
 output: html_document
 page_update: complete

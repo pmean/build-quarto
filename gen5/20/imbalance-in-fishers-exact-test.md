@@ -5,7 +5,7 @@ source: new
 date: "2020-01-17"
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Measuring benefit and risk
 output: html_document
 page_update: complete

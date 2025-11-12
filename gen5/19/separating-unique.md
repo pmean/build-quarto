@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/separating-unique/"
 date: "2019-04-18"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Data management
 - SAS software
 output: html_document

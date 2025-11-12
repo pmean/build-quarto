@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/latex-mathematics/"
 date: "2019-03-08"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Presenting research
 - R software
 - Writing research papers

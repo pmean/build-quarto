@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/hedis/"
 date: "2019-02-04"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Quality improvement
 output: html_document
 page_update: complete

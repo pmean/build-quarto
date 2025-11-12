@@ -4,7 +4,7 @@ source: new
 date: "2020-06-13"
 categories:
 - "*Recommendation"
-- 2020
+- Year 2020
 - Ordinal data
 output: html_document
 page_update: complete

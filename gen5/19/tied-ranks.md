@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/tied-ranks/"
 date: "2019-04-04"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Nonparametric tests
 output: html_document
 page_update: complete

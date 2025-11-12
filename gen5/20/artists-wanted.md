@@ -5,7 +5,7 @@ source: new
 date: "2020-01-26"
 categories:
 - "*Blog post"
-- 2020
+- Year 2020
 - Ethics in research
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/python-resources/"
 date: "2019-05-02"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Python
 output: html_document
 page_update: complete

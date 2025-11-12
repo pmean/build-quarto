@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2019-01-20
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Being updated
 output: html_document
 page_update: complete

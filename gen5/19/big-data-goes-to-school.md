@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/big-data-goes-to-school/"
 date: "2019-04-16"
 categories:
 - "*Recommendation"
-- 2019
+- Year 2019
 - Data science
 output: html_document
 page_update: complete

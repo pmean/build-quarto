@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/biography-2019/"
 date: "2019-02-12"
 categories:
 - "*Blog post"
-- 2019
+- Year 2019
 - Professional details
 output: html_document
 page_update: complete

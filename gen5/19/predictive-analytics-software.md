@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/predictive-analytics-software/"
 date: "2019-02-14"
 categories:
 - "*Cartoon"
-- 2019
+- Year 2019
 - Data science
 output: html_document
 page_update: complete

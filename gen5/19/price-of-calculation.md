@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/price-of-calculation/"
 date: "2019-01-20"
 categories:
 - "*Quotation"
-- 2019
+- Year 2019
 - Data science
 output: html_document
 page_update: complete
