@@ -6,8 +6,8 @@ date: "2014-01-15"
 categories:
 - "*Blog post"
 - 2014
-- broken link
-- obsolete pages
+- Broken link
+- Obsolete page
 - R software
 output: html_document
 page_update: complete

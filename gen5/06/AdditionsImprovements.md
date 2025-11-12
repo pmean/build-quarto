@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - 2006
 - Broken link
-- Obsolete pages
+- Obsolete page
 - Website details
 - Sample size justification
 output: html_document

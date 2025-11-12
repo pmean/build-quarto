@@ -6,8 +6,8 @@ date: "2015-10-05"
 categories: 
 - "*Blog post"
 - 2015
-- incomplete page
-- nonlinear regression
+- Incomplete page
+- Nonlinear regression
 - R software
 - Rmarkdown graphs
 output: html_document

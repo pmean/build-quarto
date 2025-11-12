@@ -4,9 +4,10 @@ author: "Steve Simon"
 source: new
 date: "2025-xx-xx"
 categories:
+tags:
 - "*Blog post"
 - 2025
-- Being updated
+- Incomplete page
 format: 
   html:
     embed-resources: true

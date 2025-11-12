@@ -6,7 +6,7 @@ date: 2010-08-31
 categories:
 - "*Blog post"
 - 2010
-- Obsolete pages
+- Obsolete page
 output: html_document
 page_update: no
 ---
