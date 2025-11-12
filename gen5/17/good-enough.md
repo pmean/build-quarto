@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/good-enough/"
 date: "2017-09-05"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Data management
 - Writing research papers
 output: html_document

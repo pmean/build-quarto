@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/why-independent/"
 date: "2017-04-04"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Human side of statistics
 - Professional details
 output: html_document

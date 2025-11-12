@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/for-profit-journals/"
 date: "2017-07-10"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Writing research papers
 output: html_document
 page_update: complete

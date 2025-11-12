@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/explain-ai/"
 date: "2017-11-27"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Data science
 output: html_document
 page_update: complete

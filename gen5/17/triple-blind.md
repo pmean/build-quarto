@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/triple-blind/"
 date: "2017-04-11"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Blinding in research
 output: html_document
 page_update: complete

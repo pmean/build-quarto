@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/red-text/"
 date: "2017-04-07"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - R software
 output: html_document
 page_update: complete

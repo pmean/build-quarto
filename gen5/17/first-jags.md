@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/first-jags/"
 date: "2017-01-28"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Bayesian statistics
 - Incomplete page
 output: html_document

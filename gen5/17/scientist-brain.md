@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/scientist-brain/"
 date: "2017-01-28"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Hypothesis testing
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/spss-syllabus/"
 date: "2017-08-30"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - SPSS software
 output: html_document
 page_update: complete

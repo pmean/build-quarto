@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/shiny-server/"
 date: "2017-04-10"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - R software
 output: html_document
 page_update: partial

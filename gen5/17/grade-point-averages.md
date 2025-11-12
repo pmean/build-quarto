@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/grade-point-averages/"
 date: "2017-12-28"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Professional details
 output: html_document
 page_update: complete

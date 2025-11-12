@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/machine-learning/"
 date: "2017-05-18"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Data science
 output: html_document
 page_update: partial

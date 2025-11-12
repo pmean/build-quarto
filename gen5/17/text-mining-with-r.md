@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/text-mining-with-r/"
 date: "2017-02-23"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Data science
 - R software
 output: html_document

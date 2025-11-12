@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/r-and-sql-server/"
 date: "2017-02-02"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - R software
 - SQL
 output: html_document

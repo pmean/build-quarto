@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/beanumber-repository/"
 date: "2017-11-15"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Data science
 - R software
 - SQL

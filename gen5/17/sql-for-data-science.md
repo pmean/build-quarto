@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/sql-for-data-science/"
 date: "2017-11-15"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - SQL
 - Teaching resources
 output: html_document

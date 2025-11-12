@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/kaggle-data/"
 date: "2017-06-19"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Datasets
 output: html_document
 page_update: complete

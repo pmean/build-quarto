@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/social-media/"
 date: "2017-12-04"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Human side of statistics
 output: html_document
 page_update: complete

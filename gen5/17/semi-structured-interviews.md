@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/semi-structured-interviews/"
 date: "2017-12-27"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Qualitative research
 output: html_document
 page_update: complete

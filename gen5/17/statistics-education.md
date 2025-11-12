@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/statistics-education/"
 date: "2017-01-24"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Teaching resources
 output: html_document
 page_update: complete

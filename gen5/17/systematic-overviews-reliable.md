@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/systematic-overviews-reliable/"
 date: "2017-02-25"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Systematic overviews
 output: html_document
 page_update: partial

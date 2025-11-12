@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/numbers-mosteller/"
 date: "2017-11-08"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Numbers
 output: html_document
 page_update: complete

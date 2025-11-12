@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/areas-of-expertise/"
 date: "2017-03-30"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Professional details
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/health-insurance-systems/"
 date: "2017-09-20"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Randomization
 - Research design
 output: html_document

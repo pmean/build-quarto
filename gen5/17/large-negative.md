@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/large-negative/"
 date: "2017-10-13"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - Diagnostic testing
 - Human side of statistics
 output: html_document

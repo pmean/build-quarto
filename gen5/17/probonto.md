@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/probonto/"
 date: "2017-06-12"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Probability concepts
 output: html_document
 page_update: complete

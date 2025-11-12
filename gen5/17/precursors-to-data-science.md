@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/precursors-to-data-science/"
 date: "2017-11-15"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Data science
 - Teaching resources
 output: html_document

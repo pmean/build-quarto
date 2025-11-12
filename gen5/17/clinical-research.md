@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/clinical-research/"
 date: "2017-03-12"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Research design
 output: html_document
 page_update: complete

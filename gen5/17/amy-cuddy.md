@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/amy-cuddy/"
 date: "2017-10-19"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Critical appraisal
 - Human side of statistics
 output: html_document

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/unfinished-studies/"
 date: "2017-05-05"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Accrual problems
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/nytimes-graph/"
 date: "2017-09-14"
 categories:
 - "*Recommendation"
-- 2017
+- Year 2017
 - Graphical display
 - Teaching resources
 output: html_document

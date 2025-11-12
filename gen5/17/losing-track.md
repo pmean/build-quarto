@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/losing-track/"
 date: "2017-11-22"
 categories:
 - "*Blog post"
-- 2017
+- Year 2017
 - R software
 output: html_document
 page_update: complete
