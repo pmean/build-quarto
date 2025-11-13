@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/categorical.html
 date: 2004-06-01
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Logistic regression
 output: html_document
 page_update: partial

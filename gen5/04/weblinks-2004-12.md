@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/WebLinksDecember.html
 date: 2004-12-28
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Being updated
 output: html_document
 page_update: no

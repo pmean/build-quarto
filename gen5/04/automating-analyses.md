@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/AutomatingAnalyses.html
 date: 2004-10-25
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Statistical computing
 output: html_document
 page_update: partial

@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2004-02-25
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Conflict of interest
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/acuity.html
 date: 2004-05-06
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Data mining
 - Statistical computing
 output: html_document

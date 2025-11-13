@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/tail.html
 date: 2004-04-12
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Pvalues
 output: html_document
 page_update: partial

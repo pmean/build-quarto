@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/auc.html
 date: 2004-07-27
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Diagnostic testing
 output: html_document
 page_update: partial

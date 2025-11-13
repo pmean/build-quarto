@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/powerpoint1.html
 date: 2004-07-15
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Being updated
 output: html_document
 page_update: no

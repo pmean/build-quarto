@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2004-08-02
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Privacy in research
 output: html_document
 page_update: partial

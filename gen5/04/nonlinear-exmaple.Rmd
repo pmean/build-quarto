@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/nonlinear.html
 date: 2004-06-28
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Nonlinear regression
 output: html_document
 page_update: partial

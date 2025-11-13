@@ -5,7 +5,7 @@ source: http://www.pmean.com/01/zeroevents.html
 date: 2001-01-19
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Confidence intervals
 output: html_document
 page_update: partial

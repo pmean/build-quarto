@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2004-12-24
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Teaching resources
 - Being updated
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/AnecdotalInformation.html
 date: 2004-11-02
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Critical appraisal
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/spss.html
 date: 2004-05-12
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - SPSS software
 output: html_document
 page_update: partial

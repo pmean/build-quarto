@@ -5,7 +5,7 @@ source: http://www.pmean.com/03/EarlyStopping1.html
 date: 2004-11-24
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Early stopping
 output: html_document
 page_update: no

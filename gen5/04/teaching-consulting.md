@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/consulting.html
 date: 2004-06-14
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Teaching resources
 output: html_document
 page_update: partial

@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2004-12-20
 categories:
 - "*Quotation"
-- 2004
+- Year 2004
 - Human side of Statistics
 output: html_document
 page_update: partial

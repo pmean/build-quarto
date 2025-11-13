@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2004-01-14
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Professional details
 output: html_document
 page_update: partial

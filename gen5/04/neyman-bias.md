@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2004-12-15
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Measuring benefit and risk
 output: html_document
 page_update: partial

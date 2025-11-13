@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/temporality.html
 date: 2004-04-07
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Corroborating evidence
 output: html_document
 page_update: partial

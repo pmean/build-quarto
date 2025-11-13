@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2004-05-10
 categories:
 - "*Blog post"
-- 2004
+- Year 2004
 - Being updated
 - Information theory
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/04/IntellectualCOI.html
 date: 2004-11-24
 categories:
 - "*Recommendation"
-- 2004
+- Year 2004
 - Conflict of interest
 output: html_document
 page_update: complete
