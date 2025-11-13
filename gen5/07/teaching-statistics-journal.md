@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/RandomlyDividingData.html
 date: 2007-03-16
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - R software
 output: html_document
 page_update: complete

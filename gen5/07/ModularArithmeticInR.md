@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/ModularArithmeticInR.html
 date: 2007-02-01
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - R software
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/AnomTable05Part1.html
 date: 2007-03-04
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Analysis of means
 - Incomplete page
 output: html_document

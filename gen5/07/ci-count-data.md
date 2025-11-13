@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/CountData.html
 date: 2007-03-22
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Poisson regression
 output: html_document
 page_update: complete

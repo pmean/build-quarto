@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/NoLongerAlone.html
 date: 2007-11-28
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Professional details
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/NormalSample.html
 date: 2007-08-30
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Modeling issues
 output: html_document
 page_update: partial

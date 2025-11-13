@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/PocketCalculator.html
 date: 2007-03-01
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Descriptive statistics
 output: html_document
 page_update: complete

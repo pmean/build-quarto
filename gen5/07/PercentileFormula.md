@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/PercentileFormula.html
 date: 2007-06-22
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Descriptive statistics
 output: html_document
 page_update: complete

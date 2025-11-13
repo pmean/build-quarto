@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/CalculatingRates.html
 date: 2007-04-06
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Poisson regression
 output: html_document
 page_update: complete

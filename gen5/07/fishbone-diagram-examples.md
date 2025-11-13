@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/FishboneDiagram-07.html
 date: 2007-03-08
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Quality control
 output: html_document
 page_update: complete

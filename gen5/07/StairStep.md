@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/StairStep.html
 date: 2007-11-15
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Graphical display
 - R software
 output: html_document

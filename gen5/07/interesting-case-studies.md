@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/InterestingCaseStudies.html
 date: 2007-05-02
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Teaching resources
 output: html_document
 page_update: partial

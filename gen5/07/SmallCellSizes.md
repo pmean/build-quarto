@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/SmallCellSizes.html
 date: 2007-04-26
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Measuring agreement
 - Small sample size issues
 output: html_document

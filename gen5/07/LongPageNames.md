@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/LongPageNames.html
 date: 2007-11-17
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Website details
 output: html_document
 page_update: complete

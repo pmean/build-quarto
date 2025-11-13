@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/ApplyingLikelihoodRatios.html
 date: 2007-06-01
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Diagnostic testing
 output: html_document
 page_update: complete

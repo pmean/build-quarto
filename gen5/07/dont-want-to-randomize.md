@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/DontWantToRandomize.html
 date: 2007-07-18
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Observational studies
 - Randomization
 output: html_document

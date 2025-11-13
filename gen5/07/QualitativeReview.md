@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/QualitativeReview.html
 date: 2007-03-11
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Qualitative research
 output: html_document
 page_update: complete

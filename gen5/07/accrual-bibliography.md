@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/accrual/bibliography.asp
 date: 2007-07-28
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Accrual problems
 - Being updated
 output: html_document

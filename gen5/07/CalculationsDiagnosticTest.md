@@ -5,7 +5,7 @@ source: unknown
 date: 2007-07-20
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Diagnostic testing
 output: html_document
 page_update: complete

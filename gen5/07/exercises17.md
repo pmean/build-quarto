@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/exercises17.htm
 date: 2007-02-27
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Being updated
 - Website details
 output: html_document

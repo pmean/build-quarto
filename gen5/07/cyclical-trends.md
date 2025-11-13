@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/CyclicalTrends.html
 date: 2007-06-13
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Linear regression
 output: html_document
 page_update: complete

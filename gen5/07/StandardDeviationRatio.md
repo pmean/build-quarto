@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/StandardDeviationRatio.html
 date: 2007-06-22
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Statistical theory
 output: html_document
 page_update: complete

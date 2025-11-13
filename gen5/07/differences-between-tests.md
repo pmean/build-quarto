@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/DifferencesBetweenTests.html
 date: 2007-01-09
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Logistic regression
 output: html_document
 page_update: complete
