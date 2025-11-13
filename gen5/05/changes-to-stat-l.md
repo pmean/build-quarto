@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ChangesStatL.html
 date: 2005-05-25
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Broken link
 - Obsolete page
 - Teaching resources

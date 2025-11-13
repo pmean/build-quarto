@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/AdjustedOR.html
 date: 2005-01-20
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Covariate adjustment
 output: html_document
 page_update: partial

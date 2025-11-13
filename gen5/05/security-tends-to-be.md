@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/stopearly.html
 date: 2005-02-21
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Being updated
 - Incomplete page
 - Privacy in research

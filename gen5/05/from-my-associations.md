@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/FromMyAssociations.html
 date: 2005-09-09
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Research ethics
 output: html_document
 page_update: partial

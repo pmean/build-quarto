@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/EvidenceBasedMedicine.html
 date: 2005-07-29
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Teaching resources
 output: html_document

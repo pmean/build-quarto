@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/TestsNormality.html
 date: 2005-06-07
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Statistical assumptions
 output: html_document
 page_update: partial

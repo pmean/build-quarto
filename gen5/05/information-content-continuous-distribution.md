@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/InformationTheoryB.html
 date: 2005-08-01
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Information searching
 output: html_document

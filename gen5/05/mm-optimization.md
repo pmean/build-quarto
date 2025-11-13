@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/MMalgorithm.html
 date: 2005-02-14
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Statistical computing
 output: html_document

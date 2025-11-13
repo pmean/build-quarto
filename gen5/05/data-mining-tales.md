@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/DataMining.html
 date: 2005-01-06
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Data mining
 output: html_document
 page_update: partial

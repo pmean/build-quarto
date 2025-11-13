@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/StratifiedCoxRegression.html
 date: 2005-03-22
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Survival analysis
 output: html_document

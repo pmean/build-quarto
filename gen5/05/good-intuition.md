@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/Intuition.html
 date: 2005-01-21
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Critical appraisal
 output: html_document

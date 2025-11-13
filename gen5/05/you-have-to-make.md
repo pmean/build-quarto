@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/YouHaveToMake.html
 date: 2005-05-16
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Theory versus practice
 output: html_document
 page_update: partial

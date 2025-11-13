@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/NoHumanInvestigation.html
 date: 2005-01-24
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Mathematics
 output: html_document
 page_update: partial

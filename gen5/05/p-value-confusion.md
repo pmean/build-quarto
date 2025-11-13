@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ConfusionPvalues.html
 date: 2005-01-18
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Hypothesis testing
 output: html_document
 page_update: partial

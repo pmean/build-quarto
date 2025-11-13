@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/StringsR.html
 date: 2005-05-10
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Data management
 - R software

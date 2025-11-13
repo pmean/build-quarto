@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ConflictInterestA.html
 date: 2005-06-04
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Broken link
 - Conflict of interest
 output: html_document

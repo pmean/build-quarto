@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/CovariateImbalance.html
 date: 2005-05-20
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Covariate adjustment
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ComingSoon.html
 date: 2005-03-22
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Website details
 output: html_document

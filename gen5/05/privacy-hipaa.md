@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/PrivacyHIPAA.html
 date: 2005-09-22
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Privacy in research
 output: html_document

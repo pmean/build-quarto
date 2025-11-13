@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/FindingGenesB.html
 date: 2005-10-12
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Genomics analysis
 - Being updated
 output: html_document

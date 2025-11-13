@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/AnalysisOfSubgroupResults.html
 date: 2005-03-10
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Multiple comparisons
 output: html_document
 page_update: partial

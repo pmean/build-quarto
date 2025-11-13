@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/BaselineImbalance.html
 date: 2005-01-19
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Covariate adjustment
 output: html_document
 page_update: partial

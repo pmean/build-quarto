@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/PracticeGuidelines.html
 date: 2005-02-18
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Teaching resources
 output: html_document

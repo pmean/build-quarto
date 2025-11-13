@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ConfidenceIntervalA.html
 date: 2005-05-11
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Confidence intervals
 output: html_document

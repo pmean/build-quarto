@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/AllModelsAre.html
 date: 2005-09-15
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Statistical models
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/InferentialDescriptive.html
 date: 2005-03-24
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Descriptive statistics
 output: html_document

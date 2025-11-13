@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/Bimodality.html
 date: 2005-09-15
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - R software
 - Stata software
 output: html_document

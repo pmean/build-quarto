@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/CollectionStudies.html
 date: 2005-03-22
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Observational studies
 - Randomization

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/CensoredValues.html
 date: 2005-04-22
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Survival analysis
 output: html_document
 page_update: partial

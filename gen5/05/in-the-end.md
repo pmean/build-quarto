@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/InTheEnd.html
 date: 2005-03-10
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 output: html_document
 page_update: partial

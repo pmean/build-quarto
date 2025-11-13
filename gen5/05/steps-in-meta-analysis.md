@@ -5,7 +5,7 @@ source: http://www.pmean.com/99/metaanalysis.html
 date: 2005-03-18
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Systematic overviews
 output: html_document

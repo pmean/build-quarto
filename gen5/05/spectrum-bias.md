@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/SpectrumBias.html
 date: 2005-01-04
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Diagnostic testing
 - Observational studies

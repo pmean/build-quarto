@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/GoogleScholar.html
 date: 2005-07-19
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Information searching
 output: html_document

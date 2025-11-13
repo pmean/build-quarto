@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/MicroarrayG.html
 date: 2005-10-24
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Genomics analysis 
 output: html_document
 page_update: partial

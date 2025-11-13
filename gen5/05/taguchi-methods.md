@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/TaguchiMethods.html
 date: 2005-02-22
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Quality control
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/contact.html
 date: 2005-08-15
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Professional details
 output: html_document

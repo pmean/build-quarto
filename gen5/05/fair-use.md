@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/FairUse.html
 date: 2005-04-15
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Website details
 output: html_document

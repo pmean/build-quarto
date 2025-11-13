@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ClinicalImportance.html
 date: 2005-03-11
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Clinical importance
 output: html_document

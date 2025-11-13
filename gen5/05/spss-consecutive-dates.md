@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ConsecutiveDates.html
 date: 2005-01-26
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - SPSS software
 output: html_document
 page_update: partial

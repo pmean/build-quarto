@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/EnoughData.html
 date: 2005-04-05
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Clinical importance
 - Early stopping

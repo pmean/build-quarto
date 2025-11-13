@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/OpenSite.html
 date: 2005-05-23
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Writing research papers
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/SplusCorrelatedData.html
 date: 2005-01-01
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Multilevel models
 - Obsolete page

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/CronbachsAlpha.html
 date: 2005-07-19
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Measuring agreement
 output: html_document
 page_update: partial

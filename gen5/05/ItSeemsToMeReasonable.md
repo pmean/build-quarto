@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ItSeemsToMeReasonable.html
 date: 2005-03-10
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Subgroup analysis
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/TenStudiesA.html
 date: 2005-06-07
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 output: html_document
 page_update: no

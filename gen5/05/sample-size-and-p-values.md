@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/SampleSize-05.html
 date: 2005-02-14
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Pvalues
 output: html_document

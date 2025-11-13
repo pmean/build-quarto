@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/Equipoise.html
 date: 2005-01-17
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Equipoise in research
 output: html_document

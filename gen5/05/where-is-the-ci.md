@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ConfidenceInterval.html
 date: 2005-03-31
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Clinical importance
 - Confidence intervals

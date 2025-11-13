@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/IncidenceDensity.html
 date: 2005-04-19
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Measuring benefit and risk
 output: html_document

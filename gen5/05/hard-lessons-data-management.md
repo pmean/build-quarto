@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/HardLessons.html
 date: 2005-11-25
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Data management
 output: html_document

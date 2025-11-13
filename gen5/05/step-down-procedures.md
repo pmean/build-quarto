@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/MultipleComparisons.html
 date: 2005-06-16
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Hypothesis testing
 output: html_document

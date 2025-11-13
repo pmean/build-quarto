@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/NormalProbabilities.html
 date: 2005-05-19
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Statistical computing
 output: html_document

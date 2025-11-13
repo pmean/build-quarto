@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/EndSpam.html
 date: 2005-03-08
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Bayesian statistics
 output: html_document

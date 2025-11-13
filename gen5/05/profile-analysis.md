@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ProfileAnalysis.html
 date: 2005-04-18
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Multilevel models
 output: html_document

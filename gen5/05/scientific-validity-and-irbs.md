@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ScientificValidity.html
 date: 2005-08-12
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Ethics in research
 output: html_document

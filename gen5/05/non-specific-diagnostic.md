@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/NonspecificDiagnostic.html
 date: 2005-10-13
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Corroborating evidence
 output: html_document

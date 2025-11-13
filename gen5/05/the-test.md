@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/TheTest.html
 date: 2005-04-20
 categories:
 - "*Quotation"
-- 2005
+- Year 2005
 - Human side of Statistics
 output: html_document
 page_update: partial

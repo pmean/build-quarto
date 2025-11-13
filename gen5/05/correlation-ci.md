@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/CorrelationCoefficient.html
 date: 2005-07-11
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Confidence intervals
 - Sample size justification
 output: html_document

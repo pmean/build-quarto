@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/GroupSequential.html
 date: 2005-12-13
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Early stopping
 - R software

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/RetractedArticles.html
 date: 2005-10-14
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Ethics in research
 output: html_document

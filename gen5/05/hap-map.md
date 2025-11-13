@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/HapMap.html
 date: 2005-12-12
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Information theory
 output: html_document

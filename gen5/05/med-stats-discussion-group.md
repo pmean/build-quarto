@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/MedStats.html
 date: 2005-04-25
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Teaching resources
 output: html_document

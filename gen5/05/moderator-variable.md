@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/ModeratorVariable.html
 date: 2005-02-15
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Covariate adjustment
 output: html_document

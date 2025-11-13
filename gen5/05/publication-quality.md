@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/PublicationQuality.html
 date: 2005-03-14
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Being updated
 - Systematic overviews
 output: html_document

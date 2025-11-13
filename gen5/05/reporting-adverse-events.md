@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/AdverseEvents.html
 date: 2005-08-05
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Adverse events
 - Being updated
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/05/BaselineAdjustment.html
 date: 2005-02-28
 categories:
 - "*Blog post"
-- 2005
+- Year 2005
 - Broken link
 - Covariate adjustment
 output: html_document
