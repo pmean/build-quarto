@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/HandlingDropouts.html
 date: 2006-01-16
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Measuring benefit and risk
 output: html_document
 page_update: partial

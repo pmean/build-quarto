@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/AccrualProblems.html
 date: 2006-05-30
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Accrual problems
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/InformationSource.html
 date: 2006-07-10
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Conflict of interest
 output: html_document
 page_update: partial

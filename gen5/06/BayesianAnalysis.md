@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/BayesianAnalysis.html
 date: 2006-03-30
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Bayesian statistics
 - Bayesian statistics
 output: html_document

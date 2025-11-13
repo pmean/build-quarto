@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/PropensityScores.html
 date: 2006-03-10
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Covariate adjustment
 output: html_document
 page_update: partial

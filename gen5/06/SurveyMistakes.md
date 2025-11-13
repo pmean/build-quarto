@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/SurveyMistakes.html
 date: 2006-01-31
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Survey design
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/BookSales.html
 date: 2006-08-02
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Statistical evidence
 output: html_document
 page_update: partial

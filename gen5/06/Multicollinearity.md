@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/Multicollinearity.html
 date: 2006-01-20
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Modeling issues
 output: html_document
 page_update: partial

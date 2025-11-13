@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/MixedLinearModels.html
 date: 2006-10-18
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Multilevel models
 output: html_document
 page_update: partial

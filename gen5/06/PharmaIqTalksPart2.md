@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/PharmaIqTalksPart2.html
 date: 2006-12-06
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Data mining
 output: html_document
 page_update: partial

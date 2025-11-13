@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/PoliticalEnd.html
 date: 2006-06-23
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Ethics in research
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/ColorsForR.html
 date: 2006-06-28
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Graphical display
 - R software
 output: html_document

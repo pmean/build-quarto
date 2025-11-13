@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/IbmPuzzle.html
 date: 2006-12-13
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Statistical theory
 output: html_document
 page_update: partial

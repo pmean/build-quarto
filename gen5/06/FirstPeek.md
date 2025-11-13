@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/FirstPeek.html
 date: 2006-01-12
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Statistical evidence
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/AccountForDropouts.html
 date: 2006-12-29
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Sample size justification
 output: html_document
 page_update: complete

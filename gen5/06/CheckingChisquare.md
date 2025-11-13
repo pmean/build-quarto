@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/CheckingChisquare.html
 date: 2006-02-13
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Logistic regression
 output: html_document
 page_update: partial

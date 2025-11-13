@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/GraphicsOptionsR.html
 date: 2006-09-12
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Graphical display
 - R software
 output: html_document

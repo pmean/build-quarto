@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/PageBreaksSPSS.html
 date: 2006-08-31
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - SPSS software
 output: html_document
 page_update: partial

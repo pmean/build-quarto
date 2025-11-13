@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/MedlineVeryBusy.html
 date: 2006-11-06
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Information searching
 output: html_document
 page_update: partial

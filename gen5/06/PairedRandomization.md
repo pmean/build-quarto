@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/PairedRandomization.html
 date: 2006-01-24
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Unusual data
 output: html_document
 page_update: partial

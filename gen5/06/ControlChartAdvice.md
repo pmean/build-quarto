@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/ControlChartAdvice.html
 date: 2006-12-18
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Control charts
 output: html_document
 page_update: partial

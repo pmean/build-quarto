@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/KickAround.html
 date: 2006-05-24
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Professional details
 output: html_document
 page_update: partial

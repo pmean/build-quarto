@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/FundingSources.html
 date: 2006-07-06
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Accrual problems
 output: html_document
 page_update: partial

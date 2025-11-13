@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/DataMining-06.html
 date: 2006-05-04
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Adverse events
 output: html_document
 page_update: partial

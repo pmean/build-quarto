@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/HighLevel.html
 date: 2006-05-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Information searching
 output: html_document
 page_update: partial

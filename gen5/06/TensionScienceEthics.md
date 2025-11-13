@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/TensionScienceEthics.html
 date: 2006-11-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Placebos in research
 output: html_document
 page_update: partial

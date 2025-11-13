@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/SmallSample.html
 date: 2006-03-29
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Small sample size issues
 output: html_document
 page_update: partial

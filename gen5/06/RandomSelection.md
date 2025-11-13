@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/RandomSelection.html
 date: 2006-07-18
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Randomization
 output: html_document
 page_update: partial

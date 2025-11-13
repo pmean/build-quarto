@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/StatisticalConcernsChildren.html
 date: 2006-11-02
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Children in research
 output: html_document
 page_update: partial

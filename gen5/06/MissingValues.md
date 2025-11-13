@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/MissingValues.html
 date: 2006-07-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Nonlinear regression
 output: html_document
 page_update: partial

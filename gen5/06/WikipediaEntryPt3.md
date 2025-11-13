@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/WikipediaEntryPt3.html
 date: 2006-08-29
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Wiki pages
 output: html_document
 page_update: partial

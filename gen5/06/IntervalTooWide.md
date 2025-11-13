@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/IntervalTooWide.html
 date: 2006-09-21
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Clinical importance
 - Confidence intervals
 output: html_document

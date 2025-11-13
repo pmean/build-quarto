@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/InterestingApril.html
 date: 2006-04-12
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Interesting stuff
 - Interesting quotes
 output: html_document

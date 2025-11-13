@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/StatisticalKoan2.html
 date: 2006-02-28
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Teaching resources
 output: html_document
 page_update: partial

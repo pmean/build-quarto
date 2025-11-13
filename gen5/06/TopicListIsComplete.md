@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/TopicListIsComplete.html
 date: 2006-04-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Website details
 output: html_document
 page_update: partial

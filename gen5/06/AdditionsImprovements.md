@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/AdditionsImprovements.html
 date: 2006-11-02
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Broken link
 - Obsolete page
 - Website details

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/ManipulationPeerReview-06.html
 date: 2006-11-21
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Ethics in research
 output: html_document
 page_update: partial

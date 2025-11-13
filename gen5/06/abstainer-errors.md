@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/AbstainerErrors.html
 date: 2006-04-19
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Diagnostic testing
 - Observational studies
 output: html_document

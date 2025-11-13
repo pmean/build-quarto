@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/SecondGrantPart2.html
 date: 2006-09-13
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Accrual problems
 output: html_document
 page_update: partial

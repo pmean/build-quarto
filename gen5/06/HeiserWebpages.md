@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/HeiserWebpages.html
 date: 2006-11-07
 categories:
 - "*Recommendation"
-- 2006
+- Year 2006
 - Statistical computing
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/MachineLearning.html
 date: 2006-01-24
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Data science
 - R software 
 output: html_document

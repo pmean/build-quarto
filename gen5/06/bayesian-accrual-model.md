@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/BayesianAccrualModel.html
 date: 2006-11-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Accrual problems
 - Bayesian statistics
 - Rmarkdown code

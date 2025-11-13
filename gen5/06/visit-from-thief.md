@@ -5,7 +5,7 @@ source: http://www.pmean.com/12a/koans/VisitFromThief.asp
 date: 2006-04-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Hypothesis testing
 - Statistical koans
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/SignificantPilot.html
 date: 2006-09-18
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Early stopping
 output: html_document
 page_update: partial

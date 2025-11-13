@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/HaplotypeAnalysis1.html
 date: 2006-05-31
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Genetic analysis
 output: html_document
 page_update: partial

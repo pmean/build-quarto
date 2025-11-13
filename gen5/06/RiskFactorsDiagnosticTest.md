@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/RiskFactorsDiagnosticTest.html
 date: 2006-11-09
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Diagnostic testing
 output: html_document
 page_update: partial

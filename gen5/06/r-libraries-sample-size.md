@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/SampleSizeR.html
 date: 2006-07-28
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - R software
 - Sample size justification
 output: html_document

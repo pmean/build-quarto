@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/EffectiveGraphs.html
 date: 2006-03-24
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Descriptive statistics
 output: html_document
 page_update: partial

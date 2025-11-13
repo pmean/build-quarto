@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/DangerUsingHumor.html
 date: 2006-11-14
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Website details
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/ParametricTestForRatio.html
 date: 2006-10-27
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Unusual data
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/12a/koans/WaxFruit.asp
 date: 2006-04-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Confidence intervals
 - Statistical koans
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/VarianceRatio.html
 date: 2006-06-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Analysis of variance
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/ShortfallSampleSize.html
 date: 2006-10-23
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Confidence intervals
 - Sample size justification
 output: html_document

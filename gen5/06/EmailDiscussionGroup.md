@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/EmailDiscussionGroup.html
 date: 2006-09-13
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Teaching resources
 output: html_document
 page_update: partial

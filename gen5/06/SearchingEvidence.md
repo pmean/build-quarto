@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/SearchingEvidence.html
 date: 2006-01-31
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Information searching
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/RegularExpressions-06.html
 date: 2006-05-18
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Data management
 output: html_document
 page_update: partial

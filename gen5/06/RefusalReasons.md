@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/RefusalReasons.html
 date: 2006-01-17
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Exclusions in research
 output: html_document
 page_update: partial

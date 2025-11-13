@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/TwoEventsWorrisome.html
 date: 2006-12-04
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Early stopping
 output: html_document
 page_update: partial

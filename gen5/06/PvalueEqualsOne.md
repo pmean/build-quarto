@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/PvalueEqualsOne.html
 date: 2006-05-23
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Pvalues
 output: html_document
 page_update: partial

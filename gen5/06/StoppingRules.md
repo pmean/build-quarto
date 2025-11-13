@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/StoppingRules.html
 date: 2006-07-05
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Early stopping
 output: html_document
 page_update: partial

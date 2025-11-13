@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/UnivariateClustering.html
 date: 2006-04-18
 categories:
 - "*Blog post"
-- 2006
+- Year 2006
 - Cluster analysis
 output: html_document
 page_update: partial
