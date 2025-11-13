@@ -72,7 +72,7 @@ ok_to_replace <- TRUE
 ok_to_replace <- FALSE
 
 clean_files(
-  '^- 2016$',
-  '- Year 2016',
+  '^- 2007$',
+  '- Year 2007',
   dir_root="gen5", 
   file_pattern="md$")
