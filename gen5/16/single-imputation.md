@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/single-imputation/"
 date: "2016-04-17"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Missing data
 output: html_document
 page_update: complete

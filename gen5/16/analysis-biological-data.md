@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/analysis-biological-data/"
 date: "2016-08-03"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Teaching resources
 output: html_document
 page_update: complete

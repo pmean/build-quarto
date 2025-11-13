@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/documentation-standards/"
 date: "2016-02-25"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Statistical computing
 output: html_document
 page_update: complete

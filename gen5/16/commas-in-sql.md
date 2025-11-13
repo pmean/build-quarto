@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/commas-in-sql/"
 date: "2016-10-25"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - SQL
 output: html_document
 page_update: complete

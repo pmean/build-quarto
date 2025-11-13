@@ -6,7 +6,7 @@ date: "2016-07-15"
 categories:
 - "*Blog post"
 - Incomplete page
-- 2016
+- Year 2016
 - R software
 output: html_document
 page_update: complete

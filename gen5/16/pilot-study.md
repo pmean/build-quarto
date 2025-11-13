@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/pilot-study/"
 date: "2016-06-14"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Pilot studies
 - Research design
 output: html_document

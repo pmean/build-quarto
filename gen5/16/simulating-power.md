@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/simulating-power/"
 date: "2016-02-05"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Incomplete page
 - Sample size justification
 output: html_document

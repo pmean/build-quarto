@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/subjects-per-variable/"
 date: "2016-03-30"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Linear regression
 - Sample size justification
 output: html_document

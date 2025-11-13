@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/the-survey-statistician/"
 date: "2016-02-03"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Survey design
 output: html_document
 page_update: complete

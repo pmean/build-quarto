@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/r-and-sqlserver/"
 date: "2016-10-20"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - R software
 - SQL
 output: html_document

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/lasso/"
 date: "2016-05-25"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Linear regression
 - R software
 output: html_document

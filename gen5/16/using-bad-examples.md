@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/using-bad-examples/"
 date: "2016-08-07"
 categories: 
 - "*Blog post"
-- 2016
+- Year 2016
 - Critical appraisal
 - Teaching resources
 output: html_document

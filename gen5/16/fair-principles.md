@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/fair-principles/"
 date: "2016-08-25"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Data sharing
 output: html_document
 page_update: complete

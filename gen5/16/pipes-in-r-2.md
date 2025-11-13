@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/pipes-in-r-2/"
 date: "2016-12-29"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - R software
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/effect-size/"
 date: "2016-04-18"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Clinical importance
 output: html_document
 page_update: complete

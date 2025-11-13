@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/hate-about-consulting/"
 date: "2016-10-25"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Human side of statistics
 output: html_document
 page_update: complete

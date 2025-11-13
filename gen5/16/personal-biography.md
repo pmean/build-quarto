@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/personal-biography/"
 date: "2016-12-26"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Personal details
 output: html_document
 page_update: complete

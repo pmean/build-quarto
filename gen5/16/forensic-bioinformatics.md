@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/forensic-bioinformatics/"
 date: "2016-08-03"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Data quality
 - Informatics
 - Research design

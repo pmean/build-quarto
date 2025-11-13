@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/biggest-statistics-papers/"
 date: "2016-03-26"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Writing research papers
 output: html_document
 page_update: complete

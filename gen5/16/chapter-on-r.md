@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/chapter-on-r/"
 date: "2016-01-13"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Professional details
 output: html_document
 page_update: complete

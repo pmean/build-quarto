@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/r-class-2016/"
 date: "2016-06-01"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - R software
 output: html_document
 page_update: complete

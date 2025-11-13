@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/hadley-wickham/"
 date: "2016-08-07"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Important statisticians
 - R software
 output: html_document

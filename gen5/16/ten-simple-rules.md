@@ -6,7 +6,7 @@ date: "2016-06-10"
 categories: 
 - "*Recommendation"
 - Incomplete page
-- 2016
+- Year 2016
 - Human side of statistics
 output: html_document
 page_update: complete

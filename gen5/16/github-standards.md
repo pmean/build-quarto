@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/github-standards/"
 date: "2016-05-31"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Statistical computing
 output: html_document
 page_update: complete

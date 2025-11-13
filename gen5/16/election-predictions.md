@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/election-predictions/"
 date: "2016-11-10"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Probability concepts
 output: html_document
 page_update: complete

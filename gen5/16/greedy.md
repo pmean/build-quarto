@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/greedy/"
 date: "2016-10-16"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Statistical computing
 output: html_document
 page_update: complete

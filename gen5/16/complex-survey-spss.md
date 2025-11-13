@@ -5,7 +5,7 @@ source: "http://www.pmean.com/16/complex.html"
 date: "2016-05-10"
 categories: 
 - "*Blog post"
-- 2016
+- Year 2016
 - Complex survey
 output: html_document
 page_update: complete

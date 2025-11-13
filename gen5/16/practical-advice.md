@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/practical-advice/"
 date: "2016-11-10"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Human side of statistics
 output: html_document
 page_update: complete

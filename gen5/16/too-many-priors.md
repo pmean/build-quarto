@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/too-many-priors/"
 date: "2016-05-31"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Bayesian statistics
 output: html_document
 page_update: complete

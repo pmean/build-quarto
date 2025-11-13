@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/zero-or-infinity/"
 date: "2016-03-30"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Measuring benefit and risk
 output: html_document
 page_update: complete

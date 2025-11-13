@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/grumpy-editorials/"
 date: "2016-01-22"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Data sharing
 - Quality improvement
 output: html_document

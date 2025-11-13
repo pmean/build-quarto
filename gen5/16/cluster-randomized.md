@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/cluster-randomized/"
 date: "2016-03-30"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Multilevel models
 - Sample size justification
 output: html_document

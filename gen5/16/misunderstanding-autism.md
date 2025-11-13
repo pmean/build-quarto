@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/misunderstanding-autism/"
 date: "2016-11-03"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Ethics in research
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/faculty-profile/"
 date: "2016-01-22"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Professional details
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/systematic-overview/"
 date: "2016-06-17"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Research design
 - Systematic overviews
 output: html_document

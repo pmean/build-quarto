@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/organizing-data/"
 date: "2016-09-01"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Data management
 output: html_document
 page_update: complete

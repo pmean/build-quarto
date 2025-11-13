@@ -6,7 +6,7 @@ date: "2016-05-16"
 categories:
 - "*Blog post"
 - Incomplete page
-- 2016
+- Year 2016
 - Data science
 - R software
 output: html_document

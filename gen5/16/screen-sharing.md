@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/screen-sharing/"
 date: "2016-11-07"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Presenting research
 output: html_document
 page_update: complete

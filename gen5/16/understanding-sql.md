@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/understanding-sql/"
 date: "2016-08-15"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - SQL
 output: html_document
 page_update: complete

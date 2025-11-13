@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/shortening-survey/"
 date: "2016-03-22"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Survey design
 output: html_document
 page_update: complete

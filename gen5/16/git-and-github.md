@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/git-and-github/"
 date: "2016-04-17"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Statistical computing
 output: html_document
 page_update: complete

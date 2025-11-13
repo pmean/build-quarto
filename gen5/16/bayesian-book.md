@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/bayesian-book/"
 date: "2016-06-13"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Bayesian statistics
 - Teaching resources
 output: html_document

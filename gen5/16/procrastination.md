@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/procrastination/"
 date: "2016-01-06"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Grant writing
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/incentivizing/"
 date: "2016-02-23"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Grant writing
 output: html_document
 page_update: complete

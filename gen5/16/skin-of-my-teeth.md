@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/skin-of-my-teeth/"
 date: "2016-09-23"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Professional details
 output: html_document
 page_update: complete

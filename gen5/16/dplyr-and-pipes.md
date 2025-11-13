@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/dplyr-and-pipes/"
 date: "2016-08-07"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - R software
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/coin-flip/"
 date: "2016-01-25"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Randomization
 output: html_document
 page_update: complete

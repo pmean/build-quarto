@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/zero-in-table/"
 date: "2016-01-19"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Ask Professor Mean
 - Measuring benefit and risk
 output: html_document

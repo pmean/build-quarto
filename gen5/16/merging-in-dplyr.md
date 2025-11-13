@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/merging-in-dplyr/"
 date: "2016-09-06"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Data management
 - R software
 output: html_document

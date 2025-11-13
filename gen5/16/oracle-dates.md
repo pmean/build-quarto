@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/oracle-dates/"
 date: "2016-10-18"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Dates
 - SQL
 output: html_document

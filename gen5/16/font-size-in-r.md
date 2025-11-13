@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/font-size-in-r/"
 date: "2016-08-08"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Presenting research
 - R software
 output: html_document

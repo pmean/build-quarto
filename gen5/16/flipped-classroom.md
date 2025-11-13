@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/flipped-classroom/"
 date: "2016-09-06"
 categories:
 - "*Recommendation"
-- 2016
+- Year 2016
 - Teaching resources
 output: html_document
 page_update: complete

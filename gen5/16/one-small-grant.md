@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/one-small-grant/"
 date: "2016-10-03"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - Professional details
 - Teaching resources
 output: html_document

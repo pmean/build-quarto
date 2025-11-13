@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/megabyte/"
 date: "2016-05-12"
 categories:
 - "*Blog post"
-- 2016
+- Year 2016
 - R software
 - Statistical computing
 output: html_document
