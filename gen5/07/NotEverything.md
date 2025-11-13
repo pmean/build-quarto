@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/NotEverything.html
 date: 2007-01-31
 categories:
 - "*Quotation"
-- 2007
+- Year 2007
 - Qualitative research
 output: html_document
 page_update: partial

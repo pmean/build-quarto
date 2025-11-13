@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/HeteroscedasticTtest.html
 date: 2007-07-26
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Hypothesis testing
 output: html_document
 page_update: complete

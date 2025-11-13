@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/CorrelatedNormalProbabilities.html
 date: 2007-06-04
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Probability concepts
 output: html_document
 page_update: complete

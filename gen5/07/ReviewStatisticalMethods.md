@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/ReviewStatisticalMethods.html
 date: 2007-03-05
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Human side of Statistics 
 output: html_document
 page_update: complete

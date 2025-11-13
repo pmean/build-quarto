@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/DebateHistoricalControls.html
 date: 2007-06-27
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Broken link
 - Observational studies
 output: html_document

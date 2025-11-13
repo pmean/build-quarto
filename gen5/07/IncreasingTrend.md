@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/IncreasingTrend.html
 date: 2007-11-26
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Logistic regression
 output: html_document
 page_update: complete

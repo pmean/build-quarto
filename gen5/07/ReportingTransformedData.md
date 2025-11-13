@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/ReportingTransformedData.html
 date: 2007-03-28
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Incomplete page
 - Statistical modeling 
 output: html_document

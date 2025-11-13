@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/CenteringData.html
 date: 2007-06-08
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Data transformations 
 output: html_document
 page_update: complete

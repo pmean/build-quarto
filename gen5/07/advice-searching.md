@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/AdviceSearching.html
 date: 2007-02-11
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Incomplete page
 - Information searching
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/TroubleWithApples.html
 date: 2007-06-25
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Observational studies
 - Placebos in research
 output: html_document

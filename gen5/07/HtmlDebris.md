@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/HtmlDebris.html
 date: 2007-09-27
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Obsolete page
 - Website details
 output: html_document

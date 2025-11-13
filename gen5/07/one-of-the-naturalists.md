@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/OneOfTheNaturalists.html
 date: 2007-04-09
 categories:
 - "*Quotation"
-- 2007
+- Year 2007
 - Theory versus practice
 output: html_document
 page_update: complete

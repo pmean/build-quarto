@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/SevenFormulas.html
 date: 2007-06-14
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Writing research papers
 output: html_document
 page_update: partial

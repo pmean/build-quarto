@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/AnalyzingItt.html
 date: 2007-12-19
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Randomization in research
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/BugsBetaBinomial.html
 date: 2007-04-17
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Bayesian statistics
 output: html_document
 page_update: complete

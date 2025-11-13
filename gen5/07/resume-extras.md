@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/ReportingTransformedData.html
 date: 2007-09-04
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Obsolete page
 - Professional details 
 output: html_document

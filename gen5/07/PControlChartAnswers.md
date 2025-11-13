@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/PControlChartAnswers.html
 date: 2007-03-07
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Control charts
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/ConflictingAnalyses.html
 date: 2007-05-16
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Pvalues
 output: html_document
 page_update: complete

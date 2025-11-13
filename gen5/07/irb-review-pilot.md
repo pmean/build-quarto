@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/IrbReviewPilot.html
 date: 2007-03-26
 categories:
 - "*Blog post"
-- 2007
+- Year 2007
 - Ethics in research
 - Pilot studies
 - Sample size justification

@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/PediatricResearch.html
 date: 2007-03-02
 categories:
 - "*Recommendation"
-- 2007
+- Year 2007
 - Conflict of interest
 output: html_document
 page_update: partial
