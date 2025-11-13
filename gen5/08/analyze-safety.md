@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/AnalyzeSafety.html
 date: 2008-01-22
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Adverse events
 - Being updated
 output: html_document

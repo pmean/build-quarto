@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/EmailLists.html
 date: 2008-07-17
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Teaching resources
 output: html_document

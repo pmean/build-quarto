@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/BadAnalysis.html
 date: 2008-03-24
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Human side of statistics
 - Multiple comparisons

@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/SkipBonferroni.html
 date: 2008-08-09
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Multiple comparisons
 output: html_document

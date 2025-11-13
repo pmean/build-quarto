@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/Update060308.html
 date: 2006-03-08
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Statistical evidence book
 output: html_document

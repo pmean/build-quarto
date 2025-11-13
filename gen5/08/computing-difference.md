@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/ComputingDifference.html
 date: 2008-10-20
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Data management
 - SPSS software
 - Being updated

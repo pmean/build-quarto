@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/Interesting2008.html
 date: 2008-10-20
 categories:
 - "*Recommendation"
-- 2008
+- Year 2008
 - Being updated
 - Hypothesis testing
 output: html_document

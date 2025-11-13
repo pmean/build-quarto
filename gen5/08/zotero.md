@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/Interesting2008.html
 date: 2008-12-01
 categories:
 - "*Recommendation"
-- 2008
+- Year 2008
 - Being updated
 - Writing research papers
 output: html_document

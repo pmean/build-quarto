@@ -5,7 +5,7 @@ source: http://www.pmean.com/06/GeneralizingResearch.html
 date: 2006-02-15
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Extrapolations in research
 output: html_document

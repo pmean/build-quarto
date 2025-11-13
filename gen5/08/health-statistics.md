@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/Interesting2008.html
 date: 2008-11-01
 categories:
 - "*Recommendation"
-- 2008
+- Year 2008
 - Being updated
 - Teaching resources
 output: html_document

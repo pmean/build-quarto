@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/AntiIntellectualism.html
 date: 2008-08-08
 categories:
 - "*Quotation"
-- 2008
+- Year 2008
 - Being updated
 - Critical appraisal
 output: html_document

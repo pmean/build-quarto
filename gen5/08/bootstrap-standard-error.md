@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/BootstrapStandardError.html
 date: 2008-06-20
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Unusual data
 output: html_document
 page_update: complete

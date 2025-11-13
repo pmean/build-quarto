@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/MathError.html
 date: 2008-04-06
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Website details
 output: html_document

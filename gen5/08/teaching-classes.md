@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/TeachingClasses.html
 date: 2011-07-11
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Teaching resources
 output: html_document

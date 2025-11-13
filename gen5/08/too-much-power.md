@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/TooMuchPower.html
 date: 2008-01-09
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Sample size justification
 output: html_document
 page_update: partial

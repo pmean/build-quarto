@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/SdTooBig.html
 date: 2008-10-22
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Descriptive statistics
 output: html_document

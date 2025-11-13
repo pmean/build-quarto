@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/ConsultingResources.html
 date: 2008-08-02
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Human side of statistics
 - Being updated
 output: html_document

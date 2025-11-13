@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/LanDeMets.html
 date: 2008-11-21
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Early stopping in clinical trials
 output: html_document

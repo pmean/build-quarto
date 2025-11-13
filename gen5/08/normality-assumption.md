@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/NormalityAssumption.html
 date: 2008-10-14
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Hypothesis testing
 output: html_document

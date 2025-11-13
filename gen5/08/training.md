@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/Training.html
 date: 2001-11-05
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Obsolete page
 output: html_document
 page_update: partial

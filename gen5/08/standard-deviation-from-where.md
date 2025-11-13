@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/StandardDeviation.html
 date: 2008-07-09
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Sample size justification
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/HighAltitude.html
 date: 2008-01-05
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Poisson regression
 - Teaching resources

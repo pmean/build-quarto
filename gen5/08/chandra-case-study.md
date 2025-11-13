@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/ChandraCasestudy.html
 date: 2008-09-08
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Ethics in research
 - Being updated
 output: html_document

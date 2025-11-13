@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/AbandonFrontPage.html
 date: 2008-07-24
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Obsolete page
 - Website details
 output: html_document

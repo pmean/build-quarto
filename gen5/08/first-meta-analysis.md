@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/FirstMetaAnalysis.html
 date: 2008-07-23
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Systematic overviews
 output: html_document

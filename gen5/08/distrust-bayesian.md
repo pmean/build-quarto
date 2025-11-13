@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/DistrustBayesian.html
 date: 2008-07-01
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Bayesian statistics
 - Being updated
 output: html_document

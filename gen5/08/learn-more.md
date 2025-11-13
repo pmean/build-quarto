@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/LearnMore.html
 date: 2008-07-18
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Teaching resources
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/NewOffice.html
 date: 2008-04-25
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Obsolete page
 output: html_document
 page_update: partial

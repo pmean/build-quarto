@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/JackknifeEntropy.html
 date: 2008-09-15
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Information theory
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/SampleSize.html
 date: 2008-08-20
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Sample size justification
 output: html_document

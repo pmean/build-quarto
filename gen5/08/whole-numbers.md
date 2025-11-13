@@ -5,7 +5,7 @@ source: http://www.pmean.com/08/WholeNumbers-08.html
 date: 2008-04-04
 categories:
 - "*Blog post"
-- 2008
+- Year 2008
 - Being updated
 - Descriptive statistics
 - Writing research papers
