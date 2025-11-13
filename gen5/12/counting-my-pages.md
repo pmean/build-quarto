@@ -5,7 +5,7 @@ sources: "http://www.pmean.com/12/counting.html"
 date: 2012-07-03
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Obsolete page
 output: html_document
 page_update: complete

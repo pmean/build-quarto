@@ -5,7 +5,7 @@ date: 2012-03-19
 source: http://www.pmean.com/12/free.html
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Being updated
 output: html_document
 page_update: no

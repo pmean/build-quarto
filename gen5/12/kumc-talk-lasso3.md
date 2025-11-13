@@ -5,7 +5,7 @@ date: 2012-11-05
 source: http://www.pmean.com/12/lasso3.html
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Being updated
 output: html_document
 page_update: no

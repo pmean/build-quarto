@@ -5,7 +5,7 @@ source: http://www.pmean.com/12/IowaTalk.html
 date: 2012-04-03
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Being updated
 output: html_document
 page_update: no

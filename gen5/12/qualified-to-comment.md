@@ -5,7 +5,7 @@ source: "http://www.pmean.com/12/qualified.html"
 date: 2012-10-08
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Being updated
 output: html_document
 page_update: no

@@ -5,7 +5,7 @@ source: http://www.pmean.com/12/adaptive.html
 date: 2012-03-07
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Bayesian statistics
 output: html_document
 page_update: complete

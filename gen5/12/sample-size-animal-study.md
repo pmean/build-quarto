@@ -5,7 +5,7 @@ source: http://www.pmean.com/12/animal.html
 date: 2012-01-06
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Ask Professor Mean
 - Sample size justification
 output: html_document

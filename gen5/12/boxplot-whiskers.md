@@ -5,7 +5,7 @@ source: http://www.pmean.com/12/whiskers.html
 date: 2012-07-27
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Being updated
 output: html_document
 page_update: no

@@ -5,7 +5,7 @@ date: 2012-04-22
 source: http://www.pmean.com/12/exclusions.html
 categories:
 - "*Blog post"
-- 2012
+- Year 2012
 - Being updated
 output: html_document
 page_update: no
