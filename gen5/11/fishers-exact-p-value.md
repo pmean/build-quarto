@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/Fishers.html
 date: 2011-07-21
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Measuring benefit and risk
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/cer.html
 date: 2011-04-13
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Teaching resources
 output: html_document
 page_update: complete

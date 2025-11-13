@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/meps.html
 date: 2011-09-02
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Complex surveys
 output: html_document
 page_update: complete

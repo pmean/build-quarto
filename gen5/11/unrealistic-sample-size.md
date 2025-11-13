@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/unrealistic.html
 date: 2011-12-20
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Sample size justification
 output: html_document
 page_update: complete

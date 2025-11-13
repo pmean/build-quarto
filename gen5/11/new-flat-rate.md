@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/NewFlatRate.html
 date: 2011-08-17
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Professional details
 output: html_document
 page_update: complete

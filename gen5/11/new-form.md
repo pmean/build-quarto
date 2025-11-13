@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/NewForm.html
 date: 2011-06-02
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Writing research grants
 output: html_document
 page_update: complete

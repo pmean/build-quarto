@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/abstracts.html
 date: 2011-12-08
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Critical appraisal
 - Teaching resources
 output: html_document

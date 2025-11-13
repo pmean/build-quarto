@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/Editorials.html
 date: 2011-08-13
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Being updated
 output: html_document
 page_update: partial

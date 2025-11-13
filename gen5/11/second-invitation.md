@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/SecondInvitation.html
 date: 2011-07-24
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Independent consulting
 output: html_document
 page_update: complete

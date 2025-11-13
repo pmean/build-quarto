@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/WebcastTopics.html
 date: 2011-11-14
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Teaching resources
 output: html_document
 page_update: partial

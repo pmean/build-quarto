@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/SingleModel.html
 date: 2011-11-03
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Logistic regression
 output: html_document
 page_update: complete

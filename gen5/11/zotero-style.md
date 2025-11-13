@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/ZoteroStyle.html
 date: 2011-02-22
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Website details
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/PilotGrant.html
 date: 2011-11-07
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Being updated
 output: html_document
 page_update: complete

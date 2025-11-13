@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/Segmented.html
 date: 2011-05-25
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Bayesian statistics
 output: html_document
 page_update: complete

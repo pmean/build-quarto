@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/BinaryCoding.html
 date: 2011-05-21
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Data management
 output: html_document
 page_update: complete

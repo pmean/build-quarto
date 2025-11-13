@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/penston.html
 date: 2011-12-31
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Being updated
 output: html_document
 page_update: no

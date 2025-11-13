@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/ShortBio.html
 date: 2011-05-16
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Professional details
 output: html_document
 page_update: complete

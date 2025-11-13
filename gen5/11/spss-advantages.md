@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/SpssAdvantages.html
 date: 2011-08-11
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - SPSS software
 output: html_document
 page_update: complete

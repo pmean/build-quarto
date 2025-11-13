@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/StatisticalLiteracy.html
 date: 2011-10-06
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Being updated
 output: html_document
 page_update: no

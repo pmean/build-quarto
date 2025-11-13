@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/PositiveStatements.html
 date: 2011-08-16
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Conflict of interest
 output: html_document
 page_update: complete

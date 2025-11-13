@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/StataMacro.html
 date: 2011-03-08
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Stata software
 output: html_document
 page_update: partial

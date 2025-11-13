@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/DissertationConsulting.html
 date: 2011-05-11
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Being updated
 output: html_document
 page_update: complete

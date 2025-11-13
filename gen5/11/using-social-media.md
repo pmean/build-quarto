@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/SocialMedia.html
 date: 2011-08-01
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Independent consulting
 output: html_document
 page_update: complete

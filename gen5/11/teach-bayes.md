@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/TeachBayes.html
 date: 2011-10-17
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Bayesian statistics
 output: html_document
 page_update: complete

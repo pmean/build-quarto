@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/NewComputer.html
 date: 2011-05-16
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Statistical computing
 output: html_document
 page_update: complete

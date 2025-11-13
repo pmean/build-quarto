@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/Publicity.html
 date: 2011-08-04
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Being updated
 - Human side of statistics
 output: html_document

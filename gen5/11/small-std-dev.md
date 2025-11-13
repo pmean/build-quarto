@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/SmallStdDev.html
 date: 2011-05-02
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Descriptive statistics
 output: html_document
 page_update: complete

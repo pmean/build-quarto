@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/HelpMyIrb.html
 date: 2011-02-17
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Ethics in research
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/LogisticAssumptions.html
 date: 2011-09-01
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Logistic regression
 output: html_document
 page_update: complete

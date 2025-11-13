@@ -5,7 +5,7 @@ source: http://www.pmean.com/11/QualitativeSampleSize.html
 date: 2011-11-22
 categories:
 - "*Blog post"
-- 2011
+- Year 2011
 - Qualitative research
 - Sample size justification
 output: html_document
