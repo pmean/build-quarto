@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2013-03-25
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - SPSS software
 output: html_document
 page_update: complete

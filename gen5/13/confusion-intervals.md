@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/confusion-intervals/"
 date: "2013-12-03"
 categories:
 - "*Recommendation"
-- 2013
+- Year 2013
 - Confidence intervals
 output: html_document
 page_update: complete

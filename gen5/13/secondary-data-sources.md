@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2013-08-07
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Teaching resources
 output: html_document
 page_update: complete

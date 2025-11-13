@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ready-for-testing/"
 date: "2013-11-27"
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Obsolete page
 output: html_document
 page_update: complete

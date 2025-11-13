@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/bad-prediction/"
 date: "2013-12-04"
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Bayesian statistics
 output: html_document
 page_update: complete

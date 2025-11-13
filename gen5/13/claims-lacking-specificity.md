@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/claims-lacking-specificity/"
 date: "2013-12-10"
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Critical appraisal
 output: html_document
 page_update: complete

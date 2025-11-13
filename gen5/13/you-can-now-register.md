@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/you-can-now-register/"
 date: "2013-11-30"
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Obsolete page
 output: html_document
 page_update: complete

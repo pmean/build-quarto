@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2013-04-26
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Being updated
 output: html_document
 page_update: partial

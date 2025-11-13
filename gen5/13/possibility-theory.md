@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/possibility-theory/"
 date: "2013-12-09"
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Bayesian statistics
 output: html_document
 page_update: complete

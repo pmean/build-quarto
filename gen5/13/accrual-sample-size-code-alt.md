@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2013-07-29
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Accrual problems
 - Bayesian statistics
 output: html_document

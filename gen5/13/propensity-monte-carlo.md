@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/propensity-monte-carlo/"
 date: "2013-12-20"
 categories:
 - "*Recommendation"
-- 2013
+- Year 2013
 - Risk adjustment
 output: html_document
 page_update: complete

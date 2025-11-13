@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/datamind/"
 date: "2013-12-12"
 categories:
 - "*Recommendation"
-- 2013
+- Year 2013
 - R software
 output: html_document
 page_update: complete

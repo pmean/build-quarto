@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/comparing-diagnostic-tests/"
 date: "2013-12-18"
 categories:
 - "*Blog post"
-- 2013
+- Year 2013
 - Sample size justification
 output: html_document
 page_update: partial
