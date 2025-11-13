@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/biography.html
 date: 2002-01-16
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Professional details
 output: html_document
 page_update: partial

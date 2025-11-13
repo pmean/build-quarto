@@ -5,7 +5,7 @@ source: "http://www.pmean.com/01/descriptive.html"
 date: 2001-10-11
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Descriptive statistics
 output: html_document

@@ -5,7 +5,7 @@ source: "http://www.pmean.com/01/small.html"
 date: 2001-10-11
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Small sample size issues
 output: html_document

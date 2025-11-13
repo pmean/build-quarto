@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/longitudinal.html
 date: 2002-07-26
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - SPSS software
 output: html_document
 page_update: partial

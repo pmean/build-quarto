@@ -5,7 +5,7 @@ source: "http://www.pmean.com/01/unequal.html"
 date: 2001-11-02
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Analysis of variance
 output: html_document

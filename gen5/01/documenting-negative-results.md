@@ -5,7 +5,7 @@ source: "http://www.pmean.com/01/negative.html"
 date: 2001-01-01
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Website details
 output: html_document

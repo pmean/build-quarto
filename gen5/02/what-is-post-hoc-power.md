@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/posthoc.html
 date: 2002-11-01
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Post hoc power
 output: html_document
 page_update: partial

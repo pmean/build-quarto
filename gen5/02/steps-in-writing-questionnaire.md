@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/questionnaire.html
 date: 2002-07-12
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Survey design
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/lin_int.html
 date: 2002-08-01
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Ask Professor Mean
 - Linear regression
 output: html_document

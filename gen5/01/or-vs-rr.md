@@ -5,7 +5,7 @@ source: "http://www.pmean.com/01/oddsratio.html"
 date: 2001-01-09
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Measuring benefit and risk
 output: html_document

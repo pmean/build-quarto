@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2003-11-26
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Broken link
 - Writing research papers
 output: html_document

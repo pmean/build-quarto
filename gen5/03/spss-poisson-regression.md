@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2003-07-29
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Poisson regression 
 - Obsolete page
 output: html_document

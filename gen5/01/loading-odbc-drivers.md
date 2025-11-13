@@ -5,7 +5,7 @@ source: "http://www.pmean.com/01/mdac.html"
 date: 2001-01-24
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Data management
 - SPSS software

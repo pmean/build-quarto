@@ -5,7 +5,7 @@ source: http://www.pmean.com/03/complex.html
 date: 2003-04-23
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Linear regression 
 output: html_document
 page_update: complete

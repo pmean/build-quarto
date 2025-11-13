@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/srv_data.html
 date: 2002-08-27
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Being updated
 - Survival analysis
 output: html_document

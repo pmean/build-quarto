@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/validity.html
 date: 2002-01-01
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Ask Professor Mean
 - Incomplete page
 - Measuring agreement

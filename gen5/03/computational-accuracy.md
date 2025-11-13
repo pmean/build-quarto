@@ -5,7 +5,7 @@ source: http://www.pmean.com/03/accuracy.html
 date: 2003-11-26
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Statistical computing
 output: html_document
 page_update: complete

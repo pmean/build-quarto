@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/lin_spss.html
 date: 2002-06-21
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Linear regression
 output: html_document
 page_update: partial

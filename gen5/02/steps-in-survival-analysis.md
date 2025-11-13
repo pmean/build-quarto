@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/survival.html
 date: 2002-10-11
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Survival analysis
 output: html_document
 page_update: partial

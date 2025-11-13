@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/why95.html
 date: 2002-05-06
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Ask Professor Mean
 - Confidence intervals
 output: html_document

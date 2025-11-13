@@ -5,7 +5,7 @@ source: http://www.pmean.com/03/meanormedian.html
 date: 2003-07-28
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Descriptive statistics
 output: html_document
 page_update: complete

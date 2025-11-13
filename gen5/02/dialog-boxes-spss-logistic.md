@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/logist_spss.html
 date: 2002-07-22
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Logistic regression
 output: html_document
 page_update: partial

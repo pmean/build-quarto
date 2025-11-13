@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/privacy.html
 date: 2002-07-12
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Ask Professor Mean
 - Privacy in research
 output: html_document

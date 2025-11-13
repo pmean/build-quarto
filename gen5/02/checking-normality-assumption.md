@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/normal.html
 date: 2002-09-11
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Ask Professor Mean
 - Modeling issues
 output: html_document

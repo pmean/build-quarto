@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2003-06-05
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Descriptive statistics
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2003-09-22
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Broken link
 - Data mining
 - Incomplete page

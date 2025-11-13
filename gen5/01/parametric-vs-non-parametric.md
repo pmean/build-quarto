@@ -5,7 +5,7 @@ source: "http://www.pmean.com/01/parametric.html"
 date: 2001-07-30
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Unusual data
 output: html_document

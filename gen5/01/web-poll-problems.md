@@ -5,7 +5,7 @@ source: http://www.pmean.com/01/webpoll.html
 date: 2001-07-30 
 categories:
 - "*Blog post"
-- 2001
+- Year 2001
 - Being updated
 - Research design 
 output: html_document 

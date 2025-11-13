@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/percentage.html
 date: 2002-11-06
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Ask Professor Mean
 - Descriptive statistics
 - Writing research papers

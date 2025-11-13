@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2003-10-01
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Nonlinear regression
 output: html_document
 page_update: complete

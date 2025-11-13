@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/logist_concepts.html
 date: 2002-07-23
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Incomplete pages
 - Logistic regression
 output: html_document

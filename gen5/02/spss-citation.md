@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/citation.html
 date: 2002-03-06
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Ask Professor Mean
 - SPSS software
 output: html_document

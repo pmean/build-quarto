@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2003-11-27
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Hypothesis testing 
 - Incomplete page
 output: html_document

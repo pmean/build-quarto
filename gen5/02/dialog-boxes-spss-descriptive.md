@@ -5,7 +5,7 @@ source: http://www.pmean.com/02/des_spss.html
 date: 2002-06-21
 categories:
 - "*Blog post"
-- 2002
+- Year 2002
 - Descriptive Statistics
 output: html_document
 page_update: partial

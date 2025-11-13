@@ -6,7 +6,7 @@ date: 2003-04-30
 categories:
 - "*Blog post"
 - Obsolete page
-- 2003
+- Year 2003
 - Professional details
 output: html_document
 page_update: complete

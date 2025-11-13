@@ -5,7 +5,7 @@ source: http://www.pmean.com/03/barpie.html
 date: 2003-06-05
 categories:
 - "*Blog post"
-- 2003
+- Year 2003
 - Descriptive statistics
 - Graphical display
 output: html_document
