@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/AdjustedHazardRatio.html
 date: 2009-01-19
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Survival analysis
 output: html_document

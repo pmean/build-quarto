@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/AcknowledgingContributions.html
 date: 2009-02-16
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Writing research papers
 output: html_document
 page_update: no

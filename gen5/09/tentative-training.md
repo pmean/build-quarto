@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/TentativeTraining.html
 date: 2009-09-12
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Professional details
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/CanIStop.html
 date: 2009-09-16
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Early stopping
 output: html_document

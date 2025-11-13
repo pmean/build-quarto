@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/ThreeArmPower.html
 date: 2009-09-14
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Sample size justification
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/SurprisalMatrix.html
 date: 2009-05-22
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Information theory
 output: html_document

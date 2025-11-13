@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/Updates2009.html
 date: 2009-01-21
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 output: html_document
 page_update: no

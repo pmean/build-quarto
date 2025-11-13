@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/JumpStart.html
 date: 2009-11-07
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Teaching resources
 output: html_document

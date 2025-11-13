@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/RandomMath.html
 date: 2009-11-30
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - R software
 output: html_document

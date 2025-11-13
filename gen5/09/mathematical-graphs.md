@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/MathematicalGraphs.html
 date: 2009-01-14
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Graphical display
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/MontyHall.html
 date: 2009-01-01
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Probability
 output: html_document

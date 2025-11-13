@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/NntForIndirectComparisons.html
 date: 2009-04-20
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Measuring benefit and risk
 output: html_document

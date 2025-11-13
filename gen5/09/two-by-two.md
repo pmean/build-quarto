@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/TwoByTwo.html
 date: 2009-12-14
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - SPSS software
 output: html_document

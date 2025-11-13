@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/NormalPlot.html
 date: 2009-10-29
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Probability distributions
 output: html_document

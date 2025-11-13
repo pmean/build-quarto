@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/SurveyScale.html
 date: 2009-03-12
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Survey design
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/WebsiteTraffic.html
 date: 2009-05-11
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Website details
 output: html_document

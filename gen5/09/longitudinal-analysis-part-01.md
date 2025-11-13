@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/LongitudinalPart1.html
 date: 2009-09-15
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Longitudinal data
 output: html_document

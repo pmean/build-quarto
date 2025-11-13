@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/PowerpointDefense.html
 date: 2009-01-06
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Presenting research 
 output: html_document

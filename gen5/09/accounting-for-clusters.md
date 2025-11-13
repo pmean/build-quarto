@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/AccountingForClusters.html
 date: 2009-10-13
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Randomization in research
 output: html_document
 page_update: no

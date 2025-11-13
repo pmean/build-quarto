@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/CaseControl.html
 date: 2009-04-28
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Epidemiology
 output: html_document

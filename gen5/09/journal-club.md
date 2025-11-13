@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/JournalClub.html
 date: 2009-03-07
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Teaching resources
 output: html_document

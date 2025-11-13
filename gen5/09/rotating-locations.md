@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/RotatingLocations.html
 date: 2009-11-02
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Research design
 output: html_document

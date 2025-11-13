@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/FewerThanTen.html
 date: 2009-02-18
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Small sample size issues
 output: html_document

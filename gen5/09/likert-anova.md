@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/LikertAnova.html
 date: 2009-10-13
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Analysis of variance
 output: html_document

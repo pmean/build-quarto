@@ -5,7 +5,7 @@ source: http://www.pmean.com/09/MultipleTimePoints.html
 date: 2009-07-08
 categories:
 - "*Blog post"
-- 2009
+- Year 2009
 - Being updated
 - Multiple comparisons
 output: html_document
