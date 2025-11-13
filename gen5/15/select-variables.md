@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/select-variables/"
 date: "2015-07-16"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Risk adjustment
 output: html_document
 page_update: complete

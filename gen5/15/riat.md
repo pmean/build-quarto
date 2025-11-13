@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/riat/"
 date: "2015-04-16"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Publication bias
 output: html_document
 page_update: complete

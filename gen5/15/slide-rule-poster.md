@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/slide-rule-poster/"
 date: "2015-12-03"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Diagnostic testing
 - Professional details
 output: html_document

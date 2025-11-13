@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/switching-hypotheses/"
 date: "2015-12-20"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Hypothesis testing
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/clinical-trials-hype/"
 date: "2015-10-29"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Randomization
 output: html_document
 page_update: complete

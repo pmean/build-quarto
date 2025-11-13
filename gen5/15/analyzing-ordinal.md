@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/analyzing-ordinal/"
 date: "2015-01-08"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Logistic regression
 - Ordinal data
 output: html_document

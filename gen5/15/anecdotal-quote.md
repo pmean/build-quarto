@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/anecdotal-quote/"
 date: "2015-10-29"
 categories:
 - "*Quotation"
-- 2015
+- Year 2015
 - Critical appraisal
 output: html_document
 page_update: complete

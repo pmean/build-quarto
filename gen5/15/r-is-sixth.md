@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/r-is-sixth/"
 date: "2015-08-20"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - R software
 output: html_document
 page_update: complete

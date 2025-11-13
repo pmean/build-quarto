@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/how-many-research-subjects/"
 date: "2015-10-13"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Sample size justification
 output: html_document
 page_update: complete

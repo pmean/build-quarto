@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/xkcd-p-values/"
 date: "2015-02-03"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Hypothesis testing
 output: html_document
 page_update: complete

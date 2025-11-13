@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/data-presentation/"
 date: "2015-04-30"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Graphical display
 output: html_document
 page_update: complete

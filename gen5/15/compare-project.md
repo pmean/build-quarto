@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/compare-project/"
 date: "2015-12-07"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Critical appraisal
 - Publication bias
 output: html_document

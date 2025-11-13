@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/tessera/"
 date: "2015-01-12"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Data science
 - R software
 output: html_document

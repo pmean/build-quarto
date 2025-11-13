@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/acceptable-response/"
 date: "2015-03-30"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Observational studies
 - Survey design
 output: html_document

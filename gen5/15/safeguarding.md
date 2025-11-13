@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/safeguarding/"
 date: "2015-12-02"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Blinding in research
 - Early stopping
 - Ethics in research

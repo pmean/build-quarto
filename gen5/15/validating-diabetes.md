@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/validating-diabetes/"
 date: "2015-05-11"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Diagnostic testing
 - Sample size justification
 output: html_document

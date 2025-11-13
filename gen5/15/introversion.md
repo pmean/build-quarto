@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/introversion/"
 date: "2015-09-08"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Human side of statistics
 output: html_document
 page_update: complete

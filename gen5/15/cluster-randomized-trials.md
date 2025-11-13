@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/cluster-randomized-trials/"
 date: "2015-08-13"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Multilevel models
 - Research design
 output: html_document

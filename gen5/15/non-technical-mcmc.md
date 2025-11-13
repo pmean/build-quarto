@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/non-technical-mcmc/"
 date: "2015-09-21"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Accrual problems
 - Bayesian statistics
 output: html_document

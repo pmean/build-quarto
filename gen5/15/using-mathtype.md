@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/using-mathtype/"
 date: "2015-04-12"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Presenting research
 - Obsolete page
 output: html_document

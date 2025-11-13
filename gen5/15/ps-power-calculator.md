@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/ps-power-calculator/"
 date: "2015-09-24"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Sample size justification
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/basp-editorial/"
 date: "2015-02-24"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Bayesian statistics
 - Hypothesis testing
 output: html_document

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/social-media-for-scientists/"
 date: "2015-04-30"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Human side of statistics
 output: html_document
 page_update: complete

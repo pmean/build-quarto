@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/covariate-imbalance/"
 date: "2015-03-04"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Risk adjustment
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2015-07-29
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Being updated
 output: html_document
 page_update: no

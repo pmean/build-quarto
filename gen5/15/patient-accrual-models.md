@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/patient-accrual-models/"
 date: "2015-06-03"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Professional details
 output: html_document
 page_update: complete

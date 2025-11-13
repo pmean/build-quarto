@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/developing-grants/"
 date: "2015-05-26"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Grant writing
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/nonparametric-multifactor/"
 date: "2015-03-30"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Logistic regression
 - Nonparametric tests
 output: html_document

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/relationships-in-r/"
 date: "2015-04-03"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - R software
 - Rmarkdown graphs
 output: html_document

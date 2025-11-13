@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/grant-training-2/"
 date: "2015-05-08"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Grant writing
 output: html_document
 page_update: complete

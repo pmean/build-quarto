@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/tripod-statement/"
 date: "2015-01-08"
 categories:
 - "*Recommendation"
-- 2015
+- Year 2015
 - Writing research papers
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/17-years/"
 date: "2015-01-15"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Critical appraisal
 output: html_document
 page_update: complete

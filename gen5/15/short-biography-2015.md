@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/short-biography/"
 date: "2015-06-01"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Professional details
 output: html_document
 page_update: complete

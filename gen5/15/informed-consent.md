@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/informed-consent/"
 date: "2015-06-01"
 categories: 
 - "*Blog post"
-- 2015
+- Year 2015
 - Ethics in research
 output: html_document
 page_update: complete

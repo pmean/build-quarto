@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/google-scholar-profile/"
 date: "2015-11-16"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Professional details
 output: html_document
 page_update: complete

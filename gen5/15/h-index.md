@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/h-index/"
 date: "2015-08-20"
 categories:
 - "*Blog post"
-- 2015
+- Year 2015
 - Professional details
 output: html_document
 page_update: complete
