@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/LeastSquares.html
 date: 2010-10-01
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Linear regression
 output: html_document

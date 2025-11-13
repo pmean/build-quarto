@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/ProposedPoster.html
 date: 2010-02-03
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Professional details
 output: html_document

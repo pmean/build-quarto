@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/CompetingBooks.html
 date: 2010-08-16
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Professional details
 output: html_document

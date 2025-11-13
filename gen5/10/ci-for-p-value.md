@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/CIforP.html
 date: 2010-09-10
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Hypothesis testing
 output: html_document

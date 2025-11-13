@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/ResidualConfounding.html
 date: 2010-01-06
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Linear regression
 output: html_document

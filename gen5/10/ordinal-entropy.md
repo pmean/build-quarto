@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/OrdinalEntropy.html
 date: 2010-03-11
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Information theory
 output: html_document

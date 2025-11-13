@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/DuplicateRecords.html
 date: 2010-03-02
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Data science
 output: html_document

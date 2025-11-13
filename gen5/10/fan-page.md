@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/FanPage.html
 date: 2010-02-11
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Professional details
 output: html_document

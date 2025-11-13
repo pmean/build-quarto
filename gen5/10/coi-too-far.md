@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/Conflict.html
 date: 2010-11-06
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Conflict of interest
 output: html_document

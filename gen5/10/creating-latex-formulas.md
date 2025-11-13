@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/LaTeX.html
 date: 2010-12-20
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Writing research papers
 output: html_document

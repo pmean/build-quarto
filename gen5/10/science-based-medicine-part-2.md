@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/ScienceBasedMedicinePt2.html
 date: 2010-11-09
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Evidence based medicine
 output: html_document

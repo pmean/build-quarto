@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/EbmTooRigid.html
 date: 2010-08-19
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Evidence based medicine
 output: html_document

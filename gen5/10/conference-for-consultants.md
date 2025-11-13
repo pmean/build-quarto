@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/Conference.html
 date: 2010-05-28
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Teaching resources
 output: html_document

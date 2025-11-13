@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/SpssTtest.html
 date: 2010-06-29
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - SPSS software
 output: html_document

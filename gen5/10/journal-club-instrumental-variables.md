@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/InstrumentalVariables.html
 date: 2010-05-03
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Instrumental variables
 output: html_document

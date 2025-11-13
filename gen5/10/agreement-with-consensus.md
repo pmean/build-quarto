@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/AgreementWithConsensus.html
 date: 2010-04-11
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Information theory
 output: html_document
 page_update: complete

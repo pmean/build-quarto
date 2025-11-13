@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/Nonlinear.html
 date: 2010-06-28
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Nonlinear regression
 output: html_document

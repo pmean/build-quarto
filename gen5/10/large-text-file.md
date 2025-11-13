@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/LargeFile.html
 date: 2010-04-02
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Data science
 - Being updated
 output: html_document

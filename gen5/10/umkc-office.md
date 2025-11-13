@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/UmkcOffice.html
 date: 2010-12-09
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Professional details
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/UndeservingOfFurtherStudy.html
 date: 2010-12-01
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Critical appraisal
 output: html_document

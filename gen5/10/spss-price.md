@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/SpssPrice.html
 date: 2010-08-06
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - SPSS software
 output: html_document

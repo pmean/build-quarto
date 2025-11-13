@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/BadSurvey.html
 date: 2010-06-11
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Survey design
 output: html_document

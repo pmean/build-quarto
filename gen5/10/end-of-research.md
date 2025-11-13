@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/EndOfResearch.html
 date: 2010-07-26
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Systematic overviews
 output: html_document
 page_update: partial

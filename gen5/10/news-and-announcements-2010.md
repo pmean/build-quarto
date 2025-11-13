@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2010-08-31
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Obsolete page
 output: html_document
 page_update: no

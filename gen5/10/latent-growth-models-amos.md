@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/LatentGrowth.html
 date: 2010-08-25
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Structural equations modeling
 output: html_document

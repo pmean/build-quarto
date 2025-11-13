@@ -4,7 +4,7 @@ author: Steve Simon
 date: 2010-07-24
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Sample size justification
 output: html_document
 page_update: partial

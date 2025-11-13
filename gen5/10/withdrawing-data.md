@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/Withdawing.html
 date: 2010-05-15
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Ethics in research
 output: html_document

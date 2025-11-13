@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/MSorPHD.html
 date: 2010-01-19
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Human side of statistics
 output: html_document
 page_update: no

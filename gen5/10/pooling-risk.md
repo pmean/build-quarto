@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/PoolingRisk.html
 date: 2010-07-26
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Systematic overviews
 output: html_document

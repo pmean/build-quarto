@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/CalculatingWeights.html
 date: 2010-03-22
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Sampling
 output: html_document
 page_update: partial

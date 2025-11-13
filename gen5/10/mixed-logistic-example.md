@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/MixedLogistic.html
 date: 2010-10-12
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Mixed models
 output: html_document

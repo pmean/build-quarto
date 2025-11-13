@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/ClassicReferences.html
 date: 2010-06-29
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Teaching resources
 output: html_document

@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/GoodConsultant.html
 date: 2010-02-07
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Human side of statistics
 output: html_document

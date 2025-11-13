@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/aipe.html
 date: 2010-06-09
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Sample size justification
 output: html_document

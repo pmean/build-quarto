@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/Counterintuitive.html
 date: 2010-07-04
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Probability
 output: html_document

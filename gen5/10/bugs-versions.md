@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/BugsVersions.html
 date: 2010-11-19
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Bayesian statistics
 - Being updated
 output: html_document

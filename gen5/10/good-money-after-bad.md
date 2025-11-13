@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/Lessons.html
 date: 2010-05-14
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Data management
 output: html_document

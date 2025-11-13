@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/interaction.html
 date: 2010-06-03
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Linear regression
 - Sample size justification

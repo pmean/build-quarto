@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/TextFiles.html
 date: 2010-09-02
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Information theory
 output: html_document

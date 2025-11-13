@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/GraphModifications.html
 date: 2010-05-26
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Graphical display
 - SPSS software

@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/Futility.html
 date: 2010-06-16
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Small sample size issues
 output: html_document

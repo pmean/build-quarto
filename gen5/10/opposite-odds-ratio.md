@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/OppositeOddsRatio.html
 date: 2010-11-22
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Logistic regression
 output: html_document

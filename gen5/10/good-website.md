@@ -5,7 +5,7 @@ source: http://www.pmean.com/10/GoodWebsite.html
 date: 2010-04-07
 categories:
 - "*Blog post"
-- 2010
+- Year 2010
 - Being updated
 - Website details
 output: html_document
