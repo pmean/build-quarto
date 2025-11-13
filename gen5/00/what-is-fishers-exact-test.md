@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2000-08-23
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Logistic regression
 output: html_document
 page_update: partial

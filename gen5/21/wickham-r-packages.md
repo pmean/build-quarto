@@ -5,7 +5,7 @@ date: "2021-07-08"
 categories:
 - "*Recommendation"
 - Year 2021
-- R programming
+- R software
 output: html_document
 page_update: complete
 ---

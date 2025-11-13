@@ -5,7 +5,7 @@ author: Steve Simon
 date: 1999-09-23
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Unusual data
 output: html_document
 page_update: partial

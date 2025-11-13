@@ -5,7 +5,7 @@ author: Steve Simon
 date: 1999-12-15
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Being updated
 - Circular data
 output: html_document

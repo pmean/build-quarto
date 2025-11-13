@@ -5,7 +5,7 @@ author: Steve Simon
 date: 1999-04-18
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Hypothesis testing
 output: html_document
 page_update: partial

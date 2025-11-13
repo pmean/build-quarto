@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2004-03-12
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Being updated
 - Quality control
 output: html_document

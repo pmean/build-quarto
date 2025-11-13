@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - Year 2024
 - Nonlinear regression
-- R programming
+- R software
 output: html_document
 page_update: complete
 ---

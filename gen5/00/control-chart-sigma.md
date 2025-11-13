@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2000-01-27
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Ask Professor Mean
 - Control charts
 output: html_document

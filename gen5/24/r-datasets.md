@@ -7,7 +7,7 @@ categories:
 - "*Recommendation"
 - Year 2024
 - Datasets
-- R programming
+- R software
 output: html_document
 page_update: complete
 ---

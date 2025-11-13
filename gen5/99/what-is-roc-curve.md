@@ -5,7 +5,7 @@ author: Steve Simon
 date: 1999-08-19
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Being updated
 - Diagnostic testing
 output: html_document

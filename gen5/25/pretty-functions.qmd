@@ -6,7 +6,7 @@ date: "2025-02-09"
 categories:
 - "*Blog post"
 - Year 2025
-- R programming
+- R software
 - Uses R code
 output: html_document
 page_update: complete

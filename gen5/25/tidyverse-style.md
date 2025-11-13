@@ -6,7 +6,7 @@ date: "2025-04-03"
 categories: 
 - "*Recommendation"
 - Year 2025
-- R programming
+- R software
 output: html_document
 page_update: no
 ---

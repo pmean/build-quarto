@@ -5,7 +5,7 @@ source: http://www.pmean.com/07/hand18condensed.htm
 date: 2000-12-27
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Quality improvement
 output: html_document
 page_update: no

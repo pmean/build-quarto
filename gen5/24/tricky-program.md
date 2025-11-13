@@ -6,7 +6,7 @@ date: 2024-04-26
 categories:
 - "*Blog post"
 - Year 2024
-- R programming
+- R software
 output: html_document
 page_update: complete
 ---

@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2000-01-28
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Ask Professor Mean
 - Data management
 output: html_document

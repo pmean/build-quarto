@@ -5,7 +5,7 @@ date: "2020-11-21"
 categories:
 - "*Blog post"
 - Year 2020
-- R programming
+- R software
 - Rmarkdown graphics
 - Writing research papers
 output: html_document

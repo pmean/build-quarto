@@ -5,7 +5,7 @@ author: Steve Simon
 date: 1999-09-27
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Being updated
 - Logistic regression
 output: html_document

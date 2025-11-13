@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2000-09-28
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Sample size justification
 output: html_document
 page_update: partial

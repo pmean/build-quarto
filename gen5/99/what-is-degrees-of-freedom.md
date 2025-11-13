@@ -5,7 +5,7 @@ author: Steve Simon
 date: 1999-09-03
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Being updated
 - Statistical theory
 output: html_document

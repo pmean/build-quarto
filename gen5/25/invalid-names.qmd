@@ -5,7 +5,7 @@ source: new
 date: "2025-04-09"
 categories:
 - "*Blog post"
-- R programming
+- R software
 format: 
   html:
     embed-resources: true

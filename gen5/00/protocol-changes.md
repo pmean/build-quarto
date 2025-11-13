@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2000-12-22
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Early stopping
 output: html_document
 page_update: partial

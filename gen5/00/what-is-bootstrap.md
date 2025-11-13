@@ -6,7 +6,7 @@ date: 2000-01-27
 categories:
 - "*Blog post"
 - Ask Professor Mean
-- 2000
+- Year 2000
 - Unusual data
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: http://www.pmean.com/00/export.html
 date: 2000-01-28
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Data management
 - SPSS software
 output: html_document

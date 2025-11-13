@@ -6,7 +6,7 @@ date: "2024-03-25"
 categories:
 - "*Recommendation"
 - Year 2024
-- R programming
+- R software
 output: html_document
 page_update: complete
 ---

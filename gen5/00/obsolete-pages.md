@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2000-01-01
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Website details
 output: html_document
 page_update: partial

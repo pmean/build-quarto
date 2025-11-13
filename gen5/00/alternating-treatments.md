@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2000-08-22
 categories:
 - "*Blog post"
-- 2000
+- Year 2000
 - Ask Professor Mean
 - Randomization
 output: html_document

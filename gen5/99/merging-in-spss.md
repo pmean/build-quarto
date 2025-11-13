@@ -5,7 +5,7 @@ author: Steve Simon
 date: 1999-01-15
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Being updated
 - Data management
 - Ask Professor Mean

@@ -5,7 +5,7 @@ author: Steve Simon
 date: 2004-03-17
 categories:
 - "*Blog post"
-- 1999
+- Year 1999
 - Being updated
 - Data mining
 output: html_document

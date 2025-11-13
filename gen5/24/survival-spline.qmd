@@ -8,7 +8,7 @@ categories:
 - Year 2024
 - Incomplete pages
 - Survival analysis
-- R programming
+- R software
 - Uses R code
 output: html_document
 page_update: complete
