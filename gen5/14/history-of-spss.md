@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/history-of-spss/"
 date: "2014-05-31"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Statistical computing
 output: html_document
 page_update: partial

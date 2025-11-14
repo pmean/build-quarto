@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/design-monte-carlo/"
 date: "2014-03-09"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Statistical computing
 output: html_document
 page_update: complete

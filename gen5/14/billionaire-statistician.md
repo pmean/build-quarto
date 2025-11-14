@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/billionaire-statistician/"
 date: "2014-01-24"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Important statisticians
 output: html_document
 page_update: complete

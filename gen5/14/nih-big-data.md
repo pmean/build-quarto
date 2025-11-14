@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/nih-big-data/"
 date: "2014-02-24"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Data science
 output: html_document
 page_update: partial

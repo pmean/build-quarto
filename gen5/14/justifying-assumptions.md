@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/justifying-assumptions/"
 date: "2014-12-10"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Grant writing
 - Sample size justification
 output: html_document

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/limitations/"
 date: "2014-01-27"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Hypothesis testing
 output: html_document
 page_update: complete

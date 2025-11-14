@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/teaching-bootstrap/"
 date: "2014-11-24"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Bootstrap
 output: html_document
 page_update: complete

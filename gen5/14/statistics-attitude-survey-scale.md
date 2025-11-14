@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/attitude-survey/"
 date: "2014-01-15"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Survey design
 output: html_document
 page_update: complete

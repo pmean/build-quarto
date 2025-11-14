@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/sats/"
 date: "2014-01-17"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Survey design
 output: html_document
 page_update: partial

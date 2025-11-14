@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/morbid-emphasis/"
 date: "2014-02-06"
 categories:
 - "*Quotation"
-- 2014
+- Year 2014
 - Teaching resources
 output: html_document
 page_update: partial

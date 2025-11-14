@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/analysis-of-continuous-variables/"
 date: "2014-04-15"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Datasets
 output: html_document
 page_update: partial

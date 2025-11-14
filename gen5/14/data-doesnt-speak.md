@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/data-doesnt-speak/"
 date: "2014-05-01"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Graphical display
 - Presenting research
 output: html_document

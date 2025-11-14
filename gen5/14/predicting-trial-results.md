@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/predicting-trial-results/"
 date: "2014-04-06"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Early stopping
 output: html_document
 page_update: partial

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/foreach/"
 date: "2014-03-05"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - R software
 output: html_document
 page_update: complete

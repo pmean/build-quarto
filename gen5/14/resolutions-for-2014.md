@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/resolutions-for-2014/"
 date: "2014-01-07"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Website details
 output: html_document
 page_update: complete

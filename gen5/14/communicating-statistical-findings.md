@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/communicating-statistical-findings/"
 date: "2014-08-19"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Human side of statistics
 output: html_document
 page_update: complete

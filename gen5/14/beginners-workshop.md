@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/beginners-workshop/"
 date: "2014-01-15"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Broken link
 - Obsolete page
 - R software

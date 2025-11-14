@@ -81,7 +81,7 @@ data.frame(log_los=rnorm(n, mean=5.7, sd=2.6)) |>
 	mutate(log_los=pmax(log_los, abs(log_los))) |>
   mutate(los=2^log_los) |>
   mutate(los=trunc(los)) |>
-	mutate(log_los=log2(los)) 
+	mutate(log_los=log2(los)) |>
   relocate(log_los, .after=los) -> d5
 glimpse(d5)
 ```
@@ -140,7 +140,49 @@ The boxplot also shows how bad the skewness is and how extreme the outliers are.
 
 ## Try a log transformation
 
-The log function will often fix a skewed distribution, making it 
+The log function will often fix a distribution that is skewed to the right and reduce the impact of outliers on the high end of the scale. It squeezes the large values together. The larger the value, the more the squeezing. Values on the low end will be stretched out much less and in some cases will be squeezed together. The net effect of this is to reduce the right skewness and bring the high end outliers closer to the rest of the data.
+
+```{r}
+#| label: squeeze-1
+#| fig-width: 6
+#| fig-height: 1.5
+
+data.frame(
+  x=c(1, 24, 7*24, 30*24, 365*24),
+  labs=paste(1, c("hour", "day", "week", "month", "year")),
+  y=1) |>
+  mutate(log_x=log2(x)) -> time_units
+
+time_units |>
+  ggplot() +
+  aes(x=x, y=y, label=labs) +
+  geom_text(angle=90) + 
+  scale_x_continuous(limits=c(0,2*24*365)) +
+  scale_y_continuous(
+    name=" ",
+    breaks=1,
+    labels=" ",
+    limits = c(0,2))
+```
+
+```{r}
+#| label: squeeze-2
+#| fig-width: 6
+#| fig-height: 1.5
+
+time_units |>
+  ggplot() +
+  aes(x=log_x, y=y, label=labs) +
+  geom_text(angle=90) +
+  scale_x_continuous(limits=c(0,log2(2*24*365)))
+  scale_y_continuous(
+    name=" ",
+    breaks=1,
+    labels=" ",
+    limits = c(0,2))
+
+```
+It won't help for a distribution that is skewed to the left and/or has outliers on the low end. The stretching and squeezing in this case will actually make a bad situation worse.
 
 ```{r}
 #| label: descriptives-log-los

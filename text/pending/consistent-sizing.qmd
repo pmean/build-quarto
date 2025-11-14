@@ -160,7 +160,7 @@ data.frame(
 
 ```
 
-It still looks good. I was worried that disparities that are too small to notice small when computing one, two, or three boxplots might become more apparenty with as many as five boxplots.
+It still looks good. You might have been worried that disparities that are too small to notice small when computing one, two, or three boxplots might become more apparent with as many as five boxplots. I was. But by careful calculations or by luck or by some of my good karma kicking in, the boxplots seems to be consisent.
 
 ## Test: six boxplots with 3.75 inches
 

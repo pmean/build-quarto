@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/summary-of-my-research/"
 date: "2014-02-15"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Accrual problems
 output: html_document
 page_update: partial

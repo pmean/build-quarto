@@ -5,7 +5,7 @@ source: "http://www.pmean.com/software.html"
 date: "2014-06-30"
 categories: 
 - "*Blog post"
-- 2014
+- Year 2014
 - Obsolete page
 - Professional details
 output: html_document

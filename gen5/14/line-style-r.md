@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/line-style-r/"
 date: "2014-02-25"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Graphical display
 - R software
 output: html_document

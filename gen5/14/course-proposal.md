@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/course-proposal/"
 date: "2014-05-13"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Human side of statistics
 output: html_document
 page_update: complete

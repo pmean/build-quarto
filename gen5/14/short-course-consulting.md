@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/short-course-consulting/"
 date: "2014-05-01"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Human side of statistics
 output: html_document
 page_update: partial

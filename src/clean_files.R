@@ -72,7 +72,7 @@ ok_to_replace <- TRUE
 ok_to_replace <- FALSE
 
 clean_files(
-  '^- R programming$',
-  '- R software',
+  '^- 2014$',
+  '- Year 2014',
   dir_root="gen5", 
   file_pattern="md$")

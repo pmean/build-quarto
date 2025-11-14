@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/car-speeds/"
 date: "2014-06-18"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Survey design
 output: html_document
 page_update: complete

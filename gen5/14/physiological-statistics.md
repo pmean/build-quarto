@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/physiological-statistics/"
 date: "2014-02-10"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Sample size justification
 output: html_document
 page_update: partial

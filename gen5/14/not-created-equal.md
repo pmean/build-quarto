@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/not-created-equal/"
 date: "2014-05-01"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Observational studies
 output: html_document
 page_update: partial

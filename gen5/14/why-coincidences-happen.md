@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/why-coincidences-happen/"
 date: "2014-02-20"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Probability concepts
 output: html_document
 page_update: complete

@@ -4,7 +4,7 @@ author: "Steve Simon"
 date: '2022-07-04'
 categories: 
 - "*Blog post"
-- 2022 
+- Year 2022
 - Analysis of means
 - Rmarkdown graphs
 source: new

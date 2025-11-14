@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/big-data-training/"
 date: "2014-04-08"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Data science
 output: html_document
 page_update: complete

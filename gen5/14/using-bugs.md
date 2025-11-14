@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/using-bugs/"
 date: "2014-05-03"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Bayesian statistics
 - R software
 output: html_document

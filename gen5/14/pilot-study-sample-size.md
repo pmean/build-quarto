@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/pilot-study-sample-size/"
 date: "2014-08-13"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Pilot studies
 - Sample size justification
 output: html_document

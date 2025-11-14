@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/plotrix/"
 date: "2014-02-26"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Graphical display
 - R software
 output: html_document

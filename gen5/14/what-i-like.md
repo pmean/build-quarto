@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/what-i-like/"
 date: "2014-01-10"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - R software
 output: html_document
 page_update: complete

@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/data-codebook/"
 date: "2014-05-31"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Data management
 output: html_document
 page_update: complete

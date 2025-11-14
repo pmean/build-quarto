@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/8-tips/"
 date: "2014-05-03"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Graphical display
 output: html_document
 page_update: complete

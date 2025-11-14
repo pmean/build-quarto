@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/end-of-sas/"
 date: "2014-01-29"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - SAS software
 - R software
 output: html_document

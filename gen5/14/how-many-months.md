@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/how-many-months/"
 date: "2014-02-21"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - Research design
 output: html_document
 page_update: partial

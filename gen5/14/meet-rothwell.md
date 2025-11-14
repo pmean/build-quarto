@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/meet-rothwell/"
 date: "2014-03-05"
 categories:
 - "*Recommendation"
-- 2014
+- Year 2014
 - Important statisticians
 output: html_document
 page_update: partial

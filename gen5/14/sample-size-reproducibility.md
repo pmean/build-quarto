@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/sample-size-reproducibility/"
 date: "2014-06-16"
 categories: 
 - "*Blog post"
-- 2014
+- Year 2014
 - Measuring agreement
 - Sample size justification
 output: html_document

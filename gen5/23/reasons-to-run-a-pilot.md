@@ -4,7 +4,7 @@ author: "Steve Simon"
 date: 2023-12-06
 categories: 
 - "*Blog post"
-- 2023 
+- Year 2023
 - Pilot studies
 source: New
 output: html_document

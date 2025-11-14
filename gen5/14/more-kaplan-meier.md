@@ -5,7 +5,7 @@ source: "http://blog.pmean.com/more-kaplan-meier/"
 date: "2014-11-01"
 categories:
 - "*Blog post"
-- 2014
+- Year 2014
 - R software
 - Survival analysis
 output: html_document
