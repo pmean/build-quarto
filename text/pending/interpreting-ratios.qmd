@@ -13,7 +13,7 @@ format:
 editor: source
 execute: 
   error: true
-  echo: true
+  echo: false
 page_update: complete
 ---
 
@@ -76,8 +76,8 @@ data.frame(log_los=rnorm(n, mean=5.7, sd=2.6)) |>
   mutate(log_los=log_los+(age-55)*0.008) |>
   mutate(gender=rbinom(n, 1, 0.5)) |>
   mutate(log_los=log_los+(gender-0.5)*0.4) |>
-  mutate(acute=rbinom(n, 1, 0.95)) |>
-  mutate(log_los=log_los+(acute-0.95)*1.3) |>
+  mutate(acute=rbinom(n, 1, 0.80)) |>
+  mutate(log_los=log_los+(acute-0.8)*1.3) |>
 	mutate(log_los=pmax(log_los, abs(log_los))) |>
   mutate(los=2^log_los) |>
   mutate(los=trunc(los)) |>
@@ -100,7 +100,9 @@ d5 |>
 		los_sd=sd(los),
 		los_min=min(los),
 		los_max=max(los),
-		n=n())
+		n=n()) -> untransformed_statistics
+
+untransformed_statistics
 ```
 
 Notice the range, from 1 hour to `r max(d5$los)` hours which is roughly `r round(max(d5$los)/365, 1)` years. Also notice how much difference there is between the mean of the data and the median.
@@ -123,7 +125,7 @@ The histogram shows that most of the los values are small, with a few very large
 
 ```{r}
 #| label: los boxplot
-#| fig-width: 6
+#| fig.width: 8
 #| fig-height: 1.5
 
 d5 |>
@@ -142,9 +144,11 @@ The boxplot also shows how bad the skewness is and how extreme the outliers are.
 
 The log function will often fix a distribution that is skewed to the right and reduce the impact of outliers on the high end of the scale. It squeezes the large values together. The larger the value, the more the squeezing. Values on the low end will be stretched out much less and in some cases will be squeezed together. The net effect of this is to reduce the right skewness and bring the high end outliers closer to the rest of the data.
 
+## Time units from one hour to one year
+
 ```{r}
 #| label: squeeze-1
-#| fig-width: 6
+#| fig.width: 8
 #| fig-height: 1.5
 
 data.frame(
@@ -157,7 +161,10 @@ time_units |>
   ggplot() +
   aes(x=x, y=y, label=labs) +
   geom_text(angle=90) + 
-  scale_x_continuous(limits=c(0,2*24*365)) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  scale_x_continuous(
+    breaks=time_units$x,
+    minor_breaks = NULL) +
   scale_y_continuous(
     name=" ",
     breaks=1,
@@ -165,16 +172,23 @@ time_units |>
     limits = c(0,2))
 ```
 
+This plot shows time across several units of measurement: one hour, one day (24 hours), one week (7\*24=168 hours), one month (30\*24=720 hours), and one year (365\*24=8,760 hours). Notice how tightly packed one hour, one day, and one week are and how spread out one month and one year are.
+
+## Time units after a log transformation
+
 ```{r}
 #| label: squeeze-2
-#| fig-width: 6
+#| fig.width: 8
 #| fig-height: 1.5
 
 time_units |>
   ggplot() +
   aes(x=log_x, y=y, label=labs) +
   geom_text(angle=90) +
-  scale_x_continuous(limits=c(0,log2(2*24*365)))
+  theme(axis.text.x = element_text(angle = 90)) +
+  scale_x_continuous(
+    breaks=round(time_units$log_x, 1),
+    limits=c(-1,log2(2*24*365))) +
   scale_y_continuous(
     name=" ",
     breaks=1,
@@ -182,7 +196,116 @@ time_units |>
     limits = c(0,2))
 
 ```
+
+After a log transformation, one hour becomes zero, 24 hours becomes 4.6 log units, 168 hours becomes 7.4 log units, 729 hours becomes 9.5 log units, and 8,760 hours becomes 13.1 units. Notice how one hour, one day, and one week are stretched apart and how one month and one year are squeezed together.
+
+## Interpreting log units
+
+You don't normally think in terms of log units. There are a few exceptions. Noise as measured in decibels and earthquake intensity as measured on the Richter scale are on a log scale. But you don't think of a week long vacation as 7.4 log units.
+
+If you do want to interpret logarithms, you can interpret them in relative units. When your hair dryer is blowing away at 80 decibels, that's loud but your 90 decibel lawn mower is ten times as loud. The San Francisco earthquake of 1906 was devastating, having been estimated at about 7.9 on the Richter scale. The more recent Loma Prieta earthquake of 1989, the one that disrupted Game 3 of the World Series of that year, was still serious. But at 6.9 on the Richter scale, it released only one-tenth of the energy of the 1906 quake.
+
+Differences on the log scale are equivalent to ratios on the original scale of measurement. This is because of the well-known formula
+
+$log\big(\frac{a}{b}\big)=log(a)-log(b)$
+
+This holds true for base 2 logarithms, or logarithms using any other base.
+
+## Interpreting a one unit shift on the log scale
+
+For a base 2 logarithm, moving one unit to the left represents a halving on the original scale. Moving one unit to the right represent a doubling on the original scale.
+
+```{r}
+#| label: function
+#| fig.width: 8
+#| fig-height: 1.5
+
+display_halving <- function(multiplier, unit) {
+  data.frame(
+    x=multiplier*c(0.5, 1, 2),
+    labs=paste0(c("1/2 ", "1 ", "2 "), unit, c("", "", "s")),
+    y=1) |>
+    mutate(log_x=log2(x)) -> time_units
+
+  time_units |>
+    ggplot() +
+    aes(x=log_x, y=y, label=labs) +
+    geom_text(angle=90) + 
+    theme(axis.text.x = element_text(angle = 90)) +
+    scale_x_continuous(
+      name=" ",
+      breaks=round(time_units$log_x, 1),
+      limits=c(-1, log2(2*365*24)),
+      minor_breaks = NULL) +
+    scale_y_continuous(
+      name=" ",
+      breaks=1,
+      labels=" ",
+      limits = c(0,2))
+}
+```
+
+It's the same when you are looking at hours,
+
+```{r}
+#| label: half-hour
+#| fig.width: 8
+#| fig-height: 1.5
+
+display_halving(1, "hour")
+```
+
+days,
+
+```{r}
+#| label: half-day
+#| fig.width: 8
+#| fig-height: 1.5
+
+display_halving(24, "day")
+```
+
+weeks,
+
+```{r}
+#| label: half-week
+#| fig.width: 8
+#| fig-height: 1.5
+
+display_halving(7*24, "week")
+```
+
+months,
+
+```{r}
+#| label: half-month
+#| fig.width: 8
+#| fig-height: 1.5
+
+display_halving(30*24, "month")
+```
+
+or years.
+
+```{r}
+#| label: half-year
+#| fig.width: 8
+#| fig-height: 1.5
+
+display_halving(365*24, "year")
+```
+
+There is a similar property for base 10 logarithms, but for the base ten logarithm, a one unit shift represents a ten-fold change.
+
+## The log transformation doesn't help every time
+
 It won't help for a distribution that is skewed to the left and/or has outliers on the low end. The stretching and squeezing in this case will actually make a bad situation worse.
+
+## Applying the log transformation to los
+
+There are no guarantees in Statistics, but the log transformation seems like a good choice for the length of stay data. The data is very very highly skewed and there are quite a few extreme outliers on the high end.
+
+Here are some descriptive statistics.
 
 ```{r}
 #| label: descriptives-log-los
@@ -194,8 +317,14 @@ d5 |>
 		log_los_sd=sd(log_los),
 		log_los_min=min(log_los),
 		log_los_max=max(log_los),
-		n=n())
+		n=n()) -> log_statistics
+
+log_statistics
 ```
+
+Notice that there is no longer a disparity between the mean and the median. The maximum value is no longer so far away from the mean/median.
+
+Let's look at the histogram.
 
 ```{r}
 #| label: log_los histogram
@@ -212,9 +341,11 @@ d5 |>
     caption=cc0)
 ```
 
+This is much closer to a reasonable distribution. It may not be a perfectly bell shaped normal distribution, but it is close.
+
 ```{r}
 #| label: log-los boxplot
-#| fig-width: 6
+#| fig.width: 8
 #| fig-height: 1.5
 
 d5 |>
@@ -228,11 +359,13 @@ d5 |>
 log_los_boxplot
 ```
 
-The units on the log scale are not too intuitive. With a base 2 logarithm, each unit represents a power of 2. So 5, for example, would be 2 raised to the fifth power or 32 hours. It would be better to change the scale to something more natural.
+Compare this to the boxplot shown earlier. It is much easier to visualize what is going on.
+
+I kept the log units for these graphs, but it is easy to replace them with units on the original scale. Here is a boxplot with units on the original scale.
 
 ```{r}
 #| label: rescale
-#| fig-width: 6
+#| fig.width: 8
 #| fig-height: 1.5
 
 los_values <- c(1, 24, 7*24, 30*24, 365*24)
@@ -250,4 +383,71 @@ log_los_boxplot +
     minor_breaks=NULL)
 ```
 
-This plot shows the values on the log scale that corresponds to one hour, one day, one week, one month, and one year. Notice that the gap between one hour and one day is actually wider on the log scale than the gap between one month and one year. That illustrates how the log transformation squeezes the large values together and stretches the small values apart.
+## Back transforming the mean
+
+```{r}
+#| label: back-transform
+
+out01 <- round(log_statistics$log_los_mean, 1)
+out02 <- round(2^log_statistics$log_los_mean, 1)
+out03 <- round(untransformed_statistics$los_median, 1)
+out04 <- round(untransformed_statistics$los_mean, 1)
+```
+
+You saw earlier that the mean for the log length of stay was `r out01`.  Since this used the base 2 logarithm, you can transform back to the original scale of measurement by raising 2 to the log mean power. This produces `r out02` on the original scale. 
+
+This quantity does not match the arithmetic mean `r round(untransformed_statistics$los_mean, 1)` that you computed before the transformation.
+
+## The geometric mean
+
+An average on a log scale that is back-transformed to the original scale is a geometric mean. The formula for a geometric mean is
+
+$\big(\Pi\ X_i\big)^{1/n}$
+
+where $\Pi$ is mathematical notation for multiplication. You simply multiply all n observations together and take the result raised to the 1/n power. As a simple example, to get the geometric mean of 4 and 16, multiply the numbers together to get 64 and then take the square root of the result to get 8.
+
+This is a technical point that is worth remembering. While researchers will often talk about geometric means while dropping the first half of the term, try to remember the distinction. It sometimes helps to describe the traditional mean
+
+$\frac{1}{n}\Sigma X_i$
+
+as the **arithmetic** mean when distinguishing it from the geometric mean.
+
+It is also worth noting in our example that the geometric mean, `r out02`, is much closer to the median, `r out03` than the arithmetic mean, `r out04`, is. The geometric mean reduces the impact of outliers on the high end.
+
+## The t-test after a log transformation
+
+One of the variables that has a strong influence on los is acute, which is equal to zero for non-acute cases and one for acute cases. Here are descriptive statistics in each group, the mean for the base 2 log of los and the back-transformed geometric means. Acute cases have a much higher los on average.
+
+```{r}
+#| label: group-means
+
+d5 |>
+  group_by(acute) |>
+  summarize(
+    n=n(),
+    log_los_mean=mean(log_los)) |>
+  mutate(los_geometric_mean=2^log_los_mean) -> group_means
+
+group_means
+```
+
+You can run a t-test on the log transformed los values, and it probably is preferable to using a t-test without the log transformation. Here is the output from a t-test on log los.
+
+```{r}
+#| label: log-t-test
+
+m1 <- t.test(log_los ~ acute, data=d5)
+m1
+out05 <- round(m1$estimate[1], 1)
+out06 <- round(m1$estimate[2], 1)
+out07 <- round(m1$estimate[1] - m1$estimate[2], 1)
+out08 <- round(2^out07, 2)
+out09 <- round(group_means$los_geometric_mean[1], 2)
+out10 <- round(group_means$los_geometric_mean[2], 2)
+```
+
+The two means, `r out05` and `r out06` are the means on the log scale that we saw earlier. The difference between these two means is `r out07` on the log scale. If you back-transform this to the original scale you get `r out08` which is the ratio of the two geometric means, `r out09` and `r out10`.
+
+[1] "statistic"   "parameter"   "p.value"     "conf.int"   
+ [5] "estimate"    "null.value"  "stderr"      "alternative"
+ [9] "method"      "data.name" 
