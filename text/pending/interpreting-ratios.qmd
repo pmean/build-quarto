@@ -388,15 +388,17 @@ log_los_boxplot +
 ```{r}
 #| label: back-transform
 
-out01 <- round(log_statistics$log_los_mean, 1)
-out02 <- round(2^log_statistics$log_los_mean, 1)
-out03 <- round(untransformed_statistics$los_median, 1)
-out04 <- round(untransformed_statistics$los_mean, 1)
+out <- NULL
+out[1] <- log_statistics$log_los_mean
+out[2] <- 2^out[1]
+out[3] <- untransformed_statistics$los_mean
+out[4] <- untransformed_statistics$los_median
+out <- round(out, 1)
 ```
 
-You saw earlier that the mean for the log length of stay was `r out01`.  Since this used the base 2 logarithm, you can transform back to the original scale of measurement by raising 2 to the log mean power. This produces `r out02` on the original scale. 
+You saw earlier that the mean for the log length of stay was `r out[1]`.  Since this used the base 2 logarithm, you can transform back to the original scale of measurement by raising 2 to the log mean power. This produces `r out[2]` on the original scale. 
 
-This quantity does not match the arithmetic mean `r round(untransformed_statistics$los_mean, 1)` that you computed before the transformation.
+This quantity does not match the arithmetic mean `r out[3]` that you computed before the transformation.
 
 ## The geometric mean
 
@@ -412,9 +414,9 @@ $\frac{1}{n}\Sigma X_i$
 
 as the **arithmetic** mean when distinguishing it from the geometric mean.
 
-It is also worth noting in our example that the geometric mean, `r out02`, is much closer to the median, `r out03` than the arithmetic mean, `r out04`, is. The geometric mean reduces the impact of outliers on the high end.
+It is also worth noting in our example that the geometric mean, `r out[2]`, is much closer to the median, `r out[4]` than the arithmetic mean, `r out[3]`, is. The geometric mean reduces the impact of outliers on the high end.
 
-## The t-test after a log transformation
+## Comparison of means after a log transformation
 
 One of the variables that has a strong influence on los is acute, which is equal to zero for non-acute cases and one for acute cases. Here are descriptive statistics in each group, the mean for the base 2 log of los and the back-transformed geometric means. Acute cases have a much higher los on average.
 
@@ -431,6 +433,18 @@ d5 |>
 group_means
 ```
 
+## Interpreting ratios
+
+Typically, the interpretation of a ratio is done by noting how much difference there is between the estimated ratio and the value of 1. This difference is then converted to a percentage. So a ratio of 1.05 represents a 5% increase and a ratio of 0.6 represents a 40% decrease.
+
+it gets a bit tricky for ratios of 2 or greater. A ratio of 2 represents a 100% increase, but it is better characterized as "twice as large" or a "doubling". You can also describe the ratio as a "fold change". So a ratio of 3.1 represents "more than tripling" or a "3.1 fold increase".
+
+## Interpreting the los ratio
+
+As noted earlier, the computed ratio for los is `r out[4]`. This could be interpreted as follows: "The average los in non-acute cases is `r out[7]`\% smaller than the average los in acute cases." with the implicit understanding that "average" here represents a geometric mean.
+
+## The t-test after a log transformation
+
 You can run a t-test on the log transformed los values, and it probably is preferable to using a t-test without the log transformation. Here is the output from a t-test on log los.
 
 ```{r}
@@ -438,16 +452,24 @@ You can run a t-test on the log transformed los values, and it probably is prefe
 
 m1 <- t.test(log_los ~ acute, data=d5)
 m1
-out05 <- round(m1$estimate[1], 1)
-out06 <- round(m1$estimate[2], 1)
-out07 <- round(m1$estimate[1] - m1$estimate[2], 1)
-out08 <- round(2^out07, 2)
-out09 <- round(group_means$los_geometric_mean[1], 2)
-out10 <- round(group_means$los_geometric_mean[2], 2)
+
+out <- NULL
+out[1] <- m1$estimate[1]
+out[2] <- m1$estimate[2]
+out[3] <- out[1] - out[2]
+out[4] <- 2^out[3]
+out[5] <- group_means$los_geometric_mean[1]
+out[6] <- group_means$los_geometric_mean[2]
+out[7] <- 100*(1 - out[4])
+out[8] <- m1$conf.int[1]
+out[9] <- m1$conf.int[2]
+out[10] <- 2^out[7]
+out[11] <- 2^out[8]
+out <- round(out, c(rep(2, 6), 0, rep(2, 4)))
 ```
 
-The two means, `r out05` and `r out06` are the means on the log scale that we saw earlier. The difference between these two means is `r out07` on the log scale. If you back-transform this to the original scale you get `r out08` which is the ratio of the two geometric means, `r out09` and `r out10`.
+The two means, `r out[1]` and `r out[2]` are the means on the log scale that we saw earlier. The difference between these two means is `r out[3]` on the log scale. If you back-transform this to the original scale you get `r out[4]` which is the ratio of the two geometric means, `r out[5]` and `r out[6]`.
 
-[1] "statistic"   "parameter"   "p.value"     "conf.int"   
- [5] "estimate"    "null.value"  "stderr"      "alternative"
- [9] "method"      "data.name" 
+## Back-transforming the confidence interval
+
+The 95% confidence interval, `r out[8]` to `r out[9]` is on the log scale. If you back-transform this to the original scale, you get `r out[10]` to `r out[11]` which is a 95% confidence interval for the ratio of geometric means.
