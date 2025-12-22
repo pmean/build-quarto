@@ -6,7 +6,7 @@ date: 2006-08-03
 categories:
 - "*Blog post"
 - Year 2006
-- Observational data
+- Observational studies
 output: html_document
 page_update: partial
 ---

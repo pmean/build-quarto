@@ -6,7 +6,7 @@ date: "2024-10-05"
 categories: 
 - "*Recommendation"
 - Year 2024
-- Measures of risk
+- Measuring benefit and risk
 output: html_document
 page_update: no
 ---

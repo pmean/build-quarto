@@ -4,7 +4,7 @@ source: Lost page
 author: Steve Simon
 date: 2006-03-29
 categories:
-- Quotation
+- "*Quotation"
 - Year 2006
 - Evidence Based Medicine
 output: html_document

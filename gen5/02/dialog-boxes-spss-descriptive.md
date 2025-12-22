@@ -6,7 +6,7 @@ date: 2002-06-21
 categories:
 - "*Blog post"
 - Year 2002
-- Descriptive Statistics
+- Descriptive statistics
 output: html_document
 page_update: partial
 ---

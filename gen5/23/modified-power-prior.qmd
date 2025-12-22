@@ -6,7 +6,7 @@ categories:
 - "*Blog post"
 - Year 2023
 - Bayesian statistics
-- Incomplete pages
+- Incomplete page
 - Uses R code
 output: html_document
 page_update: complete

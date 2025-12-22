@@ -5,7 +5,7 @@ date: "2021-06-12"
 categories:
 - "*Blog post"
 - Year 2021
-- Python
+- Python programming
 output: html_document
 page_update: complete
 ---

@@ -6,7 +6,7 @@ date: "2018-09-07"
 categories:
 - "*Recommendation"
 - Year 2018
-- Structural Equation Modeling
+- Structural equations modelining
 output: html_document
 page_update: complete
 ---

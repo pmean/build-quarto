@@ -5,7 +5,7 @@ date: 2004-12-20
 categories:
 - "*Quotation"
 - Year 2004
-- Human side of Statistics
+- Human side of statistics
 output: html_document
 page_update: partial
 ---

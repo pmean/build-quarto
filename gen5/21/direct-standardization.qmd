@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - Year 2021
 - Epidemiology
-- Incomplete pages
+- Incomplete page
 - Rmarkdown graphs
 output: html_document
 page_update: complete

@@ -6,7 +6,7 @@ date: "2025-07-11"
 categories: 
 - "*Recommendation"
 - Year 2025
-- datasets
+- Datasets
 - SQL
 output: html_document
 page_update: no

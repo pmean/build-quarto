@@ -5,7 +5,7 @@ date: "2021-07-19"
 categories:
 - "*Recommendation"
 - Year 2021
-- Human side of Statistics
+- Human side of statistics
 output: html_document
 page_update: complete
 ---

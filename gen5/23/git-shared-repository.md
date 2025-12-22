@@ -6,7 +6,7 @@ date: 2023-05-28
 categories:
 - "*Blog post"
 - Year 2023
-- Incomplete pages
+- Incomplete page
 - Software engineering
 output: html_document
 page_update: complete

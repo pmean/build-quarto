@@ -6,7 +6,7 @@ date: 2002-07-23
 categories:
 - "*Blog post"
 - Year 2002
-- Incomplete pages
+- Incomplete page
 - Logistic regression
 output: html_document
 page_update: partial

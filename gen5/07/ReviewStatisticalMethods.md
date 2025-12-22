@@ -6,7 +6,7 @@ date: 2007-03-05
 categories:
 - "*Blog post"
 - Year 2007
-- Human side of Statistics 
+- Human side of statistics
 output: html_document
 page_update: complete
 ---

@@ -6,7 +6,7 @@ date: 2006-02-28
 categories:
 - "*Blog post"
 - Year 2006
-- Statistical evidence
+- Statistical evidence book
 output: html_document
 page_update: partial
 ---

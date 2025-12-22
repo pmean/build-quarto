@@ -6,7 +6,7 @@ date: "2024-12-19"
 categories: 
 - "*Recommendation"
 - Year 2024
-- Text data
+- String data
 output: html_document
 page_update: no
 ---

@@ -6,7 +6,7 @@ date: "2016-05-10"
 categories: 
 - "*Blog post"
 - Year 2016
-- Complex survey
+- Complex surveys
 output: html_document
 page_update: complete
 ---

@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - Year 2007
 - Incomplete page
-- Statistical modeling 
+- Statistical models
 output: html_document
 page_update: no
 ---

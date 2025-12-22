@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - Year 2010
 - Being updated
-- Mixed models
+- Multilevel models
 output: html_document
 page_update: no
 ---

@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - Year 2008
 - Being updated
-- Early stopping in clinical trials
+- Early stopping
 output: html_document
 page_update: no
 ---

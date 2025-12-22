@@ -6,7 +6,7 @@ date: 2005-04-20
 categories:
 - "*Quotation"
 - Year 2005
-- Human side of Statistics
+- Human side of statistics
 output: html_document
 page_update: partial
 ---

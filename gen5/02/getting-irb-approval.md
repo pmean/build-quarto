@@ -6,7 +6,7 @@ date: 2002-01-01
 categories:
 - "*Blog post"
 - Year 2002
-- Incomplete pages
+- Incomplete page
 - Website details
 output: html_document
 page_update: no

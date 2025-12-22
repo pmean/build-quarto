@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - Year 2010
 - Being updated
-- Evidence based medicine
+- Evidence-based medicine
 output: html_document
 page_update: partial
 ---

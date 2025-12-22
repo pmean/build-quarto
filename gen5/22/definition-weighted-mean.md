@@ -6,7 +6,7 @@ date: 2022-05-28
 categories:
 - "*Definitions"
 - Year 2022
-- Descriptive statistic
+- Descriptive statistics
 output: html_document
 page_update: no
 ---

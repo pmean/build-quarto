@@ -6,7 +6,7 @@ date: 2024-05-07
 categories:
 - "*Blog post"
 - Year 2024
-- Incomplete pages
+- Incomplete page
 - Survival analysis
 - R software
 - Uses R code

@@ -7,7 +7,7 @@ categories:
 - "*Blog post"
 - Year 2005
 - Being updated
-- Diagnostic tests
+- Diagnostic testing
 output: html_document
 page_update: partial
 ---
