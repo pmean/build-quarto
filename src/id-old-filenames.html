@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Steve Simon">
-<meta name="dcterms.date" content="2024-11-09">
 
-<title>Copy files from build-website to qblog4</title>
+<title>tally files without dashes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,41 +18,6 @@ ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
-}
-
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-{ counter-reset: source-line 0; }
-pre.numberSource code > span
-{ position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-{ content: counter(source-line);
-position: relative; left: -1em; text-align: right; vertical-align: baseline;
-border: none; display: inline-block;
--webkit-touch-callout: none; -webkit-user-select: none;
--khtml-user-select: none; -moz-user-select: none;
--ms-user-select: none; user-select: none;
-padding: 0 4px; width: 4em;
-}
-pre.numberSource { margin-left: 3em; padding-left: 4px; }
-div.sourceCode
-{ }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -2180,26 +2143,14 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Copy files from build-website to qblog4</h1>
+<h1 class="title">tally files without dashes</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Steve Simon </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 9, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -2209,96 +2160,352 @@ vertical-align: -.125em;
 </header>
 
 
-<p>This program was written by Steve Simon on 2024-11-09 with a major modification on 2025-07-21 and is placed in the public domain.</p>
+<p>This program was written by Steve Simon on 2025-12-23 and is placed in the public domain.</p>
 <section id="preliminaries" class="level2">
 <h2 class="anchored" data-anchor-id="preliminaries">Preliminaries</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(glue)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="set-old-and-new-locations" class="level2">
-<h2 class="anchored" data-anchor-id="set-old-and-new-locations">Set old and new locations</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>old_path <span class="ot">&lt;-</span> <span class="st">&quot;../gen5&quot;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>old_directories <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">&quot;0&quot;</span>, (<span class="dv">0</span><span class="sc">:</span><span class="dv">9</span>)), <span class="fu">as.character</span>(<span class="fu">c</span>(<span class="dv">10</span><span class="sc">:</span><span class="dv">25</span>, <span class="dv">99</span>)))</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>new_path <span class="ot">&lt;-</span> <span class="st">&quot;../../qblog4/posts&quot;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>file_pattern <span class="ot">&lt;-</span> <span class="st">&quot;md$&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="find-files-function" class="level2">
-<h2 class="anchored" data-anchor-id="find-files-function">Find files function</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>files <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>subdirectories <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (dir <span class="cf">in</span> old_directories) {</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">glue</span>(<span class="st">&quot;{old_path}/{dir}&quot;</span>) <span class="sc">|&gt;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">list.files</span>() <span class="sc">|&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_subset</span>(file_pattern) <span class="ot">-&gt;</span> to_be_copied</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  n_to_be_copied <span class="ot">&lt;-</span> <span class="fu">length</span>(to_be_copied)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  subdirectories <span class="ot">&lt;-</span> <span class="fu">append</span>(subdirectories, <span class="fu">rep</span>(dir, n_to_be_copied))</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  files <span class="ot">&lt;-</span> <span class="fu">append</span>(files, to_be_copied)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  message <span class="ot">&lt;-</span> <span class="fu">glue</span>(</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Searching through {n_to_be_copied} files in {old_path}/{dir}&quot;</span>)</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(message)</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Searching through 41 files in ../gen5/00
-Searching through 14 files in ../gen5/01
-Searching through 21 files in ../gen5/02
-Searching through 22 files in ../gen5/03
-Searching through 135 files in ../gen5/04
-Searching through 187 files in ../gen5/05
-Searching through 176 files in ../gen5/06
-Searching through 156 files in ../gen5/07
-Searching through 159 files in ../gen5/08
-Searching through 54 files in ../gen5/09
-Searching through 101 files in ../gen5/10
-Searching through 78 files in ../gen5/11
-Searching through 56 files in ../gen5/12
-Searching through 40 files in ../gen5/13
-Searching through 78 files in ../gen5/14
-Searching through 56 files in ../gen5/15
-Searching through 97 files in ../gen5/16
-Searching through 76 files in ../gen5/17
-Searching through 122 files in ../gen5/18
-Searching through 65 files in ../gen5/19
-Searching through 77 files in ../gen5/20
-Searching through 116 files in ../gen5/21
-Searching through 146 files in ../gen5/22
-Searching through 64 files in ../gen5/23
-Searching through 54 files in ../gen5/24
-Searching through 29 files in ../gen5/25
-Searching through 41 files in ../gen5/99</code></pre>
+<pre><code>    
+../gen5/99, n=0    
+../gen5/00, n=5
+  copyright.md
+  hand17.md
+  hand17d.md
+  hand18.md
+  hand18condensed.md    
+../gen5/01, n=0    
+../gen5/02, n=0    
+../gen5/03, n=1
+  mle.md    
+../gen5/04, n=23
+  acuity.md
+  aliasing.md
+  auc.md
+  bimodality.md
+  craniosacral.md
+  em.md
+  enumerative.md
+  icf.md
+  mcnemar.md
+  mechanism.md
+  nih.md
+  nnh.md
+  pivot.md
+  powerpoint1.md
+  randomization.md
+  Rates.md
+  retrospective.md
+  smoking.md
+  temporality.md
+  updates.md
+  volunteer.md
+  Wikipedia.md
+  zhenya.md    
+../gen5/05, n=6
+  bayesian.md
+  contact.md
+  ItSeemsToMeReasonable.md
+  Publicon.md
+  Sackettisation.md
+  SurrogateOutcomes.md    
+../gen5/06, n=150
+  AdditionsImprovements.md
+  AdjustingForAgeAndSex.md
+  AdverseEvents1.md
+  AlwaysAskWhy.md
+  AmbiguousDefinition.md
+  AmusingCorrelation.md
+  APRDRGs.md
+  BalestracciSeminar.md
+  BayesianAnalysis.md
+  BetaCoefficient.md
+  BiplotFunction.md
+  BlockRandomization.md
+  BookSales.md
+  BookSpss.md
+  BookUpdate.md
+  CaseStudiesChildren.md
+  CategorizingWeblog.md
+  ChanceNews.md
+  ChanceNews1.md
+  CheckingChisquare.md
+  CherryPicking.md
+  CitingSoftware.md
+  ClopperPearson.md
+  ClusteringAlgorithms.md
+  Coauthorship.md
+  CoefficientDetermination.md
+  ColloquialTone.md
+  ColorsForR.md
+  ConferenceMaterials.md
+  ConstructValidity.md
+  ContinuousMonitoringNNH.md
+  ContradictoryResearch.md
+  ControlChartAdvice.md
+  ControlChartsA.md
+  CusumChart.md
+  DangerUsingHumor.md
+  DataEntryErrors.md
+  DifferencesInChildren.md
+  EbmArticles2005.md
+  EffectiveGraphs.md
+  EmailDiscussionGroup.md
+  EmilyRosaExperiment.md
+  EnsemblSearch.md
+  EthicalConcernsChildren.md
+  ExtremeValue.md
+  FavoriteBooks10.md
+  FirstPeek.md
+  FraudulentImages.md
+  FundingSources.md
+  GeneralizingResearch.md
+  GivingCredit.md
+  GoodEvidence.md
+  GraphicsOptionsR.md
+  HandlingDropouts.md
+  HaplotypeAnalysis1.md
+  HarrellPhilosophy.md
+  HcupSeminar.md
+  HeiserWebpages.md
+  HighLevel.md
+  HowManyCharts.md
+  HumanFace.md
+  IbmPuzzle.md
+  ImprovementsWeblogCategories.md
+  InformationSource.md
+  InsufficientData.md
+  InterestingApril.md
+  InterestingMay.md
+  InterpretCorrelation.md
+  IntervalTooWide.md
+  IrbStatistician.md
+  ItemResponseTheory.md
+  KickAround.md
+  Koan04.md
+  Koan05.md
+  KoanPage.md
+  LessonsLearned.md
+  LikelihoodSoftware.md
+  LostFiles.md
+  MachineLearning.md
+  MedicalGuidelines.md
+  MedlineVeryBusy.md
+  MetaAnalysisDiagnostic.md
+  MissingValues.md
+  MixedLinearModels.md
+  MixedSeminar.md
+  MolecularBiologists.md
+  Multicollinearity.md
+  OddsFormBayes.md
+  PageBreaksSPSS.md
+  PairedRandomization.md
+  ParametricTestForRatio.md
+  PastYear.md
+  PerfectionNotEnough.md
+  PharmacogeneticsResearchNetwork.md
+  PharmaIqTalks.md
+  PharmaIqTalksPart2.md
+  PoliticalEnd.md
+  PostHocComparisons.md
+  PostmodernThought.md
+  PromoteBook.md
+  PropensityScores.md
+  PropensityScores1.md
+  ProperTreatment.md
+  PvalueEqualsOne.md
+  QuadraticRegression.md
+  QualityControlHumor.md
+  RandomSelection.md
+  RankingOrdinalScales.md
+  RebuttingReviewer.md
+  RecallBias.md
+  RefusalReasons.md
+  RegularExpressionsA.md
+  ResearchInvolvingChildren.md
+  RiskFactorsDiagnosticTest.md
+  RoundingNumbers.md
+  SearchingEvidence.md
+  SearchingPediatricArticles.md
+  SecondGrant.md
+  SecondGrantPart2.md
+  SecondGrantPart3.md
+  ShortfallSampleSize.md
+  SignificantPilot.md
+  SmallSample.md
+  SoftwareSem.md
+  SpcHealthcare.md
+  SpittingMatches.md
+  StatisticalConcernsChildren.md
+  StatisticalConsultants.md
+  StatisticalEvidenceReview.md
+  StatisticalKoan1.md
+  StatisticalKoan2.md
+  StatisticalKoan3.md
+  StatisticalSoftware.md
+  StoppingRules.md
+  SurveyMistakes.md
+  TeachingPhilosophy.md
+  TensionScienceEthics.md
+  ThousandPages.md
+  TopicListIsComplete.md
+  TravelingCourse.md
+  TwoEventsWorrisome.md
+  UnivariateClustering.md
+  VariableNumberOfMeasures.md
+  VarianceRatio.md
+  VolunteerQuestions.md
+  WhereToGo.md
+  WikipediaEntryPt2.md
+  WikipediaEntryPt3.md
+  WithholdingPHI.md
+  XbarSymbol.md    
+../gen5/07, n=62
+  CalculationsDiagnosticTest.md
+  exercises17.md
+  exercises18.md
+  HelpForStatistics.md
+  HeteroscedasticTtest.md
+  HistogramPatterns.md
+  HowGood.md
+  HtmlDebris.md
+  HundredWords.md
+  IllustratedCaseStudies.md
+  IllustrationsForTgn1412.md
+  IncreasingTrend.md
+  InterpretationOddsRatio.md
+  KidneyBiopsy.md
+  LongPageNames.md
+  MethodologicalFlaws.md
+  MetropolisAlgorithm.md
+  ModularArithmeticInR.md
+  MyPromotionApplication.md
+  NewCategories.md
+  NnhTalkUpdate.md
+  NoLongerAlone.md
+  NormalSample.md
+  NotBlackAndWhilte.md
+  NotEverything.md
+  OATalk.md
+  OpenAccessJournals.md
+  PControlChart.md
+  PControlChartAnswers.md
+  PediatricResearch.md
+  PercentileFormula.md
+  PeritonealDialysis.md
+  PocketCalculator.md
+  PoissonInteractions.md
+  PoissonRegressionBooks.md
+  PromotingYourBook.md
+  Promotion.md
+  QualitativeReview.md
+  QuantifyingPredictions.md
+  RandomlyDividingData.md
+  RecommendationsSackett.md
+  ReformingCoi.md
+  ReportingTransformedData.md
+  ResourcesForGrantWriters.md
+  ReviewStatisticalMethods.md
+  RevisingDefinitions.md
+  RWiki.md
+  SevenFormulas.md
+  SevenFormulasa.md
+  SevenSins.md
+  SimpleCrossover.md
+  SlowMonth.md
+  SmallCellSizes.md
+  SourcesOfConfusion.md
+  SpecialSectionForQuotations.md
+  StairStep.md
+  StandardDeviationRatio.md
+  StubbornInsistence.md
+  TeamExercise.md
+  ThanksToProofreaders.md
+  TouchscreenInterface.md
+  WhatImWorkingOn.md    
+../gen5/08, n=5
+  consult.md
+  resources.md
+  reviews.md
+  training.md
+  zotero.md    
+../gen5/09, n=0    
+../gen5/10, n=1
+  aipe.md    
+../gen5/11, n=7
+  cer.md
+  lasagna.md
+  noncomparable.md
+  penston.md
+  prisons.md
+  sbir.md
+  segmented.md    
+../gen5/12, n=1
+  nhamcs.md    
+../gen5/13, n=2
+  clt.md
+  legal.md    
+../gen5/14, n=6
+  axis.qmd
+  crc.md
+  foreach.md
+  mlpowsim.md
+  plotrix.md
+  qqplot.qmd    
+../gen5/15, n=5
+  cdcfluview.md
+  introversion.md
+  riat.md
+  safeguarding.md
+  tessera.md    
+../gen5/16, n=12
+  circle.Rmd
+  encode.md
+  greedy.md
+  idre.md
+  incentivizing.md
+  ingelfinger.md
+  inla.md
+  lasso.md
+  megabyte.md
+  procrastination.md
+  qualtrics.md
+  tibbles.md    
+../gen5/17, n=5
+  dryad.md
+  openrefine.md
+  phekb.md
+  probonto.md
+  rainbows.md    
+../gen5/18, n=10
+  anaconda.md
+  beepr.md
+  dasl.md
+  jupyterlab.md
+  lavaan.md
+  leaflet.md
+  mpi4py.md
+  r2d3.md
+  shrine.md
+  stemming.md    
+../gen5/19, n=2
+  artist.md
+  hedis.md    
+../gen5/20, n=2
+  d4bl.md
+  data8.md    
+../gen5/21, n=4
+  cliodynamics.md
+  formulaic.md
+  niss.md
+  sasweave.md    
+../gen5/22, n=0    
+../gen5/23, n=0    
+../gen5/24, n=1
+  closeread.md    
+../gen5/25, n=0</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>files <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_remove</span>(<span class="st">&quot;</span><span class="sc">\\</span><span class="st">..*&quot;</span>) <span class="ot">-&gt;</span> roots</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>files <span class="sc">|&gt;</span> </span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">str_remove</span>(<span class="st">&quot;^.*</span><span class="sc">\\</span><span class="st">.&quot;</span>) <span class="ot">-&gt;</span> extensions</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>new_paths <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;{new_path}/{roots}&quot;</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>new_files <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;{new_paths}/index.{extensions}&quot;</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>old_files <span class="ot">&lt;-</span> <span class="fu">glue</span>(<span class="st">&quot;{old_path}/{subdirectories}/{roots}.{extensions}&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>n_files <span class="ot">&lt;-</span> <span class="fu">length</span>(files)</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n_files) {</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(new_paths[i])) {<span class="fu">dir.create</span>(new_paths[i])}</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  test1 <span class="ot">&lt;-</span> <span class="fu">file.copy</span>(<span class="at">from=</span>old_files[i], <span class="at">to=</span>new_files[i], <span class="at">overwrite=</span><span class="cn">TRUE</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">next</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">glue</span>(<span class="st">&quot;{test1}: {old_files[i]} copied to {new_files[i]}&quot;</span>))</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">list.files</span>(new_paths[i]))</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">str_glue</span>(<span class="st">&quot;Total files copied: {n_files}&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Total files copied: 2261</code></pre>
+<pre><code>Total files without dashes: 310</code></pre>
 </div>
 </div>
 </section>
