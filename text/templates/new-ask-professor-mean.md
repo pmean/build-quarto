@@ -2,10 +2,10 @@
 title: New Ask Professor Mean
 source: "New"
 author: Steve Simon
-date: 2025-xx-xx
+date: "2026-xx-xx"
 categories: 
 - "*Blog post"
-- 2025
+- Year 2026
 - Ask Professor Mean
 - Being updated
 output: html_document

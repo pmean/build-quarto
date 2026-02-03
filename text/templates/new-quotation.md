@@ -2,10 +2,10 @@
 title: "Insert partial quote here"
 author: "Steve Simon"
 source: new
-date: 20xx-xx-xx
+date: "2026-xx-xx"
 categories:
 - "*Quotation"
-- 2025
+- Year 2026
 - Being updated
 output: html_document
 page_update: no

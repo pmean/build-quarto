@@ -2,10 +2,10 @@
 title: "New recommendation"
 source: "New"
 author: Steve Simon
-date: "2025-xx-xx"
+date: "2026-xx-xx"
 categories: 
 - "*Recommendation"
-- 2025
+- Year 2026
 - Being updated
 output: html_document
 page_update: no

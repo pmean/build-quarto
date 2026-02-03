@@ -18,7 +18,7 @@ The topics that they plan to cover in the course include many that I have talked
 
 ## To the question "Are there any speakers you would like to see invited on this module? Do you have any contacts/suggestions for these?"
 
-At the risk of sounding arrogant, I myself would be a good speaker. I have written a lot informally about data sharing, data documentation, and open source publishing. I have written up multiple case studies in research fraud, data privacy, and conflicts of interest. Some of my work was published on a Wiki site, Chance News, which unfortunately seems to have fallen off the Internet. But you can get a rough idea of the topics by the titles of my contributions. See http://www.pmean.com/category/WikiPages.html. I also have pages on my own website about data sharing (http://new.pmean.com/tags/data-sharing/), conflict of interest (http://new.pmean.com/tags/conflict-of-interest/), open source (http://new.pmean.com/tags/open-source/), reproducible research (http://new.pmean.com/tags/reproducible-research/) and many others. My website is in transition, so many of the pages are broken, but you can get a rough idea of what I have written about. Half of my pages are original content and half are links to other interesting websites and journal articles.
+At the risk of sounding arrogant, I myself would be a good speaker. I have written a lot informally about data sharing, data documentation, and open source publishing. I have written up multiple case studies in research fraud, data privacy, and conflicts of interest. Some of my work was published on a Wiki site, Chance News, which unfortunately seems to have fallen off the Internet. But you can get a rough idea of the topics by the titles of my [contributions][ref-wiki]. I also have pages on my own website about [data sharing][ref-sharing], [conflict of interest][ref-coi], [open source][ref-open], [reproducible research][ref-reproducible], and many others. My website is in transition, so many of the pages are broken, but you can get a rough idea of what I have written about. Half of my pages are original content and half are links to other interesting websites and journal articles.
 
 I would be thrilled to get a chance to speak more about this topic. I am also willing to work behind the scenes, reviewing materials produced by others.
 
@@ -31,3 +31,9 @@ The Reinhart-Rogoff Excel error is a cautionary tale about reproducibility.
 The investigations of Keith Baggerly and Kevin Coombes into the Duke University scandal
 
 The Wellcome Trust statement on data sharing during the Covid-19 crisis
+
+[ref-coi]: http://new.pmean.com/tags/conflict-of-interest/
+[ref-open]: http://new.pmean.com/tags/open-source/
+[ref-reproducible]: http://new.pmean.com/tags/reproducible-research/
+[ref-sharing]: http://new.pmean.com/tags/data-sharing/
+[ref-wiki]: http://www.pmean.com/category/WikiPages.html
