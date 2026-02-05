@@ -7,11 +7,12 @@ categories: Blog post
 tags:
 - Quarto documents
 - R programming
+- Year 2026
 output: html_document
 page_update: no
 ---
 
-I have been using Quarto for a couple of years now and I really like it. I wanted to document a few options that I like for the yaml header in a Quarto.
+I have been using Quarto for a couple of years now and I really like it. I wanted to document a few options that I like for the yaml header in a Quarto file.
 
 <!---more--->
 
@@ -109,6 +110,8 @@ in your yaml header. Other common options that you can control are
 -   `message: false` to suppress informational messages
 -   `warning: false` to suppress warning messages
 
+You can make exceptions for individual chunks easily. If you want to override the global `echo: false` option in a particular chunk, include `#| echo: true` as the first line in that chunk.
+
 You can also control the size of all the graphs in your code using the `fig-width` and `fig.height` keys. Note that `fig.width` and `fig.height` could also be used. If you mix Python in with your R code, you might want to stick with the dash as a delimiter rather than the dot. Dots have special meaning in Python.
 
 ## Where to find more information abot yaml and Quarto
@@ -117,7 +120,7 @@ There is a nice (and very short) [YouTube video][ref-keys] by David Keys that ta
 
 Look at [Chapter 15][ref-tdg-15] of the online book [Quarto: The Practical Guide][ref-tdg] written by Mine Cetinkaya-Rundel for a more complete explanation of various options you can include in your yaml header.
 
-The definitive guide for anything about Quarto is the [Quarto site][ref-quarto] run by Posit. Go to the [html basics][ref-html] page for more information about what to put in the yaml header.
+The definitive guide for anything about Quarto is the [Quarto site][ref-quarto] run by Posit. Go to the [html basics][ref-html] page on that site for more information about what you can put in the yaml header.
 
 The [yaml website][ref-yaml] provides detailed documentation about the yaml specifications. This goes into far more detail than you need to write a yaml header for Quarto, but it helps you better understand the importance of various formating requirements.
 

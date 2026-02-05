@@ -5,8 +5,9 @@ author: Steve Simon
 date: "2025-10-13"
 categories:
 - "*Recommendation"
-- 2025
+- Microsoft Excel
 - Statistical computing
+- Year 2025
 output: html_document
 page_update: no
 ---
