@@ -5,3 +5,5 @@
 results/*.*
 
 /.quarto/
+
+**/*.quarto_ipynb
