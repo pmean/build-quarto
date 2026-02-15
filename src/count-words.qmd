@@ -98,7 +98,7 @@ count_words <- function(file_text) {
 
 n_list <- NULL
 
-yr <- c("99", glue("0{0:9}"), as.character(10:25))
+yr <- c("99", glue("0{0:9}"), as.character(10:26))
 dir_list <- glue("../gen5/{yr}")
 
 for (file_path in dir_list) {
