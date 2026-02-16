@@ -19,6 +19,8 @@ page_update: complete
 
 Counts in a two by two table (a cross-tabulation), are tricky to display, especially when you want to include percentages. I want to illustrate some of the ways that you can use R to present these cross-tabulations. This page takes material from a [2002 webpage of mine][ref-simon-2002] on crosstabulation written from a more generic perspective.
 
+[ref-simon-2002]: http://pmean.com/posts/displaying-percentages/
+
 You might also want to look at [this vignette][ref-vignette] by Andri Signoreli written in 2021.
 
 [ref-vignette]: https://stat.ethz.ch/CRAN/web/packages/DescTools/vignettes/TablesInR.pdf
@@ -306,7 +308,12 @@ If you use logistic regression (the [glm function][ref-glm] with the argument fa
 
 ## Making it look nice
 
-The glue function can produce a layout that is a bit closer to publication quality. There are several possible layouts, but here is one that I like.
+One advantage to using the tibble output from count is that it allows you a lot of flexibility to make the output look a little bit closer (or a lot closer) to publication quality. Here is a simple example.
+
+The [glue function][ref-glue-1], part of the [glue library][ref-glue-2], can produce a layout that is a bit closer to publication quality. There are several possible layouts, but here is one that I like.
+
+[ref-glue-1]: https://glue.tidyverse.org/reference/glue.html
+[ref-glue-2]: https://glue.tidyverse.org/
 
 ```{r}
 #| label: layout
@@ -320,5 +327,3 @@ mbh1 |>
   select(-n, -total) |>
   pivot_wider(names_from=mood, values_from=pct)
 ```
-
-[ref-simon-2002]: http://pmean.com/posts/displaying-percentages/
