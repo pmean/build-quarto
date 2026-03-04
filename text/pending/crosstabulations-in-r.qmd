@@ -25,6 +25,24 @@ You might also want to look at [this vignette][ref-vignette] by Andri Signoreli 
 
 [ref-vignette]: https://stat.ethz.ch/CRAN/web/packages/DescTools/vignettes/TablesInR.pdf
 
+There are plenty of other approaches out there that I will not try to cover here. These include
+
+-   [Crosstable package][ref-Crosstable]
+-   [data.table package][ref-data-table]
+-   [DT package][ref-dt]
+-   [flextable package][ref-flextable]
+-   [gt package][ref-gt]
+-   [janitor package][ref-janitor]
+
+Some of these packages specialize in crosstabulations, but most provide them along with a range of other features.
+
+[ref-Crosstable]: https://cran.r-project.org/web/packages/crosstable/vignettes/crosstable.html
+[ref-data.table]: https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
+[ref-dt]: https://cran.r-project.org/web/packages/DT/refman/DT.html
+[ref-flextable]: https://ardata-fr.github.io/flextable-book/
+[ref-gt]: https://gt.rstudio.com/
+[ref-janitor]: https://cran.r-project.org/web/packages/janitor/refman/janitor.html
+
 <!---more--->
 
 ```{r}
@@ -37,7 +55,6 @@ library(gt)
 library(tidyverse)
 ```
 
-
 ## Money and happiness
 
 Does money buy happiness? Maybe, maybe not. Here are the first few rows of an artificial dataset where 200 hypothetical subjects were classified by income (rich or poor) and their mood (happy or miserable). You will see how to use R to display this data in a variety of different cross-tabulations.
@@ -45,6 +62,9 @@ Does money buy happiness? Maybe, maybe not. Here are the first few rows of an ar
 ```{r}
 #| label: create-data
 #| echo: false
+
+# I am hiding the steps to create the data files used in this program because
+# they are just a distraction from the main topic.
 
 table_counts <- c(30, 10, 90, 70)
 income <- c("rich", "rich", "poor", "poor")
@@ -60,6 +80,10 @@ tibble(
   mutate(random_order=sample(1:196)) |>
   arrange(random_order) |>
   select(-random_order) -> mbh1
+
+# I am mostly arranging the data in a random order, but I want to make sure 
+# that all four combinations of rich/poor and happy/miserable are seen in the
+# first four rows.
 
 mbh1 <- bind_rows(mbh0[c(4, 1, 3, 2) , -3], mbh1) 
   
@@ -86,9 +110,7 @@ mbh0
 
 ## Using the table function
 
-Before the tidyverse came along, you might use the [table function][ref-table] to create a crosstabulation.
-
-[ref-table]: https://stat.ethz.ch/R-manual/R-patched/RHOME/library/base/html/table.html
+This is the classic two by two crosstabulation.
 
 ```{r}
 #| label: table
@@ -96,7 +118,13 @@ Before the tidyverse came along, you might use the [table function][ref-table] t
 table(mbh1$income, mbh1$mood)
 ```
 
-This is the classic two by two crosstabulation.
+#### Comments on the code
+
+Before the tidyverse came along, you might use the [table function][ref-table] to create a crosstabulation.
+
+[ref-table]: https://stat.ethz.ch/R-manual/R-patched/RHOME/library/base/html/table.html
+
+## Controlling the order of display
 
 Now for this and all future tables, I want to show the results for rich income first and poor income second. There is no good reason for this other than that is how I arranged things in the 2002 webpage.
 
@@ -107,6 +135,14 @@ mbh1$income <- factor(mbh1$income, levels=c("rich", "poor"))
 mbh0$income <- factor(mbh0$income, levels=c("rich", "poor"))
 ```
 
+#### Comments on the code
+
+The default in R is to arrange your string data in alphabetical order when displaying crosstabulations. You can override this default with the [factor function][ref-factor], part of base R. Use the levels argument to desigate the desired order.
+
+[ref-factor]: https://stat.ethz.ch/R-manual/R-devel/library/base/html/factor.html
+
+## Table after applying the factor function
+
 Here is the table with the rows swapped.
 
 ```{r}
@@ -115,7 +151,9 @@ Here is the table with the rows swapped.
 table(mbh1$income, mbh1$mood)
 ```
 
-It is easy to turn the table 90 degrees. Just place mood in the first argument and income in the second argument.
+## Turning the crosstabulation (table)
+
+It is easy to turn the crosstabulation 90 degrees (swapping the rows and columns). Just place mood in the first argument and income in the second argument.
 
 ```{r}
 #| label: turn
@@ -123,12 +161,7 @@ It is easy to turn the table 90 degrees. Just place mood in the first argument a
 table(mbh1$mood, mbh1$income)
 ```
 
-
-You can calculate totals with the addmargins function and proportions with the prop.table function. All is well and good, but I want to show two other ways to do this the tidyverse way.
-
 ## Using the xtabs function
-
-Base R also has the [xtabs function][ref-xtabs]. This performs similarly to table, but has a few extra features. One of the more convenient features is the data argument which allows you to specify the data frame just once.
 
 ```{r}
 #| label: xtabs-1
@@ -136,7 +169,13 @@ Base R also has the [xtabs function][ref-xtabs]. This performs similarly to tabl
 xtabs(formula= ~ income + mood, data=mbh1)
 ```
 
+#### Comments on the code
+
+Base R also has the [xtabs function][ref-xtabs]. This performs similarly to table, but has a few extra features. One of the more convenient features is the data argument which allows you to specify the data frame just once.
+
 [ref-xtabs]: https://stat.ethz.ch/R-manual/R-devel/library/stats/html/xtabs.html
+
+## Turning the crosstabulation (xtabs)
 
 Swap the order to switch rows and columns.
 
@@ -146,7 +185,7 @@ Swap the order to switch rows and columns.
 xtabs(formula= ~ mood + income, data=mbh1)
 ```
 
-The xtabs function also allows you to create a table where you already have the counts. What xtabs is doing here is just rearranging the four row by one column vector into a two row by two column matrix.
+## Creating a crosstabulation from an aggregated dataset
 
 ```{r}
 #| label: xtabs-3
@@ -154,9 +193,11 @@ The xtabs function also allows you to create a table where you already have the 
 xtabs(table_counts~income+mood, data=mbh0)
 ```
 
-## Using the count function in dplyr
+#### Comments on the code
 
-The count function is simple and produces the same counts as table, but notice how it is laid out differently.
+The xtabs function also allows you to create a table where you already have the counts. List the count or weight variable to the left of the tilde. What xtabs is doing here is just rearranging the four row by one column vector into a two row by two column matrix. You could have used the pivot_wider function here as well (see below for details on pivot_wider).
+
+## Using the count function in dplyr
 
 ```{r}
 #| label: count
@@ -165,7 +206,13 @@ mbh1 |>
   count(income, mood)
 ```
 
-The counts are in a single 4 by 1 column. If you want to arrange this in a rectangular grid, you should use the pivot_wider function.
+#### Comments on the code
+
+I prefer using the [count function][ref-count] in dplyr instead of table or xtabs. It can mean a bit more work at times, but it is more flexible and can handle more complex settings. The count function produces the same results as table, but notice how it is laid out differently. The counts are in a single 4 by 1 column.
+
+[ref-count]: https://dplyr.tidyverse.org/reference/count.html
+
+## Converting from a column to a grid
 
 ```{r}
 #| label: pivot-1
@@ -175,7 +222,14 @@ mbh1 |>
   pivot_wider(names_from=mood, values_from=n)
 ```
 
-This places income in the rows and mood in the columns. If you wanted the opposite, change the names_from argument to income.
+#### Comments on the code
+
+If you want to arrange this in a rectangular grid, you should use the [pivot_wider function][ref-pivot-wider], part of the tidyr/tidyverse library. 
+This places income in the rows and mood in the columns.
+
+[ref-pivot-wider]: https://tidyr.tidyverse.org/reference/pivot_wider.html
+
+## Turning the crosstabulation (count/pivot_wider)
 
 ```{r}
 #| label: pivot-2
@@ -184,6 +238,10 @@ mbh1 |>
   count(income, mood) |>
   pivot_wider(names_from=income, values_from=n)
 ```
+
+#### Comments on the code
+
+If you wanted the opposite, change the names_from argument to income.
 
 ## Part 2, adding totals to a table
 
@@ -197,6 +255,8 @@ When you use the table function or the xtabs function, your output is stored as 
 table(mbh1$income, mbh1$mood) |>
   addmargins(margin=2)
 ```
+
+#### Comments on the code
 
 The [addmargins function][ref-addmargins] is part of base R and allows you to add row totals with the argument margin=2. 
 
@@ -218,7 +278,7 @@ table(mbh1$income, mbh1$mood) |>
 You can add both row and column totals with margin=1:2.
 
 ```{r}
-#| label: both-margins
+#| label: both-margins-1
 
 table(mbh1$income, mbh1$mood) |>
   addmargins(margin=1:2)
@@ -229,10 +289,10 @@ table(mbh1$income, mbh1$mood) |>
 The addmargins function works equally well with the output from the xtabs function
 
 ```{r}
-#| label: both-margins
+#| label: both-margins-2
 
 xtabs(~ income + mood, data=mbh1) |>
-  marginSums(margin=2)
+  addmargins(margin="income")
 ```
 
 ## Adding row margins to a tibble created by count
@@ -240,14 +300,24 @@ xtabs(~ income + mood, data=mbh1) |>
 Things work quite differently for the output from the count function. After pivoting, just add. Getting totals at the bottom of each column is not easy. In most real-world applications, you should be able to get by with just row margins.
 
 ```{r}
-#| label: income-totals
+#| label: income-totals-1
+
+mbh1 |>
+  count(income, mood) |>
+  group_by(income) |>
+  mutate(total=sum(n)) 
+```
+
+If you want row totals after applying the pivot_wider function, just use a simple addition inside the mutate function.
+
+```{r}
+#| label: income-totals-2
 
 mbh1 |>
   count(income, mood) |>
   pivot_wider(names_from=mood, values_from=n) |>
-  mutate(total=happy+miserable)
+  mutate(total=happy+miserable) 
 ```
-
 
 ## Calculating proportions
 
@@ -261,7 +331,7 @@ Again, the calculations depend on whether you are working with the matrix output
 
 ## Getting row proportions using a matrix created by xtabs
 
-The [proportions function][ref-proportions]
+The [proportions function][ref-proportions] function takes a table object and computes row percents or column percents. Row percents add up to 100% in each row and usually (but not always) are what you want. The proportions function works easiest with output from xtabs because you can use names rather than numbers. With table, you use 1 for row percents and 2 for column percents.
 
 ```{r}
 #| label: conditional-1
@@ -273,6 +343,8 @@ xtabs( ~ income + mood, data=mbh1) |>
 [ref-proportions]: https://stat.ethz.ch/R-manual/R-devel/library/base/html/proportions.html
 
 ## Getting row proportions using a tibble created by count
+
+When you want row percents from a tibble created by the count function, you add a few steps before you pivot wider. 
 
 ```{r}
 #| label: conditional-2
@@ -310,11 +382,6 @@ If you use logistic regression (the [glm function][ref-glm] with the argument fa
 
 One advantage to using the tibble output from count is that it allows you a lot of flexibility to make the output look a little bit closer (or a lot closer) to publication quality. Here is a simple example.
 
-The [glue function][ref-glue-1], part of the [glue library][ref-glue-2], can produce a layout that is a bit closer to publication quality. There are several possible layouts, but here is one that I like.
-
-[ref-glue-1]: https://glue.tidyverse.org/reference/glue.html
-[ref-glue-2]: https://glue.tidyverse.org/
-
 ```{r}
 #| label: layout
 
@@ -327,3 +394,11 @@ mbh1 |>
   select(-n, -total) |>
   pivot_wider(names_from=mood, values_from=pct)
 ```
+
+#### Comments on the code
+
+The [glue function][ref-glue-1], part of the [glue library][ref-glue-2], can produce a layout that is a bit closer to publication quality. There are several possible layouts, but here is one that I like.
+
+[ref-glue-1]: https://glue.tidyverse.org/reference/glue.html
+[ref-glue-2]: https://glue.tidyverse.org/
+

@@ -28,6 +28,7 @@ If you find out that one point out of many influences your model, that is not a 
 #| message: false
 #| warning: false
 
+library(broom)
 library(glue)
 library(gt)
 library(tidyverse)
@@ -161,3 +162,55 @@ delete_point(6)
 The sixth data point is also influential.
 
 ## What makes a point influential?
+
+There are two factors that make a point influential. 
+
+First, does it tend to hang around the fringes of the independent variables. With one independent variable, that means, does it tend to be much smaller than the other values of the independent variable or does it tend to be much larger. 
+
+With multiple independent variables, it could be on the fringes if it defies the general correlations that you see in the rest of the data. This can happen even if the values of the independent variables do not look too extreme when examined one at a time. So in a study of pre-term births, a gestational age of 36 is not too extreme and a birthweight of 1 kilogram is not too extreme. But 1 kilogram babies almost always have a much earlier gestational age (probably closer to 28 weeks) and 36 week gestational age babies are almost always much heavier than 1 kilogram at birth (probably closer to 2 kilograms). So a 36 week, 1 kilogram baby is at the fringes of the data.
+
+Sidenote: The Hancock Health website has a [nice page][ref-hancock-nodate] that shows the norms for various birthweights and gestational ages.
+
+ma%*%solve(t(ma)%*%ma)%*%t(ma)%*%hypothetical$y
+
+[ref-hancock-nodate]: https://www.hancockhealth.org/mayo-health-library/premature-birth/
+
+Second, is there a large residual. This is a deviation between what you observed and what your model predicts. You have to standardize this difference because some of the residuals will have much more variation and some will have much less variation. Residuals associated with independent variables at the fringes tend to have much less variation, so even small residuals there could be important.
+
+## Leverage
+
+Leverage is a measure of how much the values of the independent variables for a particular observation are found on the fringes of the data. The term leverage is reminiscent of the famous Archimedes quote "Give me a lever long enough and a fulcrum on which to place it, and I shall move the world." An observation with high leverage will pull the regression line towards it, possibly to the detriment of the rest of the observations.
+
+Leverage is quantified by looking at the diagonal elements of the hat matrix. The hat matrix is calculated from the matrix of independent variables, and that matrix should include a column of 1's for the intercept.
+
+If you are familiar with the matrix notation for linear regression, you will recognize the formula for the estimated regression coefficients:
+
+$\hat{\beta}=(X'X)^{-1}X'Y$
+
+The predicted values are computed as
+
+$\hat{Y}=X\hat{\beta}= X(X'X)^{-1}X'Y$
+
+The matrix $X(X'X)^{-1}X'$ is called hat matrix because it converts Y into Y-hat. This is an under-appreciated property of linear regression. The predicted values are just a weighted combination of the Y's.
+
+Here's what the hat matrix look like for our small artificial example.
+
+```{r}
+#| label: hat
+
+ma <- matrix(c(rep(1, 6), hypothetical$x), nrow=6)
+h <- round(ma%*%solve(t(ma)%*%ma)%*%t(ma), 2)
+h
+```
+
+This matrix shows, for example that the first predicted value gives most of its weight (`r h[1, 1]`) to the first observation, which kind of makes sense. It also places a fair amount of weight to the second and third observations (`r h[1, 2]` and `r h[1, 3]` respectively. It gives negative weight (`r h[1, 5]` and `r h[1, 6]`) to the fifth and sixth observations.
+
+## Augment
+
+```{r}
+#| label: augment
+
+hypothetical_model <- lm(y~x, data=hypothetical)
+diagnostics <- augment(hypothetical_model)
+diagnostics
+```
