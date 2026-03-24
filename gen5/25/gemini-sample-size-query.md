@@ -1,5 +1,5 @@
 ---
-title: New post
+title: "Gemini query on sample size"
 source: "New"
 author: Steve Simon
 date: 2025-02-21
@@ -10,7 +10,7 @@ output: html_document
 page_update: no
 ---
 
-I sent the query "how do i select an appropriate sample size for a research study" to Gemini. Here is the response I got.
+I sent the query "how do i select an appropriate sample size for a research study" to Gemini. Here is the response I got. I modified the hyperlinks to make them clickable in this document, but otherwise left the response unchanged.
 
 <!---more--->
 
