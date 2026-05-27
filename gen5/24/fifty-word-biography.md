@@ -6,7 +6,7 @@ date: 2024-09-04
 categories: 
 - "*Blog post"
 - Year 2024
-- Porfessional details
+- Professional details
 output: html_document
 page_update: no
 ---

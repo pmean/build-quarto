@@ -5,10 +5,10 @@ author: Steve Simon
 date: 2025-12-22
 categories: 
 - "*Blog post"
-- 2025
 - Ask Professor Mean
 - Complex surveys
 - Descriptive statistics
+- Year 2025
 output: html_document
 page_update: no
 ---
