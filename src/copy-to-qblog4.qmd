@@ -26,7 +26,7 @@ library(tidyverse)
 #| label: locations
 
 old_path <- "../gen5"
-old_directories <- c(paste0("0", (0:9)), as.character(c(10:25, 99)))
+old_directories <- c(paste0("0", (0:9)), as.character(c(10:26, 99)))
 new_path <- "../../quarto-blog/posts"
 file_pattern <- "md$"
 ```
