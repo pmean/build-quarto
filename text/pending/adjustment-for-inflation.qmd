@@ -50,6 +50,8 @@ glimpse(hp)
 You can select the film with the highest opening weekend with the slice_max function. I added commas to make the number easier to read.
 
 ```{r}
+#| label: highest-gross
+
 hp |>
   slice_max(weekend_gross) |>
   mutate(weekend_gross=format(weekend_gross, big.mark=","))
@@ -60,6 +62,7 @@ The last film in the series, Harry Potter and the Deathly Hallows, Part 2, had t
 To do this, download the CPI. I chose a series that was not seasonally adjusted and stored it in cpi.csv.
 
 ```{r}
+#| label: read-cpi
 
 cpi <- read_csv(
   "cpi.csv",
@@ -68,4 +71,17 @@ glimpse(cpi)
 ```
 
 Now, you need to match the correct CPI value with each opening weekend.
-The file cpi.csv
+
+The file cpi.csv lists the year and the month (M01, M02, etc.). you need to convert the opening date to a similar format so we can merge.
+
+```{r}
+#| label: convert-cpi-dates
+
+hp |>
+  mutate(Period=str_sub(opening_date, 1, 2)) |>
+  mutate(Period=paste0("M", Period)) |>
+  mutate(Year=str_sub(opening_date, 7, 10)) |>
+  mutate(Year=as.numeric(Year)) -> hp1
+
+hp1
+```

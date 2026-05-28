@@ -5,8 +5,8 @@ author: Steve Simon
 date: 2025-10-22
 categories: 
 - "*Blog post"
-- 2025
-- Being updated
+- Year 2025
+- Statistical theory
 output: html_document
 page_update: no
 ---
