@@ -1,0 +1,348 @@
+---
+title: "Calculating age adjusted rates"
+author: "Steve Simon"
+source: new
+date: "2026-06-16"
+categories:
+tags:
+- "*Blog post"
+- Year 2026
+- Measuring benefit and risk
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: false
+  echo: true
+page_update: complete
+---
+
+I am working with someone who needs to compute age-adjusted rates. It is not too difficult, except if you've never done it before. Neither she nor I have, so I am taking the time to outline how this might be done in a simple case before we tackle her data.
+
+<!---more--->
+
+## Calculation formulas
+
+The formula for age-adjustments is fairly simple. The CDC has a [nice webpage][ref-cdc-2025] that outlines this.
+
+[ref-cdc-2025]: https://www.cdc.gov/nchs/hus/sources-definitions/age-adjustment.htm
+
+Age-adjusted rates are calculated by the direct method, as in:
+
+
+$$\sum_{i=1}^{n}r_i (p_i/P)$$
+
+where $r_i$ = Rate in age group i in the population of interest, $p_i$ = Standard population in age group i, and
+
+$$P = \sum_{i=1}^{n}p_i$$
+
+## What is a standard population
+
+So what, exactly is a "standard population". It can be anything actually, but it usually is a distribution of ages that represents the distributions across an entire state or country or possibly across the whole world. A commonly used standard population is U.S. 2000 Standardized Population.
+
+You can find links to several versions of this at the CDC webpage listed. The age breakdowns vary. One goes from
+
+-   Younger than 1
+-   1–4
+-   5–14
+-   15–24
+-   25–34
+-   35–44
+-   45–54
+-   55–64
+-   65–74
+-   75–84
+-   85 and older
+
+for example. If your data has an age grouping different, then you can build your own table at the [SEER (Surveillance, Epidemiology, and End Results) website][ref-nci-nodate], run by the National Cancer Institute. This page has a breakdown of the U.S. 2000 Standardized Population by single years.
+
+[ref-nci-nodate]: https://seer.cancer.gov/stdpopulations/stdpop.singleages.html
+
+## Get data on COVID cases
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(tidyverse)
+```
+
+To illustrate the calculations, you need a dataset. You can find a nice and fairly easy to use [dataset on COVID cases and deaths over time][ref-healthdata-nodate]. This is mostly used to look at trends for COVID, but we will use it to pull out a single date and region and calculate crude and adjusted rates by race.
+
+[ref-helthdata-nodate]: https://healthdata.gov/CDC/COVID-19-Weekly-Cases-and-Deaths-by-Age-Race-Ethni/gpce-gn87/about_data
+
+The data is available as a comma-separated text file and you can feed the URL directly into the read_csv function.
+
+```{r}
+#| label: read-covid
+
+f1 <- "https://data.cdc.gov/api/views/hrdz-jaxc/rows.csv"
+
+covid_cases0 <- read_csv(
+  file=f1,
+  col_names=TRUE, 
+  col_types="cccccnnn")
+
+glimpse(covid_cases0)
+```
+
+One quick note about the variable names. The need for privacy requires that you not see any very small groups in the dataset because that increases the risk that an individual person might be identifiable. In this dataset, anytime the count for cases or death goes below 5, the data are suppressed. That's why the last variables have the word "suppressed" in their names. For the particular subset that you will use later, there are no suppressed values.
+
+### COVID data frequencies
+
+Let's get a few basic frequencies for the various categorical values.
+
+```{r}
+#| label: frequencies
+
+covid_cases0 |>
+  count(jurisdiction)
+
+covid_cases0 |>
+  count(age_group)
+
+covid_cases0 |>
+  count(sex)
+
+covid_cases0 |>
+  count(race_ethnicity_combined)
+```
+
+Notice how the age groups did not sort properly. If you place a blank in front of the "0 - 4 Years" and "5 - 11 Years", then they would sort nicely (as shown below).
+
+## Filtering down to a manageable subset
+
+To get a snapshot of a single time point, you can use the filter function to limit the data to a single day. You can also limit the data to a single region, Region 4. This is an arbirtrary choice that represent the West North Central United States (ND, SD, NE, KS, MN, IA, MO).
+
+You need to calculate the number of patients in each group. This is easy enough to calculate by inverting the formula
+
+`case_rate = case_count / size_per_100k`
+
+Do note that since the case rate is per 100K, the size is also computed per 100K. You could adjust this, if you wanted to, but keeping both at per 100K is actually simpler and better.
+
+You do need to remove the "Overall" categories for age_group and race_ethnicity_combined. Keep only the "Overall" category for sex, though. In this example, you do not want any rates (crude or adjusted) separated into males and females.
+
+You have to exclude the "AI/AN, NH" group because there is no "AI/AN, NH" group in the U.S. 2000 Standardized Population. 
+
+You should modify the age group labels with a leading blank for two of the categories. This insures that the sorted data will be in a logical order. 
+
+You should also NOT keep the variable case_crude_rate_suppressed_per_100k because you will be computing several different crude rates later.
+
+```{r}
+#| label: filter-covid
+
+covid_cases0 |>
+  filter(end_of_week == "2020-10-31") |>
+  filter(jurisdiction == "Region 4") |>
+  filter(sex == "Overall") |>
+  filter(age_group != "Overall") |>
+  filter(race_ethnicity_combined != "Overall") |>
+  filter(race_ethnicity_combined != "AI/AN, NH") |>
+  mutate(size_per_100k=case_count_suppressed/case_crude_rate_suppressed_per_100k) |>
+  mutate(age_group=str_replace(age_group, "0 - 4 Years", " 0 - 4 Years")) |>
+  mutate(age_group=str_replace(age_group, "5 - 11 Years", " 5 - 11 Years")) |>
+  select(
+    age_group,
+    race_ethnicity_combined,
+    case_count_suppressed, 
+    size_per_100k) |>
+  arrange(age_group, race_ethnicity_combined) -> covid_cases1
+
+covid_cases1
+```
+
+## Calculate rates for each age group
+
+Sum across all the race/ethnicity categories to get the numerator and denominator for the covid infection rates in each age group.
+
+```{r}
+#| label: age-group-rates
+
+covid_cases1 |>
+  group_by(age_group) |>
+  summarize(
+    case_count_suppressed=sum(case_count_suppressed),
+    size_per_100k=sum(size_per_100k)) |>
+  mutate(crude_age_rate=case_count_suppressed / size_per_100k) -> age_rates
+
+age_rates
+```
+
+The rates appear to be highest for young to middle-aged adults.
+
+## Calculate rates for each race/ethnicity group
+
+Sum across all age groups to get the numerator and denominator for race/ethnicity.
+
+```{r}
+#| label: race-ethnicity-rates
+
+covid_cases1 |>
+  group_by(race_ethnicity_combined) |>
+  summarize(
+    case_count_suppressed=sum(case_count_suppressed),
+    size_per_100k=sum(size_per_100k)) |>
+  mutate(crude_race_rate=case_count_suppressed / size_per_100k) -> race_rates
+
+race_rates
+```
+
+Hispanics have the highest COVID infection rate.
+
+## Read the U.S. Standardized Population
+
+The age categories you need are not reflected in the CDC tables, so let's use the population counts in the yearly dataset at SEER. Again, if you provide the URL, you can read the data directly.
+
+```{r}
+#| label: read-seer
+
+f1 <- "https://seer.cancer.gov/stdpopulations/singleages.pops.tables.csv"
+
+seer_population0 <- read_csv(
+  file=f1,
+  skip=2,
+  col_names=FALSE,
+  col_types="cnnnnnnnn")
+
+glimpse(seer_population0)
+```
+
+You need to modify some of the variables so they will end up meshing well with the COVID cases data. Also, you need to remove any population count associated with other standardized population.
+
+```{r}
+#| label: filter-seer
+
+seer_population0 |>
+  rename(age_years=X1) |>
+  rename(population_count=X2) |>
+  filter(!is.na(age_years)) |>
+  filter(age_years != "Total") |>
+  mutate(age_years=str_sub(age_years, 1, 2)) |>
+  mutate(age_years=as.numeric(age_years)) |>
+  select(age_years, population_count) -> seer_population1
+```
+
+Now calculate the proper age groups for the standardized population.
+
+```{r}
+#| label: age-bands
+
+seer_population1 |>
+  mutate(age_group=case_when(
+    age_years <= 4  ~ " 0 - 4 Years",
+    age_years <= 11 ~ " 5 - 11 Years",
+    age_years <= 15 ~ "12 - 15 Years",
+    age_years <= 17 ~ "16 - 17 Years",
+    age_years <= 29 ~ "18 - 29 Years",
+    age_years <= 39 ~ "30 - 39 Years",
+    age_years <= 49 ~ "40 - 49 Years",
+    age_years <= 64 ~ "50 - 64 Years",
+    age_years <= 74 ~ "65 - 74 Years",
+    age_years >  74 ~ "75+ Years")) |>
+  group_by(age_group) |> 
+  summarize(population_count=sum(population_count)) -> seer_age_groups
+
+print(seer_age_groups, n=10)
+```
+
+## Evaluate imbalances in age group sizes across race/ethnicity groups
+
+You've done a lot, and it's time to check to see how important the age adjustment is. Do the racial groups tend to have the same relative proportions in each age group? If so, there is less of a need for any adjustments.
+
+```{r}
+#| label: covid-bar
+
+covid_cases1 |>
+  filter(race_ethnicity_combined != "Overall") |>
+  filter(age_group != "Overall") |>
+  group_by(race_ethnicity_combined) |>
+  mutate(total=sum(size_per_100k)) |>
+  mutate(pct=100*size_per_100k/total) |>
+  ggplot() +
+  aes(x=race_ethnicity_combined, y=pct, fill=age_group) |>
+  geom_col(
+    position="stack",
+    color="black")
+```
+
+There are some small differences here. The White, NH group tends to have a disproportionately larger proportion of people in the older age groups while the other groups, especially the Hispanic group, tend to skew a bit more to the younger age groups.
+
+## Calculate rates for age_groups within the Asian subgroup
+
+To get an adjusted rate for the Asian subgroup, you need to compute a separate rate for every age group within the Asian subpopulation.
+
+```{r}
+#| label: age-groups-for-asian
+
+covid_cases1 |>
+  filter(race_ethnicity_combined=="Asian/PI, NH") |>
+  group_by(age_group) |>
+  summarize(
+    case_count_suppressed=sum(case_count_suppressed),
+    size_per_100k=sum(size_per_100k),
+    .groups="drop") |>
+  mutate(detailed_rates=case_count_suppressed / size_per_100k) -> asian_rates
+
+print(asian_rates, n=10)
+```
+
+Don't forget what the overall rate is for the Asian subgroup.
+
+```{r}
+#| label: overall-asian-rate
+
+race_rates |>
+  filter(race_ethnicity_combined=="Asian/PI, NH")
+```
+
+## Re-combining across age groups
+
+You already knew this, but if you tried to average the individual rates for the ten age_groups, you would get a different number than the overall rate. 
+
+```{r}
+#| label: simple-average
+
+asian_rates |>
+  summarize(simple_mean_rate=mean(detailed_rates))
+```
+
+This discrepancy occurs because age_groups with a small number of patients get the same weight as age_groups with a large number of patients. To get the valid rates, you need to use a weighted mean which gives more weight to the age groups that have more patients.
+
+```{r}
+#| label: weighted average
+
+asian_rates |>
+  summarize(weighted_mean_rate=weighted.mean(detailed_rates, size_per_100k))
+```
+
+## Merge the data with the standardized population
+
+Adjusting to the standardized population is just using weights associated with the standardized population instead of the weights found in existing data.
+
+```{r}
+#| label: merge
+
+seer_age_groups |>
+  full_join(asian_rates) |>
+  summarize(adjusted_rate=weighted.mean(detailed_rates, population_count))
+```
+
+This rate is going to be slightly different than the crude rate because the demographic proportions of the age groups in the Asian subpopulation differs from the demographic proportions of the age groups in the standardized population.
+
+if you wanted to get adjusted rates for all four race groups at once, merge seer_age_groups with a dataset that has age_group rates for every race group. Be sure to add a `group_by` function before using `summarize`.
+
+There is an R package, [epiR][ref-stevenson-2026], that will do the age adjustments for you. I have not tested it, but it looks pretty good.
+
+[ref-stevenson-2026]: https://cran.r-project.org/package=epiR
+
+```{r}
+#| label: save
+#| echo: false
+#| eval: false
+
+# If you need to debug things, save all the intermediate files using this chunk.
+
+save.image("age-adjustment.RData")
+```
