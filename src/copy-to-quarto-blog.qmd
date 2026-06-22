@@ -1,5 +1,5 @@
 ---
-title: "Copy files from build-website to qblog4"
+title: "Copy files from build-quarto to quarto-blog"
 author: "Steve Simon"
 date: 2024-11-09
 format:
