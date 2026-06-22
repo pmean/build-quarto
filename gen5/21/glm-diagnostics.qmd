@@ -11,9 +11,6 @@ categories:
 - Rmarkdown graphs
 output: html_document
 page_update: complete
-editor: 
-  markdown: 
-    wrap: 72
 ---
 
 There are a broad range of diagnostic methods (mostly graphical) that
