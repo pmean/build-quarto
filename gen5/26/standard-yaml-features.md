@@ -129,7 +129,5 @@ The [yaml website][ref-yaml] provides detailed documentation about the yaml spec
 [ref-quarto]: https://quarto.org/
 [ref-tdg-yaml]: https://quarto-tdg.org/yaml
 [ref-tdg]: https://quarto-tdg.org/
+[ref-tdg-15]: https://quarto-tdg.org/yaml.html
 [ref-yaml]: https://yaml.org/
-
-
-https://quarto.org/docs/output-formats/html-basics.html
