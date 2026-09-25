@@ -1,0 +1,64 @@
+---
+title: "Illustrating different map projections"
+author: "Steve Simon"
+source: new
+date: "2026-08-06"
+categories:
+tags:
+- "*Blog post"
+- Year 2026
+- Geocoding
+- R programming
+format: 
+  html:
+    embed-resources: true
+editor: source
+execute: 
+  error: true
+  echo: true
+page_update: complete
+---
+
+Here is a brief abstract.
+
+<!---more--->
+
+Here are more details.
+
+```{r}
+#| label: setup
+
+library(sf)
+library(tidyverse)
+
+Sys.Date()
+```
+
+## CRS as described in sf vignettes
+
+Coordinates can only be placed on the Earth’s surface when their coordinate reference system (CRS) is known; this may be a spheroid CRS such as WGS84, a projected, two-dimensional (Cartesian) CRS such as a UTM zone or Web Mercator, or a CRS in three-dimensions, or including time. 
+
+https://r-spatial.github.io/sf/articles/sf1.html
+
+Coordinate reference systems (CRS) are like measurement units for coordinates: they specify which location on Earth a particular coordinate pair refers to. We saw above that sfc objects (geometry list-columns) have an attribute of class crs that stores the CRS. This implies that all geometries in a geometry list-column have the same CRS. It may be NA in case the CRS is unknown, or when we work with local coordinate systems (e.g. inside a building, a body, or an abstract space); in that case coordinates are assumed to be Cartesian (in case of 2D: defining positions on in a flat plane).
+
+A crs object contains two character fields: input for the name (if existing) or the user-definition of the CRS, and wkt for the WKT-2 specification; WKT-2 is a standard encoding for describing CRS that is used throughout the spatial data science industry. When defining a CRS, a PROJ string may be used that is understood by the PROJ library. It defines projection types and (often) defines parameter values for particular projections, and hence can cover an infinite amount of different projections. Alternatively, codes like EPSG:3035 or OGC:CRS84 may be used; these are well-known identifiers of CRS defined in the PROJ database.
+
+Coordinate reference system transformations are carried out using st_transform(), e.g. converting longitudes/latitudes in NAD27 to Web Mercator (EPSG:3857) can be done by:
+
+Map of North America: https://geojson-maps.kyd.au/
+
+us = st_transform(us_states, "EPSG:9311")
+
+https://r.geocompx.org/solutions/adv-map.html
+
+```{r}
+library(usmap)
+
+us_map(regions="states", exclude=c("Alaska", "Hawaii"))  -> continental_us
+
+ggplot(continental_us) + geom_sf()
+
+continental_us_1 <- st_transform(continental_us, "EPSG:3857")
+ggplot(continental_us_1) + geom_sf()
+```
